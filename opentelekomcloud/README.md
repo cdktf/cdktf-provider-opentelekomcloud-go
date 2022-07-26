@@ -34,6 +34,12 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 </dependency>
 ```
 
+### Go
+
+The go package is generated into the [`github.com/hashicorp/cdktf-provider-opentelekomcloud-go`]https://github.com/hashicorp/cdktf-provider-opentelekomcloud-go) package.
+
+`go get github.com/hashicorp/cdktf-provider-opentelekomcloud-go/opentelekomcloud`
+
 ## Docs
 
 Find auto-generated docs for this provider here: [./API.md](./API.md)
