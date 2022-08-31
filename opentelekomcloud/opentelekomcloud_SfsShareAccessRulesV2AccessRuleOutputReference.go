@@ -243,6 +243,9 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) TerraformReso
 func NewSfsShareAccessRulesV2AccessRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SfsShareAccessRulesV2AccessRuleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSfsShareAccessRulesV2AccessRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference{}
 
 	_jsii_.Create(
@@ -264,7 +267,10 @@ func NewSfsShareAccessRulesV2AccessRuleOutputReference_Override(s SfsShareAccess
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetAccessLevel(val *string) {
+func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference)SetAccessLevel(val *string) {
+	if err := j.validateSetAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessLevel",
@@ -272,7 +278,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetAccessLeve
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetAccessTo(val *string) {
+func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference)SetAccessTo(val *string) {
+	if err := j.validateSetAccessToParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessTo",
@@ -280,7 +289,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetAccessTo(v
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetAccessType(val *string) {
+func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference)SetAccessType(val *string) {
+	if err := j.validateSetAccessTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessType",
@@ -288,7 +300,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetAccessType
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -296,7 +311,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -304,7 +322,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -312,7 +333,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -320,7 +344,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -342,6 +369,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) ComputeFqn() 
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -355,6 +385,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetAnyMapAttr
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -368,6 +401,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetBooleanAtt
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -381,6 +417,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetBooleanMap
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -394,6 +433,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetListAttrib
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -407,6 +449,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetNumberAttr
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -420,6 +465,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetNumberList
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -433,6 +481,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetNumberMapA
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -446,6 +497,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetStringAttr
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -472,6 +526,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) Interpolation
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -493,6 +550,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) ResetAccessTy
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

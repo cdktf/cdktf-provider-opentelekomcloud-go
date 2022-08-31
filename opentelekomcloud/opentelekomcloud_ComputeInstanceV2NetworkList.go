@@ -111,6 +111,9 @@ func (j *jsiiProxy_ComputeInstanceV2NetworkList) WrapsSet() *bool {
 func NewComputeInstanceV2NetworkList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceV2NetworkList {
 	_init_.Initialize()
 
+	if err := validateNewComputeInstanceV2NetworkListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ComputeInstanceV2NetworkList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewComputeInstanceV2NetworkList_Override(c ComputeInstanceV2NetworkList, te
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2NetworkList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceV2NetworkList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ComputeInstanceV2NetworkList) SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2NetworkList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceV2NetworkList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ComputeInstanceV2NetworkList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2NetworkList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceV2NetworkList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ComputeInstanceV2NetworkList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2NetworkList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceV2NetworkList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (c *jsiiProxy_ComputeInstanceV2NetworkList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_ComputeInstanceV2NetworkList) Get(index *float64) ComputeInstanceV2NetworkOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ComputeInstanceV2NetworkOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (c *jsiiProxy_ComputeInstanceV2NetworkList) Get(index *float64) ComputeInst
 }
 
 func (c *jsiiProxy_ComputeInstanceV2NetworkList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

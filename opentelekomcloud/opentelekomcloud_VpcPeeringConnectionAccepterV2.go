@@ -441,6 +441,9 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) VpcPeeringConnectionIdInput()
 func NewVpcPeeringConnectionAccepterV2(scope constructs.Construct, id *string, config *VpcPeeringConnectionAccepterV2Config) VpcPeeringConnectionAccepterV2 {
 	_init_.Initialize()
 
+	if err := validateNewVpcPeeringConnectionAccepterV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VpcPeeringConnectionAccepterV2{}
 
 	_jsii_.Create(
@@ -463,7 +466,10 @@ func NewVpcPeeringConnectionAccepterV2_Override(v VpcPeeringConnectionAccepterV2
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetAccept(val interface{}) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterV2)SetAccept(val interface{}) {
+	if err := j.validateSetAcceptParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accept",
@@ -471,7 +477,10 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetAccept(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -479,7 +488,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetCount(val *float64) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -487,7 +496,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -495,7 +504,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -503,7 +512,10 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetId(val *string) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -511,7 +523,10 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -519,7 +534,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -527,7 +542,10 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -535,7 +553,10 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetRegion(val *string) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -543,7 +564,10 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetVpcPeeringConnectionId(val *string) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterV2)SetVpcPeeringConnectionId(val *string) {
+	if err := j.validateSetVpcPeeringConnectionIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcPeeringConnectionId",
@@ -571,6 +595,9 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) SetVpcPeeringConnectionId(val
 func VpcPeeringConnectionAccepterV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateVpcPeeringConnectionAccepterV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -595,6 +622,9 @@ func VpcPeeringConnectionAccepterV2_TfResourceType() *string {
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) AddOverride(path *string, value interface{}) {
+	if err := v.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
@@ -603,6 +633,9 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) AddOverride(path *string, val
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -616,6 +649,9 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetAnyMapAttribute(terraformA
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -629,6 +665,9 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetBooleanAttribute(terraform
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := v.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -642,6 +681,9 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetBooleanMapAttribute(terraf
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := v.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -655,6 +697,9 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetListAttribute(terraformAtt
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := v.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -668,6 +713,9 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetNumberAttribute(terraformA
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := v.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -681,6 +729,9 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetNumberListAttribute(terraf
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := v.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -694,6 +745,9 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetNumberMapAttribute(terrafo
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := v.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -707,6 +761,9 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetStringAttribute(terraformA
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := v.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -720,6 +777,9 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) GetStringMapAttribute(terrafo
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -733,6 +793,9 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) InterpolationForAttribute(ter
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) OverrideLogicalId(newLogicalId *string) {
+	if err := v.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
@@ -741,6 +804,9 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) OverrideLogicalId(newLogicalI
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterV2) PutTimeouts(value *VpcPeeringConnectionAccepterV2Timeouts) {
+	if err := v.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",

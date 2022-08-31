@@ -111,6 +111,9 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) WrapsSet() *b
 func NewAsConfigurationV1InstanceConfigPersonalityList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AsConfigurationV1InstanceConfigPersonalityList {
 	_init_.Initialize()
 
+	if err := validateNewAsConfigurationV1InstanceConfigPersonalityListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAsConfigurationV1InstanceConfigPersonalityList_Override(a AsConfiguratio
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) ComputeFqn() 
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) Get(index *float64) AsConfigurationV1InstanceConfigPersonalityOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AsConfigurationV1InstanceConfigPersonalityOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) Get(index *fl
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -221,6 +221,9 @@ func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) VolumeTypeInput(
 func NewCssClusterV1NodeConfigVolumeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CssClusterV1NodeConfigVolumeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCssClusterV1NodeConfigVolumeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference{}
 
 	_jsii_.Create(
@@ -242,7 +245,10 @@ func NewCssClusterV1NodeConfigVolumeOutputReference_Override(c CssClusterV1NodeC
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -250,7 +256,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -258,7 +267,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetEncryptionKey(val *string) {
+func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference)SetEncryptionKey(val *string) {
+	if err := j.validateSetEncryptionKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"encryptionKey",
@@ -266,7 +278,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetEncryptionKey
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetInternalValue(val *CssClusterV1NodeConfigVolume) {
+func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference)SetInternalValue(val *CssClusterV1NodeConfigVolume) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -274,7 +289,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetSize(val *float64) {
+func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -282,7 +300,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetSize(val *flo
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -290,7 +311,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -298,7 +322,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) SetVolumeType(val *string) {
+func (j *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference)SetVolumeType(val *string) {
+	if err := j.validateSetVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumeType",
@@ -320,6 +347,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) ComputeFqn() *st
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -333,6 +363,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetAnyMapAttribu
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -346,6 +379,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetBooleanAttrib
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -359,6 +395,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetBooleanMapAtt
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -372,6 +411,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetListAttribute
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -385,6 +427,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetNumberAttribu
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -398,6 +443,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetNumberListAtt
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -411,6 +459,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetNumberMapAttr
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -424,6 +475,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetStringAttribu
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -450,6 +504,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) InterpolationAsL
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -471,6 +528,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) ResetEncryptionK
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

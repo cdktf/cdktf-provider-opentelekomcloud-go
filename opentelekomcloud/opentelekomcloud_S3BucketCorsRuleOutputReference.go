@@ -269,6 +269,9 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) TerraformResource() cdktf.II
 func NewS3BucketCorsRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketCorsRuleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewS3BucketCorsRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_S3BucketCorsRuleOutputReference{}
 
 	_jsii_.Create(
@@ -290,7 +293,10 @@ func NewS3BucketCorsRuleOutputReference_Override(s S3BucketCorsRuleOutputReferen
 	)
 }
 
-func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetAllowedHeaders(val *[]*string) {
+func (j *jsiiProxy_S3BucketCorsRuleOutputReference)SetAllowedHeaders(val *[]*string) {
+	if err := j.validateSetAllowedHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedHeaders",
@@ -298,7 +304,10 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetAllowedHeaders(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetAllowedMethods(val *[]*string) {
+func (j *jsiiProxy_S3BucketCorsRuleOutputReference)SetAllowedMethods(val *[]*string) {
+	if err := j.validateSetAllowedMethodsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedMethods",
@@ -306,7 +315,10 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetAllowedMethods(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetAllowedOrigins(val *[]*string) {
+func (j *jsiiProxy_S3BucketCorsRuleOutputReference)SetAllowedOrigins(val *[]*string) {
+	if err := j.validateSetAllowedOriginsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedOrigins",
@@ -314,7 +326,10 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetAllowedOrigins(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_S3BucketCorsRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -322,7 +337,10 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_S3BucketCorsRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -330,7 +348,10 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetExposeHeaders(val *[]*string) {
+func (j *jsiiProxy_S3BucketCorsRuleOutputReference)SetExposeHeaders(val *[]*string) {
+	if err := j.validateSetExposeHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"exposeHeaders",
@@ -338,7 +359,10 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetExposeHeaders(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_S3BucketCorsRuleOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -346,7 +370,10 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetMaxAgeSeconds(val *float64) {
+func (j *jsiiProxy_S3BucketCorsRuleOutputReference)SetMaxAgeSeconds(val *float64) {
+	if err := j.validateSetMaxAgeSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxAgeSeconds",
@@ -354,7 +381,10 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetMaxAgeSeconds(val *float6
 	)
 }
 
-func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketCorsRuleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -362,7 +392,10 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_S3BucketCorsRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketCorsRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -384,6 +417,9 @@ func (s *jsiiProxy_S3BucketCorsRuleOutputReference) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -397,6 +433,9 @@ func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetAnyMapAttribute(terraform
 }
 
 func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -410,6 +449,9 @@ func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetBooleanAttribute(terrafor
 }
 
 func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -423,6 +465,9 @@ func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetBooleanMapAttribute(terra
 }
 
 func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -436,6 +481,9 @@ func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetListAttribute(terraformAt
 }
 
 func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -449,6 +497,9 @@ func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetNumberAttribute(terraform
 }
 
 func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -462,6 +513,9 @@ func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetNumberListAttribute(terra
 }
 
 func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -475,6 +529,9 @@ func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetNumberMapAttribute(terraf
 }
 
 func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -488,6 +545,9 @@ func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetStringAttribute(terraform
 }
 
 func (s *jsiiProxy_S3BucketCorsRuleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -514,6 +574,9 @@ func (s *jsiiProxy_S3BucketCorsRuleOutputReference) InterpolationAsList() cdktf.
 }
 
 func (s *jsiiProxy_S3BucketCorsRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -551,6 +614,9 @@ func (s *jsiiProxy_S3BucketCorsRuleOutputReference) ResetMaxAgeSeconds() {
 }
 
 func (s *jsiiProxy_S3BucketCorsRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

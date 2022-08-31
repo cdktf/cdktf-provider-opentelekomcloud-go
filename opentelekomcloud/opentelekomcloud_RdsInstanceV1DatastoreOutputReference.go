@@ -197,6 +197,9 @@ func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) VersionInput() *string
 func NewRdsInstanceV1DatastoreOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RdsInstanceV1DatastoreOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewRdsInstanceV1DatastoreOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RdsInstanceV1DatastoreOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewRdsInstanceV1DatastoreOutputReference_Override(r RdsInstanceV1DatastoreO
 	)
 }
 
-func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetInternalValue(val *RdsInstanceV1Datastore) {
+func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference)SetInternalValue(val *RdsInstanceV1Datastore) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetType(val *string) {
+func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference) SetVersion(val *string) {
+func (j *jsiiProxy_RdsInstanceV1DatastoreOutputReference)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"version",
@@ -288,6 +312,9 @@ func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetAnyMapAttribute(ter
 }
 
 func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetBooleanAttribute(te
 }
 
 func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetBooleanMapAttribute
 }
 
 func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetListAttribute(terra
 }
 
 func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetNumberAttribute(ter
 }
 
 func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetNumberListAttribute
 }
 
 func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetNumberMapAttribute(
 }
 
 func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetStringAttribute(ter
 }
 
 func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) InterpolationAsList() 
 }
 
 func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) InterpolationForAttrib
 }
 
 func (r *jsiiProxy_RdsInstanceV1DatastoreOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

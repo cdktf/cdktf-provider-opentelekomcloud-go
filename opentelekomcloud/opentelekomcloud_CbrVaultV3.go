@@ -573,6 +573,9 @@ func (j *jsiiProxy_CbrVaultV3) UserId() *string {
 func NewCbrVaultV3(scope constructs.Construct, id *string, config *CbrVaultV3Config) CbrVaultV3 {
 	_init_.Initialize()
 
+	if err := validateNewCbrVaultV3Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CbrVaultV3{}
 
 	_jsii_.Create(
@@ -595,7 +598,10 @@ func NewCbrVaultV3_Override(c CbrVaultV3, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetAutoBind(val interface{}) {
+func (j *jsiiProxy_CbrVaultV3)SetAutoBind(val interface{}) {
+	if err := j.validateSetAutoBindParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoBind",
@@ -603,7 +609,10 @@ func (j *jsiiProxy_CbrVaultV3) SetAutoBind(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetAutoExpand(val interface{}) {
+func (j *jsiiProxy_CbrVaultV3)SetAutoExpand(val interface{}) {
+	if err := j.validateSetAutoExpandParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoExpand",
@@ -611,7 +620,10 @@ func (j *jsiiProxy_CbrVaultV3) SetAutoExpand(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetBackupPolicyId(val *string) {
+func (j *jsiiProxy_CbrVaultV3)SetBackupPolicyId(val *string) {
+	if err := j.validateSetBackupPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backupPolicyId",
@@ -619,7 +631,10 @@ func (j *jsiiProxy_CbrVaultV3) SetBackupPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetConnection(val interface{}) {
+func (j *jsiiProxy_CbrVaultV3)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -627,7 +642,7 @@ func (j *jsiiProxy_CbrVaultV3) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetCount(val *float64) {
+func (j *jsiiProxy_CbrVaultV3)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -635,7 +650,7 @@ func (j *jsiiProxy_CbrVaultV3) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CbrVaultV3)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -643,7 +658,10 @@ func (j *jsiiProxy_CbrVaultV3) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetDescription(val *string) {
+func (j *jsiiProxy_CbrVaultV3)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -651,7 +669,10 @@ func (j *jsiiProxy_CbrVaultV3) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetEnterpriseProjectId(val *string) {
+func (j *jsiiProxy_CbrVaultV3)SetEnterpriseProjectId(val *string) {
+	if err := j.validateSetEnterpriseProjectIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enterpriseProjectId",
@@ -659,7 +680,7 @@ func (j *jsiiProxy_CbrVaultV3) SetEnterpriseProjectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CbrVaultV3)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -667,7 +688,10 @@ func (j *jsiiProxy_CbrVaultV3) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetId(val *string) {
+func (j *jsiiProxy_CbrVaultV3)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -675,7 +699,10 @@ func (j *jsiiProxy_CbrVaultV3) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CbrVaultV3)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -683,7 +710,10 @@ func (j *jsiiProxy_CbrVaultV3) SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetName(val *string) {
+func (j *jsiiProxy_CbrVaultV3)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -691,7 +721,7 @@ func (j *jsiiProxy_CbrVaultV3) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CbrVaultV3)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -699,7 +729,10 @@ func (j *jsiiProxy_CbrVaultV3) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CbrVaultV3)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -707,7 +740,10 @@ func (j *jsiiProxy_CbrVaultV3) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3) SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CbrVaultV3)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -735,6 +771,9 @@ func (j *jsiiProxy_CbrVaultV3) SetTags(val *map[string]*string) {
 func CbrVaultV3_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCbrVaultV3_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -759,6 +798,9 @@ func CbrVaultV3_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CbrVaultV3) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -767,6 +809,9 @@ func (c *jsiiProxy_CbrVaultV3) AddOverride(path *string, value interface{}) {
 }
 
 func (c *jsiiProxy_CbrVaultV3) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -780,6 +825,9 @@ func (c *jsiiProxy_CbrVaultV3) GetAnyMapAttribute(terraformAttribute *string) *m
 }
 
 func (c *jsiiProxy_CbrVaultV3) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -793,6 +841,9 @@ func (c *jsiiProxy_CbrVaultV3) GetBooleanAttribute(terraformAttribute *string) c
 }
 
 func (c *jsiiProxy_CbrVaultV3) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -806,6 +857,9 @@ func (c *jsiiProxy_CbrVaultV3) GetBooleanMapAttribute(terraformAttribute *string
 }
 
 func (c *jsiiProxy_CbrVaultV3) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -819,6 +873,9 @@ func (c *jsiiProxy_CbrVaultV3) GetListAttribute(terraformAttribute *string) *[]*
 }
 
 func (c *jsiiProxy_CbrVaultV3) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -832,6 +889,9 @@ func (c *jsiiProxy_CbrVaultV3) GetNumberAttribute(terraformAttribute *string) *f
 }
 
 func (c *jsiiProxy_CbrVaultV3) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -845,6 +905,9 @@ func (c *jsiiProxy_CbrVaultV3) GetNumberListAttribute(terraformAttribute *string
 }
 
 func (c *jsiiProxy_CbrVaultV3) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -858,6 +921,9 @@ func (c *jsiiProxy_CbrVaultV3) GetNumberMapAttribute(terraformAttribute *string)
 }
 
 func (c *jsiiProxy_CbrVaultV3) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -871,6 +937,9 @@ func (c *jsiiProxy_CbrVaultV3) GetStringAttribute(terraformAttribute *string) *s
 }
 
 func (c *jsiiProxy_CbrVaultV3) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -884,6 +953,9 @@ func (c *jsiiProxy_CbrVaultV3) GetStringMapAttribute(terraformAttribute *string)
 }
 
 func (c *jsiiProxy_CbrVaultV3) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -897,6 +969,9 @@ func (c *jsiiProxy_CbrVaultV3) InterpolationForAttribute(terraformAttribute *str
 }
 
 func (c *jsiiProxy_CbrVaultV3) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -905,6 +980,9 @@ func (c *jsiiProxy_CbrVaultV3) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (c *jsiiProxy_CbrVaultV3) PutBilling(value *CbrVaultV3Billing) {
+	if err := c.validatePutBillingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putBilling",
@@ -913,6 +991,9 @@ func (c *jsiiProxy_CbrVaultV3) PutBilling(value *CbrVaultV3Billing) {
 }
 
 func (c *jsiiProxy_CbrVaultV3) PutBindRules(value interface{}) {
+	if err := c.validatePutBindRulesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putBindRules",
@@ -921,6 +1002,9 @@ func (c *jsiiProxy_CbrVaultV3) PutBindRules(value interface{}) {
 }
 
 func (c *jsiiProxy_CbrVaultV3) PutResource(value interface{}) {
+	if err := c.validatePutResourceParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putResource",

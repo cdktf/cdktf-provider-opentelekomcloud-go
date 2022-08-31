@@ -111,6 +111,9 @@ func (j *jsiiProxy_MrsClusterV1BootstrapScriptsList) WrapsSet() *bool {
 func NewMrsClusterV1BootstrapScriptsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MrsClusterV1BootstrapScriptsList {
 	_init_.Initialize()
 
+	if err := validateNewMrsClusterV1BootstrapScriptsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrsClusterV1BootstrapScriptsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMrsClusterV1BootstrapScriptsList_Override(m MrsClusterV1BootstrapScripts
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1BootstrapScriptsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrsClusterV1BootstrapScriptsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MrsClusterV1BootstrapScriptsList) SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1BootstrapScriptsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrsClusterV1BootstrapScriptsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MrsClusterV1BootstrapScriptsList) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1BootstrapScriptsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrsClusterV1BootstrapScriptsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MrsClusterV1BootstrapScriptsList) SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1BootstrapScriptsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MrsClusterV1BootstrapScriptsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MrsClusterV1BootstrapScriptsList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MrsClusterV1BootstrapScriptsList) Get(index *float64) MrsClusterV1BootstrapScriptsOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MrsClusterV1BootstrapScriptsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MrsClusterV1BootstrapScriptsList) Get(index *float64) MrsClus
 }
 
 func (m *jsiiProxy_MrsClusterV1BootstrapScriptsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

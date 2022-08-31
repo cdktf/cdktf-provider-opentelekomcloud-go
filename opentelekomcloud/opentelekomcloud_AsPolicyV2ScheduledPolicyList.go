@@ -111,6 +111,9 @@ func (j *jsiiProxy_AsPolicyV2ScheduledPolicyList) WrapsSet() *bool {
 func NewAsPolicyV2ScheduledPolicyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AsPolicyV2ScheduledPolicyList {
 	_init_.Initialize()
 
+	if err := validateNewAsPolicyV2ScheduledPolicyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AsPolicyV2ScheduledPolicyList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAsPolicyV2ScheduledPolicyList_Override(a AsPolicyV2ScheduledPolicyList, 
 	)
 }
 
-func (j *jsiiProxy_AsPolicyV2ScheduledPolicyList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AsPolicyV2ScheduledPolicyList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AsPolicyV2ScheduledPolicyList) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_AsPolicyV2ScheduledPolicyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AsPolicyV2ScheduledPolicyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AsPolicyV2ScheduledPolicyList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_AsPolicyV2ScheduledPolicyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AsPolicyV2ScheduledPolicyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AsPolicyV2ScheduledPolicyList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_AsPolicyV2ScheduledPolicyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AsPolicyV2ScheduledPolicyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AsPolicyV2ScheduledPolicyList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AsPolicyV2ScheduledPolicyList) Get(index *float64) AsPolicyV2ScheduledPolicyOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AsPolicyV2ScheduledPolicyOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AsPolicyV2ScheduledPolicyList) Get(index *float64) AsPolicyV2
 }
 
 func (a *jsiiProxy_AsPolicyV2ScheduledPolicyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

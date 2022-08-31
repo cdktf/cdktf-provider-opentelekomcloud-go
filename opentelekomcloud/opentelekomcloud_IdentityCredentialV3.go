@@ -442,6 +442,9 @@ func (j *jsiiProxy_IdentityCredentialV3) UserIdInput() *string {
 func NewIdentityCredentialV3(scope constructs.Construct, id *string, config *IdentityCredentialV3Config) IdentityCredentialV3 {
 	_init_.Initialize()
 
+	if err := validateNewIdentityCredentialV3Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_IdentityCredentialV3{}
 
 	_jsii_.Create(
@@ -464,7 +467,10 @@ func NewIdentityCredentialV3_Override(i IdentityCredentialV3, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_IdentityCredentialV3) SetConnection(val interface{}) {
+func (j *jsiiProxy_IdentityCredentialV3)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -472,7 +478,7 @@ func (j *jsiiProxy_IdentityCredentialV3) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityCredentialV3) SetCount(val *float64) {
+func (j *jsiiProxy_IdentityCredentialV3)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -480,7 +486,7 @@ func (j *jsiiProxy_IdentityCredentialV3) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_IdentityCredentialV3) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IdentityCredentialV3)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -488,7 +494,10 @@ func (j *jsiiProxy_IdentityCredentialV3) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityCredentialV3) SetDescription(val *string) {
+func (j *jsiiProxy_IdentityCredentialV3)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -496,7 +505,7 @@ func (j *jsiiProxy_IdentityCredentialV3) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityCredentialV3) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IdentityCredentialV3)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -504,7 +513,10 @@ func (j *jsiiProxy_IdentityCredentialV3) SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_IdentityCredentialV3) SetId(val *string) {
+func (j *jsiiProxy_IdentityCredentialV3)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -512,7 +524,10 @@ func (j *jsiiProxy_IdentityCredentialV3) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityCredentialV3) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IdentityCredentialV3)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -520,7 +535,10 @@ func (j *jsiiProxy_IdentityCredentialV3) SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_IdentityCredentialV3) SetPgpKey(val *string) {
+func (j *jsiiProxy_IdentityCredentialV3)SetPgpKey(val *string) {
+	if err := j.validateSetPgpKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pgpKey",
@@ -528,7 +546,7 @@ func (j *jsiiProxy_IdentityCredentialV3) SetPgpKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityCredentialV3) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IdentityCredentialV3)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -536,7 +554,10 @@ func (j *jsiiProxy_IdentityCredentialV3) SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_IdentityCredentialV3) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IdentityCredentialV3)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -544,7 +565,10 @@ func (j *jsiiProxy_IdentityCredentialV3) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityCredentialV3) SetStatus(val *string) {
+func (j *jsiiProxy_IdentityCredentialV3)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -552,7 +576,10 @@ func (j *jsiiProxy_IdentityCredentialV3) SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityCredentialV3) SetUserId(val *string) {
+func (j *jsiiProxy_IdentityCredentialV3)SetUserId(val *string) {
+	if err := j.validateSetUserIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userId",
@@ -580,6 +607,9 @@ func (j *jsiiProxy_IdentityCredentialV3) SetUserId(val *string) {
 func IdentityCredentialV3_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateIdentityCredentialV3_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -604,6 +634,9 @@ func IdentityCredentialV3_TfResourceType() *string {
 }
 
 func (i *jsiiProxy_IdentityCredentialV3) AddOverride(path *string, value interface{}) {
+	if err := i.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
@@ -612,6 +645,9 @@ func (i *jsiiProxy_IdentityCredentialV3) AddOverride(path *string, value interfa
 }
 
 func (i *jsiiProxy_IdentityCredentialV3) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -625,6 +661,9 @@ func (i *jsiiProxy_IdentityCredentialV3) GetAnyMapAttribute(terraformAttribute *
 }
 
 func (i *jsiiProxy_IdentityCredentialV3) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -638,6 +677,9 @@ func (i *jsiiProxy_IdentityCredentialV3) GetBooleanAttribute(terraformAttribute 
 }
 
 func (i *jsiiProxy_IdentityCredentialV3) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -651,6 +693,9 @@ func (i *jsiiProxy_IdentityCredentialV3) GetBooleanMapAttribute(terraformAttribu
 }
 
 func (i *jsiiProxy_IdentityCredentialV3) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -664,6 +709,9 @@ func (i *jsiiProxy_IdentityCredentialV3) GetListAttribute(terraformAttribute *st
 }
 
 func (i *jsiiProxy_IdentityCredentialV3) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -677,6 +725,9 @@ func (i *jsiiProxy_IdentityCredentialV3) GetNumberAttribute(terraformAttribute *
 }
 
 func (i *jsiiProxy_IdentityCredentialV3) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -690,6 +741,9 @@ func (i *jsiiProxy_IdentityCredentialV3) GetNumberListAttribute(terraformAttribu
 }
 
 func (i *jsiiProxy_IdentityCredentialV3) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -703,6 +757,9 @@ func (i *jsiiProxy_IdentityCredentialV3) GetNumberMapAttribute(terraformAttribut
 }
 
 func (i *jsiiProxy_IdentityCredentialV3) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -716,6 +773,9 @@ func (i *jsiiProxy_IdentityCredentialV3) GetStringAttribute(terraformAttribute *
 }
 
 func (i *jsiiProxy_IdentityCredentialV3) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -729,6 +789,9 @@ func (i *jsiiProxy_IdentityCredentialV3) GetStringMapAttribute(terraformAttribut
 }
 
 func (i *jsiiProxy_IdentityCredentialV3) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -742,6 +805,9 @@ func (i *jsiiProxy_IdentityCredentialV3) InterpolationForAttribute(terraformAttr
 }
 
 func (i *jsiiProxy_IdentityCredentialV3) OverrideLogicalId(newLogicalId *string) {
+	if err := i.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",

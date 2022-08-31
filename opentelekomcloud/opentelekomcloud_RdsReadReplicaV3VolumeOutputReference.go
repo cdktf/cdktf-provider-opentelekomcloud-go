@@ -209,6 +209,9 @@ func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) TypeInput() *string {
 func NewRdsReadReplicaV3VolumeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RdsReadReplicaV3VolumeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewRdsReadReplicaV3VolumeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RdsReadReplicaV3VolumeOutputReference{}
 
 	_jsii_.Create(
@@ -230,7 +233,10 @@ func NewRdsReadReplicaV3VolumeOutputReference_Override(r RdsReadReplicaV3VolumeO
 	)
 }
 
-func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -238,7 +244,10 @@ func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -246,7 +255,10 @@ func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetDiskEncryptionId(val *string) {
+func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference)SetDiskEncryptionId(val *string) {
+	if err := j.validateSetDiskEncryptionIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"diskEncryptionId",
@@ -254,7 +266,10 @@ func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetDiskEncryptionId(va
 	)
 }
 
-func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetInternalValue(val *RdsReadReplicaV3Volume) {
+func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference)SetInternalValue(val *RdsReadReplicaV3Volume) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -262,7 +277,10 @@ func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -270,7 +288,10 @@ func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -278,7 +299,10 @@ func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) SetType(val *string) {
+func (j *jsiiProxy_RdsReadReplicaV3VolumeOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -300,6 +324,9 @@ func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -313,6 +340,9 @@ func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetAnyMapAttribute(ter
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -326,6 +356,9 @@ func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetBooleanAttribute(te
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -339,6 +372,9 @@ func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetBooleanMapAttribute
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -352,6 +388,9 @@ func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetListAttribute(terra
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -365,6 +404,9 @@ func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetNumberAttribute(ter
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -378,6 +420,9 @@ func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetNumberListAttribute
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -391,6 +436,9 @@ func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetNumberMapAttribute(
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -404,6 +452,9 @@ func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetStringAttribute(ter
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -430,6 +481,9 @@ func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) InterpolationAsList() 
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) ResetDiskEncryptionId(
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3VolumeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

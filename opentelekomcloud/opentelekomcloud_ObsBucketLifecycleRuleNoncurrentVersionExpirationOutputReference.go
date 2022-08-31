@@ -174,6 +174,9 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 func NewObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference_Overrid
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) SetDays(val *float64) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference)SetDays(val *float64) {
+	if err := j.validateSetDaysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"days",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -235,7 +253,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -257,6 +278,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -270,6 +294,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -283,6 +310,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -296,6 +326,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -309,6 +342,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -322,6 +358,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -335,6 +374,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +390,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -361,6 +406,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -387,6 +435,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -400,6 +451,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputRefere
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

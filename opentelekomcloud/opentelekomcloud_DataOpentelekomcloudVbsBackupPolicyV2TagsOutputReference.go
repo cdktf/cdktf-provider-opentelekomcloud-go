@@ -173,6 +173,9 @@ func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Val
 func NewDataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudVbsBackupPolicyV2TagsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference{}
 
 	_jsii_.Create(
@@ -194,7 +197,10 @@ func NewDataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference_Override(d Data
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -202,7 +208,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -210,7 +219,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) SetInternalValue(val *DataOpentelekomcloudVbsBackupPolicyV2Tags) {
+func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference)SetInternalValue(val *DataOpentelekomcloudVbsBackupPolicyV2Tags) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -218,7 +230,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -226,7 +241,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -248,6 +266,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Com
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -261,6 +282,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -274,6 +298,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -287,6 +314,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -300,6 +330,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -313,6 +346,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -326,6 +362,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -339,6 +378,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -352,6 +394,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -378,6 +423,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Int
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -391,6 +439,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Int
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

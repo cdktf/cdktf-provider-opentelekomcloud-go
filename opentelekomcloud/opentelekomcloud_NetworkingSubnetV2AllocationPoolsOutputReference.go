@@ -197,6 +197,9 @@ func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) TerraformRe
 func NewNetworkingSubnetV2AllocationPoolsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkingSubnetV2AllocationPoolsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNetworkingSubnetV2AllocationPoolsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewNetworkingSubnetV2AllocationPoolsOutputReference_Override(n NetworkingSu
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetEnd(val *string) {
+func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference)SetEnd(val *string) {
+	if err := j.validateSetEndParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"end",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetEnd(val 
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetInternal
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetStart(val *string) {
+func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference)SetStart(val *string) {
+	if err := j.validateSetStartParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"start",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetStart(va
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) ComputeFqn(
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetAnyMapAt
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetBooleanA
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetBooleanM
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetListAttr
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetNumberAt
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetNumberLi
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetNumberMa
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetStringAt
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) Interpolati
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) Interpolati
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

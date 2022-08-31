@@ -111,6 +111,9 @@ func (j *jsiiProxy_CbrVaultV3ResourceList) WrapsSet() *bool {
 func NewCbrVaultV3ResourceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CbrVaultV3ResourceList {
 	_init_.Initialize()
 
+	if err := validateNewCbrVaultV3ResourceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CbrVaultV3ResourceList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewCbrVaultV3ResourceList_Override(c CbrVaultV3ResourceList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3ResourceList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CbrVaultV3ResourceList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_CbrVaultV3ResourceList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3ResourceList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CbrVaultV3ResourceList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_CbrVaultV3ResourceList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3ResourceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CbrVaultV3ResourceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_CbrVaultV3ResourceList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3ResourceList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CbrVaultV3ResourceList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (c *jsiiProxy_CbrVaultV3ResourceList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CbrVaultV3ResourceList) Get(index *float64) CbrVaultV3ResourceOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns CbrVaultV3ResourceOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (c *jsiiProxy_CbrVaultV3ResourceList) Get(index *float64) CbrVaultV3Resourc
 }
 
 func (c *jsiiProxy_CbrVaultV3ResourceList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

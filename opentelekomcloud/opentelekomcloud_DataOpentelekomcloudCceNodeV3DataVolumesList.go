@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) WrapsSet() *boo
 func NewDataOpentelekomcloudCceNodeV3DataVolumesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudCceNodeV3DataVolumesList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudCceNodeV3DataVolumesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudCceNodeV3DataVolumesList_Override(d DataOpentelekomc
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) ComputeFqn() *s
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) Get(index *float64) DataOpentelekomcloudCceNodeV3DataVolumesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudCceNodeV3DataVolumesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) Get(index *floa
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

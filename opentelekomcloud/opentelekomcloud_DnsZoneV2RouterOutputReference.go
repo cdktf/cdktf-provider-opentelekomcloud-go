@@ -197,6 +197,9 @@ func (j *jsiiProxy_DnsZoneV2RouterOutputReference) TerraformResource() cdktf.IIn
 func NewDnsZoneV2RouterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DnsZoneV2RouterOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDnsZoneV2RouterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DnsZoneV2RouterOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewDnsZoneV2RouterOutputReference_Override(d DnsZoneV2RouterOutputReference
 	)
 }
 
-func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DnsZoneV2RouterOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DnsZoneV2RouterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DnsZoneV2RouterOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetRouterId(val *string) {
+func (j *jsiiProxy_DnsZoneV2RouterOutputReference)SetRouterId(val *string) {
+	if err := j.validateSetRouterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"routerId",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetRouterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetRouterRegion(val *string) {
+func (j *jsiiProxy_DnsZoneV2RouterOutputReference)SetRouterRegion(val *string) {
+	if err := j.validateSetRouterRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"routerRegion",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetRouterRegion(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DnsZoneV2RouterOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_DnsZoneV2RouterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DnsZoneV2RouterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (d *jsiiProxy_DnsZoneV2RouterOutputReference) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetAnyMapAttribute(terraformA
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetBooleanAttribute(terraform
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetBooleanMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetListAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetNumberAttribute(terraformA
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetNumberListAttribute(terraf
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetNumberMapAttribute(terrafo
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetStringAttribute(terraformA
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (d *jsiiProxy_DnsZoneV2RouterOutputReference) InterpolationAsList() cdktf.I
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (d *jsiiProxy_DnsZoneV2RouterOutputReference) InterpolationForAttribute(pro
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -184,6 +184,9 @@ func (j *jsiiProxy_CssClusterV1NodesOutputReference) Type() *string {
 func NewCssClusterV1NodesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CssClusterV1NodesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCssClusterV1NodesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CssClusterV1NodesOutputReference{}
 
 	_jsii_.Create(
@@ -205,7 +208,10 @@ func NewCssClusterV1NodesOutputReference_Override(c CssClusterV1NodesOutputRefer
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CssClusterV1NodesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -213,7 +219,10 @@ func (j *jsiiProxy_CssClusterV1NodesOutputReference) SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CssClusterV1NodesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -221,7 +230,10 @@ func (j *jsiiProxy_CssClusterV1NodesOutputReference) SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodesOutputReference) SetInternalValue(val *CssClusterV1Nodes) {
+func (j *jsiiProxy_CssClusterV1NodesOutputReference)SetInternalValue(val *CssClusterV1Nodes) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -229,7 +241,10 @@ func (j *jsiiProxy_CssClusterV1NodesOutputReference) SetInternalValue(val *CssCl
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CssClusterV1NodesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -237,7 +252,10 @@ func (j *jsiiProxy_CssClusterV1NodesOutputReference) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CssClusterV1NodesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -259,6 +277,9 @@ func (c *jsiiProxy_CssClusterV1NodesOutputReference) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -272,6 +293,9 @@ func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetAnyMapAttribute(terrafor
 }
 
 func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -285,6 +309,9 @@ func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetBooleanAttribute(terrafo
 }
 
 func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -298,6 +325,9 @@ func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetBooleanMapAttribute(terr
 }
 
 func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -311,6 +341,9 @@ func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetListAttribute(terraformA
 }
 
 func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -324,6 +357,9 @@ func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetNumberAttribute(terrafor
 }
 
 func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -337,6 +373,9 @@ func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetNumberListAttribute(terr
 }
 
 func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -350,6 +389,9 @@ func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetNumberMapAttribute(terra
 }
 
 func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -363,6 +405,9 @@ func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetStringAttribute(terrafor
 }
 
 func (c *jsiiProxy_CssClusterV1NodesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -389,6 +434,9 @@ func (c *jsiiProxy_CssClusterV1NodesOutputReference) InterpolationAsList() cdktf
 }
 
 func (c *jsiiProxy_CssClusterV1NodesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -402,6 +450,9 @@ func (c *jsiiProxy_CssClusterV1NodesOutputReference) InterpolationForAttribute(p
 }
 
 func (c *jsiiProxy_CssClusterV1NodesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

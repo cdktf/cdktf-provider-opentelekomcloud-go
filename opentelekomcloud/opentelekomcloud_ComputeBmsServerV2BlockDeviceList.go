@@ -111,6 +111,9 @@ func (j *jsiiProxy_ComputeBmsServerV2BlockDeviceList) WrapsSet() *bool {
 func NewComputeBmsServerV2BlockDeviceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeBmsServerV2BlockDeviceList {
 	_init_.Initialize()
 
+	if err := validateNewComputeBmsServerV2BlockDeviceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ComputeBmsServerV2BlockDeviceList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewComputeBmsServerV2BlockDeviceList_Override(c ComputeBmsServerV2BlockDevi
 	)
 }
 
-func (j *jsiiProxy_ComputeBmsServerV2BlockDeviceList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeBmsServerV2BlockDeviceList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ComputeBmsServerV2BlockDeviceList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_ComputeBmsServerV2BlockDeviceList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeBmsServerV2BlockDeviceList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ComputeBmsServerV2BlockDeviceList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeBmsServerV2BlockDeviceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeBmsServerV2BlockDeviceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ComputeBmsServerV2BlockDeviceList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_ComputeBmsServerV2BlockDeviceList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ComputeBmsServerV2BlockDeviceList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (c *jsiiProxy_ComputeBmsServerV2BlockDeviceList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2BlockDeviceList) Get(index *float64) ComputeBmsServerV2BlockDeviceOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ComputeBmsServerV2BlockDeviceOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (c *jsiiProxy_ComputeBmsServerV2BlockDeviceList) Get(index *float64) Comput
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2BlockDeviceList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

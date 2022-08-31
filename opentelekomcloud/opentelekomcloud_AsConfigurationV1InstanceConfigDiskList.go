@@ -111,6 +111,9 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) WrapsSet() *bool {
 func NewAsConfigurationV1InstanceConfigDiskList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AsConfigurationV1InstanceConfigDiskList {
 	_init_.Initialize()
 
+	if err := validateNewAsConfigurationV1InstanceConfigDiskListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AsConfigurationV1InstanceConfigDiskList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAsConfigurationV1InstanceConfigDiskList_Override(a AsConfigurationV1Inst
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) ComputeFqn() *string
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) Get(index *float64) AsConfigurationV1InstanceConfigDiskOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AsConfigurationV1InstanceConfigDiskOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) Get(index *float64) 
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

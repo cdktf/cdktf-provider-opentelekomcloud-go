@@ -111,6 +111,9 @@ func (j *jsiiProxy_CceNodePoolV3TaintsList) WrapsSet() *bool {
 func NewCceNodePoolV3TaintsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CceNodePoolV3TaintsList {
 	_init_.Initialize()
 
+	if err := validateNewCceNodePoolV3TaintsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CceNodePoolV3TaintsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewCceNodePoolV3TaintsList_Override(c CceNodePoolV3TaintsList, terraformRes
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3TaintsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CceNodePoolV3TaintsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_CceNodePoolV3TaintsList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3TaintsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CceNodePoolV3TaintsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_CceNodePoolV3TaintsList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3TaintsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CceNodePoolV3TaintsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_CceNodePoolV3TaintsList) SetTerraformResource(val cdktf.IInte
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3TaintsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CceNodePoolV3TaintsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (c *jsiiProxy_CceNodePoolV3TaintsList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CceNodePoolV3TaintsList) Get(index *float64) CceNodePoolV3TaintsOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns CceNodePoolV3TaintsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (c *jsiiProxy_CceNodePoolV3TaintsList) Get(index *float64) CceNodePoolV3Tai
 }
 
 func (c *jsiiProxy_CceNodePoolV3TaintsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

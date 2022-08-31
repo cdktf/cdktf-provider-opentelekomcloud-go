@@ -247,6 +247,9 @@ func (j *jsiiProxy_S3BucketWebsiteOutputReference) TerraformResource() cdktf.IIn
 func NewS3BucketWebsiteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewS3BucketWebsiteOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_S3BucketWebsiteOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewS3BucketWebsiteOutputReference_Override(s S3BucketWebsiteOutputReference
 	)
 }
 
-func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_S3BucketWebsiteOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_S3BucketWebsiteOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetErrorDocument(val *string) {
+func (j *jsiiProxy_S3BucketWebsiteOutputReference)SetErrorDocument(val *string) {
+	if err := j.validateSetErrorDocumentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"errorDocument",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetErrorDocument(val *string)
 	)
 }
 
-func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetIndexDocument(val *string) {
+func (j *jsiiProxy_S3BucketWebsiteOutputReference)SetIndexDocument(val *string) {
+	if err := j.validateSetIndexDocumentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"indexDocument",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetIndexDocument(val *string)
 	)
 }
 
-func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetInternalValue(val *S3BucketWebsite) {
+func (j *jsiiProxy_S3BucketWebsiteOutputReference)SetInternalValue(val *S3BucketWebsite) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetInternalValue(val *S3Bucke
 	)
 }
 
-func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetRedirectAllRequestsTo(val *string) {
+func (j *jsiiProxy_S3BucketWebsiteOutputReference)SetRedirectAllRequestsTo(val *string) {
+	if err := j.validateSetRedirectAllRequestsToParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"redirectAllRequestsTo",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetRedirectAllRequestsTo(val 
 	)
 }
 
-func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetRoutingRules(val *string) {
+func (j *jsiiProxy_S3BucketWebsiteOutputReference)SetRoutingRules(val *string) {
+	if err := j.validateSetRoutingRulesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"routingRules",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetRoutingRules(val *string) 
 	)
 }
 
-func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketWebsiteOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_S3BucketWebsiteOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketWebsiteOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -354,6 +384,9 @@ func (s *jsiiProxy_S3BucketWebsiteOutputReference) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetAnyMapAttribute(terraformA
 }
 
 func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetBooleanAttribute(terraform
 }
 
 func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetBooleanMapAttribute(terraf
 }
 
 func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetListAttribute(terraformAtt
 }
 
 func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetNumberAttribute(terraformA
 }
 
 func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetNumberListAttribute(terraf
 }
 
 func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetNumberMapAttribute(terrafo
 }
 
 func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetStringAttribute(terraformA
 }
 
 func (s *jsiiProxy_S3BucketWebsiteOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (s *jsiiProxy_S3BucketWebsiteOutputReference) InterpolationAsList() cdktf.I
 }
 
 func (s *jsiiProxy_S3BucketWebsiteOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (s *jsiiProxy_S3BucketWebsiteOutputReference) ResetRoutingRules() {
 }
 
 func (s *jsiiProxy_S3BucketWebsiteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

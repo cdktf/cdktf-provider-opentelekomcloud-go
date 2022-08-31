@@ -111,6 +111,9 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleExpirationList) WrapsSet() *bool {
 func NewObsBucketLifecycleRuleExpirationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObsBucketLifecycleRuleExpirationList {
 	_init_.Initialize()
 
+	if err := validateNewObsBucketLifecycleRuleExpirationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ObsBucketLifecycleRuleExpirationList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewObsBucketLifecycleRuleExpirationList_Override(o ObsBucketLifecycleRuleEx
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleExpirationList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleExpirationList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleExpirationList) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleExpirationList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleExpirationList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleExpirationList) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleExpirationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleExpirationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleExpirationList) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleExpirationList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleExpirationList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleExpirationList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleExpirationList) Get(index *float64) ObsBucketLifecycleRuleExpirationOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ObsBucketLifecycleRuleExpirationOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleExpirationList) Get(index *float64) Obs
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleExpirationList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

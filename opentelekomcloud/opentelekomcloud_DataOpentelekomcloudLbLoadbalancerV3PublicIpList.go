@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) WrapsSet() 
 func NewDataOpentelekomcloudLbLoadbalancerV3PublicIpList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudLbLoadbalancerV3PublicIpList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudLbLoadbalancerV3PublicIpListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudLbLoadbalancerV3PublicIpList_Override(d DataOpentele
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) ComputeFqn(
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) Get(index *float64) DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) Get(index *
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

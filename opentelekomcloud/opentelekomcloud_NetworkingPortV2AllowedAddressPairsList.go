@@ -111,6 +111,9 @@ func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) WrapsSet() *bool {
 func NewNetworkingPortV2AllowedAddressPairsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkingPortV2AllowedAddressPairsList {
 	_init_.Initialize()
 
+	if err := validateNewNetworkingPortV2AllowedAddressPairsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NetworkingPortV2AllowedAddressPairsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewNetworkingPortV2AllowedAddressPairsList_Override(n NetworkingPortV2Allow
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) ComputeFqn() *string
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) Get(index *float64) NetworkingPortV2AllowedAddressPairsOutputReference {
+	if err := n.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns NetworkingPortV2AllowedAddressPairsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) Get(index *float64) 
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

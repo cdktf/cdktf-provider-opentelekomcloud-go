@@ -111,6 +111,9 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList) WrapsSe
 func NewS3BucketLifecycleRuleNoncurrentVersionExpirationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketLifecycleRuleNoncurrentVersionExpirationList {
 	_init_.Initialize()
 
+	if err := validateNewS3BucketLifecycleRuleNoncurrentVersionExpirationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewS3BucketLifecycleRuleNoncurrentVersionExpirationList_Override(s S3Bucket
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList) SetInte
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList) SetTerr
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList) SetTerr
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList) Compute
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList) Get(index *float64) S3BucketLifecycleRuleNoncurrentVersionExpirationOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns S3BucketLifecycleRuleNoncurrentVersionExpirationOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList) Get(ind
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

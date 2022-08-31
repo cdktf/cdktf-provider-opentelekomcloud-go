@@ -419,6 +419,9 @@ func (j *jsiiProxy_WafCertificateV1) TimeoutsInput() interface{} {
 func NewWafCertificateV1(scope constructs.Construct, id *string, config *WafCertificateV1Config) WafCertificateV1 {
 	_init_.Initialize()
 
+	if err := validateNewWafCertificateV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WafCertificateV1{}
 
 	_jsii_.Create(
@@ -441,7 +444,10 @@ func NewWafCertificateV1_Override(w WafCertificateV1, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_WafCertificateV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_WafCertificateV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -449,7 +455,10 @@ func (j *jsiiProxy_WafCertificateV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafCertificateV1) SetContent(val *string) {
+func (j *jsiiProxy_WafCertificateV1)SetContent(val *string) {
+	if err := j.validateSetContentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"content",
@@ -457,7 +466,7 @@ func (j *jsiiProxy_WafCertificateV1) SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafCertificateV1) SetCount(val *float64) {
+func (j *jsiiProxy_WafCertificateV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -465,7 +474,7 @@ func (j *jsiiProxy_WafCertificateV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WafCertificateV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WafCertificateV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -473,7 +482,7 @@ func (j *jsiiProxy_WafCertificateV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafCertificateV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WafCertificateV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -481,7 +490,10 @@ func (j *jsiiProxy_WafCertificateV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WafCertificateV1) SetId(val *string) {
+func (j *jsiiProxy_WafCertificateV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -489,7 +501,10 @@ func (j *jsiiProxy_WafCertificateV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafCertificateV1) SetKey(val *string) {
+func (j *jsiiProxy_WafCertificateV1)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -497,7 +512,10 @@ func (j *jsiiProxy_WafCertificateV1) SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafCertificateV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WafCertificateV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -505,7 +523,10 @@ func (j *jsiiProxy_WafCertificateV1) SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_WafCertificateV1) SetName(val *string) {
+func (j *jsiiProxy_WafCertificateV1)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -513,7 +534,7 @@ func (j *jsiiProxy_WafCertificateV1) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafCertificateV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WafCertificateV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -521,7 +542,10 @@ func (j *jsiiProxy_WafCertificateV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WafCertificateV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WafCertificateV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -529,7 +553,10 @@ func (j *jsiiProxy_WafCertificateV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafCertificateV1) SetRegion(val *string) {
+func (j *jsiiProxy_WafCertificateV1)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -557,6 +584,9 @@ func (j *jsiiProxy_WafCertificateV1) SetRegion(val *string) {
 func WafCertificateV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateWafCertificateV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -581,6 +611,9 @@ func WafCertificateV1_TfResourceType() *string {
 }
 
 func (w *jsiiProxy_WafCertificateV1) AddOverride(path *string, value interface{}) {
+	if err := w.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
@@ -589,6 +622,9 @@ func (w *jsiiProxy_WafCertificateV1) AddOverride(path *string, value interface{}
 }
 
 func (w *jsiiProxy_WafCertificateV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -602,6 +638,9 @@ func (w *jsiiProxy_WafCertificateV1) GetAnyMapAttribute(terraformAttribute *stri
 }
 
 func (w *jsiiProxy_WafCertificateV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -615,6 +654,9 @@ func (w *jsiiProxy_WafCertificateV1) GetBooleanAttribute(terraformAttribute *str
 }
 
 func (w *jsiiProxy_WafCertificateV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -628,6 +670,9 @@ func (w *jsiiProxy_WafCertificateV1) GetBooleanMapAttribute(terraformAttribute *
 }
 
 func (w *jsiiProxy_WafCertificateV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -641,6 +686,9 @@ func (w *jsiiProxy_WafCertificateV1) GetListAttribute(terraformAttribute *string
 }
 
 func (w *jsiiProxy_WafCertificateV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -654,6 +702,9 @@ func (w *jsiiProxy_WafCertificateV1) GetNumberAttribute(terraformAttribute *stri
 }
 
 func (w *jsiiProxy_WafCertificateV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -667,6 +718,9 @@ func (w *jsiiProxy_WafCertificateV1) GetNumberListAttribute(terraformAttribute *
 }
 
 func (w *jsiiProxy_WafCertificateV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -680,6 +734,9 @@ func (w *jsiiProxy_WafCertificateV1) GetNumberMapAttribute(terraformAttribute *s
 }
 
 func (w *jsiiProxy_WafCertificateV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -693,6 +750,9 @@ func (w *jsiiProxy_WafCertificateV1) GetStringAttribute(terraformAttribute *stri
 }
 
 func (w *jsiiProxy_WafCertificateV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -706,6 +766,9 @@ func (w *jsiiProxy_WafCertificateV1) GetStringMapAttribute(terraformAttribute *s
 }
 
 func (w *jsiiProxy_WafCertificateV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -719,6 +782,9 @@ func (w *jsiiProxy_WafCertificateV1) InterpolationForAttribute(terraformAttribut
 }
 
 func (w *jsiiProxy_WafCertificateV1) OverrideLogicalId(newLogicalId *string) {
+	if err := w.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
@@ -727,6 +793,9 @@ func (w *jsiiProxy_WafCertificateV1) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (w *jsiiProxy_WafCertificateV1) PutTimeouts(value *WafCertificateV1Timeouts) {
+	if err := w.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"putTimeouts",

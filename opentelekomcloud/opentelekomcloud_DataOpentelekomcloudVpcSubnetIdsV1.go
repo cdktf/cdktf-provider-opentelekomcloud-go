@@ -321,6 +321,9 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) VpcIdInput() *string {
 func NewDataOpentelekomcloudVpcSubnetIdsV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcSubnetIdsV1Config) DataOpentelekomcloudVpcSubnetIdsV1 {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudVpcSubnetIdsV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1{}
 
 	_jsii_.Create(
@@ -343,7 +346,7 @@ func NewDataOpentelekomcloudVpcSubnetIdsV1_Override(d DataOpentelekomcloudVpcSub
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -351,7 +354,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -359,7 +362,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -367,7 +370,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -375,7 +381,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -383,7 +392,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -391,7 +400,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetRegion(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -399,7 +411,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetVpcId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcId",
@@ -427,6 +442,9 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) SetVpcId(val *string) {
 func DataOpentelekomcloudVpcSubnetIdsV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataOpentelekomcloudVpcSubnetIdsV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -451,6 +469,9 @@ func DataOpentelekomcloudVpcSubnetIdsV1_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -459,6 +480,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) AddOverride(path *string,
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -472,6 +496,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetAnyMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -485,6 +512,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetBooleanAttribute(terra
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -498,6 +528,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetBooleanMapAttribute(te
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -511,6 +544,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetListAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -524,6 +560,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetNumberAttribute(terraf
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -537,6 +576,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetNumberListAttribute(te
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -550,6 +592,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetNumberMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -563,6 +608,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetStringAttribute(terraf
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -576,6 +624,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) GetStringMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -589,6 +640,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) InterpolationForAttribute
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

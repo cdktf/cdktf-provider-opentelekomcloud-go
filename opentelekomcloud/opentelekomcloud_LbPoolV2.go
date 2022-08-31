@@ -553,6 +553,9 @@ func (j *jsiiProxy_LbPoolV2) TimeoutsInput() interface{} {
 func NewLbPoolV2(scope constructs.Construct, id *string, config *LbPoolV2Config) LbPoolV2 {
 	_init_.Initialize()
 
+	if err := validateNewLbPoolV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LbPoolV2{}
 
 	_jsii_.Create(
@@ -575,7 +578,10 @@ func NewLbPoolV2_Override(l LbPoolV2, scope constructs.Construct, id *string, co
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetAdminStateUp(val interface{}) {
+func (j *jsiiProxy_LbPoolV2)SetAdminStateUp(val interface{}) {
+	if err := j.validateSetAdminStateUpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adminStateUp",
@@ -583,7 +589,10 @@ func (j *jsiiProxy_LbPoolV2) SetAdminStateUp(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_LbPoolV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -591,7 +600,7 @@ func (j *jsiiProxy_LbPoolV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetCount(val *float64) {
+func (j *jsiiProxy_LbPoolV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -599,7 +608,7 @@ func (j *jsiiProxy_LbPoolV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LbPoolV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -607,7 +616,10 @@ func (j *jsiiProxy_LbPoolV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetDescription(val *string) {
+func (j *jsiiProxy_LbPoolV2)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -615,7 +627,7 @@ func (j *jsiiProxy_LbPoolV2) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LbPoolV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -623,7 +635,10 @@ func (j *jsiiProxy_LbPoolV2) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetId(val *string) {
+func (j *jsiiProxy_LbPoolV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -631,7 +646,10 @@ func (j *jsiiProxy_LbPoolV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetLbMethod(val *string) {
+func (j *jsiiProxy_LbPoolV2)SetLbMethod(val *string) {
+	if err := j.validateSetLbMethodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lbMethod",
@@ -639,7 +657,10 @@ func (j *jsiiProxy_LbPoolV2) SetLbMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LbPoolV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -647,7 +668,10 @@ func (j *jsiiProxy_LbPoolV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetListenerId(val *string) {
+func (j *jsiiProxy_LbPoolV2)SetListenerId(val *string) {
+	if err := j.validateSetListenerIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"listenerId",
@@ -655,7 +679,10 @@ func (j *jsiiProxy_LbPoolV2) SetListenerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetLoadbalancerId(val *string) {
+func (j *jsiiProxy_LbPoolV2)SetLoadbalancerId(val *string) {
+	if err := j.validateSetLoadbalancerIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"loadbalancerId",
@@ -663,7 +690,10 @@ func (j *jsiiProxy_LbPoolV2) SetLoadbalancerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetName(val *string) {
+func (j *jsiiProxy_LbPoolV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -671,7 +701,10 @@ func (j *jsiiProxy_LbPoolV2) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetProtocol(val *string) {
+func (j *jsiiProxy_LbPoolV2)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protocol",
@@ -679,7 +712,7 @@ func (j *jsiiProxy_LbPoolV2) SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LbPoolV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -687,7 +720,10 @@ func (j *jsiiProxy_LbPoolV2) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LbPoolV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -695,7 +731,10 @@ func (j *jsiiProxy_LbPoolV2) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetRegion(val *string) {
+func (j *jsiiProxy_LbPoolV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -703,7 +742,10 @@ func (j *jsiiProxy_LbPoolV2) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2) SetTenantId(val *string) {
+func (j *jsiiProxy_LbPoolV2)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -731,6 +773,9 @@ func (j *jsiiProxy_LbPoolV2) SetTenantId(val *string) {
 func LbPoolV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateLbPoolV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -755,6 +800,9 @@ func LbPoolV2_TfResourceType() *string {
 }
 
 func (l *jsiiProxy_LbPoolV2) AddOverride(path *string, value interface{}) {
+	if err := l.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
@@ -763,6 +811,9 @@ func (l *jsiiProxy_LbPoolV2) AddOverride(path *string, value interface{}) {
 }
 
 func (l *jsiiProxy_LbPoolV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -776,6 +827,9 @@ func (l *jsiiProxy_LbPoolV2) GetAnyMapAttribute(terraformAttribute *string) *map
 }
 
 func (l *jsiiProxy_LbPoolV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -789,6 +843,9 @@ func (l *jsiiProxy_LbPoolV2) GetBooleanAttribute(terraformAttribute *string) cdk
 }
 
 func (l *jsiiProxy_LbPoolV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -802,6 +859,9 @@ func (l *jsiiProxy_LbPoolV2) GetBooleanMapAttribute(terraformAttribute *string) 
 }
 
 func (l *jsiiProxy_LbPoolV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -815,6 +875,9 @@ func (l *jsiiProxy_LbPoolV2) GetListAttribute(terraformAttribute *string) *[]*st
 }
 
 func (l *jsiiProxy_LbPoolV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -828,6 +891,9 @@ func (l *jsiiProxy_LbPoolV2) GetNumberAttribute(terraformAttribute *string) *flo
 }
 
 func (l *jsiiProxy_LbPoolV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -841,6 +907,9 @@ func (l *jsiiProxy_LbPoolV2) GetNumberListAttribute(terraformAttribute *string) 
 }
 
 func (l *jsiiProxy_LbPoolV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -854,6 +923,9 @@ func (l *jsiiProxy_LbPoolV2) GetNumberMapAttribute(terraformAttribute *string) *
 }
 
 func (l *jsiiProxy_LbPoolV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -867,6 +939,9 @@ func (l *jsiiProxy_LbPoolV2) GetStringAttribute(terraformAttribute *string) *str
 }
 
 func (l *jsiiProxy_LbPoolV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -880,6 +955,9 @@ func (l *jsiiProxy_LbPoolV2) GetStringMapAttribute(terraformAttribute *string) *
 }
 
 func (l *jsiiProxy_LbPoolV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -893,6 +971,9 @@ func (l *jsiiProxy_LbPoolV2) InterpolationForAttribute(terraformAttribute *strin
 }
 
 func (l *jsiiProxy_LbPoolV2) OverrideLogicalId(newLogicalId *string) {
+	if err := l.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
@@ -901,6 +982,9 @@ func (l *jsiiProxy_LbPoolV2) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (l *jsiiProxy_LbPoolV2) PutPersistence(value interface{}) {
+	if err := l.validatePutPersistenceParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"putPersistence",
@@ -909,6 +993,9 @@ func (l *jsiiProxy_LbPoolV2) PutPersistence(value interface{}) {
 }
 
 func (l *jsiiProxy_LbPoolV2) PutTimeouts(value *LbPoolV2Timeouts) {
+	if err := l.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",

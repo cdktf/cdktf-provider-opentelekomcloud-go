@@ -245,6 +245,9 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) VolumetypeInput() *s
 func NewCceNodePoolV3DataVolumesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CceNodePoolV3DataVolumesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCceNodePoolV3DataVolumesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CceNodePoolV3DataVolumesOutputReference{}
 
 	_jsii_.Create(
@@ -266,7 +269,10 @@ func NewCceNodePoolV3DataVolumesOutputReference_Override(c CceNodePoolV3DataVolu
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -274,7 +280,10 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -282,7 +291,10 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetExtendParam(val *string) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference)SetExtendParam(val *string) {
+	if err := j.validateSetExtendParamParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"extendParam",
@@ -290,7 +302,10 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetExtendParam(val *
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -298,7 +313,10 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetKmsId(val *string) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference)SetKmsId(val *string) {
+	if err := j.validateSetKmsIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kmsId",
@@ -306,7 +324,10 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetKmsId(val *string
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetSize(val *float64) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -314,7 +335,10 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetSize(val *float64
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -322,7 +346,10 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -330,7 +357,10 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) SetVolumetype(val *string) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference)SetVolumetype(val *string) {
+	if err := j.validateSetVolumetypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumetype",
@@ -352,6 +382,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) ComputeFqn() *string
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -365,6 +398,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetAnyMapAttribute(t
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -378,6 +414,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetBooleanAttribute(
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -391,6 +430,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetBooleanMapAttribu
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -404,6 +446,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetListAttribute(ter
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -417,6 +462,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetNumberAttribute(t
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -430,6 +478,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetNumberListAttribu
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -443,6 +494,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetNumberMapAttribut
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -456,6 +510,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetStringAttribute(t
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -482,6 +539,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) InterpolationAsList(
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -511,6 +571,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) ResetKmsId() {
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -223,6 +223,9 @@ func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) UpdateInput() *str
 func NewComputeBmsServerV2TimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeBmsServerV2TimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewComputeBmsServerV2TimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewComputeBmsServerV2TimeoutsOutputReference_Override(c ComputeBmsServerV2T
 	)
 }
 
-func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetCreate(val *str
 	)
 }
 
-func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetDelete(val *string) {
+func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delete",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetDelete(val *str
 	)
 }
 
-func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) SetUpdate(val *string) {
+func (j *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"update",
@@ -322,6 +349,9 @@ func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) ComputeFqn() *stri
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetAnyMapAttribute
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetBooleanAttribut
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetBooleanMapAttri
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetListAttribute(t
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetNumberAttribute
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetNumberListAttri
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetNumberMapAttrib
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetStringAttribute
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) InterpolationAsLis
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) ResetUpdate() {
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2TimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

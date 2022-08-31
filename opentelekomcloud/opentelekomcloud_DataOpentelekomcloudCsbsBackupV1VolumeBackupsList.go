@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList) WrapsSet()
 func NewDataOpentelekomcloudCsbsBackupV1VolumeBackupsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudCsbsBackupV1VolumeBackupsList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudCsbsBackupV1VolumeBackupsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudCsbsBackupV1VolumeBackupsList_Override(d DataOpentel
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList) ComputeFqn
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList) Get(index *float64) DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList) Get(index 
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VolumeBackupsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

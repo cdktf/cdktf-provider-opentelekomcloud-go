@@ -337,6 +337,9 @@ func (j *jsiiProxy_ObsBucketPolicy) TerraformResourceType() *string {
 func NewObsBucketPolicy(scope constructs.Construct, id *string, config *ObsBucketPolicyConfig) ObsBucketPolicy {
 	_init_.Initialize()
 
+	if err := validateNewObsBucketPolicyParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ObsBucketPolicy{}
 
 	_jsii_.Create(
@@ -359,7 +362,10 @@ func NewObsBucketPolicy_Override(o ObsBucketPolicy, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_ObsBucketPolicy) SetBucket(val *string) {
+func (j *jsiiProxy_ObsBucketPolicy)SetBucket(val *string) {
+	if err := j.validateSetBucketParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bucket",
@@ -367,7 +373,10 @@ func (j *jsiiProxy_ObsBucketPolicy) SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObsBucketPolicy) SetConnection(val interface{}) {
+func (j *jsiiProxy_ObsBucketPolicy)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -375,7 +384,7 @@ func (j *jsiiProxy_ObsBucketPolicy) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ObsBucketPolicy) SetCount(val *float64) {
+func (j *jsiiProxy_ObsBucketPolicy)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -383,7 +392,7 @@ func (j *jsiiProxy_ObsBucketPolicy) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ObsBucketPolicy) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ObsBucketPolicy)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -391,7 +400,7 @@ func (j *jsiiProxy_ObsBucketPolicy) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ObsBucketPolicy) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ObsBucketPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -399,7 +408,10 @@ func (j *jsiiProxy_ObsBucketPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ObsBucketPolicy) SetId(val *string) {
+func (j *jsiiProxy_ObsBucketPolicy)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -407,7 +419,10 @@ func (j *jsiiProxy_ObsBucketPolicy) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObsBucketPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ObsBucketPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -415,7 +430,10 @@ func (j *jsiiProxy_ObsBucketPolicy) SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_ObsBucketPolicy) SetPolicy(val *string) {
+func (j *jsiiProxy_ObsBucketPolicy)SetPolicy(val *string) {
+	if err := j.validateSetPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policy",
@@ -423,7 +441,7 @@ func (j *jsiiProxy_ObsBucketPolicy) SetPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObsBucketPolicy) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ObsBucketPolicy)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -431,7 +449,10 @@ func (j *jsiiProxy_ObsBucketPolicy) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ObsBucketPolicy) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ObsBucketPolicy)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -459,6 +480,9 @@ func (j *jsiiProxy_ObsBucketPolicy) SetProvisioners(val *[]interface{}) {
 func ObsBucketPolicy_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateObsBucketPolicy_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -483,6 +507,9 @@ func ObsBucketPolicy_TfResourceType() *string {
 }
 
 func (o *jsiiProxy_ObsBucketPolicy) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
@@ -491,6 +518,9 @@ func (o *jsiiProxy_ObsBucketPolicy) AddOverride(path *string, value interface{})
 }
 
 func (o *jsiiProxy_ObsBucketPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -504,6 +534,9 @@ func (o *jsiiProxy_ObsBucketPolicy) GetAnyMapAttribute(terraformAttribute *strin
 }
 
 func (o *jsiiProxy_ObsBucketPolicy) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -517,6 +550,9 @@ func (o *jsiiProxy_ObsBucketPolicy) GetBooleanAttribute(terraformAttribute *stri
 }
 
 func (o *jsiiProxy_ObsBucketPolicy) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -530,6 +566,9 @@ func (o *jsiiProxy_ObsBucketPolicy) GetBooleanMapAttribute(terraformAttribute *s
 }
 
 func (o *jsiiProxy_ObsBucketPolicy) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -543,6 +582,9 @@ func (o *jsiiProxy_ObsBucketPolicy) GetListAttribute(terraformAttribute *string)
 }
 
 func (o *jsiiProxy_ObsBucketPolicy) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -556,6 +598,9 @@ func (o *jsiiProxy_ObsBucketPolicy) GetNumberAttribute(terraformAttribute *strin
 }
 
 func (o *jsiiProxy_ObsBucketPolicy) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -569,6 +614,9 @@ func (o *jsiiProxy_ObsBucketPolicy) GetNumberListAttribute(terraformAttribute *s
 }
 
 func (o *jsiiProxy_ObsBucketPolicy) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -582,6 +630,9 @@ func (o *jsiiProxy_ObsBucketPolicy) GetNumberMapAttribute(terraformAttribute *st
 }
 
 func (o *jsiiProxy_ObsBucketPolicy) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -595,6 +646,9 @@ func (o *jsiiProxy_ObsBucketPolicy) GetStringAttribute(terraformAttribute *strin
 }
 
 func (o *jsiiProxy_ObsBucketPolicy) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -608,6 +662,9 @@ func (o *jsiiProxy_ObsBucketPolicy) GetStringMapAttribute(terraformAttribute *st
 }
 
 func (o *jsiiProxy_ObsBucketPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -621,6 +678,9 @@ func (o *jsiiProxy_ObsBucketPolicy) InterpolationForAttribute(terraformAttribute
 }
 
 func (o *jsiiProxy_ObsBucketPolicy) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",

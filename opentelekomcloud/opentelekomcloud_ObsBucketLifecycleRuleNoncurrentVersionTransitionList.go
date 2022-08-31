@@ -111,6 +111,9 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList) WrapsS
 func NewObsBucketLifecycleRuleNoncurrentVersionTransitionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObsBucketLifecycleRuleNoncurrentVersionTransitionList {
 	_init_.Initialize()
 
+	if err := validateNewObsBucketLifecycleRuleNoncurrentVersionTransitionListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewObsBucketLifecycleRuleNoncurrentVersionTransitionList_Override(o ObsBuck
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList) SetInt
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList) SetTer
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList) SetTer
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList) Comput
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList) Get(index *float64) ObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList) Get(in
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionTransitionList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

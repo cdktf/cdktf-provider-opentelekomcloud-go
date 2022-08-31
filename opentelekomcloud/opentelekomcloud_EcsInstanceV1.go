@@ -739,6 +739,9 @@ func (j *jsiiProxy_EcsInstanceV1) VpcIdInput() *string {
 func NewEcsInstanceV1(scope constructs.Construct, id *string, config *EcsInstanceV1Config) EcsInstanceV1 {
 	_init_.Initialize()
 
+	if err := validateNewEcsInstanceV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EcsInstanceV1{}
 
 	_jsii_.Create(
@@ -761,7 +764,10 @@ func NewEcsInstanceV1_Override(e EcsInstanceV1, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetAutoRecovery(val interface{}) {
+func (j *jsiiProxy_EcsInstanceV1)SetAutoRecovery(val interface{}) {
+	if err := j.validateSetAutoRecoveryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoRecovery",
@@ -769,7 +775,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetAutoRecovery(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_EcsInstanceV1)SetAvailabilityZone(val *string) {
+	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availabilityZone",
@@ -777,7 +786,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_EcsInstanceV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -785,7 +797,7 @@ func (j *jsiiProxy_EcsInstanceV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetCount(val *float64) {
+func (j *jsiiProxy_EcsInstanceV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -793,7 +805,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetDeleteDisksOnTermination(val interface{}) {
+func (j *jsiiProxy_EcsInstanceV1)SetDeleteDisksOnTermination(val interface{}) {
+	if err := j.validateSetDeleteDisksOnTerminationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deleteDisksOnTermination",
@@ -801,7 +816,7 @@ func (j *jsiiProxy_EcsInstanceV1) SetDeleteDisksOnTermination(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EcsInstanceV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -809,7 +824,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetFlavor(val *string) {
+func (j *jsiiProxy_EcsInstanceV1)SetFlavor(val *string) {
+	if err := j.validateSetFlavorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"flavor",
@@ -817,7 +835,7 @@ func (j *jsiiProxy_EcsInstanceV1) SetFlavor(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EcsInstanceV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -825,7 +843,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetId(val *string) {
+func (j *jsiiProxy_EcsInstanceV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -833,7 +854,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetImageId(val *string) {
+func (j *jsiiProxy_EcsInstanceV1)SetImageId(val *string) {
+	if err := j.validateSetImageIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"imageId",
@@ -841,7 +865,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetImageId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetKeyName(val *string) {
+func (j *jsiiProxy_EcsInstanceV1)SetKeyName(val *string) {
+	if err := j.validateSetKeyNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyName",
@@ -849,7 +876,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EcsInstanceV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -857,7 +887,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetName(val *string) {
+func (j *jsiiProxy_EcsInstanceV1)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -865,7 +898,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetPassword(val *string) {
+func (j *jsiiProxy_EcsInstanceV1)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -873,7 +909,7 @@ func (j *jsiiProxy_EcsInstanceV1) SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EcsInstanceV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -881,7 +917,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EcsInstanceV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -889,7 +928,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_EcsInstanceV1)SetSecurityGroups(val *[]*string) {
+	if err := j.validateSetSecurityGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityGroups",
@@ -897,7 +939,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetSecurityGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetSystemDiskKmsId(val *string) {
+func (j *jsiiProxy_EcsInstanceV1)SetSystemDiskKmsId(val *string) {
+	if err := j.validateSetSystemDiskKmsIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"systemDiskKmsId",
@@ -905,7 +950,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetSystemDiskKmsId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetSystemDiskSize(val *float64) {
+func (j *jsiiProxy_EcsInstanceV1)SetSystemDiskSize(val *float64) {
+	if err := j.validateSetSystemDiskSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"systemDiskSize",
@@ -913,7 +961,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetSystemDiskSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetSystemDiskType(val *string) {
+func (j *jsiiProxy_EcsInstanceV1)SetSystemDiskType(val *string) {
+	if err := j.validateSetSystemDiskTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"systemDiskType",
@@ -921,7 +972,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetSystemDiskType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EcsInstanceV1)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -929,7 +983,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetUserData(val *string) {
+func (j *jsiiProxy_EcsInstanceV1)SetUserData(val *string) {
+	if err := j.validateSetUserDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userData",
@@ -937,7 +994,10 @@ func (j *jsiiProxy_EcsInstanceV1) SetUserData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1) SetVpcId(val *string) {
+func (j *jsiiProxy_EcsInstanceV1)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcId",
@@ -965,6 +1025,9 @@ func (j *jsiiProxy_EcsInstanceV1) SetVpcId(val *string) {
 func EcsInstanceV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateEcsInstanceV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -989,6 +1052,9 @@ func EcsInstanceV1_TfResourceType() *string {
 }
 
 func (e *jsiiProxy_EcsInstanceV1) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
@@ -997,6 +1063,9 @@ func (e *jsiiProxy_EcsInstanceV1) AddOverride(path *string, value interface{}) {
 }
 
 func (e *jsiiProxy_EcsInstanceV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1010,6 +1079,9 @@ func (e *jsiiProxy_EcsInstanceV1) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (e *jsiiProxy_EcsInstanceV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1023,6 +1095,9 @@ func (e *jsiiProxy_EcsInstanceV1) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (e *jsiiProxy_EcsInstanceV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1036,6 +1111,9 @@ func (e *jsiiProxy_EcsInstanceV1) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (e *jsiiProxy_EcsInstanceV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1049,6 +1127,9 @@ func (e *jsiiProxy_EcsInstanceV1) GetListAttribute(terraformAttribute *string) *
 }
 
 func (e *jsiiProxy_EcsInstanceV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1062,6 +1143,9 @@ func (e *jsiiProxy_EcsInstanceV1) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (e *jsiiProxy_EcsInstanceV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1075,6 +1159,9 @@ func (e *jsiiProxy_EcsInstanceV1) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (e *jsiiProxy_EcsInstanceV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1088,6 +1175,9 @@ func (e *jsiiProxy_EcsInstanceV1) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (e *jsiiProxy_EcsInstanceV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1101,6 +1191,9 @@ func (e *jsiiProxy_EcsInstanceV1) GetStringAttribute(terraformAttribute *string)
 }
 
 func (e *jsiiProxy_EcsInstanceV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1114,6 +1207,9 @@ func (e *jsiiProxy_EcsInstanceV1) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (e *jsiiProxy_EcsInstanceV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1127,6 +1223,9 @@ func (e *jsiiProxy_EcsInstanceV1) InterpolationForAttribute(terraformAttribute *
 }
 
 func (e *jsiiProxy_EcsInstanceV1) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
@@ -1135,6 +1234,9 @@ func (e *jsiiProxy_EcsInstanceV1) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (e *jsiiProxy_EcsInstanceV1) PutDataDisks(value interface{}) {
+	if err := e.validatePutDataDisksParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putDataDisks",
@@ -1143,6 +1245,9 @@ func (e *jsiiProxy_EcsInstanceV1) PutDataDisks(value interface{}) {
 }
 
 func (e *jsiiProxy_EcsInstanceV1) PutNics(value interface{}) {
+	if err := e.validatePutNicsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putNics",
@@ -1151,6 +1256,9 @@ func (e *jsiiProxy_EcsInstanceV1) PutNics(value interface{}) {
 }
 
 func (e *jsiiProxy_EcsInstanceV1) PutTimeouts(value *EcsInstanceV1Timeouts) {
+	if err := e.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",

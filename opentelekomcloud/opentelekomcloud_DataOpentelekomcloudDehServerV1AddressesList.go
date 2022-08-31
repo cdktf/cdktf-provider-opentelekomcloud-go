@@ -111,6 +111,9 @@ func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) WrapsSet() *boo
 func NewDataOpentelekomcloudDehServerV1AddressesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudDehServerV1AddressesList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudDehServerV1AddressesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDataOpentelekomcloudDehServerV1AddressesList_Override(d DataOpentelekomc
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) ComputeFqn() *s
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) Get(index *float64) DataOpentelekomcloudDehServerV1AddressesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudDehServerV1AddressesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) Get(index *floa
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

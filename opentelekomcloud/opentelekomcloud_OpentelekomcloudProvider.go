@@ -785,6 +785,9 @@ func (j *jsiiProxy_OpentelekomcloudProvider) UserNameInput() *string {
 func NewOpentelekomcloudProvider(scope constructs.Construct, id *string, config *OpentelekomcloudProviderConfig) OpentelekomcloudProvider {
 	_init_.Initialize()
 
+	if err := validateNewOpentelekomcloudProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OpentelekomcloudProvider{}
 
 	_jsii_.Create(
@@ -807,7 +810,7 @@ func NewOpentelekomcloudProvider_Override(o OpentelekomcloudProvider, scope cons
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetAccessKey(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetAccessKey(val *string) {
 	_jsii_.Set(
 		j,
 		"accessKey",
@@ -815,7 +818,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetAccessKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetAgencyDomainName(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetAgencyDomainName(val *string) {
 	_jsii_.Set(
 		j,
 		"agencyDomainName",
@@ -823,7 +826,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetAgencyDomainName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetAgencyName(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetAgencyName(val *string) {
 	_jsii_.Set(
 		j,
 		"agencyName",
@@ -831,7 +834,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetAgencyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetAlias(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -839,7 +842,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetAuthUrl(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetAuthUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"authUrl",
@@ -847,7 +850,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetAuthUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetCacertFile(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetCacertFile(val *string) {
 	_jsii_.Set(
 		j,
 		"cacertFile",
@@ -855,7 +858,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetCacertFile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetCert(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetCert(val *string) {
 	_jsii_.Set(
 		j,
 		"cert",
@@ -863,7 +866,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetCert(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetCloud(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetCloud(val *string) {
 	_jsii_.Set(
 		j,
 		"cloud",
@@ -871,7 +874,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetCloud(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetDelegatedProject(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetDelegatedProject(val *string) {
 	_jsii_.Set(
 		j,
 		"delegatedProject",
@@ -879,7 +882,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetDelegatedProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetDomainId(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetDomainId(val *string) {
 	_jsii_.Set(
 		j,
 		"domainId",
@@ -887,7 +890,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetDomainId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetDomainName(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetDomainName(val *string) {
 	_jsii_.Set(
 		j,
 		"domainName",
@@ -895,7 +898,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetDomainName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetEndpointType(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetEndpointType(val *string) {
 	_jsii_.Set(
 		j,
 		"endpointType",
@@ -903,7 +906,10 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetEndpointType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetInsecure(val interface{}) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetInsecure(val interface{}) {
+	if err := j.validateSetInsecureParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"insecure",
@@ -911,7 +917,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetInsecure(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetKey(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetKey(val *string) {
 	_jsii_.Set(
 		j,
 		"key",
@@ -919,7 +925,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetMaxRetries(val *float64) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetMaxRetries(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxRetries",
@@ -927,7 +933,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetMaxRetries(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetPasscode(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetPasscode(val *string) {
 	_jsii_.Set(
 		j,
 		"passcode",
@@ -935,7 +941,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetPasscode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetPassword(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
@@ -943,7 +949,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetRegion(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
@@ -951,7 +957,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetSecretKey(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetSecretKey(val *string) {
 	_jsii_.Set(
 		j,
 		"secretKey",
@@ -959,7 +965,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetSecretKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetSecurityToken(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetSecurityToken(val *string) {
 	_jsii_.Set(
 		j,
 		"securityToken",
@@ -967,7 +973,10 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetSecurityToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetSwauth(val interface{}) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetSwauth(val interface{}) {
+	if err := j.validateSetSwauthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"swauth",
@@ -975,7 +984,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetSwauth(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetTenantId(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetTenantId(val *string) {
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -983,7 +992,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetTenantId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetTenantName(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetTenantName(val *string) {
 	_jsii_.Set(
 		j,
 		"tenantName",
@@ -991,7 +1000,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetTenantName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetToken(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -999,7 +1008,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetUserId(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetUserId(val *string) {
 	_jsii_.Set(
 		j,
 		"userId",
@@ -1007,7 +1016,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetUserId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpentelekomcloudProvider) SetUserName(val *string) {
+func (j *jsiiProxy_OpentelekomcloudProvider)SetUserName(val *string) {
 	_jsii_.Set(
 		j,
 		"userName",
@@ -1035,6 +1044,9 @@ func (j *jsiiProxy_OpentelekomcloudProvider) SetUserName(val *string) {
 func OpentelekomcloudProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateOpentelekomcloudProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1059,6 +1071,9 @@ func OpentelekomcloudProvider_TfResourceType() *string {
 }
 
 func (o *jsiiProxy_OpentelekomcloudProvider) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
@@ -1067,6 +1082,9 @@ func (o *jsiiProxy_OpentelekomcloudProvider) AddOverride(path *string, value int
 }
 
 func (o *jsiiProxy_OpentelekomcloudProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",

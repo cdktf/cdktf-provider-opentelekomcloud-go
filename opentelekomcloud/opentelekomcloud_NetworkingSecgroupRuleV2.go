@@ -576,6 +576,9 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) TimeoutsInput() interface{} {
 func NewNetworkingSecgroupRuleV2(scope constructs.Construct, id *string, config *NetworkingSecgroupRuleV2Config) NetworkingSecgroupRuleV2 {
 	_init_.Initialize()
 
+	if err := validateNewNetworkingSecgroupRuleV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NetworkingSecgroupRuleV2{}
 
 	_jsii_.Create(
@@ -598,7 +601,10 @@ func NewNetworkingSecgroupRuleV2_Override(n NetworkingSecgroupRuleV2, scope cons
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -606,7 +612,7 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetCount(val *float64) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -614,7 +620,7 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -622,7 +628,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetDescription(val *string) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -630,7 +639,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetDirection(val *string) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"direction",
@@ -638,7 +650,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetDirection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetEthertype(val *string) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetEthertype(val *string) {
+	if err := j.validateSetEthertypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ethertype",
@@ -646,7 +661,7 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetEthertype(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -654,7 +669,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetId(val *string) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -662,7 +680,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -670,7 +691,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetPortRangeMax(val *float64) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetPortRangeMax(val *float64) {
+	if err := j.validateSetPortRangeMaxParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"portRangeMax",
@@ -678,7 +702,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetPortRangeMax(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetPortRangeMin(val *float64) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetPortRangeMin(val *float64) {
+	if err := j.validateSetPortRangeMinParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"portRangeMin",
@@ -686,7 +713,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetPortRangeMin(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetProtocol(val *string) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protocol",
@@ -694,7 +724,7 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -702,7 +732,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -710,7 +743,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetRegion(val *string) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -718,7 +754,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetRemoteGroupId(val *string) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetRemoteGroupId(val *string) {
+	if err := j.validateSetRemoteGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"remoteGroupId",
@@ -726,7 +765,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetRemoteGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetRemoteIpPrefix(val *string) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetRemoteIpPrefix(val *string) {
+	if err := j.validateSetRemoteIpPrefixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"remoteIpPrefix",
@@ -734,7 +776,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetRemoteIpPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetSecurityGroupId(val *string) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetSecurityGroupId(val *string) {
+	if err := j.validateSetSecurityGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityGroupId",
@@ -742,7 +787,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetSecurityGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetTenantId(val *string) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -770,6 +818,9 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) SetTenantId(val *string) {
 func NetworkingSecgroupRuleV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateNetworkingSecgroupRuleV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -794,6 +845,9 @@ func NetworkingSecgroupRuleV2_TfResourceType() *string {
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
@@ -802,6 +856,9 @@ func (n *jsiiProxy_NetworkingSecgroupRuleV2) AddOverride(path *string, value int
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -815,6 +872,9 @@ func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetAnyMapAttribute(terraformAttribu
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -828,6 +888,9 @@ func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetBooleanAttribute(terraformAttrib
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -841,6 +904,9 @@ func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetBooleanMapAttribute(terraformAtt
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -854,6 +920,9 @@ func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetListAttribute(terraformAttribute
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -867,6 +936,9 @@ func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetNumberAttribute(terraformAttribu
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -880,6 +952,9 @@ func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetNumberListAttribute(terraformAtt
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -893,6 +968,9 @@ func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetNumberMapAttribute(terraformAttr
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -906,6 +984,9 @@ func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetStringAttribute(terraformAttribu
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -919,6 +1000,9 @@ func (n *jsiiProxy_NetworkingSecgroupRuleV2) GetStringMapAttribute(terraformAttr
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -932,6 +1016,9 @@ func (n *jsiiProxy_NetworkingSecgroupRuleV2) InterpolationForAttribute(terraform
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
@@ -940,6 +1027,9 @@ func (n *jsiiProxy_NetworkingSecgroupRuleV2) OverrideLogicalId(newLogicalId *str
 }
 
 func (n *jsiiProxy_NetworkingSecgroupRuleV2) PutTimeouts(value *NetworkingSecgroupRuleV2Timeouts) {
+	if err := n.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",

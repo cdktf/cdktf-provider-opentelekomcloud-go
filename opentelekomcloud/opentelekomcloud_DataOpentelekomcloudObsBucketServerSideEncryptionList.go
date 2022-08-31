@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList) WrapsS
 func NewDataOpentelekomcloudObsBucketServerSideEncryptionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudObsBucketServerSideEncryptionList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudObsBucketServerSideEncryptionListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudObsBucketServerSideEncryptionList_Override(d DataOpe
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList) SetTer
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList) SetTer
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList) Comput
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList) Get(index *float64) DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList) Get(in
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

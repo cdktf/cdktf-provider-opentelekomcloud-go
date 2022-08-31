@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList) WrapsSet() *b
 func NewDataOpentelekomcloudDdsInstanceV3DatastoreList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudDdsInstanceV3DatastoreList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudDdsInstanceV3DatastoreListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudDdsInstanceV3DatastoreList_Override(d DataOpenteleko
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList) ComputeFqn() 
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList) Get(index *float64) DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList) Get(index *fl
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3DatastoreList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

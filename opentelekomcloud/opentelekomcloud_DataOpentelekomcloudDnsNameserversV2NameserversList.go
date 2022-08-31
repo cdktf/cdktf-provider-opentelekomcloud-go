@@ -111,6 +111,9 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) WrapsSet
 func NewDataOpentelekomcloudDnsNameserversV2NameserversList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudDnsNameserversV2NameserversList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudDnsNameserversV2NameserversListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDataOpentelekomcloudDnsNameserversV2NameserversList_Override(d DataOpent
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) SetInter
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) ComputeF
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) Get(index *float64) DataOpentelekomcloudDnsNameserversV2NameserversOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudDnsNameserversV2NameserversOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) Get(inde
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -199,6 +199,9 @@ func (j *jsiiProxy_S3BucketVersioningOutputReference) TerraformResource() cdktf.
 func NewS3BucketVersioningOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) S3BucketVersioningOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewS3BucketVersioningOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_S3BucketVersioningOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewS3BucketVersioningOutputReference_Override(s S3BucketVersioningOutputRef
 	)
 }
 
-func (j *jsiiProxy_S3BucketVersioningOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_S3BucketVersioningOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_S3BucketVersioningOutputReference) SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_S3BucketVersioningOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_S3BucketVersioningOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_S3BucketVersioningOutputReference) SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_S3BucketVersioningOutputReference) SetEnabled(val interface{}) {
+func (j *jsiiProxy_S3BucketVersioningOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_S3BucketVersioningOutputReference) SetEnabled(val interface{}
 	)
 }
 
-func (j *jsiiProxy_S3BucketVersioningOutputReference) SetInternalValue(val *S3BucketVersioning) {
+func (j *jsiiProxy_S3BucketVersioningOutputReference)SetInternalValue(val *S3BucketVersioning) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_S3BucketVersioningOutputReference) SetInternalValue(val *S3Bu
 	)
 }
 
-func (j *jsiiProxy_S3BucketVersioningOutputReference) SetMfaDelete(val interface{}) {
+func (j *jsiiProxy_S3BucketVersioningOutputReference)SetMfaDelete(val interface{}) {
+	if err := j.validateSetMfaDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mfaDelete",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_S3BucketVersioningOutputReference) SetMfaDelete(val interface
 	)
 }
 
-func (j *jsiiProxy_S3BucketVersioningOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketVersioningOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_S3BucketVersioningOutputReference) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_S3BucketVersioningOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketVersioningOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (s *jsiiProxy_S3BucketVersioningOutputReference) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_S3BucketVersioningOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (s *jsiiProxy_S3BucketVersioningOutputReference) GetAnyMapAttribute(terrafo
 }
 
 func (s *jsiiProxy_S3BucketVersioningOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (s *jsiiProxy_S3BucketVersioningOutputReference) GetBooleanAttribute(terraf
 }
 
 func (s *jsiiProxy_S3BucketVersioningOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (s *jsiiProxy_S3BucketVersioningOutputReference) GetBooleanMapAttribute(ter
 }
 
 func (s *jsiiProxy_S3BucketVersioningOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (s *jsiiProxy_S3BucketVersioningOutputReference) GetListAttribute(terraform
 }
 
 func (s *jsiiProxy_S3BucketVersioningOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (s *jsiiProxy_S3BucketVersioningOutputReference) GetNumberAttribute(terrafo
 }
 
 func (s *jsiiProxy_S3BucketVersioningOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (s *jsiiProxy_S3BucketVersioningOutputReference) GetNumberListAttribute(ter
 }
 
 func (s *jsiiProxy_S3BucketVersioningOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (s *jsiiProxy_S3BucketVersioningOutputReference) GetNumberMapAttribute(terr
 }
 
 func (s *jsiiProxy_S3BucketVersioningOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (s *jsiiProxy_S3BucketVersioningOutputReference) GetStringAttribute(terrafo
 }
 
 func (s *jsiiProxy_S3BucketVersioningOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (s *jsiiProxy_S3BucketVersioningOutputReference) InterpolationAsList() cdkt
 }
 
 func (s *jsiiProxy_S3BucketVersioningOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (s *jsiiProxy_S3BucketVersioningOutputReference) ResetMfaDelete() {
 }
 
 func (s *jsiiProxy_S3BucketVersioningOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -549,6 +549,9 @@ func (j *jsiiProxy_CssClusterV1) Updated() *string {
 func NewCssClusterV1(scope constructs.Construct, id *string, config *CssClusterV1Config) CssClusterV1 {
 	_init_.Initialize()
 
+	if err := validateNewCssClusterV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CssClusterV1{}
 
 	_jsii_.Create(
@@ -571,7 +574,10 @@ func NewCssClusterV1_Override(c CssClusterV1, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetAdminPass(val *string) {
+func (j *jsiiProxy_CssClusterV1)SetAdminPass(val *string) {
+	if err := j.validateSetAdminPassParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adminPass",
@@ -579,7 +585,10 @@ func (j *jsiiProxy_CssClusterV1) SetAdminPass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_CssClusterV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -587,7 +596,7 @@ func (j *jsiiProxy_CssClusterV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetCount(val *float64) {
+func (j *jsiiProxy_CssClusterV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -595,7 +604,7 @@ func (j *jsiiProxy_CssClusterV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CssClusterV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -603,7 +612,10 @@ func (j *jsiiProxy_CssClusterV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetEnableAuthority(val interface{}) {
+func (j *jsiiProxy_CssClusterV1)SetEnableAuthority(val interface{}) {
+	if err := j.validateSetEnableAuthorityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableAuthority",
@@ -611,7 +623,10 @@ func (j *jsiiProxy_CssClusterV1) SetEnableAuthority(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetEnableHttps(val interface{}) {
+func (j *jsiiProxy_CssClusterV1)SetEnableHttps(val interface{}) {
+	if err := j.validateSetEnableHttpsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableHttps",
@@ -619,7 +634,10 @@ func (j *jsiiProxy_CssClusterV1) SetEnableHttps(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetExpectNodeNum(val *float64) {
+func (j *jsiiProxy_CssClusterV1)SetExpectNodeNum(val *float64) {
+	if err := j.validateSetExpectNodeNumParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"expectNodeNum",
@@ -627,7 +645,7 @@ func (j *jsiiProxy_CssClusterV1) SetExpectNodeNum(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CssClusterV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -635,7 +653,10 @@ func (j *jsiiProxy_CssClusterV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetId(val *string) {
+func (j *jsiiProxy_CssClusterV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -643,7 +664,10 @@ func (j *jsiiProxy_CssClusterV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CssClusterV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -651,7 +675,10 @@ func (j *jsiiProxy_CssClusterV1) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetName(val *string) {
+func (j *jsiiProxy_CssClusterV1)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -659,7 +686,7 @@ func (j *jsiiProxy_CssClusterV1) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CssClusterV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -667,7 +694,10 @@ func (j *jsiiProxy_CssClusterV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CssClusterV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -675,7 +705,10 @@ func (j *jsiiProxy_CssClusterV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1) SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CssClusterV1)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -703,6 +736,9 @@ func (j *jsiiProxy_CssClusterV1) SetTags(val *map[string]*string) {
 func CssClusterV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCssClusterV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -727,6 +763,9 @@ func CssClusterV1_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CssClusterV1) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -735,6 +774,9 @@ func (c *jsiiProxy_CssClusterV1) AddOverride(path *string, value interface{}) {
 }
 
 func (c *jsiiProxy_CssClusterV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -748,6 +790,9 @@ func (c *jsiiProxy_CssClusterV1) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CssClusterV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -761,6 +806,9 @@ func (c *jsiiProxy_CssClusterV1) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (c *jsiiProxy_CssClusterV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -774,6 +822,9 @@ func (c *jsiiProxy_CssClusterV1) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (c *jsiiProxy_CssClusterV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -787,6 +838,9 @@ func (c *jsiiProxy_CssClusterV1) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (c *jsiiProxy_CssClusterV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -800,6 +854,9 @@ func (c *jsiiProxy_CssClusterV1) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CssClusterV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -813,6 +870,9 @@ func (c *jsiiProxy_CssClusterV1) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (c *jsiiProxy_CssClusterV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -826,6 +886,9 @@ func (c *jsiiProxy_CssClusterV1) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CssClusterV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -839,6 +902,9 @@ func (c *jsiiProxy_CssClusterV1) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CssClusterV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -852,6 +918,9 @@ func (c *jsiiProxy_CssClusterV1) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CssClusterV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -865,6 +934,9 @@ func (c *jsiiProxy_CssClusterV1) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CssClusterV1) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -873,6 +945,9 @@ func (c *jsiiProxy_CssClusterV1) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (c *jsiiProxy_CssClusterV1) PutDatastore(value *CssClusterV1Datastore) {
+	if err := c.validatePutDatastoreParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putDatastore",
@@ -881,6 +956,9 @@ func (c *jsiiProxy_CssClusterV1) PutDatastore(value *CssClusterV1Datastore) {
 }
 
 func (c *jsiiProxy_CssClusterV1) PutNodeConfig(value *CssClusterV1NodeConfig) {
+	if err := c.validatePutNodeConfigParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putNodeConfig",
@@ -889,6 +967,9 @@ func (c *jsiiProxy_CssClusterV1) PutNodeConfig(value *CssClusterV1NodeConfig) {
 }
 
 func (c *jsiiProxy_CssClusterV1) PutTimeouts(value *CssClusterV1Timeouts) {
+	if err := c.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",

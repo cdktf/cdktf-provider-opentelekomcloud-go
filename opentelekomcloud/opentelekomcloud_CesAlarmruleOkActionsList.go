@@ -111,6 +111,9 @@ func (j *jsiiProxy_CesAlarmruleOkActionsList) WrapsSet() *bool {
 func NewCesAlarmruleOkActionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesAlarmruleOkActionsList {
 	_init_.Initialize()
 
+	if err := validateNewCesAlarmruleOkActionsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CesAlarmruleOkActionsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewCesAlarmruleOkActionsList_Override(c CesAlarmruleOkActionsList, terrafor
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleOkActionsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CesAlarmruleOkActionsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_CesAlarmruleOkActionsList) SetInternalValue(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleOkActionsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesAlarmruleOkActionsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_CesAlarmruleOkActionsList) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleOkActionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAlarmruleOkActionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_CesAlarmruleOkActionsList) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleOkActionsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CesAlarmruleOkActionsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (c *jsiiProxy_CesAlarmruleOkActionsList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CesAlarmruleOkActionsList) Get(index *float64) CesAlarmruleOkActionsOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns CesAlarmruleOkActionsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (c *jsiiProxy_CesAlarmruleOkActionsList) Get(index *float64) CesAlarmruleOk
 }
 
 func (c *jsiiProxy_CesAlarmruleOkActionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

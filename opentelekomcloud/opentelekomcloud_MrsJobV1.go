@@ -610,6 +610,9 @@ func (j *jsiiProxy_MrsJobV1) TimeoutsInput() interface{} {
 func NewMrsJobV1(scope constructs.Construct, id *string, config *MrsJobV1Config) MrsJobV1 {
 	_init_.Initialize()
 
+	if err := validateNewMrsJobV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrsJobV1{}
 
 	_jsii_.Create(
@@ -632,7 +635,10 @@ func NewMrsJobV1_Override(m MrsJobV1, scope constructs.Construct, id *string, co
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetArguments(val *string) {
+func (j *jsiiProxy_MrsJobV1)SetArguments(val *string) {
+	if err := j.validateSetArgumentsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"arguments",
@@ -640,7 +646,10 @@ func (j *jsiiProxy_MrsJobV1) SetArguments(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetClusterId(val *string) {
+func (j *jsiiProxy_MrsJobV1)SetClusterId(val *string) {
+	if err := j.validateSetClusterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterId",
@@ -648,7 +657,10 @@ func (j *jsiiProxy_MrsJobV1) SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_MrsJobV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -656,7 +668,7 @@ func (j *jsiiProxy_MrsJobV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetCount(val *float64) {
+func (j *jsiiProxy_MrsJobV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -664,7 +676,7 @@ func (j *jsiiProxy_MrsJobV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MrsJobV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -672,7 +684,7 @@ func (j *jsiiProxy_MrsJobV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MrsJobV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -680,7 +692,10 @@ func (j *jsiiProxy_MrsJobV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetHiveScriptPath(val *string) {
+func (j *jsiiProxy_MrsJobV1)SetHiveScriptPath(val *string) {
+	if err := j.validateSetHiveScriptPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hiveScriptPath",
@@ -688,7 +703,10 @@ func (j *jsiiProxy_MrsJobV1) SetHiveScriptPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetId(val *string) {
+func (j *jsiiProxy_MrsJobV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -696,7 +714,10 @@ func (j *jsiiProxy_MrsJobV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetInput(val *string) {
+func (j *jsiiProxy_MrsJobV1)SetInput(val *string) {
+	if err := j.validateSetInputParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"input",
@@ -704,7 +725,10 @@ func (j *jsiiProxy_MrsJobV1) SetInput(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetIsProtected(val interface{}) {
+func (j *jsiiProxy_MrsJobV1)SetIsProtected(val interface{}) {
+	if err := j.validateSetIsProtectedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isProtected",
@@ -712,7 +736,10 @@ func (j *jsiiProxy_MrsJobV1) SetIsProtected(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetIsPublic(val interface{}) {
+func (j *jsiiProxy_MrsJobV1)SetIsPublic(val interface{}) {
+	if err := j.validateSetIsPublicParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isPublic",
@@ -720,7 +747,10 @@ func (j *jsiiProxy_MrsJobV1) SetIsPublic(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetJarPath(val *string) {
+func (j *jsiiProxy_MrsJobV1)SetJarPath(val *string) {
+	if err := j.validateSetJarPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jarPath",
@@ -728,7 +758,10 @@ func (j *jsiiProxy_MrsJobV1) SetJarPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetJobLog(val *string) {
+func (j *jsiiProxy_MrsJobV1)SetJobLog(val *string) {
+	if err := j.validateSetJobLogParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jobLog",
@@ -736,7 +769,10 @@ func (j *jsiiProxy_MrsJobV1) SetJobLog(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetJobName(val *string) {
+func (j *jsiiProxy_MrsJobV1)SetJobName(val *string) {
+	if err := j.validateSetJobNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jobName",
@@ -744,7 +780,10 @@ func (j *jsiiProxy_MrsJobV1) SetJobName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetJobType(val *float64) {
+func (j *jsiiProxy_MrsJobV1)SetJobType(val *float64) {
+	if err := j.validateSetJobTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jobType",
@@ -752,7 +791,10 @@ func (j *jsiiProxy_MrsJobV1) SetJobType(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MrsJobV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -760,7 +802,10 @@ func (j *jsiiProxy_MrsJobV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetOutput(val *string) {
+func (j *jsiiProxy_MrsJobV1)SetOutput(val *string) {
+	if err := j.validateSetOutputParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"output",
@@ -768,7 +813,7 @@ func (j *jsiiProxy_MrsJobV1) SetOutput(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MrsJobV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -776,7 +821,10 @@ func (j *jsiiProxy_MrsJobV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MrsJobV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -784,7 +832,10 @@ func (j *jsiiProxy_MrsJobV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrsJobV1) SetRegion(val *string) {
+func (j *jsiiProxy_MrsJobV1)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -812,6 +863,9 @@ func (j *jsiiProxy_MrsJobV1) SetRegion(val *string) {
 func MrsJobV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMrsJobV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -836,6 +890,9 @@ func MrsJobV1_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MrsJobV1) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -844,6 +901,9 @@ func (m *jsiiProxy_MrsJobV1) AddOverride(path *string, value interface{}) {
 }
 
 func (m *jsiiProxy_MrsJobV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -857,6 +917,9 @@ func (m *jsiiProxy_MrsJobV1) GetAnyMapAttribute(terraformAttribute *string) *map
 }
 
 func (m *jsiiProxy_MrsJobV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -870,6 +933,9 @@ func (m *jsiiProxy_MrsJobV1) GetBooleanAttribute(terraformAttribute *string) cdk
 }
 
 func (m *jsiiProxy_MrsJobV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -883,6 +949,9 @@ func (m *jsiiProxy_MrsJobV1) GetBooleanMapAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MrsJobV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -896,6 +965,9 @@ func (m *jsiiProxy_MrsJobV1) GetListAttribute(terraformAttribute *string) *[]*st
 }
 
 func (m *jsiiProxy_MrsJobV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -909,6 +981,9 @@ func (m *jsiiProxy_MrsJobV1) GetNumberAttribute(terraformAttribute *string) *flo
 }
 
 func (m *jsiiProxy_MrsJobV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -922,6 +997,9 @@ func (m *jsiiProxy_MrsJobV1) GetNumberListAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MrsJobV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -935,6 +1013,9 @@ func (m *jsiiProxy_MrsJobV1) GetNumberMapAttribute(terraformAttribute *string) *
 }
 
 func (m *jsiiProxy_MrsJobV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -948,6 +1029,9 @@ func (m *jsiiProxy_MrsJobV1) GetStringAttribute(terraformAttribute *string) *str
 }
 
 func (m *jsiiProxy_MrsJobV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -961,6 +1045,9 @@ func (m *jsiiProxy_MrsJobV1) GetStringMapAttribute(terraformAttribute *string) *
 }
 
 func (m *jsiiProxy_MrsJobV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -974,6 +1061,9 @@ func (m *jsiiProxy_MrsJobV1) InterpolationForAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MrsJobV1) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
@@ -982,6 +1072,9 @@ func (m *jsiiProxy_MrsJobV1) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (m *jsiiProxy_MrsJobV1) PutTimeouts(value *MrsJobV1Timeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",

@@ -111,6 +111,9 @@ func (j *jsiiProxy_DdsInstanceV3FlavorList) WrapsSet() *bool {
 func NewDdsInstanceV3FlavorList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DdsInstanceV3FlavorList {
 	_init_.Initialize()
 
+	if err := validateNewDdsInstanceV3FlavorListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DdsInstanceV3FlavorList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDdsInstanceV3FlavorList_Override(d DdsInstanceV3FlavorList, terraformRes
 	)
 }
 
-func (j *jsiiProxy_DdsInstanceV3FlavorList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DdsInstanceV3FlavorList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DdsInstanceV3FlavorList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DdsInstanceV3FlavorList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DdsInstanceV3FlavorList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DdsInstanceV3FlavorList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DdsInstanceV3FlavorList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DdsInstanceV3FlavorList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DdsInstanceV3FlavorList) SetTerraformResource(val cdktf.IInte
 	)
 }
 
-func (j *jsiiProxy_DdsInstanceV3FlavorList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DdsInstanceV3FlavorList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DdsInstanceV3FlavorList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DdsInstanceV3FlavorList) Get(index *float64) DdsInstanceV3FlavorOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DdsInstanceV3FlavorOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DdsInstanceV3FlavorList) Get(index *float64) DdsInstanceV3Fla
 }
 
 func (d *jsiiProxy_DdsInstanceV3FlavorList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

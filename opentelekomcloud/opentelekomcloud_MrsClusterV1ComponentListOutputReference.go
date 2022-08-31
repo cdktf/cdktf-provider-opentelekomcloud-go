@@ -207,6 +207,9 @@ func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) TerraformResource()
 func NewMrsClusterV1ComponentListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MrsClusterV1ComponentListOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMrsClusterV1ComponentListOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrsClusterV1ComponentListOutputReference{}
 
 	_jsii_.Create(
@@ -228,7 +231,10 @@ func NewMrsClusterV1ComponentListOutputReference_Override(m MrsClusterV1Componen
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -236,7 +242,10 @@ func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -244,7 +253,10 @@ func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) SetComponentName(val *string) {
+func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference)SetComponentName(val *string) {
+	if err := j.validateSetComponentNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"componentName",
@@ -252,7 +264,10 @@ func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) SetComponentName(va
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -260,7 +275,10 @@ func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +286,10 @@ func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +311,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) ComputeFqn() *strin
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +327,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetAnyMapAttribute(
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +343,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetBooleanAttribute
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +359,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetBooleanMapAttrib
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +375,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetListAttribute(te
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +391,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetNumberAttribute(
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +407,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetNumberListAttrib
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +423,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetNumberMapAttribu
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +439,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetStringAttribute(
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +468,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) InterpolationAsList
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -433,6 +484,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) InterpolationForAtt
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

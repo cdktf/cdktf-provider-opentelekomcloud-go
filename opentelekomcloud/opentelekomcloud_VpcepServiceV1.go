@@ -575,6 +575,9 @@ func (j *jsiiProxy_VpcepServiceV1) VpcIdInput() *string {
 func NewVpcepServiceV1(scope constructs.Construct, id *string, config *VpcepServiceV1Config) VpcepServiceV1 {
 	_init_.Initialize()
 
+	if err := validateNewVpcepServiceV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VpcepServiceV1{}
 
 	_jsii_.Create(
@@ -597,7 +600,10 @@ func NewVpcepServiceV1_Override(v VpcepServiceV1, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetApprovalEnabled(val interface{}) {
+func (j *jsiiProxy_VpcepServiceV1)SetApprovalEnabled(val interface{}) {
+	if err := j.validateSetApprovalEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"approvalEnabled",
@@ -605,7 +611,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetApprovalEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_VpcepServiceV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -613,7 +622,7 @@ func (j *jsiiProxy_VpcepServiceV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetCount(val *float64) {
+func (j *jsiiProxy_VpcepServiceV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -621,7 +630,7 @@ func (j *jsiiProxy_VpcepServiceV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpcepServiceV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -629,7 +638,7 @@ func (j *jsiiProxy_VpcepServiceV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpcepServiceV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -637,7 +646,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetId(val *string) {
+func (j *jsiiProxy_VpcepServiceV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -645,7 +657,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpcepServiceV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -653,7 +668,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetName(val *string) {
+func (j *jsiiProxy_VpcepServiceV1)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -661,7 +679,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetPoolId(val *string) {
+func (j *jsiiProxy_VpcepServiceV1)SetPoolId(val *string) {
+	if err := j.validateSetPoolIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"poolId",
@@ -669,7 +690,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetPoolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetPortId(val *string) {
+func (j *jsiiProxy_VpcepServiceV1)SetPortId(val *string) {
+	if err := j.validateSetPortIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"portId",
@@ -677,7 +701,7 @@ func (j *jsiiProxy_VpcepServiceV1) SetPortId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpcepServiceV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -685,7 +709,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpcepServiceV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -693,7 +720,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetServerType(val *string) {
+func (j *jsiiProxy_VpcepServiceV1)SetServerType(val *string) {
+	if err := j.validateSetServerTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serverType",
@@ -701,7 +731,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetServerType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetServiceType(val *string) {
+func (j *jsiiProxy_VpcepServiceV1)SetServiceType(val *string) {
+	if err := j.validateSetServiceTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serviceType",
@@ -709,7 +742,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetServiceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetTags(val *map[string]*string) {
+func (j *jsiiProxy_VpcepServiceV1)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -717,7 +753,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetTcpProxy(val *string) {
+func (j *jsiiProxy_VpcepServiceV1)SetTcpProxy(val *string) {
+	if err := j.validateSetTcpProxyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tcpProxy",
@@ -725,7 +764,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetTcpProxy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetVipPortId(val *string) {
+func (j *jsiiProxy_VpcepServiceV1)SetVipPortId(val *string) {
+	if err := j.validateSetVipPortIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vipPortId",
@@ -733,7 +775,10 @@ func (j *jsiiProxy_VpcepServiceV1) SetVipPortId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcepServiceV1) SetVpcId(val *string) {
+func (j *jsiiProxy_VpcepServiceV1)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcId",
@@ -761,6 +806,9 @@ func (j *jsiiProxy_VpcepServiceV1) SetVpcId(val *string) {
 func VpcepServiceV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateVpcepServiceV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -785,6 +833,9 @@ func VpcepServiceV1_TfResourceType() *string {
 }
 
 func (v *jsiiProxy_VpcepServiceV1) AddOverride(path *string, value interface{}) {
+	if err := v.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
@@ -793,6 +844,9 @@ func (v *jsiiProxy_VpcepServiceV1) AddOverride(path *string, value interface{}) 
 }
 
 func (v *jsiiProxy_VpcepServiceV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -806,6 +860,9 @@ func (v *jsiiProxy_VpcepServiceV1) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (v *jsiiProxy_VpcepServiceV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -819,6 +876,9 @@ func (v *jsiiProxy_VpcepServiceV1) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (v *jsiiProxy_VpcepServiceV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := v.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -832,6 +892,9 @@ func (v *jsiiProxy_VpcepServiceV1) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (v *jsiiProxy_VpcepServiceV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := v.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -845,6 +908,9 @@ func (v *jsiiProxy_VpcepServiceV1) GetListAttribute(terraformAttribute *string) 
 }
 
 func (v *jsiiProxy_VpcepServiceV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := v.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -858,6 +924,9 @@ func (v *jsiiProxy_VpcepServiceV1) GetNumberAttribute(terraformAttribute *string
 }
 
 func (v *jsiiProxy_VpcepServiceV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := v.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -871,6 +940,9 @@ func (v *jsiiProxy_VpcepServiceV1) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (v *jsiiProxy_VpcepServiceV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := v.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -884,6 +956,9 @@ func (v *jsiiProxy_VpcepServiceV1) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (v *jsiiProxy_VpcepServiceV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := v.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -897,6 +972,9 @@ func (v *jsiiProxy_VpcepServiceV1) GetStringAttribute(terraformAttribute *string
 }
 
 func (v *jsiiProxy_VpcepServiceV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := v.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -910,6 +988,9 @@ func (v *jsiiProxy_VpcepServiceV1) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (v *jsiiProxy_VpcepServiceV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -923,6 +1004,9 @@ func (v *jsiiProxy_VpcepServiceV1) InterpolationForAttribute(terraformAttribute 
 }
 
 func (v *jsiiProxy_VpcepServiceV1) OverrideLogicalId(newLogicalId *string) {
+	if err := v.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
@@ -931,6 +1015,9 @@ func (v *jsiiProxy_VpcepServiceV1) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (v *jsiiProxy_VpcepServiceV1) PutPort(value interface{}) {
+	if err := v.validatePutPortParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"putPort",
@@ -939,6 +1026,9 @@ func (v *jsiiProxy_VpcepServiceV1) PutPort(value interface{}) {
 }
 
 func (v *jsiiProxy_VpcepServiceV1) PutTimeouts(value *VpcepServiceV1Timeouts) {
+	if err := v.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",

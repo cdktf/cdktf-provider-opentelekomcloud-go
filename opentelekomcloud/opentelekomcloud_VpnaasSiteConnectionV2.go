@@ -789,6 +789,9 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) VpnserviceIdInput() *string {
 func NewVpnaasSiteConnectionV2(scope constructs.Construct, id *string, config *VpnaasSiteConnectionV2Config) VpnaasSiteConnectionV2 {
 	_init_.Initialize()
 
+	if err := validateNewVpnaasSiteConnectionV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VpnaasSiteConnectionV2{}
 
 	_jsii_.Create(
@@ -811,7 +814,10 @@ func NewVpnaasSiteConnectionV2_Override(v VpnaasSiteConnectionV2, scope construc
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetAdminStateUp(val interface{}) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetAdminStateUp(val interface{}) {
+	if err := j.validateSetAdminStateUpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adminStateUp",
@@ -819,7 +825,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetAdminStateUp(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -827,7 +836,7 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetCount(val *float64) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -835,7 +844,7 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -843,7 +852,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetDescription(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -851,7 +863,7 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -859,7 +871,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetId(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -867,7 +882,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetIkepolicyId(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetIkepolicyId(val *string) {
+	if err := j.validateSetIkepolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ikepolicyId",
@@ -875,7 +893,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetIkepolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetInitiator(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetInitiator(val *string) {
+	if err := j.validateSetInitiatorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"initiator",
@@ -883,7 +904,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetInitiator(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetIpsecpolicyId(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetIpsecpolicyId(val *string) {
+	if err := j.validateSetIpsecpolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ipsecpolicyId",
@@ -891,7 +915,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetIpsecpolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -899,7 +926,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetLocalEpGroupId(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetLocalEpGroupId(val *string) {
+	if err := j.validateSetLocalEpGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"localEpGroupId",
@@ -907,7 +937,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetLocalEpGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetLocalId(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetLocalId(val *string) {
+	if err := j.validateSetLocalIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"localId",
@@ -915,7 +948,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetLocalId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetMtu(val *float64) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetMtu(val *float64) {
+	if err := j.validateSetMtuParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mtu",
@@ -923,7 +959,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetMtu(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetName(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -931,7 +970,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetPeerAddress(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetPeerAddress(val *string) {
+	if err := j.validateSetPeerAddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"peerAddress",
@@ -939,7 +981,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetPeerAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetPeerCidrs(val *[]*string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetPeerCidrs(val *[]*string) {
+	if err := j.validateSetPeerCidrsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"peerCidrs",
@@ -947,7 +992,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetPeerCidrs(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetPeerEpGroupId(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetPeerEpGroupId(val *string) {
+	if err := j.validateSetPeerEpGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"peerEpGroupId",
@@ -955,7 +1003,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetPeerEpGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetPeerId(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetPeerId(val *string) {
+	if err := j.validateSetPeerIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"peerId",
@@ -963,7 +1014,7 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetPeerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -971,7 +1022,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -979,7 +1033,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetPsk(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetPsk(val *string) {
+	if err := j.validateSetPskParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"psk",
@@ -987,7 +1044,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetPsk(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetRegion(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -995,7 +1055,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetTags(val *map[string]*string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -1003,7 +1066,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetTenantId(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -1011,7 +1077,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetTenantId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetValueSpecs(val *map[string]*string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetValueSpecs(val *map[string]*string) {
+	if err := j.validateSetValueSpecsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"valueSpecs",
@@ -1019,7 +1088,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetValueSpecs(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2) SetVpnserviceId(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2)SetVpnserviceId(val *string) {
+	if err := j.validateSetVpnserviceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpnserviceId",
@@ -1047,6 +1119,9 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) SetVpnserviceId(val *string) {
 func VpnaasSiteConnectionV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateVpnaasSiteConnectionV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1071,6 +1146,9 @@ func VpnaasSiteConnectionV2_TfResourceType() *string {
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) AddOverride(path *string, value interface{}) {
+	if err := v.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
@@ -1079,6 +1157,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) AddOverride(path *string, value inter
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1092,6 +1173,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) GetAnyMapAttribute(terraformAttribute
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1105,6 +1189,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) GetBooleanAttribute(terraformAttribut
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := v.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1118,6 +1205,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) GetBooleanMapAttribute(terraformAttri
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := v.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1131,6 +1221,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) GetListAttribute(terraformAttribute *
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := v.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1144,6 +1237,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) GetNumberAttribute(terraformAttribute
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := v.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1157,6 +1253,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) GetNumberListAttribute(terraformAttri
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := v.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1170,6 +1269,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) GetNumberMapAttribute(terraformAttrib
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := v.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1183,6 +1285,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) GetStringAttribute(terraformAttribute
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := v.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1196,6 +1301,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) GetStringMapAttribute(terraformAttrib
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1209,6 +1317,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) InterpolationForAttribute(terraformAt
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) OverrideLogicalId(newLogicalId *string) {
+	if err := v.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
@@ -1217,6 +1328,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) OverrideLogicalId(newLogicalId *strin
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) PutDpd(value interface{}) {
+	if err := v.validatePutDpdParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"putDpd",
@@ -1225,6 +1339,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) PutDpd(value interface{}) {
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) PutTimeouts(value *VpnaasSiteConnectionV2Timeouts) {
+	if err := v.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",

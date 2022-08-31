@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList) WrapsSet()
 func NewDataOpentelekomcloudLbListenerV3InsertHeadersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudLbListenerV3InsertHeadersList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudLbListenerV3InsertHeadersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudLbListenerV3InsertHeadersList_Override(d DataOpentel
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList) ComputeFqn
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList) Get(index *float64) DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList) Get(index 
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

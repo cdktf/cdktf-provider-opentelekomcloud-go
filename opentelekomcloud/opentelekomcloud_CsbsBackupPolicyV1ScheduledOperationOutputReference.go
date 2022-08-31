@@ -505,6 +505,9 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) YearBack
 func NewCsbsBackupPolicyV1ScheduledOperationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CsbsBackupPolicyV1ScheduledOperationOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCsbsBackupPolicyV1ScheduledOperationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference{}
 
 	_jsii_.Create(
@@ -526,7 +529,10 @@ func NewCsbsBackupPolicyV1ScheduledOperationOutputReference_Override(c CsbsBacku
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -534,7 +540,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -542,7 +551,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetDayBackups(val *float64) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetDayBackups(val *float64) {
+	if err := j.validateSetDayBackupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dayBackups",
@@ -550,7 +562,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetDayBa
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetDescription(val *string) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -558,7 +573,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetDescr
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetEnabled(val interface{}) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -566,7 +584,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetEnabl
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetInternalValue(val *CsbsBackupPolicyV1ScheduledOperation) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetInternalValue(val *CsbsBackupPolicyV1ScheduledOperation) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -574,7 +595,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetMaxBackups(val *float64) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetMaxBackups(val *float64) {
+	if err := j.validateSetMaxBackupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxBackups",
@@ -582,7 +606,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetMaxBa
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetMonthBackups(val *float64) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetMonthBackups(val *float64) {
+	if err := j.validateSetMonthBackupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"monthBackups",
@@ -590,7 +617,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetMonth
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetName(val *string) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -598,7 +628,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetName(
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetOperationType(val *string) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetOperationType(val *string) {
+	if err := j.validateSetOperationTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationType",
@@ -606,7 +639,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetOpera
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetPermanent(val interface{}) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetPermanent(val interface{}) {
+	if err := j.validateSetPermanentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"permanent",
@@ -614,7 +650,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetPerma
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetRetentionDurationDays(val *float64) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetRetentionDurationDays(val *float64) {
+	if err := j.validateSetRetentionDurationDaysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"retentionDurationDays",
@@ -622,7 +661,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetReten
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -630,7 +672,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -638,7 +683,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetTimezone(val *string) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetTimezone(val *string) {
+	if err := j.validateSetTimezoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timezone",
@@ -646,7 +694,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetTimez
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetTriggerPattern(val *string) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetTriggerPattern(val *string) {
+	if err := j.validateSetTriggerPatternParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"triggerPattern",
@@ -654,7 +705,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetTrigg
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetWeekBackups(val *float64) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetWeekBackups(val *float64) {
+	if err := j.validateSetWeekBackupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"weekBackups",
@@ -662,7 +716,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetWeekB
 	)
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) SetYearBackups(val *float64) {
+func (j *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference)SetYearBackups(val *float64) {
+	if err := j.validateSetYearBackupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"yearBackups",
@@ -684,6 +741,9 @@ func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) ComputeF
 }
 
 func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -697,6 +757,9 @@ func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetAnyMa
 }
 
 func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -710,6 +773,9 @@ func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetBoole
 }
 
 func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -723,6 +789,9 @@ func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetBoole
 }
 
 func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -736,6 +805,9 @@ func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetListA
 }
 
 func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -749,6 +821,9 @@ func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetNumbe
 }
 
 func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -762,6 +837,9 @@ func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetNumbe
 }
 
 func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -775,6 +853,9 @@ func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetNumbe
 }
 
 func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -788,6 +869,9 @@ func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetStrin
 }
 
 func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -814,6 +898,9 @@ func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) Interpol
 }
 
 func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -915,6 +1002,9 @@ func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) ResetYea
 }
 
 func (c *jsiiProxy_CsbsBackupPolicyV1ScheduledOperationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

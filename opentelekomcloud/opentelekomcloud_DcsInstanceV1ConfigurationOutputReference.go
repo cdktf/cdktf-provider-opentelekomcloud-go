@@ -220,6 +220,9 @@ func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) TerraformResource(
 func NewDcsInstanceV1ConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DcsInstanceV1ConfigurationOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDcsInstanceV1ConfigurationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DcsInstanceV1ConfigurationOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewDcsInstanceV1ConfigurationOutputReference_Override(d DcsInstanceV1Config
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetParameterId(val *string) {
+func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference)SetParameterId(val *string) {
+	if err := j.validateSetParameterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"parameterId",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetParameterId(val
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetParameterName(val *string) {
+func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference)SetParameterName(val *string) {
+	if err := j.validateSetParameterNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"parameterName",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetParameterName(v
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetParameterValue(val *string) {
+func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference)SetParameterValue(val *string) {
+	if err := j.validateSetParameterValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"parameterValue",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetParameterValue(
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DcsInstanceV1ConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -319,6 +346,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) ComputeFqn() *stri
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetAnyMapAttribute
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetBooleanAttribut
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetBooleanMapAttri
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetListAttribute(t
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetNumberAttribute
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetNumberListAttri
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetNumberMapAttrib
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetStringAttribute
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) InterpolationAsLis
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) InterpolationForAt
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

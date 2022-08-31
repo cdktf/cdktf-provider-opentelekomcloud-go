@@ -111,6 +111,9 @@ func (j *jsiiProxy_VbsBackupPolicyV2TagsList) WrapsSet() *bool {
 func NewVbsBackupPolicyV2TagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VbsBackupPolicyV2TagsList {
 	_init_.Initialize()
 
+	if err := validateNewVbsBackupPolicyV2TagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VbsBackupPolicyV2TagsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewVbsBackupPolicyV2TagsList_Override(v VbsBackupPolicyV2TagsList, terrafor
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2TagsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_VbsBackupPolicyV2TagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2TagsList) SetInternalValue(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2TagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VbsBackupPolicyV2TagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2TagsList) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2TagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VbsBackupPolicyV2TagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2TagsList) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2TagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_VbsBackupPolicyV2TagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2TagsList) ComputeFqn() *string {
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2TagsList) Get(index *float64) VbsBackupPolicyV2TagsOutputReference {
+	if err := v.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns VbsBackupPolicyV2TagsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2TagsList) Get(index *float64) VbsBackupPolic
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2TagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

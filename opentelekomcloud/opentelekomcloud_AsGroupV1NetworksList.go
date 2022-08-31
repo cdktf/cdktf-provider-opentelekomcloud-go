@@ -111,6 +111,9 @@ func (j *jsiiProxy_AsGroupV1NetworksList) WrapsSet() *bool {
 func NewAsGroupV1NetworksList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AsGroupV1NetworksList {
 	_init_.Initialize()
 
+	if err := validateNewAsGroupV1NetworksListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AsGroupV1NetworksList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAsGroupV1NetworksList_Override(a AsGroupV1NetworksList, terraformResourc
 	)
 }
 
-func (j *jsiiProxy_AsGroupV1NetworksList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AsGroupV1NetworksList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AsGroupV1NetworksList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AsGroupV1NetworksList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AsGroupV1NetworksList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AsGroupV1NetworksList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AsGroupV1NetworksList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AsGroupV1NetworksList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AsGroupV1NetworksList) SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_AsGroupV1NetworksList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AsGroupV1NetworksList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AsGroupV1NetworksList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AsGroupV1NetworksList) Get(index *float64) AsGroupV1NetworksOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AsGroupV1NetworksOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AsGroupV1NetworksList) Get(index *float64) AsGroupV1NetworksO
 }
 
 func (a *jsiiProxy_AsGroupV1NetworksList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

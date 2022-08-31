@@ -636,6 +636,9 @@ func (j *jsiiProxy_S3BucketObject) WebsiteRedirectInput() *string {
 func NewS3BucketObject(scope constructs.Construct, id *string, config *S3BucketObjectConfig) S3BucketObject {
 	_init_.Initialize()
 
+	if err := validateNewS3BucketObjectParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_S3BucketObject{}
 
 	_jsii_.Create(
@@ -658,7 +661,10 @@ func NewS3BucketObject_Override(s S3BucketObject, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetAcl(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetAcl(val *string) {
+	if err := j.validateSetAclParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"acl",
@@ -666,7 +672,10 @@ func (j *jsiiProxy_S3BucketObject) SetAcl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetBucket(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetBucket(val *string) {
+	if err := j.validateSetBucketParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bucket",
@@ -674,7 +683,10 @@ func (j *jsiiProxy_S3BucketObject) SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetCacheControl(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetCacheControl(val *string) {
+	if err := j.validateSetCacheControlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cacheControl",
@@ -682,7 +694,10 @@ func (j *jsiiProxy_S3BucketObject) SetCacheControl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetConnection(val interface{}) {
+func (j *jsiiProxy_S3BucketObject)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -690,7 +705,10 @@ func (j *jsiiProxy_S3BucketObject) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetContent(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetContent(val *string) {
+	if err := j.validateSetContentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"content",
@@ -698,7 +716,10 @@ func (j *jsiiProxy_S3BucketObject) SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetContentDisposition(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetContentDisposition(val *string) {
+	if err := j.validateSetContentDispositionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentDisposition",
@@ -706,7 +727,10 @@ func (j *jsiiProxy_S3BucketObject) SetContentDisposition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetContentEncoding(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetContentEncoding(val *string) {
+	if err := j.validateSetContentEncodingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentEncoding",
@@ -714,7 +738,10 @@ func (j *jsiiProxy_S3BucketObject) SetContentEncoding(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetContentLanguage(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetContentLanguage(val *string) {
+	if err := j.validateSetContentLanguageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentLanguage",
@@ -722,7 +749,10 @@ func (j *jsiiProxy_S3BucketObject) SetContentLanguage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetContentType(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetContentType(val *string) {
+	if err := j.validateSetContentTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentType",
@@ -730,7 +760,7 @@ func (j *jsiiProxy_S3BucketObject) SetContentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetCount(val *float64) {
+func (j *jsiiProxy_S3BucketObject)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -738,7 +768,7 @@ func (j *jsiiProxy_S3BucketObject) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3BucketObject)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -746,7 +776,10 @@ func (j *jsiiProxy_S3BucketObject) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetEtag(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetEtag(val *string) {
+	if err := j.validateSetEtagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"etag",
@@ -754,7 +787,7 @@ func (j *jsiiProxy_S3BucketObject) SetEtag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3BucketObject)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -762,7 +795,10 @@ func (j *jsiiProxy_S3BucketObject) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetId(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -770,7 +806,10 @@ func (j *jsiiProxy_S3BucketObject) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetKey(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -778,7 +817,10 @@ func (j *jsiiProxy_S3BucketObject) SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3BucketObject)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -786,7 +828,7 @@ func (j *jsiiProxy_S3BucketObject) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3BucketObject)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -794,7 +836,10 @@ func (j *jsiiProxy_S3BucketObject) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3BucketObject)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -802,7 +847,10 @@ func (j *jsiiProxy_S3BucketObject) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetServerSideEncryption(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetServerSideEncryption(val *string) {
+	if err := j.validateSetServerSideEncryptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serverSideEncryption",
@@ -810,7 +858,10 @@ func (j *jsiiProxy_S3BucketObject) SetServerSideEncryption(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetSource(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"source",
@@ -818,7 +869,10 @@ func (j *jsiiProxy_S3BucketObject) SetSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetSseKmsKeyId(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetSseKmsKeyId(val *string) {
+	if err := j.validateSetSseKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sseKmsKeyId",
@@ -826,7 +880,10 @@ func (j *jsiiProxy_S3BucketObject) SetSseKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject) SetWebsiteRedirect(val *string) {
+func (j *jsiiProxy_S3BucketObject)SetWebsiteRedirect(val *string) {
+	if err := j.validateSetWebsiteRedirectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"websiteRedirect",
@@ -854,6 +911,9 @@ func (j *jsiiProxy_S3BucketObject) SetWebsiteRedirect(val *string) {
 func S3BucketObject_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateS3BucketObject_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -878,6 +938,9 @@ func S3BucketObject_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_S3BucketObject) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -886,6 +949,9 @@ func (s *jsiiProxy_S3BucketObject) AddOverride(path *string, value interface{}) 
 }
 
 func (s *jsiiProxy_S3BucketObject) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -899,6 +965,9 @@ func (s *jsiiProxy_S3BucketObject) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_S3BucketObject) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -912,6 +981,9 @@ func (s *jsiiProxy_S3BucketObject) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_S3BucketObject) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -925,6 +997,9 @@ func (s *jsiiProxy_S3BucketObject) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_S3BucketObject) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -938,6 +1013,9 @@ func (s *jsiiProxy_S3BucketObject) GetListAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_S3BucketObject) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -951,6 +1029,9 @@ func (s *jsiiProxy_S3BucketObject) GetNumberAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_S3BucketObject) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -964,6 +1045,9 @@ func (s *jsiiProxy_S3BucketObject) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_S3BucketObject) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -977,6 +1061,9 @@ func (s *jsiiProxy_S3BucketObject) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_S3BucketObject) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -990,6 +1077,9 @@ func (s *jsiiProxy_S3BucketObject) GetStringAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_S3BucketObject) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1003,6 +1093,9 @@ func (s *jsiiProxy_S3BucketObject) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_S3BucketObject) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1016,6 +1109,9 @@ func (s *jsiiProxy_S3BucketObject) InterpolationForAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_S3BucketObject) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

@@ -487,6 +487,9 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) WhiteblackipInput() interf
 func NewWafPolicyV1OptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WafPolicyV1OptionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewWafPolicyV1OptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WafPolicyV1OptionsOutputReference{}
 
 	_jsii_.Create(
@@ -508,7 +511,10 @@ func NewWafPolicyV1OptionsOutputReference_Override(w WafPolicyV1OptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetAntitamper(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetAntitamper(val interface{}) {
+	if err := j.validateSetAntitamperParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"antitamper",
@@ -516,7 +522,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetAntitamper(val interfac
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCc(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetCc(val interface{}) {
+	if err := j.validateSetCcParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cc",
@@ -524,7 +533,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCc(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCommon(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetCommon(val interface{}) {
+	if err := j.validateSetCommonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"common",
@@ -532,7 +544,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCommon(val interface{})
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -540,7 +555,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -548,7 +566,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCrawler(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetCrawler(val interface{}) {
+	if err := j.validateSetCrawlerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"crawler",
@@ -556,7 +577,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCrawler(val interface{}
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCrawlerEngine(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetCrawlerEngine(val interface{}) {
+	if err := j.validateSetCrawlerEngineParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"crawlerEngine",
@@ -564,7 +588,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCrawlerEngine(val inter
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCrawlerOther(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetCrawlerOther(val interface{}) {
+	if err := j.validateSetCrawlerOtherParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"crawlerOther",
@@ -572,7 +599,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCrawlerOther(val interf
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCrawlerScanner(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetCrawlerScanner(val interface{}) {
+	if err := j.validateSetCrawlerScannerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"crawlerScanner",
@@ -580,7 +610,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCrawlerScanner(val inte
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCrawlerScript(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetCrawlerScript(val interface{}) {
+	if err := j.validateSetCrawlerScriptParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"crawlerScript",
@@ -588,7 +621,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCrawlerScript(val inter
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCustom(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetCustom(val interface{}) {
+	if err := j.validateSetCustomParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"custom",
@@ -596,7 +632,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetCustom(val interface{})
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetIgnore(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetIgnore(val interface{}) {
+	if err := j.validateSetIgnoreParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ignore",
@@ -604,7 +643,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetIgnore(val interface{})
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetInternalValue(val *WafPolicyV1Options) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetInternalValue(val *WafPolicyV1Options) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -612,7 +654,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetInternalValue(val *WafP
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetPrivacy(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetPrivacy(val interface{}) {
+	if err := j.validateSetPrivacyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privacy",
@@ -620,7 +665,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetPrivacy(val interface{}
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -628,7 +676,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -636,7 +687,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetWebattack(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetWebattack(val interface{}) {
+	if err := j.validateSetWebattackParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"webattack",
@@ -644,7 +698,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetWebattack(val interface
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetWebshell(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetWebshell(val interface{}) {
+	if err := j.validateSetWebshellParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"webshell",
@@ -652,7 +709,10 @@ func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetWebshell(val interface{
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1OptionsOutputReference) SetWhiteblackip(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1OptionsOutputReference)SetWhiteblackip(val interface{}) {
+	if err := j.validateSetWhiteblackipParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"whiteblackip",
@@ -674,6 +734,9 @@ func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) ComputeFqn() *string {
 }
 
 func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -687,6 +750,9 @@ func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetAnyMapAttribute(terrafo
 }
 
 func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -700,6 +766,9 @@ func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetBooleanAttribute(terraf
 }
 
 func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -713,6 +782,9 @@ func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetBooleanMapAttribute(ter
 }
 
 func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -726,6 +798,9 @@ func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetListAttribute(terraform
 }
 
 func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -739,6 +814,9 @@ func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetNumberAttribute(terrafo
 }
 
 func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -752,6 +830,9 @@ func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetNumberListAttribute(ter
 }
 
 func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -765,6 +846,9 @@ func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetNumberMapAttribute(terr
 }
 
 func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -778,6 +862,9 @@ func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetStringAttribute(terrafo
 }
 
 func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -804,6 +891,9 @@ func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) InterpolationAsList() cdkt
 }
 
 func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -929,6 +1019,9 @@ func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) ResetWhiteblackip() {
 }
 
 func (w *jsiiProxy_WafPolicyV1OptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

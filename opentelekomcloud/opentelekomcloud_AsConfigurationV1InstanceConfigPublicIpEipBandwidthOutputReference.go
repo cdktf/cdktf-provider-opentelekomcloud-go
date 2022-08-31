@@ -220,6 +220,9 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 func NewAsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewAsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference_Overr
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) SetChargingMode(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference)SetChargingMode(val *string) {
+	if err := j.validateSetChargingModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"chargingMode",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) SetInternalValue(val *AsConfigurationV1InstanceConfigPublicIpEipBandwidth) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference)SetInternalValue(val *AsConfigurationV1InstanceConfigPublicIpEipBandwidth) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) SetShareType(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference)SetShareType(val *string) {
+	if err := j.validateSetShareTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shareType",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) SetSize(val *float64) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -319,6 +346,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

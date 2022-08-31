@@ -198,6 +198,9 @@ func (j *jsiiProxy_ObsBucketLoggingOutputReference) TerraformResource() cdktf.II
 func NewObsBucketLoggingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObsBucketLoggingOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewObsBucketLoggingOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ObsBucketLoggingOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewObsBucketLoggingOutputReference_Override(o ObsBucketLoggingOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ObsBucketLoggingOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ObsBucketLoggingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ObsBucketLoggingOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetTargetBucket(val *string) {
+func (j *jsiiProxy_ObsBucketLoggingOutputReference)SetTargetBucket(val *string) {
+	if err := j.validateSetTargetBucketParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"targetBucket",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetTargetBucket(val *string)
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetTargetPrefix(val *string) {
+func (j *jsiiProxy_ObsBucketLoggingOutputReference)SetTargetPrefix(val *string) {
+	if err := j.validateSetTargetPrefixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"targetPrefix",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetTargetPrefix(val *string)
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ObsBucketLoggingOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLoggingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ObsBucketLoggingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -289,6 +313,9 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetAnyMapAttribute(terraform
 }
 
 func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetBooleanAttribute(terrafor
 }
 
 func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetBooleanMapAttribute(terra
 }
 
 func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetListAttribute(terraformAt
 }
 
 func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetNumberAttribute(terraform
 }
 
 func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetNumberListAttribute(terra
 }
 
 func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetNumberMapAttribute(terraf
 }
 
 func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetStringAttribute(terraform
 }
 
 func (o *jsiiProxy_ObsBucketLoggingOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) InterpolationAsList() cdktf.
 }
 
 func (o *jsiiProxy_ObsBucketLoggingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) ResetTargetPrefix() {
 }
 
 func (o *jsiiProxy_ObsBucketLoggingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

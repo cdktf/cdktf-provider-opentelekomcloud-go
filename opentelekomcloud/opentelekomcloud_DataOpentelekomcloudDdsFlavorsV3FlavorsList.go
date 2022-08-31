@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList) WrapsSet() *bool
 func NewDataOpentelekomcloudDdsFlavorsV3FlavorsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudDdsFlavorsV3FlavorsList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudDdsFlavorsV3FlavorsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudDdsFlavorsV3FlavorsList_Override(d DataOpentelekomcl
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList) SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList) ComputeFqn() *st
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList) Get(index *float64) DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList) Get(index *float
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3FlavorsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeList) WrapsSet() *bool {
 func NewVpnaasIkePolicyV2LifetimeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnaasIkePolicyV2LifetimeList {
 	_init_.Initialize()
 
+	if err := validateNewVpnaasIkePolicyV2LifetimeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VpnaasIkePolicyV2LifetimeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewVpnaasIkePolicyV2LifetimeList_Override(v VpnaasIkePolicyV2LifetimeList, 
 	)
 }
 
-func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeList) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeList) ComputeFqn() *string {
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeList) Get(index *float64) VpnaasIkePolicyV2LifetimeOutputReference {
+	if err := v.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns VpnaasIkePolicyV2LifetimeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeList) Get(index *float64) VpnaasIkeP
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

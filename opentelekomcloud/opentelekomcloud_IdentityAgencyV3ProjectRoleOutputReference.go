@@ -197,6 +197,9 @@ func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) TerraformResource
 func NewIdentityAgencyV3ProjectRoleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IdentityAgencyV3ProjectRoleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewIdentityAgencyV3ProjectRoleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewIdentityAgencyV3ProjectRoleOutputReference_Override(i IdentityAgencyV3Pr
 	)
 }
 
-func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetProject(val *string) {
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetProject(val *s
 	)
 }
 
-func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetRoles(val *[]*string) {
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference)SetRoles(val *[]*string) {
+	if err := j.validateSetRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"roles",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetRoles(val *[]*
 	)
 }
 
-func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) ComputeFqn() *str
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetAnyMapAttribut
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetBooleanAttribu
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetBooleanMapAttr
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetListAttribute(
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetNumberAttribut
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetNumberListAttr
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetNumberMapAttri
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetStringAttribut
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) InterpolationAsLi
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) InterpolationForA
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

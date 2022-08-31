@@ -245,6 +245,9 @@ func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) TopicInput() *str
 func NewObsBucketEventNotificationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObsBucketEventNotificationsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewObsBucketEventNotificationsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ObsBucketEventNotificationsOutputReference{}
 
 	_jsii_.Create(
@@ -266,7 +269,10 @@ func NewObsBucketEventNotificationsOutputReference_Override(o ObsBucketEventNoti
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -274,7 +280,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -282,7 +291,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetEvents(val *[]*string) {
+func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference)SetEvents(val *[]*string) {
+	if err := j.validateSetEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"events",
@@ -290,7 +302,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetEvents(val *[]
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetId(val *string) {
+func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -298,7 +313,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetId(val *string
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -306,7 +324,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -314,7 +335,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -322,7 +346,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference) SetTopic(val *string) {
+func (j *jsiiProxy_ObsBucketEventNotificationsOutputReference)SetTopic(val *string) {
+	if err := j.validateSetTopicParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"topic",
@@ -344,6 +371,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) ComputeFqn() *str
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -357,6 +387,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetAnyMapAttribut
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -370,6 +403,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetBooleanAttribu
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -383,6 +419,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetBooleanMapAttr
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -396,6 +435,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetListAttribute(
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -409,6 +451,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetNumberAttribut
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -422,6 +467,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetNumberListAttr
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -435,6 +483,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetNumberMapAttri
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -448,6 +499,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetStringAttribut
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -474,6 +528,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) InterpolationAsLi
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -487,6 +544,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) InterpolationForA
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) PutFilterRule(value interface{}) {
+	if err := o.validatePutFilterRuleParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putFilterRule",
@@ -511,6 +571,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) ResetId() {
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

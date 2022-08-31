@@ -111,6 +111,9 @@ func (j *jsiiProxy_DcsInstanceV1ConfigurationList) WrapsSet() *bool {
 func NewDcsInstanceV1ConfigurationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DcsInstanceV1ConfigurationList {
 	_init_.Initialize()
 
+	if err := validateNewDcsInstanceV1ConfigurationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DcsInstanceV1ConfigurationList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDcsInstanceV1ConfigurationList_Override(d DcsInstanceV1ConfigurationList
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1ConfigurationList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DcsInstanceV1ConfigurationList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DcsInstanceV1ConfigurationList) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1ConfigurationList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DcsInstanceV1ConfigurationList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DcsInstanceV1ConfigurationList) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1ConfigurationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DcsInstanceV1ConfigurationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DcsInstanceV1ConfigurationList) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1ConfigurationList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DcsInstanceV1ConfigurationList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationList) Get(index *float64) DcsInstanceV1ConfigurationOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DcsInstanceV1ConfigurationOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DcsInstanceV1ConfigurationList) Get(index *float64) DcsInstan
 }
 
 func (d *jsiiProxy_DcsInstanceV1ConfigurationList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

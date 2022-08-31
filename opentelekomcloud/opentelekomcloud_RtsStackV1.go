@@ -585,6 +585,9 @@ func (j *jsiiProxy_RtsStackV1) TimeoutsInput() interface{} {
 func NewRtsStackV1(scope constructs.Construct, id *string, config *RtsStackV1Config) RtsStackV1 {
 	_init_.Initialize()
 
+	if err := validateNewRtsStackV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RtsStackV1{}
 
 	_jsii_.Create(
@@ -607,7 +610,10 @@ func NewRtsStackV1_Override(r RtsStackV1, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_RtsStackV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -615,7 +621,7 @@ func (j *jsiiProxy_RtsStackV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetCount(val *float64) {
+func (j *jsiiProxy_RtsStackV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -623,7 +629,7 @@ func (j *jsiiProxy_RtsStackV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RtsStackV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -631,7 +637,10 @@ func (j *jsiiProxy_RtsStackV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetDisableRollback(val interface{}) {
+func (j *jsiiProxy_RtsStackV1)SetDisableRollback(val interface{}) {
+	if err := j.validateSetDisableRollbackParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableRollback",
@@ -639,7 +648,10 @@ func (j *jsiiProxy_RtsStackV1) SetDisableRollback(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetEnvironment(val *string) {
+func (j *jsiiProxy_RtsStackV1)SetEnvironment(val *string) {
+	if err := j.validateSetEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"environment",
@@ -647,7 +659,10 @@ func (j *jsiiProxy_RtsStackV1) SetEnvironment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetFiles(val *map[string]*string) {
+func (j *jsiiProxy_RtsStackV1)SetFiles(val *map[string]*string) {
+	if err := j.validateSetFilesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"files",
@@ -655,7 +670,7 @@ func (j *jsiiProxy_RtsStackV1) SetFiles(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RtsStackV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -663,7 +678,10 @@ func (j *jsiiProxy_RtsStackV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetId(val *string) {
+func (j *jsiiProxy_RtsStackV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -671,7 +689,10 @@ func (j *jsiiProxy_RtsStackV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RtsStackV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -679,7 +700,10 @@ func (j *jsiiProxy_RtsStackV1) SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetName(val *string) {
+func (j *jsiiProxy_RtsStackV1)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -687,7 +711,10 @@ func (j *jsiiProxy_RtsStackV1) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetParameters(val *map[string]*string) {
+func (j *jsiiProxy_RtsStackV1)SetParameters(val *map[string]*string) {
+	if err := j.validateSetParametersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"parameters",
@@ -695,7 +722,7 @@ func (j *jsiiProxy_RtsStackV1) SetParameters(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RtsStackV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -703,7 +730,10 @@ func (j *jsiiProxy_RtsStackV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RtsStackV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -711,7 +741,10 @@ func (j *jsiiProxy_RtsStackV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetRegion(val *string) {
+func (j *jsiiProxy_RtsStackV1)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -719,7 +752,10 @@ func (j *jsiiProxy_RtsStackV1) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetTemplateBody(val *string) {
+func (j *jsiiProxy_RtsStackV1)SetTemplateBody(val *string) {
+	if err := j.validateSetTemplateBodyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"templateBody",
@@ -727,7 +763,10 @@ func (j *jsiiProxy_RtsStackV1) SetTemplateBody(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetTemplateUrl(val *string) {
+func (j *jsiiProxy_RtsStackV1)SetTemplateUrl(val *string) {
+	if err := j.validateSetTemplateUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"templateUrl",
@@ -735,7 +774,10 @@ func (j *jsiiProxy_RtsStackV1) SetTemplateUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RtsStackV1) SetTimeoutMins(val *float64) {
+func (j *jsiiProxy_RtsStackV1)SetTimeoutMins(val *float64) {
+	if err := j.validateSetTimeoutMinsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeoutMins",
@@ -763,6 +805,9 @@ func (j *jsiiProxy_RtsStackV1) SetTimeoutMins(val *float64) {
 func RtsStackV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateRtsStackV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -787,6 +832,9 @@ func RtsStackV1_TfResourceType() *string {
 }
 
 func (r *jsiiProxy_RtsStackV1) AddOverride(path *string, value interface{}) {
+	if err := r.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
@@ -795,6 +843,9 @@ func (r *jsiiProxy_RtsStackV1) AddOverride(path *string, value interface{}) {
 }
 
 func (r *jsiiProxy_RtsStackV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -808,6 +859,9 @@ func (r *jsiiProxy_RtsStackV1) GetAnyMapAttribute(terraformAttribute *string) *m
 }
 
 func (r *jsiiProxy_RtsStackV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -821,6 +875,9 @@ func (r *jsiiProxy_RtsStackV1) GetBooleanAttribute(terraformAttribute *string) c
 }
 
 func (r *jsiiProxy_RtsStackV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -834,6 +891,9 @@ func (r *jsiiProxy_RtsStackV1) GetBooleanMapAttribute(terraformAttribute *string
 }
 
 func (r *jsiiProxy_RtsStackV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -847,6 +907,9 @@ func (r *jsiiProxy_RtsStackV1) GetListAttribute(terraformAttribute *string) *[]*
 }
 
 func (r *jsiiProxy_RtsStackV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -860,6 +923,9 @@ func (r *jsiiProxy_RtsStackV1) GetNumberAttribute(terraformAttribute *string) *f
 }
 
 func (r *jsiiProxy_RtsStackV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -873,6 +939,9 @@ func (r *jsiiProxy_RtsStackV1) GetNumberListAttribute(terraformAttribute *string
 }
 
 func (r *jsiiProxy_RtsStackV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -886,6 +955,9 @@ func (r *jsiiProxy_RtsStackV1) GetNumberMapAttribute(terraformAttribute *string)
 }
 
 func (r *jsiiProxy_RtsStackV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -899,6 +971,9 @@ func (r *jsiiProxy_RtsStackV1) GetStringAttribute(terraformAttribute *string) *s
 }
 
 func (r *jsiiProxy_RtsStackV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -912,6 +987,9 @@ func (r *jsiiProxy_RtsStackV1) GetStringMapAttribute(terraformAttribute *string)
 }
 
 func (r *jsiiProxy_RtsStackV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -925,6 +1003,9 @@ func (r *jsiiProxy_RtsStackV1) InterpolationForAttribute(terraformAttribute *str
 }
 
 func (r *jsiiProxy_RtsStackV1) OverrideLogicalId(newLogicalId *string) {
+	if err := r.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
@@ -933,6 +1014,9 @@ func (r *jsiiProxy_RtsStackV1) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (r *jsiiProxy_RtsStackV1) PutTimeouts(value *RtsStackV1Timeouts) {
+	if err := r.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",

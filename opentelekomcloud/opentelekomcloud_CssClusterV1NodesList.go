@@ -99,6 +99,9 @@ func (j *jsiiProxy_CssClusterV1NodesList) WrapsSet() *bool {
 func NewCssClusterV1NodesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CssClusterV1NodesList {
 	_init_.Initialize()
 
+	if err := validateNewCssClusterV1NodesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CssClusterV1NodesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewCssClusterV1NodesList_Override(c CssClusterV1NodesList, terraformResourc
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CssClusterV1NodesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_CssClusterV1NodesList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CssClusterV1NodesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_CssClusterV1NodesList) SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CssClusterV1NodesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (c *jsiiProxy_CssClusterV1NodesList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CssClusterV1NodesList) Get(index *float64) CssClusterV1NodesOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns CssClusterV1NodesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (c *jsiiProxy_CssClusterV1NodesList) Get(index *float64) CssClusterV1NodesO
 }
 
 func (c *jsiiProxy_CssClusterV1NodesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

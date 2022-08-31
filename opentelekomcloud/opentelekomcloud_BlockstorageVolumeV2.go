@@ -696,6 +696,9 @@ func (j *jsiiProxy_BlockstorageVolumeV2) Wwn() *string {
 func NewBlockstorageVolumeV2(scope constructs.Construct, id *string, config *BlockstorageVolumeV2Config) BlockstorageVolumeV2 {
 	_init_.Initialize()
 
+	if err := validateNewBlockstorageVolumeV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_BlockstorageVolumeV2{}
 
 	_jsii_.Create(
@@ -718,7 +721,10 @@ func NewBlockstorageVolumeV2_Override(b BlockstorageVolumeV2, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetAvailabilityZone(val *string) {
+	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availabilityZone",
@@ -726,7 +732,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetCascade(val interface{}) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetCascade(val interface{}) {
+	if err := j.validateSetCascadeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cascade",
@@ -734,7 +743,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetCascade(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -742,7 +754,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetConsistencyGroupId(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetConsistencyGroupId(val *string) {
+	if err := j.validateSetConsistencyGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"consistencyGroupId",
@@ -750,7 +765,7 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetConsistencyGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetCount(val *float64) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -758,7 +773,7 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -766,7 +781,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetDescription(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -774,7 +792,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetDeviceType(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetDeviceType(val *string) {
+	if err := j.validateSetDeviceTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deviceType",
@@ -782,7 +803,7 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetDeviceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -790,7 +811,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetId(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -798,7 +822,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetImageId(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetImageId(val *string) {
+	if err := j.validateSetImageIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"imageId",
@@ -806,7 +833,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetImageId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -814,7 +844,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetMetadata(val *map[string]*string) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metadata",
@@ -822,7 +855,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetMetadata(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetName(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -830,7 +866,7 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -838,7 +874,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -846,7 +885,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetRegion(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -854,7 +896,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetSize(val *float64) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -862,7 +907,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetSnapshotId(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetSnapshotId(val *string) {
+	if err := j.validateSetSnapshotIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snapshotId",
@@ -870,7 +918,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetSnapshotId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetSourceReplica(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetSourceReplica(val *string) {
+	if err := j.validateSetSourceReplicaParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sourceReplica",
@@ -878,7 +929,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetSourceReplica(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetSourceVolId(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetSourceVolId(val *string) {
+	if err := j.validateSetSourceVolIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sourceVolId",
@@ -886,7 +940,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetSourceVolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetTags(val *map[string]*string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -894,7 +951,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) SetVolumeType(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetVolumeType(val *string) {
+	if err := j.validateSetVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumeType",
@@ -922,6 +982,9 @@ func (j *jsiiProxy_BlockstorageVolumeV2) SetVolumeType(val *string) {
 func BlockstorageVolumeV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateBlockstorageVolumeV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -946,6 +1009,9 @@ func BlockstorageVolumeV2_TfResourceType() *string {
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) AddOverride(path *string, value interface{}) {
+	if err := b.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
@@ -954,6 +1020,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2) AddOverride(path *string, value interfa
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -967,6 +1036,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2) GetAnyMapAttribute(terraformAttribute *
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -980,6 +1052,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2) GetBooleanAttribute(terraformAttribute 
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := b.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -993,6 +1068,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2) GetBooleanMapAttribute(terraformAttribu
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := b.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1006,6 +1084,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2) GetListAttribute(terraformAttribute *st
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := b.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1019,6 +1100,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2) GetNumberAttribute(terraformAttribute *
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := b.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1032,6 +1116,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2) GetNumberListAttribute(terraformAttribu
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := b.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1045,6 +1132,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2) GetNumberMapAttribute(terraformAttribut
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := b.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1058,6 +1148,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2) GetStringAttribute(terraformAttribute *
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := b.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1071,6 +1164,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2) GetStringMapAttribute(terraformAttribut
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1084,6 +1180,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2) InterpolationForAttribute(terraformAttr
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) OverrideLogicalId(newLogicalId *string) {
+	if err := b.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
@@ -1092,6 +1191,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2) OverrideLogicalId(newLogicalId *string)
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2) PutTimeouts(value *BlockstorageVolumeV2Timeouts) {
+	if err := b.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",

@@ -111,6 +111,9 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsList) WrapsSet() *bool {
 func NewComputeInstanceV2SchedulerHintsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceV2SchedulerHintsList {
 	_init_.Initialize()
 
+	if err := validateNewComputeInstanceV2SchedulerHintsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ComputeInstanceV2SchedulerHintsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewComputeInstanceV2SchedulerHintsList_Override(c ComputeInstanceV2Schedule
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsList) Get(index *float64) ComputeInstanceV2SchedulerHintsOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ComputeInstanceV2SchedulerHintsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsList) Get(index *float64) Comp
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

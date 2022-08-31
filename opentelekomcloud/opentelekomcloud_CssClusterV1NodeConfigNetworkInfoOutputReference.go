@@ -220,6 +220,9 @@ func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) VpcIdInput(
 func NewCssClusterV1NodeConfigNetworkInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CssClusterV1NodeConfigNetworkInfoOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCssClusterV1NodeConfigNetworkInfoOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewCssClusterV1NodeConfigNetworkInfoOutputReference_Override(c CssClusterV1
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetInternalValue(val *CssClusterV1NodeConfigNetworkInfo) {
+func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference)SetInternalValue(val *CssClusterV1NodeConfigNetworkInfo) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetInternal
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetNetworkId(val *string) {
+func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference)SetNetworkId(val *string) {
+	if err := j.validateSetNetworkIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"networkId",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetNetworkI
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetSecurityGroupId(val *string) {
+func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference)SetSecurityGroupId(val *string) {
+	if err := j.validateSetSecurityGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityGroupId",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetSecurity
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) SetVpcId(val *string) {
+func (j *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcId",
@@ -319,6 +346,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) ComputeFqn(
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetAnyMapAt
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetBooleanA
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetBooleanM
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetListAttr
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetNumberAt
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetNumberLi
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetNumberMa
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetStringAt
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) Interpolati
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) Interpolati
 }
 
 func (c *jsiiProxy_CssClusterV1NodeConfigNetworkInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

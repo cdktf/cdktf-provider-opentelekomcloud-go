@@ -605,6 +605,9 @@ func (j *jsiiProxy_WafDomainV1) TxtCode() *string {
 func NewWafDomainV1(scope constructs.Construct, id *string, config *WafDomainV1Config) WafDomainV1 {
 	_init_.Initialize()
 
+	if err := validateNewWafDomainV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WafDomainV1{}
 
 	_jsii_.Create(
@@ -627,7 +630,10 @@ func NewWafDomainV1_Override(w WafDomainV1, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetCertificateId(val *string) {
+func (j *jsiiProxy_WafDomainV1)SetCertificateId(val *string) {
+	if err := j.validateSetCertificateIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificateId",
@@ -635,7 +641,10 @@ func (j *jsiiProxy_WafDomainV1) SetCertificateId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetCipher(val *string) {
+func (j *jsiiProxy_WafDomainV1)SetCipher(val *string) {
+	if err := j.validateSetCipherParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cipher",
@@ -643,7 +652,10 @@ func (j *jsiiProxy_WafDomainV1) SetCipher(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_WafDomainV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -651,7 +663,7 @@ func (j *jsiiProxy_WafDomainV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetCount(val *float64) {
+func (j *jsiiProxy_WafDomainV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -659,7 +671,7 @@ func (j *jsiiProxy_WafDomainV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WafDomainV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -667,7 +679,7 @@ func (j *jsiiProxy_WafDomainV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WafDomainV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -675,7 +687,10 @@ func (j *jsiiProxy_WafDomainV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetHostname(val *string) {
+func (j *jsiiProxy_WafDomainV1)SetHostname(val *string) {
+	if err := j.validateSetHostnameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hostname",
@@ -683,7 +698,10 @@ func (j *jsiiProxy_WafDomainV1) SetHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetId(val *string) {
+func (j *jsiiProxy_WafDomainV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -691,7 +709,10 @@ func (j *jsiiProxy_WafDomainV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WafDomainV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -699,7 +720,10 @@ func (j *jsiiProxy_WafDomainV1) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetPolicyId(val *string) {
+func (j *jsiiProxy_WafDomainV1)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyId",
@@ -707,7 +731,7 @@ func (j *jsiiProxy_WafDomainV1) SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WafDomainV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -715,7 +739,10 @@ func (j *jsiiProxy_WafDomainV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WafDomainV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -723,7 +750,10 @@ func (j *jsiiProxy_WafDomainV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetProxy(val interface{}) {
+func (j *jsiiProxy_WafDomainV1)SetProxy(val interface{}) {
+	if err := j.validateSetProxyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"proxy",
@@ -731,7 +761,10 @@ func (j *jsiiProxy_WafDomainV1) SetProxy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetSipHeaderList(val *[]*string) {
+func (j *jsiiProxy_WafDomainV1)SetSipHeaderList(val *[]*string) {
+	if err := j.validateSetSipHeaderListParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sipHeaderList",
@@ -739,7 +772,10 @@ func (j *jsiiProxy_WafDomainV1) SetSipHeaderList(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetSipHeaderName(val *string) {
+func (j *jsiiProxy_WafDomainV1)SetSipHeaderName(val *string) {
+	if err := j.validateSetSipHeaderNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sipHeaderName",
@@ -747,7 +783,10 @@ func (j *jsiiProxy_WafDomainV1) SetSipHeaderName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafDomainV1) SetTls(val *string) {
+func (j *jsiiProxy_WafDomainV1)SetTls(val *string) {
+	if err := j.validateSetTlsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tls",
@@ -775,6 +814,9 @@ func (j *jsiiProxy_WafDomainV1) SetTls(val *string) {
 func WafDomainV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateWafDomainV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -799,6 +841,9 @@ func WafDomainV1_TfResourceType() *string {
 }
 
 func (w *jsiiProxy_WafDomainV1) AddOverride(path *string, value interface{}) {
+	if err := w.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
@@ -807,6 +852,9 @@ func (w *jsiiProxy_WafDomainV1) AddOverride(path *string, value interface{}) {
 }
 
 func (w *jsiiProxy_WafDomainV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -820,6 +868,9 @@ func (w *jsiiProxy_WafDomainV1) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (w *jsiiProxy_WafDomainV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -833,6 +884,9 @@ func (w *jsiiProxy_WafDomainV1) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (w *jsiiProxy_WafDomainV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -846,6 +900,9 @@ func (w *jsiiProxy_WafDomainV1) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (w *jsiiProxy_WafDomainV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -859,6 +916,9 @@ func (w *jsiiProxy_WafDomainV1) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (w *jsiiProxy_WafDomainV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -872,6 +932,9 @@ func (w *jsiiProxy_WafDomainV1) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (w *jsiiProxy_WafDomainV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -885,6 +948,9 @@ func (w *jsiiProxy_WafDomainV1) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (w *jsiiProxy_WafDomainV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -898,6 +964,9 @@ func (w *jsiiProxy_WafDomainV1) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (w *jsiiProxy_WafDomainV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -911,6 +980,9 @@ func (w *jsiiProxy_WafDomainV1) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (w *jsiiProxy_WafDomainV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -924,6 +996,9 @@ func (w *jsiiProxy_WafDomainV1) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (w *jsiiProxy_WafDomainV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -937,6 +1012,9 @@ func (w *jsiiProxy_WafDomainV1) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (w *jsiiProxy_WafDomainV1) OverrideLogicalId(newLogicalId *string) {
+	if err := w.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
@@ -945,6 +1023,9 @@ func (w *jsiiProxy_WafDomainV1) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (w *jsiiProxy_WafDomainV1) PutServer(value interface{}) {
+	if err := w.validatePutServerParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"putServer",
@@ -953,6 +1034,9 @@ func (w *jsiiProxy_WafDomainV1) PutServer(value interface{}) {
 }
 
 func (w *jsiiProxy_WafDomainV1) PutTimeouts(value *WafDomainV1Timeouts) {
+	if err := w.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"putTimeouts",

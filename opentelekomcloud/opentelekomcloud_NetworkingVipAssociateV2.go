@@ -359,6 +359,9 @@ func (j *jsiiProxy_NetworkingVipAssociateV2) VipSubnetId() *string {
 func NewNetworkingVipAssociateV2(scope constructs.Construct, id *string, config *NetworkingVipAssociateV2Config) NetworkingVipAssociateV2 {
 	_init_.Initialize()
 
+	if err := validateNewNetworkingVipAssociateV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NetworkingVipAssociateV2{}
 
 	_jsii_.Create(
@@ -381,7 +384,10 @@ func NewNetworkingVipAssociateV2_Override(n NetworkingVipAssociateV2, scope cons
 	)
 }
 
-func (j *jsiiProxy_NetworkingVipAssociateV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkingVipAssociateV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -389,7 +395,7 @@ func (j *jsiiProxy_NetworkingVipAssociateV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingVipAssociateV2) SetCount(val *float64) {
+func (j *jsiiProxy_NetworkingVipAssociateV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -397,7 +403,7 @@ func (j *jsiiProxy_NetworkingVipAssociateV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingVipAssociateV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkingVipAssociateV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -405,7 +411,7 @@ func (j *jsiiProxy_NetworkingVipAssociateV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingVipAssociateV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkingVipAssociateV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -413,7 +419,10 @@ func (j *jsiiProxy_NetworkingVipAssociateV2) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_NetworkingVipAssociateV2) SetId(val *string) {
+func (j *jsiiProxy_NetworkingVipAssociateV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -421,7 +430,10 @@ func (j *jsiiProxy_NetworkingVipAssociateV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingVipAssociateV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkingVipAssociateV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -429,7 +441,10 @@ func (j *jsiiProxy_NetworkingVipAssociateV2) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_NetworkingVipAssociateV2) SetPortIds(val *[]*string) {
+func (j *jsiiProxy_NetworkingVipAssociateV2)SetPortIds(val *[]*string) {
+	if err := j.validateSetPortIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"portIds",
@@ -437,7 +452,7 @@ func (j *jsiiProxy_NetworkingVipAssociateV2) SetPortIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingVipAssociateV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkingVipAssociateV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -445,7 +460,10 @@ func (j *jsiiProxy_NetworkingVipAssociateV2) SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_NetworkingVipAssociateV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkingVipAssociateV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -453,7 +471,10 @@ func (j *jsiiProxy_NetworkingVipAssociateV2) SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_NetworkingVipAssociateV2) SetVipId(val *string) {
+func (j *jsiiProxy_NetworkingVipAssociateV2)SetVipId(val *string) {
+	if err := j.validateSetVipIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vipId",
@@ -481,6 +502,9 @@ func (j *jsiiProxy_NetworkingVipAssociateV2) SetVipId(val *string) {
 func NetworkingVipAssociateV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateNetworkingVipAssociateV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -505,6 +529,9 @@ func NetworkingVipAssociateV2_TfResourceType() *string {
 }
 
 func (n *jsiiProxy_NetworkingVipAssociateV2) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
@@ -513,6 +540,9 @@ func (n *jsiiProxy_NetworkingVipAssociateV2) AddOverride(path *string, value int
 }
 
 func (n *jsiiProxy_NetworkingVipAssociateV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -526,6 +556,9 @@ func (n *jsiiProxy_NetworkingVipAssociateV2) GetAnyMapAttribute(terraformAttribu
 }
 
 func (n *jsiiProxy_NetworkingVipAssociateV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -539,6 +572,9 @@ func (n *jsiiProxy_NetworkingVipAssociateV2) GetBooleanAttribute(terraformAttrib
 }
 
 func (n *jsiiProxy_NetworkingVipAssociateV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -552,6 +588,9 @@ func (n *jsiiProxy_NetworkingVipAssociateV2) GetBooleanMapAttribute(terraformAtt
 }
 
 func (n *jsiiProxy_NetworkingVipAssociateV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -565,6 +604,9 @@ func (n *jsiiProxy_NetworkingVipAssociateV2) GetListAttribute(terraformAttribute
 }
 
 func (n *jsiiProxy_NetworkingVipAssociateV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -578,6 +620,9 @@ func (n *jsiiProxy_NetworkingVipAssociateV2) GetNumberAttribute(terraformAttribu
 }
 
 func (n *jsiiProxy_NetworkingVipAssociateV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -591,6 +636,9 @@ func (n *jsiiProxy_NetworkingVipAssociateV2) GetNumberListAttribute(terraformAtt
 }
 
 func (n *jsiiProxy_NetworkingVipAssociateV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -604,6 +652,9 @@ func (n *jsiiProxy_NetworkingVipAssociateV2) GetNumberMapAttribute(terraformAttr
 }
 
 func (n *jsiiProxy_NetworkingVipAssociateV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -617,6 +668,9 @@ func (n *jsiiProxy_NetworkingVipAssociateV2) GetStringAttribute(terraformAttribu
 }
 
 func (n *jsiiProxy_NetworkingVipAssociateV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -630,6 +684,9 @@ func (n *jsiiProxy_NetworkingVipAssociateV2) GetStringMapAttribute(terraformAttr
 }
 
 func (n *jsiiProxy_NetworkingVipAssociateV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -643,6 +700,9 @@ func (n *jsiiProxy_NetworkingVipAssociateV2) InterpolationForAttribute(terraform
 }
 
 func (n *jsiiProxy_NetworkingVipAssociateV2) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",

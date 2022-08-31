@@ -199,6 +199,9 @@ func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) Terr
 func NewDataOpentelekomcloudDehServerV1AddressesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataOpentelekomcloudDehServerV1AddressesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudDehServerV1AddressesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewDataOpentelekomcloudDehServerV1AddressesOutputReference_Override(d DataO
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetFixedIpV4(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference)SetFixedIpV4(val *string) {
+	if err := j.validateSetFixedIpV4Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fixedIpV4",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetF
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetName(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetN
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) Comp
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetA
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetB
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetB
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetL
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetN
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetN
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetN
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetS
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) Inte
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) Rese
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

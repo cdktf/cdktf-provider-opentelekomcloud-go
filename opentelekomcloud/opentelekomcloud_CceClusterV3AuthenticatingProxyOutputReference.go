@@ -220,6 +220,9 @@ func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) TerraformReso
 func NewCceClusterV3AuthenticatingProxyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CceClusterV3AuthenticatingProxyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCceClusterV3AuthenticatingProxyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewCceClusterV3AuthenticatingProxyOutputReference_Override(c CceClusterV3Au
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetCa(val *string) {
+func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference)SetCa(val *string) {
+	if err := j.validateSetCaParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ca",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetCa(val *st
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetCert(val *string) {
+func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference)SetCert(val *string) {
+	if err := j.validateSetCertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cert",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetCert(val *
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetInternalValue(val *CceClusterV3AuthenticatingProxy) {
+func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference)SetInternalValue(val *CceClusterV3AuthenticatingProxy) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetPrivateKey(val *string) {
+func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference)SetPrivateKey(val *string) {
+	if err := j.validateSetPrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateKey",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetPrivateKey
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -319,6 +346,9 @@ func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) ComputeFqn() 
 }
 
 func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetAnyMapAttr
 }
 
 func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetBooleanAtt
 }
 
 func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetBooleanMap
 }
 
 func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetListAttrib
 }
 
 func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetNumberAttr
 }
 
 func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetNumberList
 }
 
 func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetNumberMapA
 }
 
 func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetStringAttr
 }
 
 func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) Interpolation
 }
 
 func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) Interpolation
 }
 
 func (c *jsiiProxy_CceClusterV3AuthenticatingProxyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

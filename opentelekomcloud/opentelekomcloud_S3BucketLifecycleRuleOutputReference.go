@@ -294,6 +294,9 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) TerraformResource() cdk
 func NewS3BucketLifecycleRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketLifecycleRuleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewS3BucketLifecycleRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_S3BucketLifecycleRuleOutputReference{}
 
 	_jsii_.Create(
@@ -315,7 +318,10 @@ func NewS3BucketLifecycleRuleOutputReference_Override(s S3BucketLifecycleRuleOut
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetAbortIncompleteMultipartUploadDays(val *float64) {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference)SetAbortIncompleteMultipartUploadDays(val *float64) {
+	if err := j.validateSetAbortIncompleteMultipartUploadDaysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"abortIncompleteMultipartUploadDays",
@@ -323,7 +329,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetAbortIncompleteMulti
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -331,7 +340,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -339,7 +351,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetEnabled(val interface{}) {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -347,7 +362,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetEnabled(val interfac
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetId(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -355,7 +373,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -363,7 +384,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetPrefix(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference)SetPrefix(val *string) {
+	if err := j.validateSetPrefixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"prefix",
@@ -371,7 +395,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetPrefix(val *string) 
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -379,7 +406,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -401,6 +431,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -414,6 +447,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetAnyMapAttribute(terr
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -427,6 +463,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetBooleanAttribute(ter
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -440,6 +479,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetBooleanMapAttribute(
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -453,6 +495,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetListAttribute(terraf
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -466,6 +511,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetNumberAttribute(terr
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -479,6 +527,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetNumberListAttribute(
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -492,6 +543,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetNumberMapAttribute(t
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -505,6 +559,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetStringAttribute(terr
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -531,6 +588,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) InterpolationAsList() c
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -544,6 +604,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) InterpolationForAttribu
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) PutExpiration(value interface{}) {
+	if err := s.validatePutExpirationParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putExpiration",
@@ -552,6 +615,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) PutExpiration(value int
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) PutNoncurrentVersionExpiration(value interface{}) {
+	if err := s.validatePutNoncurrentVersionExpirationParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putNoncurrentVersionExpiration",
@@ -600,6 +666,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) ResetPrefix() {
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

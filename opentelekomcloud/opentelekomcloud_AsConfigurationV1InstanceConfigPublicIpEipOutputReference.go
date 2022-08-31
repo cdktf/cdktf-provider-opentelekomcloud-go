@@ -197,6 +197,9 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Te
 func NewAsConfigurationV1InstanceConfigPublicIpEipOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AsConfigurationV1InstanceConfigPublicIpEipOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAsConfigurationV1InstanceConfigPublicIpEipOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewAsConfigurationV1InstanceConfigPublicIpEipOutputReference_Override(a AsC
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) SetInternalValue(val *AsConfigurationV1InstanceConfigPublicIpEip) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference)SetInternalValue(val *AsConfigurationV1InstanceConfigPublicIpEip) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) SetIpType(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference)SetIpType(val *string) {
+	if err := j.validateSetIpTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ipType",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -280,6 +301,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Co
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -293,6 +317,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Ge
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -306,6 +333,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Ge
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -319,6 +349,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Ge
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -332,6 +365,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Ge
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -345,6 +381,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Ge
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -358,6 +397,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Ge
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -371,6 +413,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Ge
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -384,6 +429,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Ge
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) In
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) In
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) PutBandwidth(value *AsConfigurationV1InstanceConfigPublicIpEipBandwidth) {
+	if err := a.validatePutBandwidthParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putBandwidth",
@@ -431,6 +485,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Pu
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

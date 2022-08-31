@@ -111,6 +111,9 @@ func (j *jsiiProxy_ComputeSecgroupV2RuleList) WrapsSet() *bool {
 func NewComputeSecgroupV2RuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeSecgroupV2RuleList {
 	_init_.Initialize()
 
+	if err := validateNewComputeSecgroupV2RuleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ComputeSecgroupV2RuleList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewComputeSecgroupV2RuleList_Override(c ComputeSecgroupV2RuleList, terrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeSecgroupV2RuleList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeSecgroupV2RuleList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ComputeSecgroupV2RuleList) SetInternalValue(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ComputeSecgroupV2RuleList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeSecgroupV2RuleList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ComputeSecgroupV2RuleList) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_ComputeSecgroupV2RuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeSecgroupV2RuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ComputeSecgroupV2RuleList) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_ComputeSecgroupV2RuleList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ComputeSecgroupV2RuleList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (c *jsiiProxy_ComputeSecgroupV2RuleList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_ComputeSecgroupV2RuleList) Get(index *float64) ComputeSecgroupV2RuleOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ComputeSecgroupV2RuleOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (c *jsiiProxy_ComputeSecgroupV2RuleList) Get(index *float64) ComputeSecgrou
 }
 
 func (c *jsiiProxy_ComputeSecgroupV2RuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

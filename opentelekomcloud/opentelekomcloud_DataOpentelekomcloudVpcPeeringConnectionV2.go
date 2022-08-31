@@ -407,6 +407,9 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) VpcIdInput() *str
 func NewDataOpentelekomcloudVpcPeeringConnectionV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcPeeringConnectionV2Config) DataOpentelekomcloudVpcPeeringConnectionV2 {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudVpcPeeringConnectionV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2{}
 
 	_jsii_.Create(
@@ -429,7 +432,7 @@ func NewDataOpentelekomcloudVpcPeeringConnectionV2_Override(d DataOpentelekomclo
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -437,7 +440,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetCount(val *flo
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -445,7 +448,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetDependsOn(val 
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -453,7 +456,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetForEach(val cd
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -461,7 +467,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetId(val *string
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -469,7 +478,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetLifecycle(val 
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetName(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -477,7 +489,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetName(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetPeerTenantId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2)SetPeerTenantId(val *string) {
+	if err := j.validateSetPeerTenantIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"peerTenantId",
@@ -485,7 +500,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetPeerTenantId(v
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetPeerVpcId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2)SetPeerVpcId(val *string) {
+	if err := j.validateSetPeerVpcIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"peerVpcId",
@@ -493,7 +511,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetPeerVpcId(val 
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -501,7 +519,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetProvider(val c
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetRegion(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -509,7 +530,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetRegion(val *st
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetStatus(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -517,7 +541,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetStatus(val *st
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetVpcId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcId",
@@ -545,6 +572,9 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) SetVpcId(val *str
 func DataOpentelekomcloudVpcPeeringConnectionV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataOpentelekomcloudVpcPeeringConnectionV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -569,6 +599,9 @@ func DataOpentelekomcloudVpcPeeringConnectionV2_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -577,6 +610,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) AddOverride(path 
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -590,6 +626,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetAnyMapAttribut
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -603,6 +642,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetBooleanAttribu
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -616,6 +658,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetBooleanMapAttr
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -629,6 +674,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetListAttribute(
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -642,6 +690,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetNumberAttribut
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -655,6 +706,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetNumberListAttr
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -668,6 +722,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetNumberMapAttri
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -681,6 +738,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetStringAttribut
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -694,6 +754,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) GetStringMapAttri
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -707,6 +770,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) InterpolationForA
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

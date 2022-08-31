@@ -587,6 +587,9 @@ func (j *jsiiProxy_VbsBackupPolicyV2) WeekFrequencyInput() *[]*string {
 func NewVbsBackupPolicyV2(scope constructs.Construct, id *string, config *VbsBackupPolicyV2Config) VbsBackupPolicyV2 {
 	_init_.Initialize()
 
+	if err := validateNewVbsBackupPolicyV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VbsBackupPolicyV2{}
 
 	_jsii_.Create(
@@ -609,7 +612,10 @@ func NewVbsBackupPolicyV2_Override(v VbsBackupPolicyV2, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -617,7 +623,7 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetCount(val *float64) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -625,7 +631,7 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -633,7 +639,7 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -641,7 +647,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetFrequency(val *float64) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetFrequency(val *float64) {
+	if err := j.validateSetFrequencyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"frequency",
@@ -649,7 +658,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetFrequency(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetId(val *string) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -657,7 +669,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -665,7 +680,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetName(val *string) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -673,7 +691,7 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -681,7 +699,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -689,7 +710,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetRegion(val *string) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -697,7 +721,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetRententionDay(val *float64) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetRententionDay(val *float64) {
+	if err := j.validateSetRententionDayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rententionDay",
@@ -705,7 +732,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetRententionDay(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetRententionNum(val *float64) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetRententionNum(val *float64) {
+	if err := j.validateSetRententionNumParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rententionNum",
@@ -713,7 +743,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetRententionNum(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetResources(val *[]*string) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetResources(val *[]*string) {
+	if err := j.validateSetResourcesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resources",
@@ -721,7 +754,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetResources(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetRetainFirstBackup(val *string) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetRetainFirstBackup(val *string) {
+	if err := j.validateSetRetainFirstBackupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"retainFirstBackup",
@@ -729,7 +765,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetRetainFirstBackup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetStartTime(val *string) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetStartTime(val *string) {
+	if err := j.validateSetStartTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"startTime",
@@ -737,7 +776,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetStartTime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetStatus(val *string) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -745,7 +787,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupPolicyV2) SetWeekFrequency(val *[]*string) {
+func (j *jsiiProxy_VbsBackupPolicyV2)SetWeekFrequency(val *[]*string) {
+	if err := j.validateSetWeekFrequencyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"weekFrequency",
@@ -773,6 +818,9 @@ func (j *jsiiProxy_VbsBackupPolicyV2) SetWeekFrequency(val *[]*string) {
 func VbsBackupPolicyV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateVbsBackupPolicyV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -797,6 +845,9 @@ func VbsBackupPolicyV2_TfResourceType() *string {
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) AddOverride(path *string, value interface{}) {
+	if err := v.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
@@ -805,6 +856,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) AddOverride(path *string, value interface{
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -818,6 +872,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) GetAnyMapAttribute(terraformAttribute *str
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -831,6 +888,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) GetBooleanAttribute(terraformAttribute *st
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := v.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -844,6 +904,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) GetBooleanMapAttribute(terraformAttribute 
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := v.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -857,6 +920,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) GetListAttribute(terraformAttribute *strin
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := v.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -870,6 +936,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) GetNumberAttribute(terraformAttribute *str
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := v.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -883,6 +952,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) GetNumberListAttribute(terraformAttribute 
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := v.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -896,6 +968,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) GetNumberMapAttribute(terraformAttribute *
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := v.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -909,6 +984,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) GetStringAttribute(terraformAttribute *str
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := v.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -922,6 +1000,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) GetStringMapAttribute(terraformAttribute *
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -935,6 +1016,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) InterpolationForAttribute(terraformAttribu
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) OverrideLogicalId(newLogicalId *string) {
+	if err := v.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
@@ -943,6 +1027,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) PutTags(value interface{}) {
+	if err := v.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"putTags",
@@ -951,6 +1038,9 @@ func (v *jsiiProxy_VbsBackupPolicyV2) PutTags(value interface{}) {
 }
 
 func (v *jsiiProxy_VbsBackupPolicyV2) PutTimeouts(value *VbsBackupPolicyV2Timeouts) {
+	if err := v.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",

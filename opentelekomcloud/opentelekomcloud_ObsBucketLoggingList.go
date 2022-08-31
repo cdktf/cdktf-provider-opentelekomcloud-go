@@ -111,6 +111,9 @@ func (j *jsiiProxy_ObsBucketLoggingList) WrapsSet() *bool {
 func NewObsBucketLoggingList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObsBucketLoggingList {
 	_init_.Initialize()
 
+	if err := validateNewObsBucketLoggingListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ObsBucketLoggingList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewObsBucketLoggingList_Override(o ObsBucketLoggingList, terraformResource 
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLoggingList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ObsBucketLoggingList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ObsBucketLoggingList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLoggingList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ObsBucketLoggingList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ObsBucketLoggingList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLoggingList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ObsBucketLoggingList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ObsBucketLoggingList) SetTerraformResource(val cdktf.IInterpo
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLoggingList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ObsBucketLoggingList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_ObsBucketLoggingList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_ObsBucketLoggingList) Get(index *float64) ObsBucketLoggingOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ObsBucketLoggingOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_ObsBucketLoggingList) Get(index *float64) ObsBucketLoggingOut
 }
 
 func (o *jsiiProxy_ObsBucketLoggingList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

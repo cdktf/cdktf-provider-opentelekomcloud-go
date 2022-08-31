@@ -111,6 +111,9 @@ func (j *jsiiProxy_CbrVaultV3BindRulesList) WrapsSet() *bool {
 func NewCbrVaultV3BindRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CbrVaultV3BindRulesList {
 	_init_.Initialize()
 
+	if err := validateNewCbrVaultV3BindRulesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CbrVaultV3BindRulesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewCbrVaultV3BindRulesList_Override(c CbrVaultV3BindRulesList, terraformRes
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BindRulesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CbrVaultV3BindRulesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_CbrVaultV3BindRulesList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BindRulesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CbrVaultV3BindRulesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_CbrVaultV3BindRulesList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BindRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CbrVaultV3BindRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_CbrVaultV3BindRulesList) SetTerraformResource(val cdktf.IInte
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BindRulesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CbrVaultV3BindRulesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (c *jsiiProxy_CbrVaultV3BindRulesList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CbrVaultV3BindRulesList) Get(index *float64) CbrVaultV3BindRulesOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns CbrVaultV3BindRulesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (c *jsiiProxy_CbrVaultV3BindRulesList) Get(index *float64) CbrVaultV3BindRu
 }
 
 func (c *jsiiProxy_CbrVaultV3BindRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

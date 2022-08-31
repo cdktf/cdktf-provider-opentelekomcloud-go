@@ -99,6 +99,9 @@ func (j *jsiiProxy_DdsInstanceV3NodesList) WrapsSet() *bool {
 func NewDdsInstanceV3NodesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DdsInstanceV3NodesList {
 	_init_.Initialize()
 
+	if err := validateNewDdsInstanceV3NodesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DdsInstanceV3NodesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDdsInstanceV3NodesList_Override(d DdsInstanceV3NodesList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_DdsInstanceV3NodesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DdsInstanceV3NodesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DdsInstanceV3NodesList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DdsInstanceV3NodesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DdsInstanceV3NodesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DdsInstanceV3NodesList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_DdsInstanceV3NodesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DdsInstanceV3NodesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DdsInstanceV3NodesList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DdsInstanceV3NodesList) Get(index *float64) DdsInstanceV3NodesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DdsInstanceV3NodesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DdsInstanceV3NodesList) Get(index *float64) DdsInstanceV3Node
 }
 
 func (d *jsiiProxy_DdsInstanceV3NodesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTr
 func NewDataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionLis
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTr
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTr
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTr
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList) Get(index *float64) DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTr
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

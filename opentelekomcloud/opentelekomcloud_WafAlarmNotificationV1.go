@@ -430,6 +430,9 @@ func (j *jsiiProxy_WafAlarmNotificationV1) TopicUrnInput() *string {
 func NewWafAlarmNotificationV1(scope constructs.Construct, id *string, config *WafAlarmNotificationV1Config) WafAlarmNotificationV1 {
 	_init_.Initialize()
 
+	if err := validateNewWafAlarmNotificationV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WafAlarmNotificationV1{}
 
 	_jsii_.Create(
@@ -452,7 +455,10 @@ func NewWafAlarmNotificationV1_Override(w WafAlarmNotificationV1, scope construc
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -460,7 +466,7 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetCount(val *float64) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -468,7 +474,7 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -476,7 +482,10 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetEnabled(val interface{}) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -484,7 +493,7 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -492,7 +501,10 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetId(val *string) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -500,7 +512,10 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -508,7 +523,10 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetLocale(val *string) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetLocale(val *string) {
+	if err := j.validateSetLocaleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"locale",
@@ -516,7 +534,7 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetLocale(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -524,7 +542,10 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -532,7 +553,10 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetSendFrequency(val *float64) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetSendFrequency(val *float64) {
+	if err := j.validateSetSendFrequencyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sendFrequency",
@@ -540,7 +564,10 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetSendFrequency(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetThreat(val *[]*string) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetThreat(val *[]*string) {
+	if err := j.validateSetThreatParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"threat",
@@ -548,7 +575,10 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetThreat(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetTimes(val *float64) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetTimes(val *float64) {
+	if err := j.validateSetTimesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"times",
@@ -556,7 +586,10 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetTimes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WafAlarmNotificationV1) SetTopicUrn(val *string) {
+func (j *jsiiProxy_WafAlarmNotificationV1)SetTopicUrn(val *string) {
+	if err := j.validateSetTopicUrnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"topicUrn",
@@ -584,6 +617,9 @@ func (j *jsiiProxy_WafAlarmNotificationV1) SetTopicUrn(val *string) {
 func WafAlarmNotificationV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateWafAlarmNotificationV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -608,6 +644,9 @@ func WafAlarmNotificationV1_TfResourceType() *string {
 }
 
 func (w *jsiiProxy_WafAlarmNotificationV1) AddOverride(path *string, value interface{}) {
+	if err := w.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
@@ -616,6 +655,9 @@ func (w *jsiiProxy_WafAlarmNotificationV1) AddOverride(path *string, value inter
 }
 
 func (w *jsiiProxy_WafAlarmNotificationV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -629,6 +671,9 @@ func (w *jsiiProxy_WafAlarmNotificationV1) GetAnyMapAttribute(terraformAttribute
 }
 
 func (w *jsiiProxy_WafAlarmNotificationV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -642,6 +687,9 @@ func (w *jsiiProxy_WafAlarmNotificationV1) GetBooleanAttribute(terraformAttribut
 }
 
 func (w *jsiiProxy_WafAlarmNotificationV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -655,6 +703,9 @@ func (w *jsiiProxy_WafAlarmNotificationV1) GetBooleanMapAttribute(terraformAttri
 }
 
 func (w *jsiiProxy_WafAlarmNotificationV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -668,6 +719,9 @@ func (w *jsiiProxy_WafAlarmNotificationV1) GetListAttribute(terraformAttribute *
 }
 
 func (w *jsiiProxy_WafAlarmNotificationV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -681,6 +735,9 @@ func (w *jsiiProxy_WafAlarmNotificationV1) GetNumberAttribute(terraformAttribute
 }
 
 func (w *jsiiProxy_WafAlarmNotificationV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -694,6 +751,9 @@ func (w *jsiiProxy_WafAlarmNotificationV1) GetNumberListAttribute(terraformAttri
 }
 
 func (w *jsiiProxy_WafAlarmNotificationV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -707,6 +767,9 @@ func (w *jsiiProxy_WafAlarmNotificationV1) GetNumberMapAttribute(terraformAttrib
 }
 
 func (w *jsiiProxy_WafAlarmNotificationV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -720,6 +783,9 @@ func (w *jsiiProxy_WafAlarmNotificationV1) GetStringAttribute(terraformAttribute
 }
 
 func (w *jsiiProxy_WafAlarmNotificationV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -733,6 +799,9 @@ func (w *jsiiProxy_WafAlarmNotificationV1) GetStringMapAttribute(terraformAttrib
 }
 
 func (w *jsiiProxy_WafAlarmNotificationV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -746,6 +815,9 @@ func (w *jsiiProxy_WafAlarmNotificationV1) InterpolationForAttribute(terraformAt
 }
 
 func (w *jsiiProxy_WafAlarmNotificationV1) OverrideLogicalId(newLogicalId *string) {
+	if err := w.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",

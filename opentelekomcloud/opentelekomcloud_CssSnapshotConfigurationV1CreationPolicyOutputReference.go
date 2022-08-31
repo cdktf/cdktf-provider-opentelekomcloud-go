@@ -267,6 +267,9 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) Terr
 func NewCssSnapshotConfigurationV1CreationPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CssSnapshotConfigurationV1CreationPolicyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCssSnapshotConfigurationV1CreationPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference{}
 
 	_jsii_.Create(
@@ -288,7 +291,10 @@ func NewCssSnapshotConfigurationV1CreationPolicyOutputReference_Override(c CssSn
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -296,7 +302,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -304,7 +313,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetDeleteAuto(val interface{}) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference)SetDeleteAuto(val interface{}) {
+	if err := j.validateSetDeleteAutoParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deleteAuto",
@@ -312,7 +324,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetD
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetEnable(val interface{}) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference)SetEnable(val interface{}) {
+	if err := j.validateSetEnableParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enable",
@@ -320,7 +335,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetE
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetInternalValue(val *CssSnapshotConfigurationV1CreationPolicy) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference)SetInternalValue(val *CssSnapshotConfigurationV1CreationPolicy) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -328,7 +346,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetKeepday(val *float64) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference)SetKeepday(val *float64) {
+	if err := j.validateSetKeepdayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keepday",
@@ -336,7 +357,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetK
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetPeriod(val *string) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference)SetPeriod(val *string) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"period",
@@ -344,7 +368,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetP
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetPrefix(val *string) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference)SetPrefix(val *string) {
+	if err := j.validateSetPrefixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"prefix",
@@ -352,7 +379,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetP
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -360,7 +390,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -382,6 +415,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) Comp
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -395,6 +431,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetA
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -408,6 +447,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetB
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -421,6 +463,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetB
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -434,6 +479,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetL
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -447,6 +495,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetN
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -460,6 +511,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetN
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -473,6 +527,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetN
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -486,6 +543,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetS
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -512,6 +572,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) Inte
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -533,6 +596,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) Rese
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1CreationPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

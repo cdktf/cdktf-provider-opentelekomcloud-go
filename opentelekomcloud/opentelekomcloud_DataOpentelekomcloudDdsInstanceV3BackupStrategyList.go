@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList) WrapsSet
 func NewDataOpentelekomcloudDdsInstanceV3BackupStrategyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudDdsInstanceV3BackupStrategyList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudDdsInstanceV3BackupStrategyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudDdsInstanceV3BackupStrategyList_Override(d DataOpent
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList) ComputeF
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList) Get(index *float64) DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList) Get(inde
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

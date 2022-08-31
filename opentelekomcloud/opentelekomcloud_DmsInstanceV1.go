@@ -856,6 +856,9 @@ func (j *jsiiProxy_DmsInstanceV1) VpcName() *string {
 func NewDmsInstanceV1(scope constructs.Construct, id *string, config *DmsInstanceV1Config) DmsInstanceV1 {
 	_init_.Initialize()
 
+	if err := validateNewDmsInstanceV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DmsInstanceV1{}
 
 	_jsii_.Create(
@@ -878,7 +881,10 @@ func NewDmsInstanceV1_Override(d DmsInstanceV1, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetAccessUser(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetAccessUser(val *string) {
+	if err := j.validateSetAccessUserParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessUser",
@@ -886,7 +892,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetAccessUser(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetAvailableZones(val *[]*string) {
+func (j *jsiiProxy_DmsInstanceV1)SetAvailableZones(val *[]*string) {
+	if err := j.validateSetAvailableZonesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availableZones",
@@ -894,7 +903,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetAvailableZones(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_DmsInstanceV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -902,7 +914,7 @@ func (j *jsiiProxy_DmsInstanceV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetCount(val *float64) {
+func (j *jsiiProxy_DmsInstanceV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -910,7 +922,7 @@ func (j *jsiiProxy_DmsInstanceV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DmsInstanceV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -918,7 +930,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetDescription(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -926,7 +941,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetEngine(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetEngine(val *string) {
+	if err := j.validateSetEngineParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"engine",
@@ -934,7 +952,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetEngineVersion(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetEngineVersion(val *string) {
+	if err := j.validateSetEngineVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"engineVersion",
@@ -942,7 +963,7 @@ func (j *jsiiProxy_DmsInstanceV1) SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DmsInstanceV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -950,7 +971,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetId(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -958,7 +982,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DmsInstanceV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -966,7 +993,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetMaintainBegin(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetMaintainBegin(val *string) {
+	if err := j.validateSetMaintainBeginParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maintainBegin",
@@ -974,7 +1004,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetMaintainBegin(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetMaintainEnd(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetMaintainEnd(val *string) {
+	if err := j.validateSetMaintainEndParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maintainEnd",
@@ -982,7 +1015,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetMaintainEnd(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetName(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -990,7 +1026,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetPartitionNum(val *float64) {
+func (j *jsiiProxy_DmsInstanceV1)SetPartitionNum(val *float64) {
+	if err := j.validateSetPartitionNumParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"partitionNum",
@@ -998,7 +1037,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetPartitionNum(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetPassword(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -1006,7 +1048,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetProductId(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetProductId(val *string) {
+	if err := j.validateSetProductIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"productId",
@@ -1014,7 +1059,7 @@ func (j *jsiiProxy_DmsInstanceV1) SetProductId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DmsInstanceV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1022,7 +1067,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DmsInstanceV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1030,7 +1078,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetRetentionPolicy(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetRetentionPolicy(val *string) {
+	if err := j.validateSetRetentionPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"retentionPolicy",
@@ -1038,7 +1089,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetRetentionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetSecurityGroupId(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetSecurityGroupId(val *string) {
+	if err := j.validateSetSecurityGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityGroupId",
@@ -1046,7 +1100,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetSecurityGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetSpecification(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetSpecification(val *string) {
+	if err := j.validateSetSpecificationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"specification",
@@ -1054,7 +1111,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetSpecification(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetStorageSpace(val *float64) {
+func (j *jsiiProxy_DmsInstanceV1)SetStorageSpace(val *float64) {
+	if err := j.validateSetStorageSpaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageSpace",
@@ -1062,7 +1122,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetStorageSpace(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetStorageSpecCode(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetStorageSpecCode(val *string) {
+	if err := j.validateSetStorageSpecCodeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageSpecCode",
@@ -1070,7 +1133,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetStorageSpecCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetSubnetId(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetSubnetId(val *string) {
+	if err := j.validateSetSubnetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subnetId",
@@ -1078,7 +1144,10 @@ func (j *jsiiProxy_DmsInstanceV1) SetSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsInstanceV1) SetVpcId(val *string) {
+func (j *jsiiProxy_DmsInstanceV1)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcId",
@@ -1106,6 +1175,9 @@ func (j *jsiiProxy_DmsInstanceV1) SetVpcId(val *string) {
 func DmsInstanceV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDmsInstanceV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1130,6 +1202,9 @@ func DmsInstanceV1_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DmsInstanceV1) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -1138,6 +1213,9 @@ func (d *jsiiProxy_DmsInstanceV1) AddOverride(path *string, value interface{}) {
 }
 
 func (d *jsiiProxy_DmsInstanceV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1151,6 +1229,9 @@ func (d *jsiiProxy_DmsInstanceV1) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DmsInstanceV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1164,6 +1245,9 @@ func (d *jsiiProxy_DmsInstanceV1) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (d *jsiiProxy_DmsInstanceV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1177,6 +1261,9 @@ func (d *jsiiProxy_DmsInstanceV1) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DmsInstanceV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1190,6 +1277,9 @@ func (d *jsiiProxy_DmsInstanceV1) GetListAttribute(terraformAttribute *string) *
 }
 
 func (d *jsiiProxy_DmsInstanceV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1203,6 +1293,9 @@ func (d *jsiiProxy_DmsInstanceV1) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DmsInstanceV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1216,6 +1309,9 @@ func (d *jsiiProxy_DmsInstanceV1) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DmsInstanceV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1229,6 +1325,9 @@ func (d *jsiiProxy_DmsInstanceV1) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (d *jsiiProxy_DmsInstanceV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1242,6 +1341,9 @@ func (d *jsiiProxy_DmsInstanceV1) GetStringAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DmsInstanceV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1255,6 +1357,9 @@ func (d *jsiiProxy_DmsInstanceV1) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (d *jsiiProxy_DmsInstanceV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1268,6 +1373,9 @@ func (d *jsiiProxy_DmsInstanceV1) InterpolationForAttribute(terraformAttribute *
 }
 
 func (d *jsiiProxy_DmsInstanceV1) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

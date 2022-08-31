@@ -244,6 +244,9 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) VolumeTyp
 func NewAsConfigurationV1InstanceConfigDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AsConfigurationV1InstanceConfigDiskOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAsConfigurationV1InstanceConfigDiskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference{}
 
 	_jsii_.Create(
@@ -265,7 +268,10 @@ func NewAsConfigurationV1InstanceConfigDiskOutputReference_Override(a AsConfigur
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -273,7 +279,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -281,7 +290,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetDiskType(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference)SetDiskType(val *string) {
+	if err := j.validateSetDiskTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"diskType",
@@ -289,7 +301,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetDiskTy
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -297,7 +312,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetKmsId(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference)SetKmsId(val *string) {
+	if err := j.validateSetKmsIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kmsId",
@@ -305,7 +323,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetKmsId(
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetSize(val *float64) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -313,7 +334,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetSize(v
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -321,7 +345,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -329,7 +356,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) SetVolumeType(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference)SetVolumeType(val *string) {
+	if err := j.validateSetVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumeType",
@@ -351,6 +381,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) ComputeFq
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -364,6 +397,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetAnyMap
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -377,6 +413,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetBoolea
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -390,6 +429,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetBoolea
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -403,6 +445,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetListAt
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -416,6 +461,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetNumber
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -429,6 +477,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetNumber
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -442,6 +493,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetNumber
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -455,6 +509,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetString
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -481,6 +538,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) Interpola
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -502,6 +562,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) ResetKmsI
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

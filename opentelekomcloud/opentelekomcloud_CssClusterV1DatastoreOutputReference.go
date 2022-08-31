@@ -199,6 +199,9 @@ func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) VersionInput() *string 
 func NewCssClusterV1DatastoreOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CssClusterV1DatastoreOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCssClusterV1DatastoreOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CssClusterV1DatastoreOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewCssClusterV1DatastoreOutputReference_Override(c CssClusterV1DatastoreOut
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CssClusterV1DatastoreOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CssClusterV1DatastoreOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetInternalValue(val *CssClusterV1Datastore) {
+func (j *jsiiProxy_CssClusterV1DatastoreOutputReference)SetInternalValue(val *CssClusterV1Datastore) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetInternalValue(val *C
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CssClusterV1DatastoreOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CssClusterV1DatastoreOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetType(val *string) {
+func (j *jsiiProxy_CssClusterV1DatastoreOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CssClusterV1DatastoreOutputReference) SetVersion(val *string) {
+func (j *jsiiProxy_CssClusterV1DatastoreOutputReference)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"version",
@@ -290,6 +314,9 @@ func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetAnyMapAttribute(terr
 }
 
 func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetBooleanAttribute(ter
 }
 
 func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetBooleanMapAttribute(
 }
 
 func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetListAttribute(terraf
 }
 
 func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetNumberAttribute(terr
 }
 
 func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetNumberListAttribute(
 }
 
 func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetNumberMapAttribute(t
 }
 
 func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetStringAttribute(terr
 }
 
 func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) InterpolationAsList() c
 }
 
 func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) ResetVersion() {
 }
 
 func (c *jsiiProxy_CssClusterV1DatastoreOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

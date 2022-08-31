@@ -206,6 +206,9 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) Terrafo
 func NewDataOpentelekomcloudObsBucketCorsRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataOpentelekomcloudObsBucketCorsRuleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudObsBucketCorsRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference{}
 
 	_jsii_.Create(
@@ -227,7 +230,10 @@ func NewDataOpentelekomcloudObsBucketCorsRuleOutputReference_Override(d DataOpen
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -235,7 +241,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) SetComp
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -243,7 +252,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) SetComp
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) SetInternalValue(val *DataOpentelekomcloudObsBucketCorsRule) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference)SetInternalValue(val *DataOpentelekomcloudObsBucketCorsRule) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -251,7 +263,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) SetInte
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -259,7 +274,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) SetTerr
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -281,6 +299,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) Compute
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -294,6 +315,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetAnyM
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -307,6 +331,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetBool
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -320,6 +347,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetBool
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -333,6 +363,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetList
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -346,6 +379,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetNumb
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -359,6 +395,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetNumb
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -372,6 +411,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetNumb
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -385,6 +427,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetStri
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -411,6 +456,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) Interpo
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -424,6 +472,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) Interpo
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

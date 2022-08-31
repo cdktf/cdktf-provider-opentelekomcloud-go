@@ -199,6 +199,9 @@ func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) ValueIn
 func NewObsBucketEventNotificationsFilterRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObsBucketEventNotificationsFilterRuleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewObsBucketEventNotificationsFilterRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewObsBucketEventNotificationsFilterRuleOutputReference_Override(o ObsBucke
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetComp
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetComp
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetInte
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetName(val *string) {
+func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetName
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetTerr
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetTerr
 	)
 }
 
-func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -290,6 +314,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) Compute
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetAnyM
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetBool
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetBool
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetList
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetNumb
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetNumb
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetNumb
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetStri
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) Interpo
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) ResetVa
 }
 
 func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

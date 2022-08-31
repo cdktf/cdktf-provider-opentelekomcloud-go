@@ -197,6 +197,9 @@ func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) TerraformResourc
 func NewNetworkingSubnetV2HostRoutesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkingSubnetV2HostRoutesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNetworkingSubnetV2HostRoutesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewNetworkingSubnetV2HostRoutesOutputReference_Override(n NetworkingSubnetV
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetDestinationCidr(val *string) {
+func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference)SetDestinationCidr(val *string) {
+	if err := j.validateSetDestinationCidrParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"destinationCidr",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetDestinationCi
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetNextHop(val *string) {
+func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference)SetNextHop(val *string) {
+	if err := j.validateSetNextHopParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nextHop",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetNextHop(val *
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) ComputeFqn() *st
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetAnyMapAttribu
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetBooleanAttrib
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetBooleanMapAtt
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetListAttribute
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetNumberAttribu
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetNumberListAtt
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetNumberMapAttr
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetStringAttribu
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) InterpolationAsL
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) InterpolationFor
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2HostRoutesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

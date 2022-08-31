@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) WrapsSet() *bool {
 func NewDataOpentelekomcloudVpcV1RoutesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudVpcV1RoutesList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudVpcV1RoutesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudVpcV1RoutesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudVpcV1RoutesList_Override(d DataOpentelekomcloudVpcV1
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) Get(index *float64) DataOpentelekomcloudVpcV1RoutesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudVpcV1RoutesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) Get(index *float64) Data
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

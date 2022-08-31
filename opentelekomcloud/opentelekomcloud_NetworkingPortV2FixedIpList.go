@@ -111,6 +111,9 @@ func (j *jsiiProxy_NetworkingPortV2FixedIpList) WrapsSet() *bool {
 func NewNetworkingPortV2FixedIpList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkingPortV2FixedIpList {
 	_init_.Initialize()
 
+	if err := validateNewNetworkingPortV2FixedIpListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NetworkingPortV2FixedIpList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewNetworkingPortV2FixedIpList_Override(n NetworkingPortV2FixedIpList, terr
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2FixedIpList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkingPortV2FixedIpList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_NetworkingPortV2FixedIpList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2FixedIpList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkingPortV2FixedIpList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_NetworkingPortV2FixedIpList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2FixedIpList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkingPortV2FixedIpList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_NetworkingPortV2FixedIpList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2FixedIpList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NetworkingPortV2FixedIpList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (n *jsiiProxy_NetworkingPortV2FixedIpList) ComputeFqn() *string {
 }
 
 func (n *jsiiProxy_NetworkingPortV2FixedIpList) Get(index *float64) NetworkingPortV2FixedIpOutputReference {
+	if err := n.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns NetworkingPortV2FixedIpOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (n *jsiiProxy_NetworkingPortV2FixedIpList) Get(index *float64) NetworkingPo
 }
 
 func (n *jsiiProxy_NetworkingPortV2FixedIpList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

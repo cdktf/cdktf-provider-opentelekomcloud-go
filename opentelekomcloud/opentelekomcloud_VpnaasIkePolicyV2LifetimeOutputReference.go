@@ -199,6 +199,9 @@ func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) ValueInput() *float
 func NewVpnaasIkePolicyV2LifetimeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) VpnaasIkePolicyV2LifetimeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewVpnaasIkePolicyV2LifetimeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewVpnaasIkePolicyV2LifetimeOutputReference_Override(v VpnaasIkePolicyV2Lif
 	)
 }
 
-func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetUnits(val *string) {
+func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference)SetUnits(val *string) {
+	if err := j.validateSetUnitsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"units",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetUnits(val *strin
 	)
 }
 
-func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) SetValue(val *float64) {
+func (j *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference)SetValue(val *float64) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -290,6 +314,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) ComputeFqn() *strin
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetAnyMapAttribute(
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetBooleanAttribute
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := v.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetBooleanMapAttrib
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := v.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetListAttribute(te
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := v.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetNumberAttribute(
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := v.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetNumberListAttrib
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := v.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetNumberMapAttribu
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := v.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetStringAttribute(
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := v.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) InterpolationAsList
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) ResetValue() {
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

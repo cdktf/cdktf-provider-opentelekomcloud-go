@@ -422,6 +422,9 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) TypeInput() *string {
 func NewDataOpentelekomcloudRdsBackupV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudRdsBackupV3Config) DataOpentelekomcloudRdsBackupV3 {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudRdsBackupV3Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudRdsBackupV3{}
 
 	_jsii_.Create(
@@ -444,7 +447,10 @@ func NewDataOpentelekomcloudRdsBackupV3_Override(d DataOpentelekomcloudRdsBackup
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetBackupId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3)SetBackupId(val *string) {
+	if err := j.validateSetBackupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backupId",
@@ -452,7 +458,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetBackupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -460,7 +466,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -468,7 +474,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -476,7 +482,10 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -484,7 +493,10 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetInstanceId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3)SetInstanceId(val *string) {
+	if err := j.validateSetInstanceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceId",
@@ -492,7 +504,10 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -500,7 +515,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -508,7 +523,10 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetType(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -536,6 +554,9 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) SetType(val *string) {
 func DataOpentelekomcloudRdsBackupV3_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataOpentelekomcloudRdsBackupV3_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -560,6 +581,9 @@ func DataOpentelekomcloudRdsBackupV3_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -568,6 +592,9 @@ func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) AddOverride(path *string, va
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -581,6 +608,9 @@ func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetAnyMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -594,6 +624,9 @@ func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetBooleanAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -607,6 +640,9 @@ func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetBooleanMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -620,6 +656,9 @@ func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetListAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -633,6 +672,9 @@ func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetNumberAttribute(terraform
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -646,6 +688,9 @@ func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetNumberListAttribute(terra
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -659,6 +704,9 @@ func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetNumberMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -672,6 +720,9 @@ func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetStringAttribute(terraform
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -685,6 +736,9 @@ func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) GetStringMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -698,6 +752,9 @@ func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) InterpolationForAttribute(te
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudRdsBackupV3) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

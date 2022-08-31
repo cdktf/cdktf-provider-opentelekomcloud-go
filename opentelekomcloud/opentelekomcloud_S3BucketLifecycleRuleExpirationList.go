@@ -111,6 +111,9 @@ func (j *jsiiProxy_S3BucketLifecycleRuleExpirationList) WrapsSet() *bool {
 func NewS3BucketLifecycleRuleExpirationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketLifecycleRuleExpirationList {
 	_init_.Initialize()
 
+	if err := validateNewS3BucketLifecycleRuleExpirationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_S3BucketLifecycleRuleExpirationList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewS3BucketLifecycleRuleExpirationList_Override(s S3BucketLifecycleRuleExpi
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleExpirationList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_S3BucketLifecycleRuleExpirationList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleExpirationList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleExpirationList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleRuleExpirationList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleExpirationList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleExpirationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketLifecycleRuleExpirationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_S3BucketLifecycleRuleExpirationList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleExpirationList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_S3BucketLifecycleRuleExpirationList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleExpirationList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleExpirationList) Get(index *float64) S3BucketLifecycleRuleExpirationOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns S3BucketLifecycleRuleExpirationOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleExpirationList) Get(index *float64) S3Bu
 }
 
 func (s *jsiiProxy_S3BucketLifecycleRuleExpirationList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

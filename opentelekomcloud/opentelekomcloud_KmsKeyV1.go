@@ -583,6 +583,9 @@ func (j *jsiiProxy_KmsKeyV1) TerraformResourceType() *string {
 func NewKmsKeyV1(scope constructs.Construct, id *string, config *KmsKeyV1Config) KmsKeyV1 {
 	_init_.Initialize()
 
+	if err := validateNewKmsKeyV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_KmsKeyV1{}
 
 	_jsii_.Create(
@@ -605,7 +608,10 @@ func NewKmsKeyV1_Override(k KmsKeyV1, scope constructs.Construct, id *string, co
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetAllowCancelDeletion(val interface{}) {
+func (j *jsiiProxy_KmsKeyV1)SetAllowCancelDeletion(val interface{}) {
+	if err := j.validateSetAllowCancelDeletionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowCancelDeletion",
@@ -613,7 +619,10 @@ func (j *jsiiProxy_KmsKeyV1) SetAllowCancelDeletion(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_KmsKeyV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -621,7 +630,7 @@ func (j *jsiiProxy_KmsKeyV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetCount(val *float64) {
+func (j *jsiiProxy_KmsKeyV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -629,7 +638,7 @@ func (j *jsiiProxy_KmsKeyV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KmsKeyV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -637,7 +646,7 @@ func (j *jsiiProxy_KmsKeyV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KmsKeyV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -645,7 +654,10 @@ func (j *jsiiProxy_KmsKeyV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetId(val *string) {
+func (j *jsiiProxy_KmsKeyV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -653,7 +665,10 @@ func (j *jsiiProxy_KmsKeyV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_KmsKeyV1)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -661,7 +676,10 @@ func (j *jsiiProxy_KmsKeyV1) SetIsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetKeyAlias(val *string) {
+func (j *jsiiProxy_KmsKeyV1)SetKeyAlias(val *string) {
+	if err := j.validateSetKeyAliasParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyAlias",
@@ -669,7 +687,10 @@ func (j *jsiiProxy_KmsKeyV1) SetKeyAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetKeyDescription(val *string) {
+func (j *jsiiProxy_KmsKeyV1)SetKeyDescription(val *string) {
+	if err := j.validateSetKeyDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyDescription",
@@ -677,7 +698,10 @@ func (j *jsiiProxy_KmsKeyV1) SetKeyDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KmsKeyV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -685,7 +709,10 @@ func (j *jsiiProxy_KmsKeyV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetPendingDays(val *string) {
+func (j *jsiiProxy_KmsKeyV1)SetPendingDays(val *string) {
+	if err := j.validateSetPendingDaysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pendingDays",
@@ -693,7 +720,7 @@ func (j *jsiiProxy_KmsKeyV1) SetPendingDays(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KmsKeyV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -701,7 +728,10 @@ func (j *jsiiProxy_KmsKeyV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KmsKeyV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -709,7 +739,10 @@ func (j *jsiiProxy_KmsKeyV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetRealm(val *string) {
+func (j *jsiiProxy_KmsKeyV1)SetRealm(val *string) {
+	if err := j.validateSetRealmParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"realm",
@@ -717,7 +750,10 @@ func (j *jsiiProxy_KmsKeyV1) SetRealm(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetRotationEnabled(val interface{}) {
+func (j *jsiiProxy_KmsKeyV1)SetRotationEnabled(val interface{}) {
+	if err := j.validateSetRotationEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rotationEnabled",
@@ -725,7 +761,10 @@ func (j *jsiiProxy_KmsKeyV1) SetRotationEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetRotationInterval(val *float64) {
+func (j *jsiiProxy_KmsKeyV1)SetRotationInterval(val *float64) {
+	if err := j.validateSetRotationIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rotationInterval",
@@ -733,7 +772,10 @@ func (j *jsiiProxy_KmsKeyV1) SetRotationInterval(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1) SetTags(val *map[string]*string) {
+func (j *jsiiProxy_KmsKeyV1)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -761,6 +803,9 @@ func (j *jsiiProxy_KmsKeyV1) SetTags(val *map[string]*string) {
 func KmsKeyV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateKmsKeyV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -785,6 +830,9 @@ func KmsKeyV1_TfResourceType() *string {
 }
 
 func (k *jsiiProxy_KmsKeyV1) AddOverride(path *string, value interface{}) {
+	if err := k.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
@@ -793,6 +841,9 @@ func (k *jsiiProxy_KmsKeyV1) AddOverride(path *string, value interface{}) {
 }
 
 func (k *jsiiProxy_KmsKeyV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -806,6 +857,9 @@ func (k *jsiiProxy_KmsKeyV1) GetAnyMapAttribute(terraformAttribute *string) *map
 }
 
 func (k *jsiiProxy_KmsKeyV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -819,6 +873,9 @@ func (k *jsiiProxy_KmsKeyV1) GetBooleanAttribute(terraformAttribute *string) cdk
 }
 
 func (k *jsiiProxy_KmsKeyV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := k.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -832,6 +889,9 @@ func (k *jsiiProxy_KmsKeyV1) GetBooleanMapAttribute(terraformAttribute *string) 
 }
 
 func (k *jsiiProxy_KmsKeyV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := k.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -845,6 +905,9 @@ func (k *jsiiProxy_KmsKeyV1) GetListAttribute(terraformAttribute *string) *[]*st
 }
 
 func (k *jsiiProxy_KmsKeyV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := k.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -858,6 +921,9 @@ func (k *jsiiProxy_KmsKeyV1) GetNumberAttribute(terraformAttribute *string) *flo
 }
 
 func (k *jsiiProxy_KmsKeyV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := k.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -871,6 +937,9 @@ func (k *jsiiProxy_KmsKeyV1) GetNumberListAttribute(terraformAttribute *string) 
 }
 
 func (k *jsiiProxy_KmsKeyV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := k.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -884,6 +953,9 @@ func (k *jsiiProxy_KmsKeyV1) GetNumberMapAttribute(terraformAttribute *string) *
 }
 
 func (k *jsiiProxy_KmsKeyV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := k.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -897,6 +969,9 @@ func (k *jsiiProxy_KmsKeyV1) GetStringAttribute(terraformAttribute *string) *str
 }
 
 func (k *jsiiProxy_KmsKeyV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := k.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -910,6 +985,9 @@ func (k *jsiiProxy_KmsKeyV1) GetStringMapAttribute(terraformAttribute *string) *
 }
 
 func (k *jsiiProxy_KmsKeyV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -923,6 +1001,9 @@ func (k *jsiiProxy_KmsKeyV1) InterpolationForAttribute(terraformAttribute *strin
 }
 
 func (k *jsiiProxy_KmsKeyV1) OverrideLogicalId(newLogicalId *string) {
+	if err := k.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",

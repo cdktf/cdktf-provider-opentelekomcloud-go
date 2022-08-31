@@ -111,6 +111,9 @@ func (j *jsiiProxy_MrsClusterV1ComponentListList) WrapsSet() *bool {
 func NewMrsClusterV1ComponentListList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MrsClusterV1ComponentListList {
 	_init_.Initialize()
 
+	if err := validateNewMrsClusterV1ComponentListListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrsClusterV1ComponentListList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMrsClusterV1ComponentListList_Override(m MrsClusterV1ComponentListList, 
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrsClusterV1ComponentListList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MrsClusterV1ComponentListList) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrsClusterV1ComponentListList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MrsClusterV1ComponentListList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrsClusterV1ComponentListList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MrsClusterV1ComponentListList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MrsClusterV1ComponentListList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListList) Get(index *float64) MrsClusterV1ComponentListOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MrsClusterV1ComponentListOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MrsClusterV1ComponentListList) Get(index *float64) MrsCluster
 }
 
 func (m *jsiiProxy_MrsClusterV1ComponentListList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

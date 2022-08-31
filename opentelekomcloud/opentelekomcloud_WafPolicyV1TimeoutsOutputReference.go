@@ -199,6 +199,9 @@ func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) TerraformResource() cdktf
 func NewWafPolicyV1TimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WafPolicyV1TimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewWafPolicyV1TimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WafPolicyV1TimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewWafPolicyV1TimeoutsOutputReference_Override(w WafPolicyV1TimeoutsOutputR
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetCreate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetDelete(val *string) {
+func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delete",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetDelete(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WafPolicyV1TimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) ComputeFqn() *string {
 }
 
 func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetAnyMapAttribute(terraf
 }
 
 func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetBooleanAttribute(terra
 }
 
 func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetBooleanMapAttribute(te
 }
 
 func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetListAttribute(terrafor
 }
 
 func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetNumberAttribute(terraf
 }
 
 func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetNumberListAttribute(te
 }
 
 func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetNumberMapAttribute(ter
 }
 
 func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetStringAttribute(terraf
 }
 
 func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) InterpolationAsList() cdk
 }
 
 func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) ResetDelete() {
 }
 
 func (w *jsiiProxy_WafPolicyV1TimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

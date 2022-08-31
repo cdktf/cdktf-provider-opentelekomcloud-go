@@ -343,6 +343,9 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) TerraformReso
 func NewComputeInstanceV2SchedulerHintsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeInstanceV2SchedulerHintsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewComputeInstanceV2SchedulerHintsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference{}
 
 	_jsii_.Create(
@@ -364,7 +367,10 @@ func NewComputeInstanceV2SchedulerHintsOutputReference_Override(c ComputeInstanc
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetBuildNearHostIp(val *string) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetBuildNearHostIp(val *string) {
+	if err := j.validateSetBuildNearHostIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"buildNearHostIp",
@@ -372,7 +378,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetBuildNearH
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -380,7 +389,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -388,7 +400,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetDehId(val *string) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetDehId(val *string) {
+	if err := j.validateSetDehIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dehId",
@@ -396,7 +411,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetDehId(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetDifferentHost(val *[]*string) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetDifferentHost(val *[]*string) {
+	if err := j.validateSetDifferentHostParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"differentHost",
@@ -404,7 +422,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetDifferentH
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetGroup(val *string) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetGroup(val *string) {
+	if err := j.validateSetGroupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"group",
@@ -412,7 +433,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetGroup(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -420,7 +444,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetQuery(val *[]*string) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetQuery(val *[]*string) {
+	if err := j.validateSetQueryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"query",
@@ -428,7 +455,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetQuery(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetSameHost(val *[]*string) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetSameHost(val *[]*string) {
+	if err := j.validateSetSameHostParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sameHost",
@@ -436,7 +466,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetSameHost(v
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetTargetCell(val *string) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetTargetCell(val *string) {
+	if err := j.validateSetTargetCellParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"targetCell",
@@ -444,7 +477,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetTargetCell
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetTenancy(val *string) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetTenancy(val *string) {
+	if err := j.validateSetTenancyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tenancy",
@@ -452,7 +488,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetTenancy(va
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -460,7 +499,10 @@ func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -482,6 +524,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) ComputeFqn() 
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -495,6 +540,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetAnyMapAttr
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -508,6 +556,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetBooleanAtt
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -521,6 +572,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetBooleanMap
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -534,6 +588,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetListAttrib
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -547,6 +604,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetNumberAttr
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -560,6 +620,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetNumberList
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -573,6 +636,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetNumberMapA
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -586,6 +652,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetStringAttr
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -612,6 +681,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) Interpolation
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -689,6 +761,9 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) ResetTenancy(
 }
 
 func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

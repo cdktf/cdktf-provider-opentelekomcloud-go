@@ -390,6 +390,9 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) UserDataInput
 func NewAsConfigurationV1InstanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AsConfigurationV1InstanceConfigOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAsConfigurationV1InstanceConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AsConfigurationV1InstanceConfigOutputReference{}
 
 	_jsii_.Create(
@@ -411,7 +414,10 @@ func NewAsConfigurationV1InstanceConfigOutputReference_Override(a AsConfiguratio
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -419,7 +425,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -427,7 +436,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetFlavor(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference)SetFlavor(val *string) {
+	if err := j.validateSetFlavorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"flavor",
@@ -435,7 +447,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetFlavor(val
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetImage(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference)SetImage(val *string) {
+	if err := j.validateSetImageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"image",
@@ -443,7 +458,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetImage(val 
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetInstanceId(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference)SetInstanceId(val *string) {
+	if err := j.validateSetInstanceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceId",
@@ -451,7 +469,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetInstanceId
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetInternalValue(val *AsConfigurationV1InstanceConfig) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference)SetInternalValue(val *AsConfigurationV1InstanceConfig) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -459,7 +480,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetKeyName(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference)SetKeyName(val *string) {
+	if err := j.validateSetKeyNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyName",
@@ -467,7 +491,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetKeyName(va
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference)SetMetadata(val *map[string]*string) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metadata",
@@ -475,7 +502,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetMetadata(v
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference)SetSecurityGroups(val *[]*string) {
+	if err := j.validateSetSecurityGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityGroups",
@@ -483,7 +513,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetSecurityGr
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -491,7 +524,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -499,7 +535,10 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) SetUserData(val *string) {
+func (j *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference)SetUserData(val *string) {
+	if err := j.validateSetUserDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userData",
@@ -521,6 +560,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) ComputeFqn() 
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -534,6 +576,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetAnyMapAttr
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -547,6 +592,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetBooleanAtt
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -560,6 +608,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetBooleanMap
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -573,6 +624,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetListAttrib
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -586,6 +640,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetNumberAttr
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -599,6 +656,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetNumberList
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -612,6 +672,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetNumberMapA
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -625,6 +688,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetStringAttr
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -651,6 +717,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) Interpolation
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -664,6 +733,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) Interpolation
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) PutDisk(value interface{}) {
+	if err := a.validatePutDiskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putDisk",
@@ -672,6 +744,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) PutDisk(value
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) PutPersonality(value interface{}) {
+	if err := a.validatePutPersonalityParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putPersonality",
@@ -680,6 +755,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) PutPersonalit
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) PutPublicIp(value *AsConfigurationV1InstanceConfigPublicIp) {
+	if err := a.validatePutPublicIpParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putPublicIp",
@@ -760,6 +838,9 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) ResetUserData
 }
 
 func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -222,6 +222,9 @@ func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) TypeInput() *strin
 func NewLbPoolV3SessionPersistenceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LbPoolV3SessionPersistenceOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewLbPoolV3SessionPersistenceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LbPoolV3SessionPersistenceOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewLbPoolV3SessionPersistenceOutputReference_Override(l LbPoolV3SessionPers
 	)
 }
 
-func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetCookieName(val *string) {
+func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference)SetCookieName(val *string) {
+	if err := j.validateSetCookieNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cookieName",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetCookieName(val 
 	)
 }
 
-func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetInternalValue(val *LbPoolV3SessionPersistence) {
+func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference)SetInternalValue(val *LbPoolV3SessionPersistence) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetPersistenceTimeout(val *float64) {
+func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference)SetPersistenceTimeout(val *float64) {
+	if err := j.validateSetPersistenceTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"persistenceTimeout",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetPersistenceTime
 	)
 }
 
-func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) SetType(val *string) {
+func (j *jsiiProxy_LbPoolV3SessionPersistenceOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -321,6 +348,9 @@ func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) ComputeFqn() *stri
 }
 
 func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetAnyMapAttribute
 }
 
 func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetBooleanAttribut
 }
 
 func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetBooleanMapAttri
 }
 
 func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetListAttribute(t
 }
 
 func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetNumberAttribute
 }
 
 func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetNumberListAttri
 }
 
 func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetNumberMapAttrib
 }
 
 func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetStringAttribute
 }
 
 func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) InterpolationAsLis
 }
 
 func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) ResetPersistenceTi
 }
 
 func (l *jsiiProxy_LbPoolV3SessionPersistenceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

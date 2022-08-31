@@ -256,6 +256,9 @@ func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) TypeInput() *string {
 func NewEcsInstanceV1DataDisksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EcsInstanceV1DataDisksOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewEcsInstanceV1DataDisksOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EcsInstanceV1DataDisksOutputReference{}
 
 	_jsii_.Create(
@@ -277,7 +280,10 @@ func NewEcsInstanceV1DataDisksOutputReference_Override(e EcsInstanceV1DataDisksO
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -285,7 +291,10 @@ func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -293,7 +302,10 @@ func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -301,7 +313,10 @@ func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetKmsId(val *string) {
+func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference)SetKmsId(val *string) {
+	if err := j.validateSetKmsIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kmsId",
@@ -309,7 +324,10 @@ func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetKmsId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetSize(val *float64) {
+func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -317,7 +335,10 @@ func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetSize(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetSnapshotId(val *string) {
+func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference)SetSnapshotId(val *string) {
+	if err := j.validateSetSnapshotIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snapshotId",
@@ -325,7 +346,10 @@ func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetSnapshotId(val *str
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -333,7 +357,10 @@ func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -341,7 +368,10 @@ func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) SetType(val *string) {
+func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -363,6 +393,9 @@ func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) ComputeFqn() *string {
 }
 
 func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -376,6 +409,9 @@ func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetAnyMapAttribute(ter
 }
 
 func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -389,6 +425,9 @@ func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetBooleanAttribute(te
 }
 
 func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -402,6 +441,9 @@ func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetBooleanMapAttribute
 }
 
 func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -415,6 +457,9 @@ func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetListAttribute(terra
 }
 
 func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -428,6 +473,9 @@ func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetNumberAttribute(ter
 }
 
 func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -441,6 +489,9 @@ func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetNumberListAttribute
 }
 
 func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -454,6 +505,9 @@ func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetNumberMapAttribute(
 }
 
 func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -467,6 +521,9 @@ func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetStringAttribute(ter
 }
 
 func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -493,6 +550,9 @@ func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) InterpolationAsList() 
 }
 
 func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -522,6 +582,9 @@ func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) ResetSnapshotId() {
 }
 
 func (e *jsiiProxy_EcsInstanceV1DataDisksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

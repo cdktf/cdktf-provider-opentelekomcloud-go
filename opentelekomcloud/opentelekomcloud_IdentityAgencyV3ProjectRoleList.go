@@ -111,6 +111,9 @@ func (j *jsiiProxy_IdentityAgencyV3ProjectRoleList) WrapsSet() *bool {
 func NewIdentityAgencyV3ProjectRoleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IdentityAgencyV3ProjectRoleList {
 	_init_.Initialize()
 
+	if err := validateNewIdentityAgencyV3ProjectRoleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_IdentityAgencyV3ProjectRoleList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewIdentityAgencyV3ProjectRoleList_Override(i IdentityAgencyV3ProjectRoleLi
 	)
 }
 
-func (j *jsiiProxy_IdentityAgencyV3ProjectRoleList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_IdentityAgencyV3ProjectRoleList) SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_IdentityAgencyV3ProjectRoleList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_IdentityAgencyV3ProjectRoleList) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_IdentityAgencyV3ProjectRoleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_IdentityAgencyV3ProjectRoleList) SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_IdentityAgencyV3ProjectRoleList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleList) ComputeFqn() *string {
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleList) Get(index *float64) IdentityAgencyV3ProjectRoleOutputReference {
+	if err := i.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns IdentityAgencyV3ProjectRoleOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleList) Get(index *float64) Identity
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

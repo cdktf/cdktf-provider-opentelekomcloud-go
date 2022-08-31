@@ -488,6 +488,9 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) TerraformResourceType() *string
 func NewDataOpentelekomcloudKmsKeyV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudKmsKeyV1Config) DataOpentelekomcloudKmsKeyV1 {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudKmsKeyV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudKmsKeyV1{}
 
 	_jsii_.Create(
@@ -510,7 +513,7 @@ func NewDataOpentelekomcloudKmsKeyV1_Override(d DataOpentelekomcloudKmsKeyV1, sc
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -518,7 +521,10 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetDefaultKeyFlag(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetDefaultKeyFlag(val *string) {
+	if err := j.validateSetDefaultKeyFlagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultKeyFlag",
@@ -526,7 +532,7 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetDefaultKeyFlag(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -534,7 +540,10 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetDomainId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetDomainId(val *string) {
+	if err := j.validateSetDomainIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"domainId",
@@ -542,7 +551,7 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetDomainId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -550,7 +559,10 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -558,7 +570,10 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetKeyAlias(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetKeyAlias(val *string) {
+	if err := j.validateSetKeyAliasParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyAlias",
@@ -566,7 +581,10 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetKeyAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetKeyDescription(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetKeyDescription(val *string) {
+	if err := j.validateSetKeyDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyDescription",
@@ -574,7 +592,10 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetKeyDescription(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetKeyId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetKeyId(val *string) {
+	if err := j.validateSetKeyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyId",
@@ -582,7 +603,10 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetKeyState(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetKeyState(val *string) {
+	if err := j.validateSetKeyStateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyState",
@@ -590,7 +614,10 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetKeyState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -598,7 +625,10 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetOrigin(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetOrigin(val *string) {
+	if err := j.validateSetOriginParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"origin",
@@ -606,7 +636,7 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetOrigin(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -614,7 +644,10 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetRealm(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1)SetRealm(val *string) {
+	if err := j.validateSetRealmParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"realm",
@@ -642,6 +675,9 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) SetRealm(val *string) {
 func DataOpentelekomcloudKmsKeyV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataOpentelekomcloudKmsKeyV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -666,6 +702,9 @@ func DataOpentelekomcloudKmsKeyV1_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -674,6 +713,9 @@ func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) AddOverride(path *string, value
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -687,6 +729,9 @@ func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetAnyMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -700,6 +745,9 @@ func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetBooleanAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -713,6 +761,9 @@ func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetBooleanMapAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -726,6 +777,9 @@ func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetListAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -739,6 +793,9 @@ func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetNumberAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -752,6 +809,9 @@ func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetNumberListAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -765,6 +825,9 @@ func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetNumberMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -778,6 +841,9 @@ func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetStringAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -791,6 +857,9 @@ func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) GetStringMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -804,6 +873,9 @@ func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) InterpolationForAttribute(terra
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

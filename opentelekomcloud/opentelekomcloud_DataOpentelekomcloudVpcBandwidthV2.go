@@ -355,6 +355,9 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) TerraformResourceType() *
 func NewDataOpentelekomcloudVpcBandwidthV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcBandwidthV2Config) DataOpentelekomcloudVpcBandwidthV2 {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudVpcBandwidthV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudVpcBandwidthV2{}
 
 	_jsii_.Create(
@@ -377,7 +380,7 @@ func NewDataOpentelekomcloudVpcBandwidthV2_Override(d DataOpentelekomcloudVpcBan
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -385,7 +388,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -393,7 +396,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -401,7 +404,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -409,7 +415,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -417,7 +426,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetName(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -425,7 +437,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -433,7 +445,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetSize(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -461,6 +476,9 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) SetSize(val *float64) {
 func DataOpentelekomcloudVpcBandwidthV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataOpentelekomcloudVpcBandwidthV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -485,6 +503,9 @@ func DataOpentelekomcloudVpcBandwidthV2_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -493,6 +514,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) AddOverride(path *string,
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -506,6 +530,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetAnyMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -519,6 +546,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetBooleanAttribute(terra
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -532,6 +562,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetBooleanMapAttribute(te
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -545,6 +578,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetListAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -558,6 +594,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetNumberAttribute(terraf
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -571,6 +610,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetNumberListAttribute(te
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -584,6 +626,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetNumberMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -597,6 +642,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetStringAttribute(terraf
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -610,6 +658,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) GetStringMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -623,6 +674,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) InterpolationForAttribute
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

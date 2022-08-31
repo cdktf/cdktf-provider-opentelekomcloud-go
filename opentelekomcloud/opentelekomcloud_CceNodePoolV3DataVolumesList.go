@@ -111,6 +111,9 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesList) WrapsSet() *bool {
 func NewCceNodePoolV3DataVolumesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CceNodePoolV3DataVolumesList {
 	_init_.Initialize()
 
+	if err := validateNewCceNodePoolV3DataVolumesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CceNodePoolV3DataVolumesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewCceNodePoolV3DataVolumesList_Override(c CceNodePoolV3DataVolumesList, te
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesList) SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_CceNodePoolV3DataVolumesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CceNodePoolV3DataVolumesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesList) Get(index *float64) CceNodePoolV3DataVolumesOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns CceNodePoolV3DataVolumesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (c *jsiiProxy_CceNodePoolV3DataVolumesList) Get(index *float64) CceNodePool
 }
 
 func (c *jsiiProxy_CceNodePoolV3DataVolumesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

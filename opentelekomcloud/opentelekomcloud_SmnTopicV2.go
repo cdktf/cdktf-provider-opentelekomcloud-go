@@ -406,6 +406,9 @@ func (j *jsiiProxy_SmnTopicV2) UpdateTime() *string {
 func NewSmnTopicV2(scope constructs.Construct, id *string, config *SmnTopicV2Config) SmnTopicV2 {
 	_init_.Initialize()
 
+	if err := validateNewSmnTopicV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SmnTopicV2{}
 
 	_jsii_.Create(
@@ -428,7 +431,10 @@ func NewSmnTopicV2_Override(s SmnTopicV2, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_SmnTopicV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_SmnTopicV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -436,7 +442,7 @@ func (j *jsiiProxy_SmnTopicV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SmnTopicV2) SetCount(val *float64) {
+func (j *jsiiProxy_SmnTopicV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -444,7 +450,7 @@ func (j *jsiiProxy_SmnTopicV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SmnTopicV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SmnTopicV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -452,7 +458,10 @@ func (j *jsiiProxy_SmnTopicV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SmnTopicV2) SetDisplayName(val *string) {
+func (j *jsiiProxy_SmnTopicV2)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"displayName",
@@ -460,7 +469,7 @@ func (j *jsiiProxy_SmnTopicV2) SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SmnTopicV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SmnTopicV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -468,7 +477,10 @@ func (j *jsiiProxy_SmnTopicV2) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SmnTopicV2) SetId(val *string) {
+func (j *jsiiProxy_SmnTopicV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -476,7 +488,10 @@ func (j *jsiiProxy_SmnTopicV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SmnTopicV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SmnTopicV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -484,7 +499,10 @@ func (j *jsiiProxy_SmnTopicV2) SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_SmnTopicV2) SetName(val *string) {
+func (j *jsiiProxy_SmnTopicV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -492,7 +510,10 @@ func (j *jsiiProxy_SmnTopicV2) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SmnTopicV2) SetProjectName(val *string) {
+func (j *jsiiProxy_SmnTopicV2)SetProjectName(val *string) {
+	if err := j.validateSetProjectNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"projectName",
@@ -500,7 +521,7 @@ func (j *jsiiProxy_SmnTopicV2) SetProjectName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SmnTopicV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SmnTopicV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -508,7 +529,10 @@ func (j *jsiiProxy_SmnTopicV2) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SmnTopicV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SmnTopicV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -536,6 +560,9 @@ func (j *jsiiProxy_SmnTopicV2) SetProvisioners(val *[]interface{}) {
 func SmnTopicV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSmnTopicV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -560,6 +587,9 @@ func SmnTopicV2_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SmnTopicV2) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -568,6 +598,9 @@ func (s *jsiiProxy_SmnTopicV2) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_SmnTopicV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -581,6 +614,9 @@ func (s *jsiiProxy_SmnTopicV2) GetAnyMapAttribute(terraformAttribute *string) *m
 }
 
 func (s *jsiiProxy_SmnTopicV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -594,6 +630,9 @@ func (s *jsiiProxy_SmnTopicV2) GetBooleanAttribute(terraformAttribute *string) c
 }
 
 func (s *jsiiProxy_SmnTopicV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -607,6 +646,9 @@ func (s *jsiiProxy_SmnTopicV2) GetBooleanMapAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_SmnTopicV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -620,6 +662,9 @@ func (s *jsiiProxy_SmnTopicV2) GetListAttribute(terraformAttribute *string) *[]*
 }
 
 func (s *jsiiProxy_SmnTopicV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -633,6 +678,9 @@ func (s *jsiiProxy_SmnTopicV2) GetNumberAttribute(terraformAttribute *string) *f
 }
 
 func (s *jsiiProxy_SmnTopicV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -646,6 +694,9 @@ func (s *jsiiProxy_SmnTopicV2) GetNumberListAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_SmnTopicV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -659,6 +710,9 @@ func (s *jsiiProxy_SmnTopicV2) GetNumberMapAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SmnTopicV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -672,6 +726,9 @@ func (s *jsiiProxy_SmnTopicV2) GetStringAttribute(terraformAttribute *string) *s
 }
 
 func (s *jsiiProxy_SmnTopicV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -685,6 +742,9 @@ func (s *jsiiProxy_SmnTopicV2) GetStringMapAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SmnTopicV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -698,6 +758,9 @@ func (s *jsiiProxy_SmnTopicV2) InterpolationForAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_SmnTopicV2) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

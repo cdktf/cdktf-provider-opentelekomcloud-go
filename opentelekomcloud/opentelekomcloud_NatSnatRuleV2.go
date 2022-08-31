@@ -457,6 +457,9 @@ func (j *jsiiProxy_NatSnatRuleV2) TimeoutsInput() interface{} {
 func NewNatSnatRuleV2(scope constructs.Construct, id *string, config *NatSnatRuleV2Config) NatSnatRuleV2 {
 	_init_.Initialize()
 
+	if err := validateNewNatSnatRuleV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NatSnatRuleV2{}
 
 	_jsii_.Create(
@@ -479,7 +482,10 @@ func NewNatSnatRuleV2_Override(n NatSnatRuleV2, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetCidr(val *string) {
+func (j *jsiiProxy_NatSnatRuleV2)SetCidr(val *string) {
+	if err := j.validateSetCidrParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cidr",
@@ -487,7 +493,10 @@ func (j *jsiiProxy_NatSnatRuleV2) SetCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_NatSnatRuleV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -495,7 +504,7 @@ func (j *jsiiProxy_NatSnatRuleV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetCount(val *float64) {
+func (j *jsiiProxy_NatSnatRuleV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -503,7 +512,7 @@ func (j *jsiiProxy_NatSnatRuleV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NatSnatRuleV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -511,7 +520,10 @@ func (j *jsiiProxy_NatSnatRuleV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetFloatingIpId(val *string) {
+func (j *jsiiProxy_NatSnatRuleV2)SetFloatingIpId(val *string) {
+	if err := j.validateSetFloatingIpIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"floatingIpId",
@@ -519,7 +531,7 @@ func (j *jsiiProxy_NatSnatRuleV2) SetFloatingIpId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NatSnatRuleV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -527,7 +539,10 @@ func (j *jsiiProxy_NatSnatRuleV2) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetId(val *string) {
+func (j *jsiiProxy_NatSnatRuleV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -535,7 +550,10 @@ func (j *jsiiProxy_NatSnatRuleV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NatSnatRuleV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -543,7 +561,10 @@ func (j *jsiiProxy_NatSnatRuleV2) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetNatGatewayId(val *string) {
+func (j *jsiiProxy_NatSnatRuleV2)SetNatGatewayId(val *string) {
+	if err := j.validateSetNatGatewayIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"natGatewayId",
@@ -551,7 +572,10 @@ func (j *jsiiProxy_NatSnatRuleV2) SetNatGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetNetworkId(val *string) {
+func (j *jsiiProxy_NatSnatRuleV2)SetNetworkId(val *string) {
+	if err := j.validateSetNetworkIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"networkId",
@@ -559,7 +583,7 @@ func (j *jsiiProxy_NatSnatRuleV2) SetNetworkId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NatSnatRuleV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -567,7 +591,10 @@ func (j *jsiiProxy_NatSnatRuleV2) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NatSnatRuleV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -575,7 +602,10 @@ func (j *jsiiProxy_NatSnatRuleV2) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetRegion(val *string) {
+func (j *jsiiProxy_NatSnatRuleV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -583,7 +613,10 @@ func (j *jsiiProxy_NatSnatRuleV2) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NatSnatRuleV2) SetSourceType(val *float64) {
+func (j *jsiiProxy_NatSnatRuleV2)SetSourceType(val *float64) {
+	if err := j.validateSetSourceTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sourceType",
@@ -611,6 +644,9 @@ func (j *jsiiProxy_NatSnatRuleV2) SetSourceType(val *float64) {
 func NatSnatRuleV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateNatSnatRuleV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -635,6 +671,9 @@ func NatSnatRuleV2_TfResourceType() *string {
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
@@ -643,6 +682,9 @@ func (n *jsiiProxy_NatSnatRuleV2) AddOverride(path *string, value interface{}) {
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -656,6 +698,9 @@ func (n *jsiiProxy_NatSnatRuleV2) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -669,6 +714,9 @@ func (n *jsiiProxy_NatSnatRuleV2) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -682,6 +730,9 @@ func (n *jsiiProxy_NatSnatRuleV2) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -695,6 +746,9 @@ func (n *jsiiProxy_NatSnatRuleV2) GetListAttribute(terraformAttribute *string) *
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -708,6 +762,9 @@ func (n *jsiiProxy_NatSnatRuleV2) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -721,6 +778,9 @@ func (n *jsiiProxy_NatSnatRuleV2) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -734,6 +794,9 @@ func (n *jsiiProxy_NatSnatRuleV2) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -747,6 +810,9 @@ func (n *jsiiProxy_NatSnatRuleV2) GetStringAttribute(terraformAttribute *string)
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -760,6 +826,9 @@ func (n *jsiiProxy_NatSnatRuleV2) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -773,6 +842,9 @@ func (n *jsiiProxy_NatSnatRuleV2) InterpolationForAttribute(terraformAttribute *
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
@@ -781,6 +853,9 @@ func (n *jsiiProxy_NatSnatRuleV2) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) PutTimeouts(value *NatSnatRuleV2Timeouts) {
+	if err := n.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",

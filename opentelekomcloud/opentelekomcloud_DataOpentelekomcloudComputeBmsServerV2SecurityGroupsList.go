@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) Wra
 func NewDataOpentelekomcloudComputeBmsServerV2SecurityGroupsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudComputeBmsServerV2SecurityGroupsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudComputeBmsServerV2SecurityGroupsList_Override(d Data
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) Set
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) Set
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) Com
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) Get(index *float64) DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) Get
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

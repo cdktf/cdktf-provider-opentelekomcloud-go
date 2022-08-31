@@ -111,6 +111,9 @@ func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) WrapsSet() *bool {
 func NewNetworkingSubnetV2AllocationPoolsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkingSubnetV2AllocationPoolsList {
 	_init_.Initialize()
 
+	if err := validateNewNetworkingSubnetV2AllocationPoolsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NetworkingSubnetV2AllocationPoolsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewNetworkingSubnetV2AllocationPoolsList_Override(n NetworkingSubnetV2Alloc
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NetworkingSubnetV2AllocationPoolsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) ComputeFqn() *string {
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) Get(index *float64) NetworkingSubnetV2AllocationPoolsOutputReference {
+	if err := n.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns NetworkingSubnetV2AllocationPoolsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) Get(index *float64) Ne
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -550,6 +550,9 @@ func (j *jsiiProxy_ImsDataImageV2) VolumeIdInput() *string {
 func NewImsDataImageV2(scope constructs.Construct, id *string, config *ImsDataImageV2Config) ImsDataImageV2 {
 	_init_.Initialize()
 
+	if err := validateNewImsDataImageV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ImsDataImageV2{}
 
 	_jsii_.Create(
@@ -572,7 +575,10 @@ func NewImsDataImageV2_Override(i ImsDataImageV2, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetCmkId(val *string) {
+func (j *jsiiProxy_ImsDataImageV2)SetCmkId(val *string) {
+	if err := j.validateSetCmkIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cmkId",
@@ -580,7 +586,10 @@ func (j *jsiiProxy_ImsDataImageV2) SetCmkId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_ImsDataImageV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -588,7 +597,7 @@ func (j *jsiiProxy_ImsDataImageV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetCount(val *float64) {
+func (j *jsiiProxy_ImsDataImageV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -596,7 +605,7 @@ func (j *jsiiProxy_ImsDataImageV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ImsDataImageV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -604,7 +613,10 @@ func (j *jsiiProxy_ImsDataImageV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetDescription(val *string) {
+func (j *jsiiProxy_ImsDataImageV2)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -612,7 +624,7 @@ func (j *jsiiProxy_ImsDataImageV2) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ImsDataImageV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -620,7 +632,10 @@ func (j *jsiiProxy_ImsDataImageV2) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetId(val *string) {
+func (j *jsiiProxy_ImsDataImageV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -628,7 +643,10 @@ func (j *jsiiProxy_ImsDataImageV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetImageUrl(val *string) {
+func (j *jsiiProxy_ImsDataImageV2)SetImageUrl(val *string) {
+	if err := j.validateSetImageUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"imageUrl",
@@ -636,7 +654,10 @@ func (j *jsiiProxy_ImsDataImageV2) SetImageUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ImsDataImageV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -644,7 +665,10 @@ func (j *jsiiProxy_ImsDataImageV2) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetMinDisk(val *float64) {
+func (j *jsiiProxy_ImsDataImageV2)SetMinDisk(val *float64) {
+	if err := j.validateSetMinDiskParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minDisk",
@@ -652,7 +676,10 @@ func (j *jsiiProxy_ImsDataImageV2) SetMinDisk(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetName(val *string) {
+func (j *jsiiProxy_ImsDataImageV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -660,7 +687,10 @@ func (j *jsiiProxy_ImsDataImageV2) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetOsType(val *string) {
+func (j *jsiiProxy_ImsDataImageV2)SetOsType(val *string) {
+	if err := j.validateSetOsTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"osType",
@@ -668,7 +698,7 @@ func (j *jsiiProxy_ImsDataImageV2) SetOsType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ImsDataImageV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -676,7 +706,10 @@ func (j *jsiiProxy_ImsDataImageV2) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ImsDataImageV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -684,7 +717,10 @@ func (j *jsiiProxy_ImsDataImageV2) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ImsDataImageV2)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -692,7 +728,10 @@ func (j *jsiiProxy_ImsDataImageV2) SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ImsDataImageV2) SetVolumeId(val *string) {
+func (j *jsiiProxy_ImsDataImageV2)SetVolumeId(val *string) {
+	if err := j.validateSetVolumeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumeId",
@@ -720,6 +759,9 @@ func (j *jsiiProxy_ImsDataImageV2) SetVolumeId(val *string) {
 func ImsDataImageV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateImsDataImageV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -744,6 +786,9 @@ func ImsDataImageV2_TfResourceType() *string {
 }
 
 func (i *jsiiProxy_ImsDataImageV2) AddOverride(path *string, value interface{}) {
+	if err := i.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
@@ -752,6 +797,9 @@ func (i *jsiiProxy_ImsDataImageV2) AddOverride(path *string, value interface{}) 
 }
 
 func (i *jsiiProxy_ImsDataImageV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -765,6 +813,9 @@ func (i *jsiiProxy_ImsDataImageV2) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (i *jsiiProxy_ImsDataImageV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -778,6 +829,9 @@ func (i *jsiiProxy_ImsDataImageV2) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (i *jsiiProxy_ImsDataImageV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -791,6 +845,9 @@ func (i *jsiiProxy_ImsDataImageV2) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (i *jsiiProxy_ImsDataImageV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -804,6 +861,9 @@ func (i *jsiiProxy_ImsDataImageV2) GetListAttribute(terraformAttribute *string) 
 }
 
 func (i *jsiiProxy_ImsDataImageV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -817,6 +877,9 @@ func (i *jsiiProxy_ImsDataImageV2) GetNumberAttribute(terraformAttribute *string
 }
 
 func (i *jsiiProxy_ImsDataImageV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -830,6 +893,9 @@ func (i *jsiiProxy_ImsDataImageV2) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (i *jsiiProxy_ImsDataImageV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -843,6 +909,9 @@ func (i *jsiiProxy_ImsDataImageV2) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (i *jsiiProxy_ImsDataImageV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -856,6 +925,9 @@ func (i *jsiiProxy_ImsDataImageV2) GetStringAttribute(terraformAttribute *string
 }
 
 func (i *jsiiProxy_ImsDataImageV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -869,6 +941,9 @@ func (i *jsiiProxy_ImsDataImageV2) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (i *jsiiProxy_ImsDataImageV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -882,6 +957,9 @@ func (i *jsiiProxy_ImsDataImageV2) InterpolationForAttribute(terraformAttribute 
 }
 
 func (i *jsiiProxy_ImsDataImageV2) OverrideLogicalId(newLogicalId *string) {
+	if err := i.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
@@ -890,6 +968,9 @@ func (i *jsiiProxy_ImsDataImageV2) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (i *jsiiProxy_ImsDataImageV2) PutTimeouts(value *ImsDataImageV2Timeouts) {
+	if err := i.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"putTimeouts",

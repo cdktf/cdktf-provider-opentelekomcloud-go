@@ -99,6 +99,9 @@ func (j *jsiiProxy_RdsReadReplicaV3DbList) WrapsSet() *bool {
 func NewRdsReadReplicaV3DbList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RdsReadReplicaV3DbList {
 	_init_.Initialize()
 
+	if err := validateNewRdsReadReplicaV3DbListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RdsReadReplicaV3DbList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewRdsReadReplicaV3DbList_Override(r RdsReadReplicaV3DbList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_RdsReadReplicaV3DbList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RdsReadReplicaV3DbList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_RdsReadReplicaV3DbList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsReadReplicaV3DbList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RdsReadReplicaV3DbList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_RdsReadReplicaV3DbList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_RdsReadReplicaV3DbList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RdsReadReplicaV3DbList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (r *jsiiProxy_RdsReadReplicaV3DbList) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3DbList) Get(index *float64) RdsReadReplicaV3DbOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns RdsReadReplicaV3DbOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (r *jsiiProxy_RdsReadReplicaV3DbList) Get(index *float64) RdsReadReplicaV3D
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3DbList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -495,6 +495,9 @@ func (j *jsiiProxy_VbsBackupShareV2) VolumeId() *string {
 func NewVbsBackupShareV2(scope constructs.Construct, id *string, config *VbsBackupShareV2Config) VbsBackupShareV2 {
 	_init_.Initialize()
 
+	if err := validateNewVbsBackupShareV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VbsBackupShareV2{}
 
 	_jsii_.Create(
@@ -517,7 +520,10 @@ func NewVbsBackupShareV2_Override(v VbsBackupShareV2, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_VbsBackupShareV2) SetBackupId(val *string) {
+func (j *jsiiProxy_VbsBackupShareV2)SetBackupId(val *string) {
+	if err := j.validateSetBackupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backupId",
@@ -525,7 +531,10 @@ func (j *jsiiProxy_VbsBackupShareV2) SetBackupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupShareV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_VbsBackupShareV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -533,7 +542,7 @@ func (j *jsiiProxy_VbsBackupShareV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupShareV2) SetCount(val *float64) {
+func (j *jsiiProxy_VbsBackupShareV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -541,7 +550,7 @@ func (j *jsiiProxy_VbsBackupShareV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupShareV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VbsBackupShareV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -549,7 +558,7 @@ func (j *jsiiProxy_VbsBackupShareV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupShareV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VbsBackupShareV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -557,7 +566,10 @@ func (j *jsiiProxy_VbsBackupShareV2) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupShareV2) SetId(val *string) {
+func (j *jsiiProxy_VbsBackupShareV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -565,7 +577,10 @@ func (j *jsiiProxy_VbsBackupShareV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupShareV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VbsBackupShareV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -573,7 +588,7 @@ func (j *jsiiProxy_VbsBackupShareV2) SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_VbsBackupShareV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VbsBackupShareV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -581,7 +596,10 @@ func (j *jsiiProxy_VbsBackupShareV2) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupShareV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VbsBackupShareV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -589,7 +607,10 @@ func (j *jsiiProxy_VbsBackupShareV2) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupShareV2) SetRegion(val *string) {
+func (j *jsiiProxy_VbsBackupShareV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -597,7 +618,10 @@ func (j *jsiiProxy_VbsBackupShareV2) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VbsBackupShareV2) SetToProjectIds(val *[]*string) {
+func (j *jsiiProxy_VbsBackupShareV2)SetToProjectIds(val *[]*string) {
+	if err := j.validateSetToProjectIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"toProjectIds",
@@ -625,6 +649,9 @@ func (j *jsiiProxy_VbsBackupShareV2) SetToProjectIds(val *[]*string) {
 func VbsBackupShareV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateVbsBackupShareV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -649,6 +676,9 @@ func VbsBackupShareV2_TfResourceType() *string {
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) AddOverride(path *string, value interface{}) {
+	if err := v.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
@@ -657,6 +687,9 @@ func (v *jsiiProxy_VbsBackupShareV2) AddOverride(path *string, value interface{}
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -670,6 +703,9 @@ func (v *jsiiProxy_VbsBackupShareV2) GetAnyMapAttribute(terraformAttribute *stri
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -683,6 +719,9 @@ func (v *jsiiProxy_VbsBackupShareV2) GetBooleanAttribute(terraformAttribute *str
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := v.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -696,6 +735,9 @@ func (v *jsiiProxy_VbsBackupShareV2) GetBooleanMapAttribute(terraformAttribute *
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := v.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -709,6 +751,9 @@ func (v *jsiiProxy_VbsBackupShareV2) GetListAttribute(terraformAttribute *string
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := v.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -722,6 +767,9 @@ func (v *jsiiProxy_VbsBackupShareV2) GetNumberAttribute(terraformAttribute *stri
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := v.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -735,6 +783,9 @@ func (v *jsiiProxy_VbsBackupShareV2) GetNumberListAttribute(terraformAttribute *
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := v.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -748,6 +799,9 @@ func (v *jsiiProxy_VbsBackupShareV2) GetNumberMapAttribute(terraformAttribute *s
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := v.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -761,6 +815,9 @@ func (v *jsiiProxy_VbsBackupShareV2) GetStringAttribute(terraformAttribute *stri
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := v.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -774,6 +831,9 @@ func (v *jsiiProxy_VbsBackupShareV2) GetStringMapAttribute(terraformAttribute *s
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -787,6 +847,9 @@ func (v *jsiiProxy_VbsBackupShareV2) InterpolationForAttribute(terraformAttribut
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) OverrideLogicalId(newLogicalId *string) {
+	if err := v.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
@@ -795,6 +858,9 @@ func (v *jsiiProxy_VbsBackupShareV2) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (v *jsiiProxy_VbsBackupShareV2) PutTimeouts(value *VbsBackupShareV2Timeouts) {
+	if err := v.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",

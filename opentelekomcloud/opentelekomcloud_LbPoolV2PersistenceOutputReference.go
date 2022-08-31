@@ -199,6 +199,9 @@ func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) TypeInput() *string {
 func NewLbPoolV2PersistenceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LbPoolV2PersistenceOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewLbPoolV2PersistenceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LbPoolV2PersistenceOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewLbPoolV2PersistenceOutputReference_Override(l LbPoolV2PersistenceOutputR
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LbPoolV2PersistenceOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LbPoolV2PersistenceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetCookieName(val *string) {
+func (j *jsiiProxy_LbPoolV2PersistenceOutputReference)SetCookieName(val *string) {
+	if err := j.validateSetCookieNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cookieName",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetCookieName(val *string
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LbPoolV2PersistenceOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LbPoolV2PersistenceOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbPoolV2PersistenceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) SetType(val *string) {
+func (j *jsiiProxy_LbPoolV2PersistenceOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -290,6 +314,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) ComputeFqn() *string {
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetAnyMapAttribute(terraf
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetBooleanAttribute(terra
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetBooleanMapAttribute(te
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetListAttribute(terrafor
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetNumberAttribute(terraf
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetNumberListAttribute(te
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetNumberMapAttribute(ter
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetStringAttribute(terraf
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) InterpolationAsList() cdk
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) ResetType() {
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

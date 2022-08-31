@@ -99,6 +99,9 @@ func (j *jsiiProxy_RdsParametergroupV3ConfigurationParametersList) WrapsSet() *b
 func NewRdsParametergroupV3ConfigurationParametersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RdsParametergroupV3ConfigurationParametersList {
 	_init_.Initialize()
 
+	if err := validateNewRdsParametergroupV3ConfigurationParametersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RdsParametergroupV3ConfigurationParametersList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewRdsParametergroupV3ConfigurationParametersList_Override(r RdsParametergr
 	)
 }
 
-func (j *jsiiProxy_RdsParametergroupV3ConfigurationParametersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RdsParametergroupV3ConfigurationParametersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_RdsParametergroupV3ConfigurationParametersList) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_RdsParametergroupV3ConfigurationParametersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RdsParametergroupV3ConfigurationParametersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_RdsParametergroupV3ConfigurationParametersList) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_RdsParametergroupV3ConfigurationParametersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RdsParametergroupV3ConfigurationParametersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (r *jsiiProxy_RdsParametergroupV3ConfigurationParametersList) ComputeFqn() 
 }
 
 func (r *jsiiProxy_RdsParametergroupV3ConfigurationParametersList) Get(index *float64) RdsParametergroupV3ConfigurationParametersOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns RdsParametergroupV3ConfigurationParametersOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (r *jsiiProxy_RdsParametergroupV3ConfigurationParametersList) Get(index *fl
 }
 
 func (r *jsiiProxy_RdsParametergroupV3ConfigurationParametersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

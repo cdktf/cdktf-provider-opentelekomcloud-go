@@ -564,6 +564,9 @@ func (j *jsiiProxy_CtsTrackerV1) TrackerName() *string {
 func NewCtsTrackerV1(scope constructs.Construct, id *string, config *CtsTrackerV1Config) CtsTrackerV1 {
 	_init_.Initialize()
 
+	if err := validateNewCtsTrackerV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CtsTrackerV1{}
 
 	_jsii_.Create(
@@ -586,7 +589,10 @@ func NewCtsTrackerV1_Override(c CtsTrackerV1, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetBucketName(val *string) {
+func (j *jsiiProxy_CtsTrackerV1)SetBucketName(val *string) {
+	if err := j.validateSetBucketNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bucketName",
@@ -594,7 +600,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetBucketName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_CtsTrackerV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -602,7 +611,7 @@ func (j *jsiiProxy_CtsTrackerV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetCount(val *float64) {
+func (j *jsiiProxy_CtsTrackerV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -610,7 +619,7 @@ func (j *jsiiProxy_CtsTrackerV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CtsTrackerV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -618,7 +627,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetFilePrefixName(val *string) {
+func (j *jsiiProxy_CtsTrackerV1)SetFilePrefixName(val *string) {
+	if err := j.validateSetFilePrefixNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"filePrefixName",
@@ -626,7 +638,7 @@ func (j *jsiiProxy_CtsTrackerV1) SetFilePrefixName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CtsTrackerV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -634,7 +646,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetId(val *string) {
+func (j *jsiiProxy_CtsTrackerV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -642,7 +657,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetIsSendAllKeyOperation(val interface{}) {
+func (j *jsiiProxy_CtsTrackerV1)SetIsSendAllKeyOperation(val interface{}) {
+	if err := j.validateSetIsSendAllKeyOperationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isSendAllKeyOperation",
@@ -650,7 +668,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetIsSendAllKeyOperation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetIsSupportSmn(val interface{}) {
+func (j *jsiiProxy_CtsTrackerV1)SetIsSupportSmn(val interface{}) {
+	if err := j.validateSetIsSupportSmnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isSupportSmn",
@@ -658,7 +679,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetIsSupportSmn(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CtsTrackerV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -666,7 +690,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetNeedNotifyUserList(val *[]*string) {
+func (j *jsiiProxy_CtsTrackerV1)SetNeedNotifyUserList(val *[]*string) {
+	if err := j.validateSetNeedNotifyUserListParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"needNotifyUserList",
@@ -674,7 +701,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetNeedNotifyUserList(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetOperations(val *[]*string) {
+func (j *jsiiProxy_CtsTrackerV1)SetOperations(val *[]*string) {
+	if err := j.validateSetOperationsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operations",
@@ -682,7 +712,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetOperations(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetProjectName(val *string) {
+func (j *jsiiProxy_CtsTrackerV1)SetProjectName(val *string) {
+	if err := j.validateSetProjectNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"projectName",
@@ -690,7 +723,7 @@ func (j *jsiiProxy_CtsTrackerV1) SetProjectName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CtsTrackerV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -698,7 +731,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CtsTrackerV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -706,7 +742,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetRegion(val *string) {
+func (j *jsiiProxy_CtsTrackerV1)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -714,7 +753,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetStatus(val *string) {
+func (j *jsiiProxy_CtsTrackerV1)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -722,7 +764,10 @@ func (j *jsiiProxy_CtsTrackerV1) SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1) SetTopicId(val *string) {
+func (j *jsiiProxy_CtsTrackerV1)SetTopicId(val *string) {
+	if err := j.validateSetTopicIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"topicId",
@@ -750,6 +795,9 @@ func (j *jsiiProxy_CtsTrackerV1) SetTopicId(val *string) {
 func CtsTrackerV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCtsTrackerV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -774,6 +822,9 @@ func CtsTrackerV1_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CtsTrackerV1) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -782,6 +833,9 @@ func (c *jsiiProxy_CtsTrackerV1) AddOverride(path *string, value interface{}) {
 }
 
 func (c *jsiiProxy_CtsTrackerV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -795,6 +849,9 @@ func (c *jsiiProxy_CtsTrackerV1) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CtsTrackerV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -808,6 +865,9 @@ func (c *jsiiProxy_CtsTrackerV1) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (c *jsiiProxy_CtsTrackerV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -821,6 +881,9 @@ func (c *jsiiProxy_CtsTrackerV1) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (c *jsiiProxy_CtsTrackerV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -834,6 +897,9 @@ func (c *jsiiProxy_CtsTrackerV1) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (c *jsiiProxy_CtsTrackerV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -847,6 +913,9 @@ func (c *jsiiProxy_CtsTrackerV1) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CtsTrackerV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -860,6 +929,9 @@ func (c *jsiiProxy_CtsTrackerV1) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (c *jsiiProxy_CtsTrackerV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -873,6 +945,9 @@ func (c *jsiiProxy_CtsTrackerV1) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CtsTrackerV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -886,6 +961,9 @@ func (c *jsiiProxy_CtsTrackerV1) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CtsTrackerV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -899,6 +977,9 @@ func (c *jsiiProxy_CtsTrackerV1) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CtsTrackerV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -912,6 +993,9 @@ func (c *jsiiProxy_CtsTrackerV1) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CtsTrackerV1) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -920,6 +1004,9 @@ func (c *jsiiProxy_CtsTrackerV1) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (c *jsiiProxy_CtsTrackerV1) PutTimeouts(value *CtsTrackerV1Timeouts) {
+	if err := c.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",

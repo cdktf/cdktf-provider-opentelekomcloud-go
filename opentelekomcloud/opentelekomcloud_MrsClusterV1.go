@@ -1271,6 +1271,9 @@ func (j *jsiiProxy_MrsClusterV1) VpcIdInput() *string {
 func NewMrsClusterV1(scope constructs.Construct, id *string, config *MrsClusterV1Config) MrsClusterV1 {
 	_init_.Initialize()
 
+	if err := validateNewMrsClusterV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrsClusterV1{}
 
 	_jsii_.Create(
@@ -1293,7 +1296,10 @@ func NewMrsClusterV1_Override(m MrsClusterV1, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetAvailableZoneId(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetAvailableZoneId(val *string) {
+	if err := j.validateSetAvailableZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availableZoneId",
@@ -1301,7 +1307,10 @@ func (j *jsiiProxy_MrsClusterV1) SetAvailableZoneId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetBillingType(val *float64) {
+func (j *jsiiProxy_MrsClusterV1)SetBillingType(val *float64) {
+	if err := j.validateSetBillingTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"billingType",
@@ -1309,7 +1318,10 @@ func (j *jsiiProxy_MrsClusterV1) SetBillingType(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetClusterAdminSecret(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetClusterAdminSecret(val *string) {
+	if err := j.validateSetClusterAdminSecretParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterAdminSecret",
@@ -1317,7 +1329,10 @@ func (j *jsiiProxy_MrsClusterV1) SetClusterAdminSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetClusterName(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetClusterName(val *string) {
+	if err := j.validateSetClusterNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterName",
@@ -1325,7 +1340,10 @@ func (j *jsiiProxy_MrsClusterV1) SetClusterName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetClusterType(val *float64) {
+func (j *jsiiProxy_MrsClusterV1)SetClusterType(val *float64) {
+	if err := j.validateSetClusterTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterType",
@@ -1333,7 +1351,10 @@ func (j *jsiiProxy_MrsClusterV1) SetClusterType(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetClusterVersion(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetClusterVersion(val *string) {
+	if err := j.validateSetClusterVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterVersion",
@@ -1341,7 +1362,10 @@ func (j *jsiiProxy_MrsClusterV1) SetClusterVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_MrsClusterV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1349,7 +1373,10 @@ func (j *jsiiProxy_MrsClusterV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetCoreDataVolumeCount(val *float64) {
+func (j *jsiiProxy_MrsClusterV1)SetCoreDataVolumeCount(val *float64) {
+	if err := j.validateSetCoreDataVolumeCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coreDataVolumeCount",
@@ -1357,7 +1384,10 @@ func (j *jsiiProxy_MrsClusterV1) SetCoreDataVolumeCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetCoreDataVolumeSize(val *float64) {
+func (j *jsiiProxy_MrsClusterV1)SetCoreDataVolumeSize(val *float64) {
+	if err := j.validateSetCoreDataVolumeSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coreDataVolumeSize",
@@ -1365,7 +1395,10 @@ func (j *jsiiProxy_MrsClusterV1) SetCoreDataVolumeSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetCoreDataVolumeType(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetCoreDataVolumeType(val *string) {
+	if err := j.validateSetCoreDataVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coreDataVolumeType",
@@ -1373,7 +1406,10 @@ func (j *jsiiProxy_MrsClusterV1) SetCoreDataVolumeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetCoreNodeNum(val *float64) {
+func (j *jsiiProxy_MrsClusterV1)SetCoreNodeNum(val *float64) {
+	if err := j.validateSetCoreNodeNumParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coreNodeNum",
@@ -1381,7 +1417,10 @@ func (j *jsiiProxy_MrsClusterV1) SetCoreNodeNum(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetCoreNodeSize(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetCoreNodeSize(val *string) {
+	if err := j.validateSetCoreNodeSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coreNodeSize",
@@ -1389,7 +1428,7 @@ func (j *jsiiProxy_MrsClusterV1) SetCoreNodeSize(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetCount(val *float64) {
+func (j *jsiiProxy_MrsClusterV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1397,7 +1436,7 @@ func (j *jsiiProxy_MrsClusterV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MrsClusterV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1405,7 +1444,7 @@ func (j *jsiiProxy_MrsClusterV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MrsClusterV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1413,7 +1452,10 @@ func (j *jsiiProxy_MrsClusterV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetId(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1421,7 +1463,10 @@ func (j *jsiiProxy_MrsClusterV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MrsClusterV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1429,7 +1474,10 @@ func (j *jsiiProxy_MrsClusterV1) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetLogCollection(val *float64) {
+func (j *jsiiProxy_MrsClusterV1)SetLogCollection(val *float64) {
+	if err := j.validateSetLogCollectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"logCollection",
@@ -1437,7 +1485,10 @@ func (j *jsiiProxy_MrsClusterV1) SetLogCollection(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetMasterDataVolumeCount(val *float64) {
+func (j *jsiiProxy_MrsClusterV1)SetMasterDataVolumeCount(val *float64) {
+	if err := j.validateSetMasterDataVolumeCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"masterDataVolumeCount",
@@ -1445,7 +1496,10 @@ func (j *jsiiProxy_MrsClusterV1) SetMasterDataVolumeCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetMasterDataVolumeSize(val *float64) {
+func (j *jsiiProxy_MrsClusterV1)SetMasterDataVolumeSize(val *float64) {
+	if err := j.validateSetMasterDataVolumeSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"masterDataVolumeSize",
@@ -1453,7 +1507,10 @@ func (j *jsiiProxy_MrsClusterV1) SetMasterDataVolumeSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetMasterDataVolumeType(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetMasterDataVolumeType(val *string) {
+	if err := j.validateSetMasterDataVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"masterDataVolumeType",
@@ -1461,7 +1518,10 @@ func (j *jsiiProxy_MrsClusterV1) SetMasterDataVolumeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetMasterNodeNum(val *float64) {
+func (j *jsiiProxy_MrsClusterV1)SetMasterNodeNum(val *float64) {
+	if err := j.validateSetMasterNodeNumParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"masterNodeNum",
@@ -1469,7 +1529,10 @@ func (j *jsiiProxy_MrsClusterV1) SetMasterNodeNum(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetMasterNodeSize(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetMasterNodeSize(val *string) {
+	if err := j.validateSetMasterNodeSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"masterNodeSize",
@@ -1477,7 +1540,10 @@ func (j *jsiiProxy_MrsClusterV1) SetMasterNodeSize(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetNodePublicCertName(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetNodePublicCertName(val *string) {
+	if err := j.validateSetNodePublicCertNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nodePublicCertName",
@@ -1485,7 +1551,7 @@ func (j *jsiiProxy_MrsClusterV1) SetNodePublicCertName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MrsClusterV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1493,7 +1559,10 @@ func (j *jsiiProxy_MrsClusterV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MrsClusterV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1501,7 +1570,10 @@ func (j *jsiiProxy_MrsClusterV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetRegion(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -1509,7 +1581,10 @@ func (j *jsiiProxy_MrsClusterV1) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetSafeMode(val *float64) {
+func (j *jsiiProxy_MrsClusterV1)SetSafeMode(val *float64) {
+	if err := j.validateSetSafeModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"safeMode",
@@ -1517,7 +1592,10 @@ func (j *jsiiProxy_MrsClusterV1) SetSafeMode(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetSubnetId(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetSubnetId(val *string) {
+	if err := j.validateSetSubnetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subnetId",
@@ -1525,7 +1603,10 @@ func (j *jsiiProxy_MrsClusterV1) SetSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetTags(val *map[string]*string) {
+func (j *jsiiProxy_MrsClusterV1)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -1533,7 +1614,10 @@ func (j *jsiiProxy_MrsClusterV1) SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetVolumeSize(val *float64) {
+func (j *jsiiProxy_MrsClusterV1)SetVolumeSize(val *float64) {
+	if err := j.validateSetVolumeSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumeSize",
@@ -1541,7 +1625,10 @@ func (j *jsiiProxy_MrsClusterV1) SetVolumeSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetVolumeType(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetVolumeType(val *string) {
+	if err := j.validateSetVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumeType",
@@ -1549,7 +1636,10 @@ func (j *jsiiProxy_MrsClusterV1) SetVolumeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrsClusterV1) SetVpcId(val *string) {
+func (j *jsiiProxy_MrsClusterV1)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcId",
@@ -1577,6 +1667,9 @@ func (j *jsiiProxy_MrsClusterV1) SetVpcId(val *string) {
 func MrsClusterV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMrsClusterV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1601,6 +1694,9 @@ func MrsClusterV1_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MrsClusterV1) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -1609,6 +1705,9 @@ func (m *jsiiProxy_MrsClusterV1) AddOverride(path *string, value interface{}) {
 }
 
 func (m *jsiiProxy_MrsClusterV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1622,6 +1721,9 @@ func (m *jsiiProxy_MrsClusterV1) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MrsClusterV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1635,6 +1737,9 @@ func (m *jsiiProxy_MrsClusterV1) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (m *jsiiProxy_MrsClusterV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1648,6 +1753,9 @@ func (m *jsiiProxy_MrsClusterV1) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_MrsClusterV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1661,6 +1769,9 @@ func (m *jsiiProxy_MrsClusterV1) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (m *jsiiProxy_MrsClusterV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1674,6 +1785,9 @@ func (m *jsiiProxy_MrsClusterV1) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MrsClusterV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1687,6 +1801,9 @@ func (m *jsiiProxy_MrsClusterV1) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_MrsClusterV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1700,6 +1817,9 @@ func (m *jsiiProxy_MrsClusterV1) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MrsClusterV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1713,6 +1833,9 @@ func (m *jsiiProxy_MrsClusterV1) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MrsClusterV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1726,6 +1849,9 @@ func (m *jsiiProxy_MrsClusterV1) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MrsClusterV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1739,6 +1865,9 @@ func (m *jsiiProxy_MrsClusterV1) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (m *jsiiProxy_MrsClusterV1) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
@@ -1747,6 +1876,9 @@ func (m *jsiiProxy_MrsClusterV1) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (m *jsiiProxy_MrsClusterV1) PutAddJobs(value interface{}) {
+	if err := m.validatePutAddJobsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putAddJobs",
@@ -1755,6 +1887,9 @@ func (m *jsiiProxy_MrsClusterV1) PutAddJobs(value interface{}) {
 }
 
 func (m *jsiiProxy_MrsClusterV1) PutBootstrapScripts(value interface{}) {
+	if err := m.validatePutBootstrapScriptsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putBootstrapScripts",
@@ -1763,6 +1898,9 @@ func (m *jsiiProxy_MrsClusterV1) PutBootstrapScripts(value interface{}) {
 }
 
 func (m *jsiiProxy_MrsClusterV1) PutComponentList(value interface{}) {
+	if err := m.validatePutComponentListParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putComponentList",
@@ -1771,6 +1909,9 @@ func (m *jsiiProxy_MrsClusterV1) PutComponentList(value interface{}) {
 }
 
 func (m *jsiiProxy_MrsClusterV1) PutTimeouts(value *MrsClusterV1Timeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",

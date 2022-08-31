@@ -111,6 +111,9 @@ func (j *jsiiProxy_LbPoolV2PersistenceList) WrapsSet() *bool {
 func NewLbPoolV2PersistenceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbPoolV2PersistenceList {
 	_init_.Initialize()
 
+	if err := validateNewLbPoolV2PersistenceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LbPoolV2PersistenceList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewLbPoolV2PersistenceList_Override(l LbPoolV2PersistenceList, terraformRes
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2PersistenceList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LbPoolV2PersistenceList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_LbPoolV2PersistenceList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2PersistenceList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LbPoolV2PersistenceList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_LbPoolV2PersistenceList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2PersistenceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbPoolV2PersistenceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_LbPoolV2PersistenceList) SetTerraformResource(val cdktf.IInte
 	)
 }
 
-func (j *jsiiProxy_LbPoolV2PersistenceList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LbPoolV2PersistenceList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceList) ComputeFqn() *string {
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceList) Get(index *float64) LbPoolV2PersistenceOutputReference {
+	if err := l.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns LbPoolV2PersistenceOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (l *jsiiProxy_LbPoolV2PersistenceList) Get(index *float64) LbPoolV2Persiste
 }
 
 func (l *jsiiProxy_LbPoolV2PersistenceList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

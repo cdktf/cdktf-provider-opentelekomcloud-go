@@ -223,6 +223,9 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) TimeoutInput() *flo
 func NewVpnaasSiteConnectionV2DpdOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) VpnaasSiteConnectionV2DpdOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewVpnaasSiteConnectionV2DpdOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewVpnaasSiteConnectionV2DpdOutputReference_Override(v VpnaasSiteConnection
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetAction(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference)SetAction(val *string) {
+	if err := j.validateSetActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"action",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetAction(val *stri
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetInterval(val *float64) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference)SetInterval(val *float64) {
+	if err := j.validateSetIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"interval",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetInterval(val *fl
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) SetTimeout(val *float64) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference)SetTimeout(val *float64) {
+	if err := j.validateSetTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeout",
@@ -322,6 +349,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) ComputeFqn() *strin
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetAnyMapAttribute(
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetBooleanAttribute
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := v.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetBooleanMapAttrib
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := v.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetListAttribute(te
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := v.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetNumberAttribute(
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := v.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetNumberListAttrib
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := v.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetNumberMapAttribu
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := v.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetStringAttribute(
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := v.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) InterpolationAsList
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) ResetTimeout() {
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

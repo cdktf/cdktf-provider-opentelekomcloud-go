@@ -162,6 +162,9 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 func NewDataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference{}
 
 	_jsii_.Create(
@@ -183,7 +186,10 @@ func NewDataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference_Over
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -191,7 +197,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -199,7 +208,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) SetInternalValue(val *DataOpentelekomcloudObsBucketLifecycleRuleExpiration) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference)SetInternalValue(val *DataOpentelekomcloudObsBucketLifecycleRuleExpiration) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -207,7 +219,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -215,7 +230,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -237,6 +255,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -250,6 +271,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -263,6 +287,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -276,6 +303,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -289,6 +319,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -302,6 +335,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -315,6 +351,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -328,6 +367,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -341,6 +383,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -367,6 +412,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +428,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputRef
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -501,6 +501,9 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) VmSpecificationInput() *str
 func NewDataOpentelekomcloudDmsProductV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudDmsProductV1Config) DataOpentelekomcloudDmsProductV1 {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudDmsProductV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudDmsProductV1{}
 
 	_jsii_.Create(
@@ -523,7 +526,10 @@ func NewDataOpentelekomcloudDmsProductV1_Override(d DataOpentelekomcloudDmsProdu
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetBandwidth(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetBandwidth(val *string) {
+	if err := j.validateSetBandwidthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bandwidth",
@@ -531,7 +537,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetBandwidth(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -539,7 +545,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -547,7 +553,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetEngine(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetEngine(val *string) {
+	if err := j.validateSetEngineParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"engine",
@@ -555,7 +564,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -563,7 +572,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -571,7 +583,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetInstanceType(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetInstanceType(val *string) {
+	if err := j.validateSetInstanceTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceType",
@@ -579,7 +594,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetInstanceType(val *string
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetIoType(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetIoType(val *string) {
+	if err := j.validateSetIoTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ioType",
@@ -587,7 +605,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetIoType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -595,7 +616,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetNodeNum(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetNodeNum(val *string) {
+	if err := j.validateSetNodeNumParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nodeNum",
@@ -603,7 +627,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetNodeNum(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetPartitionNum(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetPartitionNum(val *string) {
+	if err := j.validateSetPartitionNumParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"partitionNum",
@@ -611,7 +638,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetPartitionNum(val *string
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -619,7 +646,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetStorage(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetStorage(val *string) {
+	if err := j.validateSetStorageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storage",
@@ -627,7 +657,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetStorage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetStorageSpecCode(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetStorageSpecCode(val *string) {
+	if err := j.validateSetStorageSpecCodeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageSpecCode",
@@ -635,7 +668,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetStorageSpecCode(val *str
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetVersion(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"version",
@@ -643,7 +679,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetVmSpecification(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1)SetVmSpecification(val *string) {
+	if err := j.validateSetVmSpecificationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vmSpecification",
@@ -671,6 +710,9 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) SetVmSpecification(val *str
 func DataOpentelekomcloudDmsProductV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataOpentelekomcloudDmsProductV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -695,6 +737,9 @@ func DataOpentelekomcloudDmsProductV1_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -703,6 +748,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) AddOverride(path *string, v
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -716,6 +764,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetAnyMapAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -729,6 +780,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetBooleanAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -742,6 +796,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetBooleanMapAttribute(terr
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -755,6 +812,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetListAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -768,6 +828,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetNumberAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -781,6 +844,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetNumberListAttribute(terr
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -794,6 +860,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetNumberMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -807,6 +876,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetStringAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -820,6 +892,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) GetStringMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -833,6 +908,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) InterpolationForAttribute(t
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDmsProductV1) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

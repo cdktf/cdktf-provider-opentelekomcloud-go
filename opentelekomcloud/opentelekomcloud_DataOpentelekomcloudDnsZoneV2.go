@@ -508,6 +508,9 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) ZoneTypeInput() *string {
 func NewDataOpentelekomcloudDnsZoneV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudDnsZoneV2Config) DataOpentelekomcloudDnsZoneV2 {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudDnsZoneV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudDnsZoneV2{}
 
 	_jsii_.Create(
@@ -530,7 +533,7 @@ func NewDataOpentelekomcloudDnsZoneV2_Override(d DataOpentelekomcloudDnsZoneV2, 
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -538,7 +541,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -546,7 +549,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetDescription(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -554,7 +560,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetEmail(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetEmail(val *string) {
+	if err := j.validateSetEmailParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"email",
@@ -562,7 +571,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -570,7 +579,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -578,7 +590,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -586,7 +601,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetName(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -594,7 +612,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -602,7 +620,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetStatus(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -610,7 +631,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -618,7 +642,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetTags(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetTtl(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetTtl(val *float64) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ttl",
@@ -626,7 +653,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetZoneType(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2)SetZoneType(val *string) {
+	if err := j.validateSetZoneTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneType",
@@ -654,6 +684,9 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsZoneV2) SetZoneType(val *string) {
 func DataOpentelekomcloudDnsZoneV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataOpentelekomcloudDnsZoneV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -678,6 +711,9 @@ func DataOpentelekomcloudDnsZoneV2_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -686,6 +722,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) AddOverride(path *string, valu
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -699,6 +738,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetAnyMapAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -712,6 +754,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetBooleanAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -725,6 +770,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetBooleanMapAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -738,6 +786,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetListAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -751,6 +802,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetNumberAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -764,6 +818,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetNumberListAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -777,6 +834,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetNumberMapAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -790,6 +850,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetStringAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -803,6 +866,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) GetStringMapAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -816,6 +882,9 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) InterpolationForAttribute(terr
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

@@ -529,6 +529,9 @@ func (j *jsiiProxy_DmsTopicV1) TerraformResourceType() *string {
 func NewDmsTopicV1(scope constructs.Construct, id *string, config *DmsTopicV1Config) DmsTopicV1 {
 	_init_.Initialize()
 
+	if err := validateNewDmsTopicV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DmsTopicV1{}
 
 	_jsii_.Create(
@@ -551,7 +554,10 @@ func NewDmsTopicV1_Override(d DmsTopicV1, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_DmsTopicV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -559,7 +565,7 @@ func (j *jsiiProxy_DmsTopicV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetCount(val *float64) {
+func (j *jsiiProxy_DmsTopicV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -567,7 +573,7 @@ func (j *jsiiProxy_DmsTopicV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DmsTopicV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -575,7 +581,7 @@ func (j *jsiiProxy_DmsTopicV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DmsTopicV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -583,7 +589,10 @@ func (j *jsiiProxy_DmsTopicV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetId(val *string) {
+func (j *jsiiProxy_DmsTopicV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -591,7 +600,10 @@ func (j *jsiiProxy_DmsTopicV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetInstanceId(val *string) {
+func (j *jsiiProxy_DmsTopicV1)SetInstanceId(val *string) {
+	if err := j.validateSetInstanceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceId",
@@ -599,7 +611,10 @@ func (j *jsiiProxy_DmsTopicV1) SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DmsTopicV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -607,7 +622,10 @@ func (j *jsiiProxy_DmsTopicV1) SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetMaxPartitions(val *float64) {
+func (j *jsiiProxy_DmsTopicV1)SetMaxPartitions(val *float64) {
+	if err := j.validateSetMaxPartitionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxPartitions",
@@ -615,7 +633,10 @@ func (j *jsiiProxy_DmsTopicV1) SetMaxPartitions(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetName(val *string) {
+func (j *jsiiProxy_DmsTopicV1)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -623,7 +644,10 @@ func (j *jsiiProxy_DmsTopicV1) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetPartition(val *float64) {
+func (j *jsiiProxy_DmsTopicV1)SetPartition(val *float64) {
+	if err := j.validateSetPartitionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"partition",
@@ -631,7 +655,7 @@ func (j *jsiiProxy_DmsTopicV1) SetPartition(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DmsTopicV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -639,7 +663,10 @@ func (j *jsiiProxy_DmsTopicV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DmsTopicV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -647,7 +674,10 @@ func (j *jsiiProxy_DmsTopicV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetRemainPartitions(val *float64) {
+func (j *jsiiProxy_DmsTopicV1)SetRemainPartitions(val *float64) {
+	if err := j.validateSetRemainPartitionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"remainPartitions",
@@ -655,7 +685,10 @@ func (j *jsiiProxy_DmsTopicV1) SetRemainPartitions(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetReplication(val *float64) {
+func (j *jsiiProxy_DmsTopicV1)SetReplication(val *float64) {
+	if err := j.validateSetReplicationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"replication",
@@ -663,7 +696,10 @@ func (j *jsiiProxy_DmsTopicV1) SetReplication(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetRetentionTime(val *float64) {
+func (j *jsiiProxy_DmsTopicV1)SetRetentionTime(val *float64) {
+	if err := j.validateSetRetentionTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"retentionTime",
@@ -671,7 +707,10 @@ func (j *jsiiProxy_DmsTopicV1) SetRetentionTime(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetSize(val *float64) {
+func (j *jsiiProxy_DmsTopicV1)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -679,7 +718,10 @@ func (j *jsiiProxy_DmsTopicV1) SetSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetSyncMessageFlush(val interface{}) {
+func (j *jsiiProxy_DmsTopicV1)SetSyncMessageFlush(val interface{}) {
+	if err := j.validateSetSyncMessageFlushParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"syncMessageFlush",
@@ -687,7 +729,10 @@ func (j *jsiiProxy_DmsTopicV1) SetSyncMessageFlush(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsTopicV1) SetSyncReplication(val interface{}) {
+func (j *jsiiProxy_DmsTopicV1)SetSyncReplication(val interface{}) {
+	if err := j.validateSetSyncReplicationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"syncReplication",
@@ -715,6 +760,9 @@ func (j *jsiiProxy_DmsTopicV1) SetSyncReplication(val interface{}) {
 func DmsTopicV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDmsTopicV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -739,6 +787,9 @@ func DmsTopicV1_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DmsTopicV1) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -747,6 +798,9 @@ func (d *jsiiProxy_DmsTopicV1) AddOverride(path *string, value interface{}) {
 }
 
 func (d *jsiiProxy_DmsTopicV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -760,6 +814,9 @@ func (d *jsiiProxy_DmsTopicV1) GetAnyMapAttribute(terraformAttribute *string) *m
 }
 
 func (d *jsiiProxy_DmsTopicV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -773,6 +830,9 @@ func (d *jsiiProxy_DmsTopicV1) GetBooleanAttribute(terraformAttribute *string) c
 }
 
 func (d *jsiiProxy_DmsTopicV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -786,6 +846,9 @@ func (d *jsiiProxy_DmsTopicV1) GetBooleanMapAttribute(terraformAttribute *string
 }
 
 func (d *jsiiProxy_DmsTopicV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -799,6 +862,9 @@ func (d *jsiiProxy_DmsTopicV1) GetListAttribute(terraformAttribute *string) *[]*
 }
 
 func (d *jsiiProxy_DmsTopicV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -812,6 +878,9 @@ func (d *jsiiProxy_DmsTopicV1) GetNumberAttribute(terraformAttribute *string) *f
 }
 
 func (d *jsiiProxy_DmsTopicV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -825,6 +894,9 @@ func (d *jsiiProxy_DmsTopicV1) GetNumberListAttribute(terraformAttribute *string
 }
 
 func (d *jsiiProxy_DmsTopicV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -838,6 +910,9 @@ func (d *jsiiProxy_DmsTopicV1) GetNumberMapAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DmsTopicV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -851,6 +926,9 @@ func (d *jsiiProxy_DmsTopicV1) GetStringAttribute(terraformAttribute *string) *s
 }
 
 func (d *jsiiProxy_DmsTopicV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -864,6 +942,9 @@ func (d *jsiiProxy_DmsTopicV1) GetStringMapAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DmsTopicV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -877,6 +958,9 @@ func (d *jsiiProxy_DmsTopicV1) InterpolationForAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DmsTopicV1) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

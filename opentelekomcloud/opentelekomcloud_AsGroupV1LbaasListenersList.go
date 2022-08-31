@@ -111,6 +111,9 @@ func (j *jsiiProxy_AsGroupV1LbaasListenersList) WrapsSet() *bool {
 func NewAsGroupV1LbaasListenersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AsGroupV1LbaasListenersList {
 	_init_.Initialize()
 
+	if err := validateNewAsGroupV1LbaasListenersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AsGroupV1LbaasListenersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAsGroupV1LbaasListenersList_Override(a AsGroupV1LbaasListenersList, terr
 	)
 }
 
-func (j *jsiiProxy_AsGroupV1LbaasListenersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AsGroupV1LbaasListenersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AsGroupV1LbaasListenersList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AsGroupV1LbaasListenersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AsGroupV1LbaasListenersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AsGroupV1LbaasListenersList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_AsGroupV1LbaasListenersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AsGroupV1LbaasListenersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AsGroupV1LbaasListenersList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_AsGroupV1LbaasListenersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AsGroupV1LbaasListenersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AsGroupV1LbaasListenersList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AsGroupV1LbaasListenersList) Get(index *float64) AsGroupV1LbaasListenersOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AsGroupV1LbaasListenersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AsGroupV1LbaasListenersList) Get(index *float64) AsGroupV1Lba
 }
 
 func (a *jsiiProxy_AsGroupV1LbaasListenersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

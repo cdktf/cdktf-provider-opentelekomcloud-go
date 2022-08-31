@@ -337,6 +337,9 @@ func (j *jsiiProxy_SfsShareAccessRulesV2) TerraformResourceType() *string {
 func NewSfsShareAccessRulesV2(scope constructs.Construct, id *string, config *SfsShareAccessRulesV2Config) SfsShareAccessRulesV2 {
 	_init_.Initialize()
 
+	if err := validateNewSfsShareAccessRulesV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SfsShareAccessRulesV2{}
 
 	_jsii_.Create(
@@ -359,7 +362,10 @@ func NewSfsShareAccessRulesV2_Override(s SfsShareAccessRulesV2, scope constructs
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_SfsShareAccessRulesV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -367,7 +373,7 @@ func (j *jsiiProxy_SfsShareAccessRulesV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2) SetCount(val *float64) {
+func (j *jsiiProxy_SfsShareAccessRulesV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -375,7 +381,7 @@ func (j *jsiiProxy_SfsShareAccessRulesV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SfsShareAccessRulesV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -383,7 +389,7 @@ func (j *jsiiProxy_SfsShareAccessRulesV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SfsShareAccessRulesV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -391,7 +397,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2) SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2) SetId(val *string) {
+func (j *jsiiProxy_SfsShareAccessRulesV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -399,7 +408,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SfsShareAccessRulesV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -407,7 +419,7 @@ func (j *jsiiProxy_SfsShareAccessRulesV2) SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SfsShareAccessRulesV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -415,7 +427,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2) SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SfsShareAccessRulesV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -423,7 +438,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2) SetShareId(val *string) {
+func (j *jsiiProxy_SfsShareAccessRulesV2)SetShareId(val *string) {
+	if err := j.validateSetShareIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shareId",
@@ -451,6 +469,9 @@ func (j *jsiiProxy_SfsShareAccessRulesV2) SetShareId(val *string) {
 func SfsShareAccessRulesV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSfsShareAccessRulesV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -475,6 +496,9 @@ func SfsShareAccessRulesV2_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -483,6 +507,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) AddOverride(path *string, value interf
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -496,6 +523,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) GetAnyMapAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -509,6 +539,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) GetBooleanAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -522,6 +555,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) GetBooleanMapAttribute(terraformAttrib
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -535,6 +571,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) GetListAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -548,6 +587,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) GetNumberAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -561,6 +603,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) GetNumberListAttribute(terraformAttrib
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -574,6 +619,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) GetNumberMapAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -587,6 +635,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) GetStringAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -600,6 +651,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) GetStringMapAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -613,6 +667,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) InterpolationForAttribute(terraformAtt
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -621,6 +678,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) OverrideLogicalId(newLogicalId *string
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) PutAccessRule(value interface{}) {
+	if err := s.validatePutAccessRuleParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAccessRule",

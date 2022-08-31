@@ -198,6 +198,9 @@ func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) Terraform
 func NewNetworkingPortV2AllowedAddressPairsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkingPortV2AllowedAddressPairsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNetworkingPortV2AllowedAddressPairsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewNetworkingPortV2AllowedAddressPairsOutputReference_Override(n Networking
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetIpAddress(val *string) {
+func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference)SetIpAddress(val *string) {
+	if err := j.validateSetIpAddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ipAddress",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetIpAddr
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetMacAddress(val *string) {
+func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference)SetMacAddress(val *string) {
+	if err := j.validateSetMacAddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"macAddress",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetMacAdd
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -289,6 +313,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) ComputeFq
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetAnyMap
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetBoolea
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetBoolea
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetListAt
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetNumber
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetNumber
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetNumber
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetString
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) Interpola
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) ResetMacA
 }
 
 func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

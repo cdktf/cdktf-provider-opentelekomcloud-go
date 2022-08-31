@@ -290,6 +290,9 @@ func (j *jsiiProxy_CesAlarmruleConditionOutputReference) ValueInput() *float64 {
 func NewCesAlarmruleConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesAlarmruleConditionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCesAlarmruleConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CesAlarmruleConditionOutputReference{}
 
 	_jsii_.Create(
@@ -311,7 +314,10 @@ func NewCesAlarmruleConditionOutputReference_Override(c CesAlarmruleConditionOut
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetComparisonOperator(val *string) {
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference)SetComparisonOperator(val *string) {
+	if err := j.validateSetComparisonOperatorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"comparisonOperator",
@@ -319,7 +325,10 @@ func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetComparisonOperator(v
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -327,7 +336,10 @@ func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -335,7 +347,10 @@ func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetCount(val *float64) {
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference)SetCount(val *float64) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -343,7 +358,10 @@ func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetCount(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetFilter(val *string) {
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference)SetFilter(val *string) {
+	if err := j.validateSetFilterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"filter",
@@ -351,7 +369,10 @@ func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetFilter(val *string) 
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetInternalValue(val *CesAlarmruleCondition) {
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference)SetInternalValue(val *CesAlarmruleCondition) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -359,7 +380,10 @@ func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetInternalValue(val *C
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetPeriod(val *float64) {
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference)SetPeriod(val *float64) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"period",
@@ -367,7 +391,10 @@ func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetPeriod(val *float64)
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -375,7 +402,10 @@ func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -383,7 +413,10 @@ func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetUnit(val *string) {
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference)SetUnit(val *string) {
+	if err := j.validateSetUnitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"unit",
@@ -391,7 +424,10 @@ func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetUnit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAlarmruleConditionOutputReference) SetValue(val *float64) {
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference)SetValue(val *float64) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -413,6 +449,9 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -426,6 +465,9 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetAnyMapAttribute(terr
 }
 
 func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -439,6 +481,9 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetBooleanAttribute(ter
 }
 
 func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -452,6 +497,9 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetBooleanMapAttribute(
 }
 
 func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -465,6 +513,9 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetListAttribute(terraf
 }
 
 func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -478,6 +529,9 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetNumberAttribute(terr
 }
 
 func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -491,6 +545,9 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetNumberListAttribute(
 }
 
 func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -504,6 +561,9 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetNumberMapAttribute(t
 }
 
 func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -517,6 +577,9 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetStringAttribute(terr
 }
 
 func (c *jsiiProxy_CesAlarmruleConditionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -543,6 +606,9 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) InterpolationAsList() c
 }
 
 func (c *jsiiProxy_CesAlarmruleConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -564,6 +630,9 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) ResetUnit() {
 }
 
 func (c *jsiiProxy_CesAlarmruleConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

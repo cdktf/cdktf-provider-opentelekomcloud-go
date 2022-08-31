@@ -372,6 +372,9 @@ func (j *jsiiProxy_ComputeFloatingipV2) TerraformResourceType() *string {
 func NewComputeFloatingipV2(scope constructs.Construct, id *string, config *ComputeFloatingipV2Config) ComputeFloatingipV2 {
 	_init_.Initialize()
 
+	if err := validateNewComputeFloatingipV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ComputeFloatingipV2{}
 
 	_jsii_.Create(
@@ -394,7 +397,10 @@ func NewComputeFloatingipV2_Override(c ComputeFloatingipV2, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_ComputeFloatingipV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeFloatingipV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -402,7 +408,7 @@ func (j *jsiiProxy_ComputeFloatingipV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeFloatingipV2) SetCount(val *float64) {
+func (j *jsiiProxy_ComputeFloatingipV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -410,7 +416,7 @@ func (j *jsiiProxy_ComputeFloatingipV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeFloatingipV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeFloatingipV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -418,7 +424,7 @@ func (j *jsiiProxy_ComputeFloatingipV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeFloatingipV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeFloatingipV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -426,7 +432,10 @@ func (j *jsiiProxy_ComputeFloatingipV2) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_ComputeFloatingipV2) SetId(val *string) {
+func (j *jsiiProxy_ComputeFloatingipV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -434,7 +443,10 @@ func (j *jsiiProxy_ComputeFloatingipV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeFloatingipV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeFloatingipV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -442,7 +454,10 @@ func (j *jsiiProxy_ComputeFloatingipV2) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ComputeFloatingipV2) SetPool(val *string) {
+func (j *jsiiProxy_ComputeFloatingipV2)SetPool(val *string) {
+	if err := j.validateSetPoolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pool",
@@ -450,7 +465,7 @@ func (j *jsiiProxy_ComputeFloatingipV2) SetPool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeFloatingipV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeFloatingipV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -458,7 +473,10 @@ func (j *jsiiProxy_ComputeFloatingipV2) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_ComputeFloatingipV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeFloatingipV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -466,7 +484,10 @@ func (j *jsiiProxy_ComputeFloatingipV2) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeFloatingipV2) SetRegion(val *string) {
+func (j *jsiiProxy_ComputeFloatingipV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -494,6 +515,9 @@ func (j *jsiiProxy_ComputeFloatingipV2) SetRegion(val *string) {
 func ComputeFloatingipV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateComputeFloatingipV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -518,6 +542,9 @@ func ComputeFloatingipV2_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_ComputeFloatingipV2) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -526,6 +553,9 @@ func (c *jsiiProxy_ComputeFloatingipV2) AddOverride(path *string, value interfac
 }
 
 func (c *jsiiProxy_ComputeFloatingipV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -539,6 +569,9 @@ func (c *jsiiProxy_ComputeFloatingipV2) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_ComputeFloatingipV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -552,6 +585,9 @@ func (c *jsiiProxy_ComputeFloatingipV2) GetBooleanAttribute(terraformAttribute *
 }
 
 func (c *jsiiProxy_ComputeFloatingipV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -565,6 +601,9 @@ func (c *jsiiProxy_ComputeFloatingipV2) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_ComputeFloatingipV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -578,6 +617,9 @@ func (c *jsiiProxy_ComputeFloatingipV2) GetListAttribute(terraformAttribute *str
 }
 
 func (c *jsiiProxy_ComputeFloatingipV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -591,6 +633,9 @@ func (c *jsiiProxy_ComputeFloatingipV2) GetNumberAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_ComputeFloatingipV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -604,6 +649,9 @@ func (c *jsiiProxy_ComputeFloatingipV2) GetNumberListAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_ComputeFloatingipV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -617,6 +665,9 @@ func (c *jsiiProxy_ComputeFloatingipV2) GetNumberMapAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_ComputeFloatingipV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -630,6 +681,9 @@ func (c *jsiiProxy_ComputeFloatingipV2) GetStringAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_ComputeFloatingipV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -643,6 +697,9 @@ func (c *jsiiProxy_ComputeFloatingipV2) GetStringMapAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_ComputeFloatingipV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -656,6 +713,9 @@ func (c *jsiiProxy_ComputeFloatingipV2) InterpolationForAttribute(terraformAttri
 }
 
 func (c *jsiiProxy_ComputeFloatingipV2) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

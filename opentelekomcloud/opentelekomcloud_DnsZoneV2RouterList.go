@@ -111,6 +111,9 @@ func (j *jsiiProxy_DnsZoneV2RouterList) WrapsSet() *bool {
 func NewDnsZoneV2RouterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DnsZoneV2RouterList {
 	_init_.Initialize()
 
+	if err := validateNewDnsZoneV2RouterListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DnsZoneV2RouterList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDnsZoneV2RouterList_Override(d DnsZoneV2RouterList, terraformResource cd
 	)
 }
 
-func (j *jsiiProxy_DnsZoneV2RouterList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DnsZoneV2RouterList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DnsZoneV2RouterList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsZoneV2RouterList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DnsZoneV2RouterList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DnsZoneV2RouterList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsZoneV2RouterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DnsZoneV2RouterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DnsZoneV2RouterList) SetTerraformResource(val cdktf.IInterpol
 	)
 }
 
-func (j *jsiiProxy_DnsZoneV2RouterList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DnsZoneV2RouterList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DnsZoneV2RouterList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterList) Get(index *float64) DnsZoneV2RouterOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DnsZoneV2RouterOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DnsZoneV2RouterList) Get(index *float64) DnsZoneV2RouterOutpu
 }
 
 func (d *jsiiProxy_DnsZoneV2RouterList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

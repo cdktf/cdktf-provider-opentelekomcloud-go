@@ -440,6 +440,9 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) VersionInput() *string {
 func NewDataOpentelekomcloudCssFlavorV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudCssFlavorV1Config) DataOpentelekomcloudCssFlavorV1 {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudCssFlavorV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudCssFlavorV1{}
 
 	_jsii_.Create(
@@ -462,7 +465,7 @@ func NewDataOpentelekomcloudCssFlavorV1_Override(d DataOpentelekomcloudCssFlavor
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -470,7 +473,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -478,7 +481,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -486,7 +489,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -494,7 +500,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -502,7 +511,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetMinCpu(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1)SetMinCpu(val *float64) {
+	if err := j.validateSetMinCpuParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minCpu",
@@ -510,7 +522,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetMinCpu(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetMinRam(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1)SetMinRam(val *float64) {
+	if err := j.validateSetMinRamParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minRam",
@@ -518,7 +533,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetMinRam(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetName(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -526,7 +544,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -534,7 +552,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetType(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -542,7 +563,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetVersion(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"version",
@@ -570,6 +594,9 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) SetVersion(val *string) {
 func DataOpentelekomcloudCssFlavorV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataOpentelekomcloudCssFlavorV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -594,6 +621,9 @@ func DataOpentelekomcloudCssFlavorV1_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -602,6 +632,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) AddOverride(path *string, va
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -615,6 +648,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetAnyMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -628,6 +664,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetBooleanAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -641,6 +680,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetBooleanMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -654,6 +696,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetListAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -667,6 +712,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetNumberAttribute(terraform
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -680,6 +728,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetNumberListAttribute(terra
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -693,6 +744,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetNumberMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -706,6 +760,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetStringAttribute(terraform
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -719,6 +776,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) GetStringMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -732,6 +792,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) InterpolationForAttribute(te
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -740,6 +803,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) OverrideLogicalId(newLogical
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) PutDiskRange(value *DataOpentelekomcloudCssFlavorV1DiskRange) {
+	if err := d.validatePutDiskRangeParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putDiskRange",

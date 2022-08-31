@@ -111,6 +111,9 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) WrapsSet() *bool {
 func NewSfsShareAccessRulesV2AccessRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SfsShareAccessRulesV2AccessRuleList {
 	_init_.Initialize()
 
+	if err := validateNewSfsShareAccessRulesV2AccessRuleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SfsShareAccessRulesV2AccessRuleList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSfsShareAccessRulesV2AccessRuleList_Override(s SfsShareAccessRulesV2Acce
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) Get(index *float64) SfsShareAccessRulesV2AccessRuleOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SfsShareAccessRulesV2AccessRuleOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) Get(index *float64) SfsS
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

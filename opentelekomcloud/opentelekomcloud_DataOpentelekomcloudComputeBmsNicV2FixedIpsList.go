@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList) WrapsSet() *
 func NewDataOpentelekomcloudComputeBmsNicV2FixedIpsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudComputeBmsNicV2FixedIpsList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudComputeBmsNicV2FixedIpsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudComputeBmsNicV2FixedIpsList_Override(d DataOpentelek
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList) ComputeFqn()
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList) Get(index *float64) DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList) Get(index *f
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

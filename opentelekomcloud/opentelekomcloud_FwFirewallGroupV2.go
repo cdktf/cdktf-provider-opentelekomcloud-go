@@ -531,6 +531,9 @@ func (j *jsiiProxy_FwFirewallGroupV2) ValueSpecsInput() *map[string]*string {
 func NewFwFirewallGroupV2(scope constructs.Construct, id *string, config *FwFirewallGroupV2Config) FwFirewallGroupV2 {
 	_init_.Initialize()
 
+	if err := validateNewFwFirewallGroupV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_FwFirewallGroupV2{}
 
 	_jsii_.Create(
@@ -553,7 +556,10 @@ func NewFwFirewallGroupV2_Override(f FwFirewallGroupV2, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetAdminStateUp(val interface{}) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetAdminStateUp(val interface{}) {
+	if err := j.validateSetAdminStateUpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adminStateUp",
@@ -561,7 +567,10 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetAdminStateUp(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -569,7 +578,7 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetCount(val *float64) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -577,7 +586,7 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -585,7 +594,10 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetDescription(val *string) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -593,7 +605,10 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetEgressPolicyId(val *string) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetEgressPolicyId(val *string) {
+	if err := j.validateSetEgressPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"egressPolicyId",
@@ -601,7 +616,7 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetEgressPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -609,7 +624,10 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetId(val *string) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -617,7 +635,10 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetIngressPolicyId(val *string) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetIngressPolicyId(val *string) {
+	if err := j.validateSetIngressPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ingressPolicyId",
@@ -625,7 +646,10 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetIngressPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -633,7 +657,10 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetName(val *string) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -641,7 +668,10 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetPorts(val *[]*string) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetPorts(val *[]*string) {
+	if err := j.validateSetPortsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ports",
@@ -649,7 +679,7 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetPorts(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -657,7 +687,10 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -665,7 +698,10 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetRegion(val *string) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -673,7 +709,10 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetTenantId(val *string) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -681,7 +720,10 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetTenantId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FwFirewallGroupV2) SetValueSpecs(val *map[string]*string) {
+func (j *jsiiProxy_FwFirewallGroupV2)SetValueSpecs(val *map[string]*string) {
+	if err := j.validateSetValueSpecsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"valueSpecs",
@@ -709,6 +751,9 @@ func (j *jsiiProxy_FwFirewallGroupV2) SetValueSpecs(val *map[string]*string) {
 func FwFirewallGroupV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateFwFirewallGroupV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -733,6 +778,9 @@ func FwFirewallGroupV2_TfResourceType() *string {
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) AddOverride(path *string, value interface{}) {
+	if err := f.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
@@ -741,6 +789,9 @@ func (f *jsiiProxy_FwFirewallGroupV2) AddOverride(path *string, value interface{
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -754,6 +805,9 @@ func (f *jsiiProxy_FwFirewallGroupV2) GetAnyMapAttribute(terraformAttribute *str
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -767,6 +821,9 @@ func (f *jsiiProxy_FwFirewallGroupV2) GetBooleanAttribute(terraformAttribute *st
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := f.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -780,6 +837,9 @@ func (f *jsiiProxy_FwFirewallGroupV2) GetBooleanMapAttribute(terraformAttribute 
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := f.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -793,6 +853,9 @@ func (f *jsiiProxy_FwFirewallGroupV2) GetListAttribute(terraformAttribute *strin
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := f.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -806,6 +869,9 @@ func (f *jsiiProxy_FwFirewallGroupV2) GetNumberAttribute(terraformAttribute *str
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := f.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -819,6 +885,9 @@ func (f *jsiiProxy_FwFirewallGroupV2) GetNumberListAttribute(terraformAttribute 
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := f.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -832,6 +901,9 @@ func (f *jsiiProxy_FwFirewallGroupV2) GetNumberMapAttribute(terraformAttribute *
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := f.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -845,6 +917,9 @@ func (f *jsiiProxy_FwFirewallGroupV2) GetStringAttribute(terraformAttribute *str
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := f.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -858,6 +933,9 @@ func (f *jsiiProxy_FwFirewallGroupV2) GetStringMapAttribute(terraformAttribute *
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -871,6 +949,9 @@ func (f *jsiiProxy_FwFirewallGroupV2) InterpolationForAttribute(terraformAttribu
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) OverrideLogicalId(newLogicalId *string) {
+	if err := f.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
@@ -879,6 +960,9 @@ func (f *jsiiProxy_FwFirewallGroupV2) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) PutTimeouts(value *FwFirewallGroupV2Timeouts) {
+	if err := f.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",

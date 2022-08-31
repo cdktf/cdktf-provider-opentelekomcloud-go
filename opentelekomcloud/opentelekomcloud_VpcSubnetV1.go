@@ -656,6 +656,9 @@ func (j *jsiiProxy_VpcSubnetV1) VpcIdInput() *string {
 func NewVpcSubnetV1(scope constructs.Construct, id *string, config *VpcSubnetV1Config) VpcSubnetV1 {
 	_init_.Initialize()
 
+	if err := validateNewVpcSubnetV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VpcSubnetV1{}
 
 	_jsii_.Create(
@@ -678,7 +681,10 @@ func NewVpcSubnetV1_Override(v VpcSubnetV1, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_VpcSubnetV1)SetAvailabilityZone(val *string) {
+	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availabilityZone",
@@ -686,7 +692,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetCidr(val *string) {
+func (j *jsiiProxy_VpcSubnetV1)SetCidr(val *string) {
+	if err := j.validateSetCidrParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cidr",
@@ -694,7 +703,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_VpcSubnetV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -702,7 +714,7 @@ func (j *jsiiProxy_VpcSubnetV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetCount(val *float64) {
+func (j *jsiiProxy_VpcSubnetV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -710,7 +722,7 @@ func (j *jsiiProxy_VpcSubnetV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpcSubnetV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -718,7 +730,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetDescription(val *string) {
+func (j *jsiiProxy_VpcSubnetV1)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -726,7 +741,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetDhcpEnable(val interface{}) {
+func (j *jsiiProxy_VpcSubnetV1)SetDhcpEnable(val interface{}) {
+	if err := j.validateSetDhcpEnableParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dhcpEnable",
@@ -734,7 +752,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetDhcpEnable(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetDnsList(val *[]*string) {
+func (j *jsiiProxy_VpcSubnetV1)SetDnsList(val *[]*string) {
+	if err := j.validateSetDnsListParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dnsList",
@@ -742,7 +763,7 @@ func (j *jsiiProxy_VpcSubnetV1) SetDnsList(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpcSubnetV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -750,7 +771,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetGatewayIp(val *string) {
+func (j *jsiiProxy_VpcSubnetV1)SetGatewayIp(val *string) {
+	if err := j.validateSetGatewayIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gatewayIp",
@@ -758,7 +782,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetGatewayIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetId(val *string) {
+func (j *jsiiProxy_VpcSubnetV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -766,7 +793,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpcSubnetV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -774,7 +804,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetName(val *string) {
+func (j *jsiiProxy_VpcSubnetV1)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -782,7 +815,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetNtpAddresses(val *string) {
+func (j *jsiiProxy_VpcSubnetV1)SetNtpAddresses(val *string) {
+	if err := j.validateSetNtpAddressesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ntpAddresses",
@@ -790,7 +826,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetNtpAddresses(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetPrimaryDns(val *string) {
+func (j *jsiiProxy_VpcSubnetV1)SetPrimaryDns(val *string) {
+	if err := j.validateSetPrimaryDnsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"primaryDns",
@@ -798,7 +837,7 @@ func (j *jsiiProxy_VpcSubnetV1) SetPrimaryDns(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpcSubnetV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -806,7 +845,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpcSubnetV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -814,7 +856,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetRegion(val *string) {
+func (j *jsiiProxy_VpcSubnetV1)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -822,7 +867,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetSecondaryDns(val *string) {
+func (j *jsiiProxy_VpcSubnetV1)SetSecondaryDns(val *string) {
+	if err := j.validateSetSecondaryDnsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"secondaryDns",
@@ -830,7 +878,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetSecondaryDns(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetTags(val *map[string]*string) {
+func (j *jsiiProxy_VpcSubnetV1)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -838,7 +889,10 @@ func (j *jsiiProxy_VpcSubnetV1) SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcSubnetV1) SetVpcId(val *string) {
+func (j *jsiiProxy_VpcSubnetV1)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcId",
@@ -866,6 +920,9 @@ func (j *jsiiProxy_VpcSubnetV1) SetVpcId(val *string) {
 func VpcSubnetV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateVpcSubnetV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -890,6 +947,9 @@ func VpcSubnetV1_TfResourceType() *string {
 }
 
 func (v *jsiiProxy_VpcSubnetV1) AddOverride(path *string, value interface{}) {
+	if err := v.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
@@ -898,6 +958,9 @@ func (v *jsiiProxy_VpcSubnetV1) AddOverride(path *string, value interface{}) {
 }
 
 func (v *jsiiProxy_VpcSubnetV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -911,6 +974,9 @@ func (v *jsiiProxy_VpcSubnetV1) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (v *jsiiProxy_VpcSubnetV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -924,6 +990,9 @@ func (v *jsiiProxy_VpcSubnetV1) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (v *jsiiProxy_VpcSubnetV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := v.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -937,6 +1006,9 @@ func (v *jsiiProxy_VpcSubnetV1) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (v *jsiiProxy_VpcSubnetV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := v.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -950,6 +1022,9 @@ func (v *jsiiProxy_VpcSubnetV1) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (v *jsiiProxy_VpcSubnetV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := v.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -963,6 +1038,9 @@ func (v *jsiiProxy_VpcSubnetV1) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (v *jsiiProxy_VpcSubnetV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := v.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -976,6 +1054,9 @@ func (v *jsiiProxy_VpcSubnetV1) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (v *jsiiProxy_VpcSubnetV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := v.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -989,6 +1070,9 @@ func (v *jsiiProxy_VpcSubnetV1) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (v *jsiiProxy_VpcSubnetV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := v.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1002,6 +1086,9 @@ func (v *jsiiProxy_VpcSubnetV1) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (v *jsiiProxy_VpcSubnetV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := v.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1015,6 +1102,9 @@ func (v *jsiiProxy_VpcSubnetV1) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (v *jsiiProxy_VpcSubnetV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1028,6 +1118,9 @@ func (v *jsiiProxy_VpcSubnetV1) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (v *jsiiProxy_VpcSubnetV1) OverrideLogicalId(newLogicalId *string) {
+	if err := v.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
@@ -1036,6 +1129,9 @@ func (v *jsiiProxy_VpcSubnetV1) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (v *jsiiProxy_VpcSubnetV1) PutTimeouts(value *VpcSubnetV1Timeouts) {
+	if err := v.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",

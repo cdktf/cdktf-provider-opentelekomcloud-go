@@ -1019,6 +1019,9 @@ func (j *jsiiProxy_CceClusterV3) VpcIdInput() *string {
 func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV3Config) CceClusterV3 {
 	_init_.Initialize()
 
+	if err := validateNewCceClusterV3Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CceClusterV3{}
 
 	_jsii_.Create(
@@ -1041,7 +1044,10 @@ func NewCceClusterV3_Override(c CceClusterV3, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_CceClusterV3)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"annotations",
@@ -1049,7 +1055,10 @@ func (j *jsiiProxy_CceClusterV3) SetAnnotations(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetAuthenticatingProxyCa(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetAuthenticatingProxyCa(val *string) {
+	if err := j.validateSetAuthenticatingProxyCaParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authenticatingProxyCa",
@@ -1057,7 +1066,10 @@ func (j *jsiiProxy_CceClusterV3) SetAuthenticatingProxyCa(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetAuthenticationMode(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetAuthenticationMode(val *string) {
+	if err := j.validateSetAuthenticationModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authenticationMode",
@@ -1065,7 +1077,10 @@ func (j *jsiiProxy_CceClusterV3) SetAuthenticationMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetBillingMode(val *float64) {
+func (j *jsiiProxy_CceClusterV3)SetBillingMode(val *float64) {
+	if err := j.validateSetBillingModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"billingMode",
@@ -1073,7 +1088,10 @@ func (j *jsiiProxy_CceClusterV3) SetBillingMode(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetClusterType(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetClusterType(val *string) {
+	if err := j.validateSetClusterTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterType",
@@ -1081,7 +1099,10 @@ func (j *jsiiProxy_CceClusterV3) SetClusterType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetClusterVersion(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetClusterVersion(val *string) {
+	if err := j.validateSetClusterVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterVersion",
@@ -1089,7 +1110,10 @@ func (j *jsiiProxy_CceClusterV3) SetClusterVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetConnection(val interface{}) {
+func (j *jsiiProxy_CceClusterV3)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1097,7 +1121,10 @@ func (j *jsiiProxy_CceClusterV3) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetContainerNetworkCidr(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetContainerNetworkCidr(val *string) {
+	if err := j.validateSetContainerNetworkCidrParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containerNetworkCidr",
@@ -1105,7 +1132,10 @@ func (j *jsiiProxy_CceClusterV3) SetContainerNetworkCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetContainerNetworkType(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetContainerNetworkType(val *string) {
+	if err := j.validateSetContainerNetworkTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containerNetworkType",
@@ -1113,7 +1143,7 @@ func (j *jsiiProxy_CceClusterV3) SetContainerNetworkType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetCount(val *float64) {
+func (j *jsiiProxy_CceClusterV3)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1121,7 +1151,7 @@ func (j *jsiiProxy_CceClusterV3) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CceClusterV3)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1129,7 +1159,10 @@ func (j *jsiiProxy_CceClusterV3) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetDescription(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -1137,7 +1170,10 @@ func (j *jsiiProxy_CceClusterV3) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetEip(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetEip(val *string) {
+	if err := j.validateSetEipParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"eip",
@@ -1145,7 +1181,10 @@ func (j *jsiiProxy_CceClusterV3) SetEip(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetEniSubnetCidr(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetEniSubnetCidr(val *string) {
+	if err := j.validateSetEniSubnetCidrParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"eniSubnetCidr",
@@ -1153,7 +1192,10 @@ func (j *jsiiProxy_CceClusterV3) SetEniSubnetCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetEniSubnetId(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetEniSubnetId(val *string) {
+	if err := j.validateSetEniSubnetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"eniSubnetId",
@@ -1161,7 +1203,10 @@ func (j *jsiiProxy_CceClusterV3) SetEniSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetExtendParam(val *map[string]*string) {
+func (j *jsiiProxy_CceClusterV3)SetExtendParam(val *map[string]*string) {
+	if err := j.validateSetExtendParamParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"extendParam",
@@ -1169,7 +1214,10 @@ func (j *jsiiProxy_CceClusterV3) SetExtendParam(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetFlavorId(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetFlavorId(val *string) {
+	if err := j.validateSetFlavorIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"flavorId",
@@ -1177,7 +1225,7 @@ func (j *jsiiProxy_CceClusterV3) SetFlavorId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CceClusterV3)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1185,7 +1233,10 @@ func (j *jsiiProxy_CceClusterV3) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetHighwaySubnetId(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetHighwaySubnetId(val *string) {
+	if err := j.validateSetHighwaySubnetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"highwaySubnetId",
@@ -1193,7 +1244,10 @@ func (j *jsiiProxy_CceClusterV3) SetHighwaySubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetId(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1201,7 +1255,10 @@ func (j *jsiiProxy_CceClusterV3) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetIgnoreAddons(val interface{}) {
+func (j *jsiiProxy_CceClusterV3)SetIgnoreAddons(val interface{}) {
+	if err := j.validateSetIgnoreAddonsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ignoreAddons",
@@ -1209,7 +1266,10 @@ func (j *jsiiProxy_CceClusterV3) SetIgnoreAddons(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetKubernetesSvcIpRange(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetKubernetesSvcIpRange(val *string) {
+	if err := j.validateSetKubernetesSvcIpRangeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kubernetesSvcIpRange",
@@ -1217,7 +1277,10 @@ func (j *jsiiProxy_CceClusterV3) SetKubernetesSvcIpRange(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_CceClusterV3)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"labels",
@@ -1225,7 +1288,10 @@ func (j *jsiiProxy_CceClusterV3) SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CceClusterV3)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1233,7 +1299,10 @@ func (j *jsiiProxy_CceClusterV3) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetMultiAz(val interface{}) {
+func (j *jsiiProxy_CceClusterV3)SetMultiAz(val interface{}) {
+	if err := j.validateSetMultiAzParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"multiAz",
@@ -1241,7 +1310,10 @@ func (j *jsiiProxy_CceClusterV3) SetMultiAz(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetName(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1249,7 +1321,10 @@ func (j *jsiiProxy_CceClusterV3) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetNoAddons(val interface{}) {
+func (j *jsiiProxy_CceClusterV3)SetNoAddons(val interface{}) {
+	if err := j.validateSetNoAddonsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"noAddons",
@@ -1257,7 +1332,7 @@ func (j *jsiiProxy_CceClusterV3) SetNoAddons(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CceClusterV3)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1265,7 +1340,10 @@ func (j *jsiiProxy_CceClusterV3) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CceClusterV3)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1273,7 +1351,10 @@ func (j *jsiiProxy_CceClusterV3) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetRegion(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -1281,7 +1362,10 @@ func (j *jsiiProxy_CceClusterV3) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetSubnetId(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetSubnetId(val *string) {
+	if err := j.validateSetSubnetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subnetId",
@@ -1289,7 +1373,10 @@ func (j *jsiiProxy_CceClusterV3) SetSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CceClusterV3) SetVpcId(val *string) {
+func (j *jsiiProxy_CceClusterV3)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcId",
@@ -1317,6 +1404,9 @@ func (j *jsiiProxy_CceClusterV3) SetVpcId(val *string) {
 func CceClusterV3_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCceClusterV3_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1341,6 +1431,9 @@ func CceClusterV3_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CceClusterV3) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -1349,6 +1442,9 @@ func (c *jsiiProxy_CceClusterV3) AddOverride(path *string, value interface{}) {
 }
 
 func (c *jsiiProxy_CceClusterV3) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1362,6 +1458,9 @@ func (c *jsiiProxy_CceClusterV3) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CceClusterV3) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1375,6 +1474,9 @@ func (c *jsiiProxy_CceClusterV3) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (c *jsiiProxy_CceClusterV3) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1388,6 +1490,9 @@ func (c *jsiiProxy_CceClusterV3) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (c *jsiiProxy_CceClusterV3) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1401,6 +1506,9 @@ func (c *jsiiProxy_CceClusterV3) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (c *jsiiProxy_CceClusterV3) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1414,6 +1522,9 @@ func (c *jsiiProxy_CceClusterV3) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CceClusterV3) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1427,6 +1538,9 @@ func (c *jsiiProxy_CceClusterV3) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (c *jsiiProxy_CceClusterV3) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1440,6 +1554,9 @@ func (c *jsiiProxy_CceClusterV3) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CceClusterV3) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1453,6 +1570,9 @@ func (c *jsiiProxy_CceClusterV3) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CceClusterV3) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1466,6 +1586,9 @@ func (c *jsiiProxy_CceClusterV3) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CceClusterV3) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1479,6 +1602,9 @@ func (c *jsiiProxy_CceClusterV3) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CceClusterV3) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -1487,6 +1613,9 @@ func (c *jsiiProxy_CceClusterV3) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (c *jsiiProxy_CceClusterV3) PutAuthenticatingProxy(value *CceClusterV3AuthenticatingProxy) {
+	if err := c.validatePutAuthenticatingProxyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAuthenticatingProxy",
@@ -1495,6 +1624,9 @@ func (c *jsiiProxy_CceClusterV3) PutAuthenticatingProxy(value *CceClusterV3Authe
 }
 
 func (c *jsiiProxy_CceClusterV3) PutTimeouts(value *CceClusterV3Timeouts) {
+	if err := c.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",

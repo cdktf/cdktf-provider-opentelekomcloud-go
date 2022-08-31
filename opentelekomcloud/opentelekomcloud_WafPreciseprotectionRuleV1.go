@@ -503,6 +503,9 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) TimeoutsInput() interface{} {
 func NewWafPreciseprotectionRuleV1(scope constructs.Construct, id *string, config *WafPreciseprotectionRuleV1Config) WafPreciseprotectionRuleV1 {
 	_init_.Initialize()
 
+	if err := validateNewWafPreciseprotectionRuleV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WafPreciseprotectionRuleV1{}
 
 	_jsii_.Create(
@@ -525,7 +528,10 @@ func NewWafPreciseprotectionRuleV1_Override(w WafPreciseprotectionRuleV1, scope 
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetActionCategory(val *string) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetActionCategory(val *string) {
+	if err := j.validateSetActionCategoryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"actionCategory",
@@ -533,7 +539,10 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetActionCategory(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -541,7 +550,7 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetCount(val *float64) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -549,7 +558,7 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -557,7 +566,10 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetEnd(val *string) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetEnd(val *string) {
+	if err := j.validateSetEndParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"end",
@@ -565,7 +577,7 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetEnd(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -573,7 +585,10 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetId(val *string) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -581,7 +596,10 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -589,7 +607,10 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetName(val *string) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -597,7 +618,10 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetPolicyId(val *string) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyId",
@@ -605,7 +629,10 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetPriority(val *float64) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetPriority(val *float64) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"priority",
@@ -613,7 +640,7 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -621,7 +648,10 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -629,7 +659,10 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetStart(val *string) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetStart(val *string) {
+	if err := j.validateSetStartParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"start",
@@ -637,7 +670,10 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetStart(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetTime(val interface{}) {
+func (j *jsiiProxy_WafPreciseprotectionRuleV1)SetTime(val interface{}) {
+	if err := j.validateSetTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"time",
@@ -665,6 +701,9 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) SetTime(val interface{}) {
 func WafPreciseprotectionRuleV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateWafPreciseprotectionRuleV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -689,6 +728,9 @@ func WafPreciseprotectionRuleV1_TfResourceType() *string {
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) AddOverride(path *string, value interface{}) {
+	if err := w.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
@@ -697,6 +739,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) AddOverride(path *string, value i
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -710,6 +755,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetAnyMapAttribute(terraformAttri
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -723,6 +771,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetBooleanAttribute(terraformAttr
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -736,6 +787,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetBooleanMapAttribute(terraformA
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -749,6 +803,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetListAttribute(terraformAttribu
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -762,6 +819,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetNumberAttribute(terraformAttri
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -775,6 +835,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetNumberListAttribute(terraformA
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -788,6 +851,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetNumberMapAttribute(terraformAt
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -801,6 +867,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetStringAttribute(terraformAttri
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -814,6 +883,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) GetStringMapAttribute(terraformAt
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -827,6 +899,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) InterpolationForAttribute(terrafo
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) OverrideLogicalId(newLogicalId *string) {
+	if err := w.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
@@ -835,6 +910,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) OverrideLogicalId(newLogicalId *s
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) PutConditions(value interface{}) {
+	if err := w.validatePutConditionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"putConditions",
@@ -843,6 +921,9 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1) PutConditions(value interface{}) 
 }
 
 func (w *jsiiProxy_WafPreciseprotectionRuleV1) PutTimeouts(value *WafPreciseprotectionRuleV1Timeouts) {
+	if err := w.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"putTimeouts",

@@ -409,6 +409,9 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) VolumeIdInput() *string {
 func NewComputeVolumeAttachV2(scope constructs.Construct, id *string, config *ComputeVolumeAttachV2Config) ComputeVolumeAttachV2 {
 	_init_.Initialize()
 
+	if err := validateNewComputeVolumeAttachV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ComputeVolumeAttachV2{}
 
 	_jsii_.Create(
@@ -431,7 +434,10 @@ func NewComputeVolumeAttachV2_Override(c ComputeVolumeAttachV2, scope constructs
 	)
 }
 
-func (j *jsiiProxy_ComputeVolumeAttachV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -439,7 +445,7 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVolumeAttachV2) SetCount(val *float64) {
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -447,7 +453,7 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVolumeAttachV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -455,7 +461,10 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVolumeAttachV2) SetDevice(val *string) {
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetDevice(val *string) {
+	if err := j.validateSetDeviceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"device",
@@ -463,7 +472,7 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) SetDevice(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVolumeAttachV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -471,7 +480,10 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_ComputeVolumeAttachV2) SetId(val *string) {
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -479,7 +491,10 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVolumeAttachV2) SetInstanceId(val *string) {
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetInstanceId(val *string) {
+	if err := j.validateSetInstanceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceId",
@@ -487,7 +502,10 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVolumeAttachV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -495,7 +513,7 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_ComputeVolumeAttachV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -503,7 +521,10 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_ComputeVolumeAttachV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -511,7 +532,10 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVolumeAttachV2) SetRegion(val *string) {
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -519,7 +543,10 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVolumeAttachV2) SetVolumeId(val *string) {
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetVolumeId(val *string) {
+	if err := j.validateSetVolumeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumeId",
@@ -547,6 +574,9 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) SetVolumeId(val *string) {
 func ComputeVolumeAttachV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateComputeVolumeAttachV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -571,6 +601,9 @@ func ComputeVolumeAttachV2_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -579,6 +612,9 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) AddOverride(path *string, value interf
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -592,6 +628,9 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) GetAnyMapAttribute(terraformAttribute 
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -605,6 +644,9 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) GetBooleanAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -618,6 +660,9 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) GetBooleanMapAttribute(terraformAttrib
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -631,6 +676,9 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) GetListAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -644,6 +692,9 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) GetNumberAttribute(terraformAttribute 
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -657,6 +708,9 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) GetNumberListAttribute(terraformAttrib
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -670,6 +724,9 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) GetNumberMapAttribute(terraformAttribu
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -683,6 +740,9 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) GetStringAttribute(terraformAttribute 
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -696,6 +756,9 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) GetStringMapAttribute(terraformAttribu
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -709,6 +772,9 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) InterpolationForAttribute(terraformAtt
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -717,6 +783,9 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) OverrideLogicalId(newLogicalId *string
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) PutTimeouts(value *ComputeVolumeAttachV2Timeouts) {
+	if err := c.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",

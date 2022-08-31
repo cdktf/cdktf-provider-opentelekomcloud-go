@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList
 func NewDataOpentelekomcloudObsBucketEventNotificationsFilterRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudObsBucketEventNotificationsFilterRuleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudObsBucketEventNotificationsFilterRuleList_Override(d
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList) Get(index *float64) DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

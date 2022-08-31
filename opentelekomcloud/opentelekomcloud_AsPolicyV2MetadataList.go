@@ -99,6 +99,9 @@ func (j *jsiiProxy_AsPolicyV2MetadataList) WrapsSet() *bool {
 func NewAsPolicyV2MetadataList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AsPolicyV2MetadataList {
 	_init_.Initialize()
 
+	if err := validateNewAsPolicyV2MetadataListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AsPolicyV2MetadataList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewAsPolicyV2MetadataList_Override(a AsPolicyV2MetadataList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_AsPolicyV2MetadataList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AsPolicyV2MetadataList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_AsPolicyV2MetadataList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AsPolicyV2MetadataList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AsPolicyV2MetadataList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_AsPolicyV2MetadataList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_AsPolicyV2MetadataList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AsPolicyV2MetadataList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (a *jsiiProxy_AsPolicyV2MetadataList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AsPolicyV2MetadataList) Get(index *float64) AsPolicyV2MetadataOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AsPolicyV2MetadataOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (a *jsiiProxy_AsPolicyV2MetadataList) Get(index *float64) AsPolicyV2Metadat
 }
 
 func (a *jsiiProxy_AsPolicyV2MetadataList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

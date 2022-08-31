@@ -384,6 +384,9 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) TerraformResourceType() *string {
 func NewNetworkingRouterRouteV2(scope constructs.Construct, id *string, config *NetworkingRouterRouteV2Config) NetworkingRouterRouteV2 {
 	_init_.Initialize()
 
+	if err := validateNewNetworkingRouterRouteV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NetworkingRouterRouteV2{}
 
 	_jsii_.Create(
@@ -406,7 +409,10 @@ func NewNetworkingRouterRouteV2_Override(n NetworkingRouterRouteV2, scope constr
 	)
 }
 
-func (j *jsiiProxy_NetworkingRouterRouteV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkingRouterRouteV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -414,7 +420,7 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingRouterRouteV2) SetCount(val *float64) {
+func (j *jsiiProxy_NetworkingRouterRouteV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -422,7 +428,7 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingRouterRouteV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkingRouterRouteV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -430,7 +436,10 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingRouterRouteV2) SetDestinationCidr(val *string) {
+func (j *jsiiProxy_NetworkingRouterRouteV2)SetDestinationCidr(val *string) {
+	if err := j.validateSetDestinationCidrParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"destinationCidr",
@@ -438,7 +447,7 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) SetDestinationCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingRouterRouteV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkingRouterRouteV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -446,7 +455,10 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_NetworkingRouterRouteV2) SetId(val *string) {
+func (j *jsiiProxy_NetworkingRouterRouteV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -454,7 +466,10 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingRouterRouteV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkingRouterRouteV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -462,7 +477,10 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_NetworkingRouterRouteV2) SetNextHop(val *string) {
+func (j *jsiiProxy_NetworkingRouterRouteV2)SetNextHop(val *string) {
+	if err := j.validateSetNextHopParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nextHop",
@@ -470,7 +488,7 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) SetNextHop(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingRouterRouteV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkingRouterRouteV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -478,7 +496,10 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_NetworkingRouterRouteV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkingRouterRouteV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -486,7 +507,10 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_NetworkingRouterRouteV2) SetRegion(val *string) {
+func (j *jsiiProxy_NetworkingRouterRouteV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -494,7 +518,10 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingRouterRouteV2) SetRouterId(val *string) {
+func (j *jsiiProxy_NetworkingRouterRouteV2)SetRouterId(val *string) {
+	if err := j.validateSetRouterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"routerId",
@@ -522,6 +549,9 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) SetRouterId(val *string) {
 func NetworkingRouterRouteV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateNetworkingRouterRouteV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -546,6 +576,9 @@ func NetworkingRouterRouteV2_TfResourceType() *string {
 }
 
 func (n *jsiiProxy_NetworkingRouterRouteV2) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
@@ -554,6 +587,9 @@ func (n *jsiiProxy_NetworkingRouterRouteV2) AddOverride(path *string, value inte
 }
 
 func (n *jsiiProxy_NetworkingRouterRouteV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -567,6 +603,9 @@ func (n *jsiiProxy_NetworkingRouterRouteV2) GetAnyMapAttribute(terraformAttribut
 }
 
 func (n *jsiiProxy_NetworkingRouterRouteV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -580,6 +619,9 @@ func (n *jsiiProxy_NetworkingRouterRouteV2) GetBooleanAttribute(terraformAttribu
 }
 
 func (n *jsiiProxy_NetworkingRouterRouteV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -593,6 +635,9 @@ func (n *jsiiProxy_NetworkingRouterRouteV2) GetBooleanMapAttribute(terraformAttr
 }
 
 func (n *jsiiProxy_NetworkingRouterRouteV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -606,6 +651,9 @@ func (n *jsiiProxy_NetworkingRouterRouteV2) GetListAttribute(terraformAttribute 
 }
 
 func (n *jsiiProxy_NetworkingRouterRouteV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -619,6 +667,9 @@ func (n *jsiiProxy_NetworkingRouterRouteV2) GetNumberAttribute(terraformAttribut
 }
 
 func (n *jsiiProxy_NetworkingRouterRouteV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -632,6 +683,9 @@ func (n *jsiiProxy_NetworkingRouterRouteV2) GetNumberListAttribute(terraformAttr
 }
 
 func (n *jsiiProxy_NetworkingRouterRouteV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -645,6 +699,9 @@ func (n *jsiiProxy_NetworkingRouterRouteV2) GetNumberMapAttribute(terraformAttri
 }
 
 func (n *jsiiProxy_NetworkingRouterRouteV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -658,6 +715,9 @@ func (n *jsiiProxy_NetworkingRouterRouteV2) GetStringAttribute(terraformAttribut
 }
 
 func (n *jsiiProxy_NetworkingRouterRouteV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -671,6 +731,9 @@ func (n *jsiiProxy_NetworkingRouterRouteV2) GetStringMapAttribute(terraformAttri
 }
 
 func (n *jsiiProxy_NetworkingRouterRouteV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -684,6 +747,9 @@ func (n *jsiiProxy_NetworkingRouterRouteV2) InterpolationForAttribute(terraformA
 }
 
 func (n *jsiiProxy_NetworkingRouterRouteV2) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",

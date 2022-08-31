@@ -221,6 +221,9 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) To()
 func NewDataOpentelekomcloudCssFlavorV1DiskRangeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudCssFlavorV1DiskRangeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference{}
 
 	_jsii_.Create(
@@ -242,7 +245,10 @@ func NewDataOpentelekomcloudCssFlavorV1DiskRangeOutputReference_Override(d DataO
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -250,7 +256,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -258,7 +267,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetInternalValue(val *DataOpentelekomcloudCssFlavorV1DiskRange) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference)SetInternalValue(val *DataOpentelekomcloudCssFlavorV1DiskRange) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -266,7 +278,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetMinFrom(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference)SetMinFrom(val *float64) {
+	if err := j.validateSetMinFromParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minFrom",
@@ -274,7 +289,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetM
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetMinTo(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference)SetMinTo(val *float64) {
+	if err := j.validateSetMinToParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minTo",
@@ -282,7 +300,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetM
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -290,7 +311,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -312,6 +336,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) Comp
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -325,6 +352,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetA
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -338,6 +368,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetB
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -351,6 +384,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetB
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -364,6 +400,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetL
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -377,6 +416,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetN
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -390,6 +432,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetN
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -403,6 +448,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetN
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -416,6 +464,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetS
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -442,6 +493,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) Inte
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -471,6 +525,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) Rese
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

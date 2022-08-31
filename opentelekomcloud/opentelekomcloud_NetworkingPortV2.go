@@ -661,6 +661,9 @@ func (j *jsiiProxy_NetworkingPortV2) ValueSpecsInput() *map[string]*string {
 func NewNetworkingPortV2(scope constructs.Construct, id *string, config *NetworkingPortV2Config) NetworkingPortV2 {
 	_init_.Initialize()
 
+	if err := validateNewNetworkingPortV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NetworkingPortV2{}
 
 	_jsii_.Create(
@@ -683,7 +686,10 @@ func NewNetworkingPortV2_Override(n NetworkingPortV2, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetAdminStateUp(val interface{}) {
+func (j *jsiiProxy_NetworkingPortV2)SetAdminStateUp(val interface{}) {
+	if err := j.validateSetAdminStateUpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adminStateUp",
@@ -691,7 +697,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetAdminStateUp(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkingPortV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -699,7 +708,7 @@ func (j *jsiiProxy_NetworkingPortV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetCount(val *float64) {
+func (j *jsiiProxy_NetworkingPortV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -707,7 +716,7 @@ func (j *jsiiProxy_NetworkingPortV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkingPortV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -715,7 +724,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetDeviceId(val *string) {
+func (j *jsiiProxy_NetworkingPortV2)SetDeviceId(val *string) {
+	if err := j.validateSetDeviceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deviceId",
@@ -723,7 +735,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetDeviceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetDeviceOwner(val *string) {
+func (j *jsiiProxy_NetworkingPortV2)SetDeviceOwner(val *string) {
+	if err := j.validateSetDeviceOwnerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deviceOwner",
@@ -731,7 +746,7 @@ func (j *jsiiProxy_NetworkingPortV2) SetDeviceOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkingPortV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -739,7 +754,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetId(val *string) {
+func (j *jsiiProxy_NetworkingPortV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -747,7 +765,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkingPortV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -755,7 +776,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetMacAddress(val *string) {
+func (j *jsiiProxy_NetworkingPortV2)SetMacAddress(val *string) {
+	if err := j.validateSetMacAddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"macAddress",
@@ -763,7 +787,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetMacAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetName(val *string) {
+func (j *jsiiProxy_NetworkingPortV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -771,7 +798,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetNetworkId(val *string) {
+func (j *jsiiProxy_NetworkingPortV2)SetNetworkId(val *string) {
+	if err := j.validateSetNetworkIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"networkId",
@@ -779,7 +809,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetNetworkId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetNoSecurityGroups(val interface{}) {
+func (j *jsiiProxy_NetworkingPortV2)SetNoSecurityGroups(val interface{}) {
+	if err := j.validateSetNoSecurityGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"noSecurityGroups",
@@ -787,7 +820,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetNoSecurityGroups(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetPortSecurityEnabled(val interface{}) {
+func (j *jsiiProxy_NetworkingPortV2)SetPortSecurityEnabled(val interface{}) {
+	if err := j.validateSetPortSecurityEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"portSecurityEnabled",
@@ -795,7 +831,7 @@ func (j *jsiiProxy_NetworkingPortV2) SetPortSecurityEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkingPortV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -803,7 +839,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkingPortV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -811,7 +850,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetRegion(val *string) {
+func (j *jsiiProxy_NetworkingPortV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -819,7 +861,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_NetworkingPortV2)SetSecurityGroupIds(val *[]*string) {
+	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityGroupIds",
@@ -827,7 +872,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetTenantId(val *string) {
+func (j *jsiiProxy_NetworkingPortV2)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -835,7 +883,10 @@ func (j *jsiiProxy_NetworkingPortV2) SetTenantId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2) SetValueSpecs(val *map[string]*string) {
+func (j *jsiiProxy_NetworkingPortV2)SetValueSpecs(val *map[string]*string) {
+	if err := j.validateSetValueSpecsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"valueSpecs",
@@ -863,6 +914,9 @@ func (j *jsiiProxy_NetworkingPortV2) SetValueSpecs(val *map[string]*string) {
 func NetworkingPortV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateNetworkingPortV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -887,6 +941,9 @@ func NetworkingPortV2_TfResourceType() *string {
 }
 
 func (n *jsiiProxy_NetworkingPortV2) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
@@ -895,6 +952,9 @@ func (n *jsiiProxy_NetworkingPortV2) AddOverride(path *string, value interface{}
 }
 
 func (n *jsiiProxy_NetworkingPortV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -908,6 +968,9 @@ func (n *jsiiProxy_NetworkingPortV2) GetAnyMapAttribute(terraformAttribute *stri
 }
 
 func (n *jsiiProxy_NetworkingPortV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -921,6 +984,9 @@ func (n *jsiiProxy_NetworkingPortV2) GetBooleanAttribute(terraformAttribute *str
 }
 
 func (n *jsiiProxy_NetworkingPortV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -934,6 +1000,9 @@ func (n *jsiiProxy_NetworkingPortV2) GetBooleanMapAttribute(terraformAttribute *
 }
 
 func (n *jsiiProxy_NetworkingPortV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -947,6 +1016,9 @@ func (n *jsiiProxy_NetworkingPortV2) GetListAttribute(terraformAttribute *string
 }
 
 func (n *jsiiProxy_NetworkingPortV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -960,6 +1032,9 @@ func (n *jsiiProxy_NetworkingPortV2) GetNumberAttribute(terraformAttribute *stri
 }
 
 func (n *jsiiProxy_NetworkingPortV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -973,6 +1048,9 @@ func (n *jsiiProxy_NetworkingPortV2) GetNumberListAttribute(terraformAttribute *
 }
 
 func (n *jsiiProxy_NetworkingPortV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -986,6 +1064,9 @@ func (n *jsiiProxy_NetworkingPortV2) GetNumberMapAttribute(terraformAttribute *s
 }
 
 func (n *jsiiProxy_NetworkingPortV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -999,6 +1080,9 @@ func (n *jsiiProxy_NetworkingPortV2) GetStringAttribute(terraformAttribute *stri
 }
 
 func (n *jsiiProxy_NetworkingPortV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1012,6 +1096,9 @@ func (n *jsiiProxy_NetworkingPortV2) GetStringMapAttribute(terraformAttribute *s
 }
 
 func (n *jsiiProxy_NetworkingPortV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1025,6 +1112,9 @@ func (n *jsiiProxy_NetworkingPortV2) InterpolationForAttribute(terraformAttribut
 }
 
 func (n *jsiiProxy_NetworkingPortV2) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
@@ -1033,6 +1123,9 @@ func (n *jsiiProxy_NetworkingPortV2) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (n *jsiiProxy_NetworkingPortV2) PutAllowedAddressPairs(value interface{}) {
+	if err := n.validatePutAllowedAddressPairsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"putAllowedAddressPairs",
@@ -1041,6 +1134,9 @@ func (n *jsiiProxy_NetworkingPortV2) PutAllowedAddressPairs(value interface{}) {
 }
 
 func (n *jsiiProxy_NetworkingPortV2) PutFixedIp(value interface{}) {
+	if err := n.validatePutFixedIpParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"putFixedIp",
@@ -1049,6 +1145,9 @@ func (n *jsiiProxy_NetworkingPortV2) PutFixedIp(value interface{}) {
 }
 
 func (n *jsiiProxy_NetworkingPortV2) PutTimeouts(value *NetworkingPortV2Timeouts) {
+	if err := n.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",

@@ -318,6 +318,9 @@ func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) YearBackupsInp
 func NewCbrPolicyV3OperationDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CbrPolicyV3OperationDefinitionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCbrPolicyV3OperationDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference{}
 
 	_jsii_.Create(
@@ -339,7 +342,10 @@ func NewCbrPolicyV3OperationDefinitionOutputReference_Override(c CbrPolicyV3Oper
 	)
 }
 
-func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -347,7 +353,10 @@ func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -355,7 +364,10 @@ func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetDayBackups(val *float64) {
+func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference)SetDayBackups(val *float64) {
+	if err := j.validateSetDayBackupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dayBackups",
@@ -363,7 +375,10 @@ func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetDayBackups(
 	)
 }
 
-func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetInternalValue(val *CbrPolicyV3OperationDefinition) {
+func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference)SetInternalValue(val *CbrPolicyV3OperationDefinition) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -371,7 +386,10 @@ func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetMaxBackups(val *float64) {
+func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference)SetMaxBackups(val *float64) {
+	if err := j.validateSetMaxBackupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxBackups",
@@ -379,7 +397,10 @@ func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetMaxBackups(
 	)
 }
 
-func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetMonthBackups(val *float64) {
+func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference)SetMonthBackups(val *float64) {
+	if err := j.validateSetMonthBackupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"monthBackups",
@@ -387,7 +408,10 @@ func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetMonthBackup
 	)
 }
 
-func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetRetentionDurationDays(val *float64) {
+func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference)SetRetentionDurationDays(val *float64) {
+	if err := j.validateSetRetentionDurationDaysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"retentionDurationDays",
@@ -395,7 +419,10 @@ func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetRetentionDu
 	)
 }
 
-func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -403,7 +430,10 @@ func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -411,7 +441,10 @@ func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetTimezone(val *string) {
+func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference)SetTimezone(val *string) {
+	if err := j.validateSetTimezoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timezone",
@@ -419,7 +452,10 @@ func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetTimezone(va
 	)
 }
 
-func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetWeekBackups(val *float64) {
+func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference)SetWeekBackups(val *float64) {
+	if err := j.validateSetWeekBackupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"weekBackups",
@@ -427,7 +463,10 @@ func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetWeekBackups
 	)
 }
 
-func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) SetYearBackups(val *float64) {
+func (j *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference)SetYearBackups(val *float64) {
+	if err := j.validateSetYearBackupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"yearBackups",
@@ -449,6 +488,9 @@ func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) ComputeFqn() *
 }
 
 func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -462,6 +504,9 @@ func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetAnyMapAttri
 }
 
 func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -475,6 +520,9 @@ func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetBooleanAttr
 }
 
 func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -488,6 +536,9 @@ func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetBooleanMapA
 }
 
 func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -501,6 +552,9 @@ func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetListAttribu
 }
 
 func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -514,6 +568,9 @@ func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetNumberAttri
 }
 
 func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -527,6 +584,9 @@ func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetNumberListA
 }
 
 func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -540,6 +600,9 @@ func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetNumberMapAt
 }
 
 func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -553,6 +616,9 @@ func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetStringAttri
 }
 
 func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -579,6 +645,9 @@ func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) InterpolationA
 }
 
 func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -640,6 +709,9 @@ func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) ResetYearBacku
 }
 
 func (c *jsiiProxy_CbrPolicyV3OperationDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

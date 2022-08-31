@@ -111,6 +111,9 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2DpdList) WrapsSet() *bool {
 func NewVpnaasSiteConnectionV2DpdList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnaasSiteConnectionV2DpdList {
 	_init_.Initialize()
 
+	if err := validateNewVpnaasSiteConnectionV2DpdListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VpnaasSiteConnectionV2DpdList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewVpnaasSiteConnectionV2DpdList_Override(v VpnaasSiteConnectionV2DpdList, 
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2DpdList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2DpdList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2DpdList) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2DpdList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2DpdList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2DpdList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2DpdList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2DpdList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2DpdList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_VpnaasSiteConnectionV2DpdList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_VpnaasSiteConnectionV2DpdList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdList) ComputeFqn() *string {
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdList) Get(index *float64) VpnaasSiteConnectionV2DpdOutputReference {
+	if err := v.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns VpnaasSiteConnectionV2DpdOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdList) Get(index *float64) VpnaasSite
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2DpdList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

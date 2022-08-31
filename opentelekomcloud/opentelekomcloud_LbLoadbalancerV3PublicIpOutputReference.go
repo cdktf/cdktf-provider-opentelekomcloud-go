@@ -317,6 +317,9 @@ func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) TerraformResource() 
 func NewLbLoadbalancerV3PublicIpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LbLoadbalancerV3PublicIpOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewLbLoadbalancerV3PublicIpOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LbLoadbalancerV3PublicIpOutputReference{}
 
 	_jsii_.Create(
@@ -338,7 +341,10 @@ func NewLbLoadbalancerV3PublicIpOutputReference_Override(l LbLoadbalancerV3Publi
 	)
 }
 
-func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetBandwidthChargeMode(val *string) {
+func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference)SetBandwidthChargeMode(val *string) {
+	if err := j.validateSetBandwidthChargeModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bandwidthChargeMode",
@@ -346,7 +352,10 @@ func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetBandwidthChargeMo
 	)
 }
 
-func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetBandwidthName(val *string) {
+func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference)SetBandwidthName(val *string) {
+	if err := j.validateSetBandwidthNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bandwidthName",
@@ -354,7 +363,10 @@ func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetBandwidthName(val
 	)
 }
 
-func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetBandwidthShareType(val *string) {
+func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference)SetBandwidthShareType(val *string) {
+	if err := j.validateSetBandwidthShareTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bandwidthShareType",
@@ -362,7 +374,10 @@ func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetBandwidthShareTyp
 	)
 }
 
-func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetBandwidthSize(val *float64) {
+func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference)SetBandwidthSize(val *float64) {
+	if err := j.validateSetBandwidthSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bandwidthSize",
@@ -370,7 +385,10 @@ func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetBandwidthSize(val
 	)
 }
 
-func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -378,7 +396,10 @@ func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -386,7 +407,10 @@ func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetId(val *string) {
+func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -394,7 +418,10 @@ func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetInternalValue(val *LbLoadbalancerV3PublicIp) {
+func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference)SetInternalValue(val *LbLoadbalancerV3PublicIp) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -402,7 +429,10 @@ func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetIpType(val *string) {
+func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference)SetIpType(val *string) {
+	if err := j.validateSetIpTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ipType",
@@ -410,7 +440,10 @@ func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetIpType(val *strin
 	)
 }
 
-func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -418,7 +451,10 @@ func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -440,6 +476,9 @@ func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) ComputeFqn() *string
 }
 
 func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -453,6 +492,9 @@ func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetAnyMapAttribute(t
 }
 
 func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -466,6 +508,9 @@ func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetBooleanAttribute(
 }
 
 func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -479,6 +524,9 @@ func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetBooleanMapAttribu
 }
 
 func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -492,6 +540,9 @@ func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetListAttribute(ter
 }
 
 func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -505,6 +556,9 @@ func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetNumberAttribute(t
 }
 
 func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -518,6 +572,9 @@ func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetNumberListAttribu
 }
 
 func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -531,6 +588,9 @@ func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetNumberMapAttribut
 }
 
 func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -544,6 +604,9 @@ func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetStringAttribute(t
 }
 
 func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -570,6 +633,9 @@ func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) InterpolationAsList(
 }
 
 func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -631,6 +697,9 @@ func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) ResetIpType() {
 }
 
 func (l *jsiiProxy_LbLoadbalancerV3PublicIpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

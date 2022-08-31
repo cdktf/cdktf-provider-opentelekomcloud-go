@@ -247,6 +247,9 @@ func (j *jsiiProxy_ObsBucketWebsiteOutputReference) TerraformResource() cdktf.II
 func NewObsBucketWebsiteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ObsBucketWebsiteOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewObsBucketWebsiteOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ObsBucketWebsiteOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewObsBucketWebsiteOutputReference_Override(o ObsBucketWebsiteOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ObsBucketWebsiteOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ObsBucketWebsiteOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetErrorDocument(val *string) {
+func (j *jsiiProxy_ObsBucketWebsiteOutputReference)SetErrorDocument(val *string) {
+	if err := j.validateSetErrorDocumentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"errorDocument",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetErrorDocument(val *string
 	)
 }
 
-func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetIndexDocument(val *string) {
+func (j *jsiiProxy_ObsBucketWebsiteOutputReference)SetIndexDocument(val *string) {
+	if err := j.validateSetIndexDocumentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"indexDocument",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetIndexDocument(val *string
 	)
 }
 
-func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetInternalValue(val *ObsBucketWebsite) {
+func (j *jsiiProxy_ObsBucketWebsiteOutputReference)SetInternalValue(val *ObsBucketWebsite) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetInternalValue(val *ObsBuc
 	)
 }
 
-func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetRedirectAllRequestsTo(val *string) {
+func (j *jsiiProxy_ObsBucketWebsiteOutputReference)SetRedirectAllRequestsTo(val *string) {
+	if err := j.validateSetRedirectAllRequestsToParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"redirectAllRequestsTo",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetRedirectAllRequestsTo(val
 	)
 }
 
-func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetRoutingRules(val *string) {
+func (j *jsiiProxy_ObsBucketWebsiteOutputReference)SetRoutingRules(val *string) {
+	if err := j.validateSetRoutingRulesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"routingRules",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetRoutingRules(val *string)
 	)
 }
 
-func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ObsBucketWebsiteOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_ObsBucketWebsiteOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ObsBucketWebsiteOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -354,6 +384,9 @@ func (o *jsiiProxy_ObsBucketWebsiteOutputReference) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetAnyMapAttribute(terraform
 }
 
 func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetBooleanAttribute(terrafor
 }
 
 func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetBooleanMapAttribute(terra
 }
 
 func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetListAttribute(terraformAt
 }
 
 func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetNumberAttribute(terraform
 }
 
 func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetNumberListAttribute(terra
 }
 
 func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetNumberMapAttribute(terraf
 }
 
 func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetStringAttribute(terraform
 }
 
 func (o *jsiiProxy_ObsBucketWebsiteOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (o *jsiiProxy_ObsBucketWebsiteOutputReference) InterpolationAsList() cdktf.
 }
 
 func (o *jsiiProxy_ObsBucketWebsiteOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (o *jsiiProxy_ObsBucketWebsiteOutputReference) ResetRoutingRules() {
 }
 
 func (o *jsiiProxy_ObsBucketWebsiteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

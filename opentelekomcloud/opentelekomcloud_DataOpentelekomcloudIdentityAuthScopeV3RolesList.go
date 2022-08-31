@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) WrapsSet() 
 func NewDataOpentelekomcloudIdentityAuthScopeV3RolesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudIdentityAuthScopeV3RolesList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudIdentityAuthScopeV3RolesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudIdentityAuthScopeV3RolesList_Override(d DataOpentele
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) ComputeFqn(
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) Get(index *float64) DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) Get(index *
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

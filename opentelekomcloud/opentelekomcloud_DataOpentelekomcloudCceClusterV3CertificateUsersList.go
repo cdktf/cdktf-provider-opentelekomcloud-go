@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList) WrapsSe
 func NewDataOpentelekomcloudCceClusterV3CertificateUsersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudCceClusterV3CertificateUsersList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudCceClusterV3CertificateUsersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudCceClusterV3CertificateUsersList_Override(d DataOpen
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList) SetTerr
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList) SetTerr
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList) Compute
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList) Get(index *float64) DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList) Get(ind
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

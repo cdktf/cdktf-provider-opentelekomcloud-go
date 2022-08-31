@@ -477,6 +477,9 @@ func (j *jsiiProxy_AntiddosV1) TrafficPosIdInput() *float64 {
 func NewAntiddosV1(scope constructs.Construct, id *string, config *AntiddosV1Config) AntiddosV1 {
 	_init_.Initialize()
 
+	if err := validateNewAntiddosV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AntiddosV1{}
 
 	_jsii_.Create(
@@ -499,7 +502,10 @@ func NewAntiddosV1_Override(a AntiddosV1, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetAppTypeId(val *float64) {
+func (j *jsiiProxy_AntiddosV1)SetAppTypeId(val *float64) {
+	if err := j.validateSetAppTypeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"appTypeId",
@@ -507,7 +513,10 @@ func (j *jsiiProxy_AntiddosV1) SetAppTypeId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetCleaningAccessPosId(val *float64) {
+func (j *jsiiProxy_AntiddosV1)SetCleaningAccessPosId(val *float64) {
+	if err := j.validateSetCleaningAccessPosIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cleaningAccessPosId",
@@ -515,7 +524,10 @@ func (j *jsiiProxy_AntiddosV1) SetCleaningAccessPosId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_AntiddosV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -523,7 +535,7 @@ func (j *jsiiProxy_AntiddosV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetCount(val *float64) {
+func (j *jsiiProxy_AntiddosV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -531,7 +543,7 @@ func (j *jsiiProxy_AntiddosV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AntiddosV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -539,7 +551,10 @@ func (j *jsiiProxy_AntiddosV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetEnableL7(val interface{}) {
+func (j *jsiiProxy_AntiddosV1)SetEnableL7(val interface{}) {
+	if err := j.validateSetEnableL7Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableL7",
@@ -547,7 +562,10 @@ func (j *jsiiProxy_AntiddosV1) SetEnableL7(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetFloatingIpId(val *string) {
+func (j *jsiiProxy_AntiddosV1)SetFloatingIpId(val *string) {
+	if err := j.validateSetFloatingIpIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"floatingIpId",
@@ -555,7 +573,7 @@ func (j *jsiiProxy_AntiddosV1) SetFloatingIpId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AntiddosV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -563,7 +581,10 @@ func (j *jsiiProxy_AntiddosV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetHttpRequestPosId(val *float64) {
+func (j *jsiiProxy_AntiddosV1)SetHttpRequestPosId(val *float64) {
+	if err := j.validateSetHttpRequestPosIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"httpRequestPosId",
@@ -571,7 +592,10 @@ func (j *jsiiProxy_AntiddosV1) SetHttpRequestPosId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetId(val *string) {
+func (j *jsiiProxy_AntiddosV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -579,7 +603,10 @@ func (j *jsiiProxy_AntiddosV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AntiddosV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -587,7 +614,7 @@ func (j *jsiiProxy_AntiddosV1) SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AntiddosV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -595,7 +622,10 @@ func (j *jsiiProxy_AntiddosV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AntiddosV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -603,7 +633,10 @@ func (j *jsiiProxy_AntiddosV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetRegion(val *string) {
+func (j *jsiiProxy_AntiddosV1)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -611,7 +644,10 @@ func (j *jsiiProxy_AntiddosV1) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AntiddosV1) SetTrafficPosId(val *float64) {
+func (j *jsiiProxy_AntiddosV1)SetTrafficPosId(val *float64) {
+	if err := j.validateSetTrafficPosIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"trafficPosId",
@@ -639,6 +675,9 @@ func (j *jsiiProxy_AntiddosV1) SetTrafficPosId(val *float64) {
 func AntiddosV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAntiddosV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -663,6 +702,9 @@ func AntiddosV1_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_AntiddosV1) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -671,6 +713,9 @@ func (a *jsiiProxy_AntiddosV1) AddOverride(path *string, value interface{}) {
 }
 
 func (a *jsiiProxy_AntiddosV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -684,6 +729,9 @@ func (a *jsiiProxy_AntiddosV1) GetAnyMapAttribute(terraformAttribute *string) *m
 }
 
 func (a *jsiiProxy_AntiddosV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -697,6 +745,9 @@ func (a *jsiiProxy_AntiddosV1) GetBooleanAttribute(terraformAttribute *string) c
 }
 
 func (a *jsiiProxy_AntiddosV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -710,6 +761,9 @@ func (a *jsiiProxy_AntiddosV1) GetBooleanMapAttribute(terraformAttribute *string
 }
 
 func (a *jsiiProxy_AntiddosV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -723,6 +777,9 @@ func (a *jsiiProxy_AntiddosV1) GetListAttribute(terraformAttribute *string) *[]*
 }
 
 func (a *jsiiProxy_AntiddosV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -736,6 +793,9 @@ func (a *jsiiProxy_AntiddosV1) GetNumberAttribute(terraformAttribute *string) *f
 }
 
 func (a *jsiiProxy_AntiddosV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -749,6 +809,9 @@ func (a *jsiiProxy_AntiddosV1) GetNumberListAttribute(terraformAttribute *string
 }
 
 func (a *jsiiProxy_AntiddosV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -762,6 +825,9 @@ func (a *jsiiProxy_AntiddosV1) GetNumberMapAttribute(terraformAttribute *string)
 }
 
 func (a *jsiiProxy_AntiddosV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -775,6 +841,9 @@ func (a *jsiiProxy_AntiddosV1) GetStringAttribute(terraformAttribute *string) *s
 }
 
 func (a *jsiiProxy_AntiddosV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -788,6 +857,9 @@ func (a *jsiiProxy_AntiddosV1) GetStringMapAttribute(terraformAttribute *string)
 }
 
 func (a *jsiiProxy_AntiddosV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -801,6 +873,9 @@ func (a *jsiiProxy_AntiddosV1) InterpolationForAttribute(terraformAttribute *str
 }
 
 func (a *jsiiProxy_AntiddosV1) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
@@ -809,6 +884,9 @@ func (a *jsiiProxy_AntiddosV1) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (a *jsiiProxy_AntiddosV1) PutTimeouts(value *AntiddosV1Timeouts) {
+	if err := a.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",

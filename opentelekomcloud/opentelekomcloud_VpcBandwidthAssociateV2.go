@@ -385,6 +385,9 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) TerraformResourceType() *string {
 func NewVpcBandwidthAssociateV2(scope constructs.Construct, id *string, config *VpcBandwidthAssociateV2Config) VpcBandwidthAssociateV2 {
 	_init_.Initialize()
 
+	if err := validateNewVpcBandwidthAssociateV2Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VpcBandwidthAssociateV2{}
 
 	_jsii_.Create(
@@ -407,7 +410,10 @@ func NewVpcBandwidthAssociateV2_Override(v VpcBandwidthAssociateV2, scope constr
 	)
 }
 
-func (j *jsiiProxy_VpcBandwidthAssociateV2) SetBackupChargeMode(val *string) {
+func (j *jsiiProxy_VpcBandwidthAssociateV2)SetBackupChargeMode(val *string) {
+	if err := j.validateSetBackupChargeModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backupChargeMode",
@@ -415,7 +421,10 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) SetBackupChargeMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcBandwidthAssociateV2) SetBackupSize(val *float64) {
+func (j *jsiiProxy_VpcBandwidthAssociateV2)SetBackupSize(val *float64) {
+	if err := j.validateSetBackupSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backupSize",
@@ -423,7 +432,10 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) SetBackupSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcBandwidthAssociateV2) SetBandwidth(val *string) {
+func (j *jsiiProxy_VpcBandwidthAssociateV2)SetBandwidth(val *string) {
+	if err := j.validateSetBandwidthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bandwidth",
@@ -431,7 +443,10 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) SetBandwidth(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcBandwidthAssociateV2) SetConnection(val interface{}) {
+func (j *jsiiProxy_VpcBandwidthAssociateV2)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -439,7 +454,7 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcBandwidthAssociateV2) SetCount(val *float64) {
+func (j *jsiiProxy_VpcBandwidthAssociateV2)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -447,7 +462,7 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcBandwidthAssociateV2) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpcBandwidthAssociateV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -455,7 +470,10 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcBandwidthAssociateV2) SetFloatingIps(val *[]*string) {
+func (j *jsiiProxy_VpcBandwidthAssociateV2)SetFloatingIps(val *[]*string) {
+	if err := j.validateSetFloatingIpsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"floatingIps",
@@ -463,7 +481,7 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) SetFloatingIps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcBandwidthAssociateV2) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpcBandwidthAssociateV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -471,7 +489,10 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_VpcBandwidthAssociateV2) SetId(val *string) {
+func (j *jsiiProxy_VpcBandwidthAssociateV2)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -479,7 +500,10 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcBandwidthAssociateV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpcBandwidthAssociateV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -487,7 +511,7 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_VpcBandwidthAssociateV2) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpcBandwidthAssociateV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -495,7 +519,10 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_VpcBandwidthAssociateV2) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpcBandwidthAssociateV2)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -523,6 +550,9 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) SetProvisioners(val *[]interface{}) 
 func VpcBandwidthAssociateV2_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateVpcBandwidthAssociateV2_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -547,6 +577,9 @@ func VpcBandwidthAssociateV2_TfResourceType() *string {
 }
 
 func (v *jsiiProxy_VpcBandwidthAssociateV2) AddOverride(path *string, value interface{}) {
+	if err := v.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
@@ -555,6 +588,9 @@ func (v *jsiiProxy_VpcBandwidthAssociateV2) AddOverride(path *string, value inte
 }
 
 func (v *jsiiProxy_VpcBandwidthAssociateV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -568,6 +604,9 @@ func (v *jsiiProxy_VpcBandwidthAssociateV2) GetAnyMapAttribute(terraformAttribut
 }
 
 func (v *jsiiProxy_VpcBandwidthAssociateV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -581,6 +620,9 @@ func (v *jsiiProxy_VpcBandwidthAssociateV2) GetBooleanAttribute(terraformAttribu
 }
 
 func (v *jsiiProxy_VpcBandwidthAssociateV2) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := v.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -594,6 +636,9 @@ func (v *jsiiProxy_VpcBandwidthAssociateV2) GetBooleanMapAttribute(terraformAttr
 }
 
 func (v *jsiiProxy_VpcBandwidthAssociateV2) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := v.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -607,6 +652,9 @@ func (v *jsiiProxy_VpcBandwidthAssociateV2) GetListAttribute(terraformAttribute 
 }
 
 func (v *jsiiProxy_VpcBandwidthAssociateV2) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := v.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -620,6 +668,9 @@ func (v *jsiiProxy_VpcBandwidthAssociateV2) GetNumberAttribute(terraformAttribut
 }
 
 func (v *jsiiProxy_VpcBandwidthAssociateV2) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := v.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -633,6 +684,9 @@ func (v *jsiiProxy_VpcBandwidthAssociateV2) GetNumberListAttribute(terraformAttr
 }
 
 func (v *jsiiProxy_VpcBandwidthAssociateV2) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := v.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -646,6 +700,9 @@ func (v *jsiiProxy_VpcBandwidthAssociateV2) GetNumberMapAttribute(terraformAttri
 }
 
 func (v *jsiiProxy_VpcBandwidthAssociateV2) GetStringAttribute(terraformAttribute *string) *string {
+	if err := v.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -659,6 +716,9 @@ func (v *jsiiProxy_VpcBandwidthAssociateV2) GetStringAttribute(terraformAttribut
 }
 
 func (v *jsiiProxy_VpcBandwidthAssociateV2) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := v.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -672,6 +732,9 @@ func (v *jsiiProxy_VpcBandwidthAssociateV2) GetStringMapAttribute(terraformAttri
 }
 
 func (v *jsiiProxy_VpcBandwidthAssociateV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -685,6 +748,9 @@ func (v *jsiiProxy_VpcBandwidthAssociateV2) InterpolationForAttribute(terraformA
 }
 
 func (v *jsiiProxy_VpcBandwidthAssociateV2) OverrideLogicalId(newLogicalId *string) {
+	if err := v.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",

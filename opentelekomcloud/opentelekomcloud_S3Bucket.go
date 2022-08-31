@@ -686,6 +686,9 @@ func (j *jsiiProxy_S3Bucket) WebsiteInput() *S3BucketWebsite {
 func NewS3Bucket(scope constructs.Construct, id *string, config *S3BucketConfig) S3Bucket {
 	_init_.Initialize()
 
+	if err := validateNewS3BucketParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_S3Bucket{}
 
 	_jsii_.Create(
@@ -708,7 +711,10 @@ func NewS3Bucket_Override(s S3Bucket, scope constructs.Construct, id *string, co
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetAcl(val *string) {
+func (j *jsiiProxy_S3Bucket)SetAcl(val *string) {
+	if err := j.validateSetAclParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"acl",
@@ -716,7 +722,10 @@ func (j *jsiiProxy_S3Bucket) SetAcl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetArn(val *string) {
+func (j *jsiiProxy_S3Bucket)SetArn(val *string) {
+	if err := j.validateSetArnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"arn",
@@ -724,7 +733,10 @@ func (j *jsiiProxy_S3Bucket) SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetBucket(val *string) {
+func (j *jsiiProxy_S3Bucket)SetBucket(val *string) {
+	if err := j.validateSetBucketParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bucket",
@@ -732,7 +744,10 @@ func (j *jsiiProxy_S3Bucket) SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetBucketPrefix(val *string) {
+func (j *jsiiProxy_S3Bucket)SetBucketPrefix(val *string) {
+	if err := j.validateSetBucketPrefixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bucketPrefix",
@@ -740,7 +755,10 @@ func (j *jsiiProxy_S3Bucket) SetBucketPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetConnection(val interface{}) {
+func (j *jsiiProxy_S3Bucket)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -748,7 +766,7 @@ func (j *jsiiProxy_S3Bucket) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetCount(val *float64) {
+func (j *jsiiProxy_S3Bucket)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -756,7 +774,7 @@ func (j *jsiiProxy_S3Bucket) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3Bucket)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -764,7 +782,10 @@ func (j *jsiiProxy_S3Bucket) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_S3Bucket)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"forceDestroy",
@@ -772,7 +793,7 @@ func (j *jsiiProxy_S3Bucket) SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3Bucket)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -780,7 +801,10 @@ func (j *jsiiProxy_S3Bucket) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetHostedZoneId(val *string) {
+func (j *jsiiProxy_S3Bucket)SetHostedZoneId(val *string) {
+	if err := j.validateSetHostedZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hostedZoneId",
@@ -788,7 +812,10 @@ func (j *jsiiProxy_S3Bucket) SetHostedZoneId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetId(val *string) {
+func (j *jsiiProxy_S3Bucket)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -796,7 +823,10 @@ func (j *jsiiProxy_S3Bucket) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3Bucket)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -804,7 +834,10 @@ func (j *jsiiProxy_S3Bucket) SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetPolicy(val *string) {
+func (j *jsiiProxy_S3Bucket)SetPolicy(val *string) {
+	if err := j.validateSetPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policy",
@@ -812,7 +845,7 @@ func (j *jsiiProxy_S3Bucket) SetPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3Bucket)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -820,7 +853,10 @@ func (j *jsiiProxy_S3Bucket) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3Bucket)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -828,7 +864,10 @@ func (j *jsiiProxy_S3Bucket) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetRegion(val *string) {
+func (j *jsiiProxy_S3Bucket)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -836,7 +875,10 @@ func (j *jsiiProxy_S3Bucket) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetTags(val *map[string]*string) {
+func (j *jsiiProxy_S3Bucket)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -844,7 +886,10 @@ func (j *jsiiProxy_S3Bucket) SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetWebsiteDomain(val *string) {
+func (j *jsiiProxy_S3Bucket)SetWebsiteDomain(val *string) {
+	if err := j.validateSetWebsiteDomainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"websiteDomain",
@@ -852,7 +897,10 @@ func (j *jsiiProxy_S3Bucket) SetWebsiteDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket) SetWebsiteEndpoint(val *string) {
+func (j *jsiiProxy_S3Bucket)SetWebsiteEndpoint(val *string) {
+	if err := j.validateSetWebsiteEndpointParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"websiteEndpoint",
@@ -880,6 +928,9 @@ func (j *jsiiProxy_S3Bucket) SetWebsiteEndpoint(val *string) {
 func S3Bucket_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateS3Bucket_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -904,6 +955,9 @@ func S3Bucket_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_S3Bucket) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -912,6 +966,9 @@ func (s *jsiiProxy_S3Bucket) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_S3Bucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -925,6 +982,9 @@ func (s *jsiiProxy_S3Bucket) GetAnyMapAttribute(terraformAttribute *string) *map
 }
 
 func (s *jsiiProxy_S3Bucket) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -938,6 +998,9 @@ func (s *jsiiProxy_S3Bucket) GetBooleanAttribute(terraformAttribute *string) cdk
 }
 
 func (s *jsiiProxy_S3Bucket) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -951,6 +1014,9 @@ func (s *jsiiProxy_S3Bucket) GetBooleanMapAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_S3Bucket) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -964,6 +1030,9 @@ func (s *jsiiProxy_S3Bucket) GetListAttribute(terraformAttribute *string) *[]*st
 }
 
 func (s *jsiiProxy_S3Bucket) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -977,6 +1046,9 @@ func (s *jsiiProxy_S3Bucket) GetNumberAttribute(terraformAttribute *string) *flo
 }
 
 func (s *jsiiProxy_S3Bucket) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -990,6 +1062,9 @@ func (s *jsiiProxy_S3Bucket) GetNumberListAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_S3Bucket) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1003,6 +1078,9 @@ func (s *jsiiProxy_S3Bucket) GetNumberMapAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_S3Bucket) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1016,6 +1094,9 @@ func (s *jsiiProxy_S3Bucket) GetStringAttribute(terraformAttribute *string) *str
 }
 
 func (s *jsiiProxy_S3Bucket) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1029,6 +1110,9 @@ func (s *jsiiProxy_S3Bucket) GetStringMapAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_S3Bucket) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1042,6 +1126,9 @@ func (s *jsiiProxy_S3Bucket) InterpolationForAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_S3Bucket) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -1050,6 +1137,9 @@ func (s *jsiiProxy_S3Bucket) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (s *jsiiProxy_S3Bucket) PutCorsRule(value interface{}) {
+	if err := s.validatePutCorsRuleParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putCorsRule",
@@ -1058,6 +1148,9 @@ func (s *jsiiProxy_S3Bucket) PutCorsRule(value interface{}) {
 }
 
 func (s *jsiiProxy_S3Bucket) PutLifecycleRule(value interface{}) {
+	if err := s.validatePutLifecycleRuleParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLifecycleRule",
@@ -1066,6 +1159,9 @@ func (s *jsiiProxy_S3Bucket) PutLifecycleRule(value interface{}) {
 }
 
 func (s *jsiiProxy_S3Bucket) PutLogging(value interface{}) {
+	if err := s.validatePutLoggingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLogging",
@@ -1074,6 +1170,9 @@ func (s *jsiiProxy_S3Bucket) PutLogging(value interface{}) {
 }
 
 func (s *jsiiProxy_S3Bucket) PutVersioning(value *S3BucketVersioning) {
+	if err := s.validatePutVersioningParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putVersioning",
@@ -1082,6 +1181,9 @@ func (s *jsiiProxy_S3Bucket) PutVersioning(value *S3BucketVersioning) {
 }
 
 func (s *jsiiProxy_S3Bucket) PutWebsite(value *S3BucketWebsite) {
+	if err := s.validatePutWebsiteParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putWebsite",

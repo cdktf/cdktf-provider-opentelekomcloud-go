@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) WrapsSet() *bo
 func NewDataOpentelekomcloudVbsBackupPolicyV2TagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudVbsBackupPolicyV2TagsList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudVbsBackupPolicyV2TagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudVbsBackupPolicyV2TagsList_Override(d DataOpentelekom
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) ComputeFqn() *
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) Get(index *float64) DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) Get(index *flo
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

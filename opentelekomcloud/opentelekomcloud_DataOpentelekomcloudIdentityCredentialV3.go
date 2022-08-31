@@ -298,6 +298,9 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) UserIdInput() *stri
 func NewDataOpentelekomcloudIdentityCredentialV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudIdentityCredentialV3Config) DataOpentelekomcloudIdentityCredentialV3 {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudIdentityCredentialV3Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudIdentityCredentialV3{}
 
 	_jsii_.Create(
@@ -320,7 +323,7 @@ func NewDataOpentelekomcloudIdentityCredentialV3_Override(d DataOpentelekomcloud
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -328,7 +331,7 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetCount(val *float
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -336,7 +339,7 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -344,7 +347,10 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -352,7 +358,10 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -360,7 +369,7 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -368,7 +377,10 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetUserId(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3)SetUserId(val *string) {
+	if err := j.validateSetUserIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userId",
@@ -396,6 +408,9 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) SetUserId(val *stri
 func DataOpentelekomcloudIdentityCredentialV3_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataOpentelekomcloudIdentityCredentialV3_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -420,6 +435,9 @@ func DataOpentelekomcloudIdentityCredentialV3_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -428,6 +446,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) AddOverride(path *s
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -441,6 +462,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetAnyMapAttribute(
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -454,6 +478,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetBooleanAttribute
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -467,6 +494,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetBooleanMapAttrib
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -480,6 +510,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetListAttribute(te
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -493,6 +526,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetNumberAttribute(
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -506,6 +542,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetNumberListAttrib
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -519,6 +558,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetNumberMapAttribu
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -532,6 +574,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetStringAttribute(
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -545,6 +590,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) GetStringMapAttribu
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -558,6 +606,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) InterpolationForAtt
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

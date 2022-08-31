@@ -99,6 +99,9 @@ func (j *jsiiProxy_EvsVolumeV3AttachmentList) WrapsSet() *bool {
 func NewEvsVolumeV3AttachmentList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EvsVolumeV3AttachmentList {
 	_init_.Initialize()
 
+	if err := validateNewEvsVolumeV3AttachmentListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EvsVolumeV3AttachmentList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewEvsVolumeV3AttachmentList_Override(e EvsVolumeV3AttachmentList, terrafor
 	)
 }
 
-func (j *jsiiProxy_EvsVolumeV3AttachmentList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EvsVolumeV3AttachmentList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_EvsVolumeV3AttachmentList) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_EvsVolumeV3AttachmentList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EvsVolumeV3AttachmentList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_EvsVolumeV3AttachmentList) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_EvsVolumeV3AttachmentList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EvsVolumeV3AttachmentList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (e *jsiiProxy_EvsVolumeV3AttachmentList) ComputeFqn() *string {
 }
 
 func (e *jsiiProxy_EvsVolumeV3AttachmentList) Get(index *float64) EvsVolumeV3AttachmentOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns EvsVolumeV3AttachmentOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (e *jsiiProxy_EvsVolumeV3AttachmentList) Get(index *float64) EvsVolumeV3Att
 }
 
 func (e *jsiiProxy_EvsVolumeV3AttachmentList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

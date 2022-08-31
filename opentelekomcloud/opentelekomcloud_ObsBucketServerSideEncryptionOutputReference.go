@@ -197,6 +197,9 @@ func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) TerraformResour
 func NewObsBucketServerSideEncryptionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ObsBucketServerSideEncryptionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewObsBucketServerSideEncryptionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ObsBucketServerSideEncryptionOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewObsBucketServerSideEncryptionOutputReference_Override(o ObsBucketServerS
 	)
 }
 
-func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetAlgorithm(val *string) {
+func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference)SetAlgorithm(val *string) {
+	if err := j.validateSetAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"algorithm",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetAlgorithm(va
 	)
 }
 
-func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetInternalValue(val *ObsBucketServerSideEncryption) {
+func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference)SetInternalValue(val *ObsBucketServerSideEncryption) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetKmsKeyId(val *string) {
+func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference)SetKmsKeyId(val *string) {
+	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kmsKeyId",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetKmsKeyId(val
 	)
 }
 
-func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) ComputeFqn() *s
 }
 
 func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetAnyMapAttrib
 }
 
 func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetBooleanAttri
 }
 
 func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetBooleanMapAt
 }
 
 func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetListAttribut
 }
 
 func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetNumberAttrib
 }
 
 func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetNumberListAt
 }
 
 func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetNumberMapAtt
 }
 
 func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetStringAttrib
 }
 
 func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) InterpolationAs
 }
 
 func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) InterpolationFo
 }
 
 func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

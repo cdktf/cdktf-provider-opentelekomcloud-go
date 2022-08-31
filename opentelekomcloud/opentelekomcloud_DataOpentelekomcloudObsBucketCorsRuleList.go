@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList) WrapsSet() *bool {
 func NewDataOpentelekomcloudObsBucketCorsRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudObsBucketCorsRuleList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudObsBucketCorsRuleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudObsBucketCorsRuleList_Override(d DataOpentelekomclou
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList) ComputeFqn() *stri
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList) Get(index *float64) DataOpentelekomcloudObsBucketCorsRuleOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudObsBucketCorsRuleOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList) Get(index *float64
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

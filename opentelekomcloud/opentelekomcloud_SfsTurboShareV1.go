@@ -582,6 +582,9 @@ func (j *jsiiProxy_SfsTurboShareV1) VpcIdInput() *string {
 func NewSfsTurboShareV1(scope constructs.Construct, id *string, config *SfsTurboShareV1Config) SfsTurboShareV1 {
 	_init_.Initialize()
 
+	if err := validateNewSfsTurboShareV1Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SfsTurboShareV1{}
 
 	_jsii_.Create(
@@ -604,7 +607,10 @@ func NewSfsTurboShareV1_Override(s SfsTurboShareV1, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_SfsTurboShareV1)SetAvailabilityZone(val *string) {
+	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availabilityZone",
@@ -612,7 +618,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetConnection(val interface{}) {
+func (j *jsiiProxy_SfsTurboShareV1)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -620,7 +629,7 @@ func (j *jsiiProxy_SfsTurboShareV1) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetCount(val *float64) {
+func (j *jsiiProxy_SfsTurboShareV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -628,7 +637,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetCryptKeyId(val *string) {
+func (j *jsiiProxy_SfsTurboShareV1)SetCryptKeyId(val *string) {
+	if err := j.validateSetCryptKeyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cryptKeyId",
@@ -636,7 +648,7 @@ func (j *jsiiProxy_SfsTurboShareV1) SetCryptKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SfsTurboShareV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -644,7 +656,7 @@ func (j *jsiiProxy_SfsTurboShareV1) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SfsTurboShareV1)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -652,7 +664,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetId(val *string) {
+func (j *jsiiProxy_SfsTurboShareV1)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -660,7 +675,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SfsTurboShareV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -668,7 +686,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetName(val *string) {
+func (j *jsiiProxy_SfsTurboShareV1)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -676,7 +697,7 @@ func (j *jsiiProxy_SfsTurboShareV1) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SfsTurboShareV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -684,7 +705,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SfsTurboShareV1)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -692,7 +716,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetRegion(val *string) {
+func (j *jsiiProxy_SfsTurboShareV1)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -700,7 +727,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetSecurityGroupId(val *string) {
+func (j *jsiiProxy_SfsTurboShareV1)SetSecurityGroupId(val *string) {
+	if err := j.validateSetSecurityGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityGroupId",
@@ -708,7 +738,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetSecurityGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetShareProto(val *string) {
+func (j *jsiiProxy_SfsTurboShareV1)SetShareProto(val *string) {
+	if err := j.validateSetShareProtoParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shareProto",
@@ -716,7 +749,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetShareProto(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetShareType(val *string) {
+func (j *jsiiProxy_SfsTurboShareV1)SetShareType(val *string) {
+	if err := j.validateSetShareTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shareType",
@@ -724,7 +760,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetShareType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetSize(val *float64) {
+func (j *jsiiProxy_SfsTurboShareV1)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -732,7 +771,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetSubnetId(val *string) {
+func (j *jsiiProxy_SfsTurboShareV1)SetSubnetId(val *string) {
+	if err := j.validateSetSubnetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subnetId",
@@ -740,7 +782,10 @@ func (j *jsiiProxy_SfsTurboShareV1) SetSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SfsTurboShareV1) SetVpcId(val *string) {
+func (j *jsiiProxy_SfsTurboShareV1)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcId",
@@ -768,6 +813,9 @@ func (j *jsiiProxy_SfsTurboShareV1) SetVpcId(val *string) {
 func SfsTurboShareV1_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSfsTurboShareV1_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -792,6 +840,9 @@ func SfsTurboShareV1_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -800,6 +851,9 @@ func (s *jsiiProxy_SfsTurboShareV1) AddOverride(path *string, value interface{})
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -813,6 +867,9 @@ func (s *jsiiProxy_SfsTurboShareV1) GetAnyMapAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -826,6 +883,9 @@ func (s *jsiiProxy_SfsTurboShareV1) GetBooleanAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -839,6 +899,9 @@ func (s *jsiiProxy_SfsTurboShareV1) GetBooleanMapAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -852,6 +915,9 @@ func (s *jsiiProxy_SfsTurboShareV1) GetListAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -865,6 +931,9 @@ func (s *jsiiProxy_SfsTurboShareV1) GetNumberAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -878,6 +947,9 @@ func (s *jsiiProxy_SfsTurboShareV1) GetNumberListAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -891,6 +963,9 @@ func (s *jsiiProxy_SfsTurboShareV1) GetNumberMapAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -904,6 +979,9 @@ func (s *jsiiProxy_SfsTurboShareV1) GetStringAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -917,6 +995,9 @@ func (s *jsiiProxy_SfsTurboShareV1) GetStringMapAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -930,6 +1011,9 @@ func (s *jsiiProxy_SfsTurboShareV1) InterpolationForAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -938,6 +1022,9 @@ func (s *jsiiProxy_SfsTurboShareV1) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) PutTimeouts(value *SfsTurboShareV1Timeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",

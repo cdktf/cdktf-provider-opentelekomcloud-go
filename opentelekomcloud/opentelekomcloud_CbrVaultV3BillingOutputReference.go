@@ -524,6 +524,9 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) Used() *float64 {
 func NewCbrVaultV3BillingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CbrVaultV3BillingOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCbrVaultV3BillingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CbrVaultV3BillingOutputReference{}
 
 	_jsii_.Create(
@@ -545,7 +548,10 @@ func NewCbrVaultV3BillingOutputReference_Override(c CbrVaultV3BillingOutputRefer
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetChargingMode(val *string) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetChargingMode(val *string) {
+	if err := j.validateSetChargingModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"chargingMode",
@@ -553,7 +559,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetChargingMode(val *string
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetCloudType(val *string) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetCloudType(val *string) {
+	if err := j.validateSetCloudTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cloudType",
@@ -561,7 +570,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetCloudType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -569,7 +581,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -577,7 +592,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetConsistentLevel(val *string) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetConsistentLevel(val *string) {
+	if err := j.validateSetConsistentLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"consistentLevel",
@@ -585,7 +603,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetConsistentLevel(val *str
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetConsoleUrl(val *string) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetConsoleUrl(val *string) {
+	if err := j.validateSetConsoleUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"consoleUrl",
@@ -593,7 +614,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetConsoleUrl(val *string) 
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetExtraInfo(val *map[string]*string) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetExtraInfo(val *map[string]*string) {
+	if err := j.validateSetExtraInfoParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"extraInfo",
@@ -601,7 +625,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetExtraInfo(val *map[strin
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetInternalValue(val *CbrVaultV3Billing) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetInternalValue(val *CbrVaultV3Billing) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -609,7 +636,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetInternalValue(val *CbrVa
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetIsAutoPay(val interface{}) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetIsAutoPay(val interface{}) {
+	if err := j.validateSetIsAutoPayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isAutoPay",
@@ -617,7 +647,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetIsAutoPay(val interface{
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetIsAutoRenew(val interface{}) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetIsAutoRenew(val interface{}) {
+	if err := j.validateSetIsAutoRenewParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isAutoRenew",
@@ -625,7 +658,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetIsAutoRenew(val interfac
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetObjectType(val *string) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetObjectType(val *string) {
+	if err := j.validateSetObjectTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"objectType",
@@ -633,7 +669,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetObjectType(val *string) 
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetPeriodNum(val *float64) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetPeriodNum(val *float64) {
+	if err := j.validateSetPeriodNumParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"periodNum",
@@ -641,7 +680,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetPeriodNum(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetPeriodType(val *string) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetPeriodType(val *string) {
+	if err := j.validateSetPeriodTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"periodType",
@@ -649,7 +691,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetPeriodType(val *string) 
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetProtectType(val *string) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetProtectType(val *string) {
+	if err := j.validateSetProtectTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protectType",
@@ -657,7 +702,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetProtectType(val *string)
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetSize(val *float64) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -665,7 +713,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -673,7 +724,10 @@ func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_CbrVaultV3BillingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CbrVaultV3BillingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -695,6 +749,9 @@ func (c *jsiiProxy_CbrVaultV3BillingOutputReference) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -708,6 +765,9 @@ func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetAnyMapAttribute(terrafor
 }
 
 func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -721,6 +781,9 @@ func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetBooleanAttribute(terrafo
 }
 
 func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -734,6 +797,9 @@ func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetBooleanMapAttribute(terr
 }
 
 func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -747,6 +813,9 @@ func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetListAttribute(terraformA
 }
 
 func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -760,6 +829,9 @@ func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetNumberAttribute(terrafor
 }
 
 func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -773,6 +845,9 @@ func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetNumberListAttribute(terr
 }
 
 func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -786,6 +861,9 @@ func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetNumberMapAttribute(terra
 }
 
 func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -799,6 +877,9 @@ func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetStringAttribute(terrafor
 }
 
 func (c *jsiiProxy_CbrVaultV3BillingOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -825,6 +906,9 @@ func (c *jsiiProxy_CbrVaultV3BillingOutputReference) InterpolationAsList() cdktf
 }
 
 func (c *jsiiProxy_CbrVaultV3BillingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -910,6 +994,9 @@ func (c *jsiiProxy_CbrVaultV3BillingOutputReference) ResetPeriodType() {
 }
 
 func (c *jsiiProxy_CbrVaultV3BillingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

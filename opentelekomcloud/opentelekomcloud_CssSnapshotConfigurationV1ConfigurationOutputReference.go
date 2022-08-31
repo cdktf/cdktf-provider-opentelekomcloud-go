@@ -221,6 +221,9 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) Terra
 func NewCssSnapshotConfigurationV1ConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CssSnapshotConfigurationV1ConfigurationOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCssSnapshotConfigurationV1ConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference{}
 
 	_jsii_.Create(
@@ -242,7 +245,10 @@ func NewCssSnapshotConfigurationV1ConfigurationOutputReference_Override(c CssSna
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetAgency(val *string) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference)SetAgency(val *string) {
+	if err := j.validateSetAgencyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"agency",
@@ -250,7 +256,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetAg
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetBucket(val *string) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference)SetBucket(val *string) {
+	if err := j.validateSetBucketParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bucket",
@@ -258,7 +267,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetBu
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -266,7 +278,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetCo
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -274,7 +289,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetCo
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetInternalValue(val *CssSnapshotConfigurationV1Configuration) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference)SetInternalValue(val *CssSnapshotConfigurationV1Configuration) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -282,7 +300,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetIn
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetKmsId(val *string) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference)SetKmsId(val *string) {
+	if err := j.validateSetKmsIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kmsId",
@@ -290,7 +311,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetKm
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -298,7 +322,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetTe
 	)
 }
 
-func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -320,6 +347,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) Compu
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -333,6 +363,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetAn
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -346,6 +379,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetBo
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -359,6 +395,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetBo
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -372,6 +411,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetLi
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -385,6 +427,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetNu
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -398,6 +443,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetNu
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -411,6 +459,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetNu
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -424,6 +475,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetSt
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -450,6 +504,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) Inter
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -471,6 +528,9 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) Reset
 }
 
 func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

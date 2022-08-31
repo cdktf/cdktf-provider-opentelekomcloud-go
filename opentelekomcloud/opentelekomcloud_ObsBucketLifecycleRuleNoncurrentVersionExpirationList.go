@@ -111,6 +111,9 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList) WrapsS
 func NewObsBucketLifecycleRuleNoncurrentVersionExpirationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObsBucketLifecycleRuleNoncurrentVersionExpirationList {
 	_init_.Initialize()
 
+	if err := validateNewObsBucketLifecycleRuleNoncurrentVersionExpirationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewObsBucketLifecycleRuleNoncurrentVersionExpirationList_Override(o ObsBuck
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList) SetInt
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList) SetTer
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList) SetTer
 	)
 }
 
-func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList) Comput
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList) Get(index *float64) ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList) Get(in
 }
 
 func (o *jsiiProxy_ObsBucketLifecycleRuleNoncurrentVersionExpirationList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

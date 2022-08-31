@@ -111,6 +111,9 @@ func (j *jsiiProxy_S3BucketLoggingList) WrapsSet() *bool {
 func NewS3BucketLoggingList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketLoggingList {
 	_init_.Initialize()
 
+	if err := validateNewS3BucketLoggingListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_S3BucketLoggingList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewS3BucketLoggingList_Override(s S3BucketLoggingList, terraformResource cd
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_S3BucketLoggingList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_S3BucketLoggingList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketLoggingList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_S3BucketLoggingList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketLoggingList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_S3BucketLoggingList) SetTerraformResource(val cdktf.IInterpol
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_S3BucketLoggingList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_S3BucketLoggingList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_S3BucketLoggingList) Get(index *float64) S3BucketLoggingOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns S3BucketLoggingOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_S3BucketLoggingList) Get(index *float64) S3BucketLoggingOutpu
 }
 
 func (s *jsiiProxy_S3BucketLoggingList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

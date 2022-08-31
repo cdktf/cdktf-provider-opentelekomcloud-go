@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList) WrapsSet(
 func NewDataOpentelekomcloudIdentityProjectsV3ProjectsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudIdentityProjectsV3ProjectsList {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudIdentityProjectsV3ProjectsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOpentelekomcloudIdentityProjectsV3ProjectsList_Override(d DataOpente
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList) ComputeFq
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList) Get(index *float64) DataOpentelekomcloudIdentityProjectsV3ProjectsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOpentelekomcloudIdentityProjectsV3ProjectsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList) Get(index
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

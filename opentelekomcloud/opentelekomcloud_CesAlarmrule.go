@@ -574,6 +574,9 @@ func (j *jsiiProxy_CesAlarmrule) UpdateTime() *float64 {
 func NewCesAlarmrule(scope constructs.Construct, id *string, config *CesAlarmruleConfig) CesAlarmrule {
 	_init_.Initialize()
 
+	if err := validateNewCesAlarmruleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CesAlarmrule{}
 
 	_jsii_.Create(
@@ -596,7 +599,10 @@ func NewCesAlarmrule_Override(c CesAlarmrule, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetAlarmActionEnabled(val interface{}) {
+func (j *jsiiProxy_CesAlarmrule)SetAlarmActionEnabled(val interface{}) {
+	if err := j.validateSetAlarmActionEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"alarmActionEnabled",
@@ -604,7 +610,10 @@ func (j *jsiiProxy_CesAlarmrule) SetAlarmActionEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetAlarmDescription(val *string) {
+func (j *jsiiProxy_CesAlarmrule)SetAlarmDescription(val *string) {
+	if err := j.validateSetAlarmDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"alarmDescription",
@@ -612,7 +621,10 @@ func (j *jsiiProxy_CesAlarmrule) SetAlarmDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetAlarmEnabled(val interface{}) {
+func (j *jsiiProxy_CesAlarmrule)SetAlarmEnabled(val interface{}) {
+	if err := j.validateSetAlarmEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"alarmEnabled",
@@ -620,7 +632,10 @@ func (j *jsiiProxy_CesAlarmrule) SetAlarmEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetAlarmLevel(val *float64) {
+func (j *jsiiProxy_CesAlarmrule)SetAlarmLevel(val *float64) {
+	if err := j.validateSetAlarmLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"alarmLevel",
@@ -628,7 +643,10 @@ func (j *jsiiProxy_CesAlarmrule) SetAlarmLevel(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetAlarmName(val *string) {
+func (j *jsiiProxy_CesAlarmrule)SetAlarmName(val *string) {
+	if err := j.validateSetAlarmNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"alarmName",
@@ -636,7 +654,10 @@ func (j *jsiiProxy_CesAlarmrule) SetAlarmName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetConnection(val interface{}) {
+func (j *jsiiProxy_CesAlarmrule)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -644,7 +665,7 @@ func (j *jsiiProxy_CesAlarmrule) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetCount(val *float64) {
+func (j *jsiiProxy_CesAlarmrule)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -652,7 +673,7 @@ func (j *jsiiProxy_CesAlarmrule) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CesAlarmrule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -660,7 +681,7 @@ func (j *jsiiProxy_CesAlarmrule) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CesAlarmrule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -668,7 +689,10 @@ func (j *jsiiProxy_CesAlarmrule) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetId(val *string) {
+func (j *jsiiProxy_CesAlarmrule)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -676,7 +700,10 @@ func (j *jsiiProxy_CesAlarmrule) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CesAlarmrule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -684,7 +711,7 @@ func (j *jsiiProxy_CesAlarmrule) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CesAlarmrule)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -692,7 +719,10 @@ func (j *jsiiProxy_CesAlarmrule) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CesAlarmrule) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CesAlarmrule)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -720,6 +750,9 @@ func (j *jsiiProxy_CesAlarmrule) SetProvisioners(val *[]interface{}) {
 func CesAlarmrule_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCesAlarmrule_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -744,6 +777,9 @@ func CesAlarmrule_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CesAlarmrule) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -752,6 +788,9 @@ func (c *jsiiProxy_CesAlarmrule) AddOverride(path *string, value interface{}) {
 }
 
 func (c *jsiiProxy_CesAlarmrule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -765,6 +804,9 @@ func (c *jsiiProxy_CesAlarmrule) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CesAlarmrule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -778,6 +820,9 @@ func (c *jsiiProxy_CesAlarmrule) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (c *jsiiProxy_CesAlarmrule) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -791,6 +836,9 @@ func (c *jsiiProxy_CesAlarmrule) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (c *jsiiProxy_CesAlarmrule) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -804,6 +852,9 @@ func (c *jsiiProxy_CesAlarmrule) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (c *jsiiProxy_CesAlarmrule) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -817,6 +868,9 @@ func (c *jsiiProxy_CesAlarmrule) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CesAlarmrule) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -830,6 +884,9 @@ func (c *jsiiProxy_CesAlarmrule) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (c *jsiiProxy_CesAlarmrule) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -843,6 +900,9 @@ func (c *jsiiProxy_CesAlarmrule) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CesAlarmrule) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -856,6 +916,9 @@ func (c *jsiiProxy_CesAlarmrule) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CesAlarmrule) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -869,6 +932,9 @@ func (c *jsiiProxy_CesAlarmrule) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CesAlarmrule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -882,6 +948,9 @@ func (c *jsiiProxy_CesAlarmrule) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CesAlarmrule) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -890,6 +959,9 @@ func (c *jsiiProxy_CesAlarmrule) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (c *jsiiProxy_CesAlarmrule) PutAlarmActions(value interface{}) {
+	if err := c.validatePutAlarmActionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAlarmActions",
@@ -898,6 +970,9 @@ func (c *jsiiProxy_CesAlarmrule) PutAlarmActions(value interface{}) {
 }
 
 func (c *jsiiProxy_CesAlarmrule) PutCondition(value *CesAlarmruleCondition) {
+	if err := c.validatePutConditionParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCondition",
@@ -906,6 +981,9 @@ func (c *jsiiProxy_CesAlarmrule) PutCondition(value *CesAlarmruleCondition) {
 }
 
 func (c *jsiiProxy_CesAlarmrule) PutInsufficientdataActions(value interface{}) {
+	if err := c.validatePutInsufficientdataActionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putInsufficientdataActions",
@@ -914,6 +992,9 @@ func (c *jsiiProxy_CesAlarmrule) PutInsufficientdataActions(value interface{}) {
 }
 
 func (c *jsiiProxy_CesAlarmrule) PutMetric(value *CesAlarmruleMetric) {
+	if err := c.validatePutMetricParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putMetric",
@@ -922,6 +1003,9 @@ func (c *jsiiProxy_CesAlarmrule) PutMetric(value *CesAlarmruleMetric) {
 }
 
 func (c *jsiiProxy_CesAlarmrule) PutOkActions(value interface{}) {
+	if err := c.validatePutOkActionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putOkActions",
@@ -930,6 +1014,9 @@ func (c *jsiiProxy_CesAlarmrule) PutOkActions(value interface{}) {
 }
 
 func (c *jsiiProxy_CesAlarmrule) PutTimeouts(value *CesAlarmruleTimeouts) {
+	if err := c.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",

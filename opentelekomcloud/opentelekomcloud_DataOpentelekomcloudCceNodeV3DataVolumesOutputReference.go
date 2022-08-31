@@ -195,6 +195,9 @@ func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) Volu
 func NewDataOpentelekomcloudCceNodeV3DataVolumesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataOpentelekomcloudCceNodeV3DataVolumesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataOpentelekomcloudCceNodeV3DataVolumesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference{}
 
 	_jsii_.Create(
@@ -216,7 +219,10 @@ func NewDataOpentelekomcloudCceNodeV3DataVolumesOutputReference_Override(d DataO
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -224,7 +230,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -232,7 +241,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) SetInternalValue(val *DataOpentelekomcloudCceNodeV3DataVolumes) {
+func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference)SetInternalValue(val *DataOpentelekomcloudCceNodeV3DataVolumes) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -240,7 +252,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -248,7 +263,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -270,6 +288,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) Comp
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -283,6 +304,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetA
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -296,6 +320,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetB
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -309,6 +336,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetB
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -322,6 +352,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetL
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -335,6 +368,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetN
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +384,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetN
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -361,6 +400,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetN
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -374,6 +416,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetS
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) Inte
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) Inte
 }
 
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -99,6 +99,9 @@ func (j *jsiiProxy_BlockstorageVolumeV2AttachmentList) WrapsSet() *bool {
 func NewBlockstorageVolumeV2AttachmentList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BlockstorageVolumeV2AttachmentList {
 	_init_.Initialize()
 
+	if err := validateNewBlockstorageVolumeV2AttachmentListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_BlockstorageVolumeV2AttachmentList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewBlockstorageVolumeV2AttachmentList_Override(b BlockstorageVolumeV2Attach
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2AttachmentList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BlockstorageVolumeV2AttachmentList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2AttachmentList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2AttachmentList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BlockstorageVolumeV2AttachmentList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2AttachmentList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2AttachmentList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BlockstorageVolumeV2AttachmentList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2AttachmentList) ComputeFqn() *string {
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2AttachmentList) Get(index *float64) BlockstorageVolumeV2AttachmentOutputReference {
+	if err := b.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns BlockstorageVolumeV2AttachmentOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (b *jsiiProxy_BlockstorageVolumeV2AttachmentList) Get(index *float64) Block
 }
 
 func (b *jsiiProxy_BlockstorageVolumeV2AttachmentList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -221,6 +221,9 @@ func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) XaccountTypeInput(
 func NewIdentityProtocolV3MetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IdentityProtocolV3MetadataOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewIdentityProtocolV3MetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_IdentityProtocolV3MetadataOutputReference{}
 
 	_jsii_.Create(
@@ -242,7 +245,10 @@ func NewIdentityProtocolV3MetadataOutputReference_Override(i IdentityProtocolV3M
 	)
 }
 
-func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -250,7 +256,10 @@ func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -258,7 +267,10 @@ func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetDomainId(val *string) {
+func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference)SetDomainId(val *string) {
+	if err := j.validateSetDomainIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"domainId",
@@ -266,7 +278,10 @@ func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetDomainId(val *s
 	)
 }
 
-func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetInternalValue(val *IdentityProtocolV3Metadata) {
+func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference)SetInternalValue(val *IdentityProtocolV3Metadata) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -274,7 +289,10 @@ func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetMetadata(val *string) {
+func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference)SetMetadata(val *string) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metadata",
@@ -282,7 +300,10 @@ func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetMetadata(val *s
 	)
 }
 
-func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -290,7 +311,10 @@ func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -298,7 +322,10 @@ func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference) SetXaccountType(val *string) {
+func (j *jsiiProxy_IdentityProtocolV3MetadataOutputReference)SetXaccountType(val *string) {
+	if err := j.validateSetXaccountTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"xaccountType",
@@ -320,6 +347,9 @@ func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) ComputeFqn() *stri
 }
 
 func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -333,6 +363,9 @@ func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetAnyMapAttribute
 }
 
 func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -346,6 +379,9 @@ func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetBooleanAttribut
 }
 
 func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -359,6 +395,9 @@ func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetBooleanMapAttri
 }
 
 func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -372,6 +411,9 @@ func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetListAttribute(t
 }
 
 func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -385,6 +427,9 @@ func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetNumberAttribute
 }
 
 func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -398,6 +443,9 @@ func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetNumberListAttri
 }
 
 func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -411,6 +459,9 @@ func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetNumberMapAttrib
 }
 
 func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -424,6 +475,9 @@ func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetStringAttribute
 }
 
 func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -450,6 +504,9 @@ func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) InterpolationAsLis
 }
 
 func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -471,6 +528,9 @@ func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) ResetXaccountType(
 }
 
 func (i *jsiiProxy_IdentityProtocolV3MetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(
