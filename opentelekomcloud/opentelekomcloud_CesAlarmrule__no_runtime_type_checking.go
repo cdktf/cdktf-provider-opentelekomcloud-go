@@ -62,10 +62,6 @@ func (c *jsiiProxy_CesAlarmrule) validatePutConditionParameters(value *CesAlarmr
 	return nil
 }
 
-func (c *jsiiProxy_CesAlarmrule) validatePutInsufficientdataActionsParameters(value interface{}) error {
-	return nil
-}
-
 func (c *jsiiProxy_CesAlarmrule) validatePutMetricParameters(value *CesAlarmruleMetric) error {
 	return nil
 }

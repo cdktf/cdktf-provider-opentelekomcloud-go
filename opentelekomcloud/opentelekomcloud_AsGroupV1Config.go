@@ -20,6 +20,12 @@ type AsGroupV1Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Whether to delete instances when they are removed from the AS group.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#delete_instances AsGroupV1#delete_instances}
+	DeleteInstances *string `field:"required" json:"deleteInstances" yaml:"deleteInstances"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#delete_publicip AsGroupV1#delete_publicip}.
+	DeletePublicip interface{} `field:"required" json:"deletePublicip" yaml:"deletePublicip"`
 	// networks block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#networks AsGroupV1#networks}
@@ -34,12 +40,6 @@ type AsGroupV1Config struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#cool_down_time AsGroupV1#cool_down_time}
 	CoolDownTime *float64 `field:"optional" json:"coolDownTime" yaml:"coolDownTime"`
-	// Whether to delete instances when they are removed from the AS group.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#delete_instances AsGroupV1#delete_instances}
-	DeleteInstances *string `field:"optional" json:"deleteInstances" yaml:"deleteInstances"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#delete_publicip AsGroupV1#delete_publicip}.
-	DeletePublicip interface{} `field:"optional" json:"deletePublicip" yaml:"deletePublicip"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#desire_instance_number AsGroupV1#desire_instance_number}.
 	DesireInstanceNumber *float64 `field:"optional" json:"desireInstanceNumber" yaml:"desireInstanceNumber"`
 	// The grace period for instance health check, in seconds.

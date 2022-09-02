@@ -62,6 +62,10 @@ func (j *jsiiProxy_IdentityRoleV3StatementOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_IdentityRoleV3StatementOutputReference) validateSetConditionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityRoleV3StatementOutputReference) validateSetEffectParameters(val *string) error {
 	return nil
 }

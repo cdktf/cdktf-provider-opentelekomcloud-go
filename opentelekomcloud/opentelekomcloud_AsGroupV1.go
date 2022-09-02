@@ -158,8 +158,6 @@ type AsGroupV1 interface {
 	PutTimeouts(value *AsGroupV1Timeouts)
 	ResetAvailableZones()
 	ResetCoolDownTime()
-	ResetDeleteInstances()
-	ResetDeletePublicip()
 	ResetDesireInstanceNumber()
 	ResetHealthPeriodicAuditGracePeriod()
 	ResetHealthPeriodicAuditMethod()
@@ -1432,22 +1430,6 @@ func (a *jsiiProxy_AsGroupV1) ResetCoolDownTime() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCoolDownTime",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AsGroupV1) ResetDeleteInstances() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetDeleteInstances",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AsGroupV1) ResetDeletePublicip() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetDeletePublicip",
 		nil, // no parameters
 	)
 }

@@ -24,6 +24,9 @@ type IdentityRoleV3StatementOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Condition() *string
+	SetCondition(val *string)
+	ConditionInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -71,6 +74,7 @@ type IdentityRoleV3StatementOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCondition()
 	ResetResource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -122,6 +126,26 @@ func (j *jsiiProxy_IdentityRoleV3StatementOutputReference) ComplexObjectIsFromSe
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityRoleV3StatementOutputReference) Condition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"condition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityRoleV3StatementOutputReference) ConditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"conditionInput",
 		&returns,
 	)
 	return returns
@@ -274,6 +298,17 @@ func (j *jsiiProxy_IdentityRoleV3StatementOutputReference)SetComplexObjectIsFrom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityRoleV3StatementOutputReference)SetCondition(val *string) {
+	if err := j.validateSetConditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"condition",
 		val,
 	)
 }
@@ -517,6 +552,14 @@ func (i *jsiiProxy_IdentityRoleV3StatementOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IdentityRoleV3StatementOutputReference) ResetCondition() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCondition",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_IdentityRoleV3StatementOutputReference) ResetResource() {

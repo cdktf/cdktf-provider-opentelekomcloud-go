@@ -60,8 +60,6 @@ type CesAlarmrule interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InsufficientdataActions() CesAlarmruleInsufficientdataActionsList
-	InsufficientdataActionsInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -118,7 +116,6 @@ type CesAlarmrule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAlarmActions(value interface{})
 	PutCondition(value *CesAlarmruleCondition)
-	PutInsufficientdataActions(value interface{})
 	PutMetric(value *CesAlarmruleMetric)
 	PutOkActions(value interface{})
 	PutTimeouts(value *CesAlarmruleTimeouts)
@@ -128,7 +125,6 @@ type CesAlarmrule interface {
 	ResetAlarmEnabled()
 	ResetAlarmLevel()
 	ResetId()
-	ResetInsufficientdataActions()
 	ResetOkActions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -394,26 +390,6 @@ func (j *jsiiProxy_CesAlarmrule) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CesAlarmrule) InsufficientdataActions() CesAlarmruleInsufficientdataActionsList {
-	var returns CesAlarmruleInsufficientdataActionsList
-	_jsii_.Get(
-		j,
-		"insufficientdataActions",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CesAlarmrule) InsufficientdataActionsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"insufficientdataActionsInput",
 		&returns,
 	)
 	return returns
@@ -980,17 +956,6 @@ func (c *jsiiProxy_CesAlarmrule) PutCondition(value *CesAlarmruleCondition) {
 	)
 }
 
-func (c *jsiiProxy_CesAlarmrule) PutInsufficientdataActions(value interface{}) {
-	if err := c.validatePutInsufficientdataActionsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putInsufficientdataActions",
-		[]interface{}{value},
-	)
-}
-
 func (c *jsiiProxy_CesAlarmrule) PutMetric(value *CesAlarmruleMetric) {
 	if err := c.validatePutMetricParameters(value); err != nil {
 		panic(err)
@@ -1068,14 +1033,6 @@ func (c *jsiiProxy_CesAlarmrule) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CesAlarmrule) ResetInsufficientdataActions() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetInsufficientdataActions",
 		nil, // no parameters
 	)
 }
