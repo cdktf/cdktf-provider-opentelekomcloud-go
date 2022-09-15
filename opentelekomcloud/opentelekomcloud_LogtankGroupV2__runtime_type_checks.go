@@ -224,6 +224,14 @@ func (j *jsiiProxy_LogtankGroupV2) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_LogtankGroupV2) validateSetTtlInDaysParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewLogtankGroupV2Parameters(scope constructs.Construct, id *string, config *LogtankGroupV2Config) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

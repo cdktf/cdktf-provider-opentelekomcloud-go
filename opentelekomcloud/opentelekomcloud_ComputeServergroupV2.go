@@ -104,7 +104,6 @@ type ComputeServergroupV2 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPolicies()
 	ResetRegion()
 	ResetValueSpecs()
 	SynthesizeAttributes() *map[string]interface{}
@@ -782,14 +781,6 @@ func (c *jsiiProxy_ComputeServergroupV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeServergroupV2) ResetPolicies() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetPolicies",
 		nil, // no parameters
 	)
 }

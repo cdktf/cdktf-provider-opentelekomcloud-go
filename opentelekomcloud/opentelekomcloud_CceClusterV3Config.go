@@ -67,6 +67,8 @@ type CceClusterV3Config struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#ignore_addons CceClusterV3#ignore_addons}.
 	IgnoreAddons interface{} `field:"optional" json:"ignoreAddons" yaml:"ignoreAddons"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#kube_proxy_mode CceClusterV3#kube_proxy_mode}.
+	KubeProxyMode *string `field:"optional" json:"kubeProxyMode" yaml:"kubeProxyMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#kubernetes_svc_ip_range CceClusterV3#kubernetes_svc_ip_range}.
 	KubernetesSvcIpRange *string `field:"optional" json:"kubernetesSvcIpRange" yaml:"kubernetesSvcIpRange"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#labels CceClusterV3#labels}.

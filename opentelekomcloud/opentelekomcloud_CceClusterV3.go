@@ -97,6 +97,8 @@ type CceClusterV3 interface {
 	InstalledAddons() *[]*string
 	Internal() *string
 	KubeProxyMode() *string
+	SetKubeProxyMode(val *string)
+	KubeProxyModeInput() *string
 	KubernetesSvcIpRange() *string
 	SetKubernetesSvcIpRange(val *string)
 	KubernetesSvcIpRangeInput() *string
@@ -190,6 +192,7 @@ type CceClusterV3 interface {
 	ResetHighwaySubnetId()
 	ResetId()
 	ResetIgnoreAddons()
+	ResetKubeProxyMode()
 	ResetKubernetesSvcIpRange()
 	ResetLabels()
 	ResetMultiAz()
@@ -719,6 +722,16 @@ func (j *jsiiProxy_CceClusterV3) KubeProxyMode() *string {
 	_jsii_.Get(
 		j,
 		"kubeProxyMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) KubeProxyModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kubeProxyModeInput",
 		&returns,
 	)
 	return returns
@@ -1266,6 +1279,17 @@ func (j *jsiiProxy_CceClusterV3)SetIgnoreAddons(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_CceClusterV3)SetKubeProxyMode(val *string) {
+	if err := j.validateSetKubeProxyModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kubeProxyMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CceClusterV3)SetKubernetesSvcIpRange(val *string) {
 	if err := j.validateSetKubernetesSvcIpRangeParameters(val); err != nil {
 		panic(err)
@@ -1750,6 +1774,14 @@ func (c *jsiiProxy_CceClusterV3) ResetIgnoreAddons() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIgnoreAddons",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetKubeProxyMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKubeProxyMode",
 		nil, // no parameters
 	)
 }

@@ -66,6 +66,8 @@ type LogtankGroupV2 interface {
 	// Experimental.
 	TerraformResourceType() *string
 	TtlInDays() *float64
+	SetTtlInDays(val *float64)
+	TtlInDaysInput() *float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -95,6 +97,7 @@ type LogtankGroupV2 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTtlInDays()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -320,6 +323,16 @@ func (j *jsiiProxy_LogtankGroupV2) TtlInDays() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_LogtankGroupV2) TtlInDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ttlInDaysInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_group_v2 opentelekomcloud_logtank_group_v2} Resource.
 func NewLogtankGroupV2(scope constructs.Construct, id *string, config *LogtankGroupV2Config) LogtankGroupV2 {
@@ -433,6 +446,17 @@ func (j *jsiiProxy_LogtankGroupV2)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogtankGroupV2)SetTtlInDays(val *float64) {
+	if err := j.validateSetTtlInDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ttlInDays",
 		val,
 	)
 }
@@ -677,6 +701,14 @@ func (l *jsiiProxy_LogtankGroupV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogtankGroupV2) ResetTtlInDays() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTtlInDays",
 		nil, // no parameters
 	)
 }
