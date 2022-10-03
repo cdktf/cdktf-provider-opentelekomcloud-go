@@ -1,9 +1,9 @@
-module github.com/hashicorp/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v2
+module github.com/hashicorp/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v3
 
 go 1.16
 
 require (
 	github.com/aws/jsii-runtime-go v1.69.0
-	github.com/hashicorp/terraform-cdk-go/cdktf v0.12.3
+	github.com/hashicorp/terraform-cdk-go/cdktf v0.13.0
 	github.com/aws/constructs-go/constructs/v10 v10.1.120
 )
