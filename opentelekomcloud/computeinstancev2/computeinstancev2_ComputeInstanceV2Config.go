@@ -68,6 +68,8 @@ type ComputeInstanceV2Config struct {
 	SchedulerHints interface{} `field:"optional" json:"schedulerHints" yaml:"schedulerHints"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#security_groups ComputeInstanceV2#security_groups}.
 	SecurityGroups *[]*string `field:"optional" json:"securityGroups" yaml:"securityGroups"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#ssh_private_key_path ComputeInstanceV2#ssh_private_key_path}.
+	SshPrivateKeyPath *string `field:"optional" json:"sshPrivateKeyPath" yaml:"sshPrivateKeyPath"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#stop_before_destroy ComputeInstanceV2#stop_before_destroy}.
 	StopBeforeDestroy interface{} `field:"optional" json:"stopBeforeDestroy" yaml:"stopBeforeDestroy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#tags ComputeInstanceV2#tags}.

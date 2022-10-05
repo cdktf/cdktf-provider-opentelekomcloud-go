@@ -36,6 +36,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enableWhitelist", GoGetter: "EnableWhitelist"},
+			_jsii_.MemberProperty{JsiiProperty: "enableWhitelistInput", GoGetter: "EnableWhitelistInput"},
 			_jsii_.MemberProperty{JsiiProperty: "engine", GoGetter: "Engine"},
 			_jsii_.MemberProperty{JsiiProperty: "engineInput", GoGetter: "EngineInput"},
 			_jsii_.MemberProperty{JsiiProperty: "engineVersion", GoGetter: "EngineVersion"},
@@ -80,6 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putBackupPolicy", GoMethod: "PutBackupPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putConfiguration", GoMethod: "PutConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "putWhitelist", GoMethod: "PutWhitelist"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessUser", GoMethod: "ResetAccessUser"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupAt", GoMethod: "ResetBackupAt"},
@@ -88,13 +91,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBeginAt", GoMethod: "ResetBeginAt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfiguration", GoMethod: "ResetConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableWhitelist", GoMethod: "ResetEnableWhitelist"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaintainBegin", GoMethod: "ResetMaintainBegin"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaintainEnd", GoMethod: "ResetMaintainEnd"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPeriodType", GoMethod: "ResetPeriodType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSaveDays", GoMethod: "ResetSaveDays"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecurityGroupId", GoMethod: "ResetSecurityGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWhitelist", GoMethod: "ResetWhitelist"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceSpecCode", GoGetter: "ResourceSpecCode"},
 			_jsii_.MemberProperty{JsiiProperty: "saveDays", GoGetter: "SaveDays"},
 			_jsii_.MemberProperty{JsiiProperty: "saveDaysInput", GoGetter: "SaveDaysInput"},
@@ -120,6 +126,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcName", GoGetter: "VpcName"},
+			_jsii_.MemberProperty{JsiiProperty: "whitelist", GoGetter: "Whitelist"},
+			_jsii_.MemberProperty{JsiiProperty: "whitelistInput", GoGetter: "WhitelistInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DcsInstanceV1{}
@@ -283,6 +291,67 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DcsInstanceV1TimeoutsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1Whitelist",
+		reflect.TypeOf((*DcsInstanceV1Whitelist)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistList",
+		reflect.TypeOf((*DcsInstanceV1WhitelistList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DcsInstanceV1WhitelistList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistOutputReference",
+		reflect.TypeOf((*DcsInstanceV1WhitelistOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "groupName", GoGetter: "GroupName"},
+			_jsii_.MemberProperty{JsiiProperty: "groupNameInput", GoGetter: "GroupNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "ipList", GoGetter: "IpList"},
+			_jsii_.MemberProperty{JsiiProperty: "ipListInput", GoGetter: "IpListInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DcsInstanceV1WhitelistOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

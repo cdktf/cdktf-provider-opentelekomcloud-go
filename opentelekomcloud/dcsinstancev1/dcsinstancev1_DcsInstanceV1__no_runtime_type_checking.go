@@ -65,6 +65,10 @@ func (d *jsiiProxy_DcsInstanceV1) validatePutTimeoutsParameters(value *DcsInstan
 	return nil
 }
 
+func (d *jsiiProxy_DcsInstanceV1) validatePutWhitelistParameters(value interface{}) error {
+	return nil
+}
+
 func validateDcsInstanceV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -98,6 +102,10 @@ func (j *jsiiProxy_DcsInstanceV1) validateSetConnectionParameters(val interface{
 }
 
 func (j *jsiiProxy_DcsInstanceV1) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DcsInstanceV1) validateSetEnableWhitelistParameters(val interface{}) error {
 	return nil
 }
 

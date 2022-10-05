@@ -54,6 +54,9 @@ type DcsInstanceV1 interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnableWhitelist() interface{}
+	SetEnableWhitelist(val interface{})
+	EnableWhitelistInput() interface{}
 	Engine() *string
 	SetEngine(val *string)
 	EngineInput() *string
@@ -138,6 +141,8 @@ type DcsInstanceV1 interface {
 	SetVpcId(val *string)
 	VpcIdInput() *string
 	VpcName() *string
+	Whitelist() DcsInstanceV1WhitelistList
+	WhitelistInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -166,6 +171,7 @@ type DcsInstanceV1 interface {
 	PutBackupPolicy(value *DcsInstanceV1BackupPolicy)
 	PutConfiguration(value interface{})
 	PutTimeouts(value *DcsInstanceV1Timeouts)
+	PutWhitelist(value interface{})
 	ResetAccessUser()
 	ResetBackupAt()
 	ResetBackupPolicy()
@@ -173,6 +179,7 @@ type DcsInstanceV1 interface {
 	ResetBeginAt()
 	ResetConfiguration()
 	ResetDescription()
+	ResetEnableWhitelist()
 	ResetId()
 	ResetMaintainBegin()
 	ResetMaintainEnd()
@@ -181,7 +188,9 @@ type DcsInstanceV1 interface {
 	ResetOverrideLogicalId()
 	ResetPeriodType()
 	ResetSaveDays()
+	ResetSecurityGroupId()
 	ResetTimeouts()
+	ResetWhitelist()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -432,6 +441,26 @@ func (j *jsiiProxy_DcsInstanceV1) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DcsInstanceV1) EnableWhitelist() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableWhitelist",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DcsInstanceV1) EnableWhitelistInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableWhitelistInput",
 		&returns,
 	)
 	return returns
@@ -957,6 +986,26 @@ func (j *jsiiProxy_DcsInstanceV1) VpcName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DcsInstanceV1) Whitelist() DcsInstanceV1WhitelistList {
+	var returns DcsInstanceV1WhitelistList
+	_jsii_.Get(
+		j,
+		"whitelist",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DcsInstanceV1) WhitelistInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"whitelistInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1 opentelekomcloud_dcs_instance_v1} Resource.
 func NewDcsInstanceV1(scope constructs.Construct, id *string, config *DcsInstanceV1Config) DcsInstanceV1 {
@@ -1087,6 +1136,17 @@ func (j *jsiiProxy_DcsInstanceV1)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DcsInstanceV1)SetEnableWhitelist(val interface{}) {
+	if err := j.validateSetEnableWhitelistParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableWhitelist",
 		val,
 	)
 }
@@ -1533,6 +1593,17 @@ func (d *jsiiProxy_DcsInstanceV1) PutTimeouts(value *DcsInstanceV1Timeouts) {
 	)
 }
 
+func (d *jsiiProxy_DcsInstanceV1) PutWhitelist(value interface{}) {
+	if err := d.validatePutWhitelistParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putWhitelist",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DcsInstanceV1) ResetAccessUser() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1589,6 +1660,14 @@ func (d *jsiiProxy_DcsInstanceV1) ResetDescription() {
 	)
 }
 
+func (d *jsiiProxy_DcsInstanceV1) ResetEnableWhitelist() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnableWhitelist",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DcsInstanceV1) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1637,10 +1716,26 @@ func (d *jsiiProxy_DcsInstanceV1) ResetSaveDays() {
 	)
 }
 
+func (d *jsiiProxy_DcsInstanceV1) ResetSecurityGroupId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecurityGroupId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DcsInstanceV1) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DcsInstanceV1) ResetWhitelist() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWhitelist",
 		nil, // no parameters
 	)
 }

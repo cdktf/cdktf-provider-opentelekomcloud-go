@@ -32,6 +32,8 @@ type DataOpentelekomcloudComputeInstanceV2Config struct {
 	Network interface{} `field:"optional" json:"network" yaml:"network"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_instance_v2#region DataOpentelekomcloudComputeInstanceV2#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_instance_v2#ssh_private_key_path DataOpentelekomcloudComputeInstanceV2#ssh_private_key_path}.
+	SshPrivateKeyPath *string `field:"optional" json:"sshPrivateKeyPath" yaml:"sshPrivateKeyPath"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_instance_v2#tags DataOpentelekomcloudComputeInstanceV2#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_instance_v2#user_data DataOpentelekomcloudComputeInstanceV2#user_data}.

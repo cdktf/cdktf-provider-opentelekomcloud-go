@@ -33,8 +33,6 @@ type DcsInstanceV1Config struct {
 	Password *string `field:"required" json:"password" yaml:"password"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#product_id DcsInstanceV1#product_id}.
 	ProductId *string `field:"required" json:"productId" yaml:"productId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#security_group_id DcsInstanceV1#security_group_id}.
-	SecurityGroupId *string `field:"required" json:"securityGroupId" yaml:"securityGroupId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#subnet_id DcsInstanceV1#subnet_id}.
 	SubnetId *string `field:"required" json:"subnetId" yaml:"subnetId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#vpc_id DcsInstanceV1#vpc_id}.
@@ -57,6 +55,8 @@ type DcsInstanceV1Config struct {
 	Configuration interface{} `field:"optional" json:"configuration" yaml:"configuration"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#description DcsInstanceV1#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#enable_whitelist DcsInstanceV1#enable_whitelist}.
+	EnableWhitelist interface{} `field:"optional" json:"enableWhitelist" yaml:"enableWhitelist"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#id DcsInstanceV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -70,9 +70,15 @@ type DcsInstanceV1Config struct {
 	PeriodType *string `field:"optional" json:"periodType" yaml:"periodType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#save_days DcsInstanceV1#save_days}.
 	SaveDays *float64 `field:"optional" json:"saveDays" yaml:"saveDays"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#security_group_id DcsInstanceV1#security_group_id}.
+	SecurityGroupId *string `field:"optional" json:"securityGroupId" yaml:"securityGroupId"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#timeouts DcsInstanceV1#timeouts}
 	Timeouts *DcsInstanceV1Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// whitelist block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#whitelist DcsInstanceV1#whitelist}
+	Whitelist interface{} `field:"optional" json:"whitelist" yaml:"whitelist"`
 }
 

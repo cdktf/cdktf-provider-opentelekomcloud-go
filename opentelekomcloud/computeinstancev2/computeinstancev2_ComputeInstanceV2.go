@@ -49,6 +49,7 @@ type ComputeInstanceV2 interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptedPassword() *string
 	FlavorId() *string
 	SetFlavorId(val *string)
 	FlavorIdInput() *string
@@ -89,6 +90,7 @@ type ComputeInstanceV2 interface {
 	NetworkInput() interface{}
 	// The tree node.
 	Node() constructs.Node
+	Password() *string
 	PowerState() *string
 	SetPowerState(val *string)
 	PowerStateInput() *string
@@ -110,6 +112,9 @@ type ComputeInstanceV2 interface {
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
+	SshPrivateKeyPath() *string
+	SetSshPrivateKeyPath(val *string)
+	SshPrivateKeyPathInput() *string
 	StopBeforeDestroy() interface{}
 	SetStopBeforeDestroy(val interface{})
 	StopBeforeDestroyInput() interface{}
@@ -179,6 +184,7 @@ type ComputeInstanceV2 interface {
 	ResetRegion()
 	ResetSchedulerHints()
 	ResetSecurityGroups()
+	ResetSshPrivateKeyPath()
 	ResetStopBeforeDestroy()
 	ResetTags()
 	ResetTimeouts()
@@ -393,6 +399,16 @@ func (j *jsiiProxy_ComputeInstanceV2) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceV2) EncryptedPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptedPassword",
 		&returns,
 	)
 	return returns
@@ -628,6 +644,16 @@ func (j *jsiiProxy_ComputeInstanceV2) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceV2) Password() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"password",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceV2) PowerState() *string {
 	var returns *string
 	_jsii_.Get(
@@ -733,6 +759,26 @@ func (j *jsiiProxy_ComputeInstanceV2) SecurityGroupsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"securityGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceV2) SshPrivateKeyPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sshPrivateKeyPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceV2) SshPrivateKeyPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sshPrivateKeyPathInput",
 		&returns,
 	)
 	return returns
@@ -1136,6 +1182,17 @@ func (j *jsiiProxy_ComputeInstanceV2)SetSecurityGroups(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"securityGroups",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceV2)SetSshPrivateKeyPath(val *string) {
+	if err := j.validateSetSshPrivateKeyPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sshPrivateKeyPath",
 		val,
 	)
 }
@@ -1601,6 +1658,14 @@ func (c *jsiiProxy_ComputeInstanceV2) ResetSecurityGroups() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSecurityGroups",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceV2) ResetSshPrivateKeyPath() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSshPrivateKeyPath",
 		nil, // no parameters
 	)
 }

@@ -471,6 +471,14 @@ func (j *jsiiProxy_ComputeInstanceV2) validateSetSecurityGroupsParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceV2) validateSetSshPrivateKeyPathParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceV2) validateSetStopBeforeDestroyParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

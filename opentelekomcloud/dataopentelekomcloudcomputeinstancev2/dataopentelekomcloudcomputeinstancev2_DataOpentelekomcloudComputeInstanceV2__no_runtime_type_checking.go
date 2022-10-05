@@ -77,6 +77,10 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) validateSetRegionParam
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) validateSetSshPrivateKeyPathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

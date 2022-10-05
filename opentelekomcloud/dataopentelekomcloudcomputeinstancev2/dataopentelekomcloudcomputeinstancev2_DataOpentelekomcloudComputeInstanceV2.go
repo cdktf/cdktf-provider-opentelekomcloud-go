@@ -14,6 +14,7 @@ type DataOpentelekomcloudComputeInstanceV2 interface {
 	cdktf.TerraformDataSource
 	AccessIpV4() *string
 	AccessIpV6() *string
+	AdminPass() *string
 	AvailabilityZone() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -27,6 +28,7 @@ type DataOpentelekomcloudComputeInstanceV2 interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptedPassword() *string
 	FlavorId() *string
 	FlavorName() *string
 	// Experimental.
@@ -55,6 +57,7 @@ type DataOpentelekomcloudComputeInstanceV2 interface {
 	NetworkInput() interface{}
 	// The tree node.
 	Node() constructs.Node
+	Password() *string
 	PowerState() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -66,6 +69,9 @@ type DataOpentelekomcloudComputeInstanceV2 interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	SecurityGroups() *[]*string
+	SshPrivateKeyPath() *string
+	SetSshPrivateKeyPath(val *string)
+	SshPrivateKeyPathInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -111,6 +117,7 @@ type DataOpentelekomcloudComputeInstanceV2 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetSshPrivateKeyPath()
 	ResetTags()
 	ResetUserData()
 	SynthesizeAttributes() *map[string]interface{}
@@ -143,6 +150,16 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) AccessIpV6() *string {
 	_jsii_.Get(
 		j,
 		"accessIpV6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) AdminPass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"adminPass",
 		&returns,
 	)
 	return returns
@@ -193,6 +210,16 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) DependsOn() *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) EncryptedPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptedPassword",
 		&returns,
 	)
 	return returns
@@ -368,6 +395,16 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) Node() constructs.Node
 	return returns
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) Password() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"password",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) PowerState() *string {
 	var returns *string
 	_jsii_.Get(
@@ -423,6 +460,26 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) SecurityGroups() *[]*s
 	_jsii_.Get(
 		j,
 		"securityGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) SshPrivateKeyPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sshPrivateKeyPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) SshPrivateKeyPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sshPrivateKeyPathInput",
 		&returns,
 	)
 	return returns
@@ -600,6 +657,17 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2)SetRegion(val *string) 
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2)SetSshPrivateKeyPath(val *string) {
+	if err := j.validateSetSshPrivateKeyPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sshPrivateKeyPath",
 		val,
 	)
 }
@@ -901,6 +969,14 @@ func (d *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) ResetSshPrivateKeyPath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSshPrivateKeyPath",
 		nil, // no parameters
 	)
 }

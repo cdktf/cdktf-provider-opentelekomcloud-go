@@ -153,6 +153,10 @@ func (j *jsiiProxy_ComputeInstanceV2) validateSetSecurityGroupsParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceV2) validateSetSshPrivateKeyPathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceV2) validateSetStopBeforeDestroyParameters(val interface{}) error {
 	return nil
 }
