@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package vpceipv1
 
@@ -90,6 +89,10 @@ func (j *jsiiProxy_VpcEipV1) validateSetRegionParameters(val *string) error {
 }
 
 func (j *jsiiProxy_VpcEipV1) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VpcEipV1) validateSetUnbindPortParameters(val interface{}) error {
 	return nil
 }
 

@@ -73,6 +73,9 @@ type VpcEipV1 interface {
 	TerraformResourceType() *string
 	Timeouts() VpcEipV1TimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UnbindPort() interface{}
+	SetUnbindPort(val interface{})
+	UnbindPortInput() interface{}
 	ValueSpecs() *map[string]*string
 	SetValueSpecs(val *map[string]*string)
 	ValueSpecsInput() *map[string]*string
@@ -111,6 +114,7 @@ type VpcEipV1 interface {
 	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
+	ResetUnbindPort()
 	ResetValueSpecs()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -407,6 +411,26 @@ func (j *jsiiProxy_VpcEipV1) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcEipV1) UnbindPort() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unbindPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcEipV1) UnbindPortInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unbindPortInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcEipV1) ValueSpecs() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -551,6 +575,17 @@ func (j *jsiiProxy_VpcEipV1)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcEipV1)SetUnbindPort(val interface{}) {
+	if err := j.validateSetUnbindPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unbindPort",
 		val,
 	)
 }
@@ -863,6 +898,14 @@ func (v *jsiiProxy_VpcEipV1) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcEipV1) ResetUnbindPort() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetUnbindPort",
 		nil, // no parameters
 	)
 }
