@@ -152,6 +152,22 @@ func validateCssSnapshotConfigurationV1_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateCssSnapshotConfigurationV1_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateCssSnapshotConfigurationV1_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CssSnapshotConfigurationV1) validateSetAutomaticParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

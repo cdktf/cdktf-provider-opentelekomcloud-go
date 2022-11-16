@@ -64,6 +64,14 @@ func validateVpcepServiceV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpcepServiceV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcepServiceV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcepServiceV1) validateSetApprovalEnabledParameters(val interface{}) error {
 	return nil
 }

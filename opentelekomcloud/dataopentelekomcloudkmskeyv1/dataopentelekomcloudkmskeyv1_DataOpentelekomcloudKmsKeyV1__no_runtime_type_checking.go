@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudKmsKeyV1_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataOpentelekomcloudKmsKeyV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudKmsKeyV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) validateSetDefaultKeyFlagParameters(val *string) error {
 	return nil
 }

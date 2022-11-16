@@ -60,6 +60,14 @@ func validateVpcepEndpointV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpcepEndpointV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcepEndpointV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcepEndpointV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateWafPolicyV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafPolicyV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafPolicyV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafPolicyV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

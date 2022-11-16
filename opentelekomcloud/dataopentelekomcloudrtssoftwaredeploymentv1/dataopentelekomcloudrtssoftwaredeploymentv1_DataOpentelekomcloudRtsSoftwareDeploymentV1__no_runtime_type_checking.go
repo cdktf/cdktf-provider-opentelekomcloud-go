@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudRtsSoftwareDeploymentV1_IsConstructParameters(x
 	return nil
 }
 
+func validateDataOpentelekomcloudRtsSoftwareDeploymentV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudRtsSoftwareDeploymentV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudRtsSoftwareDeploymentV1) validateSetActionParameters(val *string) error {
 	return nil
 }

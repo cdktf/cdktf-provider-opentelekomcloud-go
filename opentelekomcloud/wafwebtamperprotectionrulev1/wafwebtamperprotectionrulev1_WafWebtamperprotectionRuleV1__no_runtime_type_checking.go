@@ -60,6 +60,14 @@ func validateWafWebtamperprotectionRuleV1_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateWafWebtamperprotectionRuleV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafWebtamperprotectionRuleV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafWebtamperprotectionRuleV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

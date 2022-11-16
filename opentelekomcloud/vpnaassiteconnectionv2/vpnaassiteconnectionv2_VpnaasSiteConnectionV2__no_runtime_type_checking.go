@@ -64,6 +64,14 @@ func validateVpnaasSiteConnectionV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpnaasSiteConnectionV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpnaasSiteConnectionV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnaasSiteConnectionV2) validateSetAdminStateUpParameters(val interface{}) error {
 	return nil
 }

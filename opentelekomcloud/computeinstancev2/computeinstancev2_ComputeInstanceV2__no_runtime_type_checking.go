@@ -72,6 +72,14 @@ func validateComputeInstanceV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeInstanceV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeInstanceV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceV2) validateSetAccessIpV4Parameters(val *string) error {
 	return nil
 }

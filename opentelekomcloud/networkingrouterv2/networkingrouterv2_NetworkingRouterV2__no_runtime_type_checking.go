@@ -60,6 +60,14 @@ func validateNetworkingRouterV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNetworkingRouterV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkingRouterV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkingRouterV2) validateSetAdminStateUpParameters(val interface{}) error {
 	return nil
 }

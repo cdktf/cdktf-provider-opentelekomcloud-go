@@ -72,6 +72,14 @@ func validateDcsInstanceV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDcsInstanceV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDcsInstanceV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DcsInstanceV1) validateSetAccessUserParameters(val *string) error {
 	return nil
 }

@@ -119,6 +119,22 @@ func validateDataOpentelekomcloudNetworkingSecgroupV2_IsConstructParameters(x in
 	return nil
 }
 
+func validateDataOpentelekomcloudNetworkingSecgroupV2_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataOpentelekomcloudNetworkingSecgroupV2_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

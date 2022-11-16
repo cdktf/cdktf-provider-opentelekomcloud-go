@@ -60,6 +60,14 @@ func validateAntiddosV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAntiddosV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAntiddosV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AntiddosV1) validateSetAppTypeIdParameters(val *float64) error {
 	return nil
 }

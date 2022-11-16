@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudRdsVersionsV3_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataOpentelekomcloudRdsVersionsV3_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudRdsVersionsV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudRdsVersionsV3) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

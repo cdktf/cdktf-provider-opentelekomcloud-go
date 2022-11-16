@@ -60,6 +60,14 @@ func validateWafWhiteblackipRuleV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafWhiteblackipRuleV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafWhiteblackipRuleV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafWhiteblackipRuleV1) validateSetAddrParameters(val *string) error {
 	return nil
 }

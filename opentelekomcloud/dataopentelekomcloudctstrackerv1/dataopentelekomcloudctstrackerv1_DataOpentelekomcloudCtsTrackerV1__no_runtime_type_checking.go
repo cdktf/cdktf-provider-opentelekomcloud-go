@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudCtsTrackerV1_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataOpentelekomcloudCtsTrackerV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudCtsTrackerV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetBucketNameParameters(val *string) error {
 	return nil
 }

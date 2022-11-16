@@ -60,6 +60,14 @@ func validateBlockstorageVolumeV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBlockstorageVolumeV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBlockstorageVolumeV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BlockstorageVolumeV2) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

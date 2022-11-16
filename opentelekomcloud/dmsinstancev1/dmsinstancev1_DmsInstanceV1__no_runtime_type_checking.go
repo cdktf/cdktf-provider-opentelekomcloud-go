@@ -56,6 +56,14 @@ func validateDmsInstanceV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDmsInstanceV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDmsInstanceV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsInstanceV1) validateSetAccessUserParameters(val *string) error {
 	return nil
 }

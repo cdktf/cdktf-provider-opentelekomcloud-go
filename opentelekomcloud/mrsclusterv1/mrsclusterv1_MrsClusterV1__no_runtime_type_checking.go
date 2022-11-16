@@ -72,6 +72,14 @@ func validateMrsClusterV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMrsClusterV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMrsClusterV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MrsClusterV1) validateSetAvailableZoneIdParameters(val *string) error {
 	return nil
 }

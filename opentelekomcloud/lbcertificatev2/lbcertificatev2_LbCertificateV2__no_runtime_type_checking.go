@@ -60,6 +60,14 @@ func validateLbCertificateV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbCertificateV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbCertificateV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbCertificateV2) validateSetCertificateParameters(val *string) error {
 	return nil
 }

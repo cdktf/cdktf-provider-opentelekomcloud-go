@@ -60,6 +60,14 @@ func validateFwPolicyV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFwPolicyV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFwPolicyV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FwPolicyV2) validateSetAuditedParameters(val interface{}) error {
 	return nil
 }

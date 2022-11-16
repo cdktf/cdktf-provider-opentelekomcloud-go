@@ -60,6 +60,14 @@ func validateVbsBackupShareV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVbsBackupShareV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVbsBackupShareV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VbsBackupShareV2) validateSetBackupIdParameters(val *string) error {
 	return nil
 }

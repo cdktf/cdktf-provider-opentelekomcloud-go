@@ -56,6 +56,14 @@ func validateNetworkingVipV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNetworkingVipV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkingVipV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkingVipV2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

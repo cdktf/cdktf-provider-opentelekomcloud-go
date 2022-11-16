@@ -68,6 +68,14 @@ func validateComputeBmsServerV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeBmsServerV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeBmsServerV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBmsServerV2) validateSetAdminPassParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudDcsMaintainwindowV1_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataOpentelekomcloudDcsMaintainwindowV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudDcsMaintainwindowV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudDcsMaintainwindowV1) validateSetBeginParameters(val *string) error {
 	return nil
 }

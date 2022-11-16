@@ -60,6 +60,14 @@ func validateVpcV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpcV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcV1) validateSetCidrParameters(val *string) error {
 	return nil
 }

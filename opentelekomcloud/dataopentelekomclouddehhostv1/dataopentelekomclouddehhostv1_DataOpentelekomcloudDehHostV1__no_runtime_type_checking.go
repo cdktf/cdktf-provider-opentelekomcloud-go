@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudDehHostV1_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataOpentelekomcloudDehHostV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudDehHostV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudDehHostV1) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

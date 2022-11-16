@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudVpcBandwidth_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataOpentelekomcloudVpcBandwidth_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudVpcBandwidth_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidth) validateSetEnterpriseProjectIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateLbMonitorV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbMonitorV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbMonitorV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbMonitorV2) validateSetAdminStateUpParameters(val interface{}) error {
 	return nil
 }

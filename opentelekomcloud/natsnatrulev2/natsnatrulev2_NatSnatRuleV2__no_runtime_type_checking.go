@@ -60,6 +60,14 @@ func validateNatSnatRuleV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNatSnatRuleV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNatSnatRuleV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NatSnatRuleV2) validateSetCidrParameters(val *string) error {
 	return nil
 }

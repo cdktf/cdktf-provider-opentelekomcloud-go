@@ -68,6 +68,14 @@ func validateNetworkingSubnetV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNetworkingSubnetV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkingSubnetV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkingSubnetV2) validateSetCidrParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateWafCcattackprotectionRuleV1_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateWafCcattackprotectionRuleV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafCcattackprotectionRuleV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafCcattackprotectionRuleV1) validateSetActionCategoryParameters(val *string) error {
 	return nil
 }

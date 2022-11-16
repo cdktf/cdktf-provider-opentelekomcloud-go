@@ -68,6 +68,14 @@ func validateCssClusterV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCssClusterV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCssClusterV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CssClusterV1) validateSetAdminPassParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateLbL7RuleV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbL7RuleV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbL7RuleV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbL7RuleV2) validateSetAdminStateUpParameters(val interface{}) error {
 	return nil
 }

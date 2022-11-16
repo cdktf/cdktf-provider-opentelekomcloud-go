@@ -68,6 +68,14 @@ func validateCssSnapshotConfigurationV1_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateCssSnapshotConfigurationV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCssSnapshotConfigurationV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CssSnapshotConfigurationV1) validateSetAutomaticParameters(val interface{}) error {
 	return nil
 }

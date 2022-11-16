@@ -60,6 +60,14 @@ func validateFwFirewallGroupV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFwFirewallGroupV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFwFirewallGroupV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FwFirewallGroupV2) validateSetAdminStateUpParameters(val interface{}) error {
 	return nil
 }

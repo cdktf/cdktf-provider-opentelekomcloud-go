@@ -56,6 +56,14 @@ func validateLbMemberV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbMemberV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbMemberV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbMemberV3) validateSetAddressParameters(val *string) error {
 	return nil
 }

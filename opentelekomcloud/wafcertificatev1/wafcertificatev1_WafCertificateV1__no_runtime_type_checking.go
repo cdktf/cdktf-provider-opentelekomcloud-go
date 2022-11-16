@@ -60,6 +60,14 @@ func validateWafCertificateV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafCertificateV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafCertificateV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafCertificateV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

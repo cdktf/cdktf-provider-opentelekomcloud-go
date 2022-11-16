@@ -60,6 +60,14 @@ func validateSfsShareAccessRulesV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSfsShareAccessRulesV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSfsShareAccessRulesV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfsShareAccessRulesV2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

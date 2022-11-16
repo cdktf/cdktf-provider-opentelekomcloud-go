@@ -60,6 +60,14 @@ func validateSfsFileSystemV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSfsFileSystemV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSfsFileSystemV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfsFileSystemV2) validateSetAccessLevelParameters(val *string) error {
 	return nil
 }

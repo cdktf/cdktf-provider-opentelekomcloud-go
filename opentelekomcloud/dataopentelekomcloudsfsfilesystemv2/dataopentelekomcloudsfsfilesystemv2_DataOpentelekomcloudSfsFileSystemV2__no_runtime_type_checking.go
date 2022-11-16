@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudSfsFileSystemV2_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataOpentelekomcloudSfsFileSystemV2_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudSfsFileSystemV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudSfsFileSystemV2) validateSetIdParameters(val *string) error {
 	return nil
 }

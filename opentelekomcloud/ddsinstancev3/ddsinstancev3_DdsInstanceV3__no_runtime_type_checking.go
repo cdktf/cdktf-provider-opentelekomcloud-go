@@ -72,6 +72,14 @@ func validateDdsInstanceV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDdsInstanceV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDdsInstanceV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DdsInstanceV3) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

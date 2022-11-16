@@ -76,6 +76,14 @@ func validateCesAlarmrule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCesAlarmrule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCesAlarmrule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CesAlarmrule) validateSetAlarmActionEnabledParameters(val interface{}) error {
 	return nil
 }

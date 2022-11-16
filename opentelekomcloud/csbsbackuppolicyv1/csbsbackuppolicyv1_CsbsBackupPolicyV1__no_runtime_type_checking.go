@@ -72,6 +72,14 @@ func validateCsbsBackupPolicyV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCsbsBackupPolicyV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCsbsBackupPolicyV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CsbsBackupPolicyV1) validateSetCommonParameters(val *map[string]*string) error {
 	return nil
 }

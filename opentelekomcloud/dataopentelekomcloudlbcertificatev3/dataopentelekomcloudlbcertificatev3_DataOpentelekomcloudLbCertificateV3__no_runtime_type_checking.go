@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudLbCertificateV3_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataOpentelekomcloudLbCertificateV3_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudLbCertificateV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudLbCertificateV3) validateSetDomainParameters(val *string) error {
 	return nil
 }

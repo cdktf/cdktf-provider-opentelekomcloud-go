@@ -60,6 +60,14 @@ func validateSdrsProtectiongroupV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSdrsProtectiongroupV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSdrsProtectiongroupV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SdrsProtectiongroupV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

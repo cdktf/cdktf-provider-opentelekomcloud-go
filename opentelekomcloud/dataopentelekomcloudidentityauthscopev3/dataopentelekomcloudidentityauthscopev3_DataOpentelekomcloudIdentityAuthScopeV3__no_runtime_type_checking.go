@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudIdentityAuthScopeV3_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataOpentelekomcloudIdentityAuthScopeV3_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudIdentityAuthScopeV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateComputeFloatingipAssociateV2_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateComputeFloatingipAssociateV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeFloatingipAssociateV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeFloatingipAssociateV2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

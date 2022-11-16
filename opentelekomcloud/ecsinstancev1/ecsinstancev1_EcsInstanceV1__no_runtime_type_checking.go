@@ -68,6 +68,14 @@ func validateEcsInstanceV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEcsInstanceV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEcsInstanceV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsInstanceV1) validateSetAutoRecoveryParameters(val interface{}) error {
 	return nil
 }

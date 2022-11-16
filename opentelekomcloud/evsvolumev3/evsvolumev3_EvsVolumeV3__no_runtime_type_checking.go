@@ -60,6 +60,14 @@ func validateEvsVolumeV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEvsVolumeV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEvsVolumeV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EvsVolumeV3) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

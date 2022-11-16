@@ -64,6 +64,14 @@ func validateWafPreciseprotectionRuleV1_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateWafPreciseprotectionRuleV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafPreciseprotectionRuleV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafPreciseprotectionRuleV1) validateSetActionCategoryParameters(val *string) error {
 	return nil
 }

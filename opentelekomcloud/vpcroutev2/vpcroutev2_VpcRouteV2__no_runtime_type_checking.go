@@ -60,6 +60,14 @@ func validateVpcRouteV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpcRouteV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcRouteV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcRouteV2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

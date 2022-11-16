@@ -60,6 +60,14 @@ func validateComputeBmsTagsV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeBmsTagsV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeBmsTagsV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBmsTagsV2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

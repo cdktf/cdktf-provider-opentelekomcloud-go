@@ -60,6 +60,14 @@ func validateSfsTurboShareV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSfsTurboShareV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSfsTurboShareV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfsTurboShareV1) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

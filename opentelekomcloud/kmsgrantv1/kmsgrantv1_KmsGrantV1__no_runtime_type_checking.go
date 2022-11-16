@@ -56,6 +56,14 @@ func validateKmsGrantV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmsGrantV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmsGrantV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsGrantV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

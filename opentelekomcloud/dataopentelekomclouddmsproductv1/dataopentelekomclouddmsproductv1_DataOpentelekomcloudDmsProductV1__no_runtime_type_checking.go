@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudDmsProductV1_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataOpentelekomcloudDmsProductV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudDmsProductV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) validateSetBandwidthParameters(val *string) error {
 	return nil
 }

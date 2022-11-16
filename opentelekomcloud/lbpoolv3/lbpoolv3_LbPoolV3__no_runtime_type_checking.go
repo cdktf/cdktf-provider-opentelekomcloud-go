@@ -60,6 +60,14 @@ func validateLbPoolV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbPoolV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbPoolV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbPoolV3) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

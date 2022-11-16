@@ -119,6 +119,22 @@ func validateDataOpentelekomcloudSfsFileSystemV2_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataOpentelekomcloudSfsFileSystemV2_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataOpentelekomcloudSfsFileSystemV2_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudSfsFileSystemV2) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -60,6 +60,14 @@ func validateVpcFlowLogV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpcFlowLogV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcFlowLogV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcFlowLogV1) validateSetAdminStateParameters(val interface{}) error {
 	return nil
 }

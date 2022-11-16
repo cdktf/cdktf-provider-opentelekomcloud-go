@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudCceClusterV3_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataOpentelekomcloudCceClusterV3_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudCceClusterV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3) validateSetClusterTypeParameters(val *string) error {
 	return nil
 }

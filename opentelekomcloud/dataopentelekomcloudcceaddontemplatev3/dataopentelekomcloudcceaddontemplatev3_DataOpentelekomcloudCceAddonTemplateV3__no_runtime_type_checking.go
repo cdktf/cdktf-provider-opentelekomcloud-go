@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudCceAddonTemplateV3_IsConstructParameters(x inte
 	return nil
 }
 
+func validateDataOpentelekomcloudCceAddonTemplateV3_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudCceAddonTemplateV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCceAddonTemplateV3) validateSetAddonNameParameters(val *string) error {
 	return nil
 }

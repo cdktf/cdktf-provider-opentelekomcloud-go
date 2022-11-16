@@ -56,6 +56,14 @@ func validateLbRuleV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbRuleV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbRuleV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbRuleV3) validateSetCompareTypeParameters(val *string) error {
 	return nil
 }

@@ -119,6 +119,22 @@ func validateImagesImageAccessAcceptV2_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateImagesImageAccessAcceptV2_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateImagesImageAccessAcceptV2_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ImagesImageAccessAcceptV2) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

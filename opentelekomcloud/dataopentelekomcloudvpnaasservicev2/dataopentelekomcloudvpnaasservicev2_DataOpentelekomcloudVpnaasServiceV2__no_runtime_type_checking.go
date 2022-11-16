@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudVpnaasServiceV2_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataOpentelekomcloudVpnaasServiceV2_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudVpnaasServiceV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpnaasServiceV2) validateSetAdminStateUpParameters(val interface{}) error {
 	return nil
 }

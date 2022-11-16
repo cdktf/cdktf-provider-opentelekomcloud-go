@@ -68,6 +68,14 @@ func validateCbrVaultV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCbrVaultV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCbrVaultV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CbrVaultV3) validateSetAutoBindParameters(val interface{}) error {
 	return nil
 }

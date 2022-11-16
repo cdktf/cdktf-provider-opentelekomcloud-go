@@ -119,6 +119,22 @@ func validateDataOpentelekomcloudComputeBmsServerV2_IsConstructParameters(x inte
 	return nil
 }
 
+func validateDataOpentelekomcloudComputeBmsServerV2_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataOpentelekomcloudComputeBmsServerV2_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2) validateSetFlavorIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

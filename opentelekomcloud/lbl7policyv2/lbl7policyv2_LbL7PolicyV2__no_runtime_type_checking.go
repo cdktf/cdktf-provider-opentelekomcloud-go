@@ -60,6 +60,14 @@ func validateLbL7PolicyV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbL7PolicyV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbL7PolicyV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbL7PolicyV2) validateSetActionParameters(val *string) error {
 	return nil
 }

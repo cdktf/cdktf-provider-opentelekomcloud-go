@@ -60,6 +60,14 @@ func validateCbrPolicyV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCbrPolicyV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCbrPolicyV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CbrPolicyV3) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

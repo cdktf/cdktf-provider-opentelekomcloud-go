@@ -60,6 +60,14 @@ func validateSwrDomainV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSwrDomainV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSwrDomainV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SwrDomainV2) validateSetAccessDomainParameters(val *string) error {
 	return nil
 }

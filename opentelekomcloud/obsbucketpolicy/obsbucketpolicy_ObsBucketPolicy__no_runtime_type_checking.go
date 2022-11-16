@@ -56,6 +56,14 @@ func validateObsBucketPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateObsBucketPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateObsBucketPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObsBucketPolicy) validateSetBucketParameters(val *string) error {
 	return nil
 }

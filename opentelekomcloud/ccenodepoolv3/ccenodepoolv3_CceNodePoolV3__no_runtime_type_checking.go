@@ -72,6 +72,14 @@ func validateCceNodePoolV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCceNodePoolV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCceNodePoolV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceNodePoolV3) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudComputeFlavorV2_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataOpentelekomcloudComputeFlavorV2_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudComputeFlavorV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudComputeFlavorV2) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

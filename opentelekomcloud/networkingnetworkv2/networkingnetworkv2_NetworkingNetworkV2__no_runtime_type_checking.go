@@ -64,6 +64,14 @@ func validateNetworkingNetworkV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNetworkingNetworkV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkingNetworkV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkingNetworkV2) validateSetAdminStateUpParameters(val *string) error {
 	return nil
 }

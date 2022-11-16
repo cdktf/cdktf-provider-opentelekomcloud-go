@@ -64,6 +64,14 @@ func validateCceAddonV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCceAddonV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCceAddonV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceAddonV3) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

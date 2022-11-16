@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudComputeBmsNicV2_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataOpentelekomcloudComputeBmsNicV2_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudComputeBmsNicV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2) validateSetIdParameters(val *string) error {
 	return nil
 }

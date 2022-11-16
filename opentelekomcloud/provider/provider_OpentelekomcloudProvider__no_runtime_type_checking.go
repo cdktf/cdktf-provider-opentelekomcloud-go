@@ -16,6 +16,14 @@ func validateOpentelekomcloudProvider_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateOpentelekomcloudProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpentelekomcloudProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpentelekomcloudProvider) validateSetInsecureParameters(val interface{}) error {
 	return nil
 }

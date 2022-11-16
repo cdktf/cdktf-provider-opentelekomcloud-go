@@ -60,6 +60,14 @@ func validateDataOpentelekomcloudDnsNameserversV2_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataOpentelekomcloudDnsNameserversV2_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudDnsNameserversV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2) validateSetIdParameters(val *string) error {
 	return nil
 }

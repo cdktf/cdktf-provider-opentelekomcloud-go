@@ -56,6 +56,14 @@ func validateIdentityRoleAssignmentV3_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateIdentityRoleAssignmentV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdentityRoleAssignmentV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityRoleAssignmentV3) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

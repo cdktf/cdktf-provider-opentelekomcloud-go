@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudAntiddosV1_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataOpentelekomcloudAntiddosV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudAntiddosV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudAntiddosV1) validateSetFloatingIpAddressParameters(val *string) error {
 	return nil
 }

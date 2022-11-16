@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudCsbsBackupV1_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataOpentelekomcloudCsbsBackupV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudCsbsBackupV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1) validateSetBackupNameParameters(val *string) error {
 	return nil
 }

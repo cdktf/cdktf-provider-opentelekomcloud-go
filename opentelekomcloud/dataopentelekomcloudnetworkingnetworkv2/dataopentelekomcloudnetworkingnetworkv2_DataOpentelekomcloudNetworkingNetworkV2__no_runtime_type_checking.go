@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudNetworkingNetworkV2_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataOpentelekomcloudNetworkingNetworkV2_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudNetworkingNetworkV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudNetworkingNetworkV2) validateSetIdParameters(val *string) error {
 	return nil
 }

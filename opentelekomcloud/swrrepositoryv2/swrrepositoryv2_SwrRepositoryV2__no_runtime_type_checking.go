@@ -60,6 +60,14 @@ func validateSwrRepositoryV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSwrRepositoryV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSwrRepositoryV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SwrRepositoryV2) validateSetCategoryParameters(val *string) error {
 	return nil
 }

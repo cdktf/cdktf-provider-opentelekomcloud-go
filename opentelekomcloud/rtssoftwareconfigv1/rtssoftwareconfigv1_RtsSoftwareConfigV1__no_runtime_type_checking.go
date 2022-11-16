@@ -60,6 +60,14 @@ func validateRtsSoftwareConfigV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRtsSoftwareConfigV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRtsSoftwareConfigV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RtsSoftwareConfigV1) validateSetConfigParameters(val *string) error {
 	return nil
 }

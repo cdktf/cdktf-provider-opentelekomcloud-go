@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudVpcSubnetIdsV1_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataOpentelekomcloudVpcSubnetIdsV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudVpcSubnetIdsV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) validateSetIdParameters(val *string) error {
 	return nil
 }

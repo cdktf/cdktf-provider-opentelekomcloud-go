@@ -60,6 +60,14 @@ func validateLbLoadbalancerV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbLoadbalancerV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbLoadbalancerV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbLoadbalancerV3) validateSetAdminStateUpParameters(val interface{}) error {
 	return nil
 }

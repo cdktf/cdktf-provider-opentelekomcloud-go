@@ -60,6 +60,14 @@ func validateCtsTrackerV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCtsTrackerV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCtsTrackerV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CtsTrackerV1) validateSetBucketNameParameters(val *string) error {
 	return nil
 }

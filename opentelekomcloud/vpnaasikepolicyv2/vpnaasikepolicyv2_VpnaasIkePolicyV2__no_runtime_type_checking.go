@@ -64,6 +64,14 @@ func validateVpnaasIkePolicyV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpnaasIkePolicyV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpnaasIkePolicyV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnaasIkePolicyV2) validateSetAuthAlgorithmParameters(val *string) error {
 	return nil
 }

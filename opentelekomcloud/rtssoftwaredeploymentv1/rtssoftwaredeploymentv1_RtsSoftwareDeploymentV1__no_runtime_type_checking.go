@@ -60,6 +60,14 @@ func validateRtsSoftwareDeploymentV1_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateRtsSoftwareDeploymentV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRtsSoftwareDeploymentV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RtsSoftwareDeploymentV1) validateSetActionParameters(val *string) error {
 	return nil
 }

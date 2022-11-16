@@ -56,6 +56,14 @@ func validateVpcBandwidthAssociateV2_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateVpcBandwidthAssociateV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcBandwidthAssociateV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcBandwidthAssociateV2) validateSetBackupChargeModeParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudLbLoadbalancerV3_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataOpentelekomcloudLbLoadbalancerV3_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudLbLoadbalancerV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3) validateSetIdParameters(val *string) error {
 	return nil
 }

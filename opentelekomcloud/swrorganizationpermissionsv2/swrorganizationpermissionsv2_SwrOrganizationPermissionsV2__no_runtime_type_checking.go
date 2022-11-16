@@ -60,6 +60,14 @@ func validateSwrOrganizationPermissionsV2_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateSwrOrganizationPermissionsV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSwrOrganizationPermissionsV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SwrOrganizationPermissionsV2) validateSetAuthParameters(val *float64) error {
 	return nil
 }

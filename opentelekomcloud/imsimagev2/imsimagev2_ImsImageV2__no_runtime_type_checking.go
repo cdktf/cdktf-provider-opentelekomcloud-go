@@ -60,6 +60,14 @@ func validateImsImageV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateImsImageV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateImsImageV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImsImageV2) validateSetCmkIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudVpcV1_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataOpentelekomcloudVpcV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudVpcV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcV1) validateSetCidrParameters(val *string) error {
 	return nil
 }

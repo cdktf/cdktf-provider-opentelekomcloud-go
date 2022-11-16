@@ -64,6 +64,14 @@ func validateRdsReadReplicaV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRdsReadReplicaV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRdsReadReplicaV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsReadReplicaV3) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

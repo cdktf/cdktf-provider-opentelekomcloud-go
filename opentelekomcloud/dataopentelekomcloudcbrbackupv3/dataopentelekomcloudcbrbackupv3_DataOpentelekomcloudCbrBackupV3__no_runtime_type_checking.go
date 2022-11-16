@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudCbrBackupV3_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDataOpentelekomcloudCbrBackupV3_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudCbrBackupV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCbrBackupV3) validateSetAutoTriggerParameters(val interface{}) error {
 	return nil
 }

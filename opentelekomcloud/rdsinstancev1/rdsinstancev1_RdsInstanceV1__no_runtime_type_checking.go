@@ -84,6 +84,14 @@ func validateRdsInstanceV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRdsInstanceV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRdsInstanceV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsInstanceV1) validateSetAvailabilityzoneParameters(val *string) error {
 	return nil
 }

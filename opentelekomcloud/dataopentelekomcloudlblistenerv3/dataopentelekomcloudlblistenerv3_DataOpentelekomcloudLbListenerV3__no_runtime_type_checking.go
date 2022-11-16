@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudLbListenerV3_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataOpentelekomcloudLbListenerV3_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudLbListenerV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) validateSetClientCaTlsContainerRefParameters(val *string) error {
 	return nil
 }

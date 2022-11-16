@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudVpcPeeringConnectionV2_IsConstructParameters(x 
 	return nil
 }
 
+func validateDataOpentelekomcloudVpcPeeringConnectionV2_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudVpcPeeringConnectionV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) validateSetIdParameters(val *string) error {
 	return nil
 }

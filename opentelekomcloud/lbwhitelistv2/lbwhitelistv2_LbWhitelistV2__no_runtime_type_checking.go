@@ -56,6 +56,14 @@ func validateLbWhitelistV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbWhitelistV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbWhitelistV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbWhitelistV2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

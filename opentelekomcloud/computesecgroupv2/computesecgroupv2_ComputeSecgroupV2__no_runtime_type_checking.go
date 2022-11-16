@@ -64,6 +64,14 @@ func validateComputeSecgroupV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeSecgroupV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeSecgroupV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSecgroupV2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

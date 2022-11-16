@@ -64,6 +64,14 @@ func validateDehHostV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDehHostV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDehHostV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DehHostV1) validateSetAutoPlacementParameters(val *string) error {
 	return nil
 }

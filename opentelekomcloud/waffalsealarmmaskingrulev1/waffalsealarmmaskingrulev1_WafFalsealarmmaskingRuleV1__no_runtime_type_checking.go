@@ -60,6 +60,14 @@ func validateWafFalsealarmmaskingRuleV1_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateWafFalsealarmmaskingRuleV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafFalsealarmmaskingRuleV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafFalsealarmmaskingRuleV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

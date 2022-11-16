@@ -80,6 +80,14 @@ func validateObsBucket_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateObsBucket_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateObsBucket_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObsBucket) validateSetAclParameters(val *string) error {
 	return nil
 }

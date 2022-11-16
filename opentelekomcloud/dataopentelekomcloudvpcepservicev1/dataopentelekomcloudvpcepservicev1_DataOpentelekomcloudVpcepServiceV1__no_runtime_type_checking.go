@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudVpcepServiceV1_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataOpentelekomcloudVpcepServiceV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudVpcepServiceV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcepServiceV1) validateSetIdParameters(val *string) error {
 	return nil
 }

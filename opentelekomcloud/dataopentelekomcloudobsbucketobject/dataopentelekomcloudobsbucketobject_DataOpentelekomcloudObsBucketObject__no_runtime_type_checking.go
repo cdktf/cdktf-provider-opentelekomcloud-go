@@ -56,6 +56,14 @@ func validateDataOpentelekomcloudObsBucketObject_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataOpentelekomcloudObsBucketObject_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOpentelekomcloudObsBucketObject_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudObsBucketObject) validateSetBucketParameters(val *string) error {
 	return nil
 }

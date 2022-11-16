@@ -119,6 +119,22 @@ func validateDataOpentelekomcloudVpcBandwidthV2_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataOpentelekomcloudVpcBandwidthV2_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataOpentelekomcloudVpcBandwidthV2_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

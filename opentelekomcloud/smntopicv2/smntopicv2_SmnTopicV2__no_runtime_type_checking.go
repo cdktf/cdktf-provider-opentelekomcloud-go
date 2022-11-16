@@ -56,6 +56,14 @@ func validateSmnTopicV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSmnTopicV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSmnTopicV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SmnTopicV2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

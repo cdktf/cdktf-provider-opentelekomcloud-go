@@ -60,6 +60,14 @@ func validateComputeVolumeAttachV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeVolumeAttachV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeVolumeAttachV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeVolumeAttachV2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

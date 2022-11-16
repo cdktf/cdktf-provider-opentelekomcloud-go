@@ -64,6 +64,14 @@ func validateAsPolicyV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAsPolicyV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAsPolicyV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AsPolicyV1) validateSetAlarmIdParameters(val *string) error {
 	return nil
 }

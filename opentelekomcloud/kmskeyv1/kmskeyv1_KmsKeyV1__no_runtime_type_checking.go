@@ -56,6 +56,14 @@ func validateKmsKeyV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmsKeyV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmsKeyV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsKeyV1) validateSetAllowCancelDeletionParameters(val interface{}) error {
 	return nil
 }
