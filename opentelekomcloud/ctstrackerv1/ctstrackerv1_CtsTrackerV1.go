@@ -45,27 +45,17 @@ type CtsTrackerV1 interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsSendAllKeyOperation() interface{}
-	SetIsSendAllKeyOperation(val interface{})
-	IsSendAllKeyOperationInput() interface{}
-	IsSupportSmn() interface{}
-	SetIsSupportSmn(val interface{})
-	IsSupportSmnInput() interface{}
+	IsLtsEnabled() interface{}
+	SetIsLtsEnabled(val interface{})
+	IsLtsEnabledInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	NeedNotifyUserList() *[]*string
-	SetNeedNotifyUserList(val *[]*string)
-	NeedNotifyUserListInput() *[]*string
+	LogGroupName() *string
+	LogTopicName() *string
 	// The tree node.
 	Node() constructs.Node
-	Operations() *[]*string
-	SetOperations(val *[]*string)
-	OperationsInput() *[]*string
-	ProjectName() *string
-	SetProjectName(val *string)
-	ProjectNameInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -77,11 +67,7 @@ type CtsTrackerV1 interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
-	SetRegion(val *string)
-	RegionInput() *string
 	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -90,9 +76,6 @@ type CtsTrackerV1 interface {
 	TerraformResourceType() *string
 	Timeouts() CtsTrackerV1TimeoutsOutputReference
 	TimeoutsInput() interface{}
-	TopicId() *string
-	SetTopicId(val *string)
-	TopicIdInput() *string
 	TrackerName() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -122,17 +105,11 @@ type CtsTrackerV1 interface {
 	PutTimeouts(value *CtsTrackerV1Timeouts)
 	ResetFilePrefixName()
 	ResetId()
-	ResetIsSendAllKeyOperation()
-	ResetNeedNotifyUserList()
-	ResetOperations()
+	ResetIsLtsEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProjectName()
-	ResetRegion()
-	ResetStatus()
 	ResetTimeouts()
-	ResetTopicId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -288,41 +265,21 @@ func (j *jsiiProxy_CtsTrackerV1) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CtsTrackerV1) IsSendAllKeyOperation() interface{} {
+func (j *jsiiProxy_CtsTrackerV1) IsLtsEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"isSendAllKeyOperation",
+		"isLtsEnabled",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_CtsTrackerV1) IsSendAllKeyOperationInput() interface{} {
+func (j *jsiiProxy_CtsTrackerV1) IsLtsEnabledInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"isSendAllKeyOperationInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CtsTrackerV1) IsSupportSmn() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"isSupportSmn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CtsTrackerV1) IsSupportSmnInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"isSupportSmnInput",
+		"isLtsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -338,21 +295,21 @@ func (j *jsiiProxy_CtsTrackerV1) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_CtsTrackerV1) NeedNotifyUserList() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_CtsTrackerV1) LogGroupName() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"needNotifyUserList",
+		"logGroupName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_CtsTrackerV1) NeedNotifyUserListInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_CtsTrackerV1) LogTopicName() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"needNotifyUserListInput",
+		"logTopicName",
 		&returns,
 	)
 	return returns
@@ -363,46 +320,6 @@ func (j *jsiiProxy_CtsTrackerV1) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CtsTrackerV1) Operations() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"operations",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CtsTrackerV1) OperationsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"operationsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CtsTrackerV1) ProjectName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"projectName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CtsTrackerV1) ProjectNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"projectNameInput",
 		&returns,
 	)
 	return returns
@@ -448,31 +365,11 @@ func (j *jsiiProxy_CtsTrackerV1) Region() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CtsTrackerV1) RegionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"regionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CtsTrackerV1) Status() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"status",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CtsTrackerV1) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
 		&returns,
 	)
 	return returns
@@ -523,26 +420,6 @@ func (j *jsiiProxy_CtsTrackerV1) TimeoutsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CtsTrackerV1) TopicId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"topicId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CtsTrackerV1) TopicIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"topicIdInput",
 		&returns,
 	)
 	return returns
@@ -656,24 +533,13 @@ func (j *jsiiProxy_CtsTrackerV1)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CtsTrackerV1)SetIsSendAllKeyOperation(val interface{}) {
-	if err := j.validateSetIsSendAllKeyOperationParameters(val); err != nil {
+func (j *jsiiProxy_CtsTrackerV1)SetIsLtsEnabled(val interface{}) {
+	if err := j.validateSetIsLtsEnabledParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"isSendAllKeyOperation",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CtsTrackerV1)SetIsSupportSmn(val interface{}) {
-	if err := j.validateSetIsSupportSmnParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"isSupportSmn",
+		"isLtsEnabled",
 		val,
 	)
 }
@@ -685,39 +551,6 @@ func (j *jsiiProxy_CtsTrackerV1)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CtsTrackerV1)SetNeedNotifyUserList(val *[]*string) {
-	if err := j.validateSetNeedNotifyUserListParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"needNotifyUserList",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CtsTrackerV1)SetOperations(val *[]*string) {
-	if err := j.validateSetOperationsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"operations",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CtsTrackerV1)SetProjectName(val *string) {
-	if err := j.validateSetProjectNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"projectName",
 		val,
 	)
 }
@@ -737,39 +570,6 @@ func (j *jsiiProxy_CtsTrackerV1)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CtsTrackerV1)SetRegion(val *string) {
-	if err := j.validateSetRegionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"region",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CtsTrackerV1)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CtsTrackerV1)SetTopicId(val *string) {
-	if err := j.validateSetTopicIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"topicId",
 		val,
 	)
 }
@@ -1067,26 +867,10 @@ func (c *jsiiProxy_CtsTrackerV1) ResetId() {
 	)
 }
 
-func (c *jsiiProxy_CtsTrackerV1) ResetIsSendAllKeyOperation() {
+func (c *jsiiProxy_CtsTrackerV1) ResetIsLtsEnabled() {
 	_jsii_.InvokeVoid(
 		c,
-		"resetIsSendAllKeyOperation",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CtsTrackerV1) ResetNeedNotifyUserList() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetNeedNotifyUserList",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CtsTrackerV1) ResetOperations() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetOperations",
+		"resetIsLtsEnabled",
 		nil, // no parameters
 	)
 }
@@ -1099,42 +883,10 @@ func (c *jsiiProxy_CtsTrackerV1) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_CtsTrackerV1) ResetProjectName() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetProjectName",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CtsTrackerV1) ResetRegion() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetRegion",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CtsTrackerV1) ResetStatus() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetStatus",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_CtsTrackerV1) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CtsTrackerV1) ResetTopicId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetTopicId",
 		nil, // no parameters
 	)
 }

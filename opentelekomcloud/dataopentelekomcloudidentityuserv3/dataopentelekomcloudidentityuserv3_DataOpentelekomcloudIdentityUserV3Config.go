@@ -30,7 +30,5 @@ type DataOpentelekomcloudIdentityUserV3Config struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_user_v3#name DataOpentelekomcloudIdentityUserV3#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_user_v3#region DataOpentelekomcloudIdentityUserV3#region}.
-	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

@@ -20,7 +20,6 @@ type DataOpentelekomcloudIdentityUserV3 interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
-	DefaultProjectId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,6 +45,7 @@ type DataOpentelekomcloudIdentityUserV3 interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MfaDevice() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -58,9 +58,6 @@ type DataOpentelekomcloudIdentityUserV3 interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Region() *string
-	SetRegion(val *string)
-	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -99,7 +96,6 @@ type DataOpentelekomcloudIdentityUserV3 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -140,16 +136,6 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3) DefaultProjectId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"defaultProjectId",
 		&returns,
 	)
 	return returns
@@ -265,6 +251,16 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3) Lifecycle() *cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3) MfaDevice() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mfaDevice",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -320,26 +316,6 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3) RawOverrides() interface{
 	_jsii_.Get(
 		j,
 		"rawOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3) Region() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"region",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3) RegionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"regionInput",
 		&returns,
 	)
 	return returns
@@ -488,17 +464,6 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3)SetProvider(val cdktf.Terr
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3)SetRegion(val *string) {
-	if err := j.validateSetRegionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"region",
 		val,
 	)
 }
@@ -805,14 +770,6 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityUserV3) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataOpentelekomcloudIdentityUserV3) ResetRegion() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRegion",
 		nil, // no parameters
 	)
 }

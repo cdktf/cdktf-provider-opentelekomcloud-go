@@ -13,8 +13,6 @@ import (
 type DataOpentelekomcloudCtsTrackerV1 interface {
 	cdktf.TerraformDataSource
 	BucketName() *string
-	SetBucketName(val *string)
-	BucketNameInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -28,8 +26,6 @@ type DataOpentelekomcloudCtsTrackerV1 interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	FilePrefixName() *string
-	SetFilePrefixName(val *string)
-	FilePrefixNameInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -41,19 +37,15 @@ type DataOpentelekomcloudCtsTrackerV1 interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsSendAllKeyOperation() cdktf.IResolvable
-	IsSupportSmn() cdktf.IResolvable
+	IsLtsEnabled() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	NeedNotifyUserList() *[]*string
+	LogGroupName() *string
+	LogTopicName() *string
 	// The tree node.
 	Node() constructs.Node
-	Operations() *[]*string
-	ProjectName() *string
-	SetProjectName(val *string)
-	ProjectNameInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -61,18 +53,13 @@ type DataOpentelekomcloudCtsTrackerV1 interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
-	SetRegion(val *string)
-	RegionInput() *string
 	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	TopicId() *string
 	TrackerName() *string
 	SetTrackerName(val *string)
 	TrackerNameInput() *string
@@ -101,15 +88,10 @@ type DataOpentelekomcloudCtsTrackerV1 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetBucketName()
-	ResetFilePrefixName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProjectName()
-	ResetRegion()
-	ResetStatus()
 	ResetTrackerName()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -131,16 +113,6 @@ func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) BucketName() *string {
 	_jsii_.Get(
 		j,
 		"bucketName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) BucketNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"bucketNameInput",
 		&returns,
 	)
 	return returns
@@ -196,16 +168,6 @@ func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) FilePrefixName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) FilePrefixNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"filePrefixNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -256,21 +218,11 @@ func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) IsSendAllKeyOperation() cdktf.IResolvable {
+func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) IsLtsEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"isSendAllKeyOperation",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) IsSupportSmn() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"isSupportSmn",
+		"isLtsEnabled",
 		&returns,
 	)
 	return returns
@@ -286,11 +238,21 @@ func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) Lifecycle() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) NeedNotifyUserList() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) LogGroupName() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"needNotifyUserList",
+		"logGroupName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) LogTopicName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logTopicName",
 		&returns,
 	)
 	return returns
@@ -301,36 +263,6 @@ func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) Operations() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"operations",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) ProjectName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"projectName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) ProjectNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"projectNameInput",
 		&returns,
 	)
 	return returns
@@ -366,31 +298,11 @@ func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) Region() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) RegionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"regionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) Status() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"status",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
 		&returns,
 	)
 	return returns
@@ -421,16 +333,6 @@ func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) TerraformResourceType() *st
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) TopicId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"topicId",
 		&returns,
 	)
 	return returns
@@ -486,17 +388,6 @@ func NewDataOpentelekomcloudCtsTrackerV1_Override(d DataOpentelekomcloudCtsTrack
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1)SetBucketName(val *string) {
-	if err := j.validateSetBucketNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"bucketName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
@@ -509,17 +400,6 @@ func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1)SetDependsOn(val *[]*string)
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1)SetFilePrefixName(val *string) {
-	if err := j.validateSetFilePrefixNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"filePrefixName",
 		val,
 	)
 }
@@ -554,43 +434,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1)SetProjectName(val *string) {
-	if err := j.validateSetProjectNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"projectName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1)SetRegion(val *string) {
-	if err := j.validateSetRegionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"region",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
 		val,
 	)
 }
@@ -872,22 +719,6 @@ func (d *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) OverrideLogicalId(newLogica
 	)
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) ResetBucketName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetBucketName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) ResetFilePrefixName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetFilePrefixName",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -900,30 +731,6 @@ func (d *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) ResetProjectName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetProjectName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) ResetRegion() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRegion",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) ResetStatus() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetStatus",
 		nil, // no parameters
 	)
 }

@@ -84,11 +84,7 @@ func (j *jsiiProxy_CtsTrackerV1) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CtsTrackerV1) validateSetIsSendAllKeyOperationParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_CtsTrackerV1) validateSetIsSupportSmnParameters(val interface{}) error {
+func (j *jsiiProxy_CtsTrackerV1) validateSetIsLtsEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -96,31 +92,7 @@ func (j *jsiiProxy_CtsTrackerV1) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
-func (j *jsiiProxy_CtsTrackerV1) validateSetNeedNotifyUserListParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_CtsTrackerV1) validateSetOperationsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_CtsTrackerV1) validateSetProjectNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CtsTrackerV1) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_CtsTrackerV1) validateSetRegionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_CtsTrackerV1) validateSetStatusParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_CtsTrackerV1) validateSetTopicIdParameters(val *string) error {
 	return nil
 }
 

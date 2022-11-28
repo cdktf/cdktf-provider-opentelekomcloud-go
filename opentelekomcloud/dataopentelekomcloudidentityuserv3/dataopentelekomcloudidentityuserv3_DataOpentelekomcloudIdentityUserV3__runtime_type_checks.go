@@ -187,14 +187,6 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3) validateSetNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3) validateSetRegionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewDataOpentelekomcloudIdentityUserV3Parameters(scope constructs.Construct, id *string, config *DataOpentelekomcloudIdentityUserV3Config) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

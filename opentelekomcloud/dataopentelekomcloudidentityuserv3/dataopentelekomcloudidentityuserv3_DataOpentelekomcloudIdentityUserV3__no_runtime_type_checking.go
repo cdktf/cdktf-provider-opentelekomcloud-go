@@ -84,10 +84,6 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3) validateSetNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudIdentityUserV3) validateSetRegionParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataOpentelekomcloudIdentityUserV3Parameters(scope constructs.Construct, id *string, config *DataOpentelekomcloudIdentityUserV3Config) error {
 	return nil
 }

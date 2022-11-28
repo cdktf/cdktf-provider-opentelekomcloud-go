@@ -135,22 +135,6 @@ func validateDataOpentelekomcloudCtsTrackerV1_IsTerraformElementParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetBucketNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetFilePrefixNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -162,30 +146,6 @@ func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetIdParameters(val
 func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetProjectNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetRegionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetStatusParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

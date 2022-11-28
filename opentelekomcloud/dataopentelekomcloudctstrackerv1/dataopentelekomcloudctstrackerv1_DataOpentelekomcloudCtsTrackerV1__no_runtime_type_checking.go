@@ -64,31 +64,11 @@ func validateDataOpentelekomcloudCtsTrackerV1_IsTerraformElementParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetBucketNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetFilePrefixNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetProjectNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetRegionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudCtsTrackerV1) validateSetStatusParameters(val *string) error {
 	return nil
 }
 
