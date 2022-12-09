@@ -11,8 +11,6 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1",
 		reflect.TypeOf((*DcsInstanceV1)(nil)).Elem(),
 		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accessUser", GoGetter: "AccessUser"},
-			_jsii_.MemberProperty{JsiiProperty: "accessUserInput", GoGetter: "AccessUserInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "availableZones", GoGetter: "AvailableZones"},
 			_jsii_.MemberProperty{JsiiProperty: "availableZonesInput", GoGetter: "AvailableZonesInput"},
@@ -84,7 +82,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putWhitelist", GoMethod: "PutWhitelist"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccessUser", GoMethod: "ResetAccessUser"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupAt", GoMethod: "ResetBackupAt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupPolicy", GoMethod: "ResetBackupPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupType", GoMethod: "ResetBackupType"},

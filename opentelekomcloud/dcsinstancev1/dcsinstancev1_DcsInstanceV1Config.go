@@ -37,8 +37,6 @@ type DcsInstanceV1Config struct {
 	SubnetId *string `field:"required" json:"subnetId" yaml:"subnetId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#vpc_id DcsInstanceV1#vpc_id}.
 	VpcId *string `field:"required" json:"vpcId" yaml:"vpcId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#access_user DcsInstanceV1#access_user}.
-	AccessUser *string `field:"optional" json:"accessUser" yaml:"accessUser"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#backup_at DcsInstanceV1#backup_at}.
 	BackupAt *[]*float64 `field:"optional" json:"backupAt" yaml:"backupAt"`
 	// backup_policy block.

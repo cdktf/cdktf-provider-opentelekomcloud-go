@@ -12,9 +12,6 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1 opentelekomcloud_dcs_instance_v1}.
 type DcsInstanceV1 interface {
 	cdktf.TerraformResource
-	AccessUser() *string
-	SetAccessUser(val *string)
-	AccessUserInput() *string
 	AvailableZones() *[]*string
 	SetAvailableZones(val *[]*string)
 	AvailableZonesInput() *[]*string
@@ -172,7 +169,6 @@ type DcsInstanceV1 interface {
 	PutConfiguration(value interface{})
 	PutTimeouts(value *DcsInstanceV1Timeouts)
 	PutWhitelist(value interface{})
-	ResetAccessUser()
 	ResetBackupAt()
 	ResetBackupPolicy()
 	ResetBackupType()
@@ -204,26 +200,6 @@ type DcsInstanceV1 interface {
 // The jsii proxy struct for DcsInstanceV1
 type jsiiProxy_DcsInstanceV1 struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_DcsInstanceV1) AccessUser() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accessUser",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DcsInstanceV1) AccessUserInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accessUserInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DcsInstanceV1) AvailableZones() *[]*string {
@@ -1036,17 +1012,6 @@ func NewDcsInstanceV1_Override(d DcsInstanceV1, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1)SetAccessUser(val *string) {
-	if err := j.validateSetAccessUserParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"accessUser",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DcsInstanceV1)SetAvailableZones(val *[]*string) {
 	if err := j.validateSetAvailableZonesParameters(val); err != nil {
 		panic(err)
@@ -1639,14 +1604,6 @@ func (d *jsiiProxy_DcsInstanceV1) PutWhitelist(value interface{}) {
 		d,
 		"putWhitelist",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DcsInstanceV1) ResetAccessUser() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAccessUser",
-		nil, // no parameters
 	)
 }
 

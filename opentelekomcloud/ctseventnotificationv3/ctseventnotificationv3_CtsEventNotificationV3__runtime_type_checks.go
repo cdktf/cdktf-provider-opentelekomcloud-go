@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package dcsinstancev1
+package ctseventnotificationv3
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DcsInstanceV1) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (d *jsiiProxy_DcsInstanceV1) validateAddOverrideParameters(path *string, va
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -31,7 +31,7 @@ func (d *jsiiProxy_DcsInstanceV1) validateGetAnyMapAttributeParameters(terraform
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -39,7 +39,7 @@ func (d *jsiiProxy_DcsInstanceV1) validateGetBooleanAttributeParameters(terrafor
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DcsInstanceV1) validateGetBooleanMapAttributeParameters(terra
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DcsInstanceV1) validateGetListAttributeParameters(terraformAt
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func (d *jsiiProxy_DcsInstanceV1) validateGetNumberAttributeParameters(terraform
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func (d *jsiiProxy_DcsInstanceV1) validateGetNumberListAttributeParameters(terra
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -79,7 +79,7 @@ func (d *jsiiProxy_DcsInstanceV1) validateGetNumberMapAttributeParameters(terraf
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -87,7 +87,7 @@ func (d *jsiiProxy_DcsInstanceV1) validateGetStringAttributeParameters(terraform
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -95,7 +95,7 @@ func (d *jsiiProxy_DcsInstanceV1) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -103,7 +103,7 @@ func (d *jsiiProxy_DcsInstanceV1) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -111,33 +111,22 @@ func (d *jsiiProxy_DcsInstanceV1) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validatePutBackupPolicyParameters(value *DcsInstanceV1BackupPolicy) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DcsInstanceV1) validatePutConfigurationParameters(value interface{}) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validatePutNotifyUserListParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*DcsInstanceV1Configuration:
-		value := value.(*[]*DcsInstanceV1Configuration)
+	case *[]*CtsEventNotificationV3NotifyUserList:
+		value := value.(*[]*CtsEventNotificationV3NotifyUserList)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*DcsInstanceV1Configuration:
-		value_ := value.([]*DcsInstanceV1Configuration)
+	case []*CtsEventNotificationV3NotifyUserList:
+		value_ := value.([]*CtsEventNotificationV3NotifyUserList)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -146,40 +135,29 @@ func (d *jsiiProxy_DcsInstanceV1) validatePutConfigurationParameters(value inter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DcsInstanceV1Configuration; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CtsEventNotificationV3NotifyUserList; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1) validatePutTimeoutsParameters(value *DcsInstanceV1Timeouts) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DcsInstanceV1) validatePutWhitelistParameters(value interface{}) error {
+func (c *jsiiProxy_CtsEventNotificationV3) validatePutOperationsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*DcsInstanceV1Whitelist:
-		value := value.(*[]*DcsInstanceV1Whitelist)
+	case *[]*CtsEventNotificationV3Operations:
+		value := value.(*[]*CtsEventNotificationV3Operations)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*DcsInstanceV1Whitelist:
-		value_ := value.([]*DcsInstanceV1Whitelist)
+	case []*CtsEventNotificationV3Operations:
+		value_ := value.([]*CtsEventNotificationV3Operations)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -188,14 +166,14 @@ func (d *jsiiProxy_DcsInstanceV1) validatePutWhitelistParameters(value interface
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DcsInstanceV1Whitelist; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CtsEventNotificationV3Operations; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func validateDcsInstanceV1_IsConstructParameters(x interface{}) error {
+func validateCtsEventNotificationV3_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -203,7 +181,7 @@ func validateDcsInstanceV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDcsInstanceV1_IsTerraformElementParameters(x interface{}) error {
+func validateCtsEventNotificationV3_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -211,7 +189,7 @@ func validateDcsInstanceV1_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDcsInstanceV1_IsTerraformResourceParameters(x interface{}) error {
+func validateCtsEventNotificationV3_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -219,47 +197,7 @@ func validateDcsInstanceV1_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1) validateSetAvailableZonesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetBackupAtParameters(val *[]*float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetBackupTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetBeginAtParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetCapacityParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CtsEventNotificationV3) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -292,7 +230,7 @@ func (j *jsiiProxy_DcsInstanceV1) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_CtsEventNotificationV3) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -300,51 +238,7 @@ func (j *jsiiProxy_DcsInstanceV1) validateSetDescriptionParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1) validateSetEnableWhitelistParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetEngineParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetEngineVersionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CtsEventNotificationV3) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -352,7 +246,7 @@ func (j *jsiiProxy_DcsInstanceV1) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1) validateSetMaintainBeginParameters(val *string) error {
+func (j *jsiiProxy_CtsEventNotificationV3) validateSetNotificationNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -360,7 +254,7 @@ func (j *jsiiProxy_DcsInstanceV1) validateSetMaintainBeginParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1) validateSetMaintainEndParameters(val *string) error {
+func (j *jsiiProxy_CtsEventNotificationV3) validateSetOperationTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -368,39 +262,7 @@ func (j *jsiiProxy_DcsInstanceV1) validateSetMaintainEndParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetPasswordParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetPeriodTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetProductIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CtsEventNotificationV3) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,7 +308,7 @@ func (j *jsiiProxy_DcsInstanceV1) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1) validateSetSaveDaysParameters(val *float64) error {
+func (j *jsiiProxy_CtsEventNotificationV3) validateSetStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -454,7 +316,7 @@ func (j *jsiiProxy_DcsInstanceV1) validateSetSaveDaysParameters(val *float64) er
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1) validateSetSecurityGroupIdParameters(val *string) error {
+func (j *jsiiProxy_CtsEventNotificationV3) validateSetTopicIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -462,23 +324,7 @@ func (j *jsiiProxy_DcsInstanceV1) validateSetSecurityGroupIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1) validateSetSubnetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcsInstanceV1) validateSetVpcIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func validateNewDcsInstanceV1Parameters(scope constructs.Construct, id *string, config *DcsInstanceV1Config) error {
+func validateNewCtsEventNotificationV3Parameters(scope constructs.Construct, id *string, config *CtsEventNotificationV3Config) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}
