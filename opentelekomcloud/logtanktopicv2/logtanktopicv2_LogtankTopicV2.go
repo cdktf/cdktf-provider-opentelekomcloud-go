@@ -24,6 +24,7 @@ type LogtankTopicV2 interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CreationTime() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,7 +43,6 @@ type LogtankTopicV2 interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IndexEnabled() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -152,6 +152,16 @@ func (j *jsiiProxy_LogtankTopicV2) Count() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_LogtankTopicV2) CreationTime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"creationTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogtankTopicV2) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -227,16 +237,6 @@ func (j *jsiiProxy_LogtankTopicV2) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LogtankTopicV2) IndexEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"indexEnabled",
 		&returns,
 	)
 	return returns

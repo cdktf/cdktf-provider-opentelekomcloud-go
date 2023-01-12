@@ -55,8 +55,6 @@ type DataOpentelekomcloudDdsFlavorsV3 interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
-	SetRegion(val *string)
-	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -99,7 +97,6 @@ type DataOpentelekomcloudDdsFlavorsV3 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRegion()
 	ResetType()
 	ResetVcpus()
 	SynthesizeAttributes() *map[string]interface{}
@@ -307,16 +304,6 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3) Region() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3) RegionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"regionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -489,17 +476,6 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3)SetProvider(val cdktf.Terraf
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3)SetRegion(val *string) {
-	if err := j.validateSetRegionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"region",
 		val,
 	)
 }
@@ -812,14 +788,6 @@ func (d *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3) ResetRegion() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRegion",
 		nil, // no parameters
 	)
 }

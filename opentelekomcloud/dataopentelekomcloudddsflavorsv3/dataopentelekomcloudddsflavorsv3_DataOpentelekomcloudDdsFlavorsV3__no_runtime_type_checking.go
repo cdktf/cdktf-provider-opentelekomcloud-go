@@ -80,10 +80,6 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3) validateSetMemoryParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3) validateSetRegionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3) validateSetTypeParameters(val *string) error {
 	return nil
 }

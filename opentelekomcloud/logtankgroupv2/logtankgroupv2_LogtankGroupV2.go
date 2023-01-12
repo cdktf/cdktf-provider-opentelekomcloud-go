@@ -24,6 +24,7 @@ type LogtankGroupV2 interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CreationTime() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -96,7 +97,6 @@ type LogtankGroupV2 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTtlInDays()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -147,6 +147,16 @@ func (j *jsiiProxy_LogtankGroupV2) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogtankGroupV2) CreationTime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"creationTime",
 		&returns,
 	)
 	return returns
@@ -738,14 +748,6 @@ func (l *jsiiProxy_LogtankGroupV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LogtankGroupV2) ResetTtlInDays() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetTtlInDays",
 		nil, // no parameters
 	)
 }
