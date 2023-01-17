@@ -2,9 +2,9 @@ package vpcflowlogv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v4/vpcflowlogv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpcflowlogv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
