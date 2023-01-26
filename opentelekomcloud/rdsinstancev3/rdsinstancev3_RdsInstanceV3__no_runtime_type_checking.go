@@ -132,6 +132,10 @@ func (j *jsiiProxy_RdsInstanceV3) validateSetSecurityGroupIdParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_RdsInstanceV3) validateSetSslEnableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsInstanceV3) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }

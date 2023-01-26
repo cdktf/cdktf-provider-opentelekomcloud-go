@@ -88,6 +88,9 @@ type RdsInstanceV3 interface {
 	SecurityGroupId() *string
 	SetSecurityGroupId(val *string)
 	SecurityGroupIdInput() *string
+	SslEnable() interface{}
+	SetSslEnable(val interface{})
+	SslEnableInput() interface{}
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
@@ -150,6 +153,7 @@ type RdsInstanceV3 interface {
 	ResetParamGroupId()
 	ResetPublicIps()
 	ResetRestorePoint()
+	ResetSslEnable()
 	ResetTag()
 	ResetTags()
 	ResetTimeouts()
@@ -568,6 +572,26 @@ func (j *jsiiProxy_RdsInstanceV3) SecurityGroupIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RdsInstanceV3) SslEnable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sslEnable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceV3) SslEnableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sslEnableInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsInstanceV3) SubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -908,6 +932,17 @@ func (j *jsiiProxy_RdsInstanceV3)SetSecurityGroupId(val *string) {
 	_jsii_.Set(
 		j,
 		"securityGroupId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsInstanceV3)SetSslEnable(val interface{}) {
+	if err := j.validateSetSslEnableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sslEnable",
 		val,
 	)
 }
@@ -1337,6 +1372,14 @@ func (r *jsiiProxy_RdsInstanceV3) ResetRestorePoint() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetRestorePoint",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsInstanceV3) ResetSslEnable() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSslEnable",
 		nil, // no parameters
 	)
 }

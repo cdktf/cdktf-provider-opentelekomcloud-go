@@ -8,6 +8,8 @@ type CceNodePoolV3DataVolumes struct {
 	Volumetype *string `field:"required" json:"volumetype" yaml:"volumetype"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3#extend_param CceNodePoolV3#extend_param}.
 	ExtendParam *string `field:"optional" json:"extendParam" yaml:"extendParam"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3#extend_params CceNodePoolV3#extend_params}.
+	ExtendParams *map[string]*string `field:"optional" json:"extendParams" yaml:"extendParams"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3#kms_id CceNodePoolV3#kms_id}.
 	KmsId *string `field:"optional" json:"kmsId" yaml:"kmsId"`
 }

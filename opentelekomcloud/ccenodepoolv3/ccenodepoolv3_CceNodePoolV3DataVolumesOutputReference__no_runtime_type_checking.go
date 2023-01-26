@@ -60,6 +60,10 @@ func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) validateSetExtendPar
 	return nil
 }
 
+func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) validateSetExtendParamsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceNodePoolV3DataVolumesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,8 @@ type DdsInstanceV3Config struct {
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dds_instance_v3#ssl DdsInstanceV3#ssl}.
 	Ssl interface{} `field:"optional" json:"ssl" yaml:"ssl"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dds_instance_v3#tags DdsInstanceV3#tags}.
+	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dds_instance_v3#timeouts DdsInstanceV3#timeouts}

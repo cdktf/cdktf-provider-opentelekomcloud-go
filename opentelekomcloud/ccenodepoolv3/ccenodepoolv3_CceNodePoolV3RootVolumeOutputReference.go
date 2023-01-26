@@ -28,6 +28,9 @@ type CceNodePoolV3RootVolumeOutputReference interface {
 	ExtendParam() *string
 	SetExtendParam(val *string)
 	ExtendParamInput() *string
+	ExtendParams() *map[string]*string
+	SetExtendParams(val *map[string]*string)
+	ExtendParamsInput() *map[string]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CceNodePoolV3RootVolume
@@ -74,6 +77,7 @@ type CceNodePoolV3RootVolumeOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetExtendParam()
+	ResetExtendParams()
 	ResetKmsId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -135,6 +139,26 @@ func (j *jsiiProxy_CceNodePoolV3RootVolumeOutputReference) ExtendParamInput() *s
 	_jsii_.Get(
 		j,
 		"extendParamInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceNodePoolV3RootVolumeOutputReference) ExtendParams() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"extendParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceNodePoolV3RootVolumeOutputReference) ExtendParamsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"extendParamsInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +321,17 @@ func (j *jsiiProxy_CceNodePoolV3RootVolumeOutputReference)SetExtendParam(val *st
 	_jsii_.Set(
 		j,
 		"extendParam",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceNodePoolV3RootVolumeOutputReference)SetExtendParams(val *map[string]*string) {
+	if err := j.validateSetExtendParamsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extendParams",
 		val,
 	)
 }
@@ -557,6 +592,14 @@ func (c *jsiiProxy_CceNodePoolV3RootVolumeOutputReference) ResetExtendParam() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetExtendParam",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceNodePoolV3RootVolumeOutputReference) ResetExtendParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExtendParams",
 		nil, // no parameters
 	)
 }

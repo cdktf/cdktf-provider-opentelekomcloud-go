@@ -93,6 +93,9 @@ type DdsInstanceV3 interface {
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -141,6 +144,7 @@ type DdsInstanceV3 interface {
 	ResetOverrideLogicalId()
 	ResetRegion()
 	ResetSsl()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -597,6 +601,26 @@ func (j *jsiiProxy_DdsInstanceV3) SubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DdsInstanceV3) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DdsInstanceV3) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DdsInstanceV3) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -868,6 +892,17 @@ func (j *jsiiProxy_DdsInstanceV3)SetSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"subnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DdsInstanceV3)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1237,6 +1272,14 @@ func (d *jsiiProxy_DdsInstanceV3) ResetSsl() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSsl",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DdsInstanceV3) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

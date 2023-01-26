@@ -60,6 +60,8 @@ type RdsInstanceV3Config struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#restore_point RdsInstanceV3#restore_point}
 	RestorePoint *RdsInstanceV3RestorePoint `field:"optional" json:"restorePoint" yaml:"restorePoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#ssl_enable RdsInstanceV3#ssl_enable}.
+	SslEnable interface{} `field:"optional" json:"sslEnable" yaml:"sslEnable"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#tag RdsInstanceV3#tag}.
 	Tag *map[string]*string `field:"optional" json:"tag" yaml:"tag"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#tags RdsInstanceV3#tags}.

@@ -171,6 +171,14 @@ func (j *jsiiProxy_CceNodeV3DataVolumesOutputReference) validateSetExtendParamPa
 	return nil
 }
 
+func (j *jsiiProxy_CceNodeV3DataVolumesOutputReference) validateSetExtendParamsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CceNodeV3DataVolumesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case *CceNodeV3DataVolumes:
