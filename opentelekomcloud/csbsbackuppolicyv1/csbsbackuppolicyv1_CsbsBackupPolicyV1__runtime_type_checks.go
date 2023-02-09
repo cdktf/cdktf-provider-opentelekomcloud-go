@@ -153,37 +153,6 @@ func (c *jsiiProxy_CsbsBackupPolicyV1) validatePutScheduledOperationParameters(v
 	return nil
 }
 
-func (c *jsiiProxy_CsbsBackupPolicyV1) validatePutTagsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*CsbsBackupPolicyV1Tags:
-		value := value.(*[]*CsbsBackupPolicyV1Tags)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*CsbsBackupPolicyV1Tags:
-		value_ := value.([]*CsbsBackupPolicyV1Tags)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CsbsBackupPolicyV1Tags; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (c *jsiiProxy_CsbsBackupPolicyV1) validatePutTimeoutsParameters(value *CsbsBackupPolicyV1Timeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -347,6 +316,14 @@ func (j *jsiiProxy_CsbsBackupPolicyV1) validateSetProvisionersParameters(val *[]
 }
 
 func (j *jsiiProxy_CsbsBackupPolicyV1) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CsbsBackupPolicyV1) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -53,7 +53,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "createAt", GoGetter: "CreateAt"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "deploymentId", GoGetter: "DeploymentId"},
-			_jsii_.MemberProperty{JsiiProperty: "duration", GoGetter: "Duration"},
 			_jsii_.MemberProperty{JsiiProperty: "errorInfo", GoGetter: "ErrorInfo"},
 			_jsii_.MemberProperty{JsiiProperty: "externalAlternateIp", GoGetter: "ExternalAlternateIp"},
 			_jsii_.MemberProperty{JsiiProperty: "externalIp", GoGetter: "ExternalIp"},

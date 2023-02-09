@@ -75,7 +75,6 @@ type MrsClusterV1 interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DeploymentId() *string
-	Duration() *string
 	ErrorInfo() *string
 	ExternalAlternateIp() *string
 	ExternalIp() *string
@@ -640,16 +639,6 @@ func (j *jsiiProxy_MrsClusterV1) DeploymentId() *string {
 	_jsii_.Get(
 		j,
 		"deploymentId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MrsClusterV1) Duration() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"duration",
 		&returns,
 	)
 	return returns

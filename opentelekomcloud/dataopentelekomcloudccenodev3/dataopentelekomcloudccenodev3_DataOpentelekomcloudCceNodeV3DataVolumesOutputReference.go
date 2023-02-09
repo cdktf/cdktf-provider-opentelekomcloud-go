@@ -26,7 +26,7 @@ type DataOpentelekomcloudCceNodeV3DataVolumesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DiskSize() *float64
-	ExtendParam() *string
+	ExtendParams() cdktf.StringMap
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataOpentelekomcloudCceNodeV3DataVolumes
@@ -120,11 +120,11 @@ func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) Disk
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) ExtendParam() *string {
-	var returns *string
+func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesOutputReference) ExtendParams() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
-		"extendParam",
+		"extendParams",
 		&returns,
 	)
 	return returns

@@ -52,10 +52,6 @@ func (c *jsiiProxy_CsbsBackupV1) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
-func (c *jsiiProxy_CsbsBackupV1) validatePutTagsParameters(value interface{}) error {
-	return nil
-}
-
 func (c *jsiiProxy_CsbsBackupV1) validatePutTimeoutsParameters(value *CsbsBackupV1Timeouts) error {
 	return nil
 }
@@ -105,6 +101,10 @@ func (j *jsiiProxy_CsbsBackupV1) validateSetResourceIdParameters(val *string) er
 }
 
 func (j *jsiiProxy_CsbsBackupV1) validateSetResourceTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CsbsBackupV1) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

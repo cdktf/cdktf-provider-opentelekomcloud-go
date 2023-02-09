@@ -61,7 +61,7 @@ type DataOpentelekomcloudCsbsBackupPolicyV1 interface {
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
-	Tags() DataOpentelekomcloudCsbsBackupPolicyV1TagsList
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -355,8 +355,8 @@ func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) StatusInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) Tags() DataOpentelekomcloudCsbsBackupPolicyV1TagsList {
-	var returns DataOpentelekomcloudCsbsBackupPolicyV1TagsList
+func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"tags",

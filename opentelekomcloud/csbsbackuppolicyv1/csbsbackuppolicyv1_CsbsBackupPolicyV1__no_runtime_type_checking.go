@@ -60,10 +60,6 @@ func (c *jsiiProxy_CsbsBackupPolicyV1) validatePutScheduledOperationParameters(v
 	return nil
 }
 
-func (c *jsiiProxy_CsbsBackupPolicyV1) validatePutTagsParameters(value interface{}) error {
-	return nil
-}
-
 func (c *jsiiProxy_CsbsBackupPolicyV1) validatePutTimeoutsParameters(value *CsbsBackupPolicyV1Timeouts) error {
 	return nil
 }
@@ -113,6 +109,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1) validateSetProvisionersParameters(val *[]
 }
 
 func (j *jsiiProxy_CsbsBackupPolicyV1) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CsbsBackupPolicyV1) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 
