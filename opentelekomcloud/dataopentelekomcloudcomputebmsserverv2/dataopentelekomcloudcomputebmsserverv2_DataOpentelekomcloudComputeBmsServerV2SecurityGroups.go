@@ -1,6 +1,0 @@
-package dataopentelekomcloudcomputebmsserverv2
-
-
-type DataOpentelekomcloudComputeBmsServerV2SecurityGroups struct {
-}
-

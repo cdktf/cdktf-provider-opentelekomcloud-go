@@ -1,0 +1,30 @@
+//go:build no_runtime_type_checking
+
+package dataopentelekomcloudidentityrolecustomv3
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3StatementList) validateGetParameters(index *float64) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3StatementList) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3StatementList) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3StatementList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3StatementList) validateSetWrapsSetParameters(val *bool) error {
+	return nil
+}
+
+func validateNewDataOpentelekomcloudIdentityRoleCustomV3StatementListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+	return nil
+}
+

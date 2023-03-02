@@ -1,6 +1,0 @@
-package dataopentelekomcloudobsbucket
-
-
-type DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition struct {
-}
-

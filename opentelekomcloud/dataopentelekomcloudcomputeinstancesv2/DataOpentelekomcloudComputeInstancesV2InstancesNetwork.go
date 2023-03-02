@@ -1,0 +1,6 @@
+package dataopentelekomcloudcomputeinstancesv2
+
+
+type DataOpentelekomcloudComputeInstancesV2InstancesNetwork struct {
+}
+
