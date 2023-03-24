@@ -96,6 +96,10 @@ func (j *jsiiProxy_LbPoolV3) validateSetLoadbalancerIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_LbPoolV3) validateSetMemberDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbPoolV3) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -109,6 +113,14 @@ func (j *jsiiProxy_LbPoolV3) validateSetProtocolParameters(val *string) error {
 }
 
 func (j *jsiiProxy_LbPoolV3) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbPoolV3) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbPoolV3) validateSetVpcIdParameters(val *string) error {
 	return nil
 }
 

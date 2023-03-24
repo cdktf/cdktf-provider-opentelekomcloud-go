@@ -34,6 +34,8 @@ type LbPoolV3Config struct {
 	ListenerId *string `field:"optional" json:"listenerId" yaml:"listenerId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#loadbalancer_id LbPoolV3#loadbalancer_id}.
 	LoadbalancerId *string `field:"optional" json:"loadbalancerId" yaml:"loadbalancerId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#member_deletion_protection LbPoolV3#member_deletion_protection}.
+	MemberDeletionProtection interface{} `field:"optional" json:"memberDeletionProtection" yaml:"memberDeletionProtection"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#name LbPoolV3#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#project_id LbPoolV3#project_id}.
@@ -42,5 +44,9 @@ type LbPoolV3Config struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#session_persistence LbPoolV3#session_persistence}
 	SessionPersistence *LbPoolV3SessionPersistence `field:"optional" json:"sessionPersistence" yaml:"sessionPersistence"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#type LbPoolV3#type}.
+	Type *string `field:"optional" json:"type" yaml:"type"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#vpc_id LbPoolV3#vpc_id}.
+	VpcId *string `field:"optional" json:"vpcId" yaml:"vpcId"`
 }
 

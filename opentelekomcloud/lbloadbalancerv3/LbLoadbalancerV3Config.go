@@ -25,6 +25,8 @@ type LbLoadbalancerV3Config struct {
 	NetworkIds *[]*string `field:"required" json:"networkIds" yaml:"networkIds"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#admin_state_up LbLoadbalancerV3#admin_state_up}.
 	AdminStateUp interface{} `field:"optional" json:"adminStateUp" yaml:"adminStateUp"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#deletion_protection LbLoadbalancerV3#deletion_protection}.
+	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#description LbLoadbalancerV3#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#id LbLoadbalancerV3#id}.

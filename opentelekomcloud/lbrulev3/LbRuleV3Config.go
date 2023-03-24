@@ -27,6 +27,10 @@ type LbRuleV3Config struct {
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_rule_v3#value LbRuleV3#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
+	// conditions block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_rule_v3#conditions LbRuleV3#conditions}
+	Conditions interface{} `field:"optional" json:"conditions" yaml:"conditions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_rule_v3#id LbRuleV3#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

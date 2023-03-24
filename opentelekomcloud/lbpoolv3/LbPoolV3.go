@@ -56,6 +56,9 @@ type LbPoolV3 interface {
 	LoadbalancerId() *string
 	SetLoadbalancerId(val *string)
 	LoadbalancerIdInput() *string
+	MemberDeletionProtection() interface{}
+	SetMemberDeletionProtection(val interface{})
+	MemberDeletionProtectionInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -85,6 +88,12 @@ type LbPoolV3 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
+	VpcId() *string
+	SetVpcId(val *string)
+	VpcIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -115,12 +124,15 @@ type LbPoolV3 interface {
 	ResetId()
 	ResetListenerId()
 	ResetLoadbalancerId()
+	ResetMemberDeletionProtection()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectId()
 	ResetSessionPersistence()
+	ResetType()
+	ResetVpcId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -336,6 +348,26 @@ func (j *jsiiProxy_LbPoolV3) LoadbalancerIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LbPoolV3) MemberDeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"memberDeletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPoolV3) MemberDeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"memberDeletionProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbPoolV3) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -486,6 +518,46 @@ func (j *jsiiProxy_LbPoolV3) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LbPoolV3) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPoolV3) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPoolV3) VpcId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPoolV3) VpcIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3 opentelekomcloud_lb_pool_v3} Resource.
 func NewLbPoolV3(scope constructs.Construct, id *string, config *LbPoolV3Config) LbPoolV3 {
@@ -617,6 +689,17 @@ func (j *jsiiProxy_LbPoolV3)SetLoadbalancerId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_LbPoolV3)SetMemberDeletionProtection(val interface{}) {
+	if err := j.validateSetMemberDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"memberDeletionProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LbPoolV3)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -665,6 +748,28 @@ func (j *jsiiProxy_LbPoolV3)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbPoolV3)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbPoolV3)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vpcId",
 		val,
 	)
 }
@@ -978,6 +1083,14 @@ func (l *jsiiProxy_LbPoolV3) ResetLoadbalancerId() {
 	)
 }
 
+func (l *jsiiProxy_LbPoolV3) ResetMemberDeletionProtection() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMemberDeletionProtection",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LbPoolV3) ResetName() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1006,6 +1119,22 @@ func (l *jsiiProxy_LbPoolV3) ResetSessionPersistence() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetSessionPersistence",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbPoolV3) ResetType() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbPoolV3) ResetVpcId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetVpcId",
 		nil, // no parameters
 	)
 }

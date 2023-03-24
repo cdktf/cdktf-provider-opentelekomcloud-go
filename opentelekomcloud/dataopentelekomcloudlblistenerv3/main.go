@@ -13,6 +13,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "adminStateUp", GoGetter: "AdminStateUp"},
+			_jsii_.MemberProperty{JsiiProperty: "advancedForwarding", GoGetter: "AdvancedForwarding"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clientCaTlsContainerRef", GoGetter: "ClientCaTlsContainerRef"},
 			_jsii_.MemberProperty{JsiiProperty: "clientCaTlsContainerRefInput", GoGetter: "ClientCaTlsContainerRefInput"},
@@ -85,7 +86,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetProtocol", GoMethod: "ResetProtocol"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProtocolPort", GoMethod: "ResetProtocolPort"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTlsCiphersPolicy", GoMethod: "ResetTlsCiphersPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "securityPolicyId", GoGetter: "SecurityPolicyId"},
 			_jsii_.MemberProperty{JsiiProperty: "sniContainerRefs", GoGetter: "SniContainerRefs"},
+			_jsii_.MemberProperty{JsiiProperty: "sniMatchAlgo", GoGetter: "SniMatchAlgo"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},

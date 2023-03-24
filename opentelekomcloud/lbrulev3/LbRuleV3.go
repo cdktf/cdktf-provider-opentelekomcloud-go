@@ -17,6 +17,8 @@ type LbRuleV3 interface {
 	CompareType() *string
 	SetCompareType(val *string)
 	CompareTypeInput() *string
+	Conditions() LbRuleV3ConditionsList
+	ConditionsInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -102,6 +104,8 @@ type LbRuleV3 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutConditions(value interface{})
+	ResetConditions()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -147,6 +151,26 @@ func (j *jsiiProxy_LbRuleV3) CompareTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"compareTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbRuleV3) Conditions() LbRuleV3ConditionsList {
+	var returns LbRuleV3ConditionsList
+	_jsii_.Get(
+		j,
+		"conditions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbRuleV3) ConditionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"conditionsInput",
 		&returns,
 	)
 	return returns
@@ -836,6 +860,25 @@ func (l *jsiiProxy_LbRuleV3) OverrideLogicalId(newLogicalId *string) {
 		l,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (l *jsiiProxy_LbRuleV3) PutConditions(value interface{}) {
+	if err := l.validatePutConditionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putConditions",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LbRuleV3) ResetConditions() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetConditions",
+		nil, // no parameters
 	)
 }
 

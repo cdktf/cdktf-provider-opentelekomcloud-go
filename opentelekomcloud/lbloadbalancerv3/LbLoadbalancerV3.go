@@ -31,6 +31,9 @@ type LbLoadbalancerV3 interface {
 	// Experimental.
 	SetCount(val *float64)
 	CreatedAt() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -129,6 +132,7 @@ type LbLoadbalancerV3 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutPublicIp(value *LbLoadbalancerV3PublicIp)
 	ResetAdminStateUp()
+	ResetDeletionProtection()
 	ResetDescription()
 	ResetId()
 	ResetIpTargetEnable()
@@ -243,6 +247,26 @@ func (j *jsiiProxy_LbLoadbalancerV3) CreatedAt() *string {
 	_jsii_.Get(
 		j,
 		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbLoadbalancerV3) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbLoadbalancerV3) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -699,6 +723,17 @@ func (j *jsiiProxy_LbLoadbalancerV3)SetCount(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_LbLoadbalancerV3)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LbLoadbalancerV3)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1147,6 +1182,14 @@ func (l *jsiiProxy_LbLoadbalancerV3) ResetAdminStateUp() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAdminStateUp",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbLoadbalancerV3) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }

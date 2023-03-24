@@ -52,6 +52,18 @@ func (l *jsiiProxy_LbPolicyV3) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (l *jsiiProxy_LbPolicyV3) validatePutFixedResponseConfigParameters(value *LbPolicyV3FixedResponseConfig) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbPolicyV3) validatePutRedirectPoolsConfigParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbPolicyV3) validatePutRedirectUrlConfigParameters(value *LbPolicyV3RedirectUrlConfig) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbPolicyV3) validatePutRulesParameters(value interface{}) error {
 	return nil
 }
@@ -100,6 +112,10 @@ func (j *jsiiProxy_LbPolicyV3) validateSetPositionParameters(val *float64) error
 	return nil
 }
 
+func (j *jsiiProxy_LbPolicyV3) validateSetPriorityParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbPolicyV3) validateSetProjectIdParameters(val *string) error {
 	return nil
 }
@@ -113,6 +129,10 @@ func (j *jsiiProxy_LbPolicyV3) validateSetRedirectListenerIdParameters(val *stri
 }
 
 func (j *jsiiProxy_LbPolicyV3) validateSetRedirectPoolIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbPolicyV3) validateSetRedirectUrlParameters(val *string) error {
 	return nil
 }
 

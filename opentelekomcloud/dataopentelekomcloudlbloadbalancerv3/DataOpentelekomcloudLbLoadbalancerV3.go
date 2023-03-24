@@ -23,6 +23,7 @@ type DataOpentelekomcloudLbLoadbalancerV3 interface {
 	// Experimental.
 	SetCount(val *float64)
 	CreatedAt() *string
+	DeletionProtection() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -189,6 +190,16 @@ func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3) CreatedAt() *string {
 	_jsii_.Get(
 		j,
 		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3) DeletionProtection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtection",
 		&returns,
 	)
 	return returns

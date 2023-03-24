@@ -13,6 +13,7 @@ import (
 type DataOpentelekomcloudLbListenerV3 interface {
 	cdktf.TerraformDataSource
 	AdminStateUp() cdktf.IResolvable
+	AdvancedForwarding() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientCaTlsContainerRef() *string
@@ -93,7 +94,9 @@ type DataOpentelekomcloudLbListenerV3 interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SecurityPolicyId() *string
 	SniContainerRefs() *[]*string
+	SniMatchAlgo() *string
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -168,6 +171,16 @@ func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) AdminStateUp() cdktf.IResol
 	_jsii_.Get(
 		j,
 		"adminStateUp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) AdvancedForwarding() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"advancedForwarding",
 		&returns,
 	)
 	return returns
@@ -623,11 +636,31 @@ func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) SecurityPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicyId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) SniContainerRefs() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"sniContainerRefs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) SniMatchAlgo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sniMatchAlgo",
 		&returns,
 	)
 	return returns

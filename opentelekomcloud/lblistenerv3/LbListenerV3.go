@@ -15,6 +15,9 @@ type LbListenerV3 interface {
 	AdminStateUp() interface{}
 	SetAdminStateUp(val interface{})
 	AdminStateUpInput() interface{}
+	AdvancedForwarding() interface{}
+	SetAdvancedForwarding(val interface{})
+	AdvancedForwardingInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientCaTlsContainerRef() *string
@@ -63,6 +66,8 @@ type LbListenerV3 interface {
 	IdInput() *string
 	InsertHeaders() LbListenerV3InsertHeadersOutputReference
 	InsertHeadersInput() *LbListenerV3InsertHeaders
+	IpGroup() LbListenerV3IpGroupOutputReference
+	IpGroupInput() *LbListenerV3IpGroup
 	KeepAliveTimeout() *float64
 	SetKeepAliveTimeout(val *float64)
 	KeepAliveTimeoutInput() *float64
@@ -100,9 +105,15 @@ type LbListenerV3 interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SecurityPolicyId() *string
+	SetSecurityPolicyId(val *string)
+	SecurityPolicyIdInput() *string
 	SniContainerRefs() *[]*string
 	SetSniContainerRefs(val *[]*string)
 	SniContainerRefsInput() *[]*string
+	SniMatchAlgo() *string
+	SetSniMatchAlgo(val *string)
+	SniMatchAlgoInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -142,7 +153,9 @@ type LbListenerV3 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutInsertHeaders(value *LbListenerV3InsertHeaders)
+	PutIpGroup(value *LbListenerV3IpGroup)
 	ResetAdminStateUp()
+	ResetAdvancedForwarding()
 	ResetClientCaTlsContainerRef()
 	ResetClientTimeout()
 	ResetDefaultPoolId()
@@ -151,6 +164,7 @@ type LbListenerV3 interface {
 	ResetHttp2Enable()
 	ResetId()
 	ResetInsertHeaders()
+	ResetIpGroup()
 	ResetKeepAliveTimeout()
 	ResetMemberRetryEnable()
 	ResetMemberTimeout()
@@ -158,7 +172,9 @@ type LbListenerV3 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecurityPolicyId()
 	ResetSniContainerRefs()
+	ResetSniMatchAlgo()
 	ResetTags()
 	ResetTlsCiphersPolicy()
 	SynthesizeAttributes() *map[string]interface{}
@@ -191,6 +207,26 @@ func (j *jsiiProxy_LbListenerV3) AdminStateUpInput() interface{} {
 	_jsii_.Get(
 		j,
 		"adminStateUpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerV3) AdvancedForwarding() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"advancedForwarding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerV3) AdvancedForwardingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"advancedForwardingInput",
 		&returns,
 	)
 	return returns
@@ -446,6 +482,26 @@ func (j *jsiiProxy_LbListenerV3) InsertHeadersInput() *LbListenerV3InsertHeaders
 	return returns
 }
 
+func (j *jsiiProxy_LbListenerV3) IpGroup() LbListenerV3IpGroupOutputReference {
+	var returns LbListenerV3IpGroupOutputReference
+	_jsii_.Get(
+		j,
+		"ipGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerV3) IpGroupInput() *LbListenerV3IpGroup {
+	var returns *LbListenerV3IpGroup
+	_jsii_.Get(
+		j,
+		"ipGroupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbListenerV3) KeepAliveTimeout() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -636,6 +692,26 @@ func (j *jsiiProxy_LbListenerV3) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LbListenerV3) SecurityPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerV3) SecurityPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbListenerV3) SniContainerRefs() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -651,6 +727,26 @@ func (j *jsiiProxy_LbListenerV3) SniContainerRefsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"sniContainerRefsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerV3) SniMatchAlgo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sniMatchAlgo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerV3) SniMatchAlgoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sniMatchAlgoInput",
 		&returns,
 	)
 	return returns
@@ -773,6 +869,17 @@ func (j *jsiiProxy_LbListenerV3)SetAdminStateUp(val interface{}) {
 	_jsii_.Set(
 		j,
 		"adminStateUp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListenerV3)SetAdvancedForwarding(val interface{}) {
+	if err := j.validateSetAdvancedForwardingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"advancedForwarding",
 		val,
 	)
 }
@@ -996,6 +1103,17 @@ func (j *jsiiProxy_LbListenerV3)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_LbListenerV3)SetSecurityPolicyId(val *string) {
+	if err := j.validateSetSecurityPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityPolicyId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LbListenerV3)SetSniContainerRefs(val *[]*string) {
 	if err := j.validateSetSniContainerRefsParameters(val); err != nil {
 		panic(err)
@@ -1003,6 +1121,17 @@ func (j *jsiiProxy_LbListenerV3)SetSniContainerRefs(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"sniContainerRefs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListenerV3)SetSniMatchAlgo(val *string) {
+	if err := j.validateSetSniMatchAlgoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sniMatchAlgo",
 		val,
 	)
 }
@@ -1306,10 +1435,29 @@ func (l *jsiiProxy_LbListenerV3) PutInsertHeaders(value *LbListenerV3InsertHeade
 	)
 }
 
+func (l *jsiiProxy_LbListenerV3) PutIpGroup(value *LbListenerV3IpGroup) {
+	if err := l.validatePutIpGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putIpGroup",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LbListenerV3) ResetAdminStateUp() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAdminStateUp",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListenerV3) ResetAdvancedForwarding() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAdvancedForwarding",
 		nil, // no parameters
 	)
 }
@@ -1378,6 +1526,14 @@ func (l *jsiiProxy_LbListenerV3) ResetInsertHeaders() {
 	)
 }
 
+func (l *jsiiProxy_LbListenerV3) ResetIpGroup() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIpGroup",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LbListenerV3) ResetKeepAliveTimeout() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1418,10 +1574,26 @@ func (l *jsiiProxy_LbListenerV3) ResetOverrideLogicalId() {
 	)
 }
 
+func (l *jsiiProxy_LbListenerV3) ResetSecurityPolicyId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSecurityPolicyId",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LbListenerV3) ResetSniContainerRefs() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetSniContainerRefs",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListenerV3) ResetSniMatchAlgo() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSniMatchAlgo",
 		nil, // no parameters
 	)
 }

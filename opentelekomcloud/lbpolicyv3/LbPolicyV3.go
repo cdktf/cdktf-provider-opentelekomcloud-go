@@ -34,6 +34,8 @@ type LbPolicyV3 interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	FixedResponseConfig() LbPolicyV3FixedResponseConfigOutputReference
+	FixedResponseConfigInput() *LbPolicyV3FixedResponseConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -60,6 +62,9 @@ type LbPolicyV3 interface {
 	Position() *float64
 	SetPosition(val *float64)
 	PositionInput() *float64
+	Priority() *float64
+	SetPriority(val *float64)
+	PriorityInput() *float64
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -79,6 +84,13 @@ type LbPolicyV3 interface {
 	RedirectPoolId() *string
 	SetRedirectPoolId(val *string)
 	RedirectPoolIdInput() *string
+	RedirectPoolsConfig() LbPolicyV3RedirectPoolsConfigList
+	RedirectPoolsConfigInput() interface{}
+	RedirectUrl() *string
+	SetRedirectUrl(val *string)
+	RedirectUrlConfig() LbPolicyV3RedirectUrlConfigOutputReference
+	RedirectUrlConfigInput() *LbPolicyV3RedirectUrlConfig
+	RedirectUrlInput() *string
 	Rules() LbPolicyV3RulesList
 	RulesInput() interface{}
 	Status() *string
@@ -113,17 +125,25 @@ type LbPolicyV3 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFixedResponseConfig(value *LbPolicyV3FixedResponseConfig)
+	PutRedirectPoolsConfig(value interface{})
+	PutRedirectUrlConfig(value *LbPolicyV3RedirectUrlConfig)
 	PutRules(value interface{})
 	ResetDescription()
+	ResetFixedResponseConfig()
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPosition()
+	ResetPriority()
 	ResetProjectId()
 	ResetRedirectListenerId()
 	ResetRedirectPoolId()
+	ResetRedirectPoolsConfig()
+	ResetRedirectUrl()
+	ResetRedirectUrlConfig()
 	ResetRules()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -225,6 +245,26 @@ func (j *jsiiProxy_LbPolicyV3) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPolicyV3) FixedResponseConfig() LbPolicyV3FixedResponseConfigOutputReference {
+	var returns LbPolicyV3FixedResponseConfigOutputReference
+	_jsii_.Get(
+		j,
+		"fixedResponseConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPolicyV3) FixedResponseConfigInput() *LbPolicyV3FixedResponseConfig {
+	var returns *LbPolicyV3FixedResponseConfig
+	_jsii_.Get(
+		j,
+		"fixedResponseConfigInput",
 		&returns,
 	)
 	return returns
@@ -360,6 +400,26 @@ func (j *jsiiProxy_LbPolicyV3) PositionInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_LbPolicyV3) Priority() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"priority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPolicyV3) PriorityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"priorityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbPolicyV3) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -445,6 +505,66 @@ func (j *jsiiProxy_LbPolicyV3) RedirectPoolIdInput() *string {
 	_jsii_.Get(
 		j,
 		"redirectPoolIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPolicyV3) RedirectPoolsConfig() LbPolicyV3RedirectPoolsConfigList {
+	var returns LbPolicyV3RedirectPoolsConfigList
+	_jsii_.Get(
+		j,
+		"redirectPoolsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPolicyV3) RedirectPoolsConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redirectPoolsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPolicyV3) RedirectUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redirectUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPolicyV3) RedirectUrlConfig() LbPolicyV3RedirectUrlConfigOutputReference {
+	var returns LbPolicyV3RedirectUrlConfigOutputReference
+	_jsii_.Get(
+		j,
+		"redirectUrlConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPolicyV3) RedirectUrlConfigInput() *LbPolicyV3RedirectUrlConfig {
+	var returns *LbPolicyV3RedirectUrlConfig
+	_jsii_.Get(
+		j,
+		"redirectUrlConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbPolicyV3) RedirectUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redirectUrlInput",
 		&returns,
 	)
 	return returns
@@ -652,6 +772,17 @@ func (j *jsiiProxy_LbPolicyV3)SetPosition(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_LbPolicyV3)SetPriority(val *float64) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"priority",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LbPolicyV3)SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
@@ -700,6 +831,17 @@ func (j *jsiiProxy_LbPolicyV3)SetRedirectPoolId(val *string) {
 	_jsii_.Set(
 		j,
 		"redirectPoolId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbPolicyV3)SetRedirectUrl(val *string) {
+	if err := j.validateSetRedirectUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redirectUrl",
 		val,
 	)
 }
@@ -970,6 +1112,39 @@ func (l *jsiiProxy_LbPolicyV3) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (l *jsiiProxy_LbPolicyV3) PutFixedResponseConfig(value *LbPolicyV3FixedResponseConfig) {
+	if err := l.validatePutFixedResponseConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putFixedResponseConfig",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LbPolicyV3) PutRedirectPoolsConfig(value interface{}) {
+	if err := l.validatePutRedirectPoolsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putRedirectPoolsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LbPolicyV3) PutRedirectUrlConfig(value *LbPolicyV3RedirectUrlConfig) {
+	if err := l.validatePutRedirectUrlConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putRedirectUrlConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LbPolicyV3) PutRules(value interface{}) {
 	if err := l.validatePutRulesParameters(value); err != nil {
 		panic(err)
@@ -985,6 +1160,14 @@ func (l *jsiiProxy_LbPolicyV3) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbPolicyV3) ResetFixedResponseConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFixedResponseConfig",
 		nil, // no parameters
 	)
 }
@@ -1021,6 +1204,14 @@ func (l *jsiiProxy_LbPolicyV3) ResetPosition() {
 	)
 }
 
+func (l *jsiiProxy_LbPolicyV3) ResetPriority() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPriority",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LbPolicyV3) ResetProjectId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1041,6 +1232,30 @@ func (l *jsiiProxy_LbPolicyV3) ResetRedirectPoolId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetRedirectPoolId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbPolicyV3) ResetRedirectPoolsConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRedirectPoolsConfig",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbPolicyV3) ResetRedirectUrl() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRedirectUrl",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbPolicyV3) ResetRedirectUrlConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRedirectUrlConfig",
 		nil, // no parameters
 	)
 }

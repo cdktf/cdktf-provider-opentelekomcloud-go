@@ -80,6 +80,10 @@ func (j *jsiiProxy_LbLoadbalancerV3) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_LbLoadbalancerV3) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbLoadbalancerV3) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -52,6 +52,10 @@ func (l *jsiiProxy_LbRuleV3) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (l *jsiiProxy_LbRuleV3) validatePutConditionsParameters(value interface{}) error {
+	return nil
+}
+
 func validateLbRuleV3_IsConstructParameters(x interface{}) error {
 	return nil
 }

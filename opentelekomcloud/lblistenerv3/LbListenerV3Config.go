@@ -27,6 +27,8 @@ type LbListenerV3Config struct {
 	ProtocolPort *float64 `field:"required" json:"protocolPort" yaml:"protocolPort"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#admin_state_up LbListenerV3#admin_state_up}.
 	AdminStateUp interface{} `field:"optional" json:"adminStateUp" yaml:"adminStateUp"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#advanced_forwarding LbListenerV3#advanced_forwarding}.
+	AdvancedForwarding interface{} `field:"optional" json:"advancedForwarding" yaml:"advancedForwarding"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#client_ca_tls_container_ref LbListenerV3#client_ca_tls_container_ref}.
 	ClientCaTlsContainerRef *string `field:"optional" json:"clientCaTlsContainerRef" yaml:"clientCaTlsContainerRef"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#client_timeout LbListenerV3#client_timeout}.
@@ -48,6 +50,10 @@ type LbListenerV3Config struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#insert_headers LbListenerV3#insert_headers}
 	InsertHeaders *LbListenerV3InsertHeaders `field:"optional" json:"insertHeaders" yaml:"insertHeaders"`
+	// ip_group block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#ip_group LbListenerV3#ip_group}
+	IpGroup *LbListenerV3IpGroup `field:"optional" json:"ipGroup" yaml:"ipGroup"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#keep_alive_timeout LbListenerV3#keep_alive_timeout}.
 	KeepAliveTimeout *float64 `field:"optional" json:"keepAliveTimeout" yaml:"keepAliveTimeout"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#member_retry_enable LbListenerV3#member_retry_enable}.
@@ -56,8 +62,12 @@ type LbListenerV3Config struct {
 	MemberTimeout *float64 `field:"optional" json:"memberTimeout" yaml:"memberTimeout"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#name LbListenerV3#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#security_policy_id LbListenerV3#security_policy_id}.
+	SecurityPolicyId *string `field:"optional" json:"securityPolicyId" yaml:"securityPolicyId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#sni_container_refs LbListenerV3#sni_container_refs}.
 	SniContainerRefs *[]*string `field:"optional" json:"sniContainerRefs" yaml:"sniContainerRefs"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#sni_match_algo LbListenerV3#sni_match_algo}.
+	SniMatchAlgo *string `field:"optional" json:"sniMatchAlgo" yaml:"sniMatchAlgo"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#tags LbListenerV3#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#tls_ciphers_policy LbListenerV3#tls_ciphers_policy}.

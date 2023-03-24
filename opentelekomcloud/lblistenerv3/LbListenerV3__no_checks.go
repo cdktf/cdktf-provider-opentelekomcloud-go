@@ -56,6 +56,10 @@ func (l *jsiiProxy_LbListenerV3) validatePutInsertHeadersParameters(value *LbLis
 	return nil
 }
 
+func (l *jsiiProxy_LbListenerV3) validatePutIpGroupParameters(value *LbListenerV3IpGroup) error {
+	return nil
+}
+
 func validateLbListenerV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func validateLbListenerV3_IsTerraformResourceParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_LbListenerV3) validateSetAdminStateUpParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListenerV3) validateSetAdvancedForwardingParameters(val interface{}) error {
 	return nil
 }
 
@@ -140,7 +148,15 @@ func (j *jsiiProxy_LbListenerV3) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_LbListenerV3) validateSetSecurityPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbListenerV3) validateSetSniContainerRefsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListenerV3) validateSetSniMatchAlgoParameters(val *string) error {
 	return nil
 }
 
