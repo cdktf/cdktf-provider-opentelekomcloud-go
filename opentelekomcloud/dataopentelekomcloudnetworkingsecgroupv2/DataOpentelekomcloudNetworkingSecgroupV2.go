@@ -43,6 +43,9 @@ type DataOpentelekomcloudNetworkingSecgroupV2 interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NameRegex() *string
+	SetNameRegex(val *string)
+	NameRegexInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -93,6 +96,7 @@ type DataOpentelekomcloudNetworkingSecgroupV2 interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
 	ResetName()
+	ResetNameRegex()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -239,6 +243,26 @@ func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) NameInput() *string
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) NameRegex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameRegex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) NameRegexInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameRegexInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +471,17 @@ func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2)SetName(val *string)
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2)SetNameRegex(val *string) {
+	if err := j.validateSetNameRegexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nameRegex",
 		val,
 	)
 }
@@ -770,6 +805,14 @@ func (d *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) ResetName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) ResetNameRegex() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNameRegex",
 		nil, // no parameters
 	)
 }

@@ -111,6 +111,37 @@ func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) validateOverrideLogic
 	return nil
 }
 
+func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) validatePutTagsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataOpentelekomcloudCsbsBackupPolicyV1Tags:
+		value := value.(*[]*DataOpentelekomcloudCsbsBackupPolicyV1Tags)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataOpentelekomcloudCsbsBackupPolicyV1Tags:
+		value_ := value.([]*DataOpentelekomcloudCsbsBackupPolicyV1Tags)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataOpentelekomcloudCsbsBackupPolicyV1Tags; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateDataOpentelekomcloudCsbsBackupPolicyV1_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")

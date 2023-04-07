@@ -34,8 +34,10 @@ type CsbsBackupV1Config struct {
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#resource_type CsbsBackupV1#resource_type}.
 	ResourceType *string `field:"optional" json:"resourceType" yaml:"resourceType"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#tags CsbsBackupV1#tags}.
-	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
+	// tags block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#tags CsbsBackupV1#tags}
+	Tags interface{} `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#timeouts CsbsBackupV1#timeouts}

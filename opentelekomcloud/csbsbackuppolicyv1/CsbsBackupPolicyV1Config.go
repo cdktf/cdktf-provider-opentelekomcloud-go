@@ -42,8 +42,10 @@ type CsbsBackupPolicyV1Config struct {
 	ProviderId *string `field:"optional" json:"providerId" yaml:"providerId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#region CsbsBackupPolicyV1#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#tags CsbsBackupPolicyV1#tags}.
-	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
+	// tags block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#tags CsbsBackupPolicyV1#tags}
+	Tags interface{} `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#timeouts CsbsBackupPolicyV1#timeouts}

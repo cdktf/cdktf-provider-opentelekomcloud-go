@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupV1) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupV1) validatePutTagsParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudCsbsBackupV1_IsConstructParameters(x interface{}) error {
 	return nil
 }

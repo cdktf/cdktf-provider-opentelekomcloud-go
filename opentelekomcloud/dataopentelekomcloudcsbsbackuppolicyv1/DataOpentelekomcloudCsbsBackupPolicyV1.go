@@ -61,7 +61,8 @@ type DataOpentelekomcloudCsbsBackupPolicyV1 interface {
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
-	Tags() cdktf.StringMap
+	Tags() DataOpentelekomcloudCsbsBackupPolicyV1TagsList
+	TagsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -93,6 +94,7 @@ type DataOpentelekomcloudCsbsBackupPolicyV1 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTags(value interface{})
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -100,6 +102,7 @@ type DataOpentelekomcloudCsbsBackupPolicyV1 interface {
 	ResetOverrideLogicalId()
 	ResetRegion()
 	ResetStatus()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -355,11 +358,21 @@ func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) StatusInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) Tags() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) Tags() DataOpentelekomcloudCsbsBackupPolicyV1TagsList {
+	var returns DataOpentelekomcloudCsbsBackupPolicyV1TagsList
 	_jsii_.Get(
 		j,
 		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) TagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -778,6 +791,17 @@ func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) OverrideLogicalId(new
 	)
 }
 
+func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) PutTags(value interface{}) {
+	if err := d.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTags",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -814,6 +838,14 @@ func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) ResetStatus() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

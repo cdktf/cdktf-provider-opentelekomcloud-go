@@ -30,5 +30,9 @@ type DataOpentelekomcloudCsbsBackupPolicyV1Config struct {
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1#status DataOpentelekomcloudCsbsBackupPolicyV1#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
+	// tags block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1#tags DataOpentelekomcloudCsbsBackupPolicyV1#tags}
+	Tags interface{} `field:"optional" json:"tags" yaml:"tags"`
 }
 

@@ -55,6 +55,7 @@ type DataOpentelekomcloudLbListenerV3 interface {
 	SetId(val *string)
 	IdInput() *string
 	InsertHeaders() DataOpentelekomcloudLbListenerV3InsertHeadersList
+	IpGroup() DataOpentelekomcloudLbListenerV3IpGroupList
 	KeepAliveTimeout() *float64
 	SetKeepAliveTimeout(val *float64)
 	KeepAliveTimeoutInput() *float64
@@ -401,6 +402,16 @@ func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) InsertHeaders() DataOpentel
 	_jsii_.Get(
 		j,
 		"insertHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) IpGroup() DataOpentelekomcloudLbListenerV3IpGroupList {
+	var returns DataOpentelekomcloudLbListenerV3IpGroupList
+	_jsii_.Get(
+		j,
+		"ipGroup",
 		&returns,
 	)
 	return returns

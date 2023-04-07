@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) validateSetNamePara
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) validateSetNameRegexParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) validateSetRegionParameters(val *string) error {
 	return nil
 }

@@ -40,6 +40,10 @@ type DataOpentelekomcloudCsbsBackupV1Config struct {
 	ResourceType *string `field:"optional" json:"resourceType" yaml:"resourceType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_v1#status DataOpentelekomcloudCsbsBackupV1#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
+	// tags block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_v1#tags DataOpentelekomcloudCsbsBackupV1#tags}
+	Tags interface{} `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_v1#vm_ip DataOpentelekomcloudCsbsBackupV1#vm_ip}.
 	VmIp *string `field:"optional" json:"vmIp" yaml:"vmIp"`
 }

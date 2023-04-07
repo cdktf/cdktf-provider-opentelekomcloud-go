@@ -72,9 +72,8 @@ type CsbsBackupV1 interface {
 	SetResourceType(val *string)
 	ResourceTypeInput() *string
 	Status() *string
-	Tags() *map[string]*string
-	SetTags(val *map[string]*string)
-	TagsInput() *map[string]*string
+	Tags() CsbsBackupV1TagsList
+	TagsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -110,6 +109,7 @@ type CsbsBackupV1 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTags(value interface{})
 	PutTimeouts(value *CsbsBackupV1Timeouts)
 	ResetBackupName()
 	ResetDescription()
@@ -406,8 +406,8 @@ func (j *jsiiProxy_CsbsBackupV1) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CsbsBackupV1) Tags() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_CsbsBackupV1) Tags() CsbsBackupV1TagsList {
+	var returns CsbsBackupV1TagsList
 	_jsii_.Get(
 		j,
 		"tags",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_CsbsBackupV1) Tags() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CsbsBackupV1) TagsInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_CsbsBackupV1) TagsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"tagsInput",
@@ -653,17 +653,6 @@ func (j *jsiiProxy_CsbsBackupV1)SetResourceType(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceType",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CsbsBackupV1)SetTags(val *map[string]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -931,6 +920,17 @@ func (c *jsiiProxy_CsbsBackupV1) OverrideLogicalId(newLogicalId *string) {
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CsbsBackupV1) PutTags(value interface{}) {
+	if err := c.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTags",
+		[]interface{}{value},
 	)
 }
 

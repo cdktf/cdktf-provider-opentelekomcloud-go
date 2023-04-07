@@ -76,9 +76,8 @@ type CsbsBackupPolicyV1 interface {
 	ScheduledOperation() CsbsBackupPolicyV1ScheduledOperationOutputReference
 	ScheduledOperationInput() *CsbsBackupPolicyV1ScheduledOperation
 	Status() *string
-	Tags() *map[string]*string
-	SetTags(val *map[string]*string)
-	TagsInput() *map[string]*string
+	Tags() CsbsBackupPolicyV1TagsList
+	TagsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -114,6 +113,7 @@ type CsbsBackupPolicyV1 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutResource(value interface{})
 	PutScheduledOperation(value *CsbsBackupPolicyV1ScheduledOperation)
+	PutTags(value interface{})
 	PutTimeouts(value *CsbsBackupPolicyV1Timeouts)
 	ResetCommon()
 	ResetDescription()
@@ -450,8 +450,8 @@ func (j *jsiiProxy_CsbsBackupPolicyV1) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1) Tags() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_CsbsBackupPolicyV1) Tags() CsbsBackupPolicyV1TagsList {
+	var returns CsbsBackupPolicyV1TagsList
 	_jsii_.Get(
 		j,
 		"tags",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_CsbsBackupPolicyV1) Tags() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CsbsBackupPolicyV1) TagsInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_CsbsBackupPolicyV1) TagsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"tagsInput",
@@ -677,17 +677,6 @@ func (j *jsiiProxy_CsbsBackupPolicyV1)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CsbsBackupPolicyV1)SetTags(val *map[string]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -976,6 +965,17 @@ func (c *jsiiProxy_CsbsBackupPolicyV1) PutScheduledOperation(value *CsbsBackupPo
 	_jsii_.InvokeVoid(
 		c,
 		"putScheduledOperation",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CsbsBackupPolicyV1) PutTags(value interface{}) {
+	if err := c.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTags",
 		[]interface{}{value},
 	)
 }
