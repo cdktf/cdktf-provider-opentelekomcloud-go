@@ -76,6 +76,10 @@ func (j *jsiiProxy_LbLoadbalancerV2) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_LbLoadbalancerV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbLoadbalancerV2) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

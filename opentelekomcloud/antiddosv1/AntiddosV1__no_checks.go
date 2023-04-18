@@ -80,6 +80,10 @@ func (j *jsiiProxy_AntiddosV1) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_AntiddosV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AntiddosV1) validateSetEnableL7Parameters(val interface{}) error {
 	return nil
 }

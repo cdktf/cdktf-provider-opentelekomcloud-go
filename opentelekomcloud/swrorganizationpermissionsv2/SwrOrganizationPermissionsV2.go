@@ -2,14 +2,14 @@ package swrorganizationpermissionsv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/swrorganizationpermissionsv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/swrorganizationpermissionsv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2}.
 type SwrOrganizationPermissionsV2 interface {
 	cdktf.TerraformResource
 	Auth() *float64
@@ -24,9 +24,9 @@ type SwrOrganizationPermissionsV2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -171,8 +171,8 @@ func (j *jsiiProxy_SwrOrganizationPermissionsV2) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_SwrOrganizationPermissionsV2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SwrOrganizationPermissionsV2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_SwrOrganizationPermissionsV2) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2} Resource.
 func NewSwrOrganizationPermissionsV2(scope constructs.Construct, id *string, config *SwrOrganizationPermissionsV2Config) SwrOrganizationPermissionsV2 {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewSwrOrganizationPermissionsV2(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2} Resource.
 func NewSwrOrganizationPermissionsV2_Override(s SwrOrganizationPermissionsV2, scope constructs.Construct, id *string, config *SwrOrganizationPermissionsV2Config) {
 	_init_.Initialize()
 
@@ -453,7 +453,10 @@ func (j *jsiiProxy_SwrOrganizationPermissionsV2)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwrOrganizationPermissionsV2)SetCount(val *float64) {
+func (j *jsiiProxy_SwrOrganizationPermissionsV2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

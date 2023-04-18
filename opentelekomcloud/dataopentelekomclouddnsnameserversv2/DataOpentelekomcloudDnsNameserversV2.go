@@ -2,14 +2,14 @@ package dataopentelekomclouddnsnameserversv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomclouddnsnameserversv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomclouddnsnameserversv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2}.
 type DataOpentelekomcloudDnsNameserversV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataOpentelekomcloudDnsNameserversV2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2} Data Source.
 func NewDataOpentelekomcloudDnsNameserversV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudDnsNameserversV2Config) DataOpentelekomcloudDnsNameserversV2 {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataOpentelekomcloudDnsNameserversV2(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2} Data Source.
 func NewDataOpentelekomcloudDnsNameserversV2_Override(d DataOpentelekomcloudDnsNameserversV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudDnsNameserversV2Config) {
 	_init_.Initialize()
 
@@ -335,7 +335,10 @@ func NewDataOpentelekomcloudDnsNameserversV2_Override(d DataOpentelekomcloudDnsN
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2)SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

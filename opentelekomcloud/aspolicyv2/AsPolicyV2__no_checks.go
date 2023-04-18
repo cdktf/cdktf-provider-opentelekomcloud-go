@@ -84,6 +84,10 @@ func (j *jsiiProxy_AsPolicyV2) validateSetCoolDownTimeParameters(val *float64) e
 	return nil
 }
 
+func (j *jsiiProxy_AsPolicyV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AsPolicyV2) validateSetIdParameters(val *string) error {
 	return nil
 }

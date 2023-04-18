@@ -68,6 +68,10 @@ func (j *jsiiProxy_SmnSubscriptionV2) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_SmnSubscriptionV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SmnSubscriptionV2) validateSetEndpointParameters(val *string) error {
 	return nil
 }

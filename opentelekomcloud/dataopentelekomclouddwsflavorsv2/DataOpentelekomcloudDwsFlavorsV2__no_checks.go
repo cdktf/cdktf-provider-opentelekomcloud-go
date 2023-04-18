@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDwsFlavorsV2) validateSetAvailabilityZone
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudDwsFlavorsV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudDwsFlavorsV2) validateSetIdParameters(val *string) error {
 	return nil
 }

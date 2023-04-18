@@ -2,14 +2,14 @@ package rdsparametergroupv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/rdsparametergroupv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/rdsparametergroupv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3}.
 type RdsParametergroupV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -22,9 +22,9 @@ type RdsParametergroupV3 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Created() *string
 	Datastore() RdsParametergroupV3DatastoreOutputReference
 	DatastoreInput() *RdsParametergroupV3Datastore
@@ -162,8 +162,8 @@ func (j *jsiiProxy_RdsParametergroupV3) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_RdsParametergroupV3) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RdsParametergroupV3) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_RdsParametergroupV3) ValuesInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3} Resource.
 func NewRdsParametergroupV3(scope constructs.Construct, id *string, config *RdsParametergroupV3Config) RdsParametergroupV3 {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewRdsParametergroupV3(scope constructs.Construct, id *string, config *RdsP
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3} Resource.
 func NewRdsParametergroupV3_Override(r RdsParametergroupV3, scope constructs.Construct, id *string, config *RdsParametergroupV3Config) {
 	_init_.Initialize()
 
@@ -453,7 +453,10 @@ func (j *jsiiProxy_RdsParametergroupV3)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsParametergroupV3)SetCount(val *float64) {
+func (j *jsiiProxy_RdsParametergroupV3)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

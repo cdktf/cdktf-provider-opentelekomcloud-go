@@ -108,6 +108,10 @@ func (j *jsiiProxy_ComputeInstanceV2) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceV2) validateSetFlavorIdParameters(val *string) error {
 	return nil
 }

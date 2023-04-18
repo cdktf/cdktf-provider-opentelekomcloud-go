@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) validateSetBandwidthParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) validateSetEngineParameters(val *string) error {
 	return nil
 }

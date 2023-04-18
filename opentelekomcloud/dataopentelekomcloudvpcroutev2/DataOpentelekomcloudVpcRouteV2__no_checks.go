@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudVpcRouteV2_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudVpcRouteV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcRouteV2) validateSetDestinationParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudRdsInstanceV3_IsTerraformElementParameters(x in
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudRdsInstanceV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudRdsInstanceV3) validateSetDatastoreTypeParameters(val *string) error {
 	return nil
 }

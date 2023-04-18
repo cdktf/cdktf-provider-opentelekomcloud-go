@@ -76,6 +76,10 @@ func (j *jsiiProxy_LbCertificateV2) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_LbCertificateV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbCertificateV2) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_DdsInstanceV3) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DdsInstanceV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DdsInstanceV3) validateSetDiskEncryptionIdParameters(val *string) error {
 	return nil
 }

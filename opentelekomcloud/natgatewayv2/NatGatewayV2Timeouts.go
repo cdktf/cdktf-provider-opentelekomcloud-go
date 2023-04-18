@@ -2,9 +2,9 @@ package natgatewayv2
 
 
 type NatGatewayV2Timeouts struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#create NatGatewayV2#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#create NatGatewayV2#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#delete NatGatewayV2#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#delete NatGatewayV2#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

@@ -72,6 +72,10 @@ func (j *jsiiProxy_NatDnatRuleV2) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_NatDnatRuleV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NatDnatRuleV2) validateSetExternalServicePortParameters(val *float64) error {
 	return nil
 }

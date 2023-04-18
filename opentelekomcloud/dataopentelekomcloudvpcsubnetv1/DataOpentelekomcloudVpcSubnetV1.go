@@ -2,14 +2,14 @@ package dataopentelekomcloudvpcsubnetv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudvpcsubnetv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudvpcsubnetv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1}.
 type DataOpentelekomcloudVpcSubnetV1 interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -23,9 +23,9 @@ type DataOpentelekomcloudVpcSubnetV1 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -197,8 +197,8 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -518,7 +518,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Data Source.
 func NewDataOpentelekomcloudVpcSubnetV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcSubnetV1Config) DataOpentelekomcloudVpcSubnetV1 {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewDataOpentelekomcloudVpcSubnetV1(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Data Source.
 func NewDataOpentelekomcloudVpcSubnetV1_Override(d DataOpentelekomcloudVpcSubnetV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcSubnetV1Config) {
 	_init_.Initialize()
 
@@ -569,7 +569,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1)SetCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1)SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

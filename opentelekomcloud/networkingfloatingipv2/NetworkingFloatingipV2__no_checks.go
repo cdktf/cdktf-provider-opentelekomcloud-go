@@ -72,6 +72,10 @@ func (j *jsiiProxy_NetworkingFloatingipV2) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_NetworkingFloatingipV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkingFloatingipV2) validateSetFixedIpParameters(val *string) error {
 	return nil
 }

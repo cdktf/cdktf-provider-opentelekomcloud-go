@@ -76,6 +76,10 @@ func (j *jsiiProxy_WafWhiteblackipRuleV1) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_WafWhiteblackipRuleV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafWhiteblackipRuleV1) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudRtsSoftwareConfigV1_IsTerraformElementParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudRtsSoftwareConfigV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudRtsSoftwareConfigV1) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataopentelekomcloudrdsversionsv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudrdsversionsv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudrdsversionsv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_versions_v3 opentelekomcloud_rds_versions_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_versions_v3 opentelekomcloud_rds_versions_v3}.
 type DataOpentelekomcloudRdsVersionsV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataOpentelekomcloudRdsVersionsV3 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatabaseName() *string
 	SetDatabaseName(val *string)
 	DatabaseNameInput() *string
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsVersionsV3) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudRdsVersionsV3) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOpentelekomcloudRdsVersionsV3) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsVersionsV3) Versions() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_versions_v3 opentelekomcloud_rds_versions_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_versions_v3 opentelekomcloud_rds_versions_v3} Data Source.
 func NewDataOpentelekomcloudRdsVersionsV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudRdsVersionsV3Config) DataOpentelekomcloudRdsVersionsV3 {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataOpentelekomcloudRdsVersionsV3(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_versions_v3 opentelekomcloud_rds_versions_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_versions_v3 opentelekomcloud_rds_versions_v3} Data Source.
 func NewDataOpentelekomcloudRdsVersionsV3_Override(d DataOpentelekomcloudRdsVersionsV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudRdsVersionsV3Config) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataOpentelekomcloudRdsVersionsV3_Override(d DataOpentelekomcloudRdsVers
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudRdsVersionsV3)SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudRdsVersionsV3)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

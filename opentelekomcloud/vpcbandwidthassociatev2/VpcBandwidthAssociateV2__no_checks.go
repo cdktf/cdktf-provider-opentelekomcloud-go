@@ -80,6 +80,10 @@ func (j *jsiiProxy_VpcBandwidthAssociateV2) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VpcBandwidthAssociateV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcBandwidthAssociateV2) validateSetFloatingIpsParameters(val *[]*string) error {
 	return nil
 }

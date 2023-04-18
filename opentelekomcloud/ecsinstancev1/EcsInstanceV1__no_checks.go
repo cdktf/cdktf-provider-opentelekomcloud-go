@@ -88,6 +88,10 @@ func (j *jsiiProxy_EcsInstanceV1) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_EcsInstanceV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsInstanceV1) validateSetDeleteDisksOnTerminationParameters(val interface{}) error {
 	return nil
 }

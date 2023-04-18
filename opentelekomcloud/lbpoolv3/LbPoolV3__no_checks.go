@@ -72,6 +72,10 @@ func (j *jsiiProxy_LbPoolV3) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_LbPoolV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbPoolV3) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

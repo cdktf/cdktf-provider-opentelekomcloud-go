@@ -76,6 +76,10 @@ func (j *jsiiProxy_WafCertificateV1) validateSetContentParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_WafCertificateV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafCertificateV1) validateSetIdParameters(val *string) error {
 	return nil
 }

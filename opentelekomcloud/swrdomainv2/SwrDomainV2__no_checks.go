@@ -76,6 +76,10 @@ func (j *jsiiProxy_SwrDomainV2) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_SwrDomainV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SwrDomainV2) validateSetDeadlineParameters(val *string) error {
 	return nil
 }

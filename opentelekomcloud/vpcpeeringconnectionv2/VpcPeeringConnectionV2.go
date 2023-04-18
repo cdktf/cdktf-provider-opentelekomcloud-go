@@ -2,14 +2,14 @@ package vpcpeeringconnectionv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpcpeeringconnectionv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcpeeringconnectionv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2}.
 type VpcPeeringConnectionV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VpcPeeringConnectionV2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -157,8 +157,8 @@ func (j *jsiiProxy_VpcPeeringConnectionV2) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionV2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpcPeeringConnectionV2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,7 +438,7 @@ func (j *jsiiProxy_VpcPeeringConnectionV2) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Resource.
 func NewVpcPeeringConnectionV2(scope constructs.Construct, id *string, config *VpcPeeringConnectionV2Config) VpcPeeringConnectionV2 {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewVpcPeeringConnectionV2(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Resource.
 func NewVpcPeeringConnectionV2_Override(v VpcPeeringConnectionV2, scope constructs.Construct, id *string, config *VpcPeeringConnectionV2Config) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_VpcPeeringConnectionV2)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionV2)SetCount(val *float64) {
+func (j *jsiiProxy_VpcPeeringConnectionV2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

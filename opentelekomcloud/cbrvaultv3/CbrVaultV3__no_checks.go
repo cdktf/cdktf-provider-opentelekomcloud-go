@@ -92,6 +92,10 @@ func (j *jsiiProxy_CbrVaultV3) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_CbrVaultV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CbrVaultV3) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

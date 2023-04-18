@@ -76,6 +76,10 @@ func (j *jsiiProxy_CtsTrackerV1) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_CtsTrackerV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CtsTrackerV1) validateSetFilePrefixNameParameters(val *string) error {
 	return nil
 }

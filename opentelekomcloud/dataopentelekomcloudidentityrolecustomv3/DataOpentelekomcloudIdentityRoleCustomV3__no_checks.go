@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudIdentityRoleCustomV3_IsTerraformElementParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

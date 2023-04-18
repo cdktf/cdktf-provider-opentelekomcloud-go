@@ -128,6 +128,10 @@ func (j *jsiiProxy_MrsClusterV1) validateSetCoreNodeSizeParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_MrsClusterV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MrsClusterV1) validateSetIdParameters(val *string) error {
 	return nil
 }

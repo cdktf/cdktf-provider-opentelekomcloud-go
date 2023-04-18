@@ -100,6 +100,10 @@ func (j *jsiiProxy_ObsBucket) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_ObsBucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObsBucket) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }

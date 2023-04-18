@@ -2,14 +2,14 @@ package obsbucketpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/obsbucketpolicy/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/obsbucketpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket_policy opentelekomcloud_obs_bucket_policy}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/obs_bucket_policy opentelekomcloud_obs_bucket_policy}.
 type ObsBucketPolicy interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -24,9 +24,9 @@ type ObsBucketPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_ObsBucketPolicy) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_ObsBucketPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ObsBucketPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ObsBucketPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket_policy opentelekomcloud_obs_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/obs_bucket_policy opentelekomcloud_obs_bucket_policy} Resource.
 func NewObsBucketPolicy(scope constructs.Construct, id *string, config *ObsBucketPolicyConfig) ObsBucketPolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewObsBucketPolicy(scope constructs.Construct, id *string, config *ObsBucke
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket_policy opentelekomcloud_obs_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/obs_bucket_policy opentelekomcloud_obs_bucket_policy} Resource.
 func NewObsBucketPolicy_Override(o ObsBucketPolicy, scope constructs.Construct, id *string, config *ObsBucketPolicyConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_ObsBucketPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ObsBucketPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_ObsBucketPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

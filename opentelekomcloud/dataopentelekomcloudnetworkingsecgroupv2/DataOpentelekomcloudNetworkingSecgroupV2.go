@@ -2,14 +2,14 @@ package dataopentelekomcloudnetworkingsecgroupv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudnetworkingsecgroupv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudnetworkingsecgroupv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2 opentelekomcloud_networking_secgroup_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/networking_secgroup_v2 opentelekomcloud_networking_secgroup_v2}.
 type DataOpentelekomcloudNetworkingSecgroupV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataOpentelekomcloudNetworkingSecgroupV2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2) TerraformResourceTy
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2 opentelekomcloud_networking_secgroup_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/networking_secgroup_v2 opentelekomcloud_networking_secgroup_v2} Data Source.
 func NewDataOpentelekomcloudNetworkingSecgroupV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudNetworkingSecgroupV2Config) DataOpentelekomcloudNetworkingSecgroupV2 {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewDataOpentelekomcloudNetworkingSecgroupV2(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2 opentelekomcloud_networking_secgroup_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/networking_secgroup_v2 opentelekomcloud_networking_secgroup_v2} Data Source.
 func NewDataOpentelekomcloudNetworkingSecgroupV2_Override(d DataOpentelekomcloudNetworkingSecgroupV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudNetworkingSecgroupV2Config) {
 	_init_.Initialize()
 
@@ -418,7 +418,10 @@ func NewDataOpentelekomcloudNetworkingSecgroupV2_Override(d DataOpentelekomcloud
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2)SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupV2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

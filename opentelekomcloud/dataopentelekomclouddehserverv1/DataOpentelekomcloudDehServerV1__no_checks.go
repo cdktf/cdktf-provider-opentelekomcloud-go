@@ -68,6 +68,10 @@ func validateDataOpentelekomcloudDehServerV1_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudDehServerV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudDehServerV1) validateSetDedicatedHostIdParameters(val *string) error {
 	return nil
 }

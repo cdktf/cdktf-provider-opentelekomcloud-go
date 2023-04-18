@@ -92,6 +92,10 @@ func (j *jsiiProxy_LbListenerV3) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_LbListenerV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbListenerV3) validateSetDefaultPoolIdParameters(val *string) error {
 	return nil
 }

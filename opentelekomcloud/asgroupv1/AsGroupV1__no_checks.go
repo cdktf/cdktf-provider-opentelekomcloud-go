@@ -92,6 +92,10 @@ func (j *jsiiProxy_AsGroupV1) validateSetCoolDownTimeParameters(val *float64) er
 	return nil
 }
 
+func (j *jsiiProxy_AsGroupV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AsGroupV1) validateSetDeleteInstancesParameters(val *string) error {
 	return nil
 }

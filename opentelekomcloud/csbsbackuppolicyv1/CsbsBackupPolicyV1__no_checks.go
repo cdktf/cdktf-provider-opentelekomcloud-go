@@ -88,6 +88,10 @@ func (j *jsiiProxy_CsbsBackupPolicyV1) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_CsbsBackupPolicyV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CsbsBackupPolicyV1) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package kmskeyv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/kmskeyv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/kmskeyv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_key_v1 opentelekomcloud_kms_key_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_key_v1 opentelekomcloud_kms_key_v1}.
 type KmsKeyV1 interface {
 	cdktf.TerraformResource
 	AllowCancelDeletion() interface{}
@@ -24,9 +24,9 @@ type KmsKeyV1 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationDate() *string
 	DefaultKeyFlag() *string
 	// Experimental.
@@ -197,8 +197,8 @@ func (j *jsiiProxy_KmsKeyV1) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKeyV1) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_KmsKeyV1) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -578,7 +578,7 @@ func (j *jsiiProxy_KmsKeyV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_key_v1 opentelekomcloud_kms_key_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_key_v1 opentelekomcloud_kms_key_v1} Resource.
 func NewKmsKeyV1(scope constructs.Construct, id *string, config *KmsKeyV1Config) KmsKeyV1 {
 	_init_.Initialize()
 
@@ -596,7 +596,7 @@ func NewKmsKeyV1(scope constructs.Construct, id *string, config *KmsKeyV1Config)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_key_v1 opentelekomcloud_kms_key_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_key_v1 opentelekomcloud_kms_key_v1} Resource.
 func NewKmsKeyV1_Override(k KmsKeyV1, scope constructs.Construct, id *string, config *KmsKeyV1Config) {
 	_init_.Initialize()
 
@@ -629,7 +629,10 @@ func (j *jsiiProxy_KmsKeyV1)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyV1)SetCount(val *float64) {
+func (j *jsiiProxy_KmsKeyV1)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_RtsSoftwareDeploymentV1) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_RtsSoftwareDeploymentV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RtsSoftwareDeploymentV1) validateSetIdParameters(val *string) error {
 	return nil
 }

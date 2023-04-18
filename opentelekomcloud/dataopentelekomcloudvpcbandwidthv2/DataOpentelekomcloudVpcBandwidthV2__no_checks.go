@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudVpcBandwidthV2_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) validateSetIdParameters(val *string) error {
 	return nil
 }

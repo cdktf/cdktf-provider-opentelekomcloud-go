@@ -68,6 +68,10 @@ func validateDataOpentelekomcloudCssFlavorV1_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) validateSetIdParameters(val *string) error {
 	return nil
 }

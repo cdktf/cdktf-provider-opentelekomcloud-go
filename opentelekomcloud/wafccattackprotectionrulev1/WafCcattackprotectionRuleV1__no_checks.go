@@ -84,6 +84,10 @@ func (j *jsiiProxy_WafCcattackprotectionRuleV1) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_WafCcattackprotectionRuleV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafCcattackprotectionRuleV1) validateSetIdParameters(val *string) error {
 	return nil
 }

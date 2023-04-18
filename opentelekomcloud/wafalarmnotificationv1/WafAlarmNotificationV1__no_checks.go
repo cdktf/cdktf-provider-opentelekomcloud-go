@@ -68,6 +68,10 @@ func (j *jsiiProxy_WafAlarmNotificationV1) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_WafAlarmNotificationV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafAlarmNotificationV1) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudRdsFlavorsV3_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudRdsFlavorsV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudRdsFlavorsV3) validateSetDbTypeParameters(val *string) error {
 	return nil
 }

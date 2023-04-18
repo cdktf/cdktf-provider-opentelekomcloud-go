@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucket) validateSetBucketParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudObsBucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudObsBucket) validateSetIdParameters(val *string) error {
 	return nil
 }

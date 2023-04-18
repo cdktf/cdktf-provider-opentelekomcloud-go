@@ -2,14 +2,14 @@ package rdsinstancev1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/rdsinstancev1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/rdsinstancev1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1 opentelekomcloud_rds_instance_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_instance_v1 opentelekomcloud_rds_instance_v1}.
 type RdsInstanceV1 interface {
 	cdktf.TerraformResource
 	Availabilityzone() *string
@@ -26,9 +26,9 @@ type RdsInstanceV1 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Created() *string
 	Datastore() RdsInstanceV1DatastoreOutputReference
 	DatastoreInput() *RdsInstanceV1Datastore
@@ -232,8 +232,8 @@ func (j *jsiiProxy_RdsInstanceV1) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_RdsInstanceV1) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RdsInstanceV1) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -693,7 +693,7 @@ func (j *jsiiProxy_RdsInstanceV1) VpcInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1 opentelekomcloud_rds_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_instance_v1 opentelekomcloud_rds_instance_v1} Resource.
 func NewRdsInstanceV1(scope constructs.Construct, id *string, config *RdsInstanceV1Config) RdsInstanceV1 {
 	_init_.Initialize()
 
@@ -711,7 +711,7 @@ func NewRdsInstanceV1(scope constructs.Construct, id *string, config *RdsInstanc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1 opentelekomcloud_rds_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_instance_v1 opentelekomcloud_rds_instance_v1} Resource.
 func NewRdsInstanceV1_Override(r RdsInstanceV1, scope constructs.Construct, id *string, config *RdsInstanceV1Config) {
 	_init_.Initialize()
 
@@ -744,7 +744,10 @@ func (j *jsiiProxy_RdsInstanceV1)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsInstanceV1)SetCount(val *float64) {
+func (j *jsiiProxy_RdsInstanceV1)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

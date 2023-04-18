@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudLbLoadbalancerV3_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3) validateSetIdParameters(val *string) error {
 	return nil
 }

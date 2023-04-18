@@ -2,9 +2,9 @@ package dataopentelekomcloudcsbsbackupv1
 
 
 type DataOpentelekomcloudCsbsBackupV1Tags struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_v1#key DataOpentelekomcloudCsbsBackupV1#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/csbs_backup_v1#key DataOpentelekomcloudCsbsBackupV1#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_v1#value DataOpentelekomcloudCsbsBackupV1#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/csbs_backup_v1#value DataOpentelekomcloudCsbsBackupV1#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

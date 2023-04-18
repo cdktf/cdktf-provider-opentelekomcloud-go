@@ -2,14 +2,14 @@ package waffalsealarmmaskingrulev1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/waffalsealarmmaskingrulev1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/waffalsealarmmaskingrulev1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1 opentelekomcloud_waf_falsealarmmasking_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1 opentelekomcloud_waf_falsealarmmasking_rule_v1}.
 type WafFalsealarmmaskingRuleV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type WafFalsealarmmaskingRuleV1 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -148,8 +148,8 @@ func (j *jsiiProxy_WafFalsealarmmaskingRuleV1) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_WafFalsealarmmaskingRuleV1) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WafFalsealarmmaskingRuleV1) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_WafFalsealarmmaskingRuleV1) UrlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1 opentelekomcloud_waf_falsealarmmasking_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1 opentelekomcloud_waf_falsealarmmasking_rule_v1} Resource.
 func NewWafFalsealarmmaskingRuleV1(scope constructs.Construct, id *string, config *WafFalsealarmmaskingRuleV1Config) WafFalsealarmmaskingRuleV1 {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewWafFalsealarmmaskingRuleV1(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1 opentelekomcloud_waf_falsealarmmasking_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1 opentelekomcloud_waf_falsealarmmasking_rule_v1} Resource.
 func NewWafFalsealarmmaskingRuleV1_Override(w WafFalsealarmmaskingRuleV1, scope constructs.Construct, id *string, config *WafFalsealarmmaskingRuleV1Config) {
 	_init_.Initialize()
 
@@ -419,7 +419,10 @@ func (j *jsiiProxy_WafFalsealarmmaskingRuleV1)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafFalsealarmmaskingRuleV1)SetCount(val *float64) {
+func (j *jsiiProxy_WafFalsealarmmaskingRuleV1)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

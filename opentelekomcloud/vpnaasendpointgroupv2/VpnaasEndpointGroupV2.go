@@ -2,14 +2,14 @@ package vpnaasendpointgroupv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpnaasendpointgroupv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpnaasendpointgroupv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_endpoint_group_v2 opentelekomcloud_vpnaas_endpoint_group_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpnaas_endpoint_group_v2 opentelekomcloud_vpnaas_endpoint_group_v2}.
 type VpnaasEndpointGroupV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VpnaasEndpointGroupV2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_VpnaasEndpointGroupV2) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_VpnaasEndpointGroupV2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpnaasEndpointGroupV2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -478,7 +478,7 @@ func (j *jsiiProxy_VpnaasEndpointGroupV2) ValueSpecsInput() *map[string]*string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_endpoint_group_v2 opentelekomcloud_vpnaas_endpoint_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpnaas_endpoint_group_v2 opentelekomcloud_vpnaas_endpoint_group_v2} Resource.
 func NewVpnaasEndpointGroupV2(scope constructs.Construct, id *string, config *VpnaasEndpointGroupV2Config) VpnaasEndpointGroupV2 {
 	_init_.Initialize()
 
@@ -496,7 +496,7 @@ func NewVpnaasEndpointGroupV2(scope constructs.Construct, id *string, config *Vp
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_endpoint_group_v2 opentelekomcloud_vpnaas_endpoint_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpnaas_endpoint_group_v2 opentelekomcloud_vpnaas_endpoint_group_v2} Resource.
 func NewVpnaasEndpointGroupV2_Override(v VpnaasEndpointGroupV2, scope constructs.Construct, id *string, config *VpnaasEndpointGroupV2Config) {
 	_init_.Initialize()
 
@@ -518,7 +518,10 @@ func (j *jsiiProxy_VpnaasEndpointGroupV2)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasEndpointGroupV2)SetCount(val *float64) {
+func (j *jsiiProxy_VpnaasEndpointGroupV2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

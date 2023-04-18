@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudNetworkingSecgroupRuleIdsV2_IsTerraformElementP
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupRuleIdsV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupRuleIdsV2) validateSetIdParameters(val *string) error {
 	return nil
 }

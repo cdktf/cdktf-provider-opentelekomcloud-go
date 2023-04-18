@@ -2,14 +2,14 @@ package vpcflowlogv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpcflowlogv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcflowlogv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1}.
 type VpcFlowLogV1 interface {
 	cdktf.TerraformResource
 	AdminState() interface{}
@@ -24,9 +24,9 @@ type VpcFlowLogV1 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -190,8 +190,8 @@ func (j *jsiiProxy_VpcFlowLogV1) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_VpcFlowLogV1) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpcFlowLogV1) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -521,7 +521,7 @@ func (j *jsiiProxy_VpcFlowLogV1) TrafficTypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1} Resource.
 func NewVpcFlowLogV1(scope constructs.Construct, id *string, config *VpcFlowLogV1Config) VpcFlowLogV1 {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewVpcFlowLogV1(scope constructs.Construct, id *string, config *VpcFlowLogV
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1} Resource.
 func NewVpcFlowLogV1_Override(v VpcFlowLogV1, scope constructs.Construct, id *string, config *VpcFlowLogV1Config) {
 	_init_.Initialize()
 
@@ -572,7 +572,10 @@ func (j *jsiiProxy_VpcFlowLogV1)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcFlowLogV1)SetCount(val *float64) {
+func (j *jsiiProxy_VpcFlowLogV1)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

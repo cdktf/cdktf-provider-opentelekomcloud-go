@@ -2,14 +2,14 @@ package identityagencyv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityagencyv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/identityagencyv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3 opentelekomcloud_identity_agency_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3}.
 type IdentityAgencyV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IdentityAgencyV3 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	DelegatedDomainName() *string
 	SetDelegatedDomainName(val *string)
@@ -160,8 +160,8 @@ func (j *jsiiProxy_IdentityAgencyV3) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_IdentityAgencyV3) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IdentityAgencyV3) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -461,7 +461,7 @@ func (j *jsiiProxy_IdentityAgencyV3) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3 opentelekomcloud_identity_agency_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3} Resource.
 func NewIdentityAgencyV3(scope constructs.Construct, id *string, config *IdentityAgencyV3Config) IdentityAgencyV3 {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewIdentityAgencyV3(scope constructs.Construct, id *string, config *Identit
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3 opentelekomcloud_identity_agency_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3} Resource.
 func NewIdentityAgencyV3_Override(i IdentityAgencyV3, scope constructs.Construct, id *string, config *IdentityAgencyV3Config) {
 	_init_.Initialize()
 
@@ -501,7 +501,10 @@ func (j *jsiiProxy_IdentityAgencyV3)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityAgencyV3)SetCount(val *float64) {
+func (j *jsiiProxy_IdentityAgencyV3)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

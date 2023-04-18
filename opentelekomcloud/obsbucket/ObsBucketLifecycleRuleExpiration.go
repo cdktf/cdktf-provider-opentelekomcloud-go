@@ -2,7 +2,7 @@ package obsbucket
 
 
 type ObsBucketLifecycleRuleExpiration struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#days ObsBucket#days}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/obs_bucket#days ObsBucket#days}.
 	Days *float64 `field:"required" json:"days" yaml:"days"`
 }
 

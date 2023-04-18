@@ -76,6 +76,10 @@ func (j *jsiiProxy_SfsTurboShareV1) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_SfsTurboShareV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfsTurboShareV1) validateSetCryptKeyIdParameters(val *string) error {
 	return nil
 }

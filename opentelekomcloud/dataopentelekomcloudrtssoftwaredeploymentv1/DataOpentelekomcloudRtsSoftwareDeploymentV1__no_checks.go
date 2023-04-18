@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataOpentelekomcloudRtsSoftwareDeploymentV1) validateSetConfi
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudRtsSoftwareDeploymentV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudRtsSoftwareDeploymentV1) validateSetIdParameters(val *string) error {
 	return nil
 }

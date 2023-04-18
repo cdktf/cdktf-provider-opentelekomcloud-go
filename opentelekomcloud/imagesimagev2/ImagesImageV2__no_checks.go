@@ -76,6 +76,10 @@ func (j *jsiiProxy_ImagesImageV2) validateSetContainerFormatParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ImagesImageV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagesImageV2) validateSetDiskFormatParameters(val *string) error {
 	return nil
 }

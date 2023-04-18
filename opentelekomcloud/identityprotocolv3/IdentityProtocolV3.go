@@ -2,14 +2,14 @@ package identityprotocolv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityprotocolv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/identityprotocolv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}.
 type IdentityProtocolV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IdentityProtocolV3 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_IdentityProtocolV3) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_IdentityProtocolV3) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IdentityProtocolV3) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_IdentityProtocolV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
 func NewIdentityProtocolV3(scope constructs.Construct, id *string, config *IdentityProtocolV3Config) IdentityProtocolV3 {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewIdentityProtocolV3(scope constructs.Construct, id *string, config *Ident
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
 func NewIdentityProtocolV3_Override(i IdentityProtocolV3, scope constructs.Construct, id *string, config *IdentityProtocolV3Config) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_IdentityProtocolV3)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityProtocolV3)SetCount(val *float64) {
+func (j *jsiiProxy_IdentityProtocolV3)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

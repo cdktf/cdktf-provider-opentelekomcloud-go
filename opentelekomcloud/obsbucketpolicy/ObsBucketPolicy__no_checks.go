@@ -72,6 +72,10 @@ func (j *jsiiProxy_ObsBucketPolicy) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_ObsBucketPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObsBucketPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) validateSetBackupIdParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudRdsBackupV3) validateSetIdParameters(val *string) error {
 	return nil
 }

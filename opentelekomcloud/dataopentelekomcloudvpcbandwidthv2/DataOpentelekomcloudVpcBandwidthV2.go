@@ -2,14 +2,14 @@ package dataopentelekomcloudvpcbandwidthv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudvpcbandwidthv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudvpcbandwidthv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2}.
 type DataOpentelekomcloudVpcBandwidthV2 interface {
 	cdktf.TerraformDataSource
 	BandwidthType() *string
@@ -19,9 +19,9 @@ type DataOpentelekomcloudVpcBandwidthV2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Data Source.
 func NewDataOpentelekomcloudVpcBandwidthV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcBandwidthV2Config) DataOpentelekomcloudVpcBandwidthV2 {
 	_init_.Initialize()
 
@@ -368,7 +368,7 @@ func NewDataOpentelekomcloudVpcBandwidthV2(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Data Source.
 func NewDataOpentelekomcloudVpcBandwidthV2_Override(d DataOpentelekomcloudVpcBandwidthV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcBandwidthV2Config) {
 	_init_.Initialize()
 
@@ -379,7 +379,10 @@ func NewDataOpentelekomcloudVpcBandwidthV2_Override(d DataOpentelekomcloudVpcBan
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2)SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

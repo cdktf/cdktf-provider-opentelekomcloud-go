@@ -76,6 +76,10 @@ func (j *jsiiProxy_IdentityAgencyV3) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_IdentityAgencyV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityAgencyV3) validateSetDelegatedDomainNameParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsAzV1) validateSetCodeParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudDmsAzV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudDmsAzV1) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_WafPreciseprotectionRuleV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafPreciseprotectionRuleV1) validateSetEndParameters(val *string) error {
 	return nil
 }

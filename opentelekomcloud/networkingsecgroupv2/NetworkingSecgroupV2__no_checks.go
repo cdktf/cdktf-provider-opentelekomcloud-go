@@ -72,6 +72,10 @@ func (j *jsiiProxy_NetworkingSecgroupV2) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_NetworkingSecgroupV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkingSecgroupV2) validateSetDeleteDefaultRulesParameters(val interface{}) error {
 	return nil
 }

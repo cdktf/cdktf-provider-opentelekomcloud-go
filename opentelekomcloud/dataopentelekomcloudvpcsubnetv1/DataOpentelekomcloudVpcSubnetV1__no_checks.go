@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) validateSetCidrParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) validateSetGatewayIpParameters(val *string) error {
 	return nil
 }

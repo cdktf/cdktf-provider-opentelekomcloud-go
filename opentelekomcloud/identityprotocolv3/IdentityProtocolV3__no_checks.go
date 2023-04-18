@@ -72,6 +72,10 @@ func (j *jsiiProxy_IdentityProtocolV3) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_IdentityProtocolV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityProtocolV3) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_CssClusterV1) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_CssClusterV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CssClusterV1) validateSetEnableAuthorityParameters(val interface{}) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_LbMonitorV3) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_LbMonitorV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbMonitorV3) validateSetDelayParameters(val *float64) error {
 	return nil
 }

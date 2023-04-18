@@ -88,6 +88,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_CssSnapshotConfigurationV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CssSnapshotConfigurationV1) validateSetIdParameters(val *string) error {
 	return nil
 }

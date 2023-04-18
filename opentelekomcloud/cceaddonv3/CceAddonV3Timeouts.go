@@ -2,7 +2,7 @@ package cceaddonv3
 
 
 type CceAddonV3Timeouts struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_addon_v3#delete CceAddonV3#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/cce_addon_v3#delete CceAddonV3#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

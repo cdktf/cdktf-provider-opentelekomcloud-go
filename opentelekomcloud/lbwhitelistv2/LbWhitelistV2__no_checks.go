@@ -68,6 +68,10 @@ func (j *jsiiProxy_LbWhitelistV2) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_LbWhitelistV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbWhitelistV2) validateSetEnableWhitelistParameters(val interface{}) error {
 	return nil
 }

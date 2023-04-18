@@ -104,6 +104,10 @@ func (j *jsiiProxy_S3Bucket) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_S3Bucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3Bucket) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }

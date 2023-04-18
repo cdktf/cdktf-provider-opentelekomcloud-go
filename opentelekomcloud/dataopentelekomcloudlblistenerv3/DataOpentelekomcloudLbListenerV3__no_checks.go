@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) validateSetClientTimeoutPar
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) validateSetDefaultPoolIdParameters(val *string) error {
 	return nil
 }

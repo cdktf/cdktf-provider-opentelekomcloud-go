@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1) validateSetBackupRecordIdPa
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1) validateSetIdParameters(val *string) error {
 	return nil
 }

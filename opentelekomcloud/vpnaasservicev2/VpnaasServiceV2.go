@@ -2,14 +2,14 @@ package vpnaasservicev2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpnaasservicev2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpnaasservicev2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2}.
 type VpnaasServiceV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -24,9 +24,9 @@ type VpnaasServiceV2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -193,8 +193,8 @@ func (j *jsiiProxy_VpnaasServiceV2) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_VpnaasServiceV2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpnaasServiceV2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -534,7 +534,7 @@ func (j *jsiiProxy_VpnaasServiceV2) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2} Resource.
 func NewVpnaasServiceV2(scope constructs.Construct, id *string, config *VpnaasServiceV2Config) VpnaasServiceV2 {
 	_init_.Initialize()
 
@@ -552,7 +552,7 @@ func NewVpnaasServiceV2(scope constructs.Construct, id *string, config *VpnaasSe
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2} Resource.
 func NewVpnaasServiceV2_Override(v VpnaasServiceV2, scope constructs.Construct, id *string, config *VpnaasServiceV2Config) {
 	_init_.Initialize()
 
@@ -585,7 +585,10 @@ func (j *jsiiProxy_VpnaasServiceV2)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnaasServiceV2)SetCount(val *float64) {
+func (j *jsiiProxy_VpnaasServiceV2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

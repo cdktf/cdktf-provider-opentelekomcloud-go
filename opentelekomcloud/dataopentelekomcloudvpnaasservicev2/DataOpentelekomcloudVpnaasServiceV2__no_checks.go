@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpnaasServiceV2) validateSetAdminStateUpP
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudVpnaasServiceV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpnaasServiceV2) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

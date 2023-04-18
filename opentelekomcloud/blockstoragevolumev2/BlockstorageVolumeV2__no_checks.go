@@ -84,6 +84,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2) validateSetConsistencyGroupIdParameters
 	return nil
 }
 
+func (j *jsiiProxy_BlockstorageVolumeV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BlockstorageVolumeV2) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCbrBackupIdsV3) validateSetCheckpointIdPa
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudCbrBackupIdsV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCbrBackupIdsV3) validateSetIdParameters(val *string) error {
 	return nil
 }

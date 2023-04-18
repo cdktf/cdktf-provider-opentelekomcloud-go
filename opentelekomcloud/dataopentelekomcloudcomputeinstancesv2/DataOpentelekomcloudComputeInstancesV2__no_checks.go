@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeInstancesV2) validateSetAvailabili
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudComputeInstancesV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudComputeInstancesV2) validateSetFlavorIdParameters(val *string) error {
 	return nil
 }

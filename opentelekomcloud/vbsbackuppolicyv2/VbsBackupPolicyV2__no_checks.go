@@ -76,6 +76,10 @@ func (j *jsiiProxy_VbsBackupPolicyV2) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_VbsBackupPolicyV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VbsBackupPolicyV2) validateSetFrequencyParameters(val *float64) error {
 	return nil
 }

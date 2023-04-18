@@ -108,6 +108,10 @@ func (j *jsiiProxy_CesAlarmrule) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_CesAlarmrule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CesAlarmrule) validateSetIdParameters(val *string) error {
 	return nil
 }

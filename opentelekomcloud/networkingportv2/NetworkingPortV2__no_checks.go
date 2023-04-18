@@ -84,6 +84,10 @@ func (j *jsiiProxy_NetworkingPortV2) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_NetworkingPortV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkingPortV2) validateSetDeviceIdParameters(val *string) error {
 	return nil
 }

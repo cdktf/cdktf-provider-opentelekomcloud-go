@@ -76,6 +76,10 @@ func (j *jsiiProxy_RtsSoftwareConfigV1) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_RtsSoftwareConfigV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RtsSoftwareConfigV1) validateSetGroupParameters(val *string) error {
 	return nil
 }

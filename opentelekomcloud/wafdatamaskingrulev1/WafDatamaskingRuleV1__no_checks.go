@@ -76,6 +76,10 @@ func (j *jsiiProxy_WafDatamaskingRuleV1) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_WafDatamaskingRuleV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafDatamaskingRuleV1) validateSetIdParameters(val *string) error {
 	return nil
 }

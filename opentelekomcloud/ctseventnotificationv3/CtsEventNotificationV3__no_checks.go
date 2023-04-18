@@ -76,6 +76,10 @@ func (j *jsiiProxy_CtsEventNotificationV3) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CtsEventNotificationV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CtsEventNotificationV3) validateSetIdParameters(val *string) error {
 	return nil
 }

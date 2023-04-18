@@ -68,6 +68,10 @@ func (j *jsiiProxy_LogtankGroupV2) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_LogtankGroupV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogtankGroupV2) validateSetGroupNameParameters(val *string) error {
 	return nil
 }

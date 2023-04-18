@@ -100,6 +100,10 @@ func (j *jsiiProxy_RdsInstanceV1) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_RdsInstanceV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsInstanceV1) validateSetDbportParameters(val *string) error {
 	return nil
 }

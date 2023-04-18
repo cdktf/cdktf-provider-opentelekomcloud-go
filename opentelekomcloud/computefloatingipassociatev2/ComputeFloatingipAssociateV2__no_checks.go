@@ -68,6 +68,10 @@ func (j *jsiiProxy_ComputeFloatingipAssociateV2) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_ComputeFloatingipAssociateV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeFloatingipAssociateV2) validateSetFixedIpParameters(val *string) error {
 	return nil
 }

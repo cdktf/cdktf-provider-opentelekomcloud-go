@@ -68,6 +68,10 @@ func (j *jsiiProxy_ImagesImageAccessAcceptV2) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ImagesImageAccessAcceptV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagesImageAccessAcceptV2) validateSetIdParameters(val *string) error {
 	return nil
 }

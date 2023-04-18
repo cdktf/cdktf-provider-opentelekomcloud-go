@@ -68,6 +68,10 @@ func (j *jsiiProxy_NetworkingVipV2) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_NetworkingVipV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkingVipV2) validateSetIdParameters(val *string) error {
 	return nil
 }

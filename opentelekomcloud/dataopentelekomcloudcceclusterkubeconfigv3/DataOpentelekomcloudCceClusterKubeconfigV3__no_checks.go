@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) validateSetCluste
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) validateSetDurationParameters(val *float64) error {
 	return nil
 }

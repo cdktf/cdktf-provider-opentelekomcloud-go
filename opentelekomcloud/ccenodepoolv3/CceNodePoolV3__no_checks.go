@@ -92,6 +92,10 @@ func (j *jsiiProxy_CceNodePoolV3) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_CceNodePoolV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceNodePoolV3) validateSetDockerBaseSizeParameters(val *float64) error {
 	return nil
 }

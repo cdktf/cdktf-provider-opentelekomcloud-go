@@ -72,6 +72,10 @@ func (j *jsiiProxy_SdrsProtectiongroupV1) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_SdrsProtectiongroupV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SdrsProtectiongroupV1) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

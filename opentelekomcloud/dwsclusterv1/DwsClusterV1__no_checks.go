@@ -88,6 +88,10 @@ func (j *jsiiProxy_DwsClusterV1) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DwsClusterV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DwsClusterV1) validateSetIdParameters(val *string) error {
 	return nil
 }

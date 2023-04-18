@@ -72,6 +72,10 @@ func (j *jsiiProxy_VpcepEndpointV1) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_VpcepEndpointV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcepEndpointV1) validateSetEnableDnsParameters(val interface{}) error {
 	return nil
 }

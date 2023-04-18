@@ -72,6 +72,10 @@ func (j *jsiiProxy_CbrPolicyV3) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_CbrPolicyV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CbrPolicyV3) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

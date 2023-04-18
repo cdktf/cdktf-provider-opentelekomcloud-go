@@ -84,6 +84,10 @@ func (j *jsiiProxy_NetworkingSubnetV2) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_NetworkingSubnetV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkingSubnetV2) validateSetDnsNameserversParameters(val *[]*string) error {
 	return nil
 }

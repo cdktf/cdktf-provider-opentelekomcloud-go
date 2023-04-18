@@ -68,6 +68,10 @@ func (j *jsiiProxy_SmnTopicV2) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_SmnTopicV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SmnTopicV2) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

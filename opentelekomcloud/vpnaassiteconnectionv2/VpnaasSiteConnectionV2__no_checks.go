@@ -80,6 +80,10 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_VpnaasSiteConnectionV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnaasSiteConnectionV2) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

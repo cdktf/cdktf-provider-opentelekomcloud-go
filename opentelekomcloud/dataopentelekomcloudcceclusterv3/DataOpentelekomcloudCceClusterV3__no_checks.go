@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3) validateSetClusterTypeParam
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCceClusterV3) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_RdsReadReplicaV3) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_RdsReadReplicaV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsReadReplicaV3) validateSetFlavorRefParameters(val *string) error {
 	return nil
 }

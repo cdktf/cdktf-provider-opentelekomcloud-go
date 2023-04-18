@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudComputeAvailabilityZonesV2_IsTerraformElementPa
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudComputeAvailabilityZonesV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudComputeAvailabilityZonesV2) validateSetIdParameters(val *string) error {
 	return nil
 }

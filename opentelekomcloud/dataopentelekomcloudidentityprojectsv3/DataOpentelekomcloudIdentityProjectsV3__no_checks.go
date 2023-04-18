@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudIdentityProjectsV3_IsTerraformElementParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3) validateSetIdParameters(val *string) error {
 	return nil
 }

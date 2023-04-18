@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudNetworkingNetworkV2_IsTerraformElementParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudNetworkingNetworkV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudNetworkingNetworkV2) validateSetIdParameters(val *string) error {
 	return nil
 }

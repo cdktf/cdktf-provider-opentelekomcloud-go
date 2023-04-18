@@ -2,14 +2,14 @@ package dataopentelekomclouds3bucketobject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomclouds3bucketobject/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomclouds3bucketobject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/s3_bucket_object opentelekomcloud_s3_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object}.
 type DataOpentelekomcloudS3BucketObject interface {
 	cdktf.TerraformDataSource
 	Body() *string
@@ -27,9 +27,9 @@ type DataOpentelekomcloudS3BucketObject interface {
 	ContentLength() *float64
 	ContentType() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DataOpentelekomcloudS3BucketObject) ContentType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudS3BucketObject) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOpentelekomcloudS3BucketObject) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -517,7 +517,7 @@ func (j *jsiiProxy_DataOpentelekomcloudS3BucketObject) WebsiteRedirectLocation()
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/s3_bucket_object opentelekomcloud_s3_bucket_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object} Data Source.
 func NewDataOpentelekomcloudS3BucketObject(scope constructs.Construct, id *string, config *DataOpentelekomcloudS3BucketObjectConfig) DataOpentelekomcloudS3BucketObject {
 	_init_.Initialize()
 
@@ -535,7 +535,7 @@ func NewDataOpentelekomcloudS3BucketObject(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/s3_bucket_object opentelekomcloud_s3_bucket_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object} Data Source.
 func NewDataOpentelekomcloudS3BucketObject_Override(d DataOpentelekomcloudS3BucketObject, scope constructs.Construct, id *string, config *DataOpentelekomcloudS3BucketObjectConfig) {
 	_init_.Initialize()
 
@@ -557,7 +557,10 @@ func (j *jsiiProxy_DataOpentelekomcloudS3BucketObject)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudS3BucketObject)SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudS3BucketObject)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

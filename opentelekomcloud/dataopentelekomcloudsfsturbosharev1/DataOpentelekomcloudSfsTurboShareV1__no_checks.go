@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudSfsTurboShareV1_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudSfsTurboShareV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudSfsTurboShareV1) validateSetIdParameters(val *string) error {
 	return nil
 }

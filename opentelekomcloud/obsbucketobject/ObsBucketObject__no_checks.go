@@ -84,6 +84,10 @@ func (j *jsiiProxy_ObsBucketObject) validateSetContentTypeParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_ObsBucketObject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObsBucketObject) validateSetEncryptionParameters(val interface{}) error {
 	return nil
 }

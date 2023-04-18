@@ -2,14 +2,14 @@ package networkingsecgrouprulev2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingsecgrouprulev2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/networkingsecgrouprulev2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2}.
 type NetworkingSecgroupRuleV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type NetworkingSecgroupRuleV2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -180,8 +180,8 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetworkingSecgroupRuleV2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -571,7 +571,7 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2} Resource.
 func NewNetworkingSecgroupRuleV2(scope constructs.Construct, id *string, config *NetworkingSecgroupRuleV2Config) NetworkingSecgroupRuleV2 {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewNetworkingSecgroupRuleV2(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2} Resource.
 func NewNetworkingSecgroupRuleV2_Override(n NetworkingSecgroupRuleV2, scope constructs.Construct, id *string, config *NetworkingSecgroupRuleV2Config) {
 	_init_.Initialize()
 
@@ -611,7 +611,10 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetCount(val *float64) {
+func (j *jsiiProxy_NetworkingSecgroupRuleV2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

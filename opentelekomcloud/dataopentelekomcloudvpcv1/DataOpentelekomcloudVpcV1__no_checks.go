@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcV1) validateSetCidrParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudVpcV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcV1) validateSetIdParameters(val *string) error {
 	return nil
 }

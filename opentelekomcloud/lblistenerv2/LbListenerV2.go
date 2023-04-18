@@ -2,14 +2,14 @@ package lblistenerv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lblistenerv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/lblistenerv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v2 opentelekomcloud_lb_listener_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2}.
 type LbListenerV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -27,9 +27,9 @@ type LbListenerV2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultPoolId() *string
 	SetDefaultPoolId(val *string)
 	DefaultPoolIdInput() *string
@@ -240,8 +240,8 @@ func (j *jsiiProxy_LbListenerV2) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerV2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LbListenerV2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -691,7 +691,7 @@ func (j *jsiiProxy_LbListenerV2) TransparentClientIpEnableInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v2 opentelekomcloud_lb_listener_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2} Resource.
 func NewLbListenerV2(scope constructs.Construct, id *string, config *LbListenerV2Config) LbListenerV2 {
 	_init_.Initialize()
 
@@ -709,7 +709,7 @@ func NewLbListenerV2(scope constructs.Construct, id *string, config *LbListenerV
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v2 opentelekomcloud_lb_listener_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2} Resource.
 func NewLbListenerV2_Override(l LbListenerV2, scope constructs.Construct, id *string, config *LbListenerV2Config) {
 	_init_.Initialize()
 
@@ -753,7 +753,10 @@ func (j *jsiiProxy_LbListenerV2)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbListenerV2)SetCount(val *float64) {
+func (j *jsiiProxy_LbListenerV2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

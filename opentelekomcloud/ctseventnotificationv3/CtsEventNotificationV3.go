@@ -2,14 +2,14 @@ package ctseventnotificationv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/ctseventnotificationv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3}.
 type CtsEventNotificationV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CtsEventNotificationV3 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -161,8 +161,8 @@ func (j *jsiiProxy_CtsEventNotificationV3) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CtsEventNotificationV3) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -472,7 +472,7 @@ func (j *jsiiProxy_CtsEventNotificationV3) TopicIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3} Resource.
 func NewCtsEventNotificationV3(scope constructs.Construct, id *string, config *CtsEventNotificationV3Config) CtsEventNotificationV3 {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewCtsEventNotificationV3(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3} Resource.
 func NewCtsEventNotificationV3_Override(c CtsEventNotificationV3, scope constructs.Construct, id *string, config *CtsEventNotificationV3Config) {
 	_init_.Initialize()
 
@@ -512,7 +512,10 @@ func (j *jsiiProxy_CtsEventNotificationV3)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3)SetCount(val *float64) {
+func (j *jsiiProxy_CtsEventNotificationV3)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

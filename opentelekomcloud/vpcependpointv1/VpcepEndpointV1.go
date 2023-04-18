@@ -2,14 +2,14 @@ package vpcependpointv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpcependpointv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcependpointv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1}.
 type VpcepEndpointV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VpcepEndpointV1 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -178,8 +178,8 @@ func (j *jsiiProxy_VpcepEndpointV1) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_VpcepEndpointV1) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpcepEndpointV1) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -579,7 +579,7 @@ func (j *jsiiProxy_VpcepEndpointV1) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource.
 func NewVpcepEndpointV1(scope constructs.Construct, id *string, config *VpcepEndpointV1Config) VpcepEndpointV1 {
 	_init_.Initialize()
 
@@ -597,7 +597,7 @@ func NewVpcepEndpointV1(scope constructs.Construct, id *string, config *VpcepEnd
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource.
 func NewVpcepEndpointV1_Override(v VpcepEndpointV1, scope constructs.Construct, id *string, config *VpcepEndpointV1Config) {
 	_init_.Initialize()
 
@@ -619,7 +619,10 @@ func (j *jsiiProxy_VpcepEndpointV1)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcepEndpointV1)SetCount(val *float64) {
+func (j *jsiiProxy_VpcepEndpointV1)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

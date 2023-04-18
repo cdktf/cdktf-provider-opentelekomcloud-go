@@ -108,6 +108,10 @@ func (j *jsiiProxy_CceClusterV3) validateSetContainerNetworkTypeParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_CceClusterV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceClusterV3) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

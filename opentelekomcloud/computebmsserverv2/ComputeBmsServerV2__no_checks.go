@@ -88,6 +88,10 @@ func (j *jsiiProxy_ComputeBmsServerV2) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBmsServerV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBmsServerV2) validateSetFlavorIdParameters(val *string) error {
 	return nil
 }

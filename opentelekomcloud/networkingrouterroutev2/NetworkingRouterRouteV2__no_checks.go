@@ -68,6 +68,10 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_NetworkingRouterRouteV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkingRouterRouteV2) validateSetDestinationCidrParameters(val *string) error {
 	return nil
 }

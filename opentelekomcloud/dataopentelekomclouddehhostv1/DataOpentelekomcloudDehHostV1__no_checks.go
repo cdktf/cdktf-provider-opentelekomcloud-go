@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDehHostV1) validateSetAvailabilityZonePar
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudDehHostV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudDehHostV1) validateSetIdParameters(val *string) error {
 	return nil
 }

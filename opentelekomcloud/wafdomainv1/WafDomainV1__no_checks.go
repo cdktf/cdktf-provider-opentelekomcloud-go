@@ -84,6 +84,10 @@ func (j *jsiiProxy_WafDomainV1) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_WafDomainV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafDomainV1) validateSetHostnameParameters(val *string) error {
 	return nil
 }

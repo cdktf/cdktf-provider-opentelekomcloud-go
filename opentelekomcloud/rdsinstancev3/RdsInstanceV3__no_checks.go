@@ -92,6 +92,10 @@ func (j *jsiiProxy_RdsInstanceV3) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_RdsInstanceV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsInstanceV3) validateSetFlavorParameters(val *string) error {
 	return nil
 }

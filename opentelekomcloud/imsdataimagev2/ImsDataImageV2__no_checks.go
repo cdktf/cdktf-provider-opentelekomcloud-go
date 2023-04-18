@@ -76,6 +76,10 @@ func (j *jsiiProxy_ImsDataImageV2) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_ImsDataImageV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImsDataImageV2) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

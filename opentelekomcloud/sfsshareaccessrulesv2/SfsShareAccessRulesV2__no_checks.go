@@ -72,6 +72,10 @@ func (j *jsiiProxy_SfsShareAccessRulesV2) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_SfsShareAccessRulesV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfsShareAccessRulesV2) validateSetIdParameters(val *string) error {
 	return nil
 }

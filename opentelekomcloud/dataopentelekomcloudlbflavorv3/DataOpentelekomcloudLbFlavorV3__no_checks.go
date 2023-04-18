@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudLbFlavorV3_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudLbFlavorV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudLbFlavorV3) validateSetIdParameters(val *string) error {
 	return nil
 }

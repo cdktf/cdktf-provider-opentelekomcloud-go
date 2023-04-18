@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCbrBackupV3) validateSetContainSystemDisk
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudCbrBackupV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCbrBackupV3) validateSetCreatedAtParameters(val *string) error {
 	return nil
 }

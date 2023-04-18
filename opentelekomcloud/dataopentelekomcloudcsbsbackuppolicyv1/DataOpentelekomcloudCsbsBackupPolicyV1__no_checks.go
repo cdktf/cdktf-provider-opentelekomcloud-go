@@ -68,6 +68,10 @@ func validateDataOpentelekomcloudCsbsBackupPolicyV1_IsTerraformElementParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) validateSetIdParameters(val *string) error {
 	return nil
 }

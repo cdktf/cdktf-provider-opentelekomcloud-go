@@ -72,6 +72,10 @@ func (j *jsiiProxy_LbSecurityPolicyV3) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_LbSecurityPolicyV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbSecurityPolicyV3) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

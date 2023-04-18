@@ -72,6 +72,10 @@ func (j *jsiiProxy_RtsStackV1) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_RtsStackV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RtsStackV1) validateSetDisableRollbackParameters(val interface{}) error {
 	return nil
 }

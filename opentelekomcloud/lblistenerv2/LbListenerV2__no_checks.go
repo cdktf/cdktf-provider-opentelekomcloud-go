@@ -80,6 +80,10 @@ func (j *jsiiProxy_LbListenerV2) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_LbListenerV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbListenerV2) validateSetDefaultPoolIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudNetworkingPortV2) validateSetAdminStateUp
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudNetworkingPortV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudNetworkingPortV2) validateSetDeviceIdParameters(val *string) error {
 	return nil
 }

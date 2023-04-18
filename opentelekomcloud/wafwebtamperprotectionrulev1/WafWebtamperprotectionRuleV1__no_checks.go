@@ -72,6 +72,10 @@ func (j *jsiiProxy_WafWebtamperprotectionRuleV1) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_WafWebtamperprotectionRuleV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafWebtamperprotectionRuleV1) validateSetHostnameParameters(val *string) error {
 	return nil
 }

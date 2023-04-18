@@ -68,6 +68,10 @@ func (j *jsiiProxy_KmsGrantV1) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_KmsGrantV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsGrantV1) validateSetGranteePrincipalParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudComputeBmsServerV2_IsTerraformElementParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2) validateSetFlavorIdParameters(val *string) error {
 	return nil
 }

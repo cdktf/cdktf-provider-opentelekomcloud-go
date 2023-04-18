@@ -72,6 +72,10 @@ func (j *jsiiProxy_LbIpgroupV3) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_LbIpgroupV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbIpgroupV3) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

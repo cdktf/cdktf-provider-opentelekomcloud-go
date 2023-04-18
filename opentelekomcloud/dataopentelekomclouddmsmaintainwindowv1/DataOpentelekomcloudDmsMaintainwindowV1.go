@@ -2,14 +2,14 @@ package dataopentelekomclouddmsmaintainwindowv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomclouddmsmaintainwindowv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomclouddmsmaintainwindowv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1}.
 type DataOpentelekomcloudDmsMaintainwindowV1 interface {
 	cdktf.TerraformDataSource
 	Begin() *string
@@ -20,9 +20,9 @@ type DataOpentelekomcloudDmsMaintainwindowV1 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Default() interface{}
 	SetDefault(val interface{})
 	DefaultInput() interface{}
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsMaintainwindowV1) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsMaintainwindowV1) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOpentelekomcloudDmsMaintainwindowV1) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsMaintainwindowV1) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1} Data Source.
 func NewDataOpentelekomcloudDmsMaintainwindowV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudDmsMaintainwindowV1Config) DataOpentelekomcloudDmsMaintainwindowV1 {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataOpentelekomcloudDmsMaintainwindowV1(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1} Data Source.
 func NewDataOpentelekomcloudDmsMaintainwindowV1_Override(d DataOpentelekomcloudDmsMaintainwindowV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudDmsMaintainwindowV1Config) {
 	_init_.Initialize()
 
@@ -394,7 +394,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsMaintainwindowV1)SetBegin(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudDmsMaintainwindowV1)SetCount(val *float64) {
+func (j *jsiiProxy_DataOpentelekomcloudDmsMaintainwindowV1)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

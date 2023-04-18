@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOpentelekomcloudDcsMaintainwindowV1) validateSetBeginPara
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudDcsMaintainwindowV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudDcsMaintainwindowV1) validateSetDefaultParameters(val interface{}) error {
 	return nil
 }

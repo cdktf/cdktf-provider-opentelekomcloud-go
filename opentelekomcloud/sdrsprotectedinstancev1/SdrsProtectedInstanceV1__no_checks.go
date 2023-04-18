@@ -72,6 +72,10 @@ func (j *jsiiProxy_SdrsProtectedInstanceV1) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SdrsProtectedInstanceV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SdrsProtectedInstanceV1) validateSetDeleteTargetEipParameters(val interface{}) error {
 	return nil
 }

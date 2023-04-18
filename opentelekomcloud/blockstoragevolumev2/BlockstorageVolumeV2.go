@@ -2,14 +2,14 @@ package blockstoragevolumev2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/blockstoragevolumev2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/blockstoragevolumev2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/blockstorage_volume_v2 opentelekomcloud_blockstorage_volume_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/blockstorage_volume_v2 opentelekomcloud_blockstorage_volume_v2}.
 type BlockstorageVolumeV2 interface {
 	cdktf.TerraformResource
 	Attachment() BlockstorageVolumeV2AttachmentList
@@ -31,9 +31,9 @@ type BlockstorageVolumeV2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -270,8 +270,8 @@ func (j *jsiiProxy_BlockstorageVolumeV2) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BlockstorageVolumeV2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -691,7 +691,7 @@ func (j *jsiiProxy_BlockstorageVolumeV2) Wwn() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/blockstorage_volume_v2 opentelekomcloud_blockstorage_volume_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/blockstorage_volume_v2 opentelekomcloud_blockstorage_volume_v2} Resource.
 func NewBlockstorageVolumeV2(scope constructs.Construct, id *string, config *BlockstorageVolumeV2Config) BlockstorageVolumeV2 {
 	_init_.Initialize()
 
@@ -709,7 +709,7 @@ func NewBlockstorageVolumeV2(scope constructs.Construct, id *string, config *Blo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/blockstorage_volume_v2 opentelekomcloud_blockstorage_volume_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/blockstorage_volume_v2 opentelekomcloud_blockstorage_volume_v2} Resource.
 func NewBlockstorageVolumeV2_Override(b BlockstorageVolumeV2, scope constructs.Construct, id *string, config *BlockstorageVolumeV2Config) {
 	_init_.Initialize()
 
@@ -764,7 +764,10 @@ func (j *jsiiProxy_BlockstorageVolumeV2)SetConsistencyGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BlockstorageVolumeV2)SetCount(val *float64) {
+func (j *jsiiProxy_BlockstorageVolumeV2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

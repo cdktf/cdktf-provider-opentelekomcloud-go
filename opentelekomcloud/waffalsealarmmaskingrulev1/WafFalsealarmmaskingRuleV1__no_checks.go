@@ -72,6 +72,10 @@ func (j *jsiiProxy_WafFalsealarmmaskingRuleV1) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_WafFalsealarmmaskingRuleV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafFalsealarmmaskingRuleV1) validateSetIdParameters(val *string) error {
 	return nil
 }

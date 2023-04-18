@@ -64,6 +64,10 @@ func validateDataOpentelekomcloudKmsDataKeyV1_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudKmsDataKeyV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudKmsDataKeyV1) validateSetDatakeyLengthParameters(val *string) error {
 	return nil
 }
