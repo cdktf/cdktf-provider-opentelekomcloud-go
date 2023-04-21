@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3}.
 type CceNodeV3 interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -141,6 +141,9 @@ type CceNodeV3 interface {
 	RegionInput() *string
 	RootVolume() CceNodeV3RootVolumeOutputReference
 	RootVolumeInput() *CceNodeV3RootVolume
+	Runtime() *string
+	SetRuntime(val *string)
+	RuntimeInput() *string
 	ServerId() *string
 	Sharetype() *string
 	SetSharetype(val *string)
@@ -218,6 +221,7 @@ type CceNodeV3 interface {
 	ResetProductId()
 	ResetPublicKey()
 	ResetRegion()
+	ResetRuntime()
 	ResetSharetype()
 	ResetSubnetId()
 	ResetTags()
@@ -978,6 +982,26 @@ func (j *jsiiProxy_CceNodeV3) RootVolumeInput() *CceNodeV3RootVolume {
 	return returns
 }
 
+func (j *jsiiProxy_CceNodeV3) Runtime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceNodeV3) RuntimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CceNodeV3) ServerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1129,7 +1153,7 @@ func (j *jsiiProxy_CceNodeV3) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
 func NewCceNodeV3(scope constructs.Construct, id *string, config *CceNodeV3Config) CceNodeV3 {
 	_init_.Initialize()
 
@@ -1147,7 +1171,7 @@ func NewCceNodeV3(scope constructs.Construct, id *string, config *CceNodeV3Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
 func NewCceNodeV3_Override(c CceNodeV3, scope constructs.Construct, id *string, config *CceNodeV3Config) {
 	_init_.Initialize()
 
@@ -1530,6 +1554,17 @@ func (j *jsiiProxy_CceNodeV3)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceNodeV3)SetRuntime(val *string) {
+	if err := j.validateSetRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtime",
 		val,
 	)
 }
@@ -2073,6 +2108,14 @@ func (c *jsiiProxy_CceNodeV3) ResetRegion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceNodeV3) ResetRuntime() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRuntime",
 		nil, // no parameters
 	)
 }

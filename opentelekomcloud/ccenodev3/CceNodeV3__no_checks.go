@@ -208,6 +208,10 @@ func (j *jsiiProxy_CceNodeV3) validateSetRegionParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_CceNodeV3) validateSetRuntimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceNodeV3) validateSetSharetypeParameters(val *string) error {
 	return nil
 }

@@ -168,6 +168,10 @@ func (j *jsiiProxy_CceNodePoolV3) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_CceNodePoolV3) validateSetRuntimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceNodePoolV3) validateSetScaleDownCooldownTimeParameters(val *float64) error {
 	return nil
 }

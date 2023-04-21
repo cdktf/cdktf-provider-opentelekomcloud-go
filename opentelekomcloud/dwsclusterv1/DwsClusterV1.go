@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dws_cluster_v1 opentelekomcloud_dws_cluster_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/dws_cluster_v1 opentelekomcloud_dws_cluster_v1}.
 type DwsClusterV1 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -750,7 +750,7 @@ func (j *jsiiProxy_DwsClusterV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dws_cluster_v1 opentelekomcloud_dws_cluster_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/dws_cluster_v1 opentelekomcloud_dws_cluster_v1} Resource.
 func NewDwsClusterV1(scope constructs.Construct, id *string, config *DwsClusterV1Config) DwsClusterV1 {
 	_init_.Initialize()
 
@@ -768,7 +768,7 @@ func NewDwsClusterV1(scope constructs.Construct, id *string, config *DwsClusterV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dws_cluster_v1 opentelekomcloud_dws_cluster_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/dws_cluster_v1 opentelekomcloud_dws_cluster_v1} Resource.
 func NewDwsClusterV1_Override(d DwsClusterV1, scope constructs.Construct, id *string, config *DwsClusterV1Config) {
 	_init_.Initialize()
 

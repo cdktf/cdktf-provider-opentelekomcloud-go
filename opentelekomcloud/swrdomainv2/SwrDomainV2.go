@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_domain_v2 opentelekomcloud_swr_domain_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_domain_v2 opentelekomcloud_swr_domain_v2}.
 type SwrDomainV2 interface {
 	cdktf.TerraformResource
 	AccessDomain() *string
@@ -504,7 +504,7 @@ func (j *jsiiProxy_SwrDomainV2) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_domain_v2 opentelekomcloud_swr_domain_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_domain_v2 opentelekomcloud_swr_domain_v2} Resource.
 func NewSwrDomainV2(scope constructs.Construct, id *string, config *SwrDomainV2Config) SwrDomainV2 {
 	_init_.Initialize()
 
@@ -522,7 +522,7 @@ func NewSwrDomainV2(scope constructs.Construct, id *string, config *SwrDomainV2C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_domain_v2 opentelekomcloud_swr_domain_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_domain_v2 opentelekomcloud_swr_domain_v2} Resource.
 func NewSwrDomainV2_Override(s SwrDomainV2, scope constructs.Construct, id *string, config *SwrDomainV2Config) {
 	_init_.Initialize()
 

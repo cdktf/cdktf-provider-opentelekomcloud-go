@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/mrs_cluster_v1 opentelekomcloud_mrs_cluster_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/mrs_cluster_v1 opentelekomcloud_mrs_cluster_v1}.
 type MrsClusterV1 interface {
 	cdktf.TerraformResource
 	AddJobs() MrsClusterV1AddJobsList
@@ -1255,7 +1255,7 @@ func (j *jsiiProxy_MrsClusterV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/mrs_cluster_v1 opentelekomcloud_mrs_cluster_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/mrs_cluster_v1 opentelekomcloud_mrs_cluster_v1} Resource.
 func NewMrsClusterV1(scope constructs.Construct, id *string, config *MrsClusterV1Config) MrsClusterV1 {
 	_init_.Initialize()
 
@@ -1273,7 +1273,7 @@ func NewMrsClusterV1(scope constructs.Construct, id *string, config *MrsClusterV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/mrs_cluster_v1 opentelekomcloud_mrs_cluster_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/mrs_cluster_v1 opentelekomcloud_mrs_cluster_v1} Resource.
 func NewMrsClusterV1_Override(m MrsClusterV1, scope constructs.Construct, id *string, config *MrsClusterV1Config) {
 	_init_.Initialize()
 

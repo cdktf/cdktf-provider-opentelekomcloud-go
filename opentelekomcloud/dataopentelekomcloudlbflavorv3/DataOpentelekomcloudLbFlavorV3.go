@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/lb_flavor_v3 opentelekomcloud_lb_flavor_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_flavor_v3 opentelekomcloud_lb_flavor_v3}.
 type DataOpentelekomcloudLbFlavorV3 interface {
 	cdktf.TerraformDataSource
 	Bandwidth() *float64
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataOpentelekomcloudLbFlavorV3) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/lb_flavor_v3 opentelekomcloud_lb_flavor_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_flavor_v3 opentelekomcloud_lb_flavor_v3} Data Source.
 func NewDataOpentelekomcloudLbFlavorV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudLbFlavorV3Config) DataOpentelekomcloudLbFlavorV3 {
 	_init_.Initialize()
 
@@ -366,7 +366,7 @@ func NewDataOpentelekomcloudLbFlavorV3(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/lb_flavor_v3 opentelekomcloud_lb_flavor_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_flavor_v3 opentelekomcloud_lb_flavor_v3} Data Source.
 func NewDataOpentelekomcloudLbFlavorV3_Override(d DataOpentelekomcloudLbFlavorV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudLbFlavorV3Config) {
 	_init_.Initialize()
 

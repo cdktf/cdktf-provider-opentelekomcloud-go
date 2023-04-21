@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3}.
 type CceNodePoolV3 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -110,6 +110,9 @@ type CceNodePoolV3 interface {
 	RawOverrides() interface{}
 	RootVolume() CceNodePoolV3RootVolumeOutputReference
 	RootVolumeInput() *CceNodePoolV3RootVolume
+	Runtime() *string
+	SetRuntime(val *string)
+	RuntimeInput() *string
 	ScaleDownCooldownTime() *float64
 	SetScaleDownCooldownTime(val *float64)
 	ScaleDownCooldownTimeInput() *float64
@@ -182,6 +185,7 @@ type CceNodePoolV3 interface {
 	ResetPostinstall()
 	ResetPreinstall()
 	ResetPriority()
+	ResetRuntime()
 	ResetScaleDownCooldownTime()
 	ResetScaleEnable()
 	ResetServerGroupReference()
@@ -734,6 +738,26 @@ func (j *jsiiProxy_CceNodePoolV3) RootVolumeInput() *CceNodePoolV3RootVolume {
 	return returns
 }
 
+func (j *jsiiProxy_CceNodePoolV3) Runtime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceNodePoolV3) RuntimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CceNodePoolV3) ScaleDownCooldownTime() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -915,7 +939,7 @@ func (j *jsiiProxy_CceNodePoolV3) UserTagsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3} Resource.
 func NewCceNodePoolV3(scope constructs.Construct, id *string, config *CceNodePoolV3Config) CceNodePoolV3 {
 	_init_.Initialize()
 
@@ -933,7 +957,7 @@ func NewCceNodePoolV3(scope constructs.Construct, id *string, config *CceNodePoo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3} Resource.
 func NewCceNodePoolV3_Override(c CceNodePoolV3, scope constructs.Construct, id *string, config *CceNodePoolV3Config) {
 	_init_.Initialize()
 
@@ -1206,6 +1230,17 @@ func (j *jsiiProxy_CceNodePoolV3)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceNodePoolV3)SetRuntime(val *string) {
+	if err := j.validateSetRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtime",
 		val,
 	)
 }
@@ -1691,6 +1726,14 @@ func (c *jsiiProxy_CceNodePoolV3) ResetPriority() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPriority",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceNodePoolV3) ResetRuntime() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRuntime",
 		nil, // no parameters
 	)
 }

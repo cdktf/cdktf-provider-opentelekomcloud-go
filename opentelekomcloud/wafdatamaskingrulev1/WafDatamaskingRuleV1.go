@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_datamasking_rule_v1 opentelekomcloud_waf_datamasking_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/waf_datamasking_rule_v1 opentelekomcloud_waf_datamasking_rule_v1}.
 type WafDatamaskingRuleV1 interface {
 	cdktf.TerraformResource
 	Category() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_WafDatamaskingRuleV1) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_datamasking_rule_v1 opentelekomcloud_waf_datamasking_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/waf_datamasking_rule_v1 opentelekomcloud_waf_datamasking_rule_v1} Resource.
 func NewWafDatamaskingRuleV1(scope constructs.Construct, id *string, config *WafDatamaskingRuleV1Config) WafDatamaskingRuleV1 {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewWafDatamaskingRuleV1(scope constructs.Construct, id *string, config *Waf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_datamasking_rule_v1 opentelekomcloud_waf_datamasking_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/waf_datamasking_rule_v1 opentelekomcloud_waf_datamasking_rule_v1} Resource.
 func NewWafDatamaskingRuleV1_Override(w WafDatamaskingRuleV1, scope constructs.Construct, id *string, config *WafDatamaskingRuleV1Config) {
 	_init_.Initialize()
 

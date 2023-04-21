@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_versions_v3 opentelekomcloud_rds_versions_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/rds_versions_v3 opentelekomcloud_rds_versions_v3}.
 type DataOpentelekomcloudRdsVersionsV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsVersionsV3) Versions() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_versions_v3 opentelekomcloud_rds_versions_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/rds_versions_v3 opentelekomcloud_rds_versions_v3} Data Source.
 func NewDataOpentelekomcloudRdsVersionsV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudRdsVersionsV3Config) DataOpentelekomcloudRdsVersionsV3 {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataOpentelekomcloudRdsVersionsV3(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_versions_v3 opentelekomcloud_rds_versions_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/rds_versions_v3 opentelekomcloud_rds_versions_v3} Data Source.
 func NewDataOpentelekomcloudRdsVersionsV3_Override(d DataOpentelekomcloudRdsVersionsV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudRdsVersionsV3Config) {
 	_init_.Initialize()
 
