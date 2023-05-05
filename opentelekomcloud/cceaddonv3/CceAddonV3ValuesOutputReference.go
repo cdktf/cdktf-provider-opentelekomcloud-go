@@ -31,6 +31,9 @@ type CceAddonV3ValuesOutputReference interface {
 	Custom() *map[string]*string
 	SetCustom(val *map[string]*string)
 	CustomInput() *map[string]*string
+	Flavor() *string
+	SetFlavor(val *string)
+	FlavorInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CceAddonV3Values
@@ -67,6 +70,7 @@ type CceAddonV3ValuesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetFlavor()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference) CustomInput() *map[string]*s
 	_jsii_.Get(
 		j,
 		"customInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) Flavor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) FlavorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavorInput",
 		&returns,
 	)
 	return returns
@@ -260,6 +284,17 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference)SetCustom(val *map[string]*st
 	_jsii_.Set(
 		j,
 		"custom",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference)SetFlavor(val *string) {
+	if err := j.validateSetFlavorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flavor",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (c *jsiiProxy_CceAddonV3ValuesOutputReference) InterpolationForAttribute(pr
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CceAddonV3ValuesOutputReference) ResetFlavor() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFlavor",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CceAddonV3ValuesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_rule_v3 opentelekomcloud_lb_rule_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_rule_v3 opentelekomcloud_lb_rule_v3}.
 type LbRuleV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_LbRuleV3) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_rule_v3 opentelekomcloud_lb_rule_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_rule_v3 opentelekomcloud_lb_rule_v3} Resource.
 func NewLbRuleV3(scope constructs.Construct, id *string, config *LbRuleV3Config) LbRuleV3 {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewLbRuleV3(scope constructs.Construct, id *string, config *LbRuleV3Config)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_rule_v3 opentelekomcloud_lb_rule_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_rule_v3 opentelekomcloud_lb_rule_v3} Resource.
 func NewLbRuleV3_Override(l LbRuleV3, scope constructs.Construct, id *string, config *LbRuleV3Config) {
 	_init_.Initialize()
 

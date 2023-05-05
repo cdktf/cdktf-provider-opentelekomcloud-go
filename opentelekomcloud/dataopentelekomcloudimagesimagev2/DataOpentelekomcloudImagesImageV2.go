@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2}.
 type DataOpentelekomcloudImagesImageV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -689,7 +689,7 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) VisibilityInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2} Data Source.
 func NewDataOpentelekomcloudImagesImageV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudImagesImageV2Config) DataOpentelekomcloudImagesImageV2 {
 	_init_.Initialize()
 
@@ -707,7 +707,7 @@ func NewDataOpentelekomcloudImagesImageV2(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2} Data Source.
 func NewDataOpentelekomcloudImagesImageV2_Override(d DataOpentelekomcloudImagesImageV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudImagesImageV2Config) {
 	_init_.Initialize()
 

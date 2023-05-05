@@ -64,6 +64,10 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetCustomParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetFlavorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetInternalValueParameters(val *CceAddonV3Values) error {
 	return nil
 }

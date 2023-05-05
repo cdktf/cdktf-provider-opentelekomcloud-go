@@ -163,6 +163,14 @@ func (j *jsiiProxy_CceAddonV3TimeoutsOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
+func (j *jsiiProxy_CceAddonV3TimeoutsOutputReference) validateSetCreateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CceAddonV3TimeoutsOutputReference) validateSetDeleteParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/rts_stack_resource_v1 opentelekomcloud_rts_stack_resource_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/rts_stack_resource_v1 opentelekomcloud_rts_stack_resource_v1}.
 type DataOpentelekomcloudRtsStackResourceV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRtsStackResourceV1) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/rts_stack_resource_v1 opentelekomcloud_rts_stack_resource_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/rts_stack_resource_v1 opentelekomcloud_rts_stack_resource_v1} Data Source.
 func NewDataOpentelekomcloudRtsStackResourceV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudRtsStackResourceV1Config) DataOpentelekomcloudRtsStackResourceV1 {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewDataOpentelekomcloudRtsStackResourceV1(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/rts_stack_resource_v1 opentelekomcloud_rts_stack_resource_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/rts_stack_resource_v1 opentelekomcloud_rts_stack_resource_v1} Data Source.
 func NewDataOpentelekomcloudRtsStackResourceV1_Override(d DataOpentelekomcloudRtsStackResourceV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudRtsStackResourceV1Config) {
 	_init_.Initialize()
 

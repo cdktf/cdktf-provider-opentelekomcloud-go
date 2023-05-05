@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2 opentelekomcloud_fw_firewall_group_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2 opentelekomcloud_fw_firewall_group_v2}.
 type FwFirewallGroupV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -526,7 +526,7 @@ func (j *jsiiProxy_FwFirewallGroupV2) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2 opentelekomcloud_fw_firewall_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2 opentelekomcloud_fw_firewall_group_v2} Resource.
 func NewFwFirewallGroupV2(scope constructs.Construct, id *string, config *FwFirewallGroupV2Config) FwFirewallGroupV2 {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewFwFirewallGroupV2(scope constructs.Construct, id *string, config *FwFire
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2 opentelekomcloud_fw_firewall_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2 opentelekomcloud_fw_firewall_group_v2} Resource.
 func NewFwFirewallGroupV2_Override(f FwFirewallGroupV2, scope constructs.Construct, id *string, config *FwFirewallGroupV2Config) {
 	_init_.Initialize()
 

@@ -20,6 +20,9 @@ type CceAddonV3TimeoutsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Create() *string
+	SetCreate(val *string)
+	CreateInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -64,6 +67,7 @@ type CceAddonV3TimeoutsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCreate()
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -95,6 +99,26 @@ func (j *jsiiProxy_CceAddonV3TimeoutsOutputReference) ComplexObjectIsFromSet() *
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceAddonV3TimeoutsOutputReference) Create() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"create",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceAddonV3TimeoutsOutputReference) CreateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createInput",
 		&returns,
 	)
 	return returns
@@ -216,6 +240,17 @@ func (j *jsiiProxy_CceAddonV3TimeoutsOutputReference)SetComplexObjectIsFromSet(v
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceAddonV3TimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"create",
 		val,
 	)
 }
@@ -448,6 +483,14 @@ func (c *jsiiProxy_CceAddonV3TimeoutsOutputReference) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CceAddonV3TimeoutsOutputReference) ResetCreate() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCreate",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CceAddonV3TimeoutsOutputReference) ResetDelete() {

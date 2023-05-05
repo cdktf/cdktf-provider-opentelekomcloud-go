@@ -56,6 +56,10 @@ func (j *jsiiProxy_CceAddonV3TimeoutsOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
+func (j *jsiiProxy_CceAddonV3TimeoutsOutputReference) validateSetCreateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceAddonV3TimeoutsOutputReference) validateSetDeleteParameters(val *string) error {
 	return nil
 }

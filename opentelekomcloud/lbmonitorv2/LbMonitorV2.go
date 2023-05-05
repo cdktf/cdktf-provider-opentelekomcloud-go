@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_monitor_v2 opentelekomcloud_lb_monitor_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_monitor_v2 opentelekomcloud_lb_monitor_v2}.
 type LbMonitorV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -641,7 +641,7 @@ func (j *jsiiProxy_LbMonitorV2) UrlPathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_monitor_v2 opentelekomcloud_lb_monitor_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_monitor_v2 opentelekomcloud_lb_monitor_v2} Resource.
 func NewLbMonitorV2(scope constructs.Construct, id *string, config *LbMonitorV2Config) LbMonitorV2 {
 	_init_.Initialize()
 
@@ -659,7 +659,7 @@ func NewLbMonitorV2(scope constructs.Construct, id *string, config *LbMonitorV2C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_monitor_v2 opentelekomcloud_lb_monitor_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_monitor_v2 opentelekomcloud_lb_monitor_v2} Resource.
 func NewLbMonitorV2_Override(l LbMonitorV2, scope constructs.Construct, id *string, config *LbMonitorV2Config) {
 	_init_.Initialize()
 

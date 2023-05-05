@@ -19,26 +19,26 @@ type CtsEventNotificationV3Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cts_event_notification_v3#notification_name CtsEventNotificationV3#notification_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#notification_name CtsEventNotificationV3#notification_name}.
 	NotificationName *string `field:"required" json:"notificationName" yaml:"notificationName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cts_event_notification_v3#operation_type CtsEventNotificationV3#operation_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#operation_type CtsEventNotificationV3#operation_type}.
 	OperationType *string `field:"required" json:"operationType" yaml:"operationType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cts_event_notification_v3#id CtsEventNotificationV3#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#id CtsEventNotificationV3#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// notify_user_list block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cts_event_notification_v3#notify_user_list CtsEventNotificationV3#notify_user_list}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#notify_user_list CtsEventNotificationV3#notify_user_list}
 	NotifyUserList interface{} `field:"optional" json:"notifyUserList" yaml:"notifyUserList"`
 	// operations block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cts_event_notification_v3#operations CtsEventNotificationV3#operations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#operations CtsEventNotificationV3#operations}
 	Operations interface{} `field:"optional" json:"operations" yaml:"operations"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cts_event_notification_v3#status CtsEventNotificationV3#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#status CtsEventNotificationV3#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cts_event_notification_v3#topic_id CtsEventNotificationV3#topic_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#topic_id CtsEventNotificationV3#topic_id}.
 	TopicId *string `field:"optional" json:"topicId" yaml:"topicId"`
 }
 
