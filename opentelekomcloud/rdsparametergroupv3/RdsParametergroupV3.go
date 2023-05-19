@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3}.
 type RdsParametergroupV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_RdsParametergroupV3) ValuesInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3} Resource.
 func NewRdsParametergroupV3(scope constructs.Construct, id *string, config *RdsParametergroupV3Config) RdsParametergroupV3 {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewRdsParametergroupV3(scope constructs.Construct, id *string, config *RdsP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3} Resource.
 func NewRdsParametergroupV3_Override(r RdsParametergroupV3, scope constructs.Construct, id *string, config *RdsParametergroupV3Config) {
 	_init_.Initialize()
 

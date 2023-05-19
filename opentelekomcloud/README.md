@@ -59,7 +59,9 @@ This project is explicitly not tracking the Terraform opentelekomcloud Provider 
 These are the upstream dependencies:
 
 * [Terraform CDK](https://cdk.tf)
-* [Terraform opentelekomcloud Provider](https://github.com/terraform-providers/terraform-provider-opentelekomcloud)
+* [Terraform opentelekomcloud Provider](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.26.0)
+
+  * This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-opentelekomcloud/releases)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

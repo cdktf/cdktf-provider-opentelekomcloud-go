@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3 opentelekomcloud_cce_addon_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cce_addon_v3 opentelekomcloud_cce_addon_v3}.
 type CceAddonV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -424,7 +424,7 @@ func (j *jsiiProxy_CceAddonV3) ValuesInput() *CceAddonV3Values {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3 opentelekomcloud_cce_addon_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cce_addon_v3 opentelekomcloud_cce_addon_v3} Resource.
 func NewCceAddonV3(scope constructs.Construct, id *string, config *CceAddonV3Config) CceAddonV3 {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewCceAddonV3(scope constructs.Construct, id *string, config *CceAddonV3Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3 opentelekomcloud_cce_addon_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cce_addon_v3 opentelekomcloud_cce_addon_v3} Resource.
 func NewCceAddonV3_Override(c CceAddonV3, scope constructs.Construct, id *string, config *CceAddonV3Config) {
 	_init_.Initialize()
 

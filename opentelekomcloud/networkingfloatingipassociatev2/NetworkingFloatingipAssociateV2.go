@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/networking_floatingip_associate_v2 opentelekomcloud_networking_floatingip_associate_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_floatingip_associate_v2 opentelekomcloud_networking_floatingip_associate_v2}.
 type NetworkingFloatingipAssociateV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_NetworkingFloatingipAssociateV2) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/networking_floatingip_associate_v2 opentelekomcloud_networking_floatingip_associate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_floatingip_associate_v2 opentelekomcloud_networking_floatingip_associate_v2} Resource.
 func NewNetworkingFloatingipAssociateV2(scope constructs.Construct, id *string, config *NetworkingFloatingipAssociateV2Config) NetworkingFloatingipAssociateV2 {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewNetworkingFloatingipAssociateV2(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/networking_floatingip_associate_v2 opentelekomcloud_networking_floatingip_associate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_floatingip_associate_v2 opentelekomcloud_networking_floatingip_associate_v2} Resource.
 func NewNetworkingFloatingipAssociateV2_Override(n NetworkingFloatingipAssociateV2, scope constructs.Construct, id *string, config *NetworkingFloatingipAssociateV2Config) {
 	_init_.Initialize()
 

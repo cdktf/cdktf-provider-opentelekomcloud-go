@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_floatingip_associate_v2 opentelekomcloud_compute_floatingip_associate_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_floatingip_associate_v2 opentelekomcloud_compute_floatingip_associate_v2}.
 type ComputeFloatingipAssociateV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ComputeFloatingipAssociateV2) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_floatingip_associate_v2 opentelekomcloud_compute_floatingip_associate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_floatingip_associate_v2 opentelekomcloud_compute_floatingip_associate_v2} Resource.
 func NewComputeFloatingipAssociateV2(scope constructs.Construct, id *string, config *ComputeFloatingipAssociateV2Config) ComputeFloatingipAssociateV2 {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewComputeFloatingipAssociateV2(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_floatingip_associate_v2 opentelekomcloud_compute_floatingip_associate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_floatingip_associate_v2 opentelekomcloud_compute_floatingip_associate_v2} Resource.
 func NewComputeFloatingipAssociateV2_Override(c ComputeFloatingipAssociateV2, scope constructs.Construct, id *string, config *ComputeFloatingipAssociateV2Config) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/dcs_instance_v1 opentelekomcloud_dcs_instance_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/dcs_instance_v1 opentelekomcloud_dcs_instance_v1}.
 type DcsInstanceV1 interface {
 	cdktf.TerraformResource
 	AvailableZones() *[]*string
@@ -89,6 +89,7 @@ type DcsInstanceV1 interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NoPasswordAccess() *string
 	OrderId() *string
 	Password() *string
 	SetPassword(val *string)
@@ -182,6 +183,7 @@ type DcsInstanceV1 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassword()
 	ResetPeriodType()
 	ResetSaveDays()
 	ResetSecurityGroupId()
@@ -642,6 +644,16 @@ func (j *jsiiProxy_DcsInstanceV1) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DcsInstanceV1) NoPasswordAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"noPasswordAccess",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DcsInstanceV1) OrderId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -983,7 +995,7 @@ func (j *jsiiProxy_DcsInstanceV1) WhitelistInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/dcs_instance_v1 opentelekomcloud_dcs_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/dcs_instance_v1 opentelekomcloud_dcs_instance_v1} Resource.
 func NewDcsInstanceV1(scope constructs.Construct, id *string, config *DcsInstanceV1Config) DcsInstanceV1 {
 	_init_.Initialize()
 
@@ -1001,7 +1013,7 @@ func NewDcsInstanceV1(scope constructs.Construct, id *string, config *DcsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/dcs_instance_v1 opentelekomcloud_dcs_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/dcs_instance_v1 opentelekomcloud_dcs_instance_v1} Resource.
 func NewDcsInstanceV1_Override(d DcsInstanceV1, scope constructs.Construct, id *string, config *DcsInstanceV1Config) {
 	_init_.Initialize()
 
@@ -1694,6 +1706,14 @@ func (d *jsiiProxy_DcsInstanceV1) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DcsInstanceV1) ResetPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPassword",
 		nil, // no parameters
 	)
 }

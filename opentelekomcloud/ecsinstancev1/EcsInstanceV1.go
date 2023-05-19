@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1}.
 type EcsInstanceV1 interface {
 	cdktf.TerraformResource
 	AutoRecovery() interface{}
@@ -734,7 +734,7 @@ func (j *jsiiProxy_EcsInstanceV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource.
 func NewEcsInstanceV1(scope constructs.Construct, id *string, config *EcsInstanceV1Config) EcsInstanceV1 {
 	_init_.Initialize()
 
@@ -752,7 +752,7 @@ func NewEcsInstanceV1(scope constructs.Construct, id *string, config *EcsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource.
 func NewEcsInstanceV1_Override(e EcsInstanceV1, scope constructs.Construct, id *string, config *EcsInstanceV1Config) {
 	_init_.Initialize()
 

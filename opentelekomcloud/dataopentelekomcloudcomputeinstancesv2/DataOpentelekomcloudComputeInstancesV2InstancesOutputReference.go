@@ -27,7 +27,6 @@ type DataOpentelekomcloudComputeInstancesV2InstancesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	FlavorId() *string
-	FlavorName() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -40,7 +39,7 @@ type DataOpentelekomcloudComputeInstancesV2InstancesOutputReference interface {
 	Network() DataOpentelekomcloudComputeInstancesV2InstancesNetworkList
 	ProjectId() *string
 	PublicIp() *string
-	SecurityGroupIds() *[]*string
+	SecurityGroupsIds() *[]*string
 	Status() *string
 	SystemDiskId() *string
 	Tags() cdktf.StringMap
@@ -137,16 +136,6 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeInstancesV2InstancesOutputReferenc
 	_jsii_.Get(
 		j,
 		"flavorId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudComputeInstancesV2InstancesOutputReference) FlavorName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flavorName",
 		&returns,
 	)
 	return returns
@@ -252,11 +241,11 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeInstancesV2InstancesOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudComputeInstancesV2InstancesOutputReference) SecurityGroupIds() *[]*string {
+func (j *jsiiProxy_DataOpentelekomcloudComputeInstancesV2InstancesOutputReference) SecurityGroupsIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"securityGroupIds",
+		"securityGroupsIds",
 		&returns,
 	)
 	return returns

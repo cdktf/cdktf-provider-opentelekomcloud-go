@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3}.
 type DataOpentelekomcloudCceClusterKubeconfigV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3} Data Source.
 func NewDataOpentelekomcloudCceClusterKubeconfigV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudCceClusterKubeconfigV3Config) DataOpentelekomcloudCceClusterKubeconfigV3 {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataOpentelekomcloudCceClusterKubeconfigV3(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3} Data Source.
 func NewDataOpentelekomcloudCceClusterKubeconfigV3_Override(d DataOpentelekomcloudCceClusterKubeconfigV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudCceClusterKubeconfigV3Config) {
 	_init_.Initialize()
 
