@@ -118,15 +118,15 @@ func (l *jsiiProxy_LbIpgroupV3) validatePutIpListParameters(value interface{}) e
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*LbIpgroupV3IpList:
-		value := value.(*[]*LbIpgroupV3IpList)
+	case *[]*LbIpgroupV3IpListStruct:
+		value := value.(*[]*LbIpgroupV3IpListStruct)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*LbIpgroupV3IpList:
-		value_ := value.([]*LbIpgroupV3IpList)
+	case []*LbIpgroupV3IpListStruct:
+		value_ := value.([]*LbIpgroupV3IpListStruct)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -135,7 +135,7 @@ func (l *jsiiProxy_LbIpgroupV3) validatePutIpListParameters(value interface{}) e
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LbIpgroupV3IpList; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LbIpgroupV3IpListStruct; received %#v (a %T)", value, value)
 		}
 	}
 

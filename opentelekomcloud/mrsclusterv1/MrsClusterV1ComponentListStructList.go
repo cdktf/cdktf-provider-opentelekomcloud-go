@@ -1,14 +1,14 @@
-package dcsinstancev1
+package mrsclusterv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dcsinstancev1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/mrsclusterv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DcsInstanceV1WhitelistList interface {
+type MrsClusterV1ComponentListStructList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -30,7 +30,7 @@ type DcsInstanceV1WhitelistList interface {
 	SetWrapsSet(val *bool)
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) DcsInstanceV1WhitelistOutputReference
+	Get(index *float64) MrsClusterV1ComponentListStructOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -41,12 +41,12 @@ type DcsInstanceV1WhitelistList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DcsInstanceV1WhitelistList
-type jsiiProxy_DcsInstanceV1WhitelistList struct {
+// The jsii proxy struct for MrsClusterV1ComponentListStructList
+type jsiiProxy_MrsClusterV1ComponentListStructList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList) CreationStack() *[]*string {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -56,7 +56,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList) Fqn() *string {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -66,7 +66,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList) InternalValue() interface{} {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList) InternalValue() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList) TerraformAttribute() *string {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -86,7 +86,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -96,7 +96,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList) TerraformResource() cdktf.IInterp
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList) WrapsSet() *bool {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -107,16 +107,16 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList) WrapsSet() *bool {
 }
 
 
-func NewDcsInstanceV1WhitelistList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DcsInstanceV1WhitelistList {
+func NewMrsClusterV1ComponentListStructList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MrsClusterV1ComponentListStructList {
 	_init_.Initialize()
 
-	if err := validateNewDcsInstanceV1WhitelistListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewMrsClusterV1ComponentListStructListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DcsInstanceV1WhitelistList{}
+	j := jsiiProxy_MrsClusterV1ComponentListStructList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistList",
+		"@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -124,17 +124,17 @@ func NewDcsInstanceV1WhitelistList(terraformResource cdktf.IInterpolatingParent,
 	return &j
 }
 
-func NewDcsInstanceV1WhitelistList_Override(d DcsInstanceV1WhitelistList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewMrsClusterV1ComponentListStructList_Override(m MrsClusterV1ComponentListStructList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistList",
+		"@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
-		d,
+		m,
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList)SetInternalValue(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -156,7 +156,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList)SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -167,7 +167,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList)SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -178,11 +178,11 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistList) ComputeFqn() *string {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		d,
+		m,
 		"computeFqn",
 		nil, // no parameters
 		&returns,
@@ -191,14 +191,14 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistList) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistList) Get(index *float64) DcsInstanceV1WhitelistOutputReference {
-	if err := d.validateGetParameters(index); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructList) Get(index *float64) MrsClusterV1ComponentListStructOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns DcsInstanceV1WhitelistOutputReference
+	var returns MrsClusterV1ComponentListStructOutputReference
 
 	_jsii_.Invoke(
-		d,
+		m,
 		"get",
 		[]interface{}{index},
 		&returns,
@@ -207,14 +207,14 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistList) Get(index *float64) DcsInstanceV1
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
 
 	_jsii_.Invoke(
-		d,
+		m,
 		"resolve",
 		[]interface{}{_context},
 		&returns,
@@ -223,11 +223,11 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistList) Resolve(_context cdktf.IResolveCo
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistList) ToString() *string {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		d,
+		m,
 		"toString",
 		nil, // no parameters
 		&returns,

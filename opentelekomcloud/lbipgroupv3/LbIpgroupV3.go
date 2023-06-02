@@ -43,7 +43,7 @@ type LbIpgroupV3 interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IpList() LbIpgroupV3IpListList
+	IpList() LbIpgroupV3IpListStructList
 	IpListInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -253,8 +253,8 @@ func (j *jsiiProxy_LbIpgroupV3) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LbIpgroupV3) IpList() LbIpgroupV3IpListList {
-	var returns LbIpgroupV3IpListList
+func (j *jsiiProxy_LbIpgroupV3) IpList() LbIpgroupV3IpListStructList {
+	var returns LbIpgroupV3IpListStructList
 	_jsii_.Get(
 		j,
 		"ipList",

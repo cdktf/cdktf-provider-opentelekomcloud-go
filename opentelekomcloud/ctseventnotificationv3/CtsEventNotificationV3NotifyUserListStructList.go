@@ -1,14 +1,14 @@
-package lbipgroupv3
+package ctseventnotificationv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/lbipgroupv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type LbIpgroupV3IpListList interface {
+type CtsEventNotificationV3NotifyUserListStructList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -30,7 +30,7 @@ type LbIpgroupV3IpListList interface {
 	SetWrapsSet(val *bool)
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) LbIpgroupV3IpListOutputReference
+	Get(index *float64) CtsEventNotificationV3NotifyUserListStructOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -41,12 +41,12 @@ type LbIpgroupV3IpListList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for LbIpgroupV3IpListList
-type jsiiProxy_LbIpgroupV3IpListList struct {
+// The jsii proxy struct for CtsEventNotificationV3NotifyUserListStructList
+type jsiiProxy_CtsEventNotificationV3NotifyUserListStructList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList) CreationStack() *[]*string {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -56,7 +56,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListList) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList) Fqn() *string {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -66,7 +66,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList) InternalValue() interface{} {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -76,7 +76,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListList) InternalValue() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList) TerraformAttribute() *string {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -86,7 +86,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -96,7 +96,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListList) TerraformResource() cdktf.IInterpolati
 	return returns
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList) WrapsSet() *bool {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -107,16 +107,16 @@ func (j *jsiiProxy_LbIpgroupV3IpListList) WrapsSet() *bool {
 }
 
 
-func NewLbIpgroupV3IpListList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbIpgroupV3IpListList {
+func NewCtsEventNotificationV3NotifyUserListStructList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CtsEventNotificationV3NotifyUserListStructList {
 	_init_.Initialize()
 
-	if err := validateNewLbIpgroupV3IpListListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewCtsEventNotificationV3NotifyUserListStructListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_LbIpgroupV3IpListList{}
+	j := jsiiProxy_CtsEventNotificationV3NotifyUserListStructList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpListList",
+		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -124,17 +124,17 @@ func NewLbIpgroupV3IpListList(terraformResource cdktf.IInterpolatingParent, terr
 	return &j
 }
 
-func NewLbIpgroupV3IpListList_Override(l LbIpgroupV3IpListList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewCtsEventNotificationV3NotifyUserListStructList_Override(c CtsEventNotificationV3NotifyUserListStructList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpListList",
+		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
-		l,
+		c,
 	)
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -156,7 +156,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -167,7 +167,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListList)SetTerraformResource(val cdktf.IInterpo
 	)
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -178,11 +178,11 @@ func (j *jsiiProxy_LbIpgroupV3IpListList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListList) ComputeFqn() *string {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		l,
+		c,
 		"computeFqn",
 		nil, // no parameters
 		&returns,
@@ -191,14 +191,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListList) ComputeFqn() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListList) Get(index *float64) LbIpgroupV3IpListOutputReference {
-	if err := l.validateGetParameters(index); err != nil {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) Get(index *float64) CtsEventNotificationV3NotifyUserListStructOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns LbIpgroupV3IpListOutputReference
+	var returns CtsEventNotificationV3NotifyUserListStructOutputReference
 
 	_jsii_.Invoke(
-		l,
+		c,
 		"get",
 		[]interface{}{index},
 		&returns,
@@ -207,14 +207,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListList) Get(index *float64) LbIpgroupV3IpListO
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
 
 	_jsii_.Invoke(
-		l,
+		c,
 		"resolve",
 		[]interface{}{_context},
 		&returns,
@@ -223,11 +223,11 @@ func (l *jsiiProxy_LbIpgroupV3IpListList) Resolve(_context cdktf.IResolveContext
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListList) ToString() *string {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		l,
+		c,
 		"toString",
 		nil, // no parameters
 		&returns,

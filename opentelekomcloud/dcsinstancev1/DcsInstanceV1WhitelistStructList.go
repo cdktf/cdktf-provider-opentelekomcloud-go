@@ -1,14 +1,14 @@
-package ctseventnotificationv3
+package dcsinstancev1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dcsinstancev1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type CtsEventNotificationV3NotifyUserListList interface {
+type DcsInstanceV1WhitelistStructList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -30,7 +30,7 @@ type CtsEventNotificationV3NotifyUserListList interface {
 	SetWrapsSet(val *bool)
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) CtsEventNotificationV3NotifyUserListOutputReference
+	Get(index *float64) DcsInstanceV1WhitelistStructOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -41,12 +41,12 @@ type CtsEventNotificationV3NotifyUserListList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for CtsEventNotificationV3NotifyUserListList
-type jsiiProxy_CtsEventNotificationV3NotifyUserListList struct {
+// The jsii proxy struct for DcsInstanceV1WhitelistStructList
+type jsiiProxy_DcsInstanceV1WhitelistStructList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList) CreationStack() *[]*string {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -56,7 +56,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList) CreationStack() *[]
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList) Fqn() *string {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -66,7 +66,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList) InternalValue() interface{} {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructList) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList) InternalValue() int
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList) TerraformAttribute() *string {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -86,7 +86,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -96,7 +96,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList) TerraformResource()
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList) WrapsSet() *bool {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -107,16 +107,16 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList) WrapsSet() *bool {
 }
 
 
-func NewCtsEventNotificationV3NotifyUserListList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CtsEventNotificationV3NotifyUserListList {
+func NewDcsInstanceV1WhitelistStructList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DcsInstanceV1WhitelistStructList {
 	_init_.Initialize()
 
-	if err := validateNewCtsEventNotificationV3NotifyUserListListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewDcsInstanceV1WhitelistStructListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_CtsEventNotificationV3NotifyUserListList{}
+	j := jsiiProxy_DcsInstanceV1WhitelistStructList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListList",
+		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -124,17 +124,17 @@ func NewCtsEventNotificationV3NotifyUserListList(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewCtsEventNotificationV3NotifyUserListList_Override(c CtsEventNotificationV3NotifyUserListList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDcsInstanceV1WhitelistStructList_Override(d DcsInstanceV1WhitelistStructList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListList",
+		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
-		c,
+		d,
 	)
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructList)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -156,7 +156,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -167,7 +167,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -178,11 +178,11 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListList)SetWrapsSet(val *boo
 	)
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListList) ComputeFqn() *string {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		c,
+		d,
 		"computeFqn",
 		nil, // no parameters
 		&returns,
@@ -191,14 +191,14 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListList) ComputeFqn() *strin
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListList) Get(index *float64) CtsEventNotificationV3NotifyUserListOutputReference {
-	if err := c.validateGetParameters(index); err != nil {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructList) Get(index *float64) DcsInstanceV1WhitelistStructOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns CtsEventNotificationV3NotifyUserListOutputReference
+	var returns DcsInstanceV1WhitelistStructOutputReference
 
 	_jsii_.Invoke(
-		c,
+		d,
 		"get",
 		[]interface{}{index},
 		&returns,
@@ -207,14 +207,14 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListList) Get(index *float64)
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
 
 	_jsii_.Invoke(
-		c,
+		d,
 		"resolve",
 		[]interface{}{_context},
 		&returns,
@@ -223,11 +223,11 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListList) Resolve(_context cd
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListList) ToString() *string {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		c,
+		d,
 		"toString",
 		nil, // no parameters
 		&returns,

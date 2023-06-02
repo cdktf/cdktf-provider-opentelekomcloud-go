@@ -40,7 +40,7 @@ type MrsClusterV1 interface {
 	ClusterVersion() *string
 	SetClusterVersion(val *string)
 	ClusterVersionInput() *string
-	ComponentList() MrsClusterV1ComponentListList
+	ComponentList() MrsClusterV1ComponentListStructList
 	ComponentListInput() interface{}
 	// Experimental.
 	Connection() interface{}
@@ -444,8 +444,8 @@ func (j *jsiiProxy_MrsClusterV1) ClusterVersionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MrsClusterV1) ComponentList() MrsClusterV1ComponentListList {
-	var returns MrsClusterV1ComponentListList
+func (j *jsiiProxy_MrsClusterV1) ComponentList() MrsClusterV1ComponentListStructList {
+	var returns MrsClusterV1ComponentListStructList
 	_jsii_.Get(
 		j,
 		"componentList",

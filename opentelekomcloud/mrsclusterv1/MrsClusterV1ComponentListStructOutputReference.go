@@ -1,14 +1,14 @@
-package lbipgroupv3
+package mrsclusterv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/lbipgroupv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/mrsclusterv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type LbIpgroupV3IpListOutputReference interface {
+type MrsClusterV1ComponentListStructOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -20,21 +20,21 @@ type LbIpgroupV3IpListOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ComponentDesc() *string
+	ComponentId() *string
+	ComponentName() *string
+	SetComponentName(val *string)
+	ComponentNameInput() *string
+	ComponentVersion() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Ip() *string
-	SetIp(val *string)
-	IpInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +67,6 @@ type LbIpgroupV3IpListOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -78,12 +77,12 @@ type LbIpgroupV3IpListOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for LbIpgroupV3IpListOutputReference
-type jsiiProxy_LbIpgroupV3IpListOutputReference struct {
+// The jsii proxy struct for MrsClusterV1ComponentListStructOutputReference
+type jsiiProxy_MrsClusterV1ComponentListStructOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -93,7 +92,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) ComplexObjectIndex() interf
 	return returns
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -103,7 +102,57 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) ComplexObjectIsFromSet() *b
 	return returns
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) ComponentDesc() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"componentDesc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) ComponentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"componentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) ComponentName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"componentName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) ComponentNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"componentNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) ComponentVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"componentVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -113,27 +162,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) CreationStack() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) Description() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) Fqn() *string {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -143,7 +172,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) InternalValue() interface{} {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -153,27 +182,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) InternalValue() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) Ip() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ip",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) IpInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ipInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -183,7 +192,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -194,16 +203,16 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) TerraformResource() cdktf.I
 }
 
 
-func NewLbIpgroupV3IpListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LbIpgroupV3IpListOutputReference {
+func NewMrsClusterV1ComponentListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MrsClusterV1ComponentListStructOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLbIpgroupV3IpListOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewMrsClusterV1ComponentListStructOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_LbIpgroupV3IpListOutputReference{}
+	j := jsiiProxy_MrsClusterV1ComponentListStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpListOutputReference",
+		"@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,17 +220,17 @@ func NewLbIpgroupV3IpListOutputReference(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewLbIpgroupV3IpListOutputReference_Override(l LbIpgroupV3IpListOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewMrsClusterV1ComponentListStructOutputReference_Override(m MrsClusterV1ComponentListStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpListOutputReference",
+		"@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
-		l,
+		m,
 	)
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +241,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference)SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,18 +252,18 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference)SetComponentName(val *string) {
+	if err := j.validateSetComponentNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"description",
+		"componentName",
 		val,
 	)
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,18 +274,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference)SetIp(val *string) {
-	if err := j.validateSetIpParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ip",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +285,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,11 +296,11 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference)SetTerraformResource(val cdk
 	)
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) ComputeFqn() *string {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"computeFqn",
 		nil, // no parameters
 		&returns,
@@ -311,14 +309,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -327,14 +325,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -343,14 +341,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetBooleanAttribute(terrafo
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -359,14 +357,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetBooleanMapAttribute(terr
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -375,14 +373,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetListAttribute(terraformA
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -391,14 +389,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetNumberAttribute(terrafor
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -407,14 +405,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetNumberListAttribute(terr
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -423,14 +421,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetNumberMapAttribute(terra
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetStringAttribute(terraformAttribute *string) *string {
-	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -439,14 +437,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetStringAttribute(terrafor
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -455,11 +453,11 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) GetStringMapAttribute(terra
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"interpolationAsList",
 		nil, // no parameters
 		&returns,
@@ -468,14 +466,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"interpolationForAttribute",
 		[]interface{}{property},
 		&returns,
@@ -484,22 +482,14 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) InterpolationForAttribute(p
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) ResetDescription() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"resolve",
 		[]interface{}{_context},
 		&returns,
@@ -508,11 +498,11 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) Resolve(_context cdktf.IRes
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) ToString() *string {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		l,
+		m,
 		"toString",
 		nil, // no parameters
 		&returns,

@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package mrsclusterv1
+package dcsinstancev1
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetAnyMapAt
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetBooleanA
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetBooleanM
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetListAttr
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetNumberAt
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetNumberLi
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetNumberMa
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetStringAt
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateGetStringMa
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateInterpolati
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (m *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -155,7 +155,7 @@ func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateSetComponentNameParameters(val *string) error {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateSetGroupNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -171,15 +171,15 @@ func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateSetComponen
 	return nil
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case *MrsClusterV1ComponentList:
-		val := val.(*MrsClusterV1ComponentList)
+	case *DcsInstanceV1WhitelistStruct:
+		val := val.(*DcsInstanceV1WhitelistStruct)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case MrsClusterV1ComponentList:
-		val_ := val.(MrsClusterV1ComponentList)
+	case DcsInstanceV1WhitelistStruct:
+		val_ := val.(DcsInstanceV1WhitelistStruct)
 		val := &val_
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
@@ -188,14 +188,14 @@ func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateSetInternal
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MrsClusterV1ComponentList, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *DcsInstanceV1WhitelistStruct, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateSetIpListParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,15 @@ func (j *jsiiProxy_MrsClusterV1ComponentListOutputReference) validateSetTerrafor
 	return nil
 }
 
-func validateNewMrsClusterV1ComponentListOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateNewDcsInstanceV1WhitelistStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

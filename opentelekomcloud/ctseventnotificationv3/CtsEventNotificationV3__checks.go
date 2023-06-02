@@ -118,15 +118,15 @@ func (c *jsiiProxy_CtsEventNotificationV3) validatePutNotifyUserListParameters(v
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*CtsEventNotificationV3NotifyUserList:
-		value := value.(*[]*CtsEventNotificationV3NotifyUserList)
+	case *[]*CtsEventNotificationV3NotifyUserListStruct:
+		value := value.(*[]*CtsEventNotificationV3NotifyUserListStruct)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*CtsEventNotificationV3NotifyUserList:
-		value_ := value.([]*CtsEventNotificationV3NotifyUserList)
+	case []*CtsEventNotificationV3NotifyUserListStruct:
+		value_ := value.([]*CtsEventNotificationV3NotifyUserListStruct)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -135,7 +135,7 @@ func (c *jsiiProxy_CtsEventNotificationV3) validatePutNotifyUserListParameters(v
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CtsEventNotificationV3NotifyUserList; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CtsEventNotificationV3NotifyUserListStruct; received %#v (a %T)", value, value)
 		}
 	}
 

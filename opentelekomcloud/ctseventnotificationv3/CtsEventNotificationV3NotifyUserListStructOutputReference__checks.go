@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -155,7 +155,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -163,15 +163,15 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case *CtsEventNotificationV3NotifyUserList:
-		val := val.(*CtsEventNotificationV3NotifyUserList)
+	case *CtsEventNotificationV3NotifyUserListStruct:
+		val := val.(*CtsEventNotificationV3NotifyUserListStruct)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case CtsEventNotificationV3NotifyUserList:
-		val_ := val.(CtsEventNotificationV3NotifyUserList)
+	case CtsEventNotificationV3NotifyUserListStruct:
+		val_ := val.(CtsEventNotificationV3NotifyUserListStruct)
 		val := &val_
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
@@ -180,14 +180,14 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CtsEventNotificationV3NotifyUserList, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *CtsEventNotificationV3NotifyUserListStruct, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -195,7 +195,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateSetUserGroupParameters(val *string) error {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateSetUserGroupParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validateSetUserListParameters(val *[]*string) error {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateSetUserListParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) validate
 	return nil
 }
 
-func validateNewCtsEventNotificationV3NotifyUserListOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCtsEventNotificationV3NotifyUserListStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -295,12 +295,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1Whitelist",
-		reflect.TypeOf((*DcsInstanceV1Whitelist)(nil)).Elem(),
+		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistStruct",
+		reflect.TypeOf((*DcsInstanceV1WhitelistStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistList",
-		reflect.TypeOf((*DcsInstanceV1WhitelistList)(nil)).Elem(),
+		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistStructList",
+		reflect.TypeOf((*DcsInstanceV1WhitelistStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -314,14 +314,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DcsInstanceV1WhitelistList{}
+			j := jsiiProxy_DcsInstanceV1WhitelistStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistOutputReference",
-		reflect.TypeOf((*DcsInstanceV1WhitelistOutputReference)(nil)).Elem(),
+		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistStructOutputReference",
+		reflect.TypeOf((*DcsInstanceV1WhitelistStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -350,7 +350,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DcsInstanceV1WhitelistOutputReference{}
+			j := jsiiProxy_DcsInstanceV1WhitelistStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

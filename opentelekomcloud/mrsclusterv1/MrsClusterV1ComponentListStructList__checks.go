@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package lbipgroupv3
+package mrsclusterv1
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (l *jsiiProxy_LbIpgroupV3IpListList) validateGetParameters(index *float64) error {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructList) validateGetParameters(index *float64) error {
 	if index == nil {
 		return fmt.Errorf("parameter index is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -26,19 +26,19 @@ func (l *jsiiProxy_LbIpgroupV3IpListList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*LbIpgroupV3IpList:
-		val := val.(*[]*LbIpgroupV3IpList)
+	case *[]*MrsClusterV1ComponentListStruct:
+		val := val.(*[]*MrsClusterV1ComponentListStruct)
 		for idx_97dfc6, v := range *val {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
 				return err
 			}
 		}
-	case []*LbIpgroupV3IpList:
-		val_ := val.([]*LbIpgroupV3IpList)
+	case []*MrsClusterV1ComponentListStruct:
+		val_ := val.([]*MrsClusterV1ComponentListStruct)
 		val := &val_
 		for idx_97dfc6, v := range *val {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
@@ -47,14 +47,14 @@ func (j *jsiiProxy_LbIpgroupV3IpListList) validateSetInternalValueParameters(val
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*LbIpgroupV3IpList; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*MrsClusterV1ComponentListStruct; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -62,7 +62,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -70,7 +70,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListList) validateSetTerraformResourceParameters
 	return nil
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListList) validateSetWrapsSetParameters(val *bool) error {
+func (j *jsiiProxy_MrsClusterV1ComponentListStructList) validateSetWrapsSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -78,7 +78,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewLbIpgroupV3IpListListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMrsClusterV1ComponentListStructListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -322,12 +322,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList",
-		reflect.TypeOf((*MrsClusterV1ComponentList)(nil)).Elem(),
+		"@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct",
+		reflect.TypeOf((*MrsClusterV1ComponentListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList",
-		reflect.TypeOf((*MrsClusterV1ComponentListList)(nil)).Elem(),
+		"@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList",
+		reflect.TypeOf((*MrsClusterV1ComponentListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -341,14 +341,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_MrsClusterV1ComponentListList{}
+			j := jsiiProxy_MrsClusterV1ComponentListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference",
-		reflect.TypeOf((*MrsClusterV1ComponentListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference",
+		reflect.TypeOf((*MrsClusterV1ComponentListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -378,7 +378,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_MrsClusterV1ComponentListOutputReference{}
+			j := jsiiProxy_MrsClusterV1ComponentListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

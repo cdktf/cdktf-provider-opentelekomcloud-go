@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DcsInstanceV1WhitelistOutputReference interface {
+type DcsInstanceV1WhitelistStructOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -77,12 +77,12 @@ type DcsInstanceV1WhitelistOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DcsInstanceV1WhitelistOutputReference
-type jsiiProxy_DcsInstanceV1WhitelistOutputReference struct {
+// The jsii proxy struct for DcsInstanceV1WhitelistStructOutputReference
+type jsiiProxy_DcsInstanceV1WhitelistStructOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -92,7 +92,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) ComplexObjectIndex() i
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -102,7 +102,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) ComplexObjectIsFromSet
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -112,7 +112,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) CreationStack() *[]*st
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) Fqn() *string {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -122,7 +122,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GroupName() *string {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) GroupName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -132,7 +132,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GroupName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GroupNameInput() *string {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) GroupNameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -142,7 +142,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GroupNameInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) InternalValue() interface{} {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -152,7 +152,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) InternalValue() interf
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) IpList() *[]*string {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) IpList() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -162,7 +162,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) IpList() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) IpListInput() *[]*string {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) IpListInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -172,7 +172,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) IpListInput() *[]*stri
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -182,7 +182,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -193,16 +193,16 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference) TerraformResource() cd
 }
 
 
-func NewDcsInstanceV1WhitelistOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DcsInstanceV1WhitelistOutputReference {
+func NewDcsInstanceV1WhitelistStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DcsInstanceV1WhitelistStructOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDcsInstanceV1WhitelistOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDcsInstanceV1WhitelistStructOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DcsInstanceV1WhitelistOutputReference{}
+	j := jsiiProxy_DcsInstanceV1WhitelistStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistOutputReference",
+		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,17 +210,17 @@ func NewDcsInstanceV1WhitelistOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewDcsInstanceV1WhitelistOutputReference_Override(d DcsInstanceV1WhitelistOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDcsInstanceV1WhitelistStructOutputReference_Override(d DcsInstanceV1WhitelistStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistOutputReference",
+		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1WhitelistStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +242,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetGroupName(val *string) {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference)SetGroupName(val *string) {
 	if err := j.validateSetGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +253,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetGroupName(val *strin
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +264,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetIpList(val *[]*string) {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference)SetIpList(val *[]*string) {
 	if err := j.validateSetIpListParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetIpList(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +286,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -297,7 +297,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistOutputReference)SetTerraformResource(va
 	)
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) ComputeFqn() *string {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -310,7 +310,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -326,7 +326,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -342,7 +342,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetBooleanAttribute(te
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -358,7 +358,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetBooleanMapAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -374,7 +374,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetListAttribute(terra
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -390,7 +390,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetNumberAttribute(ter
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -406,7 +406,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetNumberListAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -422,7 +422,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetNumberMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -438,7 +438,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetStringAttribute(ter
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -454,7 +454,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -467,7 +467,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -483,7 +483,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) InterpolationForAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -499,7 +499,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) Resolve(_context cdktf
 	return returns
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistOutputReference) ToString() *string {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

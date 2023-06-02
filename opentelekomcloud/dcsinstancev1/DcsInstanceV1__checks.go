@@ -171,15 +171,15 @@ func (d *jsiiProxy_DcsInstanceV1) validatePutWhitelistParameters(value interface
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*DcsInstanceV1Whitelist:
-		value := value.(*[]*DcsInstanceV1Whitelist)
+	case *[]*DcsInstanceV1WhitelistStruct:
+		value := value.(*[]*DcsInstanceV1WhitelistStruct)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*DcsInstanceV1Whitelist:
-		value_ := value.([]*DcsInstanceV1Whitelist)
+	case []*DcsInstanceV1WhitelistStruct:
+		value_ := value.([]*DcsInstanceV1WhitelistStruct)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -188,7 +188,7 @@ func (d *jsiiProxy_DcsInstanceV1) validatePutWhitelistParameters(value interface
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DcsInstanceV1Whitelist; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DcsInstanceV1WhitelistStruct; received %#v (a %T)", value, value)
 		}
 	}
 

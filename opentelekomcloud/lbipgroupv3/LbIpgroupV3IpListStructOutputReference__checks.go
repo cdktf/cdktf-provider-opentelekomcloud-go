@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetAnyMapAttributeP
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetBooleanAttribute
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetBooleanMapAttrib
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetListAttributePar
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetNumberAttributeP
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetNumberListAttrib
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetNumberMapAttribu
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetStringAttributeP
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateInterpolationForAtt
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -155,7 +155,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetComplexObjectInd
 	return nil
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -171,15 +171,15 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetDescriptionParam
 	return nil
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case *LbIpgroupV3IpList:
-		val := val.(*LbIpgroupV3IpList)
+	case *LbIpgroupV3IpListStruct:
+		val := val.(*LbIpgroupV3IpListStruct)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case LbIpgroupV3IpList:
-		val_ := val.(LbIpgroupV3IpList)
+	case LbIpgroupV3IpListStruct:
+		val_ := val.(LbIpgroupV3IpListStruct)
 		val := &val_
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
@@ -188,14 +188,14 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetInternalValuePar
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *LbIpgroupV3IpList, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *LbIpgroupV3IpListStruct, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetIpParameters(val *string) error {
+func (j *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateSetIpParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetIpParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_LbIpgroupV3IpListOutputReference) validateSetTerraformResourc
 	return nil
 }
 
-func validateNewLbIpgroupV3IpListOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLbIpgroupV3IpListStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

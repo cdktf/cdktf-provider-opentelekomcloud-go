@@ -81,12 +81,12 @@ func init() {
 		reflect.TypeOf((*CtsEventNotificationV3Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserList",
-		reflect.TypeOf((*CtsEventNotificationV3NotifyUserList)(nil)).Elem(),
+		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListStruct",
+		reflect.TypeOf((*CtsEventNotificationV3NotifyUserListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListList",
-		reflect.TypeOf((*CtsEventNotificationV3NotifyUserListList)(nil)).Elem(),
+		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListStructList",
+		reflect.TypeOf((*CtsEventNotificationV3NotifyUserListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -100,14 +100,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_CtsEventNotificationV3NotifyUserListList{}
+			j := jsiiProxy_CtsEventNotificationV3NotifyUserListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListOutputReference",
-		reflect.TypeOf((*CtsEventNotificationV3NotifyUserListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListStructOutputReference",
+		reflect.TypeOf((*CtsEventNotificationV3NotifyUserListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userListInput", GoGetter: "UserListInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference{}
+			j := jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

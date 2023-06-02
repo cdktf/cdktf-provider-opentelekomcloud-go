@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type CtsEventNotificationV3NotifyUserListOutputReference interface {
+type CtsEventNotificationV3NotifyUserListStructOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -77,12 +77,12 @@ type CtsEventNotificationV3NotifyUserListOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for CtsEventNotificationV3NotifyUserListOutputReference
-type jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference struct {
+// The jsii proxy struct for CtsEventNotificationV3NotifyUserListStructOutputReference
+type jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -92,7 +92,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) ComplexO
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -102,7 +102,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) ComplexO
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -112,7 +112,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) Fqn() *string {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -122,7 +122,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) InternalValue() interface{} {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -132,7 +132,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) Internal
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -142,7 +142,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -152,7 +152,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) UserGroup() *string {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) UserGroup() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -162,7 +162,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) UserGrou
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) UserGroupInput() *string {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) UserGroupInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -172,7 +172,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) UserGrou
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) UserList() *[]*string {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) UserList() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -182,7 +182,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) UserList
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) UserListInput() *[]*string {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) UserListInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -193,16 +193,16 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) UserList
 }
 
 
-func NewCtsEventNotificationV3NotifyUserListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CtsEventNotificationV3NotifyUserListOutputReference {
+func NewCtsEventNotificationV3NotifyUserListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CtsEventNotificationV3NotifyUserListStructOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewCtsEventNotificationV3NotifyUserListOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewCtsEventNotificationV3NotifyUserListStructOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference{}
+	j := jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListOutputReference",
+		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,17 +210,17 @@ func NewCtsEventNotificationV3NotifyUserListOutputReference(terraformResource cd
 	return &j
 }
 
-func NewCtsEventNotificationV3NotifyUserListOutputReference_Override(c CtsEventNotificationV3NotifyUserListOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCtsEventNotificationV3NotifyUserListStructOutputReference_Override(c CtsEventNotificationV3NotifyUserListStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListOutputReference",
+		"@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +242,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +253,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +264,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +275,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetUserGroup(val *string) {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference)SetUserGroup(val *string) {
 	if err := j.validateSetUserGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +286,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetUserGr
 	)
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetUserList(val *[]*string) {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference)SetUserList(val *[]*string) {
 	if err := j.validateSetUserListParameters(val); err != nil {
 		panic(err)
 	}
@@ -297,7 +297,7 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference)SetUserLi
 	)
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) ComputeFqn() *string {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -310,7 +310,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) ComputeF
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -326,7 +326,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetAnyMa
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -342,7 +342,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetBoole
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -358,7 +358,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetBoole
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -374,7 +374,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetListA
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -390,7 +390,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetNumbe
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -406,7 +406,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetNumbe
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -422,7 +422,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetNumbe
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -438,7 +438,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetStrin
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -454,7 +454,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) GetStrin
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -467,7 +467,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) Interpol
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -483,7 +483,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) Interpol
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -499,7 +499,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) Resolve(
 	return returns
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListOutputReference) ToString() *string {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

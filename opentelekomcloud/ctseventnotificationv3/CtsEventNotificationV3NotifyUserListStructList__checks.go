@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package dcsinstancev1
+package ctseventnotificationv3
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistList) validateGetParameters(index *float64) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) validateGetParameters(index *float64) error {
 	if index == nil {
 		return fmt.Errorf("parameter index is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistList) validateGetParameters(index *floa
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -26,19 +26,19 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*DcsInstanceV1Whitelist:
-		val := val.(*[]*DcsInstanceV1Whitelist)
+	case *[]*CtsEventNotificationV3NotifyUserListStruct:
+		val := val.(*[]*CtsEventNotificationV3NotifyUserListStruct)
 		for idx_97dfc6, v := range *val {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
 				return err
 			}
 		}
-	case []*DcsInstanceV1Whitelist:
-		val_ := val.([]*DcsInstanceV1Whitelist)
+	case []*CtsEventNotificationV3NotifyUserListStruct:
+		val_ := val.([]*CtsEventNotificationV3NotifyUserListStruct)
 		val := &val_
 		for idx_97dfc6, v := range *val {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
@@ -47,14 +47,14 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList) validateSetInternalValueParameter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*DcsInstanceV1Whitelist; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*CtsEventNotificationV3NotifyUserListStruct; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -62,7 +62,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList) validateSetTerraformAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -70,7 +70,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList) validateSetTerraformResourceParam
 	return nil
 }
 
-func (j *jsiiProxy_DcsInstanceV1WhitelistList) validateSetWrapsSetParameters(val *bool) error {
+func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) validateSetWrapsSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -78,7 +78,7 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistList) validateSetWrapsSetParameters(val
 	return nil
 }
 
-func validateNewDcsInstanceV1WhitelistListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCtsEventNotificationV3NotifyUserListStructListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

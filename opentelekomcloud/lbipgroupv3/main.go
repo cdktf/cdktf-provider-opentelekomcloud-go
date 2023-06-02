@@ -74,12 +74,12 @@ func init() {
 		reflect.TypeOf((*LbIpgroupV3Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpList",
-		reflect.TypeOf((*LbIpgroupV3IpList)(nil)).Elem(),
+		"@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpListStruct",
+		reflect.TypeOf((*LbIpgroupV3IpListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpListList",
-		reflect.TypeOf((*LbIpgroupV3IpListList)(nil)).Elem(),
+		"@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpListStructList",
+		reflect.TypeOf((*LbIpgroupV3IpListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -93,14 +93,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_LbIpgroupV3IpListList{}
+			j := jsiiProxy_LbIpgroupV3IpListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpListOutputReference",
-		reflect.TypeOf((*LbIpgroupV3IpListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpListStructOutputReference",
+		reflect.TypeOf((*LbIpgroupV3IpListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_LbIpgroupV3IpListOutputReference{}
+			j := jsiiProxy_LbIpgroupV3IpListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

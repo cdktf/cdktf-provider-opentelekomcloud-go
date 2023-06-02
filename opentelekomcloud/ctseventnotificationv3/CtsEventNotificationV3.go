@@ -51,7 +51,7 @@ type CtsEventNotificationV3 interface {
 	SetNotificationName(val *string)
 	NotificationNameInput() *string
 	NotificationType() *string
-	NotifyUserList() CtsEventNotificationV3NotifyUserListList
+	NotifyUserList() CtsEventNotificationV3NotifyUserListStructList
 	NotifyUserListInput() interface{}
 	Operations() CtsEventNotificationV3OperationsList
 	OperationsInput() interface{}
@@ -301,8 +301,8 @@ func (j *jsiiProxy_CtsEventNotificationV3) NotificationType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CtsEventNotificationV3) NotifyUserList() CtsEventNotificationV3NotifyUserListList {
-	var returns CtsEventNotificationV3NotifyUserListList
+func (j *jsiiProxy_CtsEventNotificationV3) NotifyUserList() CtsEventNotificationV3NotifyUserListStructList {
+	var returns CtsEventNotificationV3NotifyUserListStructList
 	_jsii_.Get(
 		j,
 		"notifyUserList",

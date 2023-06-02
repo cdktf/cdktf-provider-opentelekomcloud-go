@@ -139,7 +139,7 @@ type DcsInstanceV1 interface {
 	SetVpcId(val *string)
 	VpcIdInput() *string
 	VpcName() *string
-	Whitelist() DcsInstanceV1WhitelistList
+	Whitelist() DcsInstanceV1WhitelistStructList
 	WhitelistInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -974,8 +974,8 @@ func (j *jsiiProxy_DcsInstanceV1) VpcName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DcsInstanceV1) Whitelist() DcsInstanceV1WhitelistList {
-	var returns DcsInstanceV1WhitelistList
+func (j *jsiiProxy_DcsInstanceV1) Whitelist() DcsInstanceV1WhitelistStructList {
+	var returns DcsInstanceV1WhitelistStructList
 	_jsii_.Get(
 		j,
 		"whitelist",
