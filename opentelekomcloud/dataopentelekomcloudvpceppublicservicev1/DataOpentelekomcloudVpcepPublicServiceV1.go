@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/vpcep_public_service_v1 opentelekomcloud_vpcep_public_service_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/vpcep_public_service_v1 opentelekomcloud_vpcep_public_service_v1}.
 type DataOpentelekomcloudVpcepPublicServiceV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -326,7 +326,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcepPublicServiceV1) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/vpcep_public_service_v1 opentelekomcloud_vpcep_public_service_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/vpcep_public_service_v1 opentelekomcloud_vpcep_public_service_v1} Data Source.
 func NewDataOpentelekomcloudVpcepPublicServiceV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcepPublicServiceV1Config) DataOpentelekomcloudVpcepPublicServiceV1 {
 	_init_.Initialize()
 
@@ -344,7 +344,7 @@ func NewDataOpentelekomcloudVpcepPublicServiceV1(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/vpcep_public_service_v1 opentelekomcloud_vpcep_public_service_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/vpcep_public_service_v1 opentelekomcloud_vpcep_public_service_v1} Data Source.
 func NewDataOpentelekomcloudVpcepPublicServiceV1_Override(d DataOpentelekomcloudVpcepPublicServiceV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcepPublicServiceV1Config) {
 	_init_.Initialize()
 

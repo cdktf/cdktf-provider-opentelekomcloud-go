@@ -1,0 +1,30 @@
+//go:build no_runtime_type_checking
+
+package dataopentelekomcloudcceaddontemplatesv3
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateGetParameters(index *float64) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateSetWrapsSetParameters(val *bool) error {
+	return nil
+}
+
+func validateNewDataOpentelekomcloudCceAddonTemplatesV3AddonsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+	return nil
+}
+

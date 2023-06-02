@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2}.
 type NatGatewayV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -498,7 +498,7 @@ func (j *jsiiProxy_NatGatewayV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2} Resource.
 func NewNatGatewayV2(scope constructs.Construct, id *string, config *NatGatewayV2Config) NatGatewayV2 {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewNatGatewayV2(scope constructs.Construct, id *string, config *NatGatewayV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2} Resource.
 func NewNatGatewayV2_Override(n NatGatewayV2, scope constructs.Construct, id *string, config *NatGatewayV2Config) {
 	_init_.Initialize()
 
