@@ -2,14 +2,14 @@ package lbloadbalancerv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/lbloadbalancerv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/lbloadbalancerv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3}.
 type LbLoadbalancerV3 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -653,7 +653,7 @@ func (j *jsiiProxy_LbLoadbalancerV3) VipPortId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3} Resource.
 func NewLbLoadbalancerV3(scope constructs.Construct, id *string, config *LbLoadbalancerV3Config) LbLoadbalancerV3 {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewLbLoadbalancerV3(scope constructs.Construct, id *string, config *LbLoadb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3} Resource.
 func NewLbLoadbalancerV3_Override(l LbLoadbalancerV3, scope constructs.Construct, id *string, config *LbLoadbalancerV3Config) {
 	_init_.Initialize()
 

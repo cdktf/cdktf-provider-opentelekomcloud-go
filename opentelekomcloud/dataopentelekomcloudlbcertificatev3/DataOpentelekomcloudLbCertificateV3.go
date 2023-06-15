@@ -2,14 +2,14 @@ package dataopentelekomcloudlbcertificatev3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudlbcertificatev3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudlbcertificatev3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_certificate_v3 opentelekomcloud_lb_certificate_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_certificate_v3 opentelekomcloud_lb_certificate_v3}.
 type DataOpentelekomcloudLbCertificateV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataOpentelekomcloudLbCertificateV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_certificate_v3 opentelekomcloud_lb_certificate_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_certificate_v3 opentelekomcloud_lb_certificate_v3} Data Source.
 func NewDataOpentelekomcloudLbCertificateV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudLbCertificateV3Config) DataOpentelekomcloudLbCertificateV3 {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataOpentelekomcloudLbCertificateV3(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_certificate_v3 opentelekomcloud_lb_certificate_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_certificate_v3 opentelekomcloud_lb_certificate_v3} Data Source.
 func NewDataOpentelekomcloudLbCertificateV3_Override(d DataOpentelekomcloudLbCertificateV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudLbCertificateV3Config) {
 	_init_.Initialize()
 

@@ -2,14 +2,17 @@ package cesalarmrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/cesalarmrule/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/cesalarmrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type CesAlarmruleConditionOutputReference interface {
 	cdktf.ComplexObject
+	AlarmFrequency() *float64
+	SetAlarmFrequency(val *float64)
+	AlarmFrequencyInput() *float64
 	ComparisonOperator() *string
 	SetComparisonOperator(val *string)
 	ComparisonOperatorInput() *string
@@ -79,6 +82,7 @@ type CesAlarmruleConditionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAlarmFrequency()
 	ResetUnit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -93,6 +97,26 @@ type CesAlarmruleConditionOutputReference interface {
 // The jsii proxy struct for CesAlarmruleConditionOutputReference
 type jsiiProxy_CesAlarmruleConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference) AlarmFrequency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"alarmFrequency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference) AlarmFrequencyInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"alarmFrequencyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CesAlarmruleConditionOutputReference) ComparisonOperator() *string {
@@ -310,6 +334,17 @@ func NewCesAlarmruleConditionOutputReference_Override(c CesAlarmruleConditionOut
 		"@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference)SetAlarmFrequency(val *float64) {
+	if err := j.validateSetAlarmFrequencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alarmFrequency",
+		val,
 	)
 }
 
@@ -618,6 +653,14 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CesAlarmruleConditionOutputReference) ResetAlarmFrequency() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAlarmFrequency",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CesAlarmruleConditionOutputReference) ResetUnit() {

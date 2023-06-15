@@ -2,14 +2,14 @@ package computeinstancev2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/computeinstancev2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/computeinstancev2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/compute_instance_v2 opentelekomcloud_compute_instance_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/compute_instance_v2 opentelekomcloud_compute_instance_v2}.
 type ComputeInstanceV2 interface {
 	cdktf.TerraformResource
 	AccessIpV4() *string
@@ -905,7 +905,7 @@ func (j *jsiiProxy_ComputeInstanceV2) VolumeAttached() ComputeInstanceV2VolumeAt
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/compute_instance_v2 opentelekomcloud_compute_instance_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/compute_instance_v2 opentelekomcloud_compute_instance_v2} Resource.
 func NewComputeInstanceV2(scope constructs.Construct, id *string, config *ComputeInstanceV2Config) ComputeInstanceV2 {
 	_init_.Initialize()
 
@@ -923,7 +923,7 @@ func NewComputeInstanceV2(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/compute_instance_v2 opentelekomcloud_compute_instance_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/compute_instance_v2 opentelekomcloud_compute_instance_v2} Resource.
 func NewComputeInstanceV2_Override(c ComputeInstanceV2, scope constructs.Construct, id *string, config *ComputeInstanceV2Config) {
 	_init_.Initialize()
 

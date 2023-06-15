@@ -2,14 +2,14 @@ package rtssoftwareconfigv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/rtssoftwareconfigv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/rtssoftwareconfigv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/rts_software_config_v1 opentelekomcloud_rts_software_config_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/rts_software_config_v1 opentelekomcloud_rts_software_config_v1}.
 type RtsSoftwareConfigV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -477,7 +477,7 @@ func (j *jsiiProxy_RtsSoftwareConfigV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/rts_software_config_v1 opentelekomcloud_rts_software_config_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/rts_software_config_v1 opentelekomcloud_rts_software_config_v1} Resource.
 func NewRtsSoftwareConfigV1(scope constructs.Construct, id *string, config *RtsSoftwareConfigV1Config) RtsSoftwareConfigV1 {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewRtsSoftwareConfigV1(scope constructs.Construct, id *string, config *RtsS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/rts_software_config_v1 opentelekomcloud_rts_software_config_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/rts_software_config_v1 opentelekomcloud_rts_software_config_v1} Resource.
 func NewRtsSoftwareConfigV1_Override(r RtsSoftwareConfigV1, scope constructs.Construct, id *string, config *RtsSoftwareConfigV1Config) {
 	_init_.Initialize()
 

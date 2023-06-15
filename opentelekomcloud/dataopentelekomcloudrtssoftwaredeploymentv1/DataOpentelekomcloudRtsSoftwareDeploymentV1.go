@@ -2,14 +2,14 @@ package dataopentelekomcloudrtssoftwaredeploymentv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudrtssoftwaredeploymentv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudrtssoftwaredeploymentv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1}.
 type DataOpentelekomcloudRtsSoftwareDeploymentV1 interface {
 	cdktf.TerraformDataSource
 	Action() *string
@@ -411,7 +411,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRtsSoftwareDeploymentV1) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source.
 func NewDataOpentelekomcloudRtsSoftwareDeploymentV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudRtsSoftwareDeploymentV1Config) DataOpentelekomcloudRtsSoftwareDeploymentV1 {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewDataOpentelekomcloudRtsSoftwareDeploymentV1(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source.
 func NewDataOpentelekomcloudRtsSoftwareDeploymentV1_Override(d DataOpentelekomcloudRtsSoftwareDeploymentV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudRtsSoftwareDeploymentV1Config) {
 	_init_.Initialize()
 

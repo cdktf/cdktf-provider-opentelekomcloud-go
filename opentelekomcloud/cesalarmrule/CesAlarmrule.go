@@ -2,14 +2,14 @@ package cesalarmrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/cesalarmrule/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/cesalarmrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule}.
 type CesAlarmrule interface {
 	cdktf.TerraformResource
 	AlarmActionEnabled() interface{}
@@ -30,6 +30,9 @@ type CesAlarmrule interface {
 	SetAlarmName(val *string)
 	AlarmNameInput() *string
 	AlarmState() *string
+	AlarmType() *string
+	SetAlarmType(val *string)
+	AlarmTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Condition() CesAlarmruleConditionOutputReference
@@ -123,6 +126,7 @@ type CesAlarmrule interface {
 	ResetAlarmDescription()
 	ResetAlarmEnabled()
 	ResetAlarmLevel()
+	ResetAlarmType()
 	ResetId()
 	ResetOkActions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -269,6 +273,26 @@ func (j *jsiiProxy_CesAlarmrule) AlarmState() *string {
 	_jsii_.Get(
 		j,
 		"alarmState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CesAlarmrule) AlarmType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alarmType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CesAlarmrule) AlarmTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alarmTypeInput",
 		&returns,
 	)
 	return returns
@@ -545,7 +569,7 @@ func (j *jsiiProxy_CesAlarmrule) UpdateTime() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource.
 func NewCesAlarmrule(scope constructs.Construct, id *string, config *CesAlarmruleConfig) CesAlarmrule {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewCesAlarmrule(scope constructs.Construct, id *string, config *CesAlarmrul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource.
 func NewCesAlarmrule_Override(c CesAlarmrule, scope constructs.Construct, id *string, config *CesAlarmruleConfig) {
 	_init_.Initialize()
 
@@ -625,6 +649,17 @@ func (j *jsiiProxy_CesAlarmrule)SetAlarmName(val *string) {
 	_jsii_.Set(
 		j,
 		"alarmName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CesAlarmrule)SetAlarmType(val *string) {
+	if err := j.validateSetAlarmTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alarmType",
 		val,
 	)
 }
@@ -1065,6 +1100,14 @@ func (c *jsiiProxy_CesAlarmrule) ResetAlarmLevel() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAlarmLevel",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CesAlarmrule) ResetAlarmType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAlarmType",
 		nil, // no parameters
 	)
 }

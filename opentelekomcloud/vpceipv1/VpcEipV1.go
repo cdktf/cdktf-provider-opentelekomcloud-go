@@ -2,14 +2,14 @@ package vpceipv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpceipv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/vpceipv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1}.
 type VpcEipV1 interface {
 	cdktf.TerraformResource
 	Bandwidth() VpcEipV1BandwidthOutputReference
@@ -452,7 +452,7 @@ func (j *jsiiProxy_VpcEipV1) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Resource.
 func NewVpcEipV1(scope constructs.Construct, id *string, config *VpcEipV1Config) VpcEipV1 {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewVpcEipV1(scope constructs.Construct, id *string, config *VpcEipV1Config)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Resource.
 func NewVpcEipV1_Override(v VpcEipV1, scope constructs.Construct, id *string, config *VpcEipV1Config) {
 	_init_.Initialize()
 

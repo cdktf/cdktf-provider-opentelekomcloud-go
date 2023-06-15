@@ -2,14 +2,14 @@ package lbmemberv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/lbmemberv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/lbmemberv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_member_v3 opentelekomcloud_lb_member_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/lb_member_v3 opentelekomcloud_lb_member_v3}.
 type LbMemberV3 interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_LbMemberV3) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_member_v3 opentelekomcloud_lb_member_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/lb_member_v3 opentelekomcloud_lb_member_v3} Resource.
 func NewLbMemberV3(scope constructs.Construct, id *string, config *LbMemberV3Config) LbMemberV3 {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewLbMemberV3(scope constructs.Construct, id *string, config *LbMemberV3Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_member_v3 opentelekomcloud_lb_member_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/lb_member_v3 opentelekomcloud_lb_member_v3} Resource.
 func NewLbMemberV3_Override(l LbMemberV3, scope constructs.Construct, id *string, config *LbMemberV3Config) {
 	_init_.Initialize()
 

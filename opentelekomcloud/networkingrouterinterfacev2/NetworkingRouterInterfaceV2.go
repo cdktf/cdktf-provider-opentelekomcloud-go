@@ -2,14 +2,14 @@ package networkingrouterinterfacev2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/networkingrouterinterfacev2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/networkingrouterinterfacev2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_router_interface_v2 opentelekomcloud_networking_router_interface_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_interface_v2 opentelekomcloud_networking_router_interface_v2}.
 type NetworkingRouterInterfaceV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_NetworkingRouterInterfaceV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_router_interface_v2 opentelekomcloud_networking_router_interface_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_interface_v2 opentelekomcloud_networking_router_interface_v2} Resource.
 func NewNetworkingRouterInterfaceV2(scope constructs.Construct, id *string, config *NetworkingRouterInterfaceV2Config) NetworkingRouterInterfaceV2 {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewNetworkingRouterInterfaceV2(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_router_interface_v2 opentelekomcloud_networking_router_interface_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_interface_v2 opentelekomcloud_networking_router_interface_v2} Resource.
 func NewNetworkingRouterInterfaceV2_Override(n NetworkingRouterInterfaceV2, scope constructs.Construct, id *string, config *NetworkingRouterInterfaceV2Config) {
 	_init_.Initialize()
 

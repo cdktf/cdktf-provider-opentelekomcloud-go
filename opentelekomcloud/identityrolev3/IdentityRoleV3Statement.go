@@ -2,13 +2,13 @@ package identityrolev3
 
 
 type IdentityRoleV3Statement struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/identity_role_v3#action IdentityRoleV3#action}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/identity_role_v3#action IdentityRoleV3#action}.
 	Action *[]*string `field:"required" json:"action" yaml:"action"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/identity_role_v3#effect IdentityRoleV3#effect}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/identity_role_v3#effect IdentityRoleV3#effect}.
 	Effect *string `field:"required" json:"effect" yaml:"effect"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/identity_role_v3#condition IdentityRoleV3#condition}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/identity_role_v3#condition IdentityRoleV3#condition}.
 	Condition *string `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/identity_role_v3#resource IdentityRoleV3#resource}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/identity_role_v3#resource IdentityRoleV3#resource}.
 	Resource *[]*string `field:"optional" json:"resource" yaml:"resource"`
 }
 

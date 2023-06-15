@@ -2,14 +2,14 @@ package ccenodev3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ccenodev3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ccenodev3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3}.
 type CceNodeV3 interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -1153,7 +1153,7 @@ func (j *jsiiProxy_CceNodeV3) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
 func NewCceNodeV3(scope constructs.Construct, id *string, config *CceNodeV3Config) CceNodeV3 {
 	_init_.Initialize()
 
@@ -1171,7 +1171,7 @@ func NewCceNodeV3(scope constructs.Construct, id *string, config *CceNodeV3Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
 func NewCceNodeV3_Override(c CceNodeV3, scope constructs.Construct, id *string, config *CceNodeV3Config) {
 	_init_.Initialize()
 

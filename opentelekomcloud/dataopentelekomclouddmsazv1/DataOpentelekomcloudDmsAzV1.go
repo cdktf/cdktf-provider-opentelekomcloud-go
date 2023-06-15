@@ -2,14 +2,14 @@ package dataopentelekomclouddmsazv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomclouddmsazv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomclouddmsazv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/dms_az_v1 opentelekomcloud_dms_az_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/dms_az_v1 opentelekomcloud_dms_az_v1}.
 type DataOpentelekomcloudDmsAzV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsAzV1) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/dms_az_v1 opentelekomcloud_dms_az_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/dms_az_v1 opentelekomcloud_dms_az_v1} Data Source.
 func NewDataOpentelekomcloudDmsAzV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudDmsAzV1Config) DataOpentelekomcloudDmsAzV1 {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataOpentelekomcloudDmsAzV1(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/dms_az_v1 opentelekomcloud_dms_az_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/dms_az_v1 opentelekomcloud_dms_az_v1} Data Source.
 func NewDataOpentelekomcloudDmsAzV1_Override(d DataOpentelekomcloudDmsAzV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudDmsAzV1Config) {
 	_init_.Initialize()
 

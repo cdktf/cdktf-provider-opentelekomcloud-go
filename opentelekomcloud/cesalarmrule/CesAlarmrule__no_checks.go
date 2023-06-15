@@ -104,6 +104,10 @@ func (j *jsiiProxy_CesAlarmrule) validateSetAlarmNameParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_CesAlarmrule) validateSetAlarmTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CesAlarmrule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

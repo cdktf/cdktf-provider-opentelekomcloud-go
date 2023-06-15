@@ -2,14 +2,14 @@ package networkingvipv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/networkingvipv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/networkingvipv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2 opentelekomcloud_networking_vip_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_vip_v2 opentelekomcloud_networking_vip_v2}.
 type NetworkingVipV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_NetworkingVipV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2 opentelekomcloud_networking_vip_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_vip_v2 opentelekomcloud_networking_vip_v2} Resource.
 func NewNetworkingVipV2(scope constructs.Construct, id *string, config *NetworkingVipV2Config) NetworkingVipV2 {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewNetworkingVipV2(scope constructs.Construct, id *string, config *Networki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2 opentelekomcloud_networking_vip_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_vip_v2 opentelekomcloud_networking_vip_v2} Resource.
 func NewNetworkingVipV2_Override(n NetworkingVipV2, scope constructs.Construct, id *string, config *NetworkingVipV2Config) {
 	_init_.Initialize()
 

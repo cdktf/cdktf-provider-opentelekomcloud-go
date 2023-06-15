@@ -48,6 +48,10 @@ func (c *jsiiProxy_CesAlarmruleConditionOutputReference) validateResolveParamete
 	return nil
 }
 
+func (j *jsiiProxy_CesAlarmruleConditionOutputReference) validateSetAlarmFrequencyParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CesAlarmruleConditionOutputReference) validateSetComparisonOperatorParameters(val *string) error {
 	return nil
 }

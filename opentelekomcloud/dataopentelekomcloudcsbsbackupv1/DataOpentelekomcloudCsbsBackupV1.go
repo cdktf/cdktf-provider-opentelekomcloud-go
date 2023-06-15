@@ -2,14 +2,14 @@ package dataopentelekomcloudcsbsbackupv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudcsbsbackupv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcsbsbackupv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1}.
 type DataOpentelekomcloudCsbsBackupV1 interface {
 	cdktf.TerraformDataSource
 	AutoTrigger() cdktf.IResolvable
@@ -564,7 +564,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupV1) VolumeBackups() DataOpentel
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1} Data Source.
 func NewDataOpentelekomcloudCsbsBackupV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudCsbsBackupV1Config) DataOpentelekomcloudCsbsBackupV1 {
 	_init_.Initialize()
 
@@ -582,7 +582,7 @@ func NewDataOpentelekomcloudCsbsBackupV1(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1} Data Source.
 func NewDataOpentelekomcloudCsbsBackupV1_Override(d DataOpentelekomcloudCsbsBackupV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudCsbsBackupV1Config) {
 	_init_.Initialize()
 

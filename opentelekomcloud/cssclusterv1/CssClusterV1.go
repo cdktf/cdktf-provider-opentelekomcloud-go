@@ -2,14 +2,14 @@ package cssclusterv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/cssclusterv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/cssclusterv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1}.
 type CssClusterV1 interface {
 	cdktf.TerraformResource
 	AdminPass() *string
@@ -544,7 +544,7 @@ func (j *jsiiProxy_CssClusterV1) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1} Resource.
 func NewCssClusterV1(scope constructs.Construct, id *string, config *CssClusterV1Config) CssClusterV1 {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewCssClusterV1(scope constructs.Construct, id *string, config *CssClusterV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1} Resource.
 func NewCssClusterV1_Override(c CssClusterV1, scope constructs.Construct, id *string, config *CssClusterV1Config) {
 	_init_.Initialize()
 

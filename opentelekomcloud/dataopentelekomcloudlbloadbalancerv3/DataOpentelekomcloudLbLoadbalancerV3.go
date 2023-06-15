@@ -2,14 +2,14 @@ package dataopentelekomcloudlbloadbalancerv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudlbloadbalancerv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudlbloadbalancerv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3}.
 type DataOpentelekomcloudLbLoadbalancerV3 interface {
 	cdktf.TerraformDataSource
 	AdminStateUp() cdktf.IResolvable
@@ -536,7 +536,7 @@ func (j *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3) VipPortIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3} Data Source.
 func NewDataOpentelekomcloudLbLoadbalancerV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudLbLoadbalancerV3Config) DataOpentelekomcloudLbLoadbalancerV3 {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewDataOpentelekomcloudLbLoadbalancerV3(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3} Data Source.
 func NewDataOpentelekomcloudLbLoadbalancerV3_Override(d DataOpentelekomcloudLbLoadbalancerV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudLbLoadbalancerV3Config) {
 	_init_.Initialize()
 

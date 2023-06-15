@@ -2,9 +2,9 @@ package cesalarmrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/cesalarmrule/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/cesalarmrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,6 +70,7 @@ type CesAlarmruleMetricOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDimensions(value interface{})
+	ResetDimensions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -514,6 +515,14 @@ func (c *jsiiProxy_CesAlarmruleMetricOutputReference) PutDimensions(value interf
 		c,
 		"putDimensions",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CesAlarmruleMetricOutputReference) ResetDimensions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDimensions",
+		nil, // no parameters
 	)
 }
 
