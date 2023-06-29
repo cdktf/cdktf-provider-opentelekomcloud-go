@@ -181,6 +181,8 @@ func (j *jsiiProxy_DnsZoneV2TimeoutsOutputReference) validateSetDeleteParameters
 
 func (j *jsiiProxy_DnsZoneV2TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DnsZoneV2Timeouts:
 		val := val.(*DnsZoneV2Timeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_DnsZoneV2TimeoutsOutputReference) validateSetInternalValuePar
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DnsZoneV2Timeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DnsZoneV2Timeouts; received %#v (a %T)", val, val)
 		}
 	}
 

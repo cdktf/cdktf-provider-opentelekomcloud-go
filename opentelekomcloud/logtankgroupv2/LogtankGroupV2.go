@@ -2,14 +2,14 @@ package logtankgroupv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/logtankgroupv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/logtankgroupv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2}.
 type LogtankGroupV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_LogtankGroupV2) TtlInDaysInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2} Resource.
 func NewLogtankGroupV2(scope constructs.Construct, id *string, config *LogtankGroupV2Config) LogtankGroupV2 {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewLogtankGroupV2(scope constructs.Construct, id *string, config *LogtankGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2} Resource.
 func NewLogtankGroupV2_Override(l LogtankGroupV2, scope constructs.Construct, id *string, config *LogtankGroupV2Config) {
 	_init_.Initialize()
 

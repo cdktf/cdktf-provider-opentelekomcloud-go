@@ -181,6 +181,8 @@ func (j *jsiiProxy_LbMemberV2TimeoutsOutputReference) validateSetDeleteParameter
 
 func (j *jsiiProxy_LbMemberV2TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *LbMemberV2Timeouts:
 		val := val.(*LbMemberV2Timeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_LbMemberV2TimeoutsOutputReference) validateSetInternalValuePa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *LbMemberV2Timeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *LbMemberV2Timeouts; received %#v (a %T)", val, val)
 		}
 	}
 

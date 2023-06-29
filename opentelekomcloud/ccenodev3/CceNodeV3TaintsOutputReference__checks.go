@@ -173,6 +173,8 @@ func (j *jsiiProxy_CceNodeV3TaintsOutputReference) validateSetEffectParameters(v
 
 func (j *jsiiProxy_CceNodeV3TaintsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CceNodeV3Taints:
 		val := val.(*CceNodeV3Taints)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_CceNodeV3TaintsOutputReference) validateSetInternalValueParam
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CceNodeV3Taints, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CceNodeV3Taints; received %#v (a %T)", val, val)
 		}
 	}
 

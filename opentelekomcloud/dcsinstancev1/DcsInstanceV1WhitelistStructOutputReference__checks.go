@@ -173,6 +173,8 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateSetGroup
 
 func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DcsInstanceV1WhitelistStruct:
 		val := val.(*DcsInstanceV1WhitelistStruct)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_DcsInstanceV1WhitelistStructOutputReference) validateSetInter
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DcsInstanceV1WhitelistStruct, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DcsInstanceV1WhitelistStruct; received %#v (a %T)", val, val)
 		}
 	}
 

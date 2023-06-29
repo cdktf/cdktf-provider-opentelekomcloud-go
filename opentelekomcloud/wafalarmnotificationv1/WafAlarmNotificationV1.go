@@ -2,14 +2,14 @@ package wafalarmnotificationv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/wafalarmnotificationv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/wafalarmnotificationv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_alarm_notification_v1 opentelekomcloud_waf_alarm_notification_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_alarm_notification_v1 opentelekomcloud_waf_alarm_notification_v1}.
 type WafAlarmNotificationV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_WafAlarmNotificationV1) TopicUrnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_alarm_notification_v1 opentelekomcloud_waf_alarm_notification_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_alarm_notification_v1 opentelekomcloud_waf_alarm_notification_v1} Resource.
 func NewWafAlarmNotificationV1(scope constructs.Construct, id *string, config *WafAlarmNotificationV1Config) WafAlarmNotificationV1 {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewWafAlarmNotificationV1(scope constructs.Construct, id *string, config *W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_alarm_notification_v1 opentelekomcloud_waf_alarm_notification_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_alarm_notification_v1 opentelekomcloud_waf_alarm_notification_v1} Resource.
 func NewWafAlarmNotificationV1_Override(w WafAlarmNotificationV1, scope constructs.Construct, id *string, config *WafAlarmNotificationV1Config) {
 	_init_.Initialize()
 

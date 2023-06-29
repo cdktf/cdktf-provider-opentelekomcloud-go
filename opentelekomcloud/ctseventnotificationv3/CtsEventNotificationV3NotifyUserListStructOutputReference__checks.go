@@ -165,6 +165,8 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) va
 
 func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CtsEventNotificationV3NotifyUserListStruct:
 		val := val.(*CtsEventNotificationV3NotifyUserListStruct)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) va
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CtsEventNotificationV3NotifyUserListStruct, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CtsEventNotificationV3NotifyUserListStruct; received %#v (a %T)", val, val)
 		}
 	}
 

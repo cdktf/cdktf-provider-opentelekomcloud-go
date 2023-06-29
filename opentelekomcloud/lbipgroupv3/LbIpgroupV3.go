@@ -2,14 +2,14 @@ package lbipgroupv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/lbipgroupv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/lbipgroupv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3}.
 type LbIpgroupV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_LbIpgroupV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource.
 func NewLbIpgroupV3(scope constructs.Construct, id *string, config *LbIpgroupV3Config) LbIpgroupV3 {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewLbIpgroupV3(scope constructs.Construct, id *string, config *LbIpgroupV3C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource.
 func NewLbIpgroupV3_Override(l LbIpgroupV3, scope constructs.Construct, id *string, config *LbIpgroupV3Config) {
 	_init_.Initialize()
 

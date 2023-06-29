@@ -173,6 +173,8 @@ func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) validateSetCookieNamePara
 
 func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *LbPoolV2Persistence:
 		val := val.(*LbPoolV2Persistence)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_LbPoolV2PersistenceOutputReference) validateSetInternalValueP
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *LbPoolV2Persistence, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *LbPoolV2Persistence; received %#v (a %T)", val, val)
 		}
 	}
 

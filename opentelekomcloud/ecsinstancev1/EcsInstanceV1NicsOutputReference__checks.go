@@ -165,6 +165,8 @@ func (j *jsiiProxy_EcsInstanceV1NicsOutputReference) validateSetComplexObjectIsF
 
 func (j *jsiiProxy_EcsInstanceV1NicsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *EcsInstanceV1Nics:
 		val := val.(*EcsInstanceV1Nics)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_EcsInstanceV1NicsOutputReference) validateSetInternalValuePar
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *EcsInstanceV1Nics, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EcsInstanceV1Nics; received %#v (a %T)", val, val)
 		}
 	}
 

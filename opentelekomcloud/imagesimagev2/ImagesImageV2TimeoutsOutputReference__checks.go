@@ -173,6 +173,8 @@ func (j *jsiiProxy_ImagesImageV2TimeoutsOutputReference) validateSetCreateParame
 
 func (j *jsiiProxy_ImagesImageV2TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ImagesImageV2Timeouts:
 		val := val.(*ImagesImageV2Timeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_ImagesImageV2TimeoutsOutputReference) validateSetInternalValu
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ImagesImageV2Timeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ImagesImageV2Timeouts; received %#v (a %T)", val, val)
 		}
 	}
 

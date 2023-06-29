@@ -173,6 +173,8 @@ func (j *jsiiProxy_VpnaasIpsecPolicyV2TimeoutsOutputReference) validateSetCreate
 
 func (j *jsiiProxy_VpnaasIpsecPolicyV2TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *VpnaasIpsecPolicyV2Timeouts:
 		val := val.(*VpnaasIpsecPolicyV2Timeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_VpnaasIpsecPolicyV2TimeoutsOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *VpnaasIpsecPolicyV2Timeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *VpnaasIpsecPolicyV2Timeouts; received %#v (a %T)", val, val)
 		}
 	}
 

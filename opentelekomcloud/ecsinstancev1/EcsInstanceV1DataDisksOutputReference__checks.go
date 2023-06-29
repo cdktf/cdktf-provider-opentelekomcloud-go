@@ -165,6 +165,8 @@ func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) validateSetComplexObje
 
 func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *EcsInstanceV1DataDisks:
 		val := val.(*EcsInstanceV1DataDisks)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_EcsInstanceV1DataDisksOutputReference) validateSetInternalVal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *EcsInstanceV1DataDisks, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EcsInstanceV1DataDisks; received %#v (a %T)", val, val)
 		}
 	}
 

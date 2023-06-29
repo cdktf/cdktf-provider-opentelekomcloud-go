@@ -2,14 +2,14 @@ package vpcsubnetv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/vpcsubnetv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/vpcsubnetv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1}.
 type VpcSubnetV1 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -651,7 +651,7 @@ func (j *jsiiProxy_VpcSubnetV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Resource.
 func NewVpcSubnetV1(scope constructs.Construct, id *string, config *VpcSubnetV1Config) VpcSubnetV1 {
 	_init_.Initialize()
 
@@ -669,7 +669,7 @@ func NewVpcSubnetV1(scope constructs.Construct, id *string, config *VpcSubnetV1C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Resource.
 func NewVpcSubnetV1_Override(v VpcSubnetV1, scope constructs.Construct, id *string, config *VpcSubnetV1Config) {
 	_init_.Initialize()
 

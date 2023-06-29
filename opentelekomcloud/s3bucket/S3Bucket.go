@@ -2,14 +2,14 @@ package s3bucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/s3bucket/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/s3bucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/s3_bucket opentelekomcloud_s3_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/s3_bucket opentelekomcloud_s3_bucket}.
 type S3Bucket interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -681,7 +681,7 @@ func (j *jsiiProxy_S3Bucket) WebsiteInput() *S3BucketWebsite {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/s3_bucket opentelekomcloud_s3_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/s3_bucket opentelekomcloud_s3_bucket} Resource.
 func NewS3Bucket(scope constructs.Construct, id *string, config *S3BucketConfig) S3Bucket {
 	_init_.Initialize()
 
@@ -699,7 +699,7 @@ func NewS3Bucket(scope constructs.Construct, id *string, config *S3BucketConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/s3_bucket opentelekomcloud_s3_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/s3_bucket opentelekomcloud_s3_bucket} Resource.
 func NewS3Bucket_Override(s S3Bucket, scope constructs.Construct, id *string, config *S3BucketConfig) {
 	_init_.Initialize()
 

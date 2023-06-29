@@ -2,14 +2,14 @@ package ddsinstancev3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/ddsinstancev3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3}.
 type DdsInstanceV3 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -692,7 +692,7 @@ func (j *jsiiProxy_DdsInstanceV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource.
 func NewDdsInstanceV3(scope constructs.Construct, id *string, config *DdsInstanceV3Config) DdsInstanceV3 {
 	_init_.Initialize()
 
@@ -710,7 +710,7 @@ func NewDdsInstanceV3(scope constructs.Construct, id *string, config *DdsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource.
 func NewDdsInstanceV3_Override(d DdsInstanceV3, scope constructs.Construct, id *string, config *DdsInstanceV3Config) {
 	_init_.Initialize()
 

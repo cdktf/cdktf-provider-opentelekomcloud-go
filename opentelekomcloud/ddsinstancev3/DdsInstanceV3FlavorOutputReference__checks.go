@@ -165,6 +165,8 @@ func (j *jsiiProxy_DdsInstanceV3FlavorOutputReference) validateSetComplexObjectI
 
 func (j *jsiiProxy_DdsInstanceV3FlavorOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DdsInstanceV3Flavor:
 		val := val.(*DdsInstanceV3Flavor)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DdsInstanceV3FlavorOutputReference) validateSetInternalValueP
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DdsInstanceV3Flavor, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DdsInstanceV3Flavor; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package dataopentelekomcloudvpcv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudvpcv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudvpcv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/vpc_v1 opentelekomcloud_vpc_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/vpc_v1 opentelekomcloud_vpc_v1}.
 type DataOpentelekomcloudVpcV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/vpc_v1 opentelekomcloud_vpc_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/vpc_v1 opentelekomcloud_vpc_v1} Data Source.
 func NewDataOpentelekomcloudVpcV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcV1Config) DataOpentelekomcloudVpcV1 {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewDataOpentelekomcloudVpcV1(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/vpc_v1 opentelekomcloud_vpc_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/vpc_v1 opentelekomcloud_vpc_v1} Data Source.
 func NewDataOpentelekomcloudVpcV1_Override(d DataOpentelekomcloudVpcV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcV1Config) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package computesecgroupv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/computesecgroupv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/computesecgroupv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/compute_secgroup_v2 opentelekomcloud_compute_secgroup_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/compute_secgroup_v2 opentelekomcloud_compute_secgroup_v2}.
 type ComputeSecgroupV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_ComputeSecgroupV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/compute_secgroup_v2 opentelekomcloud_compute_secgroup_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/compute_secgroup_v2 opentelekomcloud_compute_secgroup_v2} Resource.
 func NewComputeSecgroupV2(scope constructs.Construct, id *string, config *ComputeSecgroupV2Config) ComputeSecgroupV2 {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewComputeSecgroupV2(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/compute_secgroup_v2 opentelekomcloud_compute_secgroup_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/compute_secgroup_v2 opentelekomcloud_compute_secgroup_v2} Resource.
 func NewComputeSecgroupV2_Override(c ComputeSecgroupV2, scope constructs.Construct, id *string, config *ComputeSecgroupV2Config) {
 	_init_.Initialize()
 

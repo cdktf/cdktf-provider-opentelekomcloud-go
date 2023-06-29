@@ -2,14 +2,14 @@ package vpcependpointv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/vpcependpointv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/vpcependpointv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1}.
 type VpcepEndpointV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -579,7 +579,7 @@ func (j *jsiiProxy_VpcepEndpointV1) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource.
 func NewVpcepEndpointV1(scope constructs.Construct, id *string, config *VpcepEndpointV1Config) VpcepEndpointV1 {
 	_init_.Initialize()
 
@@ -597,7 +597,7 @@ func NewVpcepEndpointV1(scope constructs.Construct, id *string, config *VpcepEnd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource.
 func NewVpcepEndpointV1_Override(v VpcepEndpointV1, scope constructs.Construct, id *string, config *VpcepEndpointV1Config) {
 	_init_.Initialize()
 

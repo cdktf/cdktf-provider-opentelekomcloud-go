@@ -52,6 +52,10 @@ func (w *jsiiProxy_WafDomainV1) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (w *jsiiProxy_WafDomainV1) validatePutBlockPageParameters(value *WafDomainV1BlockPage) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafDomainV1) validatePutServerParameters(value interface{}) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataopentelekomcloudantiddosv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudantiddosv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudantiddosv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/antiddos_v1 opentelekomcloud_antiddos_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/antiddos_v1 opentelekomcloud_antiddos_v1}.
 type DataOpentelekomcloudAntiddosV1 interface {
 	cdktf.TerraformDataSource
 	BpsAttack() *[]*float64
@@ -508,7 +508,7 @@ func (j *jsiiProxy_DataOpentelekomcloudAntiddosV1) TriggerPps() *[]*float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/antiddos_v1 opentelekomcloud_antiddos_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/antiddos_v1 opentelekomcloud_antiddos_v1} Data Source.
 func NewDataOpentelekomcloudAntiddosV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudAntiddosV1Config) DataOpentelekomcloudAntiddosV1 {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewDataOpentelekomcloudAntiddosV1(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/antiddos_v1 opentelekomcloud_antiddos_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/antiddos_v1 opentelekomcloud_antiddos_v1} Data Source.
 func NewDataOpentelekomcloudAntiddosV1_Override(d DataOpentelekomcloudAntiddosV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudAntiddosV1Config) {
 	_init_.Initialize()
 

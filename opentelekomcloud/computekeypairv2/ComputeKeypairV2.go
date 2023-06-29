@@ -2,14 +2,14 @@ package computekeypairv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/computekeypairv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/computekeypairv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2}.
 type ComputeKeypairV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ComputeKeypairV2) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2} Resource.
 func NewComputeKeypairV2(scope constructs.Construct, id *string, config *ComputeKeypairV2Config) ComputeKeypairV2 {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewComputeKeypairV2(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2} Resource.
 func NewComputeKeypairV2_Override(c ComputeKeypairV2, scope constructs.Construct, id *string, config *ComputeKeypairV2Config) {
 	_init_.Initialize()
 

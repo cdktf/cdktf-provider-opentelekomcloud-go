@@ -181,6 +181,8 @@ func (j *jsiiProxy_IdentityAgencyV3TimeoutsOutputReference) validateSetDeletePar
 
 func (j *jsiiProxy_IdentityAgencyV3TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *IdentityAgencyV3Timeouts:
 		val := val.(*IdentityAgencyV3Timeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_IdentityAgencyV3TimeoutsOutputReference) validateSetInternalV
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *IdentityAgencyV3Timeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *IdentityAgencyV3Timeouts; received %#v (a %T)", val, val)
 		}
 	}
 

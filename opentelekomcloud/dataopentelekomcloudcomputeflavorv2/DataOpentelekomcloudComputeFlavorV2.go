@@ -2,14 +2,14 @@ package dataopentelekomcloudcomputeflavorv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcomputeflavorv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudcomputeflavorv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/compute_flavor_v2 opentelekomcloud_compute_flavor_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/compute_flavor_v2 opentelekomcloud_compute_flavor_v2}.
 type DataOpentelekomcloudComputeFlavorV2 interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -557,7 +557,7 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeFlavorV2) VcpusInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/compute_flavor_v2 opentelekomcloud_compute_flavor_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/compute_flavor_v2 opentelekomcloud_compute_flavor_v2} Data Source.
 func NewDataOpentelekomcloudComputeFlavorV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudComputeFlavorV2Config) DataOpentelekomcloudComputeFlavorV2 {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewDataOpentelekomcloudComputeFlavorV2(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/compute_flavor_v2 opentelekomcloud_compute_flavor_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/compute_flavor_v2 opentelekomcloud_compute_flavor_v2} Data Source.
 func NewDataOpentelekomcloudComputeFlavorV2_Override(d DataOpentelekomcloudComputeFlavorV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudComputeFlavorV2Config) {
 	_init_.Initialize()
 

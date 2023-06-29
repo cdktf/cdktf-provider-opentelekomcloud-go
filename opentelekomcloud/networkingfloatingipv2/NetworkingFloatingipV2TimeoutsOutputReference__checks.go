@@ -181,6 +181,8 @@ func (j *jsiiProxy_NetworkingFloatingipV2TimeoutsOutputReference) validateSetDel
 
 func (j *jsiiProxy_NetworkingFloatingipV2TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *NetworkingFloatingipV2Timeouts:
 		val := val.(*NetworkingFloatingipV2Timeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_NetworkingFloatingipV2TimeoutsOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *NetworkingFloatingipV2Timeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *NetworkingFloatingipV2Timeouts; received %#v (a %T)", val, val)
 		}
 	}
 

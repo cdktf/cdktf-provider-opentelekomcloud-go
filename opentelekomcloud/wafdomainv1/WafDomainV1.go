@@ -2,18 +2,20 @@ package wafdomainv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/wafdomainv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/wafdomainv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1 opentelekomcloud_waf_domain_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1 opentelekomcloud_waf_domain_v1}.
 type WafDomainV1 interface {
 	cdktf.TerraformResource
 	AccessCode() *string
 	AccessStatus() *float64
+	BlockPage() WafDomainV1BlockPageOutputReference
+	BlockPageInput() *WafDomainV1BlockPage
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CertificateId() *string
@@ -121,8 +123,10 @@ type WafDomainV1 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBlockPage(value *WafDomainV1BlockPage)
 	PutServer(value interface{})
 	PutTimeouts(value *WafDomainV1Timeouts)
+	ResetBlockPage()
 	ResetCertificateId()
 	ResetCipher()
 	ResetId()
@@ -164,6 +168,26 @@ func (j *jsiiProxy_WafDomainV1) AccessStatus() *float64 {
 	_jsii_.Get(
 		j,
 		"accessStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafDomainV1) BlockPage() WafDomainV1BlockPageOutputReference {
+	var returns WafDomainV1BlockPageOutputReference
+	_jsii_.Get(
+		j,
+		"blockPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafDomainV1) BlockPageInput() *WafDomainV1BlockPage {
+	var returns *WafDomainV1BlockPage
+	_jsii_.Get(
+		j,
+		"blockPageInput",
 		&returns,
 	)
 	return returns
@@ -600,7 +624,7 @@ func (j *jsiiProxy_WafDomainV1) TxtCode() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1 opentelekomcloud_waf_domain_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1 opentelekomcloud_waf_domain_v1} Resource.
 func NewWafDomainV1(scope constructs.Construct, id *string, config *WafDomainV1Config) WafDomainV1 {
 	_init_.Initialize()
 
@@ -618,7 +642,7 @@ func NewWafDomainV1(scope constructs.Construct, id *string, config *WafDomainV1C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1 opentelekomcloud_waf_domain_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1 opentelekomcloud_waf_domain_v1} Resource.
 func NewWafDomainV1_Override(w WafDomainV1, scope constructs.Construct, id *string, config *WafDomainV1Config) {
 	_init_.Initialize()
 
@@ -1062,6 +1086,17 @@ func (w *jsiiProxy_WafDomainV1) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (w *jsiiProxy_WafDomainV1) PutBlockPage(value *WafDomainV1BlockPage) {
+	if err := w.validatePutBlockPageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putBlockPage",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WafDomainV1) PutServer(value interface{}) {
 	if err := w.validatePutServerParameters(value); err != nil {
 		panic(err)
@@ -1081,6 +1116,14 @@ func (w *jsiiProxy_WafDomainV1) PutTimeouts(value *WafDomainV1Timeouts) {
 		w,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WafDomainV1) ResetBlockPage() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetBlockPage",
+		nil, // no parameters
 	)
 }
 

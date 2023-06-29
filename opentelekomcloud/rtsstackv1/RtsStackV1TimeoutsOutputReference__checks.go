@@ -181,6 +181,8 @@ func (j *jsiiProxy_RtsStackV1TimeoutsOutputReference) validateSetDeleteParameter
 
 func (j *jsiiProxy_RtsStackV1TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *RtsStackV1Timeouts:
 		val := val.(*RtsStackV1Timeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_RtsStackV1TimeoutsOutputReference) validateSetInternalValuePa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *RtsStackV1Timeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *RtsStackV1Timeouts; received %#v (a %T)", val, val)
 		}
 	}
 

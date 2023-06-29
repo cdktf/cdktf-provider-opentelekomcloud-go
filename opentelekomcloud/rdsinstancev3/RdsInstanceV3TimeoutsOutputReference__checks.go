@@ -173,6 +173,8 @@ func (j *jsiiProxy_RdsInstanceV3TimeoutsOutputReference) validateSetCreateParame
 
 func (j *jsiiProxy_RdsInstanceV3TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *RdsInstanceV3Timeouts:
 		val := val.(*RdsInstanceV3Timeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_RdsInstanceV3TimeoutsOutputReference) validateSetInternalValu
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *RdsInstanceV3Timeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *RdsInstanceV3Timeouts; received %#v (a %T)", val, val)
 		}
 	}
 

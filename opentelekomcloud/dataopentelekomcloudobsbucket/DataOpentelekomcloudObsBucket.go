@@ -2,14 +2,14 @@ package dataopentelekomcloudobsbucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudobsbucket/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudobsbucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/obs_bucket opentelekomcloud_obs_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/obs_bucket opentelekomcloud_obs_bucket}.
 type DataOpentelekomcloudObsBucket interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucket) Website() DataOpentelekomcloud
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/obs_bucket opentelekomcloud_obs_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/obs_bucket opentelekomcloud_obs_bucket} Data Source.
 func NewDataOpentelekomcloudObsBucket(scope constructs.Construct, id *string, config *DataOpentelekomcloudObsBucketConfig) DataOpentelekomcloudObsBucket {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDataOpentelekomcloudObsBucket(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/obs_bucket opentelekomcloud_obs_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/obs_bucket opentelekomcloud_obs_bucket} Data Source.
 func NewDataOpentelekomcloudObsBucket_Override(d DataOpentelekomcloudObsBucket, scope constructs.Construct, id *string, config *DataOpentelekomcloudObsBucketConfig) {
 	_init_.Initialize()
 

@@ -165,6 +165,8 @@ func (j *jsiiProxy_AsGroupV1LbaasListenersOutputReference) validateSetComplexObj
 
 func (j *jsiiProxy_AsGroupV1LbaasListenersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AsGroupV1LbaasListeners:
 		val := val.(*AsGroupV1LbaasListeners)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_AsGroupV1LbaasListenersOutputReference) validateSetInternalVa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AsGroupV1LbaasListeners, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AsGroupV1LbaasListeners; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -173,6 +173,8 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ResourceOutputReference) validateSetIdParam
 
 func (j *jsiiProxy_CsbsBackupPolicyV1ResourceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CsbsBackupPolicyV1Resource:
 		val := val.(*CsbsBackupPolicyV1Resource)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_CsbsBackupPolicyV1ResourceOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CsbsBackupPolicyV1Resource, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CsbsBackupPolicyV1Resource; received %#v (a %T)", val, val)
 		}
 	}
 

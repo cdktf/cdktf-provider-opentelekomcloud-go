@@ -173,6 +173,8 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityOutputReference) va
 
 func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AsConfigurationV1InstanceConfigPersonality:
 		val := val.(*AsConfigurationV1InstanceConfigPersonality)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityOutputReference) va
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AsConfigurationV1InstanceConfigPersonality, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AsConfigurationV1InstanceConfigPersonality; received %#v (a %T)", val, val)
 		}
 	}
 

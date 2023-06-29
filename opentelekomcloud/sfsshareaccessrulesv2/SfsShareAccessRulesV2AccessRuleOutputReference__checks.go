@@ -189,6 +189,8 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) validateSetCo
 
 func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SfsShareAccessRulesV2AccessRule:
 		val := val.(*SfsShareAccessRulesV2AccessRule)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -200,11 +202,9 @@ func (j *jsiiProxy_SfsShareAccessRulesV2AccessRuleOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SfsShareAccessRulesV2AccessRule, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SfsShareAccessRulesV2AccessRule; received %#v (a %T)", val, val)
 		}
 	}
 

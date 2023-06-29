@@ -165,6 +165,8 @@ func (j *jsiiProxy_NetworkingNetworkV2SegmentsOutputReference) validateSetComple
 
 func (j *jsiiProxy_NetworkingNetworkV2SegmentsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *NetworkingNetworkV2Segments:
 		val := val.(*NetworkingNetworkV2Segments)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_NetworkingNetworkV2SegmentsOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *NetworkingNetworkV2Segments, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *NetworkingNetworkV2Segments; received %#v (a %T)", val, val)
 		}
 	}
 

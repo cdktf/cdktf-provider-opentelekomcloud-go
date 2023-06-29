@@ -2,14 +2,14 @@ package cbrpolicyv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/cbrpolicyv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/cbrpolicyv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3}.
 type CbrPolicyV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_CbrPolicyV3) TriggerPatternInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource.
 func NewCbrPolicyV3(scope constructs.Construct, id *string, config *CbrPolicyV3Config) CbrPolicyV3 {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewCbrPolicyV3(scope constructs.Construct, id *string, config *CbrPolicyV3C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource.
 func NewCbrPolicyV3_Override(c CbrPolicyV3, scope constructs.Construct, id *string, config *CbrPolicyV3Config) {
 	_init_.Initialize()
 

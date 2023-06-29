@@ -173,6 +173,8 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) validateS
 
 func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AsConfigurationV1InstanceConfigDisk:
 		val := val.(*AsConfigurationV1InstanceConfigDisk)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_AsConfigurationV1InstanceConfigDiskOutputReference) validateS
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AsConfigurationV1InstanceConfigDisk, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AsConfigurationV1InstanceConfigDisk; received %#v (a %T)", val, val)
 		}
 	}
 

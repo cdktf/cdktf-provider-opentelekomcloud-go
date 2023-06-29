@@ -181,6 +181,8 @@ func (j *jsiiProxy_CceNodeV3TimeoutsOutputReference) validateSetDeleteParameters
 
 func (j *jsiiProxy_CceNodeV3TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CceNodeV3Timeouts:
 		val := val.(*CceNodeV3Timeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_CceNodeV3TimeoutsOutputReference) validateSetInternalValuePar
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CceNodeV3Timeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CceNodeV3Timeouts; received %#v (a %T)", val, val)
 		}
 	}
 

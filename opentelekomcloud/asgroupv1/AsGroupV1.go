@@ -2,14 +2,14 @@ package asgroupv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/asgroupv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/as_group_v1 opentelekomcloud_as_group_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/as_group_v1 opentelekomcloud_as_group_v1}.
 type AsGroupV1 interface {
 	cdktf.TerraformResource
 	AvailableZones() *[]*string
@@ -842,7 +842,7 @@ func (j *jsiiProxy_AsGroupV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/as_group_v1 opentelekomcloud_as_group_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/as_group_v1 opentelekomcloud_as_group_v1} Resource.
 func NewAsGroupV1(scope constructs.Construct, id *string, config *AsGroupV1Config) AsGroupV1 {
 	_init_.Initialize()
 
@@ -860,7 +860,7 @@ func NewAsGroupV1(scope constructs.Construct, id *string, config *AsGroupV1Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/as_group_v1 opentelekomcloud_as_group_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/as_group_v1 opentelekomcloud_as_group_v1} Resource.
 func NewAsGroupV1_Override(a AsGroupV1, scope constructs.Construct, id *string, config *AsGroupV1Config) {
 	_init_.Initialize()
 

@@ -173,6 +173,8 @@ func (j *jsiiProxy_AsGroupV1NetworksOutputReference) validateSetIdParameters(val
 
 func (j *jsiiProxy_AsGroupV1NetworksOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AsGroupV1Networks:
 		val := val.(*AsGroupV1Networks)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_AsGroupV1NetworksOutputReference) validateSetInternalValuePar
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AsGroupV1Networks, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AsGroupV1Networks; received %#v (a %T)", val, val)
 		}
 	}
 

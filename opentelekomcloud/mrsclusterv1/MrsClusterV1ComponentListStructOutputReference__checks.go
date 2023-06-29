@@ -173,6 +173,8 @@ func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) validateSetCo
 
 func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *MrsClusterV1ComponentListStruct:
 		val := val.(*MrsClusterV1ComponentListStruct)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MrsClusterV1ComponentListStruct, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MrsClusterV1ComponentListStruct; received %#v (a %T)", val, val)
 		}
 	}
 

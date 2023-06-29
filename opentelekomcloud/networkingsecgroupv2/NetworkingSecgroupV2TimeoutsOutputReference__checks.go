@@ -173,6 +173,8 @@ func (j *jsiiProxy_NetworkingSecgroupV2TimeoutsOutputReference) validateSetDelet
 
 func (j *jsiiProxy_NetworkingSecgroupV2TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *NetworkingSecgroupV2Timeouts:
 		val := val.(*NetworkingSecgroupV2Timeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_NetworkingSecgroupV2TimeoutsOutputReference) validateSetInter
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *NetworkingSecgroupV2Timeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *NetworkingSecgroupV2Timeouts; received %#v (a %T)", val, val)
 		}
 	}
 

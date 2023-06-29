@@ -2,14 +2,14 @@ package csbsbackuppolicyv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/csbsbackuppolicyv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/csbsbackuppolicyv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1}.
 type CsbsBackupPolicyV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -521,7 +521,7 @@ func (j *jsiiProxy_CsbsBackupPolicyV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1} Resource.
 func NewCsbsBackupPolicyV1(scope constructs.Construct, id *string, config *CsbsBackupPolicyV1Config) CsbsBackupPolicyV1 {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewCsbsBackupPolicyV1(scope constructs.Construct, id *string, config *CsbsB
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1} Resource.
 func NewCsbsBackupPolicyV1_Override(c CsbsBackupPolicyV1, scope constructs.Construct, id *string, config *CsbsBackupPolicyV1Config) {
 	_init_.Initialize()
 

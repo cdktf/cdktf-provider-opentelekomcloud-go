@@ -14,6 +14,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "accessCode", GoGetter: "AccessCode"},
 			_jsii_.MemberProperty{JsiiProperty: "accessStatus", GoGetter: "AccessStatus"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "blockPage", GoGetter: "BlockPage"},
+			_jsii_.MemberProperty{JsiiProperty: "blockPageInput", GoGetter: "BlockPageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateId", GoGetter: "CertificateId"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateIdInput", GoGetter: "CertificateIdInput"},
@@ -52,9 +54,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "proxy", GoGetter: "Proxy"},
 			_jsii_.MemberProperty{JsiiProperty: "proxyInput", GoGetter: "ProxyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putBlockPage", GoMethod: "PutBlockPage"},
 			_jsii_.MemberMethod{JsiiMethod: "putServer", GoMethod: "PutServer"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBlockPage", GoMethod: "ResetBlockPage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateId", GoMethod: "ResetCertificateId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCipher", GoMethod: "ResetCipher"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -87,6 +91,56 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_WafDomainV1{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1BlockPage",
+		reflect.TypeOf((*WafDomainV1BlockPage)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1BlockPageOutputReference",
+		reflect.TypeOf((*WafDomainV1BlockPageOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "content", GoGetter: "Content"},
+			_jsii_.MemberProperty{JsiiProperty: "contentInput", GoGetter: "ContentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "contentType", GoGetter: "ContentType"},
+			_jsii_.MemberProperty{JsiiProperty: "contentTypeInput", GoGetter: "ContentTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "redirectUrl", GoGetter: "RedirectUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "redirectUrlInput", GoGetter: "RedirectUrlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetContent", GoMethod: "ResetContent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetContentType", GoMethod: "ResetContentType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRedirectUrl", GoMethod: "ResetRedirectUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStatusCode", GoMethod: "ResetStatusCode"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "statusCode", GoGetter: "StatusCode"},
+			_jsii_.MemberProperty{JsiiProperty: "statusCodeInput", GoGetter: "StatusCodeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "template", GoGetter: "Template"},
+			_jsii_.MemberProperty{JsiiProperty: "templateInput", GoGetter: "TemplateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WafDomainV1BlockPageOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

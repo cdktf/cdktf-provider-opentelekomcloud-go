@@ -181,6 +181,8 @@ func (j *jsiiProxy_MrsClusterV1TimeoutsOutputReference) validateSetDeleteParamet
 
 func (j *jsiiProxy_MrsClusterV1TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *MrsClusterV1Timeouts:
 		val := val.(*MrsClusterV1Timeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_MrsClusterV1TimeoutsOutputReference) validateSetInternalValue
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MrsClusterV1Timeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MrsClusterV1Timeouts; received %#v (a %T)", val, val)
 		}
 	}
 
