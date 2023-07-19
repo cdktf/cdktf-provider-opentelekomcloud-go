@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2}.
 type DisStreamV2 interface {
 	cdktf.TerraformResource
 	AutoScaleMaxPartitionCount() *float64
@@ -56,6 +56,9 @@ type DisStreamV2 interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	PartitionCount() *float64
@@ -78,9 +81,6 @@ type DisStreamV2 interface {
 	RetentionPeriodInput() *float64
 	Status() *string
 	StreamId() *string
-	StreamName() *string
-	SetStreamName(val *string)
-	StreamNameInput() *string
 	StreamType() *string
 	SetStreamType(val *string)
 	StreamTypeInput() *string
@@ -349,6 +349,26 @@ func (j *jsiiProxy_DisStreamV2) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_DisStreamV2) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DisStreamV2) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DisStreamV2) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -469,26 +489,6 @@ func (j *jsiiProxy_DisStreamV2) StreamId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DisStreamV2) StreamName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"streamName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DisStreamV2) StreamNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"streamNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DisStreamV2) StreamType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -590,7 +590,7 @@ func (j *jsiiProxy_DisStreamV2) WritablePartitionCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2} Resource.
 func NewDisStreamV2(scope constructs.Construct, id *string, config *DisStreamV2Config) DisStreamV2 {
 	_init_.Initialize()
 
@@ -608,7 +608,7 @@ func NewDisStreamV2(scope constructs.Construct, id *string, config *DisStreamV2C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2} Resource.
 func NewDisStreamV2_Override(d DisStreamV2, scope constructs.Construct, id *string, config *DisStreamV2Config) {
 	_init_.Initialize()
 
@@ -723,6 +723,17 @@ func (j *jsiiProxy_DisStreamV2)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
+func (j *jsiiProxy_DisStreamV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DisStreamV2)SetPartitionCount(val *float64) {
 	if err := j.validateSetPartitionCountParameters(val); err != nil {
 		panic(err)
@@ -760,17 +771,6 @@ func (j *jsiiProxy_DisStreamV2)SetRetentionPeriod(val *float64) {
 	_jsii_.Set(
 		j,
 		"retentionPeriod",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DisStreamV2)SetStreamName(val *string) {
-	if err := j.validateSetStreamNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"streamName",
 		val,
 	)
 }

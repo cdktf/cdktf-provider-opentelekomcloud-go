@@ -148,6 +148,14 @@ func (j *jsiiProxy_CceClusterV3) validateSetIgnoreAddonsParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_CceClusterV3) validateSetIgnoreCertificateClustersDataParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CceClusterV3) validateSetIgnoreCertificateUsersDataParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceClusterV3) validateSetKubeProxyModeParameters(val *string) error {
 	return nil
 }

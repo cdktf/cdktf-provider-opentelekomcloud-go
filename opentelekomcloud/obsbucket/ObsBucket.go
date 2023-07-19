@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/obs_bucket opentelekomcloud_obs_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket opentelekomcloud_obs_bucket}.
 type ObsBucket interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -19,6 +19,7 @@ type ObsBucket interface {
 	SetBucket(val *string)
 	BucketDomainName() *string
 	BucketInput() *string
+	BucketVersion() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -63,6 +64,9 @@ type ObsBucket interface {
 	LoggingInput() interface{}
 	// The tree node.
 	Node() constructs.Node
+	ParallelFs() interface{}
+	SetParallelFs(val interface{})
+	ParallelFsInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -136,6 +140,7 @@ type ObsBucket interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParallelFs()
 	ResetRegion()
 	ResetServerSideEncryption()
 	ResetStorageClass()
@@ -202,6 +207,16 @@ func (j *jsiiProxy_ObsBucket) BucketInput() *string {
 	_jsii_.Get(
 		j,
 		"bucketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObsBucket) BucketVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketVersion",
 		&returns,
 	)
 	return returns
@@ -427,6 +442,26 @@ func (j *jsiiProxy_ObsBucket) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ObsBucket) ParallelFs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"parallelFs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObsBucket) ParallelFsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"parallelFsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObsBucket) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -608,7 +643,7 @@ func (j *jsiiProxy_ObsBucket) WebsiteInput() *ObsBucketWebsite {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
 func NewObsBucket(scope constructs.Construct, id *string, config *ObsBucketConfig) ObsBucket {
 	_init_.Initialize()
 
@@ -626,7 +661,7 @@ func NewObsBucket(scope constructs.Construct, id *string, config *ObsBucketConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
 func NewObsBucket_Override(o ObsBucket, scope constructs.Construct, id *string, config *ObsBucketConfig) {
 	_init_.Initialize()
 
@@ -726,6 +761,17 @@ func (j *jsiiProxy_ObsBucket)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObsBucket)SetParallelFs(val interface{}) {
+	if err := j.validateSetParallelFsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parallelFs",
 		val,
 	)
 }
@@ -1185,6 +1231,14 @@ func (o *jsiiProxy_ObsBucket) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObsBucket) ResetParallelFs() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetParallelFs",
 		nil, // no parameters
 	)
 }

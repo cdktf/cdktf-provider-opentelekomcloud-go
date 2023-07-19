@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/images_image_v2 opentelekomcloud_images_image_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/images_image_v2 opentelekomcloud_images_image_v2}.
 type ImagesImageV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,7 +61,6 @@ type ImagesImageV2 interface {
 	LocalFilePath() *string
 	SetLocalFilePath(val *string)
 	LocalFilePathInput() *string
-	Metadata() cdktf.StringMap
 	MinDiskGb() *float64
 	SetMinDiskGb(val *float64)
 	MinDiskGbInput() *float64
@@ -403,16 +402,6 @@ func (j *jsiiProxy_ImagesImageV2) LocalFilePathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ImagesImageV2) Metadata() cdktf.StringMap {
-	var returns cdktf.StringMap
-	_jsii_.Get(
-		j,
-		"metadata",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ImagesImageV2) MinDiskGb() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -694,7 +683,7 @@ func (j *jsiiProxy_ImagesImageV2) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/images_image_v2 opentelekomcloud_images_image_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/images_image_v2 opentelekomcloud_images_image_v2} Resource.
 func NewImagesImageV2(scope constructs.Construct, id *string, config *ImagesImageV2Config) ImagesImageV2 {
 	_init_.Initialize()
 
@@ -712,7 +701,7 @@ func NewImagesImageV2(scope constructs.Construct, id *string, config *ImagesImag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/images_image_v2 opentelekomcloud_images_image_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/images_image_v2 opentelekomcloud_images_image_v2} Resource.
 func NewImagesImageV2_Override(i ImagesImageV2, scope constructs.Construct, id *string, config *ImagesImageV2Config) {
 	_init_.Initialize()
 

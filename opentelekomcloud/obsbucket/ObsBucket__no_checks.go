@@ -116,6 +116,10 @@ func (j *jsiiProxy_ObsBucket) validateSetLifecycleParameters(val *cdktf.Terrafor
 	return nil
 }
 
+func (j *jsiiProxy_ObsBucket) validateSetParallelFsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObsBucket) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

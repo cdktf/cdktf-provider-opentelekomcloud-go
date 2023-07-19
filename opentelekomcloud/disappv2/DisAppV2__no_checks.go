@@ -68,10 +68,6 @@ func validateDisAppV2_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DisAppV2) validateSetAppNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DisAppV2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -80,11 +76,11 @@ func (j *jsiiProxy_DisAppV2) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DisAppV2) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DisAppV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_DisAppV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DisAppV2) validateSetNameParameters(val *string) error {
 	return nil
 }
 

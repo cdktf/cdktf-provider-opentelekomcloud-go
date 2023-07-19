@@ -68,10 +68,6 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) validateSetCountParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -89,10 +85,6 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) validateSetNameRegexParame
 }
 
 func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) validateSetOwnerParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) validateSetPropertiesParameters(val *map[string]*string) error {
 	return nil
 }
 

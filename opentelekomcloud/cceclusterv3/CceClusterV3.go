@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
 type CceClusterV3 interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -93,6 +93,12 @@ type CceClusterV3 interface {
 	IgnoreAddons() interface{}
 	SetIgnoreAddons(val interface{})
 	IgnoreAddonsInput() interface{}
+	IgnoreCertificateClustersData() interface{}
+	SetIgnoreCertificateClustersData(val interface{})
+	IgnoreCertificateClustersDataInput() interface{}
+	IgnoreCertificateUsersData() interface{}
+	SetIgnoreCertificateUsersData(val interface{})
+	IgnoreCertificateUsersDataInput() interface{}
 	InstalledAddons() *[]*string
 	Internal() *string
 	KubeProxyMode() *string
@@ -191,6 +197,8 @@ type CceClusterV3 interface {
 	ResetHighwaySubnetId()
 	ResetId()
 	ResetIgnoreAddons()
+	ResetIgnoreCertificateClustersData()
+	ResetIgnoreCertificateUsersData()
 	ResetKubeProxyMode()
 	ResetKubernetesSvcIpRange()
 	ResetLabels()
@@ -696,6 +704,46 @@ func (j *jsiiProxy_CceClusterV3) IgnoreAddonsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CceClusterV3) IgnoreCertificateClustersData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreCertificateClustersData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) IgnoreCertificateClustersDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreCertificateClustersDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) IgnoreCertificateUsersData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreCertificateUsersData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) IgnoreCertificateUsersDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreCertificateUsersDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CceClusterV3) InstalledAddons() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1027,7 +1075,7 @@ func (j *jsiiProxy_CceClusterV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV3Config) CceClusterV3 {
 	_init_.Initialize()
 
@@ -1045,7 +1093,7 @@ func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3_Override(c CceClusterV3, scope constructs.Construct, id *string, config *CceClusterV3Config) {
 	_init_.Initialize()
 
@@ -1277,6 +1325,28 @@ func (j *jsiiProxy_CceClusterV3)SetIgnoreAddons(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ignoreAddons",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetIgnoreCertificateClustersData(val interface{}) {
+	if err := j.validateSetIgnoreCertificateClustersDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreCertificateClustersData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetIgnoreCertificateUsersData(val interface{}) {
+	if err := j.validateSetIgnoreCertificateUsersDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreCertificateUsersData",
 		val,
 	)
 }
@@ -1814,6 +1884,22 @@ func (c *jsiiProxy_CceClusterV3) ResetIgnoreAddons() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIgnoreAddons",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetIgnoreCertificateClustersData() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIgnoreCertificateClustersData",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetIgnoreCertificateUsersData() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIgnoreCertificateUsersData",
 		nil, // no parameters
 	)
 }

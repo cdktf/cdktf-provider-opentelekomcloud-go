@@ -46,7 +46,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "localFilePath", GoGetter: "LocalFilePath"},
 			_jsii_.MemberProperty{JsiiProperty: "localFilePathInput", GoGetter: "LocalFilePathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "minDiskGb", GoGetter: "MinDiskGb"},
 			_jsii_.MemberProperty{JsiiProperty: "minDiskGbInput", GoGetter: "MinDiskGbInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minRamMb", GoGetter: "MinRamMb"},

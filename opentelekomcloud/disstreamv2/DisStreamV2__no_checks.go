@@ -100,6 +100,10 @@ func (j *jsiiProxy_DisStreamV2) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
+func (j *jsiiProxy_DisStreamV2) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DisStreamV2) validateSetPartitionCountParameters(val *float64) error {
 	return nil
 }
@@ -109,10 +113,6 @@ func (j *jsiiProxy_DisStreamV2) validateSetProvisionersParameters(val *[]interfa
 }
 
 func (j *jsiiProxy_DisStreamV2) validateSetRetentionPeriodParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DisStreamV2) validateSetStreamNameParameters(val *string) error {
 	return nil
 }
 

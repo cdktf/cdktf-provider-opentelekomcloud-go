@@ -2,9 +2,9 @@ package aspolicyv1
 
 
 type AsPolicyV1ScalingPolicyAction struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/as_policy_v1#instance_number AsPolicyV1#instance_number}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_policy_v1#instance_number AsPolicyV1#instance_number}.
 	InstanceNumber *float64 `field:"optional" json:"instanceNumber" yaml:"instanceNumber"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/as_policy_v1#operation AsPolicyV1#operation}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_policy_v1#operation AsPolicyV1#operation}.
 	Operation *string `field:"optional" json:"operation" yaml:"operation"`
 }
 

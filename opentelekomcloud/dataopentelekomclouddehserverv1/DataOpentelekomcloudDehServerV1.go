@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/deh_server_v1 opentelekomcloud_deh_server_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/deh_server_v1 opentelekomcloud_deh_server_v1}.
 type DataOpentelekomcloudDehServerV1 interface {
 	cdktf.TerraformDataSource
 	Addresses() DataOpentelekomcloudDehServerV1AddressesList
@@ -420,7 +420,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDehServerV1) UserId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/deh_server_v1 opentelekomcloud_deh_server_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/deh_server_v1 opentelekomcloud_deh_server_v1} Data Source.
 func NewDataOpentelekomcloudDehServerV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudDehServerV1Config) DataOpentelekomcloudDehServerV1 {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewDataOpentelekomcloudDehServerV1(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/deh_server_v1 opentelekomcloud_deh_server_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/deh_server_v1 opentelekomcloud_deh_server_v1} Data Source.
 func NewDataOpentelekomcloudDehServerV1_Override(d DataOpentelekomcloudDehServerV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudDehServerV1Config) {
 	_init_.Initialize()
 

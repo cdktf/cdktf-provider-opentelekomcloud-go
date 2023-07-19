@@ -146,14 +146,6 @@ func validateDisAppV2_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DisAppV2) validateSetAppNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DisAppV2) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -244,17 +236,17 @@ func (j *jsiiProxy_DisAppV2) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DisAppV2) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DisAppV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_DisAppV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_DisAppV2) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

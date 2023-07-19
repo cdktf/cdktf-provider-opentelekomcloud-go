@@ -9,13 +9,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2}.
 type DisAppV2 interface {
 	cdktf.TerraformResource
-	AppId() *string
-	AppName() *string
-	SetAppName(val *string)
-	AppNameInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CommitCheckpointStreamNames() *[]*string
@@ -43,12 +39,13 @@ type DisAppV2 interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	PartitionConsumingStates() DisAppV2PartitionConsumingStatesList
@@ -96,7 +93,6 @@ type DisAppV2 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DisAppV2Timeouts)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -114,36 +110,6 @@ type DisAppV2 interface {
 // The jsii proxy struct for DisAppV2
 type jsiiProxy_DisAppV2 struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_DisAppV2) AppId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"appId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DisAppV2) AppName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"appName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DisAppV2) AppNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"appNameInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DisAppV2) CdktfStack() cdktf.TerraformStack {
@@ -256,21 +222,31 @@ func (j *jsiiProxy_DisAppV2) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DisAppV2) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DisAppV2) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DisAppV2) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DisAppV2) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -377,7 +353,7 @@ func (j *jsiiProxy_DisAppV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2} Resource.
 func NewDisAppV2(scope constructs.Construct, id *string, config *DisAppV2Config) DisAppV2 {
 	_init_.Initialize()
 
@@ -395,7 +371,7 @@ func NewDisAppV2(scope constructs.Construct, id *string, config *DisAppV2Config)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2} Resource.
 func NewDisAppV2_Override(d DisAppV2, scope constructs.Construct, id *string, config *DisAppV2Config) {
 	_init_.Initialize()
 
@@ -403,17 +379,6 @@ func NewDisAppV2_Override(d DisAppV2, scope constructs.Construct, id *string, co
 		"@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2",
 		[]interface{}{scope, id, config},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DisAppV2)SetAppName(val *string) {
-	if err := j.validateSetAppNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"appName",
-		val,
 	)
 }
 
@@ -455,17 +420,6 @@ func (j *jsiiProxy_DisAppV2)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DisAppV2)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DisAppV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -473,6 +427,17 @@ func (j *jsiiProxy_DisAppV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DisAppV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -770,14 +735,6 @@ func (d *jsiiProxy_DisAppV2) PutTimeouts(value *DisAppV2Timeouts) {
 		d,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DisAppV2) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

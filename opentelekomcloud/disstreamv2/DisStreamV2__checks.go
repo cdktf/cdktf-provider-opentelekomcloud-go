@@ -284,6 +284,14 @@ func (j *jsiiProxy_DisStreamV2) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
+func (j *jsiiProxy_DisStreamV2) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DisStreamV2) validateSetPartitionCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -339,14 +347,6 @@ func (j *jsiiProxy_DisStreamV2) validateSetProvisionersParameters(val *[]interfa
 }
 
 func (j *jsiiProxy_DisStreamV2) validateSetRetentionPeriodParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DisStreamV2) validateSetStreamNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

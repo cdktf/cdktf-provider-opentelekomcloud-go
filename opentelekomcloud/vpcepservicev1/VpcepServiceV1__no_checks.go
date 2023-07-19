@@ -132,6 +132,10 @@ func (j *jsiiProxy_VpcepServiceV1) validateSetVpcIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_VpcepServiceV1) validateSetWhitelistParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewVpcepServiceV1Parameters(scope constructs.Construct, id *string, config *VpcepServiceV1Config) error {
 	return nil
 }

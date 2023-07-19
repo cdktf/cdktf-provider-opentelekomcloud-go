@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3}.
 type RdsInstanceV3 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *[]*string
@@ -58,6 +58,9 @@ type RdsInstanceV3 interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LowerCaseTableNames() *string
+	SetLowerCaseTableNames(val *string)
+	LowerCaseTableNamesInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -147,6 +150,7 @@ type RdsInstanceV3 interface {
 	ResetBackupStrategy()
 	ResetHaReplicationMode()
 	ResetId()
+	ResetLowerCaseTableNames()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -398,6 +402,26 @@ func (j *jsiiProxy_RdsInstanceV3) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceV3) LowerCaseTableNames() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lowerCaseTableNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceV3) LowerCaseTableNamesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lowerCaseTableNamesInput",
 		&returns,
 	)
 	return returns
@@ -754,7 +778,7 @@ func (j *jsiiProxy_RdsInstanceV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
 func NewRdsInstanceV3(scope constructs.Construct, id *string, config *RdsInstanceV3Config) RdsInstanceV3 {
 	_init_.Initialize()
 
@@ -772,7 +796,7 @@ func NewRdsInstanceV3(scope constructs.Construct, id *string, config *RdsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
 func NewRdsInstanceV3_Override(r RdsInstanceV3, scope constructs.Construct, id *string, config *RdsInstanceV3Config) {
 	_init_.Initialize()
 
@@ -872,6 +896,17 @@ func (j *jsiiProxy_RdsInstanceV3)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsInstanceV3)SetLowerCaseTableNames(val *string) {
+	if err := j.validateSetLowerCaseTableNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lowerCaseTableNames",
 		val,
 	)
 }
@@ -1346,6 +1381,14 @@ func (r *jsiiProxy_RdsInstanceV3) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsInstanceV3) ResetLowerCaseTableNames() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetLowerCaseTableNames",
 		nil, // no parameters
 	)
 }

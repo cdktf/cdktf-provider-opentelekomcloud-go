@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/lb_member_ids_v2 opentelekomcloud_lb_member_ids_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/lb_member_ids_v2 opentelekomcloud_lb_member_ids_v2}.
 type DataOpentelekomcloudLbMemberIdsV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataOpentelekomcloudLbMemberIdsV2) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/lb_member_ids_v2 opentelekomcloud_lb_member_ids_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/lb_member_ids_v2 opentelekomcloud_lb_member_ids_v2} Data Source.
 func NewDataOpentelekomcloudLbMemberIdsV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudLbMemberIdsV2Config) DataOpentelekomcloudLbMemberIdsV2 {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataOpentelekomcloudLbMemberIdsV2(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/lb_member_ids_v2 opentelekomcloud_lb_member_ids_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/lb_member_ids_v2 opentelekomcloud_lb_member_ids_v2} Data Source.
 func NewDataOpentelekomcloudLbMemberIdsV2_Override(d DataOpentelekomcloudLbMemberIdsV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudLbMemberIdsV2Config) {
 	_init_.Initialize()
 

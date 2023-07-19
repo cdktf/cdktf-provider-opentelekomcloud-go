@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/cbr_backup_ids_v3 opentelekomcloud_cbr_backup_ids_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/cbr_backup_ids_v3 opentelekomcloud_cbr_backup_ids_v3}.
 type DataOpentelekomcloudCbrBackupIdsV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCbrBackupIdsV3) VaultIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/cbr_backup_ids_v3 opentelekomcloud_cbr_backup_ids_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/cbr_backup_ids_v3 opentelekomcloud_cbr_backup_ids_v3} Data Source.
 func NewDataOpentelekomcloudCbrBackupIdsV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudCbrBackupIdsV3Config) DataOpentelekomcloudCbrBackupIdsV3 {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewDataOpentelekomcloudCbrBackupIdsV3(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/cbr_backup_ids_v3 opentelekomcloud_cbr_backup_ids_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/cbr_backup_ids_v3 opentelekomcloud_cbr_backup_ids_v3} Data Source.
 func NewDataOpentelekomcloudCbrBackupIdsV3_Override(d DataOpentelekomcloudCbrBackupIdsV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudCbrBackupIdsV3Config) {
 	_init_.Initialize()
 

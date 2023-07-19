@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1}.
 type VpcepServiceV1 interface {
 	cdktf.TerraformResource
 	ApprovalEnabled() interface{}
@@ -95,6 +95,9 @@ type VpcepServiceV1 interface {
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
+	Whitelist() *[]*string
+	SetWhitelist(val *[]*string)
+	WhitelistInput() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -134,6 +137,7 @@ type VpcepServiceV1 interface {
 	ResetTcpProxy()
 	ResetTimeouts()
 	ResetVipPortId()
+	ResetWhitelist()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -569,8 +573,28 @@ func (j *jsiiProxy_VpcepServiceV1) VpcIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpcepServiceV1) Whitelist() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"whitelist",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Resource.
+func (j *jsiiProxy_VpcepServiceV1) WhitelistInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"whitelistInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Resource.
 func NewVpcepServiceV1(scope constructs.Construct, id *string, config *VpcepServiceV1Config) VpcepServiceV1 {
 	_init_.Initialize()
 
@@ -588,7 +612,7 @@ func NewVpcepServiceV1(scope constructs.Construct, id *string, config *VpcepServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Resource.
 func NewVpcepServiceV1_Override(v VpcepServiceV1, scope constructs.Construct, id *string, config *VpcepServiceV1Config) {
 	_init_.Initialize()
 
@@ -784,6 +808,17 @@ func (j *jsiiProxy_VpcepServiceV1)SetVpcId(val *string) {
 	_jsii_.Set(
 		j,
 		"vpcId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcepServiceV1)SetWhitelist(val *[]*string) {
+	if err := j.validateSetWhitelistParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"whitelist",
 		val,
 	)
 }
@@ -1152,6 +1187,14 @@ func (v *jsiiProxy_VpcepServiceV1) ResetVipPortId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetVipPortId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcepServiceV1) ResetWhitelist() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetWhitelist",
 		nil, // no parameters
 	)
 }

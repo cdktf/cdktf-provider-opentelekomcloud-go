@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3}.
 type LbIpgroupV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_LbIpgroupV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource.
 func NewLbIpgroupV3(scope constructs.Construct, id *string, config *LbIpgroupV3Config) LbIpgroupV3 {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewLbIpgroupV3(scope constructs.Construct, id *string, config *LbIpgroupV3C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource.
 func NewLbIpgroupV3_Override(l LbIpgroupV3, scope constructs.Construct, id *string, config *LbIpgroupV3Config) {
 	_init_.Initialize()
 

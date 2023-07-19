@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule}.
 type CesAlarmrule interface {
 	cdktf.TerraformResource
 	AlarmActionEnabled() interface{}
@@ -569,7 +569,7 @@ func (j *jsiiProxy_CesAlarmrule) UpdateTime() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource.
 func NewCesAlarmrule(scope constructs.Construct, id *string, config *CesAlarmruleConfig) CesAlarmrule {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewCesAlarmrule(scope constructs.Construct, id *string, config *CesAlarmrul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource.
 func NewCesAlarmrule_Override(c CesAlarmrule, scope constructs.Construct, id *string, config *CesAlarmruleConfig) {
 	_init_.Initialize()
 

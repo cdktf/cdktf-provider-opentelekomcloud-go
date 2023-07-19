@@ -35,6 +35,7 @@ type DataOpentelekomcloudIdentityProjectsV3ProjectsOutputReference interface {
 	IsDomain() cdktf.IResolvable
 	Name() *string
 	ParentId() *string
+	ProjectId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -187,6 +188,16 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsOutputReference
 	_jsii_.Get(
 		j,
 		"parentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3ProjectsOutputReference) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
 		&returns,
 	)
 	return returns

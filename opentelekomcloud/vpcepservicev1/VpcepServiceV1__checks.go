@@ -421,6 +421,14 @@ func (j *jsiiProxy_VpcepServiceV1) validateSetVpcIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_VpcepServiceV1) validateSetWhitelistParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewVpcepServiceV1Parameters(scope constructs.Construct, id *string, config *VpcepServiceV1Config) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTcpProxy", GoMethod: "ResetTcpProxy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVipPortId", GoMethod: "ResetVipPortId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWhitelist", GoMethod: "ResetWhitelist"},
 			_jsii_.MemberProperty{JsiiProperty: "serverType", GoGetter: "ServerType"},
 			_jsii_.MemberProperty{JsiiProperty: "serverTypeInput", GoGetter: "ServerTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceType", GoGetter: "ServiceType"},
@@ -81,6 +82,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vipPortIdInput", GoGetter: "VipPortIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "whitelist", GoGetter: "Whitelist"},
+			_jsii_.MemberProperty{JsiiProperty: "whitelistInput", GoGetter: "WhitelistInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_VpcepServiceV1{}

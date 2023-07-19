@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/css_flavor_v1 opentelekomcloud_css_flavor_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/css_flavor_v1 opentelekomcloud_css_flavor_v1}.
 type DataOpentelekomcloudCssFlavorV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCssFlavorV1) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/css_flavor_v1 opentelekomcloud_css_flavor_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/css_flavor_v1 opentelekomcloud_css_flavor_v1} Data Source.
 func NewDataOpentelekomcloudCssFlavorV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudCssFlavorV1Config) DataOpentelekomcloudCssFlavorV1 {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewDataOpentelekomcloudCssFlavorV1(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/css_flavor_v1 opentelekomcloud_css_flavor_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/css_flavor_v1 opentelekomcloud_css_flavor_v1} Data Source.
 func NewDataOpentelekomcloudCssFlavorV1_Override(d DataOpentelekomcloudCssFlavorV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudCssFlavorV1Config) {
 	_init_.Initialize()
 
