@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_l7rule_v2 opentelekomcloud_lb_l7rule_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/lb_l7rule_v2 opentelekomcloud_lb_l7rule_v2}.
 type LbL7RuleV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -509,7 +509,7 @@ func (j *jsiiProxy_LbL7RuleV2) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_l7rule_v2 opentelekomcloud_lb_l7rule_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/lb_l7rule_v2 opentelekomcloud_lb_l7rule_v2} Resource.
 func NewLbL7RuleV2(scope constructs.Construct, id *string, config *LbL7RuleV2Config) LbL7RuleV2 {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewLbL7RuleV2(scope constructs.Construct, id *string, config *LbL7RuleV2Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_l7rule_v2 opentelekomcloud_lb_l7rule_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/lb_l7rule_v2 opentelekomcloud_lb_l7rule_v2} Resource.
 func NewLbL7RuleV2_Override(l LbL7RuleV2, scope constructs.Construct, id *string, config *LbL7RuleV2Config) {
 	_init_.Initialize()
 

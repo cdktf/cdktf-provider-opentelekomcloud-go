@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/dds_instance_v3 opentelekomcloud_dds_instance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/dds_instance_v3 opentelekomcloud_dds_instance_v3}.
 type DataOpentelekomcloudDdsInstanceV3 interface {
 	cdktf.TerraformDataSource
 	BackupStrategy() DataOpentelekomcloudDdsInstanceV3BackupStrategyList
@@ -510,7 +510,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsInstanceV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Data Source.
 func NewDataOpentelekomcloudDdsInstanceV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudDdsInstanceV3Config) DataOpentelekomcloudDdsInstanceV3 {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewDataOpentelekomcloudDdsInstanceV3(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Data Source.
 func NewDataOpentelekomcloudDdsInstanceV3_Override(d DataOpentelekomcloudDdsInstanceV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudDdsInstanceV3Config) {
 	_init_.Initialize()
 

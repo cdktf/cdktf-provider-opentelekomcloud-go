@@ -52,6 +52,10 @@ func (i *jsiiProxy_IdentityProtocolV3) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (i *jsiiProxy_IdentityProtocolV3) validatePutAccessConfigParameters(value *IdentityProtocolV3AccessConfig) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityProtocolV3) validatePutMetadataParameters(value *IdentityProtocolV3Metadata) error {
 	return nil
 }

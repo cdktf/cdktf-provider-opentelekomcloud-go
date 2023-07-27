@@ -9,9 +9,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}.
 type IdentityProtocolV3 interface {
 	cdktf.TerraformResource
+	AccessConfig() IdentityProtocolV3AccessConfigOutputReference
+	AccessConfigInput() *IdentityProtocolV3AccessConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -98,7 +100,9 @@ type IdentityProtocolV3 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAccessConfig(value *IdentityProtocolV3AccessConfig)
 	PutMetadata(value *IdentityProtocolV3Metadata)
+	ResetAccessConfig()
 	ResetId()
 	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -117,6 +121,26 @@ type IdentityProtocolV3 interface {
 // The jsii proxy struct for IdentityProtocolV3
 type jsiiProxy_IdentityProtocolV3 struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_IdentityProtocolV3) AccessConfig() IdentityProtocolV3AccessConfigOutputReference {
+	var returns IdentityProtocolV3AccessConfigOutputReference
+	_jsii_.Get(
+		j,
+		"accessConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityProtocolV3) AccessConfigInput() *IdentityProtocolV3AccessConfig {
+	var returns *IdentityProtocolV3AccessConfig
+	_jsii_.Get(
+		j,
+		"accessConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IdentityProtocolV3) CdktfStack() cdktf.TerraformStack {
@@ -390,7 +414,7 @@ func (j *jsiiProxy_IdentityProtocolV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
 func NewIdentityProtocolV3(scope constructs.Construct, id *string, config *IdentityProtocolV3Config) IdentityProtocolV3 {
 	_init_.Initialize()
 
@@ -408,7 +432,7 @@ func NewIdentityProtocolV3(scope constructs.Construct, id *string, config *Ident
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
 func NewIdentityProtocolV3_Override(i IdentityProtocolV3, scope constructs.Construct, id *string, config *IdentityProtocolV3Config) {
 	_init_.Initialize()
 
@@ -797,6 +821,17 @@ func (i *jsiiProxy_IdentityProtocolV3) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (i *jsiiProxy_IdentityProtocolV3) PutAccessConfig(value *IdentityProtocolV3AccessConfig) {
+	if err := i.validatePutAccessConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putAccessConfig",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IdentityProtocolV3) PutMetadata(value *IdentityProtocolV3Metadata) {
 	if err := i.validatePutMetadataParameters(value); err != nil {
 		panic(err)
@@ -805,6 +840,14 @@ func (i *jsiiProxy_IdentityProtocolV3) PutMetadata(value *IdentityProtocolV3Meta
 		i,
 		"putMetadata",
 		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IdentityProtocolV3) ResetAccessConfig() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetAccessConfig",
+		nil, // no parameters
 	)
 }
 

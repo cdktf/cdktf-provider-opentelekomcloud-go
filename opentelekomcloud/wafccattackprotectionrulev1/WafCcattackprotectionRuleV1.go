@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_ccattackprotection_rule_v1 opentelekomcloud_waf_ccattackprotection_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/waf_ccattackprotection_rule_v1 opentelekomcloud_waf_ccattackprotection_rule_v1}.
 type WafCcattackprotectionRuleV1 interface {
 	cdktf.TerraformResource
 	ActionCategory() *string
@@ -603,7 +603,7 @@ func (j *jsiiProxy_WafCcattackprotectionRuleV1) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_ccattackprotection_rule_v1 opentelekomcloud_waf_ccattackprotection_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/waf_ccattackprotection_rule_v1 opentelekomcloud_waf_ccattackprotection_rule_v1} Resource.
 func NewWafCcattackprotectionRuleV1(scope constructs.Construct, id *string, config *WafCcattackprotectionRuleV1Config) WafCcattackprotectionRuleV1 {
 	_init_.Initialize()
 
@@ -621,7 +621,7 @@ func NewWafCcattackprotectionRuleV1(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_ccattackprotection_rule_v1 opentelekomcloud_waf_ccattackprotection_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/waf_ccattackprotection_rule_v1 opentelekomcloud_waf_ccattackprotection_rule_v1} Resource.
 func NewWafCcattackprotectionRuleV1_Override(w WafCcattackprotectionRuleV1, scope constructs.Construct, id *string, config *WafCcattackprotectionRuleV1Config) {
 	_init_.Initialize()
 

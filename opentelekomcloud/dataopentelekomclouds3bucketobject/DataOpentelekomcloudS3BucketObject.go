@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object}.
 type DataOpentelekomcloudS3BucketObject interface {
 	cdktf.TerraformDataSource
 	Body() *string
@@ -517,7 +517,7 @@ func (j *jsiiProxy_DataOpentelekomcloudS3BucketObject) WebsiteRedirectLocation()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object} Data Source.
 func NewDataOpentelekomcloudS3BucketObject(scope constructs.Construct, id *string, config *DataOpentelekomcloudS3BucketObjectConfig) DataOpentelekomcloudS3BucketObject {
 	_init_.Initialize()
 
@@ -535,7 +535,7 @@ func NewDataOpentelekomcloudS3BucketObject(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object} Data Source.
 func NewDataOpentelekomcloudS3BucketObject_Override(d DataOpentelekomcloudS3BucketObject, scope constructs.Construct, id *string, config *DataOpentelekomcloudS3BucketObjectConfig) {
 	_init_.Initialize()
 

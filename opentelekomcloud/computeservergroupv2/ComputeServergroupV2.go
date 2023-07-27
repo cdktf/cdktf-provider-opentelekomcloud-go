@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_servergroup_v2 opentelekomcloud_compute_servergroup_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/compute_servergroup_v2 opentelekomcloud_compute_servergroup_v2}.
 type ComputeServergroupV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_ComputeServergroupV2) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_servergroup_v2 opentelekomcloud_compute_servergroup_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/compute_servergroup_v2 opentelekomcloud_compute_servergroup_v2} Resource.
 func NewComputeServergroupV2(scope constructs.Construct, id *string, config *ComputeServergroupV2Config) ComputeServergroupV2 {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewComputeServergroupV2(scope constructs.Construct, id *string, config *Com
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_servergroup_v2 opentelekomcloud_compute_servergroup_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/compute_servergroup_v2 opentelekomcloud_compute_servergroup_v2} Resource.
 func NewComputeServergroupV2_Override(c ComputeServergroupV2, scope constructs.Construct, id *string, config *ComputeServergroupV2Config) {
 	_init_.Initialize()
 

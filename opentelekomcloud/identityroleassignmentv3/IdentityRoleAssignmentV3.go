@@ -9,9 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_role_assignment_v3 opentelekomcloud_identity_role_assignment_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_role_assignment_v3 opentelekomcloud_identity_role_assignment_v3}.
 type IdentityRoleAssignmentV3 interface {
 	cdktf.TerraformResource
+	AllProjects() interface{}
+	SetAllProjects(val interface{})
+	AllProjectsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -98,6 +101,7 @@ type IdentityRoleAssignmentV3 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAllProjects()
 	ResetDomainId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -117,6 +121,26 @@ type IdentityRoleAssignmentV3 interface {
 // The jsii proxy struct for IdentityRoleAssignmentV3
 type jsiiProxy_IdentityRoleAssignmentV3 struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_IdentityRoleAssignmentV3) AllProjects() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allProjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityRoleAssignmentV3) AllProjectsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allProjectsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IdentityRoleAssignmentV3) CdktfStack() cdktf.TerraformStack {
@@ -380,7 +404,7 @@ func (j *jsiiProxy_IdentityRoleAssignmentV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_role_assignment_v3 opentelekomcloud_identity_role_assignment_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_role_assignment_v3 opentelekomcloud_identity_role_assignment_v3} Resource.
 func NewIdentityRoleAssignmentV3(scope constructs.Construct, id *string, config *IdentityRoleAssignmentV3Config) IdentityRoleAssignmentV3 {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewIdentityRoleAssignmentV3(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_role_assignment_v3 opentelekomcloud_identity_role_assignment_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_role_assignment_v3 opentelekomcloud_identity_role_assignment_v3} Resource.
 func NewIdentityRoleAssignmentV3_Override(i IdentityRoleAssignmentV3, scope constructs.Construct, id *string, config *IdentityRoleAssignmentV3Config) {
 	_init_.Initialize()
 
@@ -406,6 +430,17 @@ func NewIdentityRoleAssignmentV3_Override(i IdentityRoleAssignmentV3, scope cons
 		"@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3",
 		[]interface{}{scope, id, config},
 		i,
+	)
+}
+
+func (j *jsiiProxy_IdentityRoleAssignmentV3)SetAllProjects(val interface{}) {
+	if err := j.validateSetAllProjectsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allProjects",
+		val,
 	)
 }
 
@@ -795,6 +830,14 @@ func (i *jsiiProxy_IdentityRoleAssignmentV3) OverrideLogicalId(newLogicalId *str
 		i,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (i *jsiiProxy_IdentityRoleAssignmentV3) ResetAllProjects() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetAllProjects",
+		nil, // no parameters
 	)
 }
 
