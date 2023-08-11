@@ -135,6 +135,14 @@ func validateIdentityUserV3_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_IdentityUserV3) validateSetAccessTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IdentityUserV3) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -225,7 +233,7 @@ func (j *jsiiProxy_IdentityUserV3) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_IdentityUserV3) validateSetDefaultProjectIdParameters(val *string) error {
+func (j *jsiiProxy_IdentityUserV3) validateSetCountryCodeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,14 +242,6 @@ func (j *jsiiProxy_IdentityUserV3) validateSetDefaultProjectIdParameters(val *st
 }
 
 func (j *jsiiProxy_IdentityUserV3) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_IdentityUserV3) validateSetDomainIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -309,6 +309,14 @@ func (j *jsiiProxy_IdentityUserV3) validateSetPasswordParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_IdentityUserV3) validateSetPhoneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IdentityUserV3) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
@@ -355,9 +363,21 @@ func (j *jsiiProxy_IdentityUserV3) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
-func (j *jsiiProxy_IdentityUserV3) validateSetRegionParameters(val *string) error {
+func (j *jsiiProxy_IdentityUserV3) validateSetPwdResetParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -392,6 +412,9 @@ func validateNewIdentityUserV3Parameters(scope constructs.Construct, id *string,
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
+	if config == nil {
+		return fmt.Errorf("parameter config is required, but nil was provided")
+	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

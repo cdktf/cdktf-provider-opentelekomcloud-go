@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/lb_certificate_v2 opentelekomcloud_lb_certificate_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/lb_certificate_v2 opentelekomcloud_lb_certificate_v2}.
 type LbCertificateV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -510,7 +510,7 @@ func (j *jsiiProxy_LbCertificateV2) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/lb_certificate_v2 opentelekomcloud_lb_certificate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/lb_certificate_v2 opentelekomcloud_lb_certificate_v2} Resource.
 func NewLbCertificateV2(scope constructs.Construct, id *string, config *LbCertificateV2Config) LbCertificateV2 {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewLbCertificateV2(scope constructs.Construct, id *string, config *LbCertif
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/lb_certificate_v2 opentelekomcloud_lb_certificate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/lb_certificate_v2 opentelekomcloud_lb_certificate_v2} Resource.
 func NewLbCertificateV2_Override(l LbCertificateV2, scope constructs.Construct, id *string, config *LbCertificateV2Config) {
 	_init_.Initialize()
 

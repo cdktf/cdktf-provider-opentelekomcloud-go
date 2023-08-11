@@ -64,6 +64,10 @@ func validateIdentityUserV3_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_IdentityUserV3) validateSetAccessTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityUserV3) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -72,15 +76,11 @@ func (j *jsiiProxy_IdentityUserV3) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_IdentityUserV3) validateSetDefaultProjectIdParameters(val *string) error {
+func (j *jsiiProxy_IdentityUserV3) validateSetCountryCodeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_IdentityUserV3) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_IdentityUserV3) validateSetDomainIdParameters(val *string) error {
 	return nil
 }
 
@@ -108,11 +108,15 @@ func (j *jsiiProxy_IdentityUserV3) validateSetPasswordParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_IdentityUserV3) validateSetPhoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityUserV3) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_IdentityUserV3) validateSetRegionParameters(val *string) error {
+func (j *jsiiProxy_IdentityUserV3) validateSetPwdResetParameters(val interface{}) error {
 	return nil
 }
 

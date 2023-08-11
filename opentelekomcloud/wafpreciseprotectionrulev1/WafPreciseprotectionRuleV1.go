@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/waf_preciseprotection_rule_v1 opentelekomcloud_waf_preciseprotection_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/waf_preciseprotection_rule_v1 opentelekomcloud_waf_preciseprotection_rule_v1}.
 type WafPreciseprotectionRuleV1 interface {
 	cdktf.TerraformResource
 	ActionCategory() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_WafPreciseprotectionRuleV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/waf_preciseprotection_rule_v1 opentelekomcloud_waf_preciseprotection_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/waf_preciseprotection_rule_v1 opentelekomcloud_waf_preciseprotection_rule_v1} Resource.
 func NewWafPreciseprotectionRuleV1(scope constructs.Construct, id *string, config *WafPreciseprotectionRuleV1Config) WafPreciseprotectionRuleV1 {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewWafPreciseprotectionRuleV1(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/waf_preciseprotection_rule_v1 opentelekomcloud_waf_preciseprotection_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/waf_preciseprotection_rule_v1 opentelekomcloud_waf_preciseprotection_rule_v1} Resource.
 func NewWafPreciseprotectionRuleV1_Override(w WafPreciseprotectionRuleV1, scope constructs.Construct, id *string, config *WafPreciseprotectionRuleV1Config) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3}.
 type CbrPolicyV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_CbrPolicyV3) TriggerPatternInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource.
 func NewCbrPolicyV3(scope constructs.Construct, id *string, config *CbrPolicyV3Config) CbrPolicyV3 {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewCbrPolicyV3(scope constructs.Construct, id *string, config *CbrPolicyV3C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource.
 func NewCbrPolicyV3_Override(c CbrPolicyV3, scope constructs.Construct, id *string, config *CbrPolicyV3Config) {
 	_init_.Initialize()
 

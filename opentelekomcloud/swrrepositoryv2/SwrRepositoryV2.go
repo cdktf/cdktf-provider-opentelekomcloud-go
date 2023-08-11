@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/swr_repository_v2 opentelekomcloud_swr_repository_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/swr_repository_v2 opentelekomcloud_swr_repository_v2}.
 type SwrRepositoryV2 interface {
 	cdktf.TerraformResource
 	Category() *string
@@ -482,7 +482,7 @@ func (j *jsiiProxy_SwrRepositoryV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/swr_repository_v2 opentelekomcloud_swr_repository_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/swr_repository_v2 opentelekomcloud_swr_repository_v2} Resource.
 func NewSwrRepositoryV2(scope constructs.Construct, id *string, config *SwrRepositoryV2Config) SwrRepositoryV2 {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewSwrRepositoryV2(scope constructs.Construct, id *string, config *SwrRepos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/swr_repository_v2 opentelekomcloud_swr_repository_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/swr_repository_v2 opentelekomcloud_swr_repository_v2} Resource.
 func NewSwrRepositoryV2_Override(s SwrRepositoryV2, scope constructs.Construct, id *string, config *SwrRepositoryV2Config) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/identity_role_custom_v3 opentelekomcloud_identity_role_custom_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/identity_role_custom_v3 opentelekomcloud_identity_role_custom_v3}.
 type DataOpentelekomcloudIdentityRoleCustomV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3) TypeInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/identity_role_custom_v3 opentelekomcloud_identity_role_custom_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/identity_role_custom_v3 opentelekomcloud_identity_role_custom_v3} Data Source.
 func NewDataOpentelekomcloudIdentityRoleCustomV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudIdentityRoleCustomV3Config) DataOpentelekomcloudIdentityRoleCustomV3 {
 	_init_.Initialize()
 
@@ -368,7 +368,7 @@ func NewDataOpentelekomcloudIdentityRoleCustomV3(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/identity_role_custom_v3 opentelekomcloud_identity_role_custom_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/identity_role_custom_v3 opentelekomcloud_identity_role_custom_v3} Data Source.
 func NewDataOpentelekomcloudIdentityRoleCustomV3_Override(d DataOpentelekomcloudIdentityRoleCustomV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudIdentityRoleCustomV3Config) {
 	_init_.Initialize()
 

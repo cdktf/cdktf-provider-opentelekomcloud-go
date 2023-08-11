@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
 type CceClusterV3 interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -52,6 +52,30 @@ type CceClusterV3 interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeleteAllNetwork() *string
+	SetDeleteAllNetwork(val *string)
+	DeleteAllNetworkInput() *string
+	DeleteAllStorage() *string
+	SetDeleteAllStorage(val *string)
+	DeleteAllStorageInput() *string
+	DeleteEfs() *string
+	SetDeleteEfs(val *string)
+	DeleteEfsInput() *string
+	DeleteEni() *string
+	SetDeleteEni(val *string)
+	DeleteEniInput() *string
+	DeleteEvs() *string
+	SetDeleteEvs(val *string)
+	DeleteEvsInput() *string
+	DeleteNet() *string
+	SetDeleteNet(val *string)
+	DeleteNetInput() *string
+	DeleteObs() *string
+	SetDeleteObs(val *string)
+	DeleteObsInput() *string
+	DeleteSfs() *string
+	SetDeleteSfs(val *string)
+	DeleteSfsInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -189,6 +213,14 @@ type CceClusterV3 interface {
 	ResetBillingMode()
 	ResetClusterVersion()
 	ResetContainerNetworkCidr()
+	ResetDeleteAllNetwork()
+	ResetDeleteAllStorage()
+	ResetDeleteEfs()
+	ResetDeleteEni()
+	ResetDeleteEvs()
+	ResetDeleteNet()
+	ResetDeleteObs()
+	ResetDeleteSfs()
 	ResetDescription()
 	ResetEip()
 	ResetEniSubnetCidr()
@@ -459,6 +491,166 @@ func (j *jsiiProxy_CceClusterV3) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteAllNetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteAllNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteAllNetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteAllNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteAllStorage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteAllStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteAllStorageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteAllStorageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteEfs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteEfs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteEfsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteEfsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteEni() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteEni",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteEniInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteEniInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteEvs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteEvs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteEvsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteEvsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteNet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteNet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteNetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteNetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteObs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteObs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteObsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteObsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteSfs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteSfs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) DeleteSfsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteSfsInput",
 		&returns,
 	)
 	return returns
@@ -1075,7 +1267,7 @@ func (j *jsiiProxy_CceClusterV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV3Config) CceClusterV3 {
 	_init_.Initialize()
 
@@ -1093,7 +1285,7 @@ func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3_Override(c CceClusterV3, scope constructs.Construct, id *string, config *CceClusterV3Config) {
 	_init_.Initialize()
 
@@ -1210,6 +1402,94 @@ func (j *jsiiProxy_CceClusterV3)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetDeleteAllNetwork(val *string) {
+	if err := j.validateSetDeleteAllNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteAllNetwork",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetDeleteAllStorage(val *string) {
+	if err := j.validateSetDeleteAllStorageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteAllStorage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetDeleteEfs(val *string) {
+	if err := j.validateSetDeleteEfsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteEfs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetDeleteEni(val *string) {
+	if err := j.validateSetDeleteEniParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteEni",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetDeleteEvs(val *string) {
+	if err := j.validateSetDeleteEvsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteEvs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetDeleteNet(val *string) {
+	if err := j.validateSetDeleteNetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteNet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetDeleteObs(val *string) {
+	if err := j.validateSetDeleteObsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteObs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetDeleteSfs(val *string) {
+	if err := j.validateSetDeleteSfsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteSfs",
 		val,
 	)
 }
@@ -1820,6 +2100,70 @@ func (c *jsiiProxy_CceClusterV3) ResetContainerNetworkCidr() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetContainerNetworkCidr",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetDeleteAllNetwork() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeleteAllNetwork",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetDeleteAllStorage() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeleteAllStorage",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetDeleteEfs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeleteEfs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetDeleteEni() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeleteEni",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetDeleteEvs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeleteEvs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetDeleteNet() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeleteNet",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetDeleteObs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeleteObs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetDeleteSfs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeleteSfs",
 		nil, // no parameters
 	)
 }

@@ -9,9 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3}.
 type IdentityUserV3 interface {
 	cdktf.TerraformResource
+	AccessType() *string
+	SetAccessType(val *string)
+	AccessTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -24,9 +27,10 @@ type IdentityUserV3 interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DefaultProjectId() *string
-	SetDefaultProjectId(val *string)
-	DefaultProjectIdInput() *string
+	CountryCode() *string
+	SetCountryCode(val *string)
+	CountryCodeInput() *string
+	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -34,9 +38,6 @@ type IdentityUserV3 interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	DomainId() *string
-	SetDomainId(val *string)
-	DomainIdInput() *string
 	Email() *string
 	SetEmail(val *string)
 	EmailInput() *string
@@ -54,6 +55,7 @@ type IdentityUserV3 interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	LastLogin() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -66,6 +68,10 @@ type IdentityUserV3 interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordStrength() *string
+	Phone() *string
+	SetPhone(val *string)
+	PhoneInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -74,11 +80,11 @@ type IdentityUserV3 interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PwdReset() interface{}
+	SetPwdReset(val interface{})
+	PwdResetInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
-	Region() *string
-	SetRegion(val *string)
-	RegionInput() *string
 	SendWelcomeEmail() interface{}
 	SetSendWelcomeEmail(val interface{})
 	SendWelcomeEmailInput() interface{}
@@ -113,18 +119,18 @@ type IdentityUserV3 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetDefaultProjectId()
+	ResetAccessType()
+	ResetCountryCode()
 	ResetDescription()
-	ResetDomainId()
 	ResetEmail()
 	ResetEnabled()
 	ResetId()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPassword()
-	ResetRegion()
+	ResetPhone()
+	ResetPwdReset()
 	ResetSendWelcomeEmail()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -139,6 +145,26 @@ type IdentityUserV3 interface {
 // The jsii proxy struct for IdentityUserV3
 type jsiiProxy_IdentityUserV3 struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_IdentityUserV3) AccessType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityUserV3) AccessTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessTypeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IdentityUserV3) CdktfStack() cdktf.TerraformStack {
@@ -181,21 +207,31 @@ func (j *jsiiProxy_IdentityUserV3) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityUserV3) DefaultProjectId() *string {
+func (j *jsiiProxy_IdentityUserV3) CountryCode() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"defaultProjectId",
+		"countryCode",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_IdentityUserV3) DefaultProjectIdInput() *string {
+func (j *jsiiProxy_IdentityUserV3) CountryCodeInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"defaultProjectIdInput",
+		"countryCodeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityUserV3) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
 		&returns,
 	)
 	return returns
@@ -226,26 +262,6 @@ func (j *jsiiProxy_IdentityUserV3) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IdentityUserV3) DomainId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"domainId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IdentityUserV3) DomainIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"domainIdInput",
 		&returns,
 	)
 	return returns
@@ -341,6 +357,16 @@ func (j *jsiiProxy_IdentityUserV3) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IdentityUserV3) LastLogin() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastLogin",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityUserV3) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -401,6 +427,36 @@ func (j *jsiiProxy_IdentityUserV3) PasswordInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IdentityUserV3) PasswordStrength() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordStrength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityUserV3) Phone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"phone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityUserV3) PhoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"phoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityUserV3) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -421,31 +477,31 @@ func (j *jsiiProxy_IdentityUserV3) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IdentityUserV3) PwdReset() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pwdReset",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityUserV3) PwdResetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pwdResetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityUserV3) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IdentityUserV3) Region() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"region",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IdentityUserV3) RegionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"regionInput",
 		&returns,
 	)
 	return returns
@@ -502,7 +558,7 @@ func (j *jsiiProxy_IdentityUserV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
 func NewIdentityUserV3(scope constructs.Construct, id *string, config *IdentityUserV3Config) IdentityUserV3 {
 	_init_.Initialize()
 
@@ -520,7 +576,7 @@ func NewIdentityUserV3(scope constructs.Construct, id *string, config *IdentityU
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
 func NewIdentityUserV3_Override(i IdentityUserV3, scope constructs.Construct, id *string, config *IdentityUserV3Config) {
 	_init_.Initialize()
 
@@ -528,6 +584,17 @@ func NewIdentityUserV3_Override(i IdentityUserV3, scope constructs.Construct, id
 		"@cdktf/provider-opentelekomcloud.identityUserV3.IdentityUserV3",
 		[]interface{}{scope, id, config},
 		i,
+	)
+}
+
+func (j *jsiiProxy_IdentityUserV3)SetAccessType(val *string) {
+	if err := j.validateSetAccessTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessType",
+		val,
 	)
 }
 
@@ -553,13 +620,13 @@ func (j *jsiiProxy_IdentityUserV3)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityUserV3)SetDefaultProjectId(val *string) {
-	if err := j.validateSetDefaultProjectIdParameters(val); err != nil {
+func (j *jsiiProxy_IdentityUserV3)SetCountryCode(val *string) {
+	if err := j.validateSetCountryCodeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"defaultProjectId",
+		"countryCode",
 		val,
 	)
 }
@@ -579,17 +646,6 @@ func (j *jsiiProxy_IdentityUserV3)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
-		val,
-	)
-}
-
-func (j *jsiiProxy_IdentityUserV3)SetDomainId(val *string) {
-	if err := j.validateSetDomainIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"domainId",
 		val,
 	)
 }
@@ -668,6 +724,17 @@ func (j *jsiiProxy_IdentityUserV3)SetPassword(val *string) {
 	)
 }
 
+func (j *jsiiProxy_IdentityUserV3)SetPhone(val *string) {
+	if err := j.validateSetPhoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"phone",
+		val,
+	)
+}
+
 func (j *jsiiProxy_IdentityUserV3)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -687,13 +754,13 @@ func (j *jsiiProxy_IdentityUserV3)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityUserV3)SetRegion(val *string) {
-	if err := j.validateSetRegionParameters(val); err != nil {
+func (j *jsiiProxy_IdentityUserV3)SetPwdReset(val interface{}) {
+	if err := j.validateSetPwdResetParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"region",
+		"pwdReset",
 		val,
 	)
 }
@@ -975,10 +1042,18 @@ func (i *jsiiProxy_IdentityUserV3) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (i *jsiiProxy_IdentityUserV3) ResetDefaultProjectId() {
+func (i *jsiiProxy_IdentityUserV3) ResetAccessType() {
 	_jsii_.InvokeVoid(
 		i,
-		"resetDefaultProjectId",
+		"resetAccessType",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityUserV3) ResetCountryCode() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCountryCode",
 		nil, // no parameters
 	)
 }
@@ -987,14 +1062,6 @@ func (i *jsiiProxy_IdentityUserV3) ResetDescription() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (i *jsiiProxy_IdentityUserV3) ResetDomainId() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetDomainId",
 		nil, // no parameters
 	)
 }
@@ -1023,14 +1090,6 @@ func (i *jsiiProxy_IdentityUserV3) ResetId() {
 	)
 }
 
-func (i *jsiiProxy_IdentityUserV3) ResetName() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
 func (i *jsiiProxy_IdentityUserV3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1047,10 +1106,18 @@ func (i *jsiiProxy_IdentityUserV3) ResetPassword() {
 	)
 }
 
-func (i *jsiiProxy_IdentityUserV3) ResetRegion() {
+func (i *jsiiProxy_IdentityUserV3) ResetPhone() {
 	_jsii_.InvokeVoid(
 		i,
-		"resetRegion",
+		"resetPhone",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityUserV3) ResetPwdReset() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetPwdReset",
 		nil, // no parameters
 	)
 }

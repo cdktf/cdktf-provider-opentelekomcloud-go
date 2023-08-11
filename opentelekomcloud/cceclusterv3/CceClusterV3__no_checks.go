@@ -112,6 +112,38 @@ func (j *jsiiProxy_CceClusterV3) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_CceClusterV3) validateSetDeleteAllNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CceClusterV3) validateSetDeleteAllStorageParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CceClusterV3) validateSetDeleteEfsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CceClusterV3) validateSetDeleteEniParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CceClusterV3) validateSetDeleteEvsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CceClusterV3) validateSetDeleteNetParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CceClusterV3) validateSetDeleteObsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CceClusterV3) validateSetDeleteSfsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceClusterV3) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

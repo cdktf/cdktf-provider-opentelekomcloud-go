@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1}.
 type MrsJobV1 interface {
 	cdktf.TerraformResource
 	Arguments() *string
@@ -605,7 +605,7 @@ func (j *jsiiProxy_MrsJobV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1} Resource.
 func NewMrsJobV1(scope constructs.Construct, id *string, config *MrsJobV1Config) MrsJobV1 {
 	_init_.Initialize()
 
@@ -623,7 +623,7 @@ func NewMrsJobV1(scope constructs.Construct, id *string, config *MrsJobV1Config)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1} Resource.
 func NewMrsJobV1_Override(m MrsJobV1, scope constructs.Construct, id *string, config *MrsJobV1Config) {
 	_init_.Initialize()
 
