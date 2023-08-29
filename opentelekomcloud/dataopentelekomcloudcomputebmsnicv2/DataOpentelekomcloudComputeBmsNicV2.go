@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataopentelekomcloudcomputebmsnicv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudcomputebmsnicv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudcomputebmsnicv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/compute_bms_nic_v2 opentelekomcloud_compute_bms_nic_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/compute_bms_nic_v2 opentelekomcloud_compute_bms_nic_v2}.
 type DataOpentelekomcloudComputeBmsNicV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -362,7 +365,7 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/compute_bms_nic_v2 opentelekomcloud_compute_bms_nic_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/compute_bms_nic_v2 opentelekomcloud_compute_bms_nic_v2} Data Source.
 func NewDataOpentelekomcloudComputeBmsNicV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudComputeBmsNicV2Config) DataOpentelekomcloudComputeBmsNicV2 {
 	_init_.Initialize()
 
@@ -380,7 +383,7 @@ func NewDataOpentelekomcloudComputeBmsNicV2(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/compute_bms_nic_v2 opentelekomcloud_compute_bms_nic_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/compute_bms_nic_v2 opentelekomcloud_compute_bms_nic_v2} Data Source.
 func NewDataOpentelekomcloudComputeBmsNicV2_Override(d DataOpentelekomcloudComputeBmsNicV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudComputeBmsNicV2Config) {
 	_init_.Initialize()
 

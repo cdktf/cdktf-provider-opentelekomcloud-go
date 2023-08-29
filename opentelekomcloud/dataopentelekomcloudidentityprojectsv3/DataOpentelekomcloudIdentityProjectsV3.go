@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataopentelekomcloudidentityprojectsv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudidentityprojectsv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentityprojectsv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3}.
 type DataOpentelekomcloudIdentityProjectsV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -280,7 +283,7 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3} Data Source.
 func NewDataOpentelekomcloudIdentityProjectsV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudIdentityProjectsV3Config) DataOpentelekomcloudIdentityProjectsV3 {
 	_init_.Initialize()
 
@@ -298,7 +301,7 @@ func NewDataOpentelekomcloudIdentityProjectsV3(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3} Data Source.
 func NewDataOpentelekomcloudIdentityProjectsV3_Override(d DataOpentelekomcloudIdentityProjectsV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudIdentityProjectsV3Config) {
 	_init_.Initialize()
 

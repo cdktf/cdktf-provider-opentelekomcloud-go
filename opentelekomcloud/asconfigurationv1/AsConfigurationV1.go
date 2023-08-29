@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package asconfigurationv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asconfigurationv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/asconfigurationv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_configuration_v1 opentelekomcloud_as_configuration_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_configuration_v1 opentelekomcloud_as_configuration_v1}.
 type AsConfigurationV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +359,7 @@ func (j *jsiiProxy_AsConfigurationV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_configuration_v1 opentelekomcloud_as_configuration_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_configuration_v1 opentelekomcloud_as_configuration_v1} Resource.
 func NewAsConfigurationV1(scope constructs.Construct, id *string, config *AsConfigurationV1Config) AsConfigurationV1 {
 	_init_.Initialize()
 
@@ -374,7 +377,7 @@ func NewAsConfigurationV1(scope constructs.Construct, id *string, config *AsConf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_configuration_v1 opentelekomcloud_as_configuration_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_configuration_v1 opentelekomcloud_as_configuration_v1} Resource.
 func NewAsConfigurationV1_Override(a AsConfigurationV1, scope constructs.Construct, id *string, config *AsConfigurationV1Config) {
 	_init_.Initialize()
 

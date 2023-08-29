@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package vpcflowlogv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/vpcflowlogv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpcflowlogv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1}.
 type VpcFlowLogV1 interface {
 	cdktf.TerraformResource
 	AdminState() interface{}
@@ -521,7 +524,7 @@ func (j *jsiiProxy_VpcFlowLogV1) TrafficTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1} Resource.
 func NewVpcFlowLogV1(scope constructs.Construct, id *string, config *VpcFlowLogV1Config) VpcFlowLogV1 {
 	_init_.Initialize()
 
@@ -539,7 +542,7 @@ func NewVpcFlowLogV1(scope constructs.Construct, id *string, config *VpcFlowLogV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1} Resource.
 func NewVpcFlowLogV1_Override(v VpcFlowLogV1, scope constructs.Construct, id *string, config *VpcFlowLogV1Config) {
 	_init_.Initialize()
 

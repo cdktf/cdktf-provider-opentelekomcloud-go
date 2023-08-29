@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataopentelekomcloudnatgatewayv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudnatgatewayv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudnatgatewayv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2}.
 type DataOpentelekomcloudNatGatewayV2 interface {
 	cdktf.TerraformDataSource
 	AdminStateUp() interface{}
@@ -498,7 +501,7 @@ func (j *jsiiProxy_DataOpentelekomcloudNatGatewayV2) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2} Data Source.
 func NewDataOpentelekomcloudNatGatewayV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudNatGatewayV2Config) DataOpentelekomcloudNatGatewayV2 {
 	_init_.Initialize()
 
@@ -516,7 +519,7 @@ func NewDataOpentelekomcloudNatGatewayV2(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2} Data Source.
 func NewDataOpentelekomcloudNatGatewayV2_Override(d DataOpentelekomcloudNatGatewayV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudNatGatewayV2Config) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataopentelekomcloudrdsflavorsv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudrdsflavorsv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudrdsflavorsv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/rds_flavors_v1 opentelekomcloud_rds_flavors_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/rds_flavors_v1 opentelekomcloud_rds_flavors_v1}.
 type DataOpentelekomcloudRdsFlavorsV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -374,7 +377,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsFlavorsV1) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/rds_flavors_v1 opentelekomcloud_rds_flavors_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/rds_flavors_v1 opentelekomcloud_rds_flavors_v1} Data Source.
 func NewDataOpentelekomcloudRdsFlavorsV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudRdsFlavorsV1Config) DataOpentelekomcloudRdsFlavorsV1 {
 	_init_.Initialize()
 
@@ -392,7 +395,7 @@ func NewDataOpentelekomcloudRdsFlavorsV1(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/rds_flavors_v1 opentelekomcloud_rds_flavors_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/rds_flavors_v1 opentelekomcloud_rds_flavors_v1} Data Source.
 func NewDataOpentelekomcloudRdsFlavorsV1_Override(d DataOpentelekomcloudRdsFlavorsV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudRdsFlavorsV1Config) {
 	_init_.Initialize()
 

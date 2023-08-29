@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataopentelekomcloudvpceipv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudvpceipv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvpceipv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1}.
 type DataOpentelekomcloudVpcEipV1 interface {
 	cdktf.TerraformDataSource
 	BandwidthId() *string
@@ -492,7 +495,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcEipV1) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Data Source.
 func NewDataOpentelekomcloudVpcEipV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcEipV1Config) DataOpentelekomcloudVpcEipV1 {
 	_init_.Initialize()
 
@@ -510,7 +513,7 @@ func NewDataOpentelekomcloudVpcEipV1(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Data Source.
 func NewDataOpentelekomcloudVpcEipV1_Override(d DataOpentelekomcloudVpcEipV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcEipV1Config) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package fwrulev2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/fwrulev2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/fwrulev2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/fw_rule_v2 opentelekomcloud_fw_rule_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/fw_rule_v2 opentelekomcloud_fw_rule_v2}.
 type FwRuleV2 interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -596,7 +599,7 @@ func (j *jsiiProxy_FwRuleV2) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/fw_rule_v2 opentelekomcloud_fw_rule_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/fw_rule_v2 opentelekomcloud_fw_rule_v2} Resource.
 func NewFwRuleV2(scope constructs.Construct, id *string, config *FwRuleV2Config) FwRuleV2 {
 	_init_.Initialize()
 
@@ -614,7 +617,7 @@ func NewFwRuleV2(scope constructs.Construct, id *string, config *FwRuleV2Config)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/fw_rule_v2 opentelekomcloud_fw_rule_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/fw_rule_v2 opentelekomcloud_fw_rule_v2} Resource.
 func NewFwRuleV2_Override(f FwRuleV2, scope constructs.Construct, id *string, config *FwRuleV2Config) {
 	_init_.Initialize()
 

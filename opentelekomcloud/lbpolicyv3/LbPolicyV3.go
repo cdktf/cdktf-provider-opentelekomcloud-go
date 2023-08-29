@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package lbpolicyv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/lbpolicyv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/lbpolicyv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/lb_policy_v3 opentelekomcloud_lb_policy_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_policy_v3 opentelekomcloud_lb_policy_v3}.
 type LbPolicyV3 interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -631,7 +634,7 @@ func (j *jsiiProxy_LbPolicyV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/lb_policy_v3 opentelekomcloud_lb_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_policy_v3 opentelekomcloud_lb_policy_v3} Resource.
 func NewLbPolicyV3(scope constructs.Construct, id *string, config *LbPolicyV3Config) LbPolicyV3 {
 	_init_.Initialize()
 
@@ -649,7 +652,7 @@ func NewLbPolicyV3(scope constructs.Construct, id *string, config *LbPolicyV3Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/lb_policy_v3 opentelekomcloud_lb_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_policy_v3 opentelekomcloud_lb_policy_v3} Resource.
 func NewLbPolicyV3_Override(l LbPolicyV3, scope constructs.Construct, id *string, config *LbPolicyV3Config) {
 	_init_.Initialize()
 

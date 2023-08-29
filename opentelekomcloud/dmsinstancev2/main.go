@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dmsinstancev2
 
 import (
@@ -25,6 +28,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "diskEncryptedEnable", GoGetter: "DiskEncryptedEnable"},
+			_jsii_.MemberProperty{JsiiProperty: "diskEncryptedEnableInput", GoGetter: "DiskEncryptedEnableInput"},
+			_jsii_.MemberProperty{JsiiProperty: "diskEncryptedKey", GoGetter: "DiskEncryptedKey"},
+			_jsii_.MemberProperty{JsiiProperty: "diskEncryptedKeyInput", GoGetter: "DiskEncryptedKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enablePublicip", GoGetter: "EnablePublicip"},
 			_jsii_.MemberProperty{JsiiProperty: "enablePublicipInput", GoGetter: "EnablePublicipInput"},
 			_jsii_.MemberProperty{JsiiProperty: "engine", GoGetter: "Engine"},
@@ -75,6 +82,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessUser", GoMethod: "ResetAccessUser"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDiskEncryptedEnable", GoMethod: "ResetDiskEncryptedEnable"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDiskEncryptedKey", GoMethod: "ResetDiskEncryptedKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnablePublicip", GoMethod: "ResetEnablePublicip"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaintainBegin", GoMethod: "ResetMaintainBegin"},

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package computebmstagsv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/computebmstagsv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/computebmstagsv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/compute_bms_tags_v2 opentelekomcloud_compute_bms_tags_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/compute_bms_tags_v2 opentelekomcloud_compute_bms_tags_v2}.
 type ComputeBmsTagsV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +383,7 @@ func (j *jsiiProxy_ComputeBmsTagsV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/compute_bms_tags_v2 opentelekomcloud_compute_bms_tags_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/compute_bms_tags_v2 opentelekomcloud_compute_bms_tags_v2} Resource.
 func NewComputeBmsTagsV2(scope constructs.Construct, id *string, config *ComputeBmsTagsV2Config) ComputeBmsTagsV2 {
 	_init_.Initialize()
 
@@ -398,7 +401,7 @@ func NewComputeBmsTagsV2(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/compute_bms_tags_v2 opentelekomcloud_compute_bms_tags_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/compute_bms_tags_v2 opentelekomcloud_compute_bms_tags_v2} Resource.
 func NewComputeBmsTagsV2_Override(c ComputeBmsTagsV2, scope constructs.Construct, id *string, config *ComputeBmsTagsV2Config) {
 	_init_.Initialize()
 

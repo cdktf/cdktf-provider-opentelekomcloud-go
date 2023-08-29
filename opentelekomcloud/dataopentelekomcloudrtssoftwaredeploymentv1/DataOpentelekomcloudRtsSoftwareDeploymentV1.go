@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataopentelekomcloudrtssoftwaredeploymentv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudrtssoftwaredeploymentv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudrtssoftwaredeploymentv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1}.
 type DataOpentelekomcloudRtsSoftwareDeploymentV1 interface {
 	cdktf.TerraformDataSource
 	Action() *string
@@ -411,7 +414,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRtsSoftwareDeploymentV1) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source.
 func NewDataOpentelekomcloudRtsSoftwareDeploymentV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudRtsSoftwareDeploymentV1Config) DataOpentelekomcloudRtsSoftwareDeploymentV1 {
 	_init_.Initialize()
 
@@ -429,7 +432,7 @@ func NewDataOpentelekomcloudRtsSoftwareDeploymentV1(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source.
 func NewDataOpentelekomcloudRtsSoftwareDeploymentV1_Override(d DataOpentelekomcloudRtsSoftwareDeploymentV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudRtsSoftwareDeploymentV1Config) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package vpcpeeringconnectionv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/vpcpeeringconnectionv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpcpeeringconnectionv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2}.
 type VpcPeeringConnectionV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +441,7 @@ func (j *jsiiProxy_VpcPeeringConnectionV2) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Resource.
 func NewVpcPeeringConnectionV2(scope constructs.Construct, id *string, config *VpcPeeringConnectionV2Config) VpcPeeringConnectionV2 {
 	_init_.Initialize()
 
@@ -456,7 +459,7 @@ func NewVpcPeeringConnectionV2(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Resource.
 func NewVpcPeeringConnectionV2_Override(v VpcPeeringConnectionV2, scope constructs.Construct, id *string, config *VpcPeeringConnectionV2Config) {
 	_init_.Initialize()
 

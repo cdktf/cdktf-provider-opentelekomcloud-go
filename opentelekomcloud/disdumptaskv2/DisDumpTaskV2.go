@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package disdumptaskv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/disdumptaskv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/disdumptaskv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_dump_task_v2 opentelekomcloud_dis_dump_task_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dis_dump_task_v2 opentelekomcloud_dis_dump_task_v2}.
 type DisDumpTaskV2 interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -495,7 +498,7 @@ func (j *jsiiProxy_DisDumpTaskV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_dump_task_v2 opentelekomcloud_dis_dump_task_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dis_dump_task_v2 opentelekomcloud_dis_dump_task_v2} Resource.
 func NewDisDumpTaskV2(scope constructs.Construct, id *string, config *DisDumpTaskV2Config) DisDumpTaskV2 {
 	_init_.Initialize()
 
@@ -513,7 +516,7 @@ func NewDisDumpTaskV2(scope constructs.Construct, id *string, config *DisDumpTas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_dump_task_v2 opentelekomcloud_dis_dump_task_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dis_dump_task_v2 opentelekomcloud_dis_dump_task_v2} Resource.
 func NewDisDumpTaskV2_Override(d DisDumpTaskV2, scope constructs.Construct, id *string, config *DisDumpTaskV2Config) {
 	_init_.Initialize()
 

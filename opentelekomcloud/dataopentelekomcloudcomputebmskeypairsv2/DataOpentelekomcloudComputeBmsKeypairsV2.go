@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataopentelekomcloudcomputebmskeypairsv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudcomputebmskeypairsv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudcomputebmskeypairsv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/compute_bms_keypairs_v2 opentelekomcloud_compute_bms_keypairs_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/compute_bms_keypairs_v2 opentelekomcloud_compute_bms_keypairs_v2}.
 type DataOpentelekomcloudComputeBmsKeypairsV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -327,7 +330,7 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeBmsKeypairsV2) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/compute_bms_keypairs_v2 opentelekomcloud_compute_bms_keypairs_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/compute_bms_keypairs_v2 opentelekomcloud_compute_bms_keypairs_v2} Data Source.
 func NewDataOpentelekomcloudComputeBmsKeypairsV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudComputeBmsKeypairsV2Config) DataOpentelekomcloudComputeBmsKeypairsV2 {
 	_init_.Initialize()
 
@@ -345,7 +348,7 @@ func NewDataOpentelekomcloudComputeBmsKeypairsV2(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/compute_bms_keypairs_v2 opentelekomcloud_compute_bms_keypairs_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/compute_bms_keypairs_v2 opentelekomcloud_compute_bms_keypairs_v2} Data Source.
 func NewDataOpentelekomcloudComputeBmsKeypairsV2_Override(d DataOpentelekomcloudComputeBmsKeypairsV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudComputeBmsKeypairsV2Config) {
 	_init_.Initialize()
 

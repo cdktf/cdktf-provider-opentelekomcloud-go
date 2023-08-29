@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataopentelekomclouddnsnameserversv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomclouddnsnameserversv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomclouddnsnameserversv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2}.
 type DataOpentelekomcloudDnsNameserversV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -306,7 +309,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDnsNameserversV2) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2} Data Source.
 func NewDataOpentelekomcloudDnsNameserversV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudDnsNameserversV2Config) DataOpentelekomcloudDnsNameserversV2 {
 	_init_.Initialize()
 
@@ -324,7 +327,7 @@ func NewDataOpentelekomcloudDnsNameserversV2(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2} Data Source.
 func NewDataOpentelekomcloudDnsNameserversV2_Override(d DataOpentelekomcloudDnsNameserversV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudDnsNameserversV2Config) {
 	_init_.Initialize()
 

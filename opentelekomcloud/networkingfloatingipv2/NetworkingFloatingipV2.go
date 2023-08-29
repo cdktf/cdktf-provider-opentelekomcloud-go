@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package networkingfloatingipv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/networkingfloatingipv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/networkingfloatingipv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2}.
 type NetworkingFloatingipV2 interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -465,7 +468,7 @@ func (j *jsiiProxy_NetworkingFloatingipV2) ValueSpecsInput() *map[string]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource.
 func NewNetworkingFloatingipV2(scope constructs.Construct, id *string, config *NetworkingFloatingipV2Config) NetworkingFloatingipV2 {
 	_init_.Initialize()
 
@@ -483,7 +486,7 @@ func NewNetworkingFloatingipV2(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource.
 func NewNetworkingFloatingipV2_Override(n NetworkingFloatingipV2, scope constructs.Construct, id *string, config *NetworkingFloatingipV2Config) {
 	_init_.Initialize()
 

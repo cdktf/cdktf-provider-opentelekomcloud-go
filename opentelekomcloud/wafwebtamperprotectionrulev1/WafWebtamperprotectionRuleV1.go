@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package wafwebtamperprotectionrulev1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/wafwebtamperprotectionrulev1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/wafwebtamperprotectionrulev1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/waf_webtamperprotection_rule_v1 opentelekomcloud_waf_webtamperprotection_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_webtamperprotection_rule_v1 opentelekomcloud_waf_webtamperprotection_rule_v1}.
 type WafWebtamperprotectionRuleV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +382,7 @@ func (j *jsiiProxy_WafWebtamperprotectionRuleV1) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/waf_webtamperprotection_rule_v1 opentelekomcloud_waf_webtamperprotection_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_webtamperprotection_rule_v1 opentelekomcloud_waf_webtamperprotection_rule_v1} Resource.
 func NewWafWebtamperprotectionRuleV1(scope constructs.Construct, id *string, config *WafWebtamperprotectionRuleV1Config) WafWebtamperprotectionRuleV1 {
 	_init_.Initialize()
 
@@ -397,7 +400,7 @@ func NewWafWebtamperprotectionRuleV1(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/waf_webtamperprotection_rule_v1 opentelekomcloud_waf_webtamperprotection_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_webtamperprotection_rule_v1 opentelekomcloud_waf_webtamperprotection_rule_v1} Resource.
 func NewWafWebtamperprotectionRuleV1_Override(w WafWebtamperprotectionRuleV1, scope constructs.Construct, id *string, config *WafWebtamperprotectionRuleV1Config) {
 	_init_.Initialize()
 

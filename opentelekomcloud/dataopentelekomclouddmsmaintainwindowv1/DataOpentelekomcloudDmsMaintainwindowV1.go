@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataopentelekomclouddmsmaintainwindowv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomclouddmsmaintainwindowv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomclouddmsmaintainwindowv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1}.
 type DataOpentelekomcloudDmsMaintainwindowV1 interface {
 	cdktf.TerraformDataSource
 	Begin() *string
@@ -354,7 +357,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsMaintainwindowV1) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1} Data Source.
 func NewDataOpentelekomcloudDmsMaintainwindowV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudDmsMaintainwindowV1Config) DataOpentelekomcloudDmsMaintainwindowV1 {
 	_init_.Initialize()
 
@@ -372,7 +375,7 @@ func NewDataOpentelekomcloudDmsMaintainwindowV1(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1} Data Source.
 func NewDataOpentelekomcloudDmsMaintainwindowV1_Override(d DataOpentelekomcloudDmsMaintainwindowV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudDmsMaintainwindowV1Config) {
 	_init_.Initialize()
 

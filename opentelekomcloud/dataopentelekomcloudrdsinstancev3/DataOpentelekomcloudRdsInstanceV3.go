@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataopentelekomcloudrdsinstancev3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudrdsinstancev3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudrdsinstancev3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/rds_instance_v3 opentelekomcloud_rds_instance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/rds_instance_v3 opentelekomcloud_rds_instance_v3}.
 type DataOpentelekomcloudRdsInstanceV3 interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *[]*string
@@ -635,7 +638,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRdsInstanceV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Data Source.
 func NewDataOpentelekomcloudRdsInstanceV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudRdsInstanceV3Config) DataOpentelekomcloudRdsInstanceV3 {
 	_init_.Initialize()
 
@@ -653,7 +656,7 @@ func NewDataOpentelekomcloudRdsInstanceV3(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Data Source.
 func NewDataOpentelekomcloudRdsInstanceV3_Override(d DataOpentelekomcloudRdsInstanceV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudRdsInstanceV3Config) {
 	_init_.Initialize()
 

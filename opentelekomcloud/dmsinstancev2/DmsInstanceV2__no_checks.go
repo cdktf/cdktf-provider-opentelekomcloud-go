@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package dmsinstancev2
@@ -85,6 +88,14 @@ func (j *jsiiProxy_DmsInstanceV2) validateSetCountParameters(val interface{}) er
 }
 
 func (j *jsiiProxy_DmsInstanceV2) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DmsInstanceV2) validateSetDiskEncryptedEnableParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DmsInstanceV2) validateSetDiskEncryptedKeyParameters(val *string) error {
 	return nil
 }
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dmsinstancev1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dmsinstancev1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dmsinstancev1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dms_instance_v1 opentelekomcloud_dms_instance_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dms_instance_v1 opentelekomcloud_dms_instance_v1}.
 type DmsInstanceV1 interface {
 	cdktf.TerraformResource
 	AccessUser() *string
@@ -851,7 +854,7 @@ func (j *jsiiProxy_DmsInstanceV1) VpcName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dms_instance_v1 opentelekomcloud_dms_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dms_instance_v1 opentelekomcloud_dms_instance_v1} Resource.
 func NewDmsInstanceV1(scope constructs.Construct, id *string, config *DmsInstanceV1Config) DmsInstanceV1 {
 	_init_.Initialize()
 
@@ -869,7 +872,7 @@ func NewDmsInstanceV1(scope constructs.Construct, id *string, config *DmsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dms_instance_v1 opentelekomcloud_dms_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dms_instance_v1 opentelekomcloud_dms_instance_v1} Resource.
 func NewDmsInstanceV1_Override(d DmsInstanceV1, scope constructs.Construct, id *string, config *DmsInstanceV1Config) {
 	_init_.Initialize()
 

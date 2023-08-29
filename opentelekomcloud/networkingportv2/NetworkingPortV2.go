@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package networkingportv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/networkingportv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/networkingportv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2}.
 type NetworkingPortV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -656,7 +659,7 @@ func (j *jsiiProxy_NetworkingPortV2) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
 func NewNetworkingPortV2(scope constructs.Construct, id *string, config *NetworkingPortV2Config) NetworkingPortV2 {
 	_init_.Initialize()
 
@@ -674,7 +677,7 @@ func NewNetworkingPortV2(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
 func NewNetworkingPortV2_Override(n NetworkingPortV2, scope constructs.Construct, id *string, config *NetworkingPortV2Config) {
 	_init_.Initialize()
 

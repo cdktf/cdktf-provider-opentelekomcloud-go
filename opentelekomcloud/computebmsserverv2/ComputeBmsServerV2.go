@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package computebmsserverv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/computebmsserverv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/computebmsserverv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/compute_bms_server_v2 opentelekomcloud_compute_bms_server_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/compute_bms_server_v2 opentelekomcloud_compute_bms_server_v2}.
 type ComputeBmsServerV2 interface {
 	cdktf.TerraformResource
 	AccessIpV4() *string
@@ -780,7 +783,7 @@ func (j *jsiiProxy_ComputeBmsServerV2) UserId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/compute_bms_server_v2 opentelekomcloud_compute_bms_server_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/compute_bms_server_v2 opentelekomcloud_compute_bms_server_v2} Resource.
 func NewComputeBmsServerV2(scope constructs.Construct, id *string, config *ComputeBmsServerV2Config) ComputeBmsServerV2 {
 	_init_.Initialize()
 
@@ -798,7 +801,7 @@ func NewComputeBmsServerV2(scope constructs.Construct, id *string, config *Compu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/compute_bms_server_v2 opentelekomcloud_compute_bms_server_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/compute_bms_server_v2 opentelekomcloud_compute_bms_server_v2} Resource.
 func NewComputeBmsServerV2_Override(c ComputeBmsServerV2, scope constructs.Construct, id *string, config *ComputeBmsServerV2Config) {
 	_init_.Initialize()
 

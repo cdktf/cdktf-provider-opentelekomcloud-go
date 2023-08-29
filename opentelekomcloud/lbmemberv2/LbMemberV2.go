@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package lbmemberv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/lbmemberv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/lbmemberv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2}.
 type LbMemberV2 interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -522,7 +525,7 @@ func (j *jsiiProxy_LbMemberV2) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2} Resource.
 func NewLbMemberV2(scope constructs.Construct, id *string, config *LbMemberV2Config) LbMemberV2 {
 	_init_.Initialize()
 
@@ -540,7 +543,7 @@ func NewLbMemberV2(scope constructs.Construct, id *string, config *LbMemberV2Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2} Resource.
 func NewLbMemberV2_Override(l LbMemberV2, scope constructs.Construct, id *string, config *LbMemberV2Config) {
 	_init_.Initialize()
 

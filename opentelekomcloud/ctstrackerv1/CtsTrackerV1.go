@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package ctstrackerv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/ctstrackerv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/ctstrackerv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cts_tracker_v1 opentelekomcloud_cts_tracker_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/cts_tracker_v1 opentelekomcloud_cts_tracker_v1}.
 type CtsTrackerV1 interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -436,7 +439,7 @@ func (j *jsiiProxy_CtsTrackerV1) TrackerName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cts_tracker_v1 opentelekomcloud_cts_tracker_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/cts_tracker_v1 opentelekomcloud_cts_tracker_v1} Resource.
 func NewCtsTrackerV1(scope constructs.Construct, id *string, config *CtsTrackerV1Config) CtsTrackerV1 {
 	_init_.Initialize()
 
@@ -454,7 +457,7 @@ func NewCtsTrackerV1(scope constructs.Construct, id *string, config *CtsTrackerV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cts_tracker_v1 opentelekomcloud_cts_tracker_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/cts_tracker_v1 opentelekomcloud_cts_tracker_v1} Resource.
 func NewCtsTrackerV1_Override(c CtsTrackerV1, scope constructs.Construct, id *string, config *CtsTrackerV1Config) {
 	_init_.Initialize()
 

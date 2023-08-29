@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package mrsjobv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/mrsjobv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/mrsjobv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1}.
 type MrsJobV1 interface {
 	cdktf.TerraformResource
 	Arguments() *string
@@ -605,7 +608,7 @@ func (j *jsiiProxy_MrsJobV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1} Resource.
 func NewMrsJobV1(scope constructs.Construct, id *string, config *MrsJobV1Config) MrsJobV1 {
 	_init_.Initialize()
 
@@ -623,7 +626,7 @@ func NewMrsJobV1(scope constructs.Construct, id *string, config *MrsJobV1Config)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1} Resource.
 func NewMrsJobV1_Override(m MrsJobV1, scope constructs.Construct, id *string, config *MrsJobV1Config) {
 	_init_.Initialize()
 

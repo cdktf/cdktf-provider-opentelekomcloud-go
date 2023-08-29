@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package wafdedicatedpolicyv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/wafdedicatedpolicyv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/wafdedicatedpolicyv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/waf_dedicated_policy_v1 opentelekomcloud_waf_dedicated_policy_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_dedicated_policy_v1 opentelekomcloud_waf_dedicated_policy_v1}.
 type WafDedicatedPolicyV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +478,7 @@ func (j *jsiiProxy_WafDedicatedPolicyV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/waf_dedicated_policy_v1 opentelekomcloud_waf_dedicated_policy_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_dedicated_policy_v1 opentelekomcloud_waf_dedicated_policy_v1} Resource.
 func NewWafDedicatedPolicyV1(scope constructs.Construct, id *string, config *WafDedicatedPolicyV1Config) WafDedicatedPolicyV1 {
 	_init_.Initialize()
 
@@ -493,7 +496,7 @@ func NewWafDedicatedPolicyV1(scope constructs.Construct, id *string, config *Waf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/waf_dedicated_policy_v1 opentelekomcloud_waf_dedicated_policy_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_dedicated_policy_v1 opentelekomcloud_waf_dedicated_policy_v1} Resource.
 func NewWafDedicatedPolicyV1_Override(w WafDedicatedPolicyV1, scope constructs.Construct, id *string, config *WafDedicatedPolicyV1Config) {
 	_init_.Initialize()
 

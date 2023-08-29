@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dmsinstancev2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dmsinstancev2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dmsinstancev2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dms_instance_v2 opentelekomcloud_dms_instance_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dms_instance_v2 opentelekomcloud_dms_instance_v2}.
 type DmsInstanceV2 interface {
 	cdktf.TerraformResource
 	AccessUser() *string
@@ -39,6 +42,12 @@ type DmsInstanceV2 interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DiskEncryptedEnable() interface{}
+	SetDiskEncryptedEnable(val interface{})
+	DiskEncryptedEnableInput() interface{}
+	DiskEncryptedKey() *string
+	SetDiskEncryptedKey(val *string)
+	DiskEncryptedKeyInput() *string
 	EnablePublicip() interface{}
 	SetEnablePublicip(val interface{})
 	EnablePublicipInput() interface{}
@@ -176,6 +185,8 @@ type DmsInstanceV2 interface {
 	PutTimeouts(value *DmsInstanceV2Timeouts)
 	ResetAccessUser()
 	ResetDescription()
+	ResetDiskEncryptedEnable()
+	ResetDiskEncryptedKey()
 	ResetEnablePublicip()
 	ResetId()
 	ResetMaintainBegin()
@@ -331,6 +342,46 @@ func (j *jsiiProxy_DmsInstanceV2) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsInstanceV2) DiskEncryptedEnable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"diskEncryptedEnable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsInstanceV2) DiskEncryptedEnableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"diskEncryptedEnableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsInstanceV2) DiskEncryptedKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptedKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsInstanceV2) DiskEncryptedKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptedKeyInput",
 		&returns,
 	)
 	return returns
@@ -1037,7 +1088,7 @@ func (j *jsiiProxy_DmsInstanceV2) VpcName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dms_instance_v2 opentelekomcloud_dms_instance_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dms_instance_v2 opentelekomcloud_dms_instance_v2} Resource.
 func NewDmsInstanceV2(scope constructs.Construct, id *string, config *DmsInstanceV2Config) DmsInstanceV2 {
 	_init_.Initialize()
 
@@ -1055,7 +1106,7 @@ func NewDmsInstanceV2(scope constructs.Construct, id *string, config *DmsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dms_instance_v2 opentelekomcloud_dms_instance_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dms_instance_v2 opentelekomcloud_dms_instance_v2} Resource.
 func NewDmsInstanceV2_Override(d DmsInstanceV2, scope constructs.Construct, id *string, config *DmsInstanceV2Config) {
 	_init_.Initialize()
 
@@ -1125,6 +1176,28 @@ func (j *jsiiProxy_DmsInstanceV2)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsInstanceV2)SetDiskEncryptedEnable(val interface{}) {
+	if err := j.validateSetDiskEncryptedEnableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskEncryptedEnable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsInstanceV2)SetDiskEncryptedKey(val *string) {
+	if err := j.validateSetDiskEncryptedKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskEncryptedKey",
 		val,
 	)
 }
@@ -1676,6 +1749,22 @@ func (d *jsiiProxy_DmsInstanceV2) ResetDescription() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsInstanceV2) ResetDiskEncryptedEnable() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDiskEncryptedEnable",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsInstanceV2) ResetDiskEncryptedKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDiskEncryptedKey",
 		nil, // no parameters
 	)
 }

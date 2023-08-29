@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataopentelekomcloudvpcbandwidth
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudvpcbandwidth/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvpcbandwidth/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/vpc_bandwidth opentelekomcloud_vpc_bandwidth}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/vpc_bandwidth opentelekomcloud_vpc_bandwidth}.
 type DataOpentelekomcloudVpcBandwidth interface {
 	cdktf.TerraformDataSource
 	BandwidthType() *string
@@ -397,7 +400,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidth) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/vpc_bandwidth opentelekomcloud_vpc_bandwidth} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/vpc_bandwidth opentelekomcloud_vpc_bandwidth} Data Source.
 func NewDataOpentelekomcloudVpcBandwidth(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcBandwidthConfig) DataOpentelekomcloudVpcBandwidth {
 	_init_.Initialize()
 
@@ -415,7 +418,7 @@ func NewDataOpentelekomcloudVpcBandwidth(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/vpc_bandwidth opentelekomcloud_vpc_bandwidth} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/vpc_bandwidth opentelekomcloud_vpc_bandwidth} Data Source.
 func NewDataOpentelekomcloudVpcBandwidth_Override(d DataOpentelekomcloudVpcBandwidth, scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcBandwidthConfig) {
 	_init_.Initialize()
 
