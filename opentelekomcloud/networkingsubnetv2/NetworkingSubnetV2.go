@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/networking_subnet_v2 opentelekomcloud_networking_subnet_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/networking_subnet_v2 opentelekomcloud_networking_subnet_v2}.
 type NetworkingSubnetV2 interface {
 	cdktf.TerraformResource
 	AllocationPools() NetworkingSubnetV2AllocationPoolsList
@@ -623,7 +623,7 @@ func (j *jsiiProxy_NetworkingSubnetV2) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/networking_subnet_v2 opentelekomcloud_networking_subnet_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/networking_subnet_v2 opentelekomcloud_networking_subnet_v2} Resource.
 func NewNetworkingSubnetV2(scope constructs.Construct, id *string, config *NetworkingSubnetV2Config) NetworkingSubnetV2 {
 	_init_.Initialize()
 
@@ -641,7 +641,7 @@ func NewNetworkingSubnetV2(scope constructs.Construct, id *string, config *Netwo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/networking_subnet_v2 opentelekomcloud_networking_subnet_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/networking_subnet_v2 opentelekomcloud_networking_subnet_v2} Resource.
 func NewNetworkingSubnetV2_Override(n NetworkingSubnetV2, scope constructs.Construct, id *string, config *NetworkingSubnetV2Config) {
 	_init_.Initialize()
 

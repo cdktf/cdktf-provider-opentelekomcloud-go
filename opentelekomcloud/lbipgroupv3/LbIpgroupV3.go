@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3}.
 type LbIpgroupV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,6 +106,7 @@ type LbIpgroupV3 interface {
 	PutIpList(value interface{})
 	ResetDescription()
 	ResetId()
+	ResetIpList()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -417,7 +418,7 @@ func (j *jsiiProxy_LbIpgroupV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource.
 func NewLbIpgroupV3(scope constructs.Construct, id *string, config *LbIpgroupV3Config) LbIpgroupV3 {
 	_init_.Initialize()
 
@@ -435,7 +436,7 @@ func NewLbIpgroupV3(scope constructs.Construct, id *string, config *LbIpgroupV3C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource.
 func NewLbIpgroupV3_Override(l LbIpgroupV3, scope constructs.Construct, id *string, config *LbIpgroupV3Config) {
 	_init_.Initialize()
 
@@ -847,6 +848,14 @@ func (l *jsiiProxy_LbIpgroupV3) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbIpgroupV3) ResetIpList() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIpList",
 		nil, // no parameters
 	)
 }

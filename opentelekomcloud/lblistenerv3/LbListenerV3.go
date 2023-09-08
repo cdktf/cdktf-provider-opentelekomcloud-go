@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_listener_v3 opentelekomcloud_lb_listener_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_listener_v3 opentelekomcloud_lb_listener_v3}.
 type LbListenerV3 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -69,8 +69,8 @@ type LbListenerV3 interface {
 	IdInput() *string
 	InsertHeaders() LbListenerV3InsertHeadersOutputReference
 	InsertHeadersInput() *LbListenerV3InsertHeaders
-	IpGroup() LbListenerV3IpGroupOutputReference
-	IpGroupInput() *LbListenerV3IpGroup
+	IpGroup() LbListenerV3IpGroupList
+	IpGroupInput() interface{}
 	KeepAliveTimeout() *float64
 	SetKeepAliveTimeout(val *float64)
 	KeepAliveTimeoutInput() *float64
@@ -156,7 +156,7 @@ type LbListenerV3 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutInsertHeaders(value *LbListenerV3InsertHeaders)
-	PutIpGroup(value *LbListenerV3IpGroup)
+	PutIpGroup(value interface{})
 	ResetAdminStateUp()
 	ResetAdvancedForwarding()
 	ResetClientCaTlsContainerRef()
@@ -485,8 +485,8 @@ func (j *jsiiProxy_LbListenerV3) InsertHeadersInput() *LbListenerV3InsertHeaders
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerV3) IpGroup() LbListenerV3IpGroupOutputReference {
-	var returns LbListenerV3IpGroupOutputReference
+func (j *jsiiProxy_LbListenerV3) IpGroup() LbListenerV3IpGroupList {
+	var returns LbListenerV3IpGroupList
 	_jsii_.Get(
 		j,
 		"ipGroup",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_LbListenerV3) IpGroup() LbListenerV3IpGroupOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerV3) IpGroupInput() *LbListenerV3IpGroup {
-	var returns *LbListenerV3IpGroup
+func (j *jsiiProxy_LbListenerV3) IpGroupInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"ipGroupInput",
@@ -836,7 +836,7 @@ func (j *jsiiProxy_LbListenerV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_listener_v3 opentelekomcloud_lb_listener_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_listener_v3 opentelekomcloud_lb_listener_v3} Resource.
 func NewLbListenerV3(scope constructs.Construct, id *string, config *LbListenerV3Config) LbListenerV3 {
 	_init_.Initialize()
 
@@ -854,7 +854,7 @@ func NewLbListenerV3(scope constructs.Construct, id *string, config *LbListenerV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_listener_v3 opentelekomcloud_lb_listener_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_listener_v3 opentelekomcloud_lb_listener_v3} Resource.
 func NewLbListenerV3_Override(l LbListenerV3, scope constructs.Construct, id *string, config *LbListenerV3Config) {
 	_init_.Initialize()
 
@@ -1441,7 +1441,7 @@ func (l *jsiiProxy_LbListenerV3) PutInsertHeaders(value *LbListenerV3InsertHeade
 	)
 }
 
-func (l *jsiiProxy_LbListenerV3) PutIpGroup(value *LbListenerV3IpGroup) {
+func (l *jsiiProxy_LbListenerV3) PutIpGroup(value interface{}) {
 	if err := l.validatePutIpGroupParameters(value); err != nil {
 		panic(err)
 	}

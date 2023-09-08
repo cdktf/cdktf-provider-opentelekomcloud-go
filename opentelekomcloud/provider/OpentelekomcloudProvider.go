@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs opentelekomcloud}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs opentelekomcloud}.
 type OpentelekomcloudProvider interface {
 	cdktf.TerraformProvider
 	AccessKey() *string
@@ -30,6 +30,9 @@ type OpentelekomcloudProvider interface {
 	AuthUrl() *string
 	SetAuthUrl(val *string)
 	AuthUrlInput() *string
+	BackoffRetryTimeout() *float64
+	SetBackoffRetryTimeout(val *float64)
+	BackoffRetryTimeoutInput() *float64
 	CacertFile() *string
 	SetCacertFile(val *string)
 	CacertFileInput() *string
@@ -65,6 +68,9 @@ type OpentelekomcloudProvider interface {
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
+	MaxBackoffRetries() *float64
+	SetMaxBackoffRetries(val *float64)
+	MaxBackoffRetriesInput() *float64
 	MaxRetries() *float64
 	SetMaxRetries(val *float64)
 	MaxRetriesInput() *float64
@@ -123,6 +129,7 @@ type OpentelekomcloudProvider interface {
 	ResetAgencyName()
 	ResetAlias()
 	ResetAuthUrl()
+	ResetBackoffRetryTimeout()
 	ResetCacertFile()
 	ResetCert()
 	ResetCloud()
@@ -132,6 +139,7 @@ type OpentelekomcloudProvider interface {
 	ResetEndpointType()
 	ResetInsecure()
 	ResetKey()
+	ResetMaxBackoffRetries()
 	ResetMaxRetries()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -257,6 +265,26 @@ func (j *jsiiProxy_OpentelekomcloudProvider) AuthUrlInput() *string {
 	_jsii_.Get(
 		j,
 		"authUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpentelekomcloudProvider) BackoffRetryTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"backoffRetryTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpentelekomcloudProvider) BackoffRetryTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"backoffRetryTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +505,26 @@ func (j *jsiiProxy_OpentelekomcloudProvider) KeyInput() *string {
 	_jsii_.Get(
 		j,
 		"keyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpentelekomcloudProvider) MaxBackoffRetries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxBackoffRetries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpentelekomcloudProvider) MaxBackoffRetriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxBackoffRetriesInput",
 		&returns,
 	)
 	return returns
@@ -783,7 +831,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs opentelekomcloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs opentelekomcloud} Resource.
 func NewOpentelekomcloudProvider(scope constructs.Construct, id *string, config *OpentelekomcloudProviderConfig) OpentelekomcloudProvider {
 	_init_.Initialize()
 
@@ -801,7 +849,7 @@ func NewOpentelekomcloudProvider(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs opentelekomcloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs opentelekomcloud} Resource.
 func NewOpentelekomcloudProvider_Override(o OpentelekomcloudProvider, scope constructs.Construct, id *string, config *OpentelekomcloudProviderConfig) {
 	_init_.Initialize()
 
@@ -848,6 +896,14 @@ func (j *jsiiProxy_OpentelekomcloudProvider)SetAuthUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"authUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpentelekomcloudProvider)SetBackoffRetryTimeout(val *float64) {
+	_jsii_.Set(
+		j,
+		"backoffRetryTimeout",
 		val,
 	)
 }
@@ -923,6 +979,14 @@ func (j *jsiiProxy_OpentelekomcloudProvider)SetKey(val *string) {
 	_jsii_.Set(
 		j,
 		"key",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpentelekomcloudProvider)SetMaxBackoffRetries(val *float64) {
+	_jsii_.Set(
+		j,
+		"maxBackoffRetries",
 		val,
 	)
 }
@@ -1172,6 +1236,14 @@ func (o *jsiiProxy_OpentelekomcloudProvider) ResetAuthUrl() {
 	)
 }
 
+func (o *jsiiProxy_OpentelekomcloudProvider) ResetBackoffRetryTimeout() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBackoffRetryTimeout",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OpentelekomcloudProvider) ResetCacertFile() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1240,6 +1312,14 @@ func (o *jsiiProxy_OpentelekomcloudProvider) ResetKey() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpentelekomcloudProvider) ResetMaxBackoffRetries() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMaxBackoffRetries",
 		nil, // no parameters
 	)
 }
