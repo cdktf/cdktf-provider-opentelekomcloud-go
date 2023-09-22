@@ -87,6 +87,10 @@ func (j *jsiiProxy_SfsTurboShareV1) validateSetCryptKeyIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_SfsTurboShareV1) validateSetEnhancedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfsTurboShareV1) validateSetIdParameters(val *string) error {
 	return nil
 }

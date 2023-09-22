@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
 type SfsTurboShareV1 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -38,6 +38,10 @@ type SfsTurboShareV1 interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Enhanced() interface{}
+	SetEnhanced(val interface{})
+	EnhancedInput() interface{}
+	ExpandType() *string
 	ExportLocation() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -126,6 +130,7 @@ type SfsTurboShareV1 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *SfsTurboShareV1Timeouts)
 	ResetCryptKeyId()
+	ResetEnhanced()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -244,6 +249,36 @@ func (j *jsiiProxy_SfsTurboShareV1) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfsTurboShareV1) Enhanced() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enhanced",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfsTurboShareV1) EnhancedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enhancedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfsTurboShareV1) ExpandType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expandType",
 		&returns,
 	)
 	return returns
@@ -580,7 +615,7 @@ func (j *jsiiProxy_SfsTurboShareV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1} Resource.
 func NewSfsTurboShareV1(scope constructs.Construct, id *string, config *SfsTurboShareV1Config) SfsTurboShareV1 {
 	_init_.Initialize()
 
@@ -598,7 +633,7 @@ func NewSfsTurboShareV1(scope constructs.Construct, id *string, config *SfsTurbo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1} Resource.
 func NewSfsTurboShareV1_Override(s SfsTurboShareV1, scope constructs.Construct, id *string, config *SfsTurboShareV1Config) {
 	_init_.Initialize()
 
@@ -657,6 +692,17 @@ func (j *jsiiProxy_SfsTurboShareV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SfsTurboShareV1)SetEnhanced(val interface{}) {
+	if err := j.validateSetEnhancedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enhanced",
 		val,
 	)
 }
@@ -1079,6 +1125,14 @@ func (s *jsiiProxy_SfsTurboShareV1) ResetCryptKeyId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCryptKeyId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SfsTurboShareV1) ResetEnhanced() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnhanced",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/css_snapshot_configuration_v1 opentelekomcloud_css_snapshot_configuration_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/css_snapshot_configuration_v1 opentelekomcloud_css_snapshot_configuration_v1}.
 type CssSnapshotConfigurationV1 interface {
 	cdktf.TerraformResource
 	Automatic() interface{}
@@ -419,7 +419,7 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/css_snapshot_configuration_v1 opentelekomcloud_css_snapshot_configuration_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/css_snapshot_configuration_v1 opentelekomcloud_css_snapshot_configuration_v1} Resource.
 func NewCssSnapshotConfigurationV1(scope constructs.Construct, id *string, config *CssSnapshotConfigurationV1Config) CssSnapshotConfigurationV1 {
 	_init_.Initialize()
 
@@ -437,7 +437,7 @@ func NewCssSnapshotConfigurationV1(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/css_snapshot_configuration_v1 opentelekomcloud_css_snapshot_configuration_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/css_snapshot_configuration_v1 opentelekomcloud_css_snapshot_configuration_v1} Resource.
 func NewCssSnapshotConfigurationV1_Override(c CssSnapshotConfigurationV1, scope constructs.Construct, id *string, config *CssSnapshotConfigurationV1Config) {
 	_init_.Initialize()
 

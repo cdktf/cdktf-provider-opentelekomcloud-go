@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_dedicated_data_masking_rule_v1 opentelekomcloud_waf_dedicated_data_masking_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_data_masking_rule_v1 opentelekomcloud_waf_dedicated_data_masking_rule_v1}.
 type WafDedicatedDataMaskingRuleV1 interface {
 	cdktf.TerraformResource
 	Category() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_WafDedicatedDataMaskingRuleV1) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_dedicated_data_masking_rule_v1 opentelekomcloud_waf_dedicated_data_masking_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_data_masking_rule_v1 opentelekomcloud_waf_dedicated_data_masking_rule_v1} Resource.
 func NewWafDedicatedDataMaskingRuleV1(scope constructs.Construct, id *string, config *WafDedicatedDataMaskingRuleV1Config) WafDedicatedDataMaskingRuleV1 {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewWafDedicatedDataMaskingRuleV1(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_dedicated_data_masking_rule_v1 opentelekomcloud_waf_dedicated_data_masking_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_data_masking_rule_v1 opentelekomcloud_waf_dedicated_data_masking_rule_v1} Resource.
 func NewWafDedicatedDataMaskingRuleV1_Override(w WafDedicatedDataMaskingRuleV1, scope constructs.Construct, id *string, config *WafDedicatedDataMaskingRuleV1Config) {
 	_init_.Initialize()
 

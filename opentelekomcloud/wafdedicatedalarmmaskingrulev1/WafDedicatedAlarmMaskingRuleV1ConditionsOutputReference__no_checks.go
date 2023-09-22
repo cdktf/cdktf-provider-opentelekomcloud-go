@@ -1,0 +1,93 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package wafdedicatedalarmmaskingrulev1
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateSetCategoryParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateSetContentsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateSetIndexParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateSetLogicOperationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewWafDedicatedAlarmMaskingRuleV1ConditionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

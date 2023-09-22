@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_dedicated_instance_v1 opentelekomcloud_waf_dedicated_instance_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_instance_v1 opentelekomcloud_waf_dedicated_instance_v1}.
 type WafDedicatedInstanceV1 interface {
 	cdktf.TerraformResource
 	AccessStatus() *float64
@@ -599,7 +599,7 @@ func (j *jsiiProxy_WafDedicatedInstanceV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_dedicated_instance_v1 opentelekomcloud_waf_dedicated_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_instance_v1 opentelekomcloud_waf_dedicated_instance_v1} Resource.
 func NewWafDedicatedInstanceV1(scope constructs.Construct, id *string, config *WafDedicatedInstanceV1Config) WafDedicatedInstanceV1 {
 	_init_.Initialize()
 
@@ -617,7 +617,7 @@ func NewWafDedicatedInstanceV1(scope constructs.Construct, id *string, config *W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_dedicated_instance_v1 opentelekomcloud_waf_dedicated_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_instance_v1 opentelekomcloud_waf_dedicated_instance_v1} Resource.
 func NewWafDedicatedInstanceV1_Override(w WafDedicatedInstanceV1, scope constructs.Construct, id *string, config *WafDedicatedInstanceV1Config) {
 	_init_.Initialize()
 

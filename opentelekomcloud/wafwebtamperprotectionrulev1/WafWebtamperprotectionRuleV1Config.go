@@ -22,20 +22,20 @@ type WafWebtamperprotectionRuleV1Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_webtamperprotection_rule_v1#hostname WafWebtamperprotectionRuleV1#hostname}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_webtamperprotection_rule_v1#hostname WafWebtamperprotectionRuleV1#hostname}.
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_webtamperprotection_rule_v1#policy_id WafWebtamperprotectionRuleV1#policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_webtamperprotection_rule_v1#policy_id WafWebtamperprotectionRuleV1#policy_id}.
 	PolicyId *string `field:"required" json:"policyId" yaml:"policyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_webtamperprotection_rule_v1#url WafWebtamperprotectionRuleV1#url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_webtamperprotection_rule_v1#url WafWebtamperprotectionRuleV1#url}.
 	Url *string `field:"required" json:"url" yaml:"url"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_webtamperprotection_rule_v1#id WafWebtamperprotectionRuleV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_webtamperprotection_rule_v1#id WafWebtamperprotectionRuleV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_webtamperprotection_rule_v1#timeouts WafWebtamperprotectionRuleV1#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_webtamperprotection_rule_v1#timeouts WafWebtamperprotectionRuleV1#timeouts}
 	Timeouts *WafWebtamperprotectionRuleV1Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
