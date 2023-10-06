@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2}.
 type DisStreamV2 interface {
 	cdktf.TerraformResource
 	AutoScaleMaxPartitionCount() *float64
@@ -593,7 +593,7 @@ func (j *jsiiProxy_DisStreamV2) WritablePartitionCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2} Resource.
 func NewDisStreamV2(scope constructs.Construct, id *string, config *DisStreamV2Config) DisStreamV2 {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewDisStreamV2(scope constructs.Construct, id *string, config *DisStreamV2C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2} Resource.
 func NewDisStreamV2_Override(d DisStreamV2, scope constructs.Construct, id *string, config *DisStreamV2Config) {
 	_init_.Initialize()
 

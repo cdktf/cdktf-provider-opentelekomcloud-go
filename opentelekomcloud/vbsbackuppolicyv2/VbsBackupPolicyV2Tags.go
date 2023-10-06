@@ -5,9 +5,9 @@ package vbsbackuppolicyv2
 
 
 type VbsBackupPolicyV2Tags struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/vbs_backup_policy_v2#key VbsBackupPolicyV2#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vbs_backup_policy_v2#key VbsBackupPolicyV2#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/vbs_backup_policy_v2#value VbsBackupPolicyV2#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vbs_backup_policy_v2#value VbsBackupPolicyV2#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

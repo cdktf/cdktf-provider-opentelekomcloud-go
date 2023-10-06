@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_precise_protection_rule_v1 opentelekomcloud_waf_dedicated_precise_protection_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_precise_protection_rule_v1 opentelekomcloud_waf_dedicated_precise_protection_rule_v1}.
 type WafDedicatedPreciseProtectionRuleV1 interface {
 	cdktf.TerraformResource
 	Action() WafDedicatedPreciseProtectionRuleV1ActionList
@@ -523,7 +523,7 @@ func (j *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_precise_protection_rule_v1 opentelekomcloud_waf_dedicated_precise_protection_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_precise_protection_rule_v1 opentelekomcloud_waf_dedicated_precise_protection_rule_v1} Resource.
 func NewWafDedicatedPreciseProtectionRuleV1(scope constructs.Construct, id *string, config *WafDedicatedPreciseProtectionRuleV1Config) WafDedicatedPreciseProtectionRuleV1 {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewWafDedicatedPreciseProtectionRuleV1(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_precise_protection_rule_v1 opentelekomcloud_waf_dedicated_precise_protection_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_precise_protection_rule_v1 opentelekomcloud_waf_dedicated_precise_protection_rule_v1} Resource.
 func NewWafDedicatedPreciseProtectionRuleV1_Override(w WafDedicatedPreciseProtectionRuleV1, scope constructs.Construct, id *string, config *WafDedicatedPreciseProtectionRuleV1Config) {
 	_init_.Initialize()
 

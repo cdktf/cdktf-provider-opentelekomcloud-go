@@ -55,6 +55,10 @@ func (l *jsiiProxy_LbListenerV2) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (l *jsiiProxy_LbListenerV2) validatePutIpGroupParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbListenerV2) validatePutTimeoutsParameters(value *LbListenerV2Timeouts) error {
 	return nil
 }
