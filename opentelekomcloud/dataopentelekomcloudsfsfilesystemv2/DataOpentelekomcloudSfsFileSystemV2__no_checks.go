@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudSfsFileSystemV2) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataOpentelekomcloudSfsFileSystemV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudSfsFileSystemV2_IsConstructParameters(x interface{}) error {
 	return nil
 }

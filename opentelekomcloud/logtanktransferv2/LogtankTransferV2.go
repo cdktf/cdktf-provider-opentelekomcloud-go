@@ -5,10 +5,10 @@ package logtanktransferv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/logtanktransferv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/logtanktransferv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -98,6 +98,9 @@ type LogtankTransferV2 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -119,7 +122,12 @@ type LogtankTransferV2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -783,6 +791,25 @@ func (j *jsiiProxy_LogtankTransferV2)SetSwitchOn(val interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a LogtankTransferV2 resource upon running "cdktf plan <stack-name>".
+func LogtankTransferV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateLogtankTransferV2_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -865,6 +892,17 @@ func LogtankTransferV2_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (l *jsiiProxy_LogtankTransferV2) AddMoveTarget(moveTarget *string) {
+	if err := l.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (l *jsiiProxy_LogtankTransferV2) AddOverride(path *string, value interface{}) {
@@ -1022,6 +1060,17 @@ func (l *jsiiProxy_LogtankTransferV2) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (l *jsiiProxy_LogtankTransferV2) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := l.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (l *jsiiProxy_LogtankTransferV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1036,6 +1085,17 @@ func (l *jsiiProxy_LogtankTransferV2) InterpolationForAttribute(terraformAttribu
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LogtankTransferV2) MoveTo(moveTarget *string, index interface{}) {
+	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (l *jsiiProxy_LogtankTransferV2) OverrideLogicalId(newLogicalId *string) {

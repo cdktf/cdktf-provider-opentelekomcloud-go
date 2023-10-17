@@ -7,6 +7,10 @@ package networkingsubnetv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkingSubnetV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkingSubnetV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkingSubnetV2) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (n *jsiiProxy_NetworkingSubnetV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkingSubnetV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkingSubnetV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (n *jsiiProxy_NetworkingSubnetV2) validatePutHostRoutesParameters(value int
 }
 
 func (n *jsiiProxy_NetworkingSubnetV2) validatePutTimeoutsParameters(value *NetworkingSubnetV2Timeouts) error {
+	return nil
+}
+
+func validateNetworkingSubnetV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

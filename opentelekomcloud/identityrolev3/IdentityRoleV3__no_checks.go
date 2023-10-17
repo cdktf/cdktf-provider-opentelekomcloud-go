@@ -7,6 +7,10 @@ package identityrolev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IdentityRoleV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityRoleV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IdentityRoleV3) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (i *jsiiProxy_IdentityRoleV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityRoleV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityRoleV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IdentityRoleV3) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (i *jsiiProxy_IdentityRoleV3) validatePutStatementParameters(value interface{}) error {
+	return nil
+}
+
+func validateIdentityRoleV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

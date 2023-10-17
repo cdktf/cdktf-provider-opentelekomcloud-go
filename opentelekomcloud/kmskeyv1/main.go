@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.kmsKeyV1.KmsKeyV1",
 		reflect.TypeOf((*KmsKeyV1)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowCancelDeletion", GoGetter: "AllowCancelDeletion"},
 			_jsii_.MemberProperty{JsiiProperty: "allowCancelDeletionInput", GoGetter: "AllowCancelDeletionInput"},
@@ -40,6 +41,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isEnabled", GoGetter: "IsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "isEnabledInput", GoGetter: "IsEnabledInput"},
@@ -48,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyDescription", GoGetter: "KeyDescription"},
 			_jsii_.MemberProperty{JsiiProperty: "keyDescriptionInput", GoGetter: "KeyDescriptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "origin", GoGetter: "Origin"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},

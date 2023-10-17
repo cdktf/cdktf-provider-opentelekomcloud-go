@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.lbPoolV2.LbPoolV2",
 		reflect.TypeOf((*LbPoolV2)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "adminStateUp", GoGetter: "AdminStateUp"},
 			_jsii_.MemberProperty{JsiiProperty: "adminStateUpInput", GoGetter: "AdminStateUpInput"},
@@ -38,6 +39,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lbMethod", GoGetter: "LbMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "lbMethodInput", GoGetter: "LbMethodInput"},
@@ -46,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "listenerIdInput", GoGetter: "ListenerIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "loadbalancerId", GoGetter: "LoadbalancerId"},
 			_jsii_.MemberProperty{JsiiProperty: "loadbalancerIdInput", GoGetter: "LoadbalancerIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

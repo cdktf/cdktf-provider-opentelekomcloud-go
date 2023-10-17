@@ -5,10 +5,10 @@ package dnsrecordsetv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dnsrecordsetv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dnsrecordsetv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -94,6 +94,9 @@ type DnsRecordsetV2 interface {
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -115,7 +118,12 @@ type DnsRecordsetV2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -743,6 +751,25 @@ func (j *jsiiProxy_DnsRecordsetV2)SetZoneId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a DnsRecordsetV2 resource upon running "cdktf plan <stack-name>".
+func DnsRecordsetV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDnsRecordsetV2_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -825,6 +852,17 @@ func DnsRecordsetV2_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DnsRecordsetV2) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DnsRecordsetV2) AddOverride(path *string, value interface{}) {
@@ -982,6 +1020,17 @@ func (d *jsiiProxy_DnsRecordsetV2) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (d *jsiiProxy_DnsRecordsetV2) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DnsRecordsetV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -996,6 +1045,17 @@ func (d *jsiiProxy_DnsRecordsetV2) InterpolationForAttribute(terraformAttribute 
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DnsRecordsetV2) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DnsRecordsetV2) OverrideLogicalId(newLogicalId *string) {

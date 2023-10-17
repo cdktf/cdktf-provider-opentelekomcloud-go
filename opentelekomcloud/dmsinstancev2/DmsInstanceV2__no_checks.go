@@ -7,6 +7,10 @@ package dmsinstancev2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DmsInstanceV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsInstanceV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DmsInstanceV2) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DmsInstanceV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsInstanceV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsInstanceV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DmsInstanceV2) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (d *jsiiProxy_DmsInstanceV2) validatePutTimeoutsParameters(value *DmsInstanceV2Timeouts) error {
+	return nil
+}
+
+func validateDmsInstanceV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

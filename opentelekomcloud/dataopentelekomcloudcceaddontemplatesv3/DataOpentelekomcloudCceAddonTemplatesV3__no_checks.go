@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3) validateOverrideLogi
 	return nil
 }
 
+func validateDataOpentelekomcloudCceAddonTemplatesV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudCceAddonTemplatesV3_IsConstructParameters(x interface{}) error {
 	return nil
 }

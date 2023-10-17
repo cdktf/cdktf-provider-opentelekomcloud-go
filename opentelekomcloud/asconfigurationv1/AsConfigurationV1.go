@@ -5,10 +5,10 @@ package asconfigurationv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/asconfigurationv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/asconfigurationv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -72,6 +72,9 @@ type AsConfigurationV1 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -93,7 +96,12 @@ type AsConfigurationV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -489,6 +497,25 @@ func (j *jsiiProxy_AsConfigurationV1)SetScalingConfigurationName(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a AsConfigurationV1 resource upon running "cdktf plan <stack-name>".
+func AsConfigurationV1_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateAsConfigurationV1_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -571,6 +598,17 @@ func AsConfigurationV1_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (a *jsiiProxy_AsConfigurationV1) AddMoveTarget(moveTarget *string) {
+	if err := a.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (a *jsiiProxy_AsConfigurationV1) AddOverride(path *string, value interface{}) {
@@ -728,6 +766,17 @@ func (a *jsiiProxy_AsConfigurationV1) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (a *jsiiProxy_AsConfigurationV1) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := a.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (a *jsiiProxy_AsConfigurationV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -742,6 +791,17 @@ func (a *jsiiProxy_AsConfigurationV1) InterpolationForAttribute(terraformAttribu
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AsConfigurationV1) MoveTo(moveTarget *string, index interface{}) {
+	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (a *jsiiProxy_AsConfigurationV1) OverrideLogicalId(newLogicalId *string) {

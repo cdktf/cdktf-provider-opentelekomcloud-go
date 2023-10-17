@@ -7,6 +7,10 @@ package wafdedicatedpreciseprotectionrulev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) validateGetStringMapAttr
 	return nil
 }
 
+func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) validatePutConditionsPar
 }
 
 func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) validatePutTimeoutsParameters(value *WafDedicatedPreciseProtectionRuleV1Timeouts) error {
+	return nil
+}
+
+func validateWafDedicatedPreciseProtectionRuleV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

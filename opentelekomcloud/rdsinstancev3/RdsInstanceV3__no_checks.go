@@ -7,6 +7,10 @@ package rdsinstancev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RdsInstanceV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsInstanceV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RdsInstanceV3) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (r *jsiiProxy_RdsInstanceV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsInstanceV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsInstanceV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (r *jsiiProxy_RdsInstanceV3) validatePutTimeoutsParameters(value *RdsInstan
 }
 
 func (r *jsiiProxy_RdsInstanceV3) validatePutVolumeParameters(value *RdsInstanceV3Volume) error {
+	return nil
+}
+
+func validateRdsInstanceV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

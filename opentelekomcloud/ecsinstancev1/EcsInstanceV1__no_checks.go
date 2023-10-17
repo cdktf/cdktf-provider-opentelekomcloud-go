@@ -7,6 +7,10 @@ package ecsinstancev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EcsInstanceV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsInstanceV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EcsInstanceV1) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (e *jsiiProxy_EcsInstanceV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsInstanceV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsInstanceV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (e *jsiiProxy_EcsInstanceV1) validatePutNicsParameters(value interface{}) e
 }
 
 func (e *jsiiProxy_EcsInstanceV1) validatePutTimeoutsParameters(value *EcsInstanceV1Timeouts) error {
+	return nil
+}
+
+func validateEcsInstanceV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package identitymappingv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IdentityMappingV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityMappingV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IdentityMappingV3) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (i *jsiiProxy_IdentityMappingV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityMappingV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IdentityMappingV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityMappingV3) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIdentityMappingV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

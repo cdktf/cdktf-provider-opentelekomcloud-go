@@ -7,6 +7,10 @@ package vpnaasendpointgroupv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpnaasEndpointGroupV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnaasEndpointGroupV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpnaasEndpointGroupV2) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (v *jsiiProxy_VpnaasEndpointGroupV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnaasEndpointGroupV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpnaasEndpointGroupV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VpnaasEndpointGroupV2) validateOverrideLogicalIdParameters(ne
 }
 
 func (v *jsiiProxy_VpnaasEndpointGroupV2) validatePutTimeoutsParameters(value *VpnaasEndpointGroupV2Timeouts) error {
+	return nil
+}
+
+func validateVpnaasEndpointGroupV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

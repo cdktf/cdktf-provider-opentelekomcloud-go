@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.lbListenerV3.LbListenerV3",
 		reflect.TypeOf((*LbListenerV3)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "adminStateUp", GoGetter: "AdminStateUp"},
 			_jsii_.MemberProperty{JsiiProperty: "adminStateUpInput", GoGetter: "AdminStateUpInput"},
@@ -51,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "http2EnableInput", GoGetter: "Http2EnableInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "insertHeaders", GoGetter: "InsertHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "insertHeadersInput", GoGetter: "InsertHeadersInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -65,6 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "memberRetryEnableInput", GoGetter: "MemberRetryEnableInput"},
 			_jsii_.MemberProperty{JsiiProperty: "memberTimeout", GoGetter: "MemberTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "memberTimeoutInput", GoGetter: "MemberTimeoutInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

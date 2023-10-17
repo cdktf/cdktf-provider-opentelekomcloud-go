@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataOpentelekomcloudVpcBandwidthV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudVpcBandwidthV2_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudImagesImageV2) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataOpentelekomcloudImagesImageV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudImagesImageV2_IsConstructParameters(x interface{}) error {
 	return nil
 }

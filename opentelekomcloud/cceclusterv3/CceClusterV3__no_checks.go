@@ -7,6 +7,10 @@ package cceclusterv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CceClusterV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CceClusterV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CceClusterV3) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (c *jsiiProxy_CceClusterV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CceClusterV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CceClusterV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CceClusterV3) validatePutAuthenticatingProxyParameters(value 
 }
 
 func (c *jsiiProxy_CceClusterV3) validatePutTimeoutsParameters(value *CceClusterV3Timeouts) error {
+	return nil
+}
+
+func validateCceClusterV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3",
 		reflect.TypeOf((*CceClusterV3)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -92,6 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ignoreCertificateClustersDataInput", GoGetter: "IgnoreCertificateClustersDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreCertificateUsersData", GoGetter: "IgnoreCertificateUsersData"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreCertificateUsersDataInput", GoGetter: "IgnoreCertificateUsersDataInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "installedAddons", GoGetter: "InstalledAddons"},
 			_jsii_.MemberProperty{JsiiProperty: "internal", GoGetter: "Internal"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -102,6 +104,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "multiAz", GoGetter: "MultiAz"},
 			_jsii_.MemberProperty{JsiiProperty: "multiAzInput", GoGetter: "MultiAzInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},

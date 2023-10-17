@@ -7,6 +7,10 @@ package aspolicyv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AsPolicyV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AsPolicyV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AsPolicyV2) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (a *jsiiProxy_AsPolicyV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AsPolicyV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AsPolicyV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AsPolicyV2) validatePutScalingPolicyActionParameters(value in
 }
 
 func (a *jsiiProxy_AsPolicyV2) validatePutScheduledPolicyParameters(value interface{}) error {
+	return nil
+}
+
+func validateAsPolicyV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

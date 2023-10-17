@@ -7,6 +7,10 @@ package obsbucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_ObsBucket) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObsBucket) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_ObsBucket) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (o *jsiiProxy_ObsBucket) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObsBucket) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObsBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (o *jsiiProxy_ObsBucket) validatePutServerSideEncryptionParameters(value *O
 }
 
 func (o *jsiiProxy_ObsBucket) validatePutWebsiteParameters(value *ObsBucketWebsite) error {
+	return nil
+}
+
+func validateObsBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

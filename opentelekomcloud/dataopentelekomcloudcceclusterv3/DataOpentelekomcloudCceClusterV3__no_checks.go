@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudCceClusterV3) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataOpentelekomcloudCceClusterV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudCceClusterV3_IsConstructParameters(x interface{}) error {
 	return nil
 }

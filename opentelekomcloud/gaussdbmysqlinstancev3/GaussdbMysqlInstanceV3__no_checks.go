@@ -7,6 +7,10 @@ package gaussdbmysqlinstancev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GaussdbMysqlInstanceV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GaussdbMysqlInstanceV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GaussdbMysqlInstanceV3) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GaussdbMysqlInstanceV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GaussdbMysqlInstanceV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GaussdbMysqlInstanceV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GaussdbMysqlInstanceV3) validatePutDatastoreParameters(value 
 }
 
 func (g *jsiiProxy_GaussdbMysqlInstanceV3) validatePutTimeoutsParameters(value *GaussdbMysqlInstanceV3Timeouts) error {
+	return nil
+}
+
+func validateGaussdbMysqlInstanceV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

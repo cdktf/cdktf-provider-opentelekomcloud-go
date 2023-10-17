@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudAntiddosV1) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataOpentelekomcloudAntiddosV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudAntiddosV1_IsConstructParameters(x interface{}) error {
 	return nil
 }

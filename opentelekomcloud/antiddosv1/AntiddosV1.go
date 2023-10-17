@@ -5,10 +5,10 @@ package antiddosv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/antiddosv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/antiddosv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -87,6 +87,9 @@ type AntiddosV1 interface {
 	TrafficPosId() *float64
 	SetTrafficPosId(val *float64)
 	TrafficPosIdInput() *float64
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -108,7 +111,12 @@ type AntiddosV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -660,6 +668,25 @@ func (j *jsiiProxy_AntiddosV1)SetTrafficPosId(val *float64) {
 	)
 }
 
+// Generates CDKTF code for importing a AntiddosV1 resource upon running "cdktf plan <stack-name>".
+func AntiddosV1_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateAntiddosV1_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-opentelekomcloud.antiddosV1.AntiddosV1",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -742,6 +769,17 @@ func AntiddosV1_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (a *jsiiProxy_AntiddosV1) AddMoveTarget(moveTarget *string) {
+	if err := a.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (a *jsiiProxy_AntiddosV1) AddOverride(path *string, value interface{}) {
@@ -899,6 +937,17 @@ func (a *jsiiProxy_AntiddosV1) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (a *jsiiProxy_AntiddosV1) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := a.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (a *jsiiProxy_AntiddosV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -913,6 +962,17 @@ func (a *jsiiProxy_AntiddosV1) InterpolationForAttribute(terraformAttribute *str
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AntiddosV1) MoveTo(moveTarget *string, index interface{}) {
+	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (a *jsiiProxy_AntiddosV1) OverrideLogicalId(newLogicalId *string) {

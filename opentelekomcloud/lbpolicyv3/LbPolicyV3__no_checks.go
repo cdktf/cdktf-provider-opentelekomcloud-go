@@ -7,6 +7,10 @@ package lbpolicyv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbPolicyV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbPolicyV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LbPolicyV3) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (l *jsiiProxy_LbPolicyV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbPolicyV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbPolicyV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (l *jsiiProxy_LbPolicyV3) validatePutRedirectUrlConfigParameters(value *LbP
 }
 
 func (l *jsiiProxy_LbPolicyV3) validatePutRulesParameters(value interface{}) error {
+	return nil
+}
+
+func validateLbPolicyV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

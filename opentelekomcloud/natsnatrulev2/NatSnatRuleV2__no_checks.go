@@ -7,6 +7,10 @@ package natsnatrulev2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NatSnatRuleV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NatSnatRuleV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NatSnatRuleV2) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (n *jsiiProxy_NatSnatRuleV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NatSnatRuleV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NatSnatRuleV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NatSnatRuleV2) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (n *jsiiProxy_NatSnatRuleV2) validatePutTimeoutsParameters(value *NatSnatRuleV2Timeouts) error {
+	return nil
+}
+
+func validateNatSnatRuleV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

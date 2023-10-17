@@ -7,6 +7,10 @@ package antiddosv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AntiddosV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AntiddosV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AntiddosV1) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (a *jsiiProxy_AntiddosV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AntiddosV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AntiddosV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AntiddosV1) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (a *jsiiProxy_AntiddosV1) validatePutTimeoutsParameters(value *AntiddosV1Timeouts) error {
+	return nil
+}
+
+func validateAntiddosV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

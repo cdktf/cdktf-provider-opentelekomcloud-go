@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudComputeBmsFlavorsV2) validateOverrideLogi
 	return nil
 }
 
+func validateDataOpentelekomcloudComputeBmsFlavorsV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudComputeBmsFlavorsV2_IsConstructParameters(x interface{}) error {
 	return nil
 }

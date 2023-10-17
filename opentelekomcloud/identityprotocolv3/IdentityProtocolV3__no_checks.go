@@ -7,6 +7,10 @@ package identityprotocolv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IdentityProtocolV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityProtocolV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IdentityProtocolV3) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (i *jsiiProxy_IdentityProtocolV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityProtocolV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityProtocolV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_IdentityProtocolV3) validatePutAccessConfigParameters(value *
 }
 
 func (i *jsiiProxy_IdentityProtocolV3) validatePutMetadataParameters(value *IdentityProtocolV3Metadata) error {
+	return nil
+}
+
+func validateIdentityProtocolV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

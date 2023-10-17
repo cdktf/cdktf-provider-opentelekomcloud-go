@@ -5,10 +5,10 @@ package dataopentelekomcloudidentityprojectsv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentityprojectsv3/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentityprojectsv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -367,6 +367,25 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityProjectsV3)SetProvider(val cdktf.
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataOpentelekomcloudIdentityProjectsV3 resource upon running "cdktf plan <stack-name>".
+func DataOpentelekomcloudIdentityProjectsV3_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataOpentelekomcloudIdentityProjectsV3_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

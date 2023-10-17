@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudVpnaasServiceV2) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataOpentelekomcloudVpnaasServiceV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudVpnaasServiceV2_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package sfsturbosharev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SfsTurboShareV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SfsTurboShareV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SfsTurboShareV1) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (s *jsiiProxy_SfsTurboShareV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SfsTurboShareV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SfsTurboShareV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SfsTurboShareV1) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) validatePutTimeoutsParameters(value *SfsTurboShareV1Timeouts) error {
+	return nil
+}
+
+func validateSfsTurboShareV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

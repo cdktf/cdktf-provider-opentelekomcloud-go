@@ -7,6 +7,10 @@ package obsbucketpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_ObsBucketPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObsBucketPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (o *jsiiProxy_ObsBucketPolicy) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (o *jsiiProxy_ObsBucketPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObsBucketPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_ObsBucketPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObsBucketPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateObsBucketPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

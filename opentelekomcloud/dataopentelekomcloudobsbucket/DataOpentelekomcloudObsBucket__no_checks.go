@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucket) validateOverrideLogicalIdParam
 	return nil
 }
 
+func validateDataOpentelekomcloudObsBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudObsBucket_IsConstructParameters(x interface{}) error {
 	return nil
 }

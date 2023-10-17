@@ -5,10 +5,10 @@ package dataopentelekomcloudnetworkingsecgroupruleidsv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudnetworkingsecgroupruleidsv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupruleidsv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -425,6 +425,25 @@ func (j *jsiiProxy_DataOpentelekomcloudNetworkingSecgroupRuleIdsV2)SetSecurityGr
 		"securityGroupId",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataOpentelekomcloudNetworkingSecgroupRuleIdsV2 resource upon running "cdktf plan <stack-name>".
+func DataOpentelekomcloudNetworkingSecgroupRuleIdsV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataOpentelekomcloudNetworkingSecgroupRuleIdsV2_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

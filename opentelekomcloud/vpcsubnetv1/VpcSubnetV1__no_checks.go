@@ -7,6 +7,10 @@ package vpcsubnetv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcSubnetV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcSubnetV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpcSubnetV1) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (v *jsiiProxy_VpcSubnetV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcSubnetV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcSubnetV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VpcSubnetV1) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (v *jsiiProxy_VpcSubnetV1) validatePutTimeoutsParameters(value *VpcSubnetV1Timeouts) error {
+	return nil
+}
+
+func validateVpcSubnetV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

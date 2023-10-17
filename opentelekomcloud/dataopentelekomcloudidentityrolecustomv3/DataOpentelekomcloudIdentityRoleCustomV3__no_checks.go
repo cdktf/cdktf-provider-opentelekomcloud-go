@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3) validateOverrideLog
 	return nil
 }
 
+func validateDataOpentelekomcloudIdentityRoleCustomV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudIdentityRoleCustomV3_IsConstructParameters(x interface{}) error {
 	return nil
 }

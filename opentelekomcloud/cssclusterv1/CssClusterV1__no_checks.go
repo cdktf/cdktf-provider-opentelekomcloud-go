@@ -7,6 +7,10 @@ package cssclusterv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CssClusterV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CssClusterV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CssClusterV1) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (c *jsiiProxy_CssClusterV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CssClusterV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CssClusterV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CssClusterV1) validatePutNodeConfigParameters(value *CssClust
 }
 
 func (c *jsiiProxy_CssClusterV1) validatePutTimeoutsParameters(value *CssClusterV1Timeouts) error {
+	return nil
+}
+
+func validateCssClusterV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

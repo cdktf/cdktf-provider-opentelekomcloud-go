@@ -7,6 +7,10 @@ package lbcertificatev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbCertificateV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbCertificateV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LbCertificateV3) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (l *jsiiProxy_LbCertificateV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbCertificateV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LbCertificateV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbCertificateV3) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLbCertificateV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

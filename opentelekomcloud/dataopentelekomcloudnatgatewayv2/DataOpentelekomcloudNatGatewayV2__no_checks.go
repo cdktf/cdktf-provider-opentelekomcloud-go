@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudNatGatewayV2) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataOpentelekomcloudNatGatewayV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudNatGatewayV2_IsConstructParameters(x interface{}) error {
 	return nil
 }

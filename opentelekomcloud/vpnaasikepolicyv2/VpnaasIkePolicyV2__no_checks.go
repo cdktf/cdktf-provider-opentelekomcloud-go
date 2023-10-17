@@ -7,6 +7,10 @@ package vpnaasikepolicyv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpnaasIkePolicyV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnaasIkePolicyV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpnaasIkePolicyV2) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (v *jsiiProxy_VpnaasIkePolicyV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnaasIkePolicyV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpnaasIkePolicyV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VpnaasIkePolicyV2) validatePutLifetimeParameters(value interf
 }
 
 func (v *jsiiProxy_VpnaasIkePolicyV2) validatePutTimeoutsParameters(value *VpnaasIkePolicyV2Timeouts) error {
+	return nil
+}
+
+func validateVpnaasIkePolicyV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package fwfirewallgroupv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FwFirewallGroupV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FwFirewallGroupV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FwFirewallGroupV2) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (f *jsiiProxy_FwFirewallGroupV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FwFirewallGroupV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FwFirewallGroupV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (f *jsiiProxy_FwFirewallGroupV2) validateOverrideLogicalIdParameters(newLog
 }
 
 func (f *jsiiProxy_FwFirewallGroupV2) validatePutTimeoutsParameters(value *FwFirewallGroupV2Timeouts) error {
+	return nil
+}
+
+func validateFwFirewallGroupV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

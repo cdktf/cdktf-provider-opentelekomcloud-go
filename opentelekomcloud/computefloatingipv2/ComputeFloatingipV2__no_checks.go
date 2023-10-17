@@ -7,6 +7,10 @@ package computefloatingipv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeFloatingipV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFloatingipV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_ComputeFloatingipV2) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ComputeFloatingipV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFloatingipV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_ComputeFloatingipV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFloatingipV2) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateComputeFloatingipV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

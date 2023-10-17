@@ -7,6 +7,10 @@ package vpceipv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcEipV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEipV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpcEipV1) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (v *jsiiProxy_VpcEipV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEipV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEipV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (v *jsiiProxy_VpcEipV1) validatePutPublicipParameters(value *VpcEipV1Public
 }
 
 func (v *jsiiProxy_VpcEipV1) validatePutTimeoutsParameters(value *VpcEipV1Timeouts) error {
+	return nil
+}
+
+func validateVpcEipV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

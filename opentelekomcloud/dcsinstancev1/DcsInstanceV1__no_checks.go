@@ -7,6 +7,10 @@ package dcsinstancev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DcsInstanceV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DcsInstanceV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DcsInstanceV1) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DcsInstanceV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DcsInstanceV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DcsInstanceV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (d *jsiiProxy_DcsInstanceV1) validatePutTimeoutsParameters(value *DcsInstan
 }
 
 func (d *jsiiProxy_DcsInstanceV1) validatePutWhitelistParameters(value interface{}) error {
+	return nil
+}
+
+func validateDcsInstanceV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

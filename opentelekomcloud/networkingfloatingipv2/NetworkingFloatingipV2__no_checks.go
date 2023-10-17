@@ -7,6 +7,10 @@ package networkingfloatingipv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkingFloatingipV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkingFloatingipV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkingFloatingipV2) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (n *jsiiProxy_NetworkingFloatingipV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkingFloatingipV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkingFloatingipV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkingFloatingipV2) validateOverrideLogicalIdParameters(n
 }
 
 func (n *jsiiProxy_NetworkingFloatingipV2) validatePutTimeoutsParameters(value *NetworkingFloatingipV2Timeouts) error {
+	return nil
+}
+
+func validateNetworkingFloatingipV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

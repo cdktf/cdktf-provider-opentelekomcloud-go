@@ -7,6 +7,10 @@ package cbrpolicyv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CbrPolicyV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CbrPolicyV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CbrPolicyV3) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (c *jsiiProxy_CbrPolicyV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CbrPolicyV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CbrPolicyV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CbrPolicyV3) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (c *jsiiProxy_CbrPolicyV3) validatePutOperationDefinitionParameters(value *CbrPolicyV3OperationDefinition) error {
+	return nil
+}
+
+func validateCbrPolicyV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

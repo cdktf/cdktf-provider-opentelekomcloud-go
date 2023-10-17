@@ -15,6 +15,10 @@ func (o *jsiiProxy_OpentelekomcloudProvider) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func validateOpentelekomcloudProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateOpentelekomcloudProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

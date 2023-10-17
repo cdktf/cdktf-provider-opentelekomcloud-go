@@ -7,6 +7,10 @@ package computesecgroupv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeSecgroupV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecgroupV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeSecgroupV2) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSecgroupV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecgroupV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSecgroupV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_ComputeSecgroupV2) validatePutRuleParameters(value interface{
 }
 
 func (c *jsiiProxy_ComputeSecgroupV2) validatePutTimeoutsParameters(value *ComputeSecgroupV2Timeouts) error {
+	return nil
+}
+
+func validateComputeSecgroupV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

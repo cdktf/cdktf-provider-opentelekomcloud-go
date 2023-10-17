@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudDcsMaintainwindowV1) validateOverrideLogi
 	return nil
 }
 
+func validateDataOpentelekomcloudDcsMaintainwindowV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudDcsMaintainwindowV1_IsConstructParameters(x interface{}) error {
 	return nil
 }

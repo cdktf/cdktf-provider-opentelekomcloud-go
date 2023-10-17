@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudKmsKeyV1) validateOverrideLogicalIdParame
 	return nil
 }
 
+func validateDataOpentelekomcloudKmsKeyV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudKmsKeyV1_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudCbrBackupIdsV3) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataOpentelekomcloudCbrBackupIdsV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudCbrBackupIdsV3_IsConstructParameters(x interface{}) error {
 	return nil
 }

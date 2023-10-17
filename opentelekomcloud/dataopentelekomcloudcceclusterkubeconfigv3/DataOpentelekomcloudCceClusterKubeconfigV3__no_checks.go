@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) validateOverrideL
 	return nil
 }
 
+func validateDataOpentelekomcloudCceClusterKubeconfigV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudCceClusterKubeconfigV3_IsConstructParameters(x interface{}) error {
 	return nil
 }

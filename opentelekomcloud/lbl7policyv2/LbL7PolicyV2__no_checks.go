@@ -7,6 +7,10 @@ package lbl7policyv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbL7PolicyV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbL7PolicyV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LbL7PolicyV2) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (l *jsiiProxy_LbL7PolicyV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbL7PolicyV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbL7PolicyV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LbL7PolicyV2) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (l *jsiiProxy_LbL7PolicyV2) validatePutTimeoutsParameters(value *LbL7PolicyV2Timeouts) error {
+	return nil
+}
+
+func validateLbL7PolicyV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudDmsAzV1) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataOpentelekomcloudDmsAzV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudDmsAzV1_IsConstructParameters(x interface{}) error {
 	return nil
 }

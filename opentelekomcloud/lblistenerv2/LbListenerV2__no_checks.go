@@ -7,6 +7,10 @@ package lblistenerv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbListenerV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbListenerV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LbListenerV2) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (l *jsiiProxy_LbListenerV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbListenerV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbListenerV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LbListenerV2) validatePutIpGroupParameters(value interface{})
 }
 
 func (l *jsiiProxy_LbListenerV2) validatePutTimeoutsParameters(value *LbListenerV2Timeouts) error {
+	return nil
+}
+
+func validateLbListenerV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

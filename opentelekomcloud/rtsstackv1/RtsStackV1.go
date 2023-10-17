@@ -5,10 +5,10 @@ package rtsstackv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/rtsstackv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rtsstackv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -98,6 +98,9 @@ type RtsStackV1 interface {
 	TimeoutMinsInput() *float64
 	Timeouts() RtsStackV1TimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -119,7 +122,12 @@ type RtsStackV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -790,6 +798,25 @@ func (j *jsiiProxy_RtsStackV1)SetTimeoutMins(val *float64) {
 	)
 }
 
+// Generates CDKTF code for importing a RtsStackV1 resource upon running "cdktf plan <stack-name>".
+func RtsStackV1_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateRtsStackV1_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -872,6 +899,17 @@ func RtsStackV1_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (r *jsiiProxy_RtsStackV1) AddMoveTarget(moveTarget *string) {
+	if err := r.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (r *jsiiProxy_RtsStackV1) AddOverride(path *string, value interface{}) {
@@ -1029,6 +1067,17 @@ func (r *jsiiProxy_RtsStackV1) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (r *jsiiProxy_RtsStackV1) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := r.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (r *jsiiProxy_RtsStackV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1043,6 +1092,17 @@ func (r *jsiiProxy_RtsStackV1) InterpolationForAttribute(terraformAttribute *str
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RtsStackV1) MoveTo(moveTarget *string, index interface{}) {
+	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (r *jsiiProxy_RtsStackV1) OverrideLogicalId(newLogicalId *string) {

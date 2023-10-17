@@ -7,6 +7,10 @@ package obsbucketreplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_ObsBucketReplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObsBucketReplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_ObsBucketReplication) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (o *jsiiProxy_ObsBucketReplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObsBucketReplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObsBucketReplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (o *jsiiProxy_ObsBucketReplication) validateOverrideLogicalIdParameters(new
 }
 
 func (o *jsiiProxy_ObsBucketReplication) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateObsBucketReplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

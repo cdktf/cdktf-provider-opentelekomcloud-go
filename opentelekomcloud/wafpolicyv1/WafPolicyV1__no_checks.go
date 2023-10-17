@@ -7,6 +7,10 @@ package wafpolicyv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafPolicyV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafPolicyV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WafPolicyV1) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (w *jsiiProxy_WafPolicyV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafPolicyV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafPolicyV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (w *jsiiProxy_WafPolicyV1) validatePutOptionsParameters(value *WafPolicyV1O
 }
 
 func (w *jsiiProxy_WafPolicyV1) validatePutTimeoutsParameters(value *WafPolicyV1Timeouts) error {
+	return nil
+}
+
+func validateWafPolicyV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

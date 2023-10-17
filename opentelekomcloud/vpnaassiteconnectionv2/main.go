@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.vpnaasSiteConnectionV2.VpnaasSiteConnectionV2",
 		reflect.TypeOf((*VpnaasSiteConnectionV2)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "adminStateUp", GoGetter: "AdminStateUp"},
 			_jsii_.MemberProperty{JsiiProperty: "adminStateUpInput", GoGetter: "AdminStateUpInput"},
@@ -42,6 +43,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ikepolicyId", GoGetter: "IkepolicyId"},
 			_jsii_.MemberProperty{JsiiProperty: "ikepolicyIdInput", GoGetter: "IkepolicyIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "initiator", GoGetter: "Initiator"},
 			_jsii_.MemberProperty{JsiiProperty: "initiatorInput", GoGetter: "InitiatorInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -52,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "localEpGroupIdInput", GoGetter: "LocalEpGroupIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "localId", GoGetter: "LocalId"},
 			_jsii_.MemberProperty{JsiiProperty: "localIdInput", GoGetter: "LocalIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "mtu", GoGetter: "Mtu"},
 			_jsii_.MemberProperty{JsiiProperty: "mtuInput", GoGetter: "MtuInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},

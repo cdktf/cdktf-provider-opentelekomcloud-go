@@ -7,6 +7,10 @@ package imsdataimagev2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_ImsDataImageV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImsDataImageV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_ImsDataImageV2) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (i *jsiiProxy_ImsDataImageV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImsDataImageV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImsDataImageV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_ImsDataImageV2) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (i *jsiiProxy_ImsDataImageV2) validatePutTimeoutsParameters(value *ImsDataImageV2Timeouts) error {
+	return nil
+}
+
+func validateImsDataImageV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

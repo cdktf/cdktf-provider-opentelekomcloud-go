@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1) validatePutDiskRangeParamete
 	return nil
 }
 
+func validateDataOpentelekomcloudCssFlavorV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudCssFlavorV1_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsNameserversV2) validatePutNameserversP
 	return nil
 }
 
+func validateDataOpentelekomcloudDnsNameserversV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudDnsNameserversV2_IsConstructParameters(x interface{}) error {
 	return nil
 }

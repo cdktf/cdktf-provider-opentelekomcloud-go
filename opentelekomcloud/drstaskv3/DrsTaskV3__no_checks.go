@@ -7,6 +7,10 @@ package drstaskv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DrsTaskV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DrsTaskV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DrsTaskV3) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (d *jsiiProxy_DrsTaskV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DrsTaskV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DrsTaskV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (d *jsiiProxy_DrsTaskV3) validatePutSourceDbParameters(value *DrsTaskV3Sour
 }
 
 func (d *jsiiProxy_DrsTaskV3) validatePutTimeoutsParameters(value *DrsTaskV3Timeouts) error {
+	return nil
+}
+
+func validateDrsTaskV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

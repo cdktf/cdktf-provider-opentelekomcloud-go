@@ -7,6 +7,10 @@ package mrsjobv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MrsJobV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MrsJobV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MrsJobV1) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (m *jsiiProxy_MrsJobV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MrsJobV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MrsJobV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MrsJobV1) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (m *jsiiProxy_MrsJobV1) validatePutTimeoutsParameters(value *MrsJobV1Timeouts) error {
+	return nil
+}
+
+func validateMrsJobV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

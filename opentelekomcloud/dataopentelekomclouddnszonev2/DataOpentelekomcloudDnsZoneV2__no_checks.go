@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsZoneV2) validateOverrideLogicalIdParam
 	return nil
 }
 
+func validateDataOpentelekomcloudDnsZoneV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudDnsZoneV2_IsConstructParameters(x interface{}) error {
 	return nil
 }

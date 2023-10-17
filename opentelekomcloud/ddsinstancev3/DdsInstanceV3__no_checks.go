@@ -7,6 +7,10 @@ package ddsinstancev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DdsInstanceV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DdsInstanceV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DdsInstanceV3) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DdsInstanceV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DdsInstanceV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DdsInstanceV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (d *jsiiProxy_DdsInstanceV3) validatePutFlavorParameters(value interface{})
 }
 
 func (d *jsiiProxy_DdsInstanceV3) validatePutTimeoutsParameters(value *DdsInstanceV3Timeouts) error {
+	return nil
+}
+
+func validateDdsInstanceV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

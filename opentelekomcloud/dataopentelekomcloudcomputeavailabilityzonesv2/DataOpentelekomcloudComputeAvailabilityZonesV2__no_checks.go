@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudComputeAvailabilityZonesV2) validateOverr
 	return nil
 }
 
+func validateDataOpentelekomcloudComputeAvailabilityZonesV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudComputeAvailabilityZonesV2_IsConstructParameters(x interface{}) error {
 	return nil
 }

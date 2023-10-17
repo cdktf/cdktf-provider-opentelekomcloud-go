@@ -5,10 +5,10 @@ package lbwhitelistv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/lbwhitelistv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbwhitelistv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -76,6 +76,9 @@ type LbWhitelistV2 interface {
 	Whitelist() *string
 	SetWhitelist(val *string)
 	WhitelistInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -97,7 +100,12 @@ type LbWhitelistV2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -536,6 +544,25 @@ func (j *jsiiProxy_LbWhitelistV2)SetWhitelist(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a LbWhitelistV2 resource upon running "cdktf plan <stack-name>".
+func LbWhitelistV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateLbWhitelistV2_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -618,6 +645,17 @@ func LbWhitelistV2_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (l *jsiiProxy_LbWhitelistV2) AddMoveTarget(moveTarget *string) {
+	if err := l.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (l *jsiiProxy_LbWhitelistV2) AddOverride(path *string, value interface{}) {
@@ -775,6 +813,17 @@ func (l *jsiiProxy_LbWhitelistV2) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (l *jsiiProxy_LbWhitelistV2) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := l.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (l *jsiiProxy_LbWhitelistV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -789,6 +838,17 @@ func (l *jsiiProxy_LbWhitelistV2) InterpolationForAttribute(terraformAttribute *
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LbWhitelistV2) MoveTo(moveTarget *string, index interface{}) {
+	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (l *jsiiProxy_LbWhitelistV2) OverrideLogicalId(newLogicalId *string) {

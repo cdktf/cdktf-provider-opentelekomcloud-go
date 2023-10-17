@@ -7,6 +7,10 @@ package rdsparametergroupv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RdsParametergroupV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsParametergroupV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RdsParametergroupV3) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (r *jsiiProxy_RdsParametergroupV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsParametergroupV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsParametergroupV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RdsParametergroupV3) validateOverrideLogicalIdParameters(newL
 }
 
 func (r *jsiiProxy_RdsParametergroupV3) validatePutDatastoreParameters(value *RdsParametergroupV3Datastore) error {
+	return nil
+}
+
+func validateRdsParametergroupV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

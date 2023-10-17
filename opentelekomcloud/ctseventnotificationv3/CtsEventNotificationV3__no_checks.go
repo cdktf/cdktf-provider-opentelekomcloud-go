@@ -7,6 +7,10 @@ package ctseventnotificationv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CtsEventNotificationV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CtsEventNotificationV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CtsEventNotificationV3) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_CtsEventNotificationV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CtsEventNotificationV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CtsEventNotificationV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CtsEventNotificationV3) validatePutNotifyUserListParameters(v
 }
 
 func (c *jsiiProxy_CtsEventNotificationV3) validatePutOperationsParameters(value interface{}) error {
+	return nil
+}
+
+func validateCtsEventNotificationV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

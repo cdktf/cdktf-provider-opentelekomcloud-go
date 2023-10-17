@@ -7,6 +7,10 @@ package dehhostv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DehHostV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DehHostV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DehHostV1) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (d *jsiiProxy_DehHostV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DehHostV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DehHostV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DehHostV1) validatePutAvailableInstanceCapacitiesParameters(v
 }
 
 func (d *jsiiProxy_DehHostV1) validatePutTimeoutsParameters(value *DehHostV1Timeouts) error {
+	return nil
+}
+
+func validateDehHostV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package rdsreadreplicav3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RdsReadReplicaV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsReadReplicaV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RdsReadReplicaV3) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (r *jsiiProxy_RdsReadReplicaV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsReadReplicaV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsReadReplicaV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_RdsReadReplicaV3) validatePutTimeoutsParameters(value *RdsRea
 }
 
 func (r *jsiiProxy_RdsReadReplicaV3) validatePutVolumeParameters(value *RdsReadReplicaV3Volume) error {
+	return nil
+}
+
+func validateRdsReadReplicaV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

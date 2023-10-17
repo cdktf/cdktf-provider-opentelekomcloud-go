@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.mrsJobV1.MrsJobV1",
 		reflect.TypeOf((*MrsJobV1)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arguments", GoGetter: "Arguments"},
 			_jsii_.MemberProperty{JsiiProperty: "argumentsInput", GoGetter: "ArgumentsInput"},
@@ -40,6 +41,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hiveScriptPathInput", GoGetter: "HiveScriptPathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "input", GoGetter: "Input"},
 			_jsii_.MemberProperty{JsiiProperty: "inputInput", GoGetter: "InputInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -57,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jobType", GoGetter: "JobType"},
 			_jsii_.MemberProperty{JsiiProperty: "jobTypeInput", GoGetter: "JobTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "output", GoGetter: "Output"},
 			_jsii_.MemberProperty{JsiiProperty: "outputInput", GoGetter: "OutputInput"},

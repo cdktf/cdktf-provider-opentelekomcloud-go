@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3) validateOverrideLogical
 	return nil
 }
 
+func validateDataOpentelekomcloudLbLoadbalancerV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudLbLoadbalancerV3_IsConstructParameters(x interface{}) error {
 	return nil
 }

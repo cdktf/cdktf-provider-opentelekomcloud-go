@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.dcsInstanceV1.DcsInstanceV1",
 		reflect.TypeOf((*DcsInstanceV1)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "availableZones", GoGetter: "AvailableZones"},
 			_jsii_.MemberProperty{JsiiProperty: "availableZonesInput", GoGetter: "AvailableZonesInput"},
@@ -57,6 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "internalVersion", GoGetter: "InternalVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ip", GoGetter: "Ip"},
@@ -66,6 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maintainEnd", GoGetter: "MaintainEnd"},
 			_jsii_.MemberProperty{JsiiProperty: "maintainEndInput", GoGetter: "MaintainEndInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxMemory", GoGetter: "MaxMemory"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

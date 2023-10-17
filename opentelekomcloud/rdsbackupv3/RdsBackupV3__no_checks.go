@@ -7,6 +7,10 @@ package rdsbackupv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RdsBackupV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsBackupV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RdsBackupV3) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (r *jsiiProxy_RdsBackupV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsBackupV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsBackupV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_RdsBackupV3) validatePutDatabasesParameters(value interface{}
 }
 
 func (r *jsiiProxy_RdsBackupV3) validatePutTimeoutsParameters(value *RdsBackupV3Timeouts) error {
+	return nil
+}
+
+func validateRdsBackupV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package vpcepservicev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcepServiceV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcepServiceV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpcepServiceV1) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (v *jsiiProxy_VpcepServiceV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcepServiceV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcepServiceV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VpcepServiceV1) validatePutPortParameters(value interface{}) 
 }
 
 func (v *jsiiProxy_VpcepServiceV1) validatePutTimeoutsParameters(value *VpcepServiceV1Timeouts) error {
+	return nil
+}
+
+func validateVpcepServiceV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

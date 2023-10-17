@@ -7,6 +7,10 @@ package lbpoolv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbPoolV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbPoolV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LbPoolV2) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (l *jsiiProxy_LbPoolV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbPoolV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbPoolV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LbPoolV2) validatePutPersistenceParameters(value interface{})
 }
 
 func (l *jsiiProxy_LbPoolV2) validatePutTimeoutsParameters(value *LbPoolV2Timeouts) error {
+	return nil
+}
+
+func validateLbPoolV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

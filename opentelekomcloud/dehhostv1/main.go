@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.dehHostV1.DehHostV1",
 		reflect.TypeOf((*DehHostV1)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoPlacement", GoGetter: "AutoPlacement"},
 			_jsii_.MemberProperty{JsiiProperty: "autoPlacementInput", GoGetter: "AutoPlacementInput"},
@@ -50,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hostTypeNameInput", GoGetter: "HostTypeNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTotal", GoGetter: "InstanceTotal"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTotalInput", GoGetter: "InstanceTotalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceUuids", GoGetter: "InstanceUuids"},
@@ -58,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "memory", GoGetter: "Memory"},
 			_jsii_.MemberProperty{JsiiProperty: "memoryInput", GoGetter: "MemoryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

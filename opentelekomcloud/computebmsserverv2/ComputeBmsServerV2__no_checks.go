@@ -7,6 +7,10 @@ package computebmsserverv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeBmsServerV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBmsServerV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeBmsServerV2) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBmsServerV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBmsServerV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBmsServerV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_ComputeBmsServerV2) validatePutNetworkParameters(value interf
 }
 
 func (c *jsiiProxy_ComputeBmsServerV2) validatePutTimeoutsParameters(value *ComputeBmsServerV2Timeouts) error {
+	return nil
+}
+
+func validateComputeBmsServerV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

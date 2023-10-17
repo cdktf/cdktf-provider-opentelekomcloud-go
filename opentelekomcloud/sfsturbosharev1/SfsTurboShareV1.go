@@ -5,10 +5,10 @@ package sfsturbosharev1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/sfsturbosharev1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/sfsturbosharev1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -103,6 +103,9 @@ type SfsTurboShareV1 interface {
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -124,7 +127,12 @@ type SfsTurboShareV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -844,6 +852,25 @@ func (j *jsiiProxy_SfsTurboShareV1)SetVpcId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a SfsTurboShareV1 resource upon running "cdktf plan <stack-name>".
+func SfsTurboShareV1_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateSfsTurboShareV1_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -926,6 +953,17 @@ func SfsTurboShareV1_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (s *jsiiProxy_SfsTurboShareV1) AddMoveTarget(moveTarget *string) {
+	if err := s.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) AddOverride(path *string, value interface{}) {
@@ -1083,6 +1121,17 @@ func (s *jsiiProxy_SfsTurboShareV1) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (s *jsiiProxy_SfsTurboShareV1) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := s.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (s *jsiiProxy_SfsTurboShareV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1097,6 +1146,17 @@ func (s *jsiiProxy_SfsTurboShareV1) InterpolationForAttribute(terraformAttribute
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SfsTurboShareV1) MoveTo(moveTarget *string, index interface{}) {
+	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (s *jsiiProxy_SfsTurboShareV1) OverrideLogicalId(newLogicalId *string) {

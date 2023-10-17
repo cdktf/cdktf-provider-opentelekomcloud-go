@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2",
 		reflect.TypeOf((*LogtankTransferV2)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -37,6 +38,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logGroupId", GoGetter: "LogGroupId"},
@@ -46,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "logStreamIdsInput", GoGetter: "LogStreamIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "logTransferMode", GoGetter: "LogTransferMode"},
 			_jsii_.MemberProperty{JsiiProperty: "logTransferType", GoGetter: "LogTransferType"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "obsBucketName", GoGetter: "ObsBucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "obsBucketNameInput", GoGetter: "ObsBucketNameInput"},

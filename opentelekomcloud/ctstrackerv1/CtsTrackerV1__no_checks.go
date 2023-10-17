@@ -7,6 +7,10 @@ package ctstrackerv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CtsTrackerV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CtsTrackerV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CtsTrackerV1) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (c *jsiiProxy_CtsTrackerV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CtsTrackerV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CtsTrackerV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CtsTrackerV1) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (c *jsiiProxy_CtsTrackerV1) validatePutTimeoutsParameters(value *CtsTrackerV1Timeouts) error {
+	return nil
+}
+
+func validateCtsTrackerV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

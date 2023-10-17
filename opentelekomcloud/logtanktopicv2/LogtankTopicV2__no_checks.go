@@ -7,6 +7,10 @@ package logtanktopicv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogtankTopicV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogtankTopicV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LogtankTopicV2) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LogtankTopicV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogtankTopicV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LogtankTopicV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogtankTopicV2) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLogtankTopicV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

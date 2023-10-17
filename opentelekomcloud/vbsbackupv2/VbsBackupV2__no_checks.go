@@ -7,6 +7,10 @@ package vbsbackupv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VbsBackupV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VbsBackupV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VbsBackupV2) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (v *jsiiProxy_VbsBackupV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VbsBackupV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VbsBackupV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VbsBackupV2) validatePutTagsParameters(value interface{}) err
 }
 
 func (v *jsiiProxy_VbsBackupV2) validatePutTimeoutsParameters(value *VbsBackupV2Timeouts) error {
+	return nil
+}
+
+func validateVbsBackupV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package vpcflowlogv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcFlowLogV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcFlowLogV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpcFlowLogV1) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (v *jsiiProxy_VpcFlowLogV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcFlowLogV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcFlowLogV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VpcFlowLogV1) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (v *jsiiProxy_VpcFlowLogV1) validatePutTimeoutsParameters(value *VpcFlowLogV1Timeouts) error {
+	return nil
+}
+
+func validateVpcFlowLogV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

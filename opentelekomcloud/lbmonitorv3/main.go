@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.lbMonitorV3.LbMonitorV3",
 		reflect.TypeOf((*LbMonitorV3)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "adminStateUp", GoGetter: "AdminStateUp"},
 			_jsii_.MemberProperty{JsiiProperty: "adminStateUpInput", GoGetter: "AdminStateUpInput"},
@@ -44,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "httpMethodInput", GoGetter: "HttpMethodInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "maxRetries", GoGetter: "MaxRetries"},
@@ -52,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxRetriesInput", GoGetter: "MaxRetriesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorPort", GoGetter: "MonitorPort"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorPortInput", GoGetter: "MonitorPortInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

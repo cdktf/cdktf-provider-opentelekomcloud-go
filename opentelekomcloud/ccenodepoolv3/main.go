@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3",
 		reflect.TypeOf((*CceNodePoolV3)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneInput", GoGetter: "AvailabilityZoneInput"},
@@ -46,6 +47,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "initialNodeCount", GoGetter: "InitialNodeCount"},
 			_jsii_.MemberProperty{JsiiProperty: "initialNodeCountInput", GoGetter: "InitialNodeCountInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -60,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxPodsInput", GoGetter: "MaxPodsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minNodeCount", GoGetter: "MinNodeCount"},
 			_jsii_.MemberProperty{JsiiProperty: "minNodeCountInput", GoGetter: "MinNodeCountInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

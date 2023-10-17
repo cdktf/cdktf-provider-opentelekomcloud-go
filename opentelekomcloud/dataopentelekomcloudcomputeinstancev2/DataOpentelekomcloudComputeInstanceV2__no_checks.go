@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) validatePutNetworkPara
 	return nil
 }
 
+func validateDataOpentelekomcloudComputeInstanceV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudComputeInstanceV2_IsConstructParameters(x interface{}) error {
 	return nil
 }

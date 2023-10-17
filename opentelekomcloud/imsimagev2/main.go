@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2",
 		reflect.TypeOf((*ImsImageV2)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cmkId", GoGetter: "CmkId"},
@@ -44,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "imageSize", GoGetter: "ImageSize"},
 			_jsii_.MemberProperty{JsiiProperty: "imageUrl", GoGetter: "ImageUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "imageUrlInput", GoGetter: "ImageUrlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceId", GoGetter: "InstanceId"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceIdInput", GoGetter: "InstanceIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -56,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "minDiskInput", GoGetter: "MinDiskInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minRam", GoGetter: "MinRam"},
 			_jsii_.MemberProperty{JsiiProperty: "minRamInput", GoGetter: "MinRamInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

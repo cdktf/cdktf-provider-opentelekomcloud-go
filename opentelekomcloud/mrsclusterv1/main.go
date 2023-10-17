@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addJobs", GoGetter: "AddJobs"},
 			_jsii_.MemberProperty{JsiiProperty: "addJobsInput", GoGetter: "AddJobsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "availableZoneId", GoGetter: "AvailableZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "availableZoneIdInput", GoGetter: "AvailableZoneIdInput"},
@@ -75,6 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hadoopVersion", GoGetter: "HadoopVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceId", GoGetter: "InstanceId"},
 			_jsii_.MemberProperty{JsiiProperty: "internalIp", GoGetter: "InternalIp"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -94,6 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "masterNodeSize", GoGetter: "MasterNodeSize"},
 			_jsii_.MemberProperty{JsiiProperty: "masterNodeSizeInput", GoGetter: "MasterNodeSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "masterNodeSpecId", GoGetter: "MasterNodeSpecId"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "nodePublicCertName", GoGetter: "NodePublicCertName"},
 			_jsii_.MemberProperty{JsiiProperty: "nodePublicCertNameInput", GoGetter: "NodePublicCertNameInput"},

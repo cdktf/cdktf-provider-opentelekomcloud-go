@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1",
 		reflect.TypeOf((*AsGroupV1)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "availableZones", GoGetter: "AvailableZones"},
 			_jsii_.MemberProperty{JsiiProperty: "availableZonesInput", GoGetter: "AvailableZonesInput"},
@@ -51,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "healthPeriodicAuditTimeInput", GoGetter: "HealthPeriodicAuditTimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instances", GoGetter: "Instances"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTerminatePolicy", GoGetter: "InstanceTerminatePolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTerminatePolicyInput", GoGetter: "InstanceTerminatePolicyInput"},
@@ -64,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxInstanceNumberInput", GoGetter: "MaxInstanceNumberInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minInstanceNumber", GoGetter: "MinInstanceNumber"},
 			_jsii_.MemberProperty{JsiiProperty: "minInstanceNumberInput", GoGetter: "MinInstanceNumberInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "networks", GoGetter: "Networks"},
 			_jsii_.MemberProperty{JsiiProperty: "networksInput", GoGetter: "NetworksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

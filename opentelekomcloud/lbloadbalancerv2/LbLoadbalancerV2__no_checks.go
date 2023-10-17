@@ -7,6 +7,10 @@ package lbloadbalancerv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbLoadbalancerV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbLoadbalancerV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LbLoadbalancerV2) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (l *jsiiProxy_LbLoadbalancerV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbLoadbalancerV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbLoadbalancerV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LbLoadbalancerV2) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (l *jsiiProxy_LbLoadbalancerV2) validatePutTimeoutsParameters(value *LbLoadbalancerV2Timeouts) error {
+	return nil
+}
+
+func validateLbLoadbalancerV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

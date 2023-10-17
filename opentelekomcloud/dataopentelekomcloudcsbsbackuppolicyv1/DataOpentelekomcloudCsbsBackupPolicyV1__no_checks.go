@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) validatePutTagsParame
 	return nil
 }
 
+func validateDataOpentelekomcloudCsbsBackupPolicyV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudCsbsBackupPolicyV1_IsConstructParameters(x interface{}) error {
 	return nil
 }

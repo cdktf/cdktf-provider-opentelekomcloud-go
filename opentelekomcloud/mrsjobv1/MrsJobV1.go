@@ -5,10 +5,10 @@ package mrsjobv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/mrsjobv1/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/mrsjobv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -103,6 +103,9 @@ type MrsJobV1 interface {
 	TerraformResourceType() *string
 	Timeouts() MrsJobV1TimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -124,7 +127,12 @@ type MrsJobV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -848,6 +856,25 @@ func (j *jsiiProxy_MrsJobV1)SetRegion(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a MrsJobV1 resource upon running "cdktf plan <stack-name>".
+func MrsJobV1_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateMrsJobV1_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-opentelekomcloud.mrsJobV1.MrsJobV1",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -930,6 +957,17 @@ func MrsJobV1_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (m *jsiiProxy_MrsJobV1) AddMoveTarget(moveTarget *string) {
+	if err := m.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (m *jsiiProxy_MrsJobV1) AddOverride(path *string, value interface{}) {
@@ -1087,6 +1125,17 @@ func (m *jsiiProxy_MrsJobV1) GetStringMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
+func (m *jsiiProxy_MrsJobV1) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := m.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (m *jsiiProxy_MrsJobV1) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1101,6 +1150,17 @@ func (m *jsiiProxy_MrsJobV1) InterpolationForAttribute(terraformAttribute *strin
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MrsJobV1) MoveTo(moveTarget *string, index interface{}) {
+	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (m *jsiiProxy_MrsJobV1) OverrideLogicalId(newLogicalId *string) {

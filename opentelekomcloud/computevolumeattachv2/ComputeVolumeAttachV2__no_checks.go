@@ -7,6 +7,10 @@ package computevolumeattachv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeVolumeAttachV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeVolumeAttachV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ComputeVolumeAttachV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeVolumeAttachV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeVolumeAttachV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) validateOverrideLogicalIdParameters(ne
 }
 
 func (c *jsiiProxy_ComputeVolumeAttachV2) validatePutTimeoutsParameters(value *ComputeVolumeAttachV2Timeouts) error {
+	return nil
+}
+
+func validateComputeVolumeAttachV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

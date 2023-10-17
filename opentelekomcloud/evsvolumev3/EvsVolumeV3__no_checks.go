@@ -7,6 +7,10 @@ package evsvolumev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EvsVolumeV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvsVolumeV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EvsVolumeV3) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (e *jsiiProxy_EvsVolumeV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvsVolumeV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EvsVolumeV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EvsVolumeV3) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (e *jsiiProxy_EvsVolumeV3) validatePutTimeoutsParameters(value *EvsVolumeV3Timeouts) error {
+	return nil
+}
+
+func validateEvsVolumeV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

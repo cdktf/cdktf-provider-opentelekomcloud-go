@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudSdrsDomainV1) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataOpentelekomcloudSdrsDomainV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudSdrsDomainV1_IsConstructParameters(x interface{}) error {
 	return nil
 }

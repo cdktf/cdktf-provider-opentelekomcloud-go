@@ -7,6 +7,10 @@ package networkingrouterv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkingRouterV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkingRouterV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkingRouterV2) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (n *jsiiProxy_NetworkingRouterV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkingRouterV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkingRouterV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkingRouterV2) validateOverrideLogicalIdParameters(newLo
 }
 
 func (n *jsiiProxy_NetworkingRouterV2) validatePutTimeoutsParameters(value *NetworkingRouterV2Timeouts) error {
+	return nil
+}
+
+func validateNetworkingRouterV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

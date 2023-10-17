@@ -7,6 +7,10 @@ package cesalarmrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CesAlarmrule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CesAlarmrule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CesAlarmrule) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (c *jsiiProxy_CesAlarmrule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CesAlarmrule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesAlarmrule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (c *jsiiProxy_CesAlarmrule) validatePutOkActionsParameters(value interface{
 }
 
 func (c *jsiiProxy_CesAlarmrule) validatePutTimeoutsParameters(value *CesAlarmruleTimeouts) error {
+	return nil
+}
+
+func validateCesAlarmrule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

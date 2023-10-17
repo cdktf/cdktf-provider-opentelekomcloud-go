@@ -7,6 +7,10 @@ package identityprovider
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IdentityProvider) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityProvider) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IdentityProvider) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (i *jsiiProxy_IdentityProvider) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityProvider) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IdentityProvider) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (i *jsiiProxy_IdentityProvider) validatePutAccessConfigParameters(value *IdentityProviderAccessConfig) error {
+	return nil
+}
+
+func validateIdentityProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package ccenodev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CceNodeV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CceNodeV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CceNodeV3) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (c *jsiiProxy_CceNodeV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CceNodeV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CceNodeV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_CceNodeV3) validatePutTaintsParameters(value interface{}) err
 }
 
 func (c *jsiiProxy_CceNodeV3) validatePutTimeoutsParameters(value *CceNodeV3Timeouts) error {
+	return nil
+}
+
+func validateCceNodeV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

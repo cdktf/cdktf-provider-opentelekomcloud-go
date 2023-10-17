@@ -7,6 +7,10 @@ package wafdedicatedblacklistrulev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafDedicatedBlacklistRuleV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafDedicatedBlacklistRuleV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WafDedicatedBlacklistRuleV1) validateGetStringMapAttributePar
 	return nil
 }
 
+func (w *jsiiProxy_WafDedicatedBlacklistRuleV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafDedicatedBlacklistRuleV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedBlacklistRuleV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WafDedicatedBlacklistRuleV1) validateOverrideLogicalIdParamet
 }
 
 func (w *jsiiProxy_WafDedicatedBlacklistRuleV1) validatePutTimeoutsParameters(value *WafDedicatedBlacklistRuleV1Timeouts) error {
+	return nil
+}
+
+func validateWafDedicatedBlacklistRuleV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

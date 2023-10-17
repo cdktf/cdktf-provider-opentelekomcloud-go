@@ -7,6 +7,10 @@ package sfsshareaccessrulesv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SfsShareAccessRulesV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SfsShareAccessRulesV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_SfsShareAccessRulesV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SfsShareAccessRulesV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SfsShareAccessRulesV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SfsShareAccessRulesV2) validateOverrideLogicalIdParameters(ne
 }
 
 func (s *jsiiProxy_SfsShareAccessRulesV2) validatePutAccessRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateSfsShareAccessRulesV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

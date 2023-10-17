@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcepPublicServiceV1) validateOverrideLog
 	return nil
 }
 
+func validateDataOpentelekomcloudVpcepPublicServiceV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudVpcepPublicServiceV1_IsConstructParameters(x interface{}) error {
 	return nil
 }

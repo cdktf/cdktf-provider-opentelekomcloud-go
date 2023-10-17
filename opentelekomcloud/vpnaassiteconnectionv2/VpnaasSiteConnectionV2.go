@@ -5,10 +5,10 @@ package vpnaassiteconnectionv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpnaassiteconnectionv2/internal"
+	"github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpnaassiteconnectionv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -125,6 +125,9 @@ type VpnaasSiteConnectionV2 interface {
 	VpnserviceId() *string
 	SetVpnserviceId(val *string)
 	VpnserviceIdInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -146,7 +149,12 @@ type VpnaasSiteConnectionV2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -1104,6 +1112,25 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2)SetVpnserviceId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a VpnaasSiteConnectionV2 resource upon running "cdktf plan <stack-name>".
+func VpnaasSiteConnectionV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateVpnaasSiteConnectionV2_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-opentelekomcloud.vpnaasSiteConnectionV2.VpnaasSiteConnectionV2",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -1186,6 +1213,17 @@ func VpnaasSiteConnectionV2_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (v *jsiiProxy_VpnaasSiteConnectionV2) AddMoveTarget(moveTarget *string) {
+	if err := v.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) AddOverride(path *string, value interface{}) {
@@ -1343,6 +1381,17 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (v *jsiiProxy_VpnaasSiteConnectionV2) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := v.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (v *jsiiProxy_VpnaasSiteConnectionV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1357,6 +1406,17 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2) InterpolationForAttribute(terraformAt
 	)
 
 	return returns
+}
+
+func (v *jsiiProxy_VpnaasSiteConnectionV2) MoveTo(moveTarget *string, index interface{}) {
+	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (v *jsiiProxy_VpnaasSiteConnectionV2) OverrideLogicalId(newLogicalId *string) {

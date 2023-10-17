@@ -7,6 +7,10 @@ package lbrulev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbRuleV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbRuleV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LbRuleV3) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (l *jsiiProxy_LbRuleV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbRuleV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbRuleV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LbRuleV3) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (l *jsiiProxy_LbRuleV3) validatePutConditionsParameters(value interface{}) error {
+	return nil
+}
+
+func validateLbRuleV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

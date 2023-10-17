@@ -7,6 +7,10 @@ package tmstagsv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TmsTagsV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TmsTagsV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TmsTagsV1) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (t *jsiiProxy_TmsTagsV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TmsTagsV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TmsTagsV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (t *jsiiProxy_TmsTagsV1) validatePutTagsParameters(value interface{}) error
 }
 
 func (t *jsiiProxy_TmsTagsV1) validatePutTimeoutsParameters(value *TmsTagsV1Timeouts) error {
+	return nil
+}
+
+func validateTmsTagsV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

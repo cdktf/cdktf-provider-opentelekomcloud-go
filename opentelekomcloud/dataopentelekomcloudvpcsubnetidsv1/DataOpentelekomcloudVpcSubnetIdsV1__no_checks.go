@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcSubnetIdsV1) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataOpentelekomcloudVpcSubnetIdsV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpentelekomcloudVpcSubnetIdsV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
