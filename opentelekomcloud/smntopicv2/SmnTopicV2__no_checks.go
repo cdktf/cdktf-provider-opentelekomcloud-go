@@ -115,6 +115,10 @@ func (j *jsiiProxy_SmnTopicV2) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_SmnTopicV2) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewSmnTopicV2Parameters(scope constructs.Construct, id *string, config *SmnTopicV2Config) error {
 	return nil
 }

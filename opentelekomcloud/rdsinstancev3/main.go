@@ -69,6 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicIpsInput", GoGetter: "PublicIpsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putBackupStrategy", GoMethod: "PutBackupStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "putDb", GoMethod: "PutDb"},
+			_jsii_.MemberMethod{JsiiMethod: "putRestoreFromBackup", GoMethod: "PutRestoreFromBackup"},
 			_jsii_.MemberMethod{JsiiMethod: "putRestorePoint", GoMethod: "PutRestorePoint"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVolume", GoMethod: "PutVolume"},
@@ -81,11 +82,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetParameters", GoMethod: "ResetParameters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParamGroupId", GoMethod: "ResetParamGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicIps", GoMethod: "ResetPublicIps"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRestoreFromBackup", GoMethod: "ResetRestoreFromBackup"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestorePoint", GoMethod: "ResetRestorePoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSslEnable", GoMethod: "ResetSslEnable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTag", GoMethod: "ResetTag"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberProperty{JsiiProperty: "restoredBackupId", GoGetter: "RestoredBackupId"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreFromBackup", GoGetter: "RestoreFromBackup"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreFromBackupInput", GoGetter: "RestoreFromBackupInput"},
 			_jsii_.MemberProperty{JsiiProperty: "restorePoint", GoGetter: "RestorePoint"},
 			_jsii_.MemberProperty{JsiiProperty: "restorePointInput", GoGetter: "RestorePointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupId", GoGetter: "SecurityGroupId"},
@@ -268,6 +273,52 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RdsInstanceV3NodesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-opentelekomcloud.rdsInstanceV3.RdsInstanceV3RestoreFromBackup",
+		reflect.TypeOf((*RdsInstanceV3RestoreFromBackup)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-opentelekomcloud.rdsInstanceV3.RdsInstanceV3RestoreFromBackupOutputReference",
+		reflect.TypeOf((*RdsInstanceV3RestoreFromBackupOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "backupId", GoGetter: "BackupId"},
+			_jsii_.MemberProperty{JsiiProperty: "backupIdInput", GoGetter: "BackupIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBackupId", GoMethod: "ResetBackupId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRestoreTime", GoMethod: "ResetRestoreTime"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreTime", GoGetter: "RestoreTime"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreTimeInput", GoGetter: "RestoreTimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceInstanceId", GoGetter: "SourceInstanceId"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceInstanceIdInput", GoGetter: "SourceInstanceIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RdsInstanceV3RestoreFromBackupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

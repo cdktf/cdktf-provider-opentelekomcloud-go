@@ -213,6 +213,17 @@ func (r *jsiiProxy_RdsInstanceV3) validatePutDbParameters(value *RdsInstanceV3Db
 	return nil
 }
 
+func (r *jsiiProxy_RdsInstanceV3) validatePutRestoreFromBackupParameters(value *RdsInstanceV3RestoreFromBackup) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (r *jsiiProxy_RdsInstanceV3) validatePutRestorePointParameters(value *RdsInstanceV3RestorePoint) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

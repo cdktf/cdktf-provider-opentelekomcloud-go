@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1}.
 type DataOpentelekomcloudVpcEipV1 interface {
 	cdktf.TerraformDataSource
 	BandwidthId() *string
@@ -49,6 +49,10 @@ type DataOpentelekomcloudVpcEipV1 interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	NameRegex() *string
+	SetNameRegex(val *string)
+	NameRegexInput() *string
 	// The tree node.
 	Node() constructs.Node
 	PortId() *string
@@ -110,6 +114,7 @@ type DataOpentelekomcloudVpcEipV1 interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetBandwidthId()
 	ResetId()
+	ResetNameRegex()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -289,6 +294,36 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcEipV1) Lifecycle() *cdktf.TerraformRes
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudVpcEipV1) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudVpcEipV1) NameRegex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameRegex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudVpcEipV1) NameRegexInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameRegexInput",
 		&returns,
 	)
 	return returns
@@ -495,7 +530,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcEipV1) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Data Source.
 func NewDataOpentelekomcloudVpcEipV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcEipV1Config) DataOpentelekomcloudVpcEipV1 {
 	_init_.Initialize()
 
@@ -513,7 +548,7 @@ func NewDataOpentelekomcloudVpcEipV1(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Data Source.
 func NewDataOpentelekomcloudVpcEipV1_Override(d DataOpentelekomcloudVpcEipV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcEipV1Config) {
 	_init_.Initialize()
 
@@ -580,6 +615,17 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcEipV1)SetLifecycle(val *cdktf.Terrafor
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudVpcEipV1)SetNameRegex(val *string) {
+	if err := j.validateSetNameRegexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nameRegex",
 		val,
 	)
 }
@@ -955,6 +1001,14 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcEipV1) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataOpentelekomcloudVpcEipV1) ResetNameRegex() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNameRegex",
 		nil, // no parameters
 	)
 }

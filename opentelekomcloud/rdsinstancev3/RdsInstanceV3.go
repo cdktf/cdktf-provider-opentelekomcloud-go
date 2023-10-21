@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3}.
 type RdsInstanceV3 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *[]*string
@@ -90,6 +90,9 @@ type RdsInstanceV3 interface {
 	PublicIpsInput() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
+	RestoredBackupId() *string
+	RestoreFromBackup() RdsInstanceV3RestoreFromBackupOutputReference
+	RestoreFromBackupInput() *RdsInstanceV3RestoreFromBackup
 	RestorePoint() RdsInstanceV3RestorePointOutputReference
 	RestorePointInput() *RdsInstanceV3RestorePoint
 	SecurityGroupId() *string
@@ -155,6 +158,7 @@ type RdsInstanceV3 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBackupStrategy(value *RdsInstanceV3BackupStrategy)
 	PutDb(value *RdsInstanceV3Db)
+	PutRestoreFromBackup(value *RdsInstanceV3RestoreFromBackup)
 	PutRestorePoint(value *RdsInstanceV3RestorePoint)
 	PutTimeouts(value *RdsInstanceV3Timeouts)
 	PutVolume(value *RdsInstanceV3Volume)
@@ -168,6 +172,7 @@ type RdsInstanceV3 interface {
 	ResetParameters()
 	ResetParamGroupId()
 	ResetPublicIps()
+	ResetRestoreFromBackup()
 	ResetRestorePoint()
 	ResetSslEnable()
 	ResetTag()
@@ -578,6 +583,36 @@ func (j *jsiiProxy_RdsInstanceV3) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RdsInstanceV3) RestoredBackupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restoredBackupId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceV3) RestoreFromBackup() RdsInstanceV3RestoreFromBackupOutputReference {
+	var returns RdsInstanceV3RestoreFromBackupOutputReference
+	_jsii_.Get(
+		j,
+		"restoreFromBackup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceV3) RestoreFromBackupInput() *RdsInstanceV3RestoreFromBackup {
+	var returns *RdsInstanceV3RestoreFromBackup
+	_jsii_.Get(
+		j,
+		"restoreFromBackupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsInstanceV3) RestorePoint() RdsInstanceV3RestorePointOutputReference {
 	var returns RdsInstanceV3RestorePointOutputReference
 	_jsii_.Get(
@@ -789,7 +824,7 @@ func (j *jsiiProxy_RdsInstanceV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
 func NewRdsInstanceV3(scope constructs.Construct, id *string, config *RdsInstanceV3Config) RdsInstanceV3 {
 	_init_.Initialize()
 
@@ -807,7 +842,7 @@ func NewRdsInstanceV3(scope constructs.Construct, id *string, config *RdsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
 func NewRdsInstanceV3_Override(r RdsInstanceV3, scope constructs.Construct, id *string, config *RdsInstanceV3Config) {
 	_init_.Initialize()
 
@@ -1391,6 +1426,17 @@ func (r *jsiiProxy_RdsInstanceV3) PutDb(value *RdsInstanceV3Db) {
 	)
 }
 
+func (r *jsiiProxy_RdsInstanceV3) PutRestoreFromBackup(value *RdsInstanceV3RestoreFromBackup) {
+	if err := r.validatePutRestoreFromBackupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putRestoreFromBackup",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RdsInstanceV3) PutRestorePoint(value *RdsInstanceV3RestorePoint) {
 	if err := r.validatePutRestorePointParameters(value); err != nil {
 		panic(err)
@@ -1484,6 +1530,14 @@ func (r *jsiiProxy_RdsInstanceV3) ResetPublicIps() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPublicIps",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsInstanceV3) ResetRestoreFromBackup() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRestoreFromBackup",
 		nil, // no parameters
 	)
 }

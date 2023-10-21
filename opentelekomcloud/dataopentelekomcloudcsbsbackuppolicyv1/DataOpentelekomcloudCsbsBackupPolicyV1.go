@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1}.
 type DataOpentelekomcloudCsbsBackupPolicyV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1} Data Source.
 func NewDataOpentelekomcloudCsbsBackupPolicyV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudCsbsBackupPolicyV1Config) DataOpentelekomcloudCsbsBackupPolicyV1 {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataOpentelekomcloudCsbsBackupPolicyV1(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1} Data Source.
 func NewDataOpentelekomcloudCsbsBackupPolicyV1_Override(d DataOpentelekomcloudCsbsBackupPolicyV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudCsbsBackupPolicyV1Config) {
 	_init_.Initialize()
 

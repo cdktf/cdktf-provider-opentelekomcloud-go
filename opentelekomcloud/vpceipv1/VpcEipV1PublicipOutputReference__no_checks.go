@@ -67,6 +67,10 @@ func (j *jsiiProxy_VpcEipV1PublicipOutputReference) validateSetIpAddressParamete
 	return nil
 }
 
+func (j *jsiiProxy_VpcEipV1PublicipOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEipV1PublicipOutputReference) validateSetPortIdParameters(val *string) error {
 	return nil
 }

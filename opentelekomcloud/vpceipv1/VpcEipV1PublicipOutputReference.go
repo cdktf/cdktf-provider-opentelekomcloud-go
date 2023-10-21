@@ -35,6 +35,9 @@ type VpcEipV1PublicipOutputReference interface {
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	PortId() *string
 	SetPortId(val *string)
 	PortIdInput() *string
@@ -74,6 +77,7 @@ type VpcEipV1PublicipOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIpAddress()
+	ResetName()
 	ResetPortId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -155,6 +159,26 @@ func (j *jsiiProxy_VpcEipV1PublicipOutputReference) IpAddressInput() *string {
 	_jsii_.Get(
 		j,
 		"ipAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcEipV1PublicipOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcEipV1PublicipOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -288,6 +312,17 @@ func (j *jsiiProxy_VpcEipV1PublicipOutputReference)SetIpAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"ipAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcEipV1PublicipOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -526,6 +561,14 @@ func (v *jsiiProxy_VpcEipV1PublicipOutputReference) ResetIpAddress() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetIpAddress",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcEipV1PublicipOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetName",
 		nil, // no parameters
 	)
 }

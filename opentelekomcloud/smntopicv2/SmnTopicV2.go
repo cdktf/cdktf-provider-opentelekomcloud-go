@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2}.
 type SmnTopicV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -69,6 +69,9 @@ type SmnTopicV2 interface {
 	PushPolicy() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -116,6 +119,7 @@ type SmnTopicV2 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectName()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -361,6 +365,26 @@ func (j *jsiiProxy_SmnTopicV2) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SmnTopicV2) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SmnTopicV2) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SmnTopicV2) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -412,7 +436,7 @@ func (j *jsiiProxy_SmnTopicV2) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2} Resource.
 func NewSmnTopicV2(scope constructs.Construct, id *string, config *SmnTopicV2Config) SmnTopicV2 {
 	_init_.Initialize()
 
@@ -430,7 +454,7 @@ func NewSmnTopicV2(scope constructs.Construct, id *string, config *SmnTopicV2Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2} Resource.
 func NewSmnTopicV2_Override(s SmnTopicV2, scope constructs.Construct, id *string, config *SmnTopicV2Config) {
 	_init_.Initialize()
 
@@ -549,6 +573,17 @@ func (j *jsiiProxy_SmnTopicV2)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SmnTopicV2)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -899,6 +934,14 @@ func (s *jsiiProxy_SmnTopicV2) ResetProjectName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetProjectName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SmnTopicV2) ResetTags() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTags",
 		nil, // no parameters
 	)
 }

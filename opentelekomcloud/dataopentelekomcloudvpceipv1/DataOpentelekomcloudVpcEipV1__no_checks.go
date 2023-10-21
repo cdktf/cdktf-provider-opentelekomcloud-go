@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcEipV1) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudVpcEipV1) validateSetNameRegexParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcEipV1) validateSetPortIdParameters(val *string) error {
 	return nil
 }

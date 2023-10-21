@@ -75,6 +75,10 @@ func (r *jsiiProxy_RdsInstanceV3) validatePutDbParameters(value *RdsInstanceV3Db
 	return nil
 }
 
+func (r *jsiiProxy_RdsInstanceV3) validatePutRestoreFromBackupParameters(value *RdsInstanceV3RestoreFromBackup) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsInstanceV3) validatePutRestorePointParameters(value *RdsInstanceV3RestorePoint) error {
 	return nil
 }

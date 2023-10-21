@@ -407,6 +407,14 @@ func (j *jsiiProxy_SmnTopicV2) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_SmnTopicV2) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewSmnTopicV2Parameters(scope constructs.Construct, id *string, config *SmnTopicV2Config) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
