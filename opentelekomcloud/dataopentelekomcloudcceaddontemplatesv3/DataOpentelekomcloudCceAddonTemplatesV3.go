@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/cce_addon_templates_v3 opentelekomcloud_cce_addon_templates_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/cce_addon_templates_v3 opentelekomcloud_cce_addon_templates_v3}.
 type DataOpentelekomcloudCceAddonTemplatesV3 interface {
 	cdktf.TerraformDataSource
 	AddonName() *string
@@ -342,7 +342,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/cce_addon_templates_v3 opentelekomcloud_cce_addon_templates_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/cce_addon_templates_v3 opentelekomcloud_cce_addon_templates_v3} Data Source.
 func NewDataOpentelekomcloudCceAddonTemplatesV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudCceAddonTemplatesV3Config) DataOpentelekomcloudCceAddonTemplatesV3 {
 	_init_.Initialize()
 
@@ -360,7 +360,7 @@ func NewDataOpentelekomcloudCceAddonTemplatesV3(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/cce_addon_templates_v3 opentelekomcloud_cce_addon_templates_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/cce_addon_templates_v3 opentelekomcloud_cce_addon_templates_v3} Data Source.
 func NewDataOpentelekomcloudCceAddonTemplatesV3_Override(d DataOpentelekomcloudCceAddonTemplatesV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudCceAddonTemplatesV3Config) {
 	_init_.Initialize()
 

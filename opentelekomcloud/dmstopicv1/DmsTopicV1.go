@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/dms_topic_v1 opentelekomcloud_dms_topic_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/dms_topic_v1 opentelekomcloud_dms_topic_v1}.
 type DmsTopicV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -535,7 +535,7 @@ func (j *jsiiProxy_DmsTopicV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/dms_topic_v1 opentelekomcloud_dms_topic_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/dms_topic_v1 opentelekomcloud_dms_topic_v1} Resource.
 func NewDmsTopicV1(scope constructs.Construct, id *string, config *DmsTopicV1Config) DmsTopicV1 {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewDmsTopicV1(scope constructs.Construct, id *string, config *DmsTopicV1Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/dms_topic_v1 opentelekomcloud_dms_topic_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/dms_topic_v1 opentelekomcloud_dms_topic_v1} Resource.
 func NewDmsTopicV1_Override(d DmsTopicV1, scope constructs.Construct, id *string, config *DmsTopicV1Config) {
 	_init_.Initialize()
 

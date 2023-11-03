@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3}.
 type CceNodeV3 interface {
 	cdktf.TerraformResource
+	AgencyName() *string
+	SetAgencyName(val *string)
+	AgencyNameInput() *string
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -205,6 +208,7 @@ type CceNodeV3 interface {
 	PutRootVolume(value *CceNodeV3RootVolume)
 	PutTaints(value interface{})
 	PutTimeouts(value *CceNodeV3Timeouts)
+	ResetAgencyName()
 	ResetAnnotations()
 	ResetBandwidthChargeMode()
 	ResetBandwidthSize()
@@ -251,6 +255,26 @@ type CceNodeV3 interface {
 // The jsii proxy struct for CceNodeV3
 type jsiiProxy_CceNodeV3 struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CceNodeV3) AgencyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"agencyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceNodeV3) AgencyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"agencyNameInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CceNodeV3) Annotations() *map[string]*string {
@@ -1164,7 +1188,7 @@ func (j *jsiiProxy_CceNodeV3) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
 func NewCceNodeV3(scope constructs.Construct, id *string, config *CceNodeV3Config) CceNodeV3 {
 	_init_.Initialize()
 
@@ -1182,7 +1206,7 @@ func NewCceNodeV3(scope constructs.Construct, id *string, config *CceNodeV3Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
 func NewCceNodeV3_Override(c CceNodeV3, scope constructs.Construct, id *string, config *CceNodeV3Config) {
 	_init_.Initialize()
 
@@ -1190,6 +1214,17 @@ func NewCceNodeV3_Override(c CceNodeV3, scope constructs.Construct, id *string, 
 		"@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CceNodeV3)SetAgencyName(val *string) {
+	if err := j.validateSetAgencyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"agencyName",
+		val,
 	)
 }
 
@@ -1972,6 +2007,14 @@ func (c *jsiiProxy_CceNodeV3) PutTimeouts(value *CceNodeV3Timeouts) {
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CceNodeV3) ResetAgencyName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAgencyName",
+		nil, // no parameters
 	)
 }
 

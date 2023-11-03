@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/networking_network_v2 opentelekomcloud_networking_network_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/networking_network_v2 opentelekomcloud_networking_network_v2}.
 type DataOpentelekomcloudNetworkingNetworkV2 interface {
 	cdktf.TerraformDataSource
 	AdminStateUp() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DataOpentelekomcloudNetworkingNetworkV2) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/networking_network_v2 opentelekomcloud_networking_network_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/networking_network_v2 opentelekomcloud_networking_network_v2} Data Source.
 func NewDataOpentelekomcloudNetworkingNetworkV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudNetworkingNetworkV2Config) DataOpentelekomcloudNetworkingNetworkV2 {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDataOpentelekomcloudNetworkingNetworkV2(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/networking_network_v2 opentelekomcloud_networking_network_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/networking_network_v2 opentelekomcloud_networking_network_v2} Data Source.
 func NewDataOpentelekomcloudNetworkingNetworkV2_Override(d DataOpentelekomcloudNetworkingNetworkV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudNetworkingNetworkV2Config) {
 	_init_.Initialize()
 

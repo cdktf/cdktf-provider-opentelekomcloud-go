@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dms_product_v1 opentelekomcloud_dms_product_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/dms_product_v1 opentelekomcloud_dms_product_v1}.
 type DataOpentelekomcloudDmsProductV1 interface {
 	cdktf.TerraformDataSource
 	Bandwidth() *string
@@ -499,7 +499,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsProductV1) VmSpecificationInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dms_product_v1 opentelekomcloud_dms_product_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/dms_product_v1 opentelekomcloud_dms_product_v1} Data Source.
 func NewDataOpentelekomcloudDmsProductV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudDmsProductV1Config) DataOpentelekomcloudDmsProductV1 {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewDataOpentelekomcloudDmsProductV1(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dms_product_v1 opentelekomcloud_dms_product_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/dms_product_v1 opentelekomcloud_dms_product_v1} Data Source.
 func NewDataOpentelekomcloudDmsProductV1_Override(d DataOpentelekomcloudDmsProductV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudDmsProductV1Config) {
 	_init_.Initialize()
 
