@@ -79,6 +79,10 @@ func (j *jsiiProxy_DirectConnectV2TimeoutsOutputReference) validateSetTerraformR
 	return nil
 }
 
+func (j *jsiiProxy_DirectConnectV2TimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewDirectConnectV2TimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

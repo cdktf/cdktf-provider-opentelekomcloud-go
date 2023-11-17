@@ -1,3 +1,3 @@
 # `opentelekomcloud_dms_instance_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dms_instance_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/dms_instance_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_dms_instance_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dms_instance_v1).

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_certificate_v1 opentelekomcloud_waf_certificate_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/waf_certificate_v1 opentelekomcloud_waf_certificate_v1}.
 type WafCertificateV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_WafCertificateV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_certificate_v1 opentelekomcloud_waf_certificate_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/waf_certificate_v1 opentelekomcloud_waf_certificate_v1} Resource.
 func NewWafCertificateV1(scope constructs.Construct, id *string, config *WafCertificateV1Config) WafCertificateV1 {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewWafCertificateV1(scope constructs.Construct, id *string, config *WafCert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_certificate_v1 opentelekomcloud_waf_certificate_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/waf_certificate_v1 opentelekomcloud_waf_certificate_v1} Resource.
 func NewWafCertificateV1_Override(w WafCertificateV1, scope constructs.Construct, id *string, config *WafCertificateV1Config) {
 	_init_.Initialize()
 

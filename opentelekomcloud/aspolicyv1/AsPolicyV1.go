@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/as_policy_v1 opentelekomcloud_as_policy_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/as_policy_v1 opentelekomcloud_as_policy_v1}.
 type AsPolicyV1 interface {
 	cdktf.TerraformResource
 	AlarmId() *string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_AsPolicyV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/as_policy_v1 opentelekomcloud_as_policy_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/as_policy_v1 opentelekomcloud_as_policy_v1} Resource.
 func NewAsPolicyV1(scope constructs.Construct, id *string, config *AsPolicyV1Config) AsPolicyV1 {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewAsPolicyV1(scope constructs.Construct, id *string, config *AsPolicyV1Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/as_policy_v1 opentelekomcloud_as_policy_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/as_policy_v1 opentelekomcloud_as_policy_v1} Resource.
 func NewAsPolicyV1_Override(a AsPolicyV1, scope constructs.Construct, id *string, config *AsPolicyV1Config) {
 	_init_.Initialize()
 

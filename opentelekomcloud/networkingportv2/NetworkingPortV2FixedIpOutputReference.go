@@ -30,8 +30,8 @@ type NetworkingPortV2FixedIpOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *NetworkingPortV2FixedIp
+	SetInternalValue(val *NetworkingPortV2FixedIp)
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
@@ -126,8 +126,8 @@ func (j *jsiiProxy_NetworkingPortV2FixedIpOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkingPortV2FixedIpOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkingPortV2FixedIpOutputReference) InternalValue() *NetworkingPortV2FixedIp {
+	var returns *NetworkingPortV2FixedIp
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -197,29 +197,29 @@ func (j *jsiiProxy_NetworkingPortV2FixedIpOutputReference) TerraformResource() c
 }
 
 
-func NewNetworkingPortV2FixedIpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkingPortV2FixedIpOutputReference {
+func NewNetworkingPortV2FixedIpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkingPortV2FixedIpOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewNetworkingPortV2FixedIpOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewNetworkingPortV2FixedIpOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_NetworkingPortV2FixedIpOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2FixedIpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewNetworkingPortV2FixedIpOutputReference_Override(n NetworkingPortV2FixedIpOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewNetworkingPortV2FixedIpOutputReference_Override(n NetworkingPortV2FixedIpOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2FixedIpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
 }
@@ -246,7 +246,7 @@ func (j *jsiiProxy_NetworkingPortV2FixedIpOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2FixedIpOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkingPortV2FixedIpOutputReference)SetInternalValue(val *NetworkingPortV2FixedIp) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

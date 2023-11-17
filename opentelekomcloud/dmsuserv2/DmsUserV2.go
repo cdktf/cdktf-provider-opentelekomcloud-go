@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/dms_user_v2 opentelekomcloud_dms_user_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dms_user_v2 opentelekomcloud_dms_user_v2}.
 type DmsUserV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_DmsUserV2) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/dms_user_v2 opentelekomcloud_dms_user_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dms_user_v2 opentelekomcloud_dms_user_v2} Resource.
 func NewDmsUserV2(scope constructs.Construct, id *string, config *DmsUserV2Config) DmsUserV2 {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewDmsUserV2(scope constructs.Construct, id *string, config *DmsUserV2Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/dms_user_v2 opentelekomcloud_dms_user_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dms_user_v2 opentelekomcloud_dms_user_v2} Resource.
 func NewDmsUserV2_Override(d DmsUserV2, scope constructs.Construct, id *string, config *DmsUserV2Config) {
 	_init_.Initialize()
 

@@ -71,7 +71,7 @@ func (n *jsiiProxy_NetworkingPortV2) validatePutAllowedAddressPairsParameters(va
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingPortV2) validatePutFixedIpParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkingPortV2) validatePutFixedIpParameters(value *NetworkingPortV2FixedIp) error {
 	return nil
 }
 

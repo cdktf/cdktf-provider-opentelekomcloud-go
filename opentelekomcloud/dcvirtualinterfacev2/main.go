@@ -1,0 +1,115 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package dcvirtualinterfacev2
+
+import (
+	"reflect"
+
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+)
+
+func init() {
+	_jsii_.RegisterClass(
+		"@cdktf/provider-opentelekomcloud.dcVirtualInterfaceV2.DcVirtualInterfaceV2",
+		reflect.TypeOf((*DcVirtualInterfaceV2)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
+			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "asn", GoGetter: "Asn"},
+			_jsii_.MemberProperty{JsiiProperty: "asnInput", GoGetter: "AsnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bandwidth", GoGetter: "Bandwidth"},
+			_jsii_.MemberProperty{JsiiProperty: "bandwidthInput", GoGetter: "BandwidthInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bgpMd5", GoGetter: "BgpMd5"},
+			_jsii_.MemberProperty{JsiiProperty: "bgpMd5Input", GoGetter: "BgpMd5Input"},
+			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
+			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
+			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
+			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "directConnectId", GoGetter: "DirectConnectId"},
+			_jsii_.MemberProperty{JsiiProperty: "directConnectIdInput", GoGetter: "DirectConnectIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enableBfd", GoGetter: "EnableBfd"},
+			_jsii_.MemberProperty{JsiiProperty: "enableBfdInput", GoGetter: "EnableBfdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enableNqa", GoGetter: "EnableNqa"},
+			_jsii_.MemberProperty{JsiiProperty: "enableNqaInput", GoGetter: "EnableNqaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lagId", GoGetter: "LagId"},
+			_jsii_.MemberProperty{JsiiProperty: "lagIdInput", GoGetter: "LagIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "localGatewayV4Ip", GoGetter: "LocalGatewayV4Ip"},
+			_jsii_.MemberProperty{JsiiProperty: "localGatewayV4IpInput", GoGetter: "LocalGatewayV4IpInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
+			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "remoteEpGroupId", GoGetter: "RemoteEpGroupId"},
+			_jsii_.MemberProperty{JsiiProperty: "remoteEpGroupIdInput", GoGetter: "RemoteEpGroupIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "remoteGatewayV4Ip", GoGetter: "RemoteGatewayV4Ip"},
+			_jsii_.MemberProperty{JsiiProperty: "remoteGatewayV4IpInput", GoGetter: "RemoteGatewayV4IpInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAsn", GoMethod: "ResetAsn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBgpMd5", GoMethod: "ResetBgpMd5"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableBfd", GoMethod: "ResetEnableBfd"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableNqa", GoMethod: "ResetEnableNqa"},
+			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLagId", GoMethod: "ResetLagId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLocalGatewayV4Ip", GoMethod: "ResetLocalGatewayV4Ip"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProjectId", GoMethod: "ResetProjectId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRemoteGatewayV4Ip", GoMethod: "ResetRemoteGatewayV4Ip"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceType", GoMethod: "ResetServiceType"},
+			_jsii_.MemberProperty{JsiiProperty: "routeMode", GoGetter: "RouteMode"},
+			_jsii_.MemberProperty{JsiiProperty: "routeModeInput", GoGetter: "RouteModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceType", GoGetter: "ServiceType"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceTypeInput", GoGetter: "ServiceTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
+			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
+			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "virtualGatewayId", GoGetter: "VirtualGatewayId"},
+			_jsii_.MemberProperty{JsiiProperty: "virtualGatewayIdInput", GoGetter: "VirtualGatewayIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "vlan", GoGetter: "Vlan"},
+			_jsii_.MemberProperty{JsiiProperty: "vlanInput", GoGetter: "VlanInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DcVirtualInterfaceV2{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-opentelekomcloud.dcVirtualInterfaceV2.DcVirtualInterfaceV2Config",
+		reflect.TypeOf((*DcVirtualInterfaceV2Config)(nil)).Elem(),
+	)
+}

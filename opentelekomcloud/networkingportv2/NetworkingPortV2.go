@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2}.
 type NetworkingPortV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -43,8 +43,8 @@ type NetworkingPortV2 interface {
 	DeviceOwner() *string
 	SetDeviceOwner(val *string)
 	DeviceOwnerInput() *string
-	FixedIp() NetworkingPortV2FixedIpList
-	FixedIpInput() interface{}
+	FixedIp() NetworkingPortV2FixedIpOutputReference
+	FixedIpInput() *NetworkingPortV2FixedIp
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -141,7 +141,7 @@ type NetworkingPortV2 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAllowedAddressPairs(value interface{})
-	PutFixedIp(value interface{})
+	PutFixedIp(value *NetworkingPortV2FixedIp)
 	PutTimeouts(value *NetworkingPortV2Timeouts)
 	ResetAdminStateUp()
 	ResetAllowedAddressPairs()
@@ -316,8 +316,8 @@ func (j *jsiiProxy_NetworkingPortV2) DeviceOwnerInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkingPortV2) FixedIp() NetworkingPortV2FixedIpList {
-	var returns NetworkingPortV2FixedIpList
+func (j *jsiiProxy_NetworkingPortV2) FixedIp() NetworkingPortV2FixedIpOutputReference {
+	var returns NetworkingPortV2FixedIpOutputReference
 	_jsii_.Get(
 		j,
 		"fixedIp",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_NetworkingPortV2) FixedIp() NetworkingPortV2FixedIpList {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkingPortV2) FixedIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkingPortV2) FixedIpInput() *NetworkingPortV2FixedIp {
+	var returns *NetworkingPortV2FixedIp
 	_jsii_.Get(
 		j,
 		"fixedIpInput",
@@ -667,7 +667,7 @@ func (j *jsiiProxy_NetworkingPortV2) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
 func NewNetworkingPortV2(scope constructs.Construct, id *string, config *NetworkingPortV2Config) NetworkingPortV2 {
 	_init_.Initialize()
 
@@ -685,7 +685,7 @@ func NewNetworkingPortV2(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
 func NewNetworkingPortV2_Override(n NetworkingPortV2, scope constructs.Construct, id *string, config *NetworkingPortV2Config) {
 	_init_.Initialize()
 
@@ -1236,7 +1236,7 @@ func (n *jsiiProxy_NetworkingPortV2) PutAllowedAddressPairs(value interface{}) {
 	)
 }
 
-func (n *jsiiProxy_NetworkingPortV2) PutFixedIp(value interface{}) {
+func (n *jsiiProxy_NetworkingPortV2) PutFixedIp(value *NetworkingPortV2FixedIp) {
 	if err := n.validatePutFixedIpParameters(value); err != nil {
 		panic(err)
 	}

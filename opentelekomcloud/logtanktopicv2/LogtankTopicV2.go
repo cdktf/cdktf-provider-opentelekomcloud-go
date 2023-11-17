@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/logtank_topic_v2 opentelekomcloud_logtank_topic_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/logtank_topic_v2 opentelekomcloud_logtank_topic_v2}.
 type LogtankTopicV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_LogtankTopicV2) TopicNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/logtank_topic_v2 opentelekomcloud_logtank_topic_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/logtank_topic_v2 opentelekomcloud_logtank_topic_v2} Resource.
 func NewLogtankTopicV2(scope constructs.Construct, id *string, config *LogtankTopicV2Config) LogtankTopicV2 {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewLogtankTopicV2(scope constructs.Construct, id *string, config *LogtankTo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/logtank_topic_v2 opentelekomcloud_logtank_topic_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/logtank_topic_v2 opentelekomcloud_logtank_topic_v2} Resource.
 func NewLogtankTopicV2_Override(l LogtankTopicV2, scope constructs.Construct, id *string, config *LogtankTopicV2Config) {
 	_init_.Initialize()
 

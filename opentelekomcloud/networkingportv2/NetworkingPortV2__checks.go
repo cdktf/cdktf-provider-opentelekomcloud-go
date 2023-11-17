@@ -222,32 +222,12 @@ func (n *jsiiProxy_NetworkingPortV2) validatePutAllowedAddressPairsParameters(va
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingPortV2) validatePutFixedIpParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkingPortV2) validatePutFixedIpParameters(value *NetworkingPortV2FixedIp) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*NetworkingPortV2FixedIp:
-		value := value.(*[]*NetworkingPortV2FixedIp)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*NetworkingPortV2FixedIp:
-		value_ := value.([]*NetworkingPortV2FixedIp)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NetworkingPortV2FixedIp; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

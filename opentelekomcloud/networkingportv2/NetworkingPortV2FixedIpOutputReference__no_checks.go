@@ -59,7 +59,7 @@ func (j *jsiiProxy_NetworkingPortV2FixedIpOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_NetworkingPortV2FixedIpOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkingPortV2FixedIpOutputReference) validateSetInternalValueParameters(val *NetworkingPortV2FixedIp) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_NetworkingPortV2FixedIpOutputReference) validateSetTerraformR
 	return nil
 }
 
-func validateNewNetworkingPortV2FixedIpOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewNetworkingPortV2FixedIpOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 
