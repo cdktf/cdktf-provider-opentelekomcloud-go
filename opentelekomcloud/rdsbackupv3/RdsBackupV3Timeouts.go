@@ -5,7 +5,7 @@ package rdsbackupv3
 
 
 type RdsBackupV3Timeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/rds_backup_v3#create RdsBackupV3#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/rds_backup_v3#create RdsBackupV3#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

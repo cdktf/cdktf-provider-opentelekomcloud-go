@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/waf_dedicated_web_tamper_rule_v1 opentelekomcloud_waf_dedicated_web_tamper_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_web_tamper_rule_v1 opentelekomcloud_waf_dedicated_web_tamper_rule_v1}.
 type WafDedicatedWebTamperRuleV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -460,7 +460,7 @@ func (j *jsiiProxy_WafDedicatedWebTamperRuleV1) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/waf_dedicated_web_tamper_rule_v1 opentelekomcloud_waf_dedicated_web_tamper_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_web_tamper_rule_v1 opentelekomcloud_waf_dedicated_web_tamper_rule_v1} Resource.
 func NewWafDedicatedWebTamperRuleV1(scope constructs.Construct, id *string, config *WafDedicatedWebTamperRuleV1Config) WafDedicatedWebTamperRuleV1 {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewWafDedicatedWebTamperRuleV1(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/waf_dedicated_web_tamper_rule_v1 opentelekomcloud_waf_dedicated_web_tamper_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_web_tamper_rule_v1 opentelekomcloud_waf_dedicated_web_tamper_rule_v1} Resource.
 func NewWafDedicatedWebTamperRuleV1_Override(w WafDedicatedWebTamperRuleV1, scope constructs.Construct, id *string, config *WafDedicatedWebTamperRuleV1Config) {
 	_init_.Initialize()
 

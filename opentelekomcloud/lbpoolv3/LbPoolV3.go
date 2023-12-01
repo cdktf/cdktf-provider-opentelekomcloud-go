@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/lb_pool_v3 opentelekomcloud_lb_pool_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/lb_pool_v3 opentelekomcloud_lb_pool_v3}.
 type LbPoolV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -570,7 +570,7 @@ func (j *jsiiProxy_LbPoolV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/lb_pool_v3 opentelekomcloud_lb_pool_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/lb_pool_v3 opentelekomcloud_lb_pool_v3} Resource.
 func NewLbPoolV3(scope constructs.Construct, id *string, config *LbPoolV3Config) LbPoolV3 {
 	_init_.Initialize()
 
@@ -588,7 +588,7 @@ func NewLbPoolV3(scope constructs.Construct, id *string, config *LbPoolV3Config)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/lb_pool_v3 opentelekomcloud_lb_pool_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/lb_pool_v3 opentelekomcloud_lb_pool_v3} Resource.
 func NewLbPoolV3_Override(l LbPoolV3, scope constructs.Construct, id *string, config *LbPoolV3Config) {
 	_init_.Initialize()
 

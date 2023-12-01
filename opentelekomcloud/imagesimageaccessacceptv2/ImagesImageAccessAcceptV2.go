@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/images_image_access_accept_v2 opentelekomcloud_images_image_access_accept_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/images_image_access_accept_v2 opentelekomcloud_images_image_access_accept_v2}.
 type ImagesImageAccessAcceptV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_ImagesImageAccessAcceptV2) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/images_image_access_accept_v2 opentelekomcloud_images_image_access_accept_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/images_image_access_accept_v2 opentelekomcloud_images_image_access_accept_v2} Resource.
 func NewImagesImageAccessAcceptV2(scope constructs.Construct, id *string, config *ImagesImageAccessAcceptV2Config) ImagesImageAccessAcceptV2 {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewImagesImageAccessAcceptV2(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/images_image_access_accept_v2 opentelekomcloud_images_image_access_accept_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/images_image_access_accept_v2 opentelekomcloud_images_image_access_accept_v2} Resource.
 func NewImagesImageAccessAcceptV2_Override(i ImagesImageAccessAcceptV2, scope constructs.Construct, id *string, config *ImagesImageAccessAcceptV2Config) {
 	_init_.Initialize()
 

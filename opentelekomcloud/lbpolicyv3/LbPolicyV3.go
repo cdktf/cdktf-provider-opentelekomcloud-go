@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/lb_policy_v3 opentelekomcloud_lb_policy_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/lb_policy_v3 opentelekomcloud_lb_policy_v3}.
 type LbPolicyV3 interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -642,7 +642,7 @@ func (j *jsiiProxy_LbPolicyV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/lb_policy_v3 opentelekomcloud_lb_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/lb_policy_v3 opentelekomcloud_lb_policy_v3} Resource.
 func NewLbPolicyV3(scope constructs.Construct, id *string, config *LbPolicyV3Config) LbPolicyV3 {
 	_init_.Initialize()
 
@@ -660,7 +660,7 @@ func NewLbPolicyV3(scope constructs.Construct, id *string, config *LbPolicyV3Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/lb_policy_v3 opentelekomcloud_lb_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/lb_policy_v3 opentelekomcloud_lb_policy_v3} Resource.
 func NewLbPolicyV3_Override(l LbPolicyV3, scope constructs.Construct, id *string, config *LbPolicyV3Config) {
 	_init_.Initialize()
 
