@@ -59,7 +59,15 @@ func (l *jsiiProxy_LbWhitelistV2) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (l *jsiiProxy_LbWhitelistV2) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbWhitelistV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbWhitelistV2) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

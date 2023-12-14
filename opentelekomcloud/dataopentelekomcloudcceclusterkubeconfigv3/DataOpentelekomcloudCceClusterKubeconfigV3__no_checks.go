@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) validateSetDurati
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) validateSetExpiryDateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) validateSetIdParameters(val *string) error {
 	return nil
 }

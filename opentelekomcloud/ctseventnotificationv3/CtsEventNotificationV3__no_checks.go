@@ -59,7 +59,15 @@ func (c *jsiiProxy_CtsEventNotificationV3) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CtsEventNotificationV3) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CtsEventNotificationV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CtsEventNotificationV3) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

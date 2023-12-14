@@ -59,7 +59,15 @@ func (b *jsiiProxy_BlockstorageVolumeV2) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (b *jsiiProxy_BlockstorageVolumeV2) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BlockstorageVolumeV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BlockstorageVolumeV2) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

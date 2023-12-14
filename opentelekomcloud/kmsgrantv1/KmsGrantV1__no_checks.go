@@ -59,7 +59,15 @@ func (k *jsiiProxy_KmsGrantV1) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (k *jsiiProxy_KmsGrantV1) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsGrantV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsGrantV1) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

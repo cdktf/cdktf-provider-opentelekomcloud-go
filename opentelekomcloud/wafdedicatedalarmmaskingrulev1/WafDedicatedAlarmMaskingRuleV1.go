@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1}.
 type WafDedicatedAlarmMaskingRuleV1 interface {
 	cdktf.TerraformResource
 	AdvancedSettings() WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList
@@ -108,12 +108,22 @@ type WafDedicatedAlarmMaskingRuleV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -483,7 +493,7 @@ func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource.
 func NewWafDedicatedAlarmMaskingRuleV1(scope constructs.Construct, id *string, config *WafDedicatedAlarmMaskingRuleV1Config) WafDedicatedAlarmMaskingRuleV1 {
 	_init_.Initialize()
 
@@ -501,7 +511,7 @@ func NewWafDedicatedAlarmMaskingRuleV1(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource.
 func NewWafDedicatedAlarmMaskingRuleV1_Override(w WafDedicatedAlarmMaskingRuleV1, scope constructs.Construct, id *string, config *WafDedicatedAlarmMaskingRuleV1Config) {
 	_init_.Initialize()
 
@@ -904,6 +914,19 @@ func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) GetStringMapAttribute(terrafo
 	return returns
 }
 
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		w,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := w.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -931,6 +954,17 @@ func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) InterpolationForAttribute(ter
 	return returns
 }
 
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) MoveFromId(id *string) {
+	if err := w.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) MoveTo(moveTarget *string, index interface{}) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -939,6 +973,17 @@ func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) MoveTo(moveTarget *string, in
 		w,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) MoveToId(id *string) {
+	if err := w.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

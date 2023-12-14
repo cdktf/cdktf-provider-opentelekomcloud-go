@@ -59,7 +59,15 @@ func (o *jsiiProxy_ObsBucketPolicy) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (o *jsiiProxy_ObsBucketPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObsBucketPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObsBucketPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

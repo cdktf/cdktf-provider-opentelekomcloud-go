@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/obs_bucket opentelekomcloud_obs_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/obs_bucket opentelekomcloud_obs_bucket}.
 type ObsBucket interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -126,12 +126,22 @@ type ObsBucket interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -654,7 +664,7 @@ func (j *jsiiProxy_ObsBucket) WebsiteInput() *ObsBucketWebsite {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
 func NewObsBucket(scope constructs.Construct, id *string, config *ObsBucketConfig) ObsBucket {
 	_init_.Initialize()
 
@@ -672,7 +682,7 @@ func NewObsBucket(scope constructs.Construct, id *string, config *ObsBucketConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
 func NewObsBucket_Override(o ObsBucket, scope constructs.Construct, id *string, config *ObsBucketConfig) {
 	_init_.Initialize()
 
@@ -1119,6 +1129,19 @@ func (o *jsiiProxy_ObsBucket) GetStringMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
+func (o *jsiiProxy_ObsBucket) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_ObsBucket) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1146,6 +1169,17 @@ func (o *jsiiProxy_ObsBucket) InterpolationForAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (o *jsiiProxy_ObsBucket) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_ObsBucket) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1154,6 +1188,17 @@ func (o *jsiiProxy_ObsBucket) MoveTo(moveTarget *string, index interface{}) {
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_ObsBucket) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

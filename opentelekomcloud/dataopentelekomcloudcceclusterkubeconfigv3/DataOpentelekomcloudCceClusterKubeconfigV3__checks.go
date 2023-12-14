@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) validateSetDurati
 	return nil
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) validateSetExpiryDateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

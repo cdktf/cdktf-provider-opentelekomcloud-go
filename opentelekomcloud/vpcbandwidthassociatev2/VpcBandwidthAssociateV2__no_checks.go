@@ -59,7 +59,15 @@ func (v *jsiiProxy_VpcBandwidthAssociateV2) validateInterpolationForAttributePar
 	return nil
 }
 
+func (v *jsiiProxy_VpcBandwidthAssociateV2) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcBandwidthAssociateV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcBandwidthAssociateV2) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

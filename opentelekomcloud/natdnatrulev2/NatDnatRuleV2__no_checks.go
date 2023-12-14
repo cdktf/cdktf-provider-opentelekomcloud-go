@@ -59,7 +59,15 @@ func (n *jsiiProxy_NatDnatRuleV2) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (n *jsiiProxy_NatDnatRuleV2) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NatDnatRuleV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NatDnatRuleV2) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

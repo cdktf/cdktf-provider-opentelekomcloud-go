@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3}.
 type DataOpentelekomcloudCceClusterKubeconfigV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -33,6 +33,9 @@ type DataOpentelekomcloudCceClusterKubeconfigV3 interface {
 	Duration() *float64
 	SetDuration(val *float64)
 	DurationInput() *float64
+	ExpiryDate() *string
+	SetExpiryDate(val *string)
+	ExpiryDateInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -89,6 +92,7 @@ type DataOpentelekomcloudCceClusterKubeconfigV3 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDuration()
+	ResetExpiryDate()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -183,6 +187,26 @@ func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) DurationInput() *
 	_jsii_.Get(
 		j,
 		"durationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) ExpiryDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiryDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) ExpiryDateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiryDateInput",
 		&returns,
 	)
 	return returns
@@ -319,7 +343,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3} Data Source.
 func NewDataOpentelekomcloudCceClusterKubeconfigV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudCceClusterKubeconfigV3Config) DataOpentelekomcloudCceClusterKubeconfigV3 {
 	_init_.Initialize()
 
@@ -337,7 +361,7 @@ func NewDataOpentelekomcloudCceClusterKubeconfigV3(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3} Data Source.
 func NewDataOpentelekomcloudCceClusterKubeconfigV3_Override(d DataOpentelekomcloudCceClusterKubeconfigV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudCceClusterKubeconfigV3Config) {
 	_init_.Initialize()
 
@@ -385,6 +409,17 @@ func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3)SetDuration(val *f
 	_jsii_.Set(
 		j,
 		"duration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3)SetExpiryDate(val *string) {
+	if err := j.validateSetExpiryDateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expiryDate",
 		val,
 	)
 }
@@ -716,6 +751,14 @@ func (d *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) ResetDuration() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDuration",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataOpentelekomcloudCceClusterKubeconfigV3) ResetExpiryDate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExpiryDate",
 		nil, // no parameters
 	)
 }

@@ -59,7 +59,15 @@ func (w *jsiiProxy_WafDedicatedDataMaskingRuleV1) validateInterpolationForAttrib
 	return nil
 }
 
+func (w *jsiiProxy_WafDedicatedDataMaskingRuleV1) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafDedicatedDataMaskingRuleV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedDataMaskingRuleV1) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3}.
 type IdentityUserV3 interface {
 	cdktf.TerraformResource
 	AccessType() *string
@@ -122,12 +122,22 @@ type IdentityUserV3 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -580,7 +590,7 @@ func (j *jsiiProxy_IdentityUserV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
 func NewIdentityUserV3(scope constructs.Construct, id *string, config *IdentityUserV3Config) IdentityUserV3 {
 	_init_.Initialize()
 
@@ -598,7 +608,7 @@ func NewIdentityUserV3(scope constructs.Construct, id *string, config *IdentityU
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
 func NewIdentityUserV3_Override(i IdentityUserV3, scope constructs.Construct, id *string, config *IdentityUserV3Config) {
 	_init_.Initialize()
 
@@ -1067,6 +1077,19 @@ func (i *jsiiProxy_IdentityUserV3) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (i *jsiiProxy_IdentityUserV3) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IdentityUserV3) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1094,6 +1117,17 @@ func (i *jsiiProxy_IdentityUserV3) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (i *jsiiProxy_IdentityUserV3) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IdentityUserV3) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1102,6 +1136,17 @@ func (i *jsiiProxy_IdentityUserV3) MoveTo(moveTarget *string, index interface{})
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IdentityUserV3) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

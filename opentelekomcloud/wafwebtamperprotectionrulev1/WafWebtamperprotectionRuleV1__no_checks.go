@@ -59,7 +59,15 @@ func (w *jsiiProxy_WafWebtamperprotectionRuleV1) validateInterpolationForAttribu
 	return nil
 }
 
+func (w *jsiiProxy_WafWebtamperprotectionRuleV1) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafWebtamperprotectionRuleV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafWebtamperprotectionRuleV1) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

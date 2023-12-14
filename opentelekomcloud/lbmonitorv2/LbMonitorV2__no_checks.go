@@ -59,7 +59,15 @@ func (l *jsiiProxy_LbMonitorV2) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (l *jsiiProxy_LbMonitorV2) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbMonitorV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbMonitorV2) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

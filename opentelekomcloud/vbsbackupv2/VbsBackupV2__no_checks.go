@@ -59,7 +59,15 @@ func (v *jsiiProxy_VbsBackupV2) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (v *jsiiProxy_VbsBackupV2) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VbsBackupV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VbsBackupV2) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

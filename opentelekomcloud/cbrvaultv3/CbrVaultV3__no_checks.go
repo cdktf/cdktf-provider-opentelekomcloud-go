@@ -59,7 +59,15 @@ func (c *jsiiProxy_CbrVaultV3) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_CbrVaultV3) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CbrVaultV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CbrVaultV3) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

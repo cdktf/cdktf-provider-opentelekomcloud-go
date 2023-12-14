@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_provider opentelekomcloud_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_provider opentelekomcloud_identity_provider}.
 type IdentityProvider interface {
 	cdktf.TerraformResource
 	AccessConfig() IdentityProviderAccessConfigOutputReference
@@ -111,12 +111,22 @@ type IdentityProvider interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -496,7 +506,7 @@ func (j *jsiiProxy_IdentityProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_provider opentelekomcloud_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_provider opentelekomcloud_identity_provider} Resource.
 func NewIdentityProvider(scope constructs.Construct, id *string, config *IdentityProviderConfig) IdentityProvider {
 	_init_.Initialize()
 
@@ -514,7 +524,7 @@ func NewIdentityProvider(scope constructs.Construct, id *string, config *Identit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_provider opentelekomcloud_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_provider opentelekomcloud_identity_provider} Resource.
 func NewIdentityProvider_Override(i IdentityProvider, scope constructs.Construct, id *string, config *IdentityProviderConfig) {
 	_init_.Initialize()
 
@@ -939,6 +949,19 @@ func (i *jsiiProxy_IdentityProvider) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (i *jsiiProxy_IdentityProvider) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IdentityProvider) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -966,6 +989,17 @@ func (i *jsiiProxy_IdentityProvider) InterpolationForAttribute(terraformAttribut
 	return returns
 }
 
+func (i *jsiiProxy_IdentityProvider) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IdentityProvider) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -974,6 +1008,17 @@ func (i *jsiiProxy_IdentityProvider) MoveTo(moveTarget *string, index interface{
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IdentityProvider) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

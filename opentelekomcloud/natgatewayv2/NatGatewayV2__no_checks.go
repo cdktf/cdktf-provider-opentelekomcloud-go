@@ -59,7 +59,15 @@ func (n *jsiiProxy_NatGatewayV2) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (n *jsiiProxy_NatGatewayV2) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NatGatewayV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NatGatewayV2) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

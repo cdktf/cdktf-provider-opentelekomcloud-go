@@ -95,10 +95,6 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) validateSetOwnerParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) validateSetRegionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) validateSetSizeMaxParameters(val *float64) error {
 	return nil
 }

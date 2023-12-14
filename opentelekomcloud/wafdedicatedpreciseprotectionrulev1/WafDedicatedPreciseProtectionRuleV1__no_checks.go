@@ -59,7 +59,15 @@ func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) validateInterpolationFor
 	return nil
 }
 
+func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

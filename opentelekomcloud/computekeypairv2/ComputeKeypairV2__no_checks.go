@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeKeypairV2) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_ComputeKeypairV2) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeKeypairV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeKeypairV2) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

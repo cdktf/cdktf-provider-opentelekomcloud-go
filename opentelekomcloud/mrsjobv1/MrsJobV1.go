@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1}.
 type MrsJobV1 interface {
 	cdktf.TerraformResource
 	Arguments() *string
@@ -127,12 +127,22 @@ type MrsJobV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -616,7 +626,7 @@ func (j *jsiiProxy_MrsJobV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1} Resource.
 func NewMrsJobV1(scope constructs.Construct, id *string, config *MrsJobV1Config) MrsJobV1 {
 	_init_.Initialize()
 
@@ -634,7 +644,7 @@ func NewMrsJobV1(scope constructs.Construct, id *string, config *MrsJobV1Config)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/mrs_job_v1 opentelekomcloud_mrs_job_v1} Resource.
 func NewMrsJobV1_Override(m MrsJobV1, scope constructs.Construct, id *string, config *MrsJobV1Config) {
 	_init_.Initialize()
 
@@ -1125,6 +1135,19 @@ func (m *jsiiProxy_MrsJobV1) GetStringMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
+func (m *jsiiProxy_MrsJobV1) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_MrsJobV1) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1152,6 +1175,17 @@ func (m *jsiiProxy_MrsJobV1) InterpolationForAttribute(terraformAttribute *strin
 	return returns
 }
 
+func (m *jsiiProxy_MrsJobV1) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_MrsJobV1) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1160,6 +1194,17 @@ func (m *jsiiProxy_MrsJobV1) MoveTo(moveTarget *string, index interface{}) {
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_MrsJobV1) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

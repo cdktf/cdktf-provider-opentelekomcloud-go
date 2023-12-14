@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2}.
 type LogtankGroupV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -95,12 +95,22 @@ type LogtankGroupV2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -354,7 +364,7 @@ func (j *jsiiProxy_LogtankGroupV2) TtlInDaysInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2} Resource.
 func NewLogtankGroupV2(scope constructs.Construct, id *string, config *LogtankGroupV2Config) LogtankGroupV2 {
 	_init_.Initialize()
 
@@ -372,7 +382,7 @@ func NewLogtankGroupV2(scope constructs.Construct, id *string, config *LogtankGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2} Resource.
 func NewLogtankGroupV2_Override(l LogtankGroupV2, scope constructs.Construct, id *string, config *LogtankGroupV2Config) {
 	_init_.Initialize()
 
@@ -753,6 +763,19 @@ func (l *jsiiProxy_LogtankGroupV2) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (l *jsiiProxy_LogtankGroupV2) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LogtankGroupV2) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -780,6 +803,17 @@ func (l *jsiiProxy_LogtankGroupV2) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (l *jsiiProxy_LogtankGroupV2) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LogtankGroupV2) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -788,6 +822,17 @@ func (l *jsiiProxy_LogtankGroupV2) MoveTo(moveTarget *string, index interface{})
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LogtankGroupV2) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

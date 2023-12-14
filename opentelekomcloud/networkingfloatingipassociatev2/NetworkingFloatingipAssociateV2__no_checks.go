@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkingFloatingipAssociateV2) validateInterpolationForAttr
 	return nil
 }
 
+func (n *jsiiProxy_NetworkingFloatingipAssociateV2) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkingFloatingipAssociateV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkingFloatingipAssociateV2) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

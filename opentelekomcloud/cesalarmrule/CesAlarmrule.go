@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule}.
 type CesAlarmrule interface {
 	cdktf.TerraformResource
 	AlarmActionEnabled() interface{}
@@ -118,12 +118,22 @@ type CesAlarmrule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -580,7 +590,7 @@ func (j *jsiiProxy_CesAlarmrule) UpdateTime() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource.
 func NewCesAlarmrule(scope constructs.Construct, id *string, config *CesAlarmruleConfig) CesAlarmrule {
 	_init_.Initialize()
 
@@ -598,7 +608,7 @@ func NewCesAlarmrule(scope constructs.Construct, id *string, config *CesAlarmrul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource.
 func NewCesAlarmrule_Override(c CesAlarmrule, scope constructs.Construct, id *string, config *CesAlarmruleConfig) {
 	_init_.Initialize()
 
@@ -1023,6 +1033,19 @@ func (c *jsiiProxy_CesAlarmrule) GetStringMapAttribute(terraformAttribute *strin
 	return returns
 }
 
+func (c *jsiiProxy_CesAlarmrule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CesAlarmrule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1050,6 +1073,17 @@ func (c *jsiiProxy_CesAlarmrule) InterpolationForAttribute(terraformAttribute *s
 	return returns
 }
 
+func (c *jsiiProxy_CesAlarmrule) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_CesAlarmrule) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1058,6 +1092,17 @@ func (c *jsiiProxy_CesAlarmrule) MoveTo(moveTarget *string, index interface{}) {
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CesAlarmrule) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

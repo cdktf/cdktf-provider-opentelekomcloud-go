@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication}.
 type ObsBucketReplication interface {
 	cdktf.TerraformResource
 	Agency() *string
@@ -102,12 +102,22 @@ type ObsBucketReplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -414,7 +424,7 @@ func (j *jsiiProxy_ObsBucketReplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication} Resource.
 func NewObsBucketReplication(scope constructs.Construct, id *string, config *ObsBucketReplicationConfig) ObsBucketReplication {
 	_init_.Initialize()
 
@@ -432,7 +442,7 @@ func NewObsBucketReplication(scope constructs.Construct, id *string, config *Obs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication} Resource.
 func NewObsBucketReplication_Override(o ObsBucketReplication, scope constructs.Construct, id *string, config *ObsBucketReplicationConfig) {
 	_init_.Initialize()
 
@@ -835,6 +845,19 @@ func (o *jsiiProxy_ObsBucketReplication) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (o *jsiiProxy_ObsBucketReplication) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_ObsBucketReplication) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -862,6 +885,17 @@ func (o *jsiiProxy_ObsBucketReplication) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (o *jsiiProxy_ObsBucketReplication) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_ObsBucketReplication) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -870,6 +904,17 @@ func (o *jsiiProxy_ObsBucketReplication) MoveTo(moveTarget *string, index interf
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_ObsBucketReplication) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

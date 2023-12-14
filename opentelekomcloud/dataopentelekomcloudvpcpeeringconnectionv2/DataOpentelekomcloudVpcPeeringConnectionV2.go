@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2}.
 type DataOpentelekomcloudVpcPeeringConnectionV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcPeeringConnectionV2) VpcIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Data Source.
 func NewDataOpentelekomcloudVpcPeeringConnectionV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcPeeringConnectionV2Config) DataOpentelekomcloudVpcPeeringConnectionV2 {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewDataOpentelekomcloudVpcPeeringConnectionV2(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Data Source.
 func NewDataOpentelekomcloudVpcPeeringConnectionV2_Override(d DataOpentelekomcloudVpcPeeringConnectionV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcPeeringConnectionV2Config) {
 	_init_.Initialize()
 

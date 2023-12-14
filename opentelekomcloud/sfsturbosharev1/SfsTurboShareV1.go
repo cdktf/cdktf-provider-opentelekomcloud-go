@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
 type SfsTurboShareV1 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -127,12 +127,22 @@ type SfsTurboShareV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -623,7 +633,7 @@ func (j *jsiiProxy_SfsTurboShareV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1} Resource.
 func NewSfsTurboShareV1(scope constructs.Construct, id *string, config *SfsTurboShareV1Config) SfsTurboShareV1 {
 	_init_.Initialize()
 
@@ -641,7 +651,7 @@ func NewSfsTurboShareV1(scope constructs.Construct, id *string, config *SfsTurbo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1} Resource.
 func NewSfsTurboShareV1_Override(s SfsTurboShareV1, scope constructs.Construct, id *string, config *SfsTurboShareV1Config) {
 	_init_.Initialize()
 
@@ -1121,6 +1131,19 @@ func (s *jsiiProxy_SfsTurboShareV1) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (s *jsiiProxy_SfsTurboShareV1) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SfsTurboShareV1) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1148,6 +1171,17 @@ func (s *jsiiProxy_SfsTurboShareV1) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (s *jsiiProxy_SfsTurboShareV1) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SfsTurboShareV1) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1156,6 +1190,17 @@ func (s *jsiiProxy_SfsTurboShareV1) MoveTo(moveTarget *string, index interface{}
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SfsTurboShareV1) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_CesAlarmrule) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_CesAlarmrule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CesAlarmrule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesAlarmrule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

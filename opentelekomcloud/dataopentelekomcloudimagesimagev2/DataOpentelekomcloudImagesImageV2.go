@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2}.
 type DataOpentelekomcloudImagesImageV2 interface {
 	cdktf.TerraformDataSource
+	BackupId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Checksum() *string
@@ -26,10 +27,12 @@ type DataOpentelekomcloudImagesImageV2 interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *string
+	DataOrigin() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	DiskFormat() *string
 	File() *string
 	// Experimental.
@@ -41,18 +44,16 @@ type DataOpentelekomcloudImagesImageV2 interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	ImageSourceType() *string
 	ImageType() *string
 	IsRegistered() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MemberStatus() *string
-	Metadata() cdktf.StringMap
+	LoginUser() *string
 	MinDisk() *float64
-	MinDiskGb() *float64
 	MinRam() *float64
-	MinRamMb() *float64
 	MostRecent() interface{}
 	SetMostRecent(val interface{})
 	MostRecentInput() interface{}
@@ -64,8 +65,10 @@ type DataOpentelekomcloudImagesImageV2 interface {
 	NameRegexInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OriginalImageName() *string
 	OsBit() *string
 	OsType() *string
+	OsVersion() *string
 	Owner() *string
 	SetOwner(val *string)
 	OwnerInput() *string
@@ -77,9 +80,6 @@ type DataOpentelekomcloudImagesImageV2 interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Region() *string
-	SetRegion(val *string)
-	RegionInput() *string
 	Schema() *string
 	SizeBytes() *float64
 	SizeMax() *float64
@@ -120,7 +120,6 @@ type DataOpentelekomcloudImagesImageV2 interface {
 	Visibility() *string
 	SetVisibility(val *string)
 	VisibilityInput() *string
-	WholeImage() cdktf.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -153,7 +152,6 @@ type DataOpentelekomcloudImagesImageV2 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
-	ResetRegion()
 	ResetSizeMax()
 	ResetSizeMin()
 	ResetSortDirection()
@@ -173,6 +171,16 @@ type DataOpentelekomcloudImagesImageV2 interface {
 // The jsii proxy struct for DataOpentelekomcloudImagesImageV2
 type jsiiProxy_DataOpentelekomcloudImagesImageV2 struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) BackupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) CdktfStack() cdktf.TerraformStack {
@@ -235,11 +243,31 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) CreatedAt() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) DataOrigin() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataOrigin",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns
@@ -305,6 +333,16 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) ImageSourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageSourceType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) ImageType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -335,21 +373,11 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) Lifecycle() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) MemberStatus() *string {
+func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) LoginUser() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"memberStatus",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) Metadata() cdktf.StringMap {
-	var returns cdktf.StringMap
-	_jsii_.Get(
-		j,
-		"metadata",
+		"loginUser",
 		&returns,
 	)
 	return returns
@@ -365,31 +393,11 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) MinDisk() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) MinDiskGb() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"minDiskGb",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) MinRam() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"minRam",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) MinRamMb() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"minRamMb",
 		&returns,
 	)
 	return returns
@@ -465,6 +473,16 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) OriginalImageName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originalImageName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) OsBit() *string {
 	var returns *string
 	_jsii_.Get(
@@ -480,6 +498,16 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) OsType() *string {
 	_jsii_.Get(
 		j,
 		"osType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) OsVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osVersion",
 		&returns,
 	)
 	return returns
@@ -540,26 +568,6 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) RawOverrides() interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) Region() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"region",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) RegionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"regionInput",
 		&returns,
 	)
 	return returns
@@ -875,18 +883,8 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) VisibilityInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2) WholeImage() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"wholeImage",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2} Data Source.
 func NewDataOpentelekomcloudImagesImageV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudImagesImageV2Config) DataOpentelekomcloudImagesImageV2 {
 	_init_.Initialize()
 
@@ -904,7 +902,7 @@ func NewDataOpentelekomcloudImagesImageV2(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2} Data Source.
 func NewDataOpentelekomcloudImagesImageV2_Override(d DataOpentelekomcloudImagesImageV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudImagesImageV2Config) {
 	_init_.Initialize()
 
@@ -1001,17 +999,6 @@ func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2)SetProvider(val cdktf.Terra
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataOpentelekomcloudImagesImageV2)SetRegion(val *string) {
-	if err := j.validateSetRegionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"region",
 		val,
 	)
 }
@@ -1403,14 +1390,6 @@ func (d *jsiiProxy_DataOpentelekomcloudImagesImageV2) ResetOwner() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOwner",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataOpentelekomcloudImagesImageV2) ResetRegion() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRegion",
 		nil, // no parameters
 	)
 }

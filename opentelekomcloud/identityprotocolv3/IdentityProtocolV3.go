@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}.
 type IdentityProtocolV3 interface {
 	cdktf.TerraformResource
 	AccessConfig() IdentityProtocolV3AccessConfigOutputReference
@@ -102,12 +102,22 @@ type IdentityProtocolV3 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -425,7 +435,7 @@ func (j *jsiiProxy_IdentityProtocolV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
 func NewIdentityProtocolV3(scope constructs.Construct, id *string, config *IdentityProtocolV3Config) IdentityProtocolV3 {
 	_init_.Initialize()
 
@@ -443,7 +453,7 @@ func NewIdentityProtocolV3(scope constructs.Construct, id *string, config *Ident
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
 func NewIdentityProtocolV3_Override(i IdentityProtocolV3, scope constructs.Construct, id *string, config *IdentityProtocolV3Config) {
 	_init_.Initialize()
 
@@ -835,6 +845,19 @@ func (i *jsiiProxy_IdentityProtocolV3) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (i *jsiiProxy_IdentityProtocolV3) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IdentityProtocolV3) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -862,6 +885,17 @@ func (i *jsiiProxy_IdentityProtocolV3) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (i *jsiiProxy_IdentityProtocolV3) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IdentityProtocolV3) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -870,6 +904,17 @@ func (i *jsiiProxy_IdentityProtocolV3) MoveTo(moveTarget *string, index interfac
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IdentityProtocolV3) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

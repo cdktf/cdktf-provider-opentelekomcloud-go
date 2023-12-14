@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2}.
 type NetworkingFloatingipV2 interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -109,12 +109,22 @@ type NetworkingFloatingipV2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -476,7 +486,7 @@ func (j *jsiiProxy_NetworkingFloatingipV2) ValueSpecsInput() *map[string]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource.
 func NewNetworkingFloatingipV2(scope constructs.Construct, id *string, config *NetworkingFloatingipV2Config) NetworkingFloatingipV2 {
 	_init_.Initialize()
 
@@ -494,7 +504,7 @@ func NewNetworkingFloatingipV2(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource.
 func NewNetworkingFloatingipV2_Override(n NetworkingFloatingipV2, scope constructs.Construct, id *string, config *NetworkingFloatingipV2Config) {
 	_init_.Initialize()
 
@@ -919,6 +929,19 @@ func (n *jsiiProxy_NetworkingFloatingipV2) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (n *jsiiProxy_NetworkingFloatingipV2) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetworkingFloatingipV2) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -946,6 +969,17 @@ func (n *jsiiProxy_NetworkingFloatingipV2) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (n *jsiiProxy_NetworkingFloatingipV2) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetworkingFloatingipV2) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -954,6 +988,17 @@ func (n *jsiiProxy_NetworkingFloatingipV2) MoveTo(moveTarget *string, index inte
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkingFloatingipV2) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

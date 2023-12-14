@@ -59,7 +59,15 @@ func (g *jsiiProxy_GaussdbMysqlInstanceV3) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GaussdbMysqlInstanceV3) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GaussdbMysqlInstanceV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GaussdbMysqlInstanceV3) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

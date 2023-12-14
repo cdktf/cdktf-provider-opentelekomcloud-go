@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/images_image_access_v2 opentelekomcloud_images_image_access_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/images_image_access_v2 opentelekomcloud_images_image_access_v2}.
 type ImagesImageAccessV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -100,12 +100,22 @@ type ImagesImageAccessV2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -400,7 +410,7 @@ func (j *jsiiProxy_ImagesImageAccessV2) UpdateAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/images_image_access_v2 opentelekomcloud_images_image_access_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/images_image_access_v2 opentelekomcloud_images_image_access_v2} Resource.
 func NewImagesImageAccessV2(scope constructs.Construct, id *string, config *ImagesImageAccessV2Config) ImagesImageAccessV2 {
 	_init_.Initialize()
 
@@ -418,7 +428,7 @@ func NewImagesImageAccessV2(scope constructs.Construct, id *string, config *Imag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/images_image_access_v2 opentelekomcloud_images_image_access_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/images_image_access_v2 opentelekomcloud_images_image_access_v2} Resource.
 func NewImagesImageAccessV2_Override(i ImagesImageAccessV2, scope constructs.Construct, id *string, config *ImagesImageAccessV2Config) {
 	_init_.Initialize()
 
@@ -810,6 +820,19 @@ func (i *jsiiProxy_ImagesImageAccessV2) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (i *jsiiProxy_ImagesImageAccessV2) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_ImagesImageAccessV2) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -837,6 +860,17 @@ func (i *jsiiProxy_ImagesImageAccessV2) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (i *jsiiProxy_ImagesImageAccessV2) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_ImagesImageAccessV2) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -845,6 +879,17 @@ func (i *jsiiProxy_ImagesImageAccessV2) MoveTo(moveTarget *string, index interfa
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_ImagesImageAccessV2) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
