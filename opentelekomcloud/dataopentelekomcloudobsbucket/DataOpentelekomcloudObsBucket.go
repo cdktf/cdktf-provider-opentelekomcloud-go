@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/obs_bucket opentelekomcloud_obs_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/obs_bucket opentelekomcloud_obs_bucket}.
 type DataOpentelekomcloudObsBucket interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucket) Website() DataOpentelekomcloud
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/obs_bucket opentelekomcloud_obs_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/obs_bucket opentelekomcloud_obs_bucket} Data Source.
 func NewDataOpentelekomcloudObsBucket(scope constructs.Construct, id *string, config *DataOpentelekomcloudObsBucketConfig) DataOpentelekomcloudObsBucket {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewDataOpentelekomcloudObsBucket(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/obs_bucket opentelekomcloud_obs_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/obs_bucket opentelekomcloud_obs_bucket} Data Source.
 func NewDataOpentelekomcloudObsBucket_Override(d DataOpentelekomcloudObsBucket, scope constructs.Construct, id *string, config *DataOpentelekomcloudObsBucketConfig) {
 	_init_.Initialize()
 

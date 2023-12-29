@@ -5,9 +5,9 @@ package lbpolicyv3
 
 
 type LbPolicyV3RedirectPoolsConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/lb_policy_v3#pool_id LbPolicyV3#pool_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/lb_policy_v3#pool_id LbPolicyV3#pool_id}.
 	PoolId *string `field:"required" json:"poolId" yaml:"poolId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/lb_policy_v3#weight LbPolicyV3#weight}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/lb_policy_v3#weight LbPolicyV3#weight}.
 	Weight *float64 `field:"required" json:"weight" yaml:"weight"`
 }
 

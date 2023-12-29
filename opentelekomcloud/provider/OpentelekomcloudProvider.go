@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs opentelekomcloud}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs opentelekomcloud}.
 type OpentelekomcloudProvider interface {
 	cdktf.TerraformProvider
 	AccessKey() *string
@@ -27,6 +27,9 @@ type OpentelekomcloudProvider interface {
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
+	AllowReauth() interface{}
+	SetAllowReauth(val interface{})
+	AllowReauthInput() interface{}
 	AuthUrl() *string
 	SetAuthUrl(val *string)
 	AuthUrlInput() *string
@@ -128,6 +131,7 @@ type OpentelekomcloudProvider interface {
 	ResetAgencyDomainName()
 	ResetAgencyName()
 	ResetAlias()
+	ResetAllowReauth()
 	ResetAuthUrl()
 	ResetBackoffRetryTimeout()
 	ResetCacertFile()
@@ -245,6 +249,26 @@ func (j *jsiiProxy_OpentelekomcloudProvider) AliasInput() *string {
 	_jsii_.Get(
 		j,
 		"aliasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpentelekomcloudProvider) AllowReauth() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowReauth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpentelekomcloudProvider) AllowReauthInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowReauthInput",
 		&returns,
 	)
 	return returns
@@ -831,7 +855,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs opentelekomcloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs opentelekomcloud} Resource.
 func NewOpentelekomcloudProvider(scope constructs.Construct, id *string, config *OpentelekomcloudProviderConfig) OpentelekomcloudProvider {
 	_init_.Initialize()
 
@@ -849,7 +873,7 @@ func NewOpentelekomcloudProvider(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs opentelekomcloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs opentelekomcloud} Resource.
 func NewOpentelekomcloudProvider_Override(o OpentelekomcloudProvider, scope constructs.Construct, id *string, config *OpentelekomcloudProviderConfig) {
 	_init_.Initialize()
 
@@ -888,6 +912,17 @@ func (j *jsiiProxy_OpentelekomcloudProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpentelekomcloudProvider)SetAllowReauth(val interface{}) {
+	if err := j.validateSetAllowReauthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowReauth",
 		val,
 	)
 }
@@ -1243,6 +1278,14 @@ func (o *jsiiProxy_OpentelekomcloudProvider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAlias",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpentelekomcloudProvider) ResetAllowReauth() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAllowReauth",
 		nil, // no parameters
 	)
 }

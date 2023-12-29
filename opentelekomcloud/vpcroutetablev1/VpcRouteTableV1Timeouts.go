@@ -5,9 +5,9 @@ package vpcroutetablev1
 
 
 type VpcRouteTableV1Timeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vpc_route_table_v1#create VpcRouteTableV1#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_route_table_v1#create VpcRouteTableV1#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vpc_route_table_v1#delete VpcRouteTableV1#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_route_table_v1#delete VpcRouteTableV1#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

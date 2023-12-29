@@ -85,7 +85,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProjectId", GoMethod: "ResetProjectId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRemoteGatewayV4Ip", GoMethod: "ResetRemoteGatewayV4Ip"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServiceType", GoMethod: "ResetServiceType"},
 			_jsii_.MemberProperty{JsiiProperty: "routeMode", GoGetter: "RouteMode"},
 			_jsii_.MemberProperty{JsiiProperty: "routeModeInput", GoGetter: "RouteModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceType", GoGetter: "ServiceType"},
