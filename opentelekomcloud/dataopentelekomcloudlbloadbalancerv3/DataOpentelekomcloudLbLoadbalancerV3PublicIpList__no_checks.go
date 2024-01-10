@@ -7,6 +7,10 @@ package dataopentelekomcloudlbloadbalancerv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) validateGetParameters(index *float64) error {
 	return nil
 }

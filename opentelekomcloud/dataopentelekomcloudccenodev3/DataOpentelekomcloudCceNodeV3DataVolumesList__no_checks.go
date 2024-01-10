@@ -7,6 +7,10 @@ package dataopentelekomcloudccenodev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) validateGetParameters(index *float64) error {
 	return nil
 }

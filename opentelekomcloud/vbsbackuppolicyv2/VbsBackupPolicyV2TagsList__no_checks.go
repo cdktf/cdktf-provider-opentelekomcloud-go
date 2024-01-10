@@ -7,6 +7,10 @@ package vbsbackuppolicyv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VbsBackupPolicyV2TagsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VbsBackupPolicyV2TagsList) validateGetParameters(index *float64) error {
 	return nil
 }

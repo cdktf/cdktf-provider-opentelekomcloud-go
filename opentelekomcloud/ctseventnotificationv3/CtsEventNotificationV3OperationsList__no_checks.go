@@ -7,6 +7,10 @@ package ctseventnotificationv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CtsEventNotificationV3OperationsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CtsEventNotificationV3OperationsList) validateGetParameters(index *float64) error {
 	return nil
 }

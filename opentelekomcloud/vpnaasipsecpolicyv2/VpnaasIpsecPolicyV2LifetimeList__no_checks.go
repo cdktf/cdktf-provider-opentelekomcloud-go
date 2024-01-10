@@ -7,6 +7,10 @@ package vpnaasipsecpolicyv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpnaasIpsecPolicyV2LifetimeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnaasIpsecPolicyV2LifetimeList) validateGetParameters(index *float64) error {
 	return nil
 }

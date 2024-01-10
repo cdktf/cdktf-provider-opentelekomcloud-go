@@ -7,6 +7,10 @@ package ccenodev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CceNodeV3DataVolumesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CceNodeV3DataVolumesList) validateGetParameters(index *float64) error {
 	return nil
 }

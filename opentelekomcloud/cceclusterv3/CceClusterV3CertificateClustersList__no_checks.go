@@ -7,6 +7,10 @@ package cceclusterv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CceClusterV3CertificateClustersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CceClusterV3CertificateClustersList) validateGetParameters(index *float64) error {
 	return nil
 }

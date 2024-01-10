@@ -7,6 +7,10 @@ package ecsinstancev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EcsInstanceV1DataDisksList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsInstanceV1DataDisksList) validateGetParameters(index *float64) error {
 	return nil
 }

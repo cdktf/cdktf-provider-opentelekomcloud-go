@@ -7,6 +7,10 @@ package sfsshareaccessrulesv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

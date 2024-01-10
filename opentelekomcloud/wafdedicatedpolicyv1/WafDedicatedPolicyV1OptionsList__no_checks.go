@@ -7,6 +7,10 @@ package wafdedicatedpolicyv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafDedicatedPolicyV1OptionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafDedicatedPolicyV1OptionsList) validateGetParameters(index *float64) error {
 	return nil
 }

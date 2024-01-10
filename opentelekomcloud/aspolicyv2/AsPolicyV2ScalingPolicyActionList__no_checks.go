@@ -7,6 +7,10 @@ package aspolicyv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AsPolicyV2ScalingPolicyActionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AsPolicyV2ScalingPolicyActionList) validateGetParameters(index *float64) error {
 	return nil
 }

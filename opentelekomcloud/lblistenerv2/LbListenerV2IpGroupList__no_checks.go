@@ -7,6 +7,10 @@ package lblistenerv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbListenerV2IpGroupList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbListenerV2IpGroupList) validateGetParameters(index *float64) error {
 	return nil
 }

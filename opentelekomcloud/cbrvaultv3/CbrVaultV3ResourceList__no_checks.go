@@ -7,6 +7,10 @@ package cbrvaultv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CbrVaultV3ResourceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CbrVaultV3ResourceList) validateGetParameters(index *float64) error {
 	return nil
 }

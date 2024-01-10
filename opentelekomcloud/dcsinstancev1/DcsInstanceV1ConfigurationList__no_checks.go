@@ -7,6 +7,10 @@ package dcsinstancev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DcsInstanceV1ConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DcsInstanceV1ConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

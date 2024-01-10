@@ -7,6 +7,10 @@ package dataopentelekomcloudcomputeinstancev2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOpentelekomcloudComputeInstanceV2NetworkList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOpentelekomcloudComputeInstanceV2NetworkList) validateGetParameters(index *float64) error {
 	return nil
 }

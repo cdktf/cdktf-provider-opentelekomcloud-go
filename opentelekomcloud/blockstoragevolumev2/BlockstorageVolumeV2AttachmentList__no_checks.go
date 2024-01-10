@@ -7,6 +7,10 @@ package blockstoragevolumev2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BlockstorageVolumeV2AttachmentList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BlockstorageVolumeV2AttachmentList) validateGetParameters(index *float64) error {
 	return nil
 }

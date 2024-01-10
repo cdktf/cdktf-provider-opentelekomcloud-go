@@ -7,6 +7,10 @@ package lbpolicyv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbPolicyV3RulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbPolicyV3RulesList) validateGetParameters(index *float64) error {
 	return nil
 }

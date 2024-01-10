@@ -7,6 +7,10 @@ package dataopentelekomcloudvbsbackuppolicyv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2FilterTagsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2FilterTagsList) validateGetParameters(index *float64) error {
 	return nil
 }

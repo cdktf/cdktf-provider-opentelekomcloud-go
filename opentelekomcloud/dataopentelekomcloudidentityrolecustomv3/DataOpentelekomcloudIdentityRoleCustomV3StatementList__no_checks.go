@@ -7,6 +7,10 @@ package dataopentelekomcloudidentityrolecustomv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3StatementList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3StatementList) validateGetParameters(index *float64) error {
 	return nil
 }

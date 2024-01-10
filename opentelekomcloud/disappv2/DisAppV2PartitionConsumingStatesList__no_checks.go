@@ -7,6 +7,10 @@ package disappv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DisAppV2PartitionConsumingStatesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DisAppV2PartitionConsumingStatesList) validateGetParameters(index *float64) error {
 	return nil
 }

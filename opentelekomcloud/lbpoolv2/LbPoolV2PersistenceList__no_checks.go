@@ -7,6 +7,10 @@ package lbpoolv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbPoolV2PersistenceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbPoolV2PersistenceList) validateGetParameters(index *float64) error {
 	return nil
 }

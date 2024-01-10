@@ -7,6 +7,10 @@ package dataopentelekomclouddehserverv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOpentelekomcloudDehServerV1AddressesList) validateGetParameters(index *float64) error {
 	return nil
 }

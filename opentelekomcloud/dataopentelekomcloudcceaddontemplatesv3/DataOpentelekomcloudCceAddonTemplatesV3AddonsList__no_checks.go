@@ -7,6 +7,10 @@ package dataopentelekomcloudcceaddontemplatesv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateGetParameters(index *float64) error {
 	return nil
 }

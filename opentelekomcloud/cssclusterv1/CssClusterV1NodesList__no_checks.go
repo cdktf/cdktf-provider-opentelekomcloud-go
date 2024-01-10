@@ -7,6 +7,10 @@ package cssclusterv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CssClusterV1NodesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CssClusterV1NodesList) validateGetParameters(index *float64) error {
 	return nil
 }

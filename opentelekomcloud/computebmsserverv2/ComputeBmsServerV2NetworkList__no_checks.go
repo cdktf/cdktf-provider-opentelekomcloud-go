@@ -7,6 +7,10 @@ package computebmsserverv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeBmsServerV2NetworkList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBmsServerV2NetworkList) validateGetParameters(index *float64) error {
 	return nil
 }

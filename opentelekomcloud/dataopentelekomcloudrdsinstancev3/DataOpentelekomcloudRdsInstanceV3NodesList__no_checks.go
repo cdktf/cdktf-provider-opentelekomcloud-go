@@ -7,6 +7,10 @@ package dataopentelekomcloudrdsinstancev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOpentelekomcloudRdsInstanceV3NodesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOpentelekomcloudRdsInstanceV3NodesList) validateGetParameters(index *float64) error {
 	return nil
 }

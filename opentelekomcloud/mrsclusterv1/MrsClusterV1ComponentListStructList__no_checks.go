@@ -7,6 +7,10 @@ package mrsclusterv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MrsClusterV1ComponentListStructList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MrsClusterV1ComponentListStructList) validateGetParameters(index *float64) error {
 	return nil
 }

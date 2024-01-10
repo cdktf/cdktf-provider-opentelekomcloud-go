@@ -7,6 +7,10 @@ package dataopentelekomcloudcomputebmsnicv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsList) validateGetParameters(index *float64) error {
 	return nil
 }

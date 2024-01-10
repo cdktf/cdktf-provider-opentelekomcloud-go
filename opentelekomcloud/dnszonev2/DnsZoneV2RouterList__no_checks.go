@@ -7,6 +7,10 @@ package dnszonev2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DnsZoneV2RouterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsZoneV2RouterList) validateGetParameters(index *float64) error {
 	return nil
 }

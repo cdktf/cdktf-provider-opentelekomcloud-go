@@ -7,6 +7,10 @@ package dataopentelekomcloudddsinstancev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3BackupStrategyList) validateGetParameters(index *float64) error {
 	return nil
 }

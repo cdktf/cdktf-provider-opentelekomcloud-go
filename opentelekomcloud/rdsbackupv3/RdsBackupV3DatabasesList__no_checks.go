@@ -7,6 +7,10 @@ package rdsbackupv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RdsBackupV3DatabasesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsBackupV3DatabasesList) validateGetParameters(index *float64) error {
 	return nil
 }

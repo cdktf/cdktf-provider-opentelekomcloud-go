@@ -7,6 +7,10 @@ package dehhostv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DehHostV1AvailableInstanceCapacitiesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DehHostV1AvailableInstanceCapacitiesList) validateGetParameters(index *float64) error {
 	return nil
 }
