@@ -207,6 +207,17 @@ func (d *jsiiProxy_DcVirtualInterfaceV2) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (d *jsiiProxy_DcVirtualInterfaceV2) validatePutRemoteEpGroupParameters(value *DcVirtualInterfaceV2RemoteEpGroup) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateDcVirtualInterfaceV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -506,14 +517,6 @@ func (j *jsiiProxy_DcVirtualInterfaceV2) validateSetProvisionersParameters(val *
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DcVirtualInterfaceV2) validateSetRemoteEpGroupIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

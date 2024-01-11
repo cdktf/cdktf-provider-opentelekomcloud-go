@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/waf_dedicated_cc_rule_v1 opentelekomcloud_waf_dedicated_cc_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/waf_dedicated_cc_rule_v1 opentelekomcloud_waf_dedicated_cc_rule_v1}.
 type WafDedicatedCcRuleV1 interface {
 	cdktf.TerraformResource
 	Action() WafDedicatedCcRuleV1ActionList
@@ -685,7 +685,7 @@ func (j *jsiiProxy_WafDedicatedCcRuleV1) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/waf_dedicated_cc_rule_v1 opentelekomcloud_waf_dedicated_cc_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/waf_dedicated_cc_rule_v1 opentelekomcloud_waf_dedicated_cc_rule_v1} Resource.
 func NewWafDedicatedCcRuleV1(scope constructs.Construct, id *string, config *WafDedicatedCcRuleV1Config) WafDedicatedCcRuleV1 {
 	_init_.Initialize()
 
@@ -703,7 +703,7 @@ func NewWafDedicatedCcRuleV1(scope constructs.Construct, id *string, config *Waf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/waf_dedicated_cc_rule_v1 opentelekomcloud_waf_dedicated_cc_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/waf_dedicated_cc_rule_v1 opentelekomcloud_waf_dedicated_cc_rule_v1} Resource.
 func NewWafDedicatedCcRuleV1_Override(w WafDedicatedCcRuleV1, scope constructs.Construct, id *string, config *WafDedicatedCcRuleV1Config) {
 	_init_.Initialize()
 

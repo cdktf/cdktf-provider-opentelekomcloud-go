@@ -75,6 +75,10 @@ func (d *jsiiProxy_DcVirtualGatewayV2) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (d *jsiiProxy_DcVirtualGatewayV2) validatePutLocalEpGroupParameters(value *DcVirtualGatewayV2LocalEpGroup) error {
+	return nil
+}
+
 func validateDcVirtualGatewayV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -116,10 +120,6 @@ func (j *jsiiProxy_DcVirtualGatewayV2) validateSetIdParameters(val *string) erro
 }
 
 func (j *jsiiProxy_DcVirtualGatewayV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DcVirtualGatewayV2) validateSetLocalEpGroupIdParameters(val *string) error {
 	return nil
 }
 

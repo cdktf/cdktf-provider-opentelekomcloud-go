@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1 opentelekomcloud_vpc_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1 opentelekomcloud_vpc_v1}.
 type VpcV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,9 @@ type VpcV1 interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	SecondaryCidr() *string
+	SetSecondaryCidr(val *string)
+	SecondaryCidrInput() *string
 	Shared() interface{}
 	SetShared(val interface{})
 	SharedInput() interface{}
@@ -135,6 +138,7 @@ type VpcV1 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetSecondaryCidr()
 	ResetShared()
 	ResetTags()
 	ResetTimeouts()
@@ -386,6 +390,26 @@ func (j *jsiiProxy_VpcV1) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpcV1) SecondaryCidr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryCidr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcV1) SecondaryCidrInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryCidrInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcV1) Shared() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -487,7 +511,7 @@ func (j *jsiiProxy_VpcV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1 opentelekomcloud_vpc_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1 opentelekomcloud_vpc_v1} Resource.
 func NewVpcV1(scope constructs.Construct, id *string, config *VpcV1Config) VpcV1 {
 	_init_.Initialize()
 
@@ -505,7 +529,7 @@ func NewVpcV1(scope constructs.Construct, id *string, config *VpcV1Config) VpcV1
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1 opentelekomcloud_vpc_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1 opentelekomcloud_vpc_v1} Resource.
 func NewVpcV1_Override(v VpcV1, scope constructs.Construct, id *string, config *VpcV1Config) {
 	_init_.Initialize()
 
@@ -635,6 +659,17 @@ func (j *jsiiProxy_VpcV1)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcV1)SetSecondaryCidr(val *string) {
+	if err := j.validateSetSecondaryCidrParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryCidr",
 		val,
 	)
 }
@@ -1053,6 +1088,14 @@ func (v *jsiiProxy_VpcV1) ResetRegion() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcV1) ResetSecondaryCidr() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSecondaryCidr",
 		nil, // no parameters
 	)
 }

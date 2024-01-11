@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2}.
 type DcVirtualGatewayV2 interface {
 	cdktf.TerraformResource
 	Asn() *float64
@@ -55,9 +55,9 @@ type DcVirtualGatewayV2 interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocalEpGroup() DcVirtualGatewayV2LocalEpGroupOutputReference
 	LocalEpGroupId() *string
-	SetLocalEpGroupId(val *string)
-	LocalEpGroupIdInput() *string
+	LocalEpGroupInput() *DcVirtualGatewayV2LocalEpGroup
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -132,6 +132,7 @@ type DcVirtualGatewayV2 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutLocalEpGroup(value *DcVirtualGatewayV2LocalEpGroup)
 	ResetAsn()
 	ResetDescription()
 	ResetDeviceId()
@@ -329,6 +330,16 @@ func (j *jsiiProxy_DcVirtualGatewayV2) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
+func (j *jsiiProxy_DcVirtualGatewayV2) LocalEpGroup() DcVirtualGatewayV2LocalEpGroupOutputReference {
+	var returns DcVirtualGatewayV2LocalEpGroupOutputReference
+	_jsii_.Get(
+		j,
+		"localEpGroup",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DcVirtualGatewayV2) LocalEpGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -339,11 +350,11 @@ func (j *jsiiProxy_DcVirtualGatewayV2) LocalEpGroupId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DcVirtualGatewayV2) LocalEpGroupIdInput() *string {
-	var returns *string
+func (j *jsiiProxy_DcVirtualGatewayV2) LocalEpGroupInput() *DcVirtualGatewayV2LocalEpGroup {
+	var returns *DcVirtualGatewayV2LocalEpGroup
 	_jsii_.Get(
 		j,
-		"localEpGroupIdInput",
+		"localEpGroupInput",
 		&returns,
 	)
 	return returns
@@ -510,7 +521,7 @@ func (j *jsiiProxy_DcVirtualGatewayV2) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource.
 func NewDcVirtualGatewayV2(scope constructs.Construct, id *string, config *DcVirtualGatewayV2Config) DcVirtualGatewayV2 {
 	_init_.Initialize()
 
@@ -528,7 +539,7 @@ func NewDcVirtualGatewayV2(scope constructs.Construct, id *string, config *DcVir
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource.
 func NewDcVirtualGatewayV2_Override(d DcVirtualGatewayV2, scope constructs.Construct, id *string, config *DcVirtualGatewayV2Config) {
 	_init_.Initialize()
 
@@ -628,17 +639,6 @@ func (j *jsiiProxy_DcVirtualGatewayV2)SetLifecycle(val *cdktf.TerraformResourceL
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DcVirtualGatewayV2)SetLocalEpGroupId(val *string) {
-	if err := j.validateSetLocalEpGroupIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"localEpGroupId",
 		val,
 	)
 }
@@ -1056,6 +1056,17 @@ func (d *jsiiProxy_DcVirtualGatewayV2) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DcVirtualGatewayV2) PutLocalEpGroup(value *DcVirtualGatewayV2LocalEpGroup) {
+	if err := d.validatePutLocalEpGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLocalEpGroup",
+		[]interface{}{value},
 	)
 }
 

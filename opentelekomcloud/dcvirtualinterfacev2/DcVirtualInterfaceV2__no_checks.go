@@ -75,6 +75,10 @@ func (d *jsiiProxy_DcVirtualInterfaceV2) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (d *jsiiProxy_DcVirtualInterfaceV2) validatePutRemoteEpGroupParameters(value *DcVirtualInterfaceV2RemoteEpGroup) error {
+	return nil
+}
+
 func validateDcVirtualInterfaceV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -152,10 +156,6 @@ func (j *jsiiProxy_DcVirtualInterfaceV2) validateSetProjectIdParameters(val *str
 }
 
 func (j *jsiiProxy_DcVirtualInterfaceV2) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DcVirtualInterfaceV2) validateSetRemoteEpGroupIdParameters(val *string) error {
 	return nil
 }
 

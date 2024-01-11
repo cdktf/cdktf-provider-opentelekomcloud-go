@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2}.
 type DcVirtualInterfaceV2 interface {
 	cdktf.TerraformResource
 	Asn() *float64
@@ -92,9 +92,9 @@ type DcVirtualInterfaceV2 interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteEpGroup() DcVirtualInterfaceV2RemoteEpGroupOutputReference
 	RemoteEpGroupId() *string
-	SetRemoteEpGroupId(val *string)
-	RemoteEpGroupIdInput() *string
+	RemoteEpGroupInput() *DcVirtualInterfaceV2RemoteEpGroup
 	RemoteGatewayV4Ip() *string
 	SetRemoteGatewayV4Ip(val *string)
 	RemoteGatewayV4IpInput() *string
@@ -163,6 +163,7 @@ type DcVirtualInterfaceV2 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutRemoteEpGroup(value *DcVirtualInterfaceV2RemoteEpGroup)
 	ResetAsn()
 	ResetBgpMd5()
 	ResetDescription()
@@ -574,6 +575,16 @@ func (j *jsiiProxy_DcVirtualInterfaceV2) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DcVirtualInterfaceV2) RemoteEpGroup() DcVirtualInterfaceV2RemoteEpGroupOutputReference {
+	var returns DcVirtualInterfaceV2RemoteEpGroupOutputReference
+	_jsii_.Get(
+		j,
+		"remoteEpGroup",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DcVirtualInterfaceV2) RemoteEpGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -584,11 +595,11 @@ func (j *jsiiProxy_DcVirtualInterfaceV2) RemoteEpGroupId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DcVirtualInterfaceV2) RemoteEpGroupIdInput() *string {
-	var returns *string
+func (j *jsiiProxy_DcVirtualInterfaceV2) RemoteEpGroupInput() *DcVirtualInterfaceV2RemoteEpGroup {
+	var returns *DcVirtualInterfaceV2RemoteEpGroup
 	_jsii_.Get(
 		j,
-		"remoteEpGroupIdInput",
+		"remoteEpGroupInput",
 		&returns,
 	)
 	return returns
@@ -755,7 +766,7 @@ func (j *jsiiProxy_DcVirtualInterfaceV2) VlanInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2} Resource.
 func NewDcVirtualInterfaceV2(scope constructs.Construct, id *string, config *DcVirtualInterfaceV2Config) DcVirtualInterfaceV2 {
 	_init_.Initialize()
 
@@ -773,7 +784,7 @@ func NewDcVirtualInterfaceV2(scope constructs.Construct, id *string, config *DcV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2} Resource.
 func NewDcVirtualInterfaceV2_Override(d DcVirtualInterfaceV2, scope constructs.Construct, id *string, config *DcVirtualInterfaceV2Config) {
 	_init_.Initialize()
 
@@ -980,17 +991,6 @@ func (j *jsiiProxy_DcVirtualInterfaceV2)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DcVirtualInterfaceV2)SetRemoteEpGroupId(val *string) {
-	if err := j.validateSetRemoteEpGroupIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"remoteEpGroupId",
 		val,
 	)
 }
@@ -1411,6 +1411,17 @@ func (d *jsiiProxy_DcVirtualInterfaceV2) OverrideLogicalId(newLogicalId *string)
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DcVirtualInterfaceV2) PutRemoteEpGroup(value *DcVirtualInterfaceV2RemoteEpGroup) {
+	if err := d.validatePutRemoteEpGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRemoteEpGroup",
+		[]interface{}{value},
 	)
 }
 

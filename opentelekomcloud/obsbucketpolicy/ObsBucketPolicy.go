@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/obs_bucket_policy opentelekomcloud_obs_bucket_policy}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/obs_bucket_policy opentelekomcloud_obs_bucket_policy}.
 type ObsBucketPolicy interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ObsBucketPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/obs_bucket_policy opentelekomcloud_obs_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/obs_bucket_policy opentelekomcloud_obs_bucket_policy} Resource.
 func NewObsBucketPolicy(scope constructs.Construct, id *string, config *ObsBucketPolicyConfig) ObsBucketPolicy {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewObsBucketPolicy(scope constructs.Construct, id *string, config *ObsBucke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/obs_bucket_policy opentelekomcloud_obs_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/obs_bucket_policy opentelekomcloud_obs_bucket_policy} Resource.
 func NewObsBucketPolicy_Override(o ObsBucketPolicy, scope constructs.Construct, id *string, config *ObsBucketPolicyConfig) {
 	_init_.Initialize()
 
