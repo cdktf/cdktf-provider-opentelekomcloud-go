@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1}.
 type DataOpentelekomcloudVpcSubnetV1 interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -23,6 +23,7 @@ type DataOpentelekomcloudVpcSubnetV1 interface {
 	Cidr() *string
 	SetCidr(val *string)
 	CidrInput() *string
+	CidrIpv6() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -46,9 +47,11 @@ type DataOpentelekomcloudVpcSubnetV1 interface {
 	GatewayIp() *string
 	SetGatewayIp(val *string)
 	GatewayIpInput() *string
+	GatewayIpv6() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Ipv6Enable() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -194,6 +197,16 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) CidrInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) CidrIpv6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidrIpv6",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -294,6 +307,16 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) GatewayIpInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) GatewayIpv6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayIpv6",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -309,6 +332,16 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) Ipv6Enable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"ipv6Enable",
 		&returns,
 	)
 	return returns
@@ -525,7 +558,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Data Source.
 func NewDataOpentelekomcloudVpcSubnetV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcSubnetV1Config) DataOpentelekomcloudVpcSubnetV1 {
 	_init_.Initialize()
 
@@ -543,7 +576,7 @@ func NewDataOpentelekomcloudVpcSubnetV1(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Data Source.
 func NewDataOpentelekomcloudVpcSubnetV1_Override(d DataOpentelekomcloudVpcSubnetV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcSubnetV1Config) {
 	_init_.Initialize()
 

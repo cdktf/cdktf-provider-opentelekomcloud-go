@@ -179,6 +179,10 @@ func (j *jsiiProxy_DcsInstanceV1) validateSetPeriodTypeParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_DcsInstanceV1) validateSetPrivateIpParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DcsInstanceV1) validateSetProductIdParameters(val *string) error {
 	return nil
 }

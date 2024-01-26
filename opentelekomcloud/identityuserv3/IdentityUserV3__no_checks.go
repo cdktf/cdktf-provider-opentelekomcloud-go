@@ -75,6 +75,10 @@ func (i *jsiiProxy_IdentityUserV3) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (i *jsiiProxy_IdentityUserV3) validatePutLoginProtectionParameters(value *IdentityUserV3LoginProtection) error {
+	return nil
+}
+
 func validateIdentityUserV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

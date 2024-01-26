@@ -67,6 +67,10 @@ func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) validateSetInternalValueP
 	return nil
 }
 
+func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) validateSetLimitSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) validateSetSizeParameters(val *float64) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) validateSetTerraformAttri
 }
 
 func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) validateSetTriggerThresholdParameters(val *float64) error {
 	return nil
 }
 

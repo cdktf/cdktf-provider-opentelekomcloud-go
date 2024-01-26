@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1}.
 type VpcSubnetV1 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -23,6 +23,7 @@ type VpcSubnetV1 interface {
 	Cidr() *string
 	SetCidr(val *string)
 	CidrInput() *string
+	CidrIpv6() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -57,9 +58,13 @@ type VpcSubnetV1 interface {
 	GatewayIp() *string
 	SetGatewayIp(val *string)
 	GatewayIpInput() *string
+	GatewayIpv6() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Ipv6Enable() interface{}
+	SetIpv6Enable(val interface{})
+	Ipv6EnableInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -157,6 +162,7 @@ type VpcSubnetV1 interface {
 	ResetDhcpEnable()
 	ResetDnsList()
 	ResetId()
+	ResetIpv6Enable()
 	ResetNtpAddresses()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -229,6 +235,16 @@ func (j *jsiiProxy_VpcSubnetV1) CidrInput() *string {
 	_jsii_.Get(
 		j,
 		"cidrInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcSubnetV1) CidrIpv6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidrIpv6",
 		&returns,
 	)
 	return returns
@@ -384,6 +400,16 @@ func (j *jsiiProxy_VpcSubnetV1) GatewayIpInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpcSubnetV1) GatewayIpv6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayIpv6",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcSubnetV1) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -399,6 +425,26 @@ func (j *jsiiProxy_VpcSubnetV1) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcSubnetV1) Ipv6Enable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipv6Enable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcSubnetV1) Ipv6EnableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipv6EnableInput",
 		&returns,
 	)
 	return returns
@@ -675,7 +721,7 @@ func (j *jsiiProxy_VpcSubnetV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Resource.
 func NewVpcSubnetV1(scope constructs.Construct, id *string, config *VpcSubnetV1Config) VpcSubnetV1 {
 	_init_.Initialize()
 
@@ -693,7 +739,7 @@ func NewVpcSubnetV1(scope constructs.Construct, id *string, config *VpcSubnetV1C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Resource.
 func NewVpcSubnetV1_Override(v VpcSubnetV1, scope constructs.Construct, id *string, config *VpcSubnetV1Config) {
 	_init_.Initialize()
 
@@ -815,6 +861,17 @@ func (j *jsiiProxy_VpcSubnetV1)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcSubnetV1)SetIpv6Enable(val interface{}) {
+	if err := j.validateSetIpv6EnableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Enable",
 		val,
 	)
 }
@@ -1326,6 +1383,14 @@ func (v *jsiiProxy_VpcSubnetV1) ResetId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcSubnetV1) ResetIpv6Enable() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetIpv6Enable",
 		nil, // no parameters
 	)
 }

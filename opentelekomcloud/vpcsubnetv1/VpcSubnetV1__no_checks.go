@@ -131,6 +131,10 @@ func (j *jsiiProxy_VpcSubnetV1) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_VpcSubnetV1) validateSetIpv6EnableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcSubnetV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

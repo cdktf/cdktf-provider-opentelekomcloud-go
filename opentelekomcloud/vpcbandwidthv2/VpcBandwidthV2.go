@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2}.
 type VpcBandwidthV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_VpcBandwidthV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Resource.
 func NewVpcBandwidthV2(scope constructs.Construct, id *string, config *VpcBandwidthV2Config) VpcBandwidthV2 {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewVpcBandwidthV2(scope constructs.Construct, id *string, config *VpcBandwi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Resource.
 func NewVpcBandwidthV2_Override(v VpcBandwidthV2, scope constructs.Construct, id *string, config *VpcBandwidthV2Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}.
 type IdentityProtocolV3 interface {
 	cdktf.TerraformResource
 	AccessConfig() IdentityProtocolV3AccessConfigOutputReference
@@ -438,7 +438,7 @@ func (j *jsiiProxy_IdentityProtocolV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
 func NewIdentityProtocolV3(scope constructs.Construct, id *string, config *IdentityProtocolV3Config) IdentityProtocolV3 {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewIdentityProtocolV3(scope constructs.Construct, id *string, config *Ident
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource.
 func NewIdentityProtocolV3_Override(i IdentityProtocolV3, scope constructs.Construct, id *string, config *IdentityProtocolV3Config) {
 	_init_.Initialize()
 

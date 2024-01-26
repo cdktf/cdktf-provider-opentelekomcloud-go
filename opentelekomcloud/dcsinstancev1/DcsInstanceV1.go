@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dcs_instance_v1 opentelekomcloud_dcs_instance_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dcs_instance_v1 opentelekomcloud_dcs_instance_v1}.
 type DcsInstanceV1 interface {
 	cdktf.TerraformResource
 	AvailableZones() *[]*string
@@ -101,6 +101,9 @@ type DcsInstanceV1 interface {
 	SetPeriodType(val *string)
 	PeriodTypeInput() *string
 	Port() *float64
+	PrivateIp() *string
+	SetPrivateIp(val *string)
+	PrivateIpInput() *string
 	ProductId() *string
 	SetProductId(val *string)
 	ProductIdInput() *string
@@ -206,6 +209,7 @@ type DcsInstanceV1 interface {
 	ResetOverrideLogicalId()
 	ResetPassword()
 	ResetPeriodType()
+	ResetPrivateIp()
 	ResetSaveDays()
 	ResetSecurityGroupId()
 	ResetTimeouts()
@@ -738,6 +742,26 @@ func (j *jsiiProxy_DcsInstanceV1) Port() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DcsInstanceV1) PrivateIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DcsInstanceV1) PrivateIpInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DcsInstanceV1) ProductId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1019,7 +1043,7 @@ func (j *jsiiProxy_DcsInstanceV1) WhitelistInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dcs_instance_v1 opentelekomcloud_dcs_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dcs_instance_v1 opentelekomcloud_dcs_instance_v1} Resource.
 func NewDcsInstanceV1(scope constructs.Construct, id *string, config *DcsInstanceV1Config) DcsInstanceV1 {
 	_init_.Initialize()
 
@@ -1037,7 +1061,7 @@ func NewDcsInstanceV1(scope constructs.Construct, id *string, config *DcsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dcs_instance_v1 opentelekomcloud_dcs_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dcs_instance_v1 opentelekomcloud_dcs_instance_v1} Resource.
 func NewDcsInstanceV1_Override(d DcsInstanceV1, scope constructs.Construct, id *string, config *DcsInstanceV1Config) {
 	_init_.Initialize()
 
@@ -1258,6 +1282,17 @@ func (j *jsiiProxy_DcsInstanceV1)SetPeriodType(val *string) {
 	_jsii_.Set(
 		j,
 		"periodType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DcsInstanceV1)SetPrivateIp(val *string) {
+	if err := j.validateSetPrivateIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateIp",
 		val,
 	)
 }
@@ -1833,6 +1868,14 @@ func (d *jsiiProxy_DcsInstanceV1) ResetPeriodType() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPeriodType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DcsInstanceV1) ResetPrivateIp() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateIp",
 		nil, // no parameters
 	)
 }

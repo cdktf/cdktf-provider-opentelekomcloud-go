@@ -182,6 +182,14 @@ func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) validateSetInternalValueP
 	return nil
 }
 
+func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) validateSetLimitSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) validateSetSizeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -199,6 +207,14 @@ func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) validateSetTerraformAttri
 }
 
 func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) validateSetTriggerThresholdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -1,12 +1,15 @@
-# CDKTF Go bindings for opentelekomcloud/opentelekomcloud provider version 1.35.16
+# CDKTF Go bindings for opentelekomcloud/opentelekomcloud provider version 1.36.0
 
-This repo builds and publishes the [Terraform opentelekomcloud provider](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform opentelekomcloud provider](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-opentelekomcloud-go`](https://github.com/cdktf/cdktf-provider-opentelekomcloud-go) package.
 
-`go get github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud`
+`go get github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/<version>`
+
+Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
+within the [go.mod](https://github.com/cdktf/cdktf-provider-opentelekomcloud-go/blob/main/opentelekomcloud/go.mod#L1) file.
 
 ## Docs
 
@@ -20,7 +23,7 @@ This project is explicitly not tracking the Terraform opentelekomcloud provider 
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform opentelekomcloud provider](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16)
+* [Terraform opentelekomcloud provider](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3}.
 type IdentityUserV3 interface {
 	cdktf.TerraformResource
 	AccessType() *string
@@ -64,6 +64,8 @@ type IdentityUserV3 interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoginProtection() IdentityUserV3LoginProtectionOutputReference
+	LoginProtectionInput() *IdentityUserV3LoginProtection
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -141,12 +143,14 @@ type IdentityUserV3 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutLoginProtection(value *IdentityUserV3LoginProtection)
 	ResetAccessType()
 	ResetCountryCode()
 	ResetDescription()
 	ResetEmail()
 	ResetEnabled()
 	ResetId()
+	ResetLoginProtection()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -412,6 +416,26 @@ func (j *jsiiProxy_IdentityUserV3) Lifecycle() *cdktf.TerraformResourceLifecycle
 	return returns
 }
 
+func (j *jsiiProxy_IdentityUserV3) LoginProtection() IdentityUserV3LoginProtectionOutputReference {
+	var returns IdentityUserV3LoginProtectionOutputReference
+	_jsii_.Get(
+		j,
+		"loginProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityUserV3) LoginProtectionInput() *IdentityUserV3LoginProtection {
+	var returns *IdentityUserV3LoginProtection
+	_jsii_.Get(
+		j,
+		"loginProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityUserV3) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -593,7 +617,7 @@ func (j *jsiiProxy_IdentityUserV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
 func NewIdentityUserV3(scope constructs.Construct, id *string, config *IdentityUserV3Config) IdentityUserV3 {
 	_init_.Initialize()
 
@@ -611,7 +635,7 @@ func NewIdentityUserV3(scope constructs.Construct, id *string, config *IdentityU
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
 func NewIdentityUserV3_Override(i IdentityUserV3, scope constructs.Construct, id *string, config *IdentityUserV3Config) {
 	_init_.Initialize()
 
@@ -1164,6 +1188,17 @@ func (i *jsiiProxy_IdentityUserV3) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (i *jsiiProxy_IdentityUserV3) PutLoginProtection(value *IdentityUserV3LoginProtection) {
+	if err := i.validatePutLoginProtectionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putLoginProtection",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IdentityUserV3) ResetAccessType() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1208,6 +1243,14 @@ func (i *jsiiProxy_IdentityUserV3) ResetId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityUserV3) ResetLoginProtection() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetLoginProtection",
 		nil, // no parameters
 	)
 }

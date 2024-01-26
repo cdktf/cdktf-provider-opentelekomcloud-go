@@ -35,6 +35,9 @@ type RdsInstanceV3VolumeOutputReference interface {
 	Fqn() *string
 	InternalValue() *RdsInstanceV3Volume
 	SetInternalValue(val *RdsInstanceV3Volume)
+	LimitSize() *float64
+	SetLimitSize(val *float64)
+	LimitSizeInput() *float64
 	Size() *float64
 	SetSize(val *float64)
 	SizeInput() *float64
@@ -46,6 +49,9 @@ type RdsInstanceV3VolumeOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TriggerThreshold() *float64
+	SetTriggerThreshold(val *float64)
+	TriggerThresholdInput() *float64
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -74,6 +80,8 @@ type RdsInstanceV3VolumeOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDiskEncryptionId()
+	ResetLimitSize()
+	ResetTriggerThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -159,6 +167,26 @@ func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) InternalValue() *RdsInsta
 	return returns
 }
 
+func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) LimitSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"limitSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) LimitSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"limitSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) Size() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -194,6 +222,26 @@ func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) TerraformResource() cdktf
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) TriggerThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"triggerThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference) TriggerThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"triggerThresholdInput",
 		&returns,
 	)
 	return returns
@@ -291,6 +339,17 @@ func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference)SetInternalValue(val *RdsI
 	)
 }
 
+func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference)SetLimitSize(val *float64) {
+	if err := j.validateSetLimitSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"limitSize",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference)SetSize(val *float64) {
 	if err := j.validateSetSizeParameters(val); err != nil {
 		panic(err)
@@ -320,6 +379,17 @@ func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference)SetTerraformResource(val c
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsInstanceV3VolumeOutputReference)SetTriggerThreshold(val *float64) {
+	if err := j.validateSetTriggerThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"triggerThreshold",
 		val,
 	)
 }
@@ -525,6 +595,22 @@ func (r *jsiiProxy_RdsInstanceV3VolumeOutputReference) ResetDiskEncryptionId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDiskEncryptionId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsInstanceV3VolumeOutputReference) ResetLimitSize() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetLimitSize",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsInstanceV3VolumeOutputReference) ResetTriggerThreshold() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTriggerThreshold",
 		nil, // no parameters
 	)
 }
