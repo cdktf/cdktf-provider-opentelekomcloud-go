@@ -28,6 +28,9 @@ type ObsBucketReplicationRuleOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeleteData() interface{}
+	SetDeleteData(val interface{})
+	DeleteDataInput() interface{}
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -77,6 +80,7 @@ type ObsBucketReplicationRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDeleteData()
 	ResetEnabled()
 	ResetHistoryEnabled()
 	ResetPrefix()
@@ -121,6 +125,26 @@ func (j *jsiiProxy_ObsBucketReplicationRuleOutputReference) CreationStack() *[]*
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObsBucketReplicationRuleOutputReference) DeleteData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObsBucketReplicationRuleOutputReference) DeleteDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteDataInput",
 		&returns,
 	)
 	return returns
@@ -302,6 +326,17 @@ func (j *jsiiProxy_ObsBucketReplicationRuleOutputReference)SetComplexObjectIsFro
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObsBucketReplicationRuleOutputReference)SetDeleteData(val interface{}) {
+	if err := j.validateSetDeleteDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteData",
 		val,
 	)
 }
@@ -567,6 +602,14 @@ func (o *jsiiProxy_ObsBucketReplicationRuleOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObsBucketReplicationRuleOutputReference) ResetDeleteData() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDeleteData",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObsBucketReplicationRuleOutputReference) ResetEnabled() {

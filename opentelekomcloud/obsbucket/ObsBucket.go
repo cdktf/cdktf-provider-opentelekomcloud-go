@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket opentelekomcloud_obs_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket opentelekomcloud_obs_bucket}.
 type ObsBucket interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -102,6 +102,8 @@ type ObsBucket interface {
 	VersioningInput() interface{}
 	Website() ObsBucketWebsiteOutputReference
 	WebsiteInput() *ObsBucketWebsite
+	WormPolicy() ObsBucketWormPolicyOutputReference
+	WormPolicyInput() *ObsBucketWormPolicy
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -151,6 +153,7 @@ type ObsBucket interface {
 	PutLogging(value interface{})
 	PutServerSideEncryption(value *ObsBucketServerSideEncryption)
 	PutWebsite(value *ObsBucketWebsite)
+	PutWormPolicy(value *ObsBucketWormPolicy)
 	ResetAcl()
 	ResetCorsRule()
 	ResetEventNotifications()
@@ -168,6 +171,7 @@ type ObsBucket interface {
 	ResetTags()
 	ResetVersioning()
 	ResetWebsite()
+	ResetWormPolicy()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -666,8 +670,28 @@ func (j *jsiiProxy_ObsBucket) WebsiteInput() *ObsBucketWebsite {
 	return returns
 }
 
+func (j *jsiiProxy_ObsBucket) WormPolicy() ObsBucketWormPolicyOutputReference {
+	var returns ObsBucketWormPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"wormPolicy",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
+func (j *jsiiProxy_ObsBucket) WormPolicyInput() *ObsBucketWormPolicy {
+	var returns *ObsBucketWormPolicy
+	_jsii_.Get(
+		j,
+		"wormPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
 func NewObsBucket(scope constructs.Construct, id *string, config *ObsBucketConfig) ObsBucket {
 	_init_.Initialize()
 
@@ -685,7 +709,7 @@ func NewObsBucket(scope constructs.Construct, id *string, config *ObsBucketConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
 func NewObsBucket_Override(o ObsBucket, scope constructs.Construct, id *string, config *ObsBucketConfig) {
 	_init_.Initialize()
 
@@ -1282,6 +1306,17 @@ func (o *jsiiProxy_ObsBucket) PutWebsite(value *ObsBucketWebsite) {
 	)
 }
 
+func (o *jsiiProxy_ObsBucket) PutWormPolicy(value *ObsBucketWormPolicy) {
+	if err := o.validatePutWormPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putWormPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObsBucket) ResetAcl() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1398,6 +1433,14 @@ func (o *jsiiProxy_ObsBucket) ResetWebsite() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetWebsite",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObsBucket) ResetWormPolicy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetWormPolicy",
 		nil, // no parameters
 	)
 }

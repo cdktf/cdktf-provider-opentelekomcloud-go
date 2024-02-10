@@ -99,6 +99,10 @@ func (o *jsiiProxy_ObsBucket) validatePutWebsiteParameters(value *ObsBucketWebsi
 	return nil
 }
 
+func (o *jsiiProxy_ObsBucket) validatePutWormPolicyParameters(value *ObsBucketWormPolicy) error {
+	return nil
+}
+
 func validateObsBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

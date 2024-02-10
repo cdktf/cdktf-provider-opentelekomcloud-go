@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/ims_data_image_v2 opentelekomcloud_ims_data_image_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/ims_data_image_v2 opentelekomcloud_ims_data_image_v2}.
 type ImsDataImageV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -569,7 +569,7 @@ func (j *jsiiProxy_ImsDataImageV2) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/ims_data_image_v2 opentelekomcloud_ims_data_image_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/ims_data_image_v2 opentelekomcloud_ims_data_image_v2} Resource.
 func NewImsDataImageV2(scope constructs.Construct, id *string, config *ImsDataImageV2Config) ImsDataImageV2 {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewImsDataImageV2(scope constructs.Construct, id *string, config *ImsDataIm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/ims_data_image_v2 opentelekomcloud_ims_data_image_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/ims_data_image_v2 opentelekomcloud_ims_data_image_v2} Resource.
 func NewImsDataImageV2_Override(i ImsDataImageV2, scope constructs.Construct, id *string, config *ImsDataImageV2Config) {
 	_init_.Initialize()
 

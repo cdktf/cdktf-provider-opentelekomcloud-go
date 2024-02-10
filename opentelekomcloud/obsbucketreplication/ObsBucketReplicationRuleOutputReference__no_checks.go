@@ -59,6 +59,10 @@ func (j *jsiiProxy_ObsBucketReplicationRuleOutputReference) validateSetComplexOb
 	return nil
 }
 
+func (j *jsiiProxy_ObsBucketReplicationRuleOutputReference) validateSetDeleteDataParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObsBucketReplicationRuleOutputReference) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

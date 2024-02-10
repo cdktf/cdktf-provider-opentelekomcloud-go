@@ -70,6 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLogging", GoMethod: "PutLogging"},
 			_jsii_.MemberMethod{JsiiMethod: "putServerSideEncryption", GoMethod: "PutServerSideEncryption"},
 			_jsii_.MemberMethod{JsiiMethod: "putWebsite", GoMethod: "PutWebsite"},
+			_jsii_.MemberMethod{JsiiMethod: "putWormPolicy", GoMethod: "PutWormPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
@@ -88,6 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVersioning", GoMethod: "ResetVersioning"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWebsite", GoMethod: "ResetWebsite"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWormPolicy", GoMethod: "ResetWormPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "serverSideEncryption", GoGetter: "ServerSideEncryption"},
 			_jsii_.MemberProperty{JsiiProperty: "serverSideEncryptionInput", GoGetter: "ServerSideEncryptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "storageClass", GoGetter: "StorageClass"},
@@ -107,6 +109,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versioningInput", GoGetter: "VersioningInput"},
 			_jsii_.MemberProperty{JsiiProperty: "website", GoGetter: "Website"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteInput", GoGetter: "WebsiteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "wormPolicy", GoGetter: "WormPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "wormPolicyInput", GoGetter: "WormPolicyInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ObsBucket{}
@@ -794,6 +798,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ObsBucketWebsiteOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy",
+		reflect.TypeOf((*ObsBucketWormPolicy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference",
+		reflect.TypeOf((*ObsBucketWormPolicyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "days", GoGetter: "Days"},
+			_jsii_.MemberProperty{JsiiProperty: "daysInput", GoGetter: "DaysInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDays", GoMethod: "ResetDays"},
+			_jsii_.MemberMethod{JsiiMethod: "resetYears", GoMethod: "ResetYears"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "years", GoGetter: "Years"},
+			_jsii_.MemberProperty{JsiiProperty: "yearsInput", GoGetter: "YearsInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ObsBucketWormPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
