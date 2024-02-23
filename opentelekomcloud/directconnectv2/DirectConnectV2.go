@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/direct_connect_v2 opentelekomcloud_direct_connect_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.2/docs/resources/direct_connect_v2 opentelekomcloud_direct_connect_v2}.
 type DirectConnectV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -1020,7 +1020,7 @@ func (j *jsiiProxy_DirectConnectV2) VlanInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/direct_connect_v2 opentelekomcloud_direct_connect_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.2/docs/resources/direct_connect_v2 opentelekomcloud_direct_connect_v2} Resource.
 func NewDirectConnectV2(scope constructs.Construct, id *string, config *DirectConnectV2Config) DirectConnectV2 {
 	_init_.Initialize()
 
@@ -1038,7 +1038,7 @@ func NewDirectConnectV2(scope constructs.Construct, id *string, config *DirectCo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/direct_connect_v2 opentelekomcloud_direct_connect_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.2/docs/resources/direct_connect_v2 opentelekomcloud_direct_connect_v2} Resource.
 func NewDirectConnectV2_Override(d DirectConnectV2, scope constructs.Construct, id *string, config *DirectConnectV2Config) {
 	_init_.Initialize()
 
