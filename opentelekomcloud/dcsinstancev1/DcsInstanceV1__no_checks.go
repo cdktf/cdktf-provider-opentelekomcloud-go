@@ -203,6 +203,10 @@ func (j *jsiiProxy_DcsInstanceV1) validateSetSubnetIdParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_DcsInstanceV1) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DcsInstanceV1) validateSetVpcIdParameters(val *string) error {
 	return nil
 }

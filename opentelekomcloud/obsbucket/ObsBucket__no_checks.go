@@ -167,6 +167,10 @@ func (j *jsiiProxy_ObsBucket) validateSetTagsParameters(val *map[string]*string)
 	return nil
 }
 
+func (j *jsiiProxy_ObsBucket) validateSetUserDomainNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObsBucket) validateSetVersioningParameters(val interface{}) error {
 	return nil
 }

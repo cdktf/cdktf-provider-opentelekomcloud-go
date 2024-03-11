@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.2/docs/resources/obs_bucket opentelekomcloud_obs_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/obs_bucket opentelekomcloud_obs_bucket}.
 type ObsBucket interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -97,6 +97,9 @@ type ObsBucket interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserDomainNames() *[]*string
+	SetUserDomainNames(val *[]*string)
+	UserDomainNamesInput() *[]*string
 	Versioning() interface{}
 	SetVersioning(val interface{})
 	VersioningInput() interface{}
@@ -169,6 +172,7 @@ type ObsBucket interface {
 	ResetServerSideEncryption()
 	ResetStorageClass()
 	ResetTags()
+	ResetUserDomainNames()
 	ResetVersioning()
 	ResetWebsite()
 	ResetWormPolicy()
@@ -630,6 +634,26 @@ func (j *jsiiProxy_ObsBucket) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ObsBucket) UserDomainNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userDomainNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObsBucket) UserDomainNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userDomainNamesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObsBucket) Versioning() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -691,7 +715,7 @@ func (j *jsiiProxy_ObsBucket) WormPolicyInput() *ObsBucketWormPolicy {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.2/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
 func NewObsBucket(scope constructs.Construct, id *string, config *ObsBucketConfig) ObsBucket {
 	_init_.Initialize()
 
@@ -709,7 +733,7 @@ func NewObsBucket(scope constructs.Construct, id *string, config *ObsBucketConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.2/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource.
 func NewObsBucket_Override(o ObsBucket, scope constructs.Construct, id *string, config *ObsBucketConfig) {
 	_init_.Initialize()
 
@@ -872,6 +896,17 @@ func (j *jsiiProxy_ObsBucket)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObsBucket)SetUserDomainNames(val *[]*string) {
+	if err := j.validateSetUserDomainNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userDomainNames",
 		val,
 	)
 }
@@ -1417,6 +1452,14 @@ func (o *jsiiProxy_ObsBucket) ResetTags() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObsBucket) ResetUserDomainNames() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUserDomainNames",
 		nil, // no parameters
 	)
 }
