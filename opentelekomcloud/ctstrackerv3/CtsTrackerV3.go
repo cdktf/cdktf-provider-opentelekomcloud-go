@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3}.
 type CtsTrackerV3 interface {
 	cdktf.TerraformResource
 	BucketLifecycle() *float64
@@ -528,7 +528,7 @@ func (j *jsiiProxy_CtsTrackerV3) TrackerType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3} Resource.
 func NewCtsTrackerV3(scope constructs.Construct, id *string, config *CtsTrackerV3Config) CtsTrackerV3 {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewCtsTrackerV3(scope constructs.Construct, id *string, config *CtsTrackerV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3} Resource.
 func NewCtsTrackerV3_Override(c CtsTrackerV3, scope constructs.Construct, id *string, config *CtsTrackerV3Config) {
 	_init_.Initialize()
 

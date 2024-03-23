@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/dis_checkpoint_v2 opentelekomcloud_dis_checkpoint_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/dis_checkpoint_v2 opentelekomcloud_dis_checkpoint_v2}.
 type DisCheckpointV2 interface {
 	cdktf.TerraformResource
 	AppName() *string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_DisCheckpointV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/dis_checkpoint_v2 opentelekomcloud_dis_checkpoint_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/dis_checkpoint_v2 opentelekomcloud_dis_checkpoint_v2} Resource.
 func NewDisCheckpointV2(scope constructs.Construct, id *string, config *DisCheckpointV2Config) DisCheckpointV2 {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewDisCheckpointV2(scope constructs.Construct, id *string, config *DisCheck
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/dis_checkpoint_v2 opentelekomcloud_dis_checkpoint_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/dis_checkpoint_v2 opentelekomcloud_dis_checkpoint_v2} Resource.
 func NewDisCheckpointV2_Override(d DisCheckpointV2, scope constructs.Construct, id *string, config *DisCheckpointV2Config) {
 	_init_.Initialize()
 

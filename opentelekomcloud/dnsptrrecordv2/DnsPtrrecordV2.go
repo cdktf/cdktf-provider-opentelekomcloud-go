@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/dns_ptrrecord_v2 opentelekomcloud_dns_ptrrecord_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/dns_ptrrecord_v2 opentelekomcloud_dns_ptrrecord_v2}.
 type DnsPtrrecordV2 interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -463,7 +463,7 @@ func (j *jsiiProxy_DnsPtrrecordV2) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/dns_ptrrecord_v2 opentelekomcloud_dns_ptrrecord_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/dns_ptrrecord_v2 opentelekomcloud_dns_ptrrecord_v2} Resource.
 func NewDnsPtrrecordV2(scope constructs.Construct, id *string, config *DnsPtrrecordV2Config) DnsPtrrecordV2 {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewDnsPtrrecordV2(scope constructs.Construct, id *string, config *DnsPtrrec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/dns_ptrrecord_v2 opentelekomcloud_dns_ptrrecord_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/dns_ptrrecord_v2 opentelekomcloud_dns_ptrrecord_v2} Resource.
 func NewDnsPtrrecordV2_Override(d DnsPtrrecordV2, scope constructs.Construct, id *string, config *DnsPtrrecordV2Config) {
 	_init_.Initialize()
 

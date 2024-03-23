@@ -1,3 +1,3 @@
 # `opentelekomcloud_compute_servergroup_v2`
 
-Refer to the Terraform Registry for docs: [`opentelekomcloud_compute_servergroup_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.4/docs/resources/compute_servergroup_v2).
+Refer to the Terraform Registry for docs: [`opentelekomcloud_compute_servergroup_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/compute_servergroup_v2).
