@@ -238,6 +238,17 @@ func (w *jsiiProxy_WafDedicatedDomainV1) validatePutServerParameters(value inter
 	return nil
 }
 
+func (w *jsiiProxy_WafDedicatedDomainV1) validatePutTimeoutConfigParameters(value *WafDedicatedDomainV1TimeoutConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateWafDedicatedDomainV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

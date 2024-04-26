@@ -266,6 +266,14 @@ func (j *jsiiProxy_ApigwGatewayV2) validateSetAvailabilityZonesParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_ApigwGatewayV2) validateSetBandwidthChargingModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApigwGatewayV2) validateSetBandwidthSizeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -373,6 +381,14 @@ func (j *jsiiProxy_ApigwGatewayV2) validateSetDescriptionParameters(val *string)
 }
 
 func (j *jsiiProxy_ApigwGatewayV2) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApigwGatewayV2) validateSetIngressBandwidthChargingModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

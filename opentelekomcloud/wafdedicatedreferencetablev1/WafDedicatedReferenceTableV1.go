@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/waf_dedicated_reference_table_v1 opentelekomcloud_waf_dedicated_reference_table_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/waf_dedicated_reference_table_v1 opentelekomcloud_waf_dedicated_reference_table_v1}.
 type WafDedicatedReferenceTableV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -439,7 +439,7 @@ func (j *jsiiProxy_WafDedicatedReferenceTableV1) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/waf_dedicated_reference_table_v1 opentelekomcloud_waf_dedicated_reference_table_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/waf_dedicated_reference_table_v1 opentelekomcloud_waf_dedicated_reference_table_v1} Resource.
 func NewWafDedicatedReferenceTableV1(scope constructs.Construct, id *string, config *WafDedicatedReferenceTableV1Config) WafDedicatedReferenceTableV1 {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewWafDedicatedReferenceTableV1(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/waf_dedicated_reference_table_v1 opentelekomcloud_waf_dedicated_reference_table_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/waf_dedicated_reference_table_v1 opentelekomcloud_waf_dedicated_reference_table_v1} Resource.
 func NewWafDedicatedReferenceTableV1_Override(w WafDedicatedReferenceTableV1, scope constructs.Construct, id *string, config *WafDedicatedReferenceTableV1Config) {
 	_init_.Initialize()
 

@@ -99,6 +99,10 @@ func (j *jsiiProxy_ApigwGatewayV2) validateSetAvailabilityZonesParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_ApigwGatewayV2) validateSetBandwidthChargingModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigwGatewayV2) validateSetBandwidthSizeParameters(val *float64) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_ApigwGatewayV2) validateSetDescriptionParameters(val *string)
 }
 
 func (j *jsiiProxy_ApigwGatewayV2) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApigwGatewayV2) validateSetIngressBandwidthChargingModeParameters(val *string) error {
 	return nil
 }
 

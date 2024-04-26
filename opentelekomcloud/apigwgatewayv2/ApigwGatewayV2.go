@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2}.
 type ApigwGatewayV2 interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
 	SetAvailabilityZones(val *[]*string)
 	AvailabilityZonesInput() *[]*string
+	BandwidthChargingMode() *string
+	SetBandwidthChargingMode(val *string)
+	BandwidthChargingModeInput() *string
 	BandwidthSize() *float64
 	SetBandwidthSize(val *float64)
 	BandwidthSizeInput() *float64
@@ -51,6 +54,9 @@ type ApigwGatewayV2 interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IngressBandwidthChargingMode() *string
+	SetIngressBandwidthChargingMode(val *string)
+	IngressBandwidthChargingModeInput() *string
 	IngressBandwidthSize() *float64
 	SetIngressBandwidthSize(val *float64)
 	IngressBandwidthSizeInput() *float64
@@ -152,9 +158,11 @@ type ApigwGatewayV2 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ApigwGatewayV2Timeouts)
+	ResetBandwidthChargingMode()
 	ResetBandwidthSize()
 	ResetDescription()
 	ResetId()
+	ResetIngressBandwidthChargingMode()
 	ResetIngressBandwidthSize()
 	ResetLoadbalancerProvider()
 	ResetMaintainBegin()
@@ -195,6 +203,26 @@ func (j *jsiiProxy_ApigwGatewayV2) AvailabilityZonesInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"availabilityZonesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigwGatewayV2) BandwidthChargingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bandwidthChargingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigwGatewayV2) BandwidthChargingModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bandwidthChargingModeInput",
 		&returns,
 	)
 	return returns
@@ -335,6 +363,26 @@ func (j *jsiiProxy_ApigwGatewayV2) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigwGatewayV2) IngressBandwidthChargingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ingressBandwidthChargingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigwGatewayV2) IngressBandwidthChargingModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ingressBandwidthChargingModeInput",
 		&returns,
 	)
 	return returns
@@ -691,7 +739,7 @@ func (j *jsiiProxy_ApigwGatewayV2) VpcIngressAddress() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2} Resource.
 func NewApigwGatewayV2(scope constructs.Construct, id *string, config *ApigwGatewayV2Config) ApigwGatewayV2 {
 	_init_.Initialize()
 
@@ -709,7 +757,7 @@ func NewApigwGatewayV2(scope constructs.Construct, id *string, config *ApigwGate
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2} Resource.
 func NewApigwGatewayV2_Override(a ApigwGatewayV2, scope constructs.Construct, id *string, config *ApigwGatewayV2Config) {
 	_init_.Initialize()
 
@@ -727,6 +775,17 @@ func (j *jsiiProxy_ApigwGatewayV2)SetAvailabilityZones(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"availabilityZones",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApigwGatewayV2)SetBandwidthChargingMode(val *string) {
+	if err := j.validateSetBandwidthChargingModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bandwidthChargingMode",
 		val,
 	)
 }
@@ -798,6 +857,17 @@ func (j *jsiiProxy_ApigwGatewayV2)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApigwGatewayV2)SetIngressBandwidthChargingMode(val *string) {
+	if err := j.validateSetIngressBandwidthChargingModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ingressBandwidthChargingMode",
 		val,
 	)
 }
@@ -1284,6 +1354,14 @@ func (a *jsiiProxy_ApigwGatewayV2) PutTimeouts(value *ApigwGatewayV2Timeouts) {
 	)
 }
 
+func (a *jsiiProxy_ApigwGatewayV2) ResetBandwidthChargingMode() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBandwidthChargingMode",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApigwGatewayV2) ResetBandwidthSize() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1304,6 +1382,14 @@ func (a *jsiiProxy_ApigwGatewayV2) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApigwGatewayV2) ResetIngressBandwidthChargingMode() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIngressBandwidthChargingMode",
 		nil, // no parameters
 	)
 }

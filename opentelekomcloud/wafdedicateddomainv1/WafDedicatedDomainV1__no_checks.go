@@ -79,6 +79,10 @@ func (w *jsiiProxy_WafDedicatedDomainV1) validatePutServerParameters(value inter
 	return nil
 }
 
+func (w *jsiiProxy_WafDedicatedDomainV1) validatePutTimeoutConfigParameters(value *WafDedicatedDomainV1TimeoutConfig) error {
+	return nil
+}
+
 func validateWafDedicatedDomainV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/waf_dedicated_domain_v1 opentelekomcloud_waf_dedicated_domain_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/waf_dedicated_domain_v1 opentelekomcloud_waf_dedicated_domain_v1}.
 type WafDedicatedDomainV1 interface {
 	cdktf.TerraformResource
 	AccessStatus() *float64
@@ -102,6 +102,8 @@ type WafDedicatedDomainV1 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TimeoutConfig() WafDedicatedDomainV1TimeoutConfigOutputReference
+	TimeoutConfigInput() *WafDedicatedDomainV1TimeoutConfig
 	Tls() *string
 	SetTls(val *string)
 	TlsInput() *string
@@ -150,6 +152,7 @@ type WafDedicatedDomainV1 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutServer(value interface{})
+	PutTimeoutConfig(value *WafDedicatedDomainV1TimeoutConfig)
 	ResetCertificateId()
 	ResetCipher()
 	ResetId()
@@ -163,6 +166,7 @@ type WafDedicatedDomainV1 interface {
 	ResetProtectStatus()
 	ResetProxy()
 	ResetRegion()
+	ResetTimeoutConfig()
 	ResetTls()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -642,6 +646,26 @@ func (j *jsiiProxy_WafDedicatedDomainV1) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WafDedicatedDomainV1) TimeoutConfig() WafDedicatedDomainV1TimeoutConfigOutputReference {
+	var returns WafDedicatedDomainV1TimeoutConfigOutputReference
+	_jsii_.Get(
+		j,
+		"timeoutConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafDedicatedDomainV1) TimeoutConfigInput() *WafDedicatedDomainV1TimeoutConfig {
+	var returns *WafDedicatedDomainV1TimeoutConfig
+	_jsii_.Get(
+		j,
+		"timeoutConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WafDedicatedDomainV1) Tls() *string {
 	var returns *string
 	_jsii_.Get(
@@ -673,7 +697,7 @@ func (j *jsiiProxy_WafDedicatedDomainV1) TrafficIdentifier() cdktf.StringMap {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/waf_dedicated_domain_v1 opentelekomcloud_waf_dedicated_domain_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/waf_dedicated_domain_v1 opentelekomcloud_waf_dedicated_domain_v1} Resource.
 func NewWafDedicatedDomainV1(scope constructs.Construct, id *string, config *WafDedicatedDomainV1Config) WafDedicatedDomainV1 {
 	_init_.Initialize()
 
@@ -691,7 +715,7 @@ func NewWafDedicatedDomainV1(scope constructs.Construct, id *string, config *Waf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/waf_dedicated_domain_v1 opentelekomcloud_waf_dedicated_domain_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/waf_dedicated_domain_v1 opentelekomcloud_waf_dedicated_domain_v1} Resource.
 func NewWafDedicatedDomainV1_Override(w WafDedicatedDomainV1, scope constructs.Construct, id *string, config *WafDedicatedDomainV1Config) {
 	_init_.Initialize()
 
@@ -1266,6 +1290,17 @@ func (w *jsiiProxy_WafDedicatedDomainV1) PutServer(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WafDedicatedDomainV1) PutTimeoutConfig(value *WafDedicatedDomainV1TimeoutConfig) {
+	if err := w.validatePutTimeoutConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putTimeoutConfig",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WafDedicatedDomainV1) ResetCertificateId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1350,6 +1385,14 @@ func (w *jsiiProxy_WafDedicatedDomainV1) ResetRegion() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WafDedicatedDomainV1) ResetTimeoutConfig() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTimeoutConfig",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/data-sources/kms_key_v1 opentelekomcloud_kms_key_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/data-sources/kms_key_v1 opentelekomcloud_kms_key_v1}.
 type DataOpentelekomcloudKmsKeyV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -490,7 +490,7 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyV1) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/data-sources/kms_key_v1 opentelekomcloud_kms_key_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/data-sources/kms_key_v1 opentelekomcloud_kms_key_v1} Data Source.
 func NewDataOpentelekomcloudKmsKeyV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudKmsKeyV1Config) DataOpentelekomcloudKmsKeyV1 {
 	_init_.Initialize()
 
@@ -508,7 +508,7 @@ func NewDataOpentelekomcloudKmsKeyV1(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/data-sources/kms_key_v1 opentelekomcloud_kms_key_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/data-sources/kms_key_v1 opentelekomcloud_kms_key_v1} Data Source.
 func NewDataOpentelekomcloudKmsKeyV1_Override(d DataOpentelekomcloudKmsKeyV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudKmsKeyV1Config) {
 	_init_.Initialize()
 
