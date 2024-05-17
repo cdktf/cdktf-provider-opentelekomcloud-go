@@ -79,6 +79,10 @@ func (n *jsiiProxy_NetworkingPortV2) validatePutAllowedAddressPairsParameters(va
 	return nil
 }
 
+func (n *jsiiProxy_NetworkingPortV2) validatePutExtraDhcpOptionParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkingPortV2) validatePutFixedIpParameters(value *NetworkingPortV2FixedIp) error {
 	return nil
 }

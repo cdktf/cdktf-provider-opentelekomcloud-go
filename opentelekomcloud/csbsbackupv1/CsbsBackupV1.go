@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1}.
 type CsbsBackupV1 interface {
 	cdktf.TerraformResource
 	BackupName() *string
@@ -521,7 +521,7 @@ func (j *jsiiProxy_CsbsBackupV1) VolumeBackups() CsbsBackupV1VolumeBackupsList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1} Resource.
 func NewCsbsBackupV1(scope constructs.Construct, id *string, config *CsbsBackupV1Config) CsbsBackupV1 {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewCsbsBackupV1(scope constructs.Construct, id *string, config *CsbsBackupV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1} Resource.
 func NewCsbsBackupV1_Override(c CsbsBackupV1, scope constructs.Construct, id *string, config *CsbsBackupV1Config) {
 	_init_.Initialize()
 

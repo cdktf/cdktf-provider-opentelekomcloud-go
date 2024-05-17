@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2}.
 type NetworkingPortV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -43,6 +43,8 @@ type NetworkingPortV2 interface {
 	DeviceOwner() *string
 	SetDeviceOwner(val *string)
 	DeviceOwnerInput() *string
+	ExtraDhcpOption() NetworkingPortV2ExtraDhcpOptionList
+	ExtraDhcpOptionInput() interface{}
 	FixedIp() NetworkingPortV2FixedIpOutputReference
 	FixedIpInput() *NetworkingPortV2FixedIp
 	// Experimental.
@@ -151,12 +153,14 @@ type NetworkingPortV2 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAllowedAddressPairs(value interface{})
+	PutExtraDhcpOption(value interface{})
 	PutFixedIp(value *NetworkingPortV2FixedIp)
 	PutTimeouts(value *NetworkingPortV2Timeouts)
 	ResetAdminStateUp()
 	ResetAllowedAddressPairs()
 	ResetDeviceId()
 	ResetDeviceOwner()
+	ResetExtraDhcpOption()
 	ResetFixedIp()
 	ResetId()
 	ResetMacAddress()
@@ -324,6 +328,26 @@ func (j *jsiiProxy_NetworkingPortV2) DeviceOwnerInput() *string {
 	_jsii_.Get(
 		j,
 		"deviceOwnerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkingPortV2) ExtraDhcpOption() NetworkingPortV2ExtraDhcpOptionList {
+	var returns NetworkingPortV2ExtraDhcpOptionList
+	_jsii_.Get(
+		j,
+		"extraDhcpOption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkingPortV2) ExtraDhcpOptionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extraDhcpOptionInput",
 		&returns,
 	)
 	return returns
@@ -680,7 +704,7 @@ func (j *jsiiProxy_NetworkingPortV2) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
 func NewNetworkingPortV2(scope constructs.Construct, id *string, config *NetworkingPortV2Config) NetworkingPortV2 {
 	_init_.Initialize()
 
@@ -698,7 +722,7 @@ func NewNetworkingPortV2(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
 func NewNetworkingPortV2_Override(n NetworkingPortV2, scope constructs.Construct, id *string, config *NetworkingPortV2Config) {
 	_init_.Initialize()
 
@@ -1284,6 +1308,17 @@ func (n *jsiiProxy_NetworkingPortV2) PutAllowedAddressPairs(value interface{}) {
 	)
 }
 
+func (n *jsiiProxy_NetworkingPortV2) PutExtraDhcpOption(value interface{}) {
+	if err := n.validatePutExtraDhcpOptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putExtraDhcpOption",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkingPortV2) PutFixedIp(value *NetworkingPortV2FixedIp) {
 	if err := n.validatePutFixedIpParameters(value); err != nil {
 		panic(err)
@@ -1334,6 +1369,14 @@ func (n *jsiiProxy_NetworkingPortV2) ResetDeviceOwner() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDeviceOwner",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkingPortV2) ResetExtraDhcpOption() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetExtraDhcpOption",
 		nil, // no parameters
 	)
 }

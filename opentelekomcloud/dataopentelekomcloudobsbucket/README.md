@@ -1,3 +1,3 @@
 # `data_opentelekomcloud_obs_bucket`
 
-Refer to the Terraform Registry for docs: [`data_opentelekomcloud_obs_bucket`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/data-sources/obs_bucket).
+Refer to the Terraform Registry for docs: [`data_opentelekomcloud_obs_bucket`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/data-sources/obs_bucket).

@@ -135,6 +135,10 @@ func (j *jsiiProxy_WafDedicatedInstanceV1) validateSetRegionParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_WafDedicatedInstanceV1) validateSetResTenantParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafDedicatedInstanceV1) validateSetSecurityGroupParameters(val *[]*string) error {
 	return nil
 }

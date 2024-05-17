@@ -22,14 +22,14 @@ type DataOpentelekomcloudComputeBmsKeypairsV2Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/data-sources/compute_bms_keypairs_v2#name DataOpentelekomcloudComputeBmsKeypairsV2#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/data-sources/compute_bms_keypairs_v2#name DataOpentelekomcloudComputeBmsKeypairsV2#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/data-sources/compute_bms_keypairs_v2#id DataOpentelekomcloudComputeBmsKeypairsV2#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/data-sources/compute_bms_keypairs_v2#id DataOpentelekomcloudComputeBmsKeypairsV2#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/data-sources/compute_bms_keypairs_v2#region DataOpentelekomcloudComputeBmsKeypairsV2#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/data-sources/compute_bms_keypairs_v2#region DataOpentelekomcloudComputeBmsKeypairsV2#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

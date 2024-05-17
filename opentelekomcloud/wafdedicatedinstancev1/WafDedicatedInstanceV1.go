@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/waf_dedicated_instance_v1 opentelekomcloud_waf_dedicated_instance_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/waf_dedicated_instance_v1 opentelekomcloud_waf_dedicated_instance_v1}.
 type WafDedicatedInstanceV1 interface {
 	cdktf.TerraformResource
 	AccessStatus() *float64
@@ -76,6 +76,9 @@ type WafDedicatedInstanceV1 interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ResTenant() interface{}
+	SetResTenant(val interface{})
+	ResTenantInput() interface{}
 	SecurityGroup() *[]*string
 	SetSecurityGroup(val *[]*string)
 	SecurityGroupInput() *[]*string
@@ -150,6 +153,7 @@ type WafDedicatedInstanceV1 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetResTenant()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -449,6 +453,26 @@ func (j *jsiiProxy_WafDedicatedInstanceV1) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WafDedicatedInstanceV1) ResTenant() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resTenant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafDedicatedInstanceV1) ResTenantInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resTenantInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WafDedicatedInstanceV1) SecurityGroup() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -620,7 +644,7 @@ func (j *jsiiProxy_WafDedicatedInstanceV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/waf_dedicated_instance_v1 opentelekomcloud_waf_dedicated_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/waf_dedicated_instance_v1 opentelekomcloud_waf_dedicated_instance_v1} Resource.
 func NewWafDedicatedInstanceV1(scope constructs.Construct, id *string, config *WafDedicatedInstanceV1Config) WafDedicatedInstanceV1 {
 	_init_.Initialize()
 
@@ -638,7 +662,7 @@ func NewWafDedicatedInstanceV1(scope constructs.Construct, id *string, config *W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/waf_dedicated_instance_v1 opentelekomcloud_waf_dedicated_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/waf_dedicated_instance_v1 opentelekomcloud_waf_dedicated_instance_v1} Resource.
 func NewWafDedicatedInstanceV1_Override(w WafDedicatedInstanceV1, scope constructs.Construct, id *string, config *WafDedicatedInstanceV1Config) {
 	_init_.Initialize()
 
@@ -779,6 +803,17 @@ func (j *jsiiProxy_WafDedicatedInstanceV1)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WafDedicatedInstanceV1)SetResTenant(val interface{}) {
+	if err := j.validateSetResTenantParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resTenant",
 		val,
 	)
 }
@@ -1219,6 +1254,14 @@ func (w *jsiiProxy_WafDedicatedInstanceV1) ResetRegion() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WafDedicatedInstanceV1) ResetResTenant() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetResTenant",
 		nil, // no parameters
 	)
 }

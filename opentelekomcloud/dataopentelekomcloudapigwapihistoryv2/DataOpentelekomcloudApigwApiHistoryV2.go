@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/data-sources/apigw_api_history_v2 opentelekomcloud_apigw_api_history_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/data-sources/apigw_api_history_v2 opentelekomcloud_apigw_api_history_v2}.
 type DataOpentelekomcloudApigwApiHistoryV2 interface {
 	cdktf.TerraformDataSource
 	ApiId() *string
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataOpentelekomcloudApigwApiHistoryV2) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/data-sources/apigw_api_history_v2 opentelekomcloud_apigw_api_history_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/data-sources/apigw_api_history_v2 opentelekomcloud_apigw_api_history_v2} Data Source.
 func NewDataOpentelekomcloudApigwApiHistoryV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudApigwApiHistoryV2Config) DataOpentelekomcloudApigwApiHistoryV2 {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataOpentelekomcloudApigwApiHistoryV2(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/data-sources/apigw_api_history_v2 opentelekomcloud_apigw_api_history_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/data-sources/apigw_api_history_v2 opentelekomcloud_apigw_api_history_v2} Data Source.
 func NewDataOpentelekomcloudApigwApiHistoryV2_Override(d DataOpentelekomcloudApigwApiHistoryV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudApigwApiHistoryV2Config) {
 	_init_.Initialize()
 
