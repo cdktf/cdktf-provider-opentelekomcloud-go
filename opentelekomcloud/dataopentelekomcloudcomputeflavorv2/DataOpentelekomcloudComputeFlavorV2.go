@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/data-sources/compute_flavor_v2 opentelekomcloud_compute_flavor_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/data-sources/compute_flavor_v2 opentelekomcloud_compute_flavor_v2}.
 type DataOpentelekomcloudComputeFlavorV2 interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -564,7 +564,7 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeFlavorV2) VcpusInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/data-sources/compute_flavor_v2 opentelekomcloud_compute_flavor_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/data-sources/compute_flavor_v2 opentelekomcloud_compute_flavor_v2} Data Source.
 func NewDataOpentelekomcloudComputeFlavorV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudComputeFlavorV2Config) DataOpentelekomcloudComputeFlavorV2 {
 	_init_.Initialize()
 
@@ -582,7 +582,7 @@ func NewDataOpentelekomcloudComputeFlavorV2(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/data-sources/compute_flavor_v2 opentelekomcloud_compute_flavor_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/data-sources/compute_flavor_v2 opentelekomcloud_compute_flavor_v2} Data Source.
 func NewDataOpentelekomcloudComputeFlavorV2_Override(d DataOpentelekomcloudComputeFlavorV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudComputeFlavorV2Config) {
 	_init_.Initialize()
 

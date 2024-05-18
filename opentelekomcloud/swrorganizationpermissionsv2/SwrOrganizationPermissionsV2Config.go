@@ -22,22 +22,22 @@ type SwrOrganizationPermissionsV2Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/swr_organization_permissions_v2#auth SwrOrganizationPermissionsV2#auth}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/swr_organization_permissions_v2#auth SwrOrganizationPermissionsV2#auth}.
 	Auth *float64 `field:"required" json:"auth" yaml:"auth"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/swr_organization_permissions_v2#organization SwrOrganizationPermissionsV2#organization}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/swr_organization_permissions_v2#organization SwrOrganizationPermissionsV2#organization}.
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/swr_organization_permissions_v2#user_id SwrOrganizationPermissionsV2#user_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/swr_organization_permissions_v2#user_id SwrOrganizationPermissionsV2#user_id}.
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/swr_organization_permissions_v2#username SwrOrganizationPermissionsV2#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/swr_organization_permissions_v2#username SwrOrganizationPermissionsV2#username}.
 	Username *string `field:"required" json:"username" yaml:"username"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/swr_organization_permissions_v2#id SwrOrganizationPermissionsV2#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/swr_organization_permissions_v2#id SwrOrganizationPermissionsV2#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/swr_organization_permissions_v2#timeouts SwrOrganizationPermissionsV2#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/swr_organization_permissions_v2#timeouts SwrOrganizationPermissionsV2#timeouts}
 	Timeouts *SwrOrganizationPermissionsV2Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

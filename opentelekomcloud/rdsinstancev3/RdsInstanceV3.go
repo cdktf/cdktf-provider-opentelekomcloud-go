@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3}.
 type RdsInstanceV3 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *[]*string
@@ -837,7 +837,7 @@ func (j *jsiiProxy_RdsInstanceV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
 func NewRdsInstanceV3(scope constructs.Construct, id *string, config *RdsInstanceV3Config) RdsInstanceV3 {
 	_init_.Initialize()
 
@@ -855,7 +855,7 @@ func NewRdsInstanceV3(scope constructs.Construct, id *string, config *RdsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
 func NewRdsInstanceV3_Override(r RdsInstanceV3, scope constructs.Construct, id *string, config *RdsInstanceV3Config) {
 	_init_.Initialize()
 

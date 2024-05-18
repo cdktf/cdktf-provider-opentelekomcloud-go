@@ -7,11 +7,11 @@ package fgsfunctionv2
 type FgsFunctionV2Versions struct {
 	// The version name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/fgs_function_v2#name FgsFunctionV2#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/fgs_function_v2#name FgsFunctionV2#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// aliases block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/fgs_function_v2#aliases FgsFunctionV2#aliases}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/fgs_function_v2#aliases FgsFunctionV2#aliases}
 	Aliases *FgsFunctionV2VersionsAliases `field:"optional" json:"aliases" yaml:"aliases"`
 }
 

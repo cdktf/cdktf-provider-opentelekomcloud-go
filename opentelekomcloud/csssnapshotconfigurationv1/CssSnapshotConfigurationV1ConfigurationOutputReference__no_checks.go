@@ -55,6 +55,10 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) validateSetBasePathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) validateSetBucketParameters(val *string) error {
 	return nil
 }

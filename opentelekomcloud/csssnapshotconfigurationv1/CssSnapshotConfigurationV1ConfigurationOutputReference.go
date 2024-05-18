@@ -16,6 +16,9 @@ type CssSnapshotConfigurationV1ConfigurationOutputReference interface {
 	Agency() *string
 	SetAgency(val *string)
 	AgencyInput() *string
+	BasePath() *string
+	SetBasePath(val *string)
+	BasePathInput() *string
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
@@ -104,6 +107,26 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) Agenc
 	_jsii_.Get(
 		j,
 		"agencyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) BasePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"basePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) BasePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"basePathInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +277,17 @@ func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference)SetAge
 	_jsii_.Set(
 		j,
 		"agency",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference)SetBasePath(val *string) {
+	if err := j.validateSetBasePathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"basePath",
 		val,
 	)
 }

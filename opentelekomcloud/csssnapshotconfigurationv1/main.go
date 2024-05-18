@@ -18,7 +18,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "automatic", GoGetter: "Automatic"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticInput", GoGetter: "AutomaticInput"},
-			_jsii_.MemberProperty{JsiiProperty: "basePath", GoGetter: "BasePath"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
@@ -97,6 +96,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agency", GoGetter: "Agency"},
 			_jsii_.MemberProperty{JsiiProperty: "agencyInput", GoGetter: "AgencyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "basePath", GoGetter: "BasePath"},
+			_jsii_.MemberProperty{JsiiProperty: "basePathInput", GoGetter: "BasePathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
