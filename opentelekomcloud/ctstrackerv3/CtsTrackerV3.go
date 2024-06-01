@@ -12,15 +12,17 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3}.
 type CtsTrackerV3 interface {
 	cdktf.TerraformResource
-	BucketLifecycle() *float64
 	BucketName() *string
 	SetBucketName(val *string)
 	BucketNameInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CompressType() *string
+	SetCompressType(val *string)
+	CompressTypeInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -55,6 +57,9 @@ type CtsTrackerV3 interface {
 	IsObsCreated() interface{}
 	SetIsObsCreated(val interface{})
 	IsObsCreatedInput() interface{}
+	IsSortByService() interface{}
+	SetIsSortByService(val interface{})
+	IsSortByServiceInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -132,9 +137,11 @@ type CtsTrackerV3 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *CtsTrackerV3Timeouts)
 	ResetBucketName()
+	ResetCompressType()
 	ResetFilePrefixName()
 	ResetIsLtsEnabled()
 	ResetIsObsCreated()
+	ResetIsSortByService()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -155,16 +162,6 @@ type CtsTrackerV3 interface {
 // The jsii proxy struct for CtsTrackerV3
 type jsiiProxy_CtsTrackerV3 struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_CtsTrackerV3) BucketLifecycle() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"bucketLifecycle",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_CtsTrackerV3) BucketName() *string {
@@ -192,6 +189,26 @@ func (j *jsiiProxy_CtsTrackerV3) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CtsTrackerV3) CompressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CtsTrackerV3) CompressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressTypeInput",
 		&returns,
 	)
 	return returns
@@ -352,6 +369,26 @@ func (j *jsiiProxy_CtsTrackerV3) IsObsCreatedInput() interface{} {
 	_jsii_.Get(
 		j,
 		"isObsCreatedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CtsTrackerV3) IsSortByService() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSortByService",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CtsTrackerV3) IsSortByServiceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSortByServiceInput",
 		&returns,
 	)
 	return returns
@@ -528,7 +565,7 @@ func (j *jsiiProxy_CtsTrackerV3) TrackerType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3} Resource.
 func NewCtsTrackerV3(scope constructs.Construct, id *string, config *CtsTrackerV3Config) CtsTrackerV3 {
 	_init_.Initialize()
 
@@ -546,7 +583,7 @@ func NewCtsTrackerV3(scope constructs.Construct, id *string, config *CtsTrackerV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3} Resource.
 func NewCtsTrackerV3_Override(c CtsTrackerV3, scope constructs.Construct, id *string, config *CtsTrackerV3Config) {
 	_init_.Initialize()
 
@@ -564,6 +601,17 @@ func (j *jsiiProxy_CtsTrackerV3)SetBucketName(val *string) {
 	_jsii_.Set(
 		j,
 		"bucketName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CtsTrackerV3)SetCompressType(val *string) {
+	if err := j.validateSetCompressTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"compressType",
 		val,
 	)
 }
@@ -635,6 +683,17 @@ func (j *jsiiProxy_CtsTrackerV3)SetIsObsCreated(val interface{}) {
 	_jsii_.Set(
 		j,
 		"isObsCreated",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CtsTrackerV3)SetIsSortByService(val interface{}) {
+	if err := j.validateSetIsSortByServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isSortByService",
 		val,
 	)
 }
@@ -1052,6 +1111,14 @@ func (c *jsiiProxy_CtsTrackerV3) ResetBucketName() {
 	)
 }
 
+func (c *jsiiProxy_CtsTrackerV3) ResetCompressType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCompressType",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CtsTrackerV3) ResetFilePrefixName() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1072,6 +1139,14 @@ func (c *jsiiProxy_CtsTrackerV3) ResetIsObsCreated() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIsObsCreated",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CtsTrackerV3) ResetIsSortByService() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIsSortByService",
 		nil, // no parameters
 	)
 }

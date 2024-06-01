@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2}.
 type LbListenerV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -60,8 +60,8 @@ type LbListenerV2 interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IpGroup() LbListenerV2IpGroupList
-	IpGroupInput() interface{}
+	IpGroup() LbListenerV2IpGroupOutputReference
+	IpGroupInput() *LbListenerV2IpGroup
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -159,7 +159,7 @@ type LbListenerV2 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutIpGroup(value interface{})
+	PutIpGroup(value *LbListenerV2IpGroup)
 	PutTimeouts(value *LbListenerV2Timeouts)
 	ResetAdminStateUp()
 	ResetClientCaTlsContainerRef()
@@ -418,8 +418,8 @@ func (j *jsiiProxy_LbListenerV2) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerV2) IpGroup() LbListenerV2IpGroupList {
-	var returns LbListenerV2IpGroupList
+func (j *jsiiProxy_LbListenerV2) IpGroup() LbListenerV2IpGroupOutputReference {
+	var returns LbListenerV2IpGroupOutputReference
 	_jsii_.Get(
 		j,
 		"ipGroup",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_LbListenerV2) IpGroup() LbListenerV2IpGroupList {
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerV2) IpGroupInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListenerV2) IpGroupInput() *LbListenerV2IpGroup {
+	var returns *LbListenerV2IpGroup
 	_jsii_.Get(
 		j,
 		"ipGroupInput",
@@ -739,7 +739,7 @@ func (j *jsiiProxy_LbListenerV2) TransparentClientIpEnableInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2} Resource.
 func NewLbListenerV2(scope constructs.Construct, id *string, config *LbListenerV2Config) LbListenerV2 {
 	_init_.Initialize()
 
@@ -757,7 +757,7 @@ func NewLbListenerV2(scope constructs.Construct, id *string, config *LbListenerV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2} Resource.
 func NewLbListenerV2_Override(l LbListenerV2, scope constructs.Construct, id *string, config *LbListenerV2Config) {
 	_init_.Initialize()
 
@@ -1376,7 +1376,7 @@ func (l *jsiiProxy_LbListenerV2) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (l *jsiiProxy_LbListenerV2) PutIpGroup(value interface{}) {
+func (l *jsiiProxy_LbListenerV2) PutIpGroup(value *LbListenerV2IpGroup) {
 	if err := l.validatePutIpGroupParameters(value); err != nil {
 		panic(err)
 	}

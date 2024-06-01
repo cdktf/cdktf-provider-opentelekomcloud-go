@@ -127,28 +127,6 @@ func init() {
 		reflect.TypeOf((*LbListenerV2IpGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-opentelekomcloud.lbListenerV2.LbListenerV2IpGroupList",
-		reflect.TypeOf((*LbListenerV2IpGroupList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LbListenerV2IpGroupList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
 		"@cdktf/provider-opentelekomcloud.lbListenerV2.LbListenerV2IpGroupOutputReference",
 		reflect.TypeOf((*LbListenerV2IpGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{

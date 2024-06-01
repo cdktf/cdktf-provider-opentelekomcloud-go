@@ -67,7 +67,7 @@ func (j *jsiiProxy_LbListenerV2IpGroupOutputReference) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerV2IpGroupOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerV2IpGroupOutputReference) validateSetInternalValueParameters(val *LbListenerV2IpGroup) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_LbListenerV2IpGroupOutputReference) validateSetTypeParameters
 	return nil
 }
 
-func validateNewLbListenerV2IpGroupOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLbListenerV2IpGroupOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

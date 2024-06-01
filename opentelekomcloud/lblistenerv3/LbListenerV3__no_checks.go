@@ -79,7 +79,7 @@ func (l *jsiiProxy_LbListenerV3) validatePutInsertHeadersParameters(value *LbLis
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerV3) validatePutIpGroupParameters(value interface{}) error {
+func (l *jsiiProxy_LbListenerV3) validatePutIpGroupParameters(value *LbListenerV3IpGroup) error {
 	return nil
 }
 

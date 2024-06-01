@@ -3,7 +3,7 @@
 
 //go:build !no_runtime_type_checking
 
-package lblistenerv2
+package dcsinstancev2
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (l *jsiiProxy_LbListenerV2IpGroupList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+func (d *jsiiProxy_DcsInstanceV2WhitelistStructList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
 	if mapKeyAttributeName == nil {
 		return fmt.Errorf("parameter mapKeyAttributeName is required, but nil was provided")
 	}
@@ -21,7 +21,7 @@ func (l *jsiiProxy_LbListenerV2IpGroupList) validateAllWithMapKeyParameters(mapK
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerV2IpGroupList) validateGetParameters(index *float64) error {
+func (d *jsiiProxy_DcsInstanceV2WhitelistStructList) validateGetParameters(index *float64) error {
 	if index == nil {
 		return fmt.Errorf("parameter index is required, but nil was provided")
 	}
@@ -29,7 +29,7 @@ func (l *jsiiProxy_LbListenerV2IpGroupList) validateGetParameters(index *float64
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerV2IpGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DcsInstanceV2WhitelistStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -37,19 +37,19 @@ func (l *jsiiProxy_LbListenerV2IpGroupList) validateResolveParameters(_context c
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerV2IpGroupList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DcsInstanceV2WhitelistStructList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*LbListenerV2IpGroup:
-		val := val.(*[]*LbListenerV2IpGroup)
+	case *[]*DcsInstanceV2WhitelistStruct:
+		val := val.(*[]*DcsInstanceV2WhitelistStruct)
 		for idx_97dfc6, v := range *val {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
 				return err
 			}
 		}
-	case []*LbListenerV2IpGroup:
-		val_ := val.([]*LbListenerV2IpGroup)
+	case []*DcsInstanceV2WhitelistStruct:
+		val_ := val.([]*DcsInstanceV2WhitelistStruct)
 		val := &val_
 		for idx_97dfc6, v := range *val {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
@@ -58,14 +58,14 @@ func (j *jsiiProxy_LbListenerV2IpGroupList) validateSetInternalValueParameters(v
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*LbListenerV2IpGroup; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*DcsInstanceV2WhitelistStruct; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerV2IpGroupList) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DcsInstanceV2WhitelistStructList) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -73,7 +73,7 @@ func (j *jsiiProxy_LbListenerV2IpGroupList) validateSetTerraformAttributeParamet
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerV2IpGroupList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DcsInstanceV2WhitelistStructList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -81,7 +81,7 @@ func (j *jsiiProxy_LbListenerV2IpGroupList) validateSetTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerV2IpGroupList) validateSetWrapsSetParameters(val *bool) error {
+func (j *jsiiProxy_DcsInstanceV2WhitelistStructList) validateSetWrapsSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -89,7 +89,7 @@ func (j *jsiiProxy_LbListenerV2IpGroupList) validateSetWrapsSetParameters(val *b
 	return nil
 }
 
-func validateNewLbListenerV2IpGroupListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDcsInstanceV2WhitelistStructListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -5,9 +5,9 @@ package rdsinstancev1
 
 
 type RdsInstanceV1Timeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/rds_instance_v1#create RdsInstanceV1#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/rds_instance_v1#create RdsInstanceV1#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/rds_instance_v1#delete RdsInstanceV1#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/rds_instance_v1#delete RdsInstanceV1#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

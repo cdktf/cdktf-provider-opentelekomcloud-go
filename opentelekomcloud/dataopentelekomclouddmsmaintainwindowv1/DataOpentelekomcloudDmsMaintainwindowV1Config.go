@@ -22,18 +22,18 @@ type DataOpentelekomcloudDmsMaintainwindowV1Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/data-sources/dms_maintainwindow_v1#begin DataOpentelekomcloudDmsMaintainwindowV1#begin}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/data-sources/dms_maintainwindow_v1#begin DataOpentelekomcloudDmsMaintainwindowV1#begin}.
 	Begin *string `field:"optional" json:"begin" yaml:"begin"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/data-sources/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/data-sources/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}.
 	Default interface{} `field:"optional" json:"default" yaml:"default"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/data-sources/dms_maintainwindow_v1#end DataOpentelekomcloudDmsMaintainwindowV1#end}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/data-sources/dms_maintainwindow_v1#end DataOpentelekomcloudDmsMaintainwindowV1#end}.
 	End *string `field:"optional" json:"end" yaml:"end"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/data-sources/dms_maintainwindow_v1#id DataOpentelekomcloudDmsMaintainwindowV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/data-sources/dms_maintainwindow_v1#id DataOpentelekomcloudDmsMaintainwindowV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/data-sources/dms_maintainwindow_v1#seq DataOpentelekomcloudDmsMaintainwindowV1#seq}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/data-sources/dms_maintainwindow_v1#seq DataOpentelekomcloudDmsMaintainwindowV1#seq}.
 	Seq *float64 `field:"optional" json:"seq" yaml:"seq"`
 }
 

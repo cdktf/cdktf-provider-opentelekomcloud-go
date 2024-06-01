@@ -36,8 +36,8 @@ type LbListenerV3IpGroupOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *LbListenerV3IpGroup
+	SetInternalValue(val *LbListenerV3IpGroup)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_LbListenerV3IpGroupOutputReference) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerV3IpGroupOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListenerV3IpGroupOutputReference) InternalValue() *LbListenerV3IpGroup {
+	var returns *LbListenerV3IpGroup
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -221,29 +221,29 @@ func (j *jsiiProxy_LbListenerV3IpGroupOutputReference) TypeInput() *string {
 }
 
 
-func NewLbListenerV3IpGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LbListenerV3IpGroupOutputReference {
+func NewLbListenerV3IpGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LbListenerV3IpGroupOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLbListenerV3IpGroupOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewLbListenerV3IpGroupOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LbListenerV3IpGroupOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-opentelekomcloud.lbListenerV3.LbListenerV3IpGroupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLbListenerV3IpGroupOutputReference_Override(l LbListenerV3IpGroupOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLbListenerV3IpGroupOutputReference_Override(l LbListenerV3IpGroupOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-opentelekomcloud.lbListenerV3.LbListenerV3IpGroupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
 }
@@ -292,7 +292,7 @@ func (j *jsiiProxy_LbListenerV3IpGroupOutputReference)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbListenerV3IpGroupOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LbListenerV3IpGroupOutputReference)SetInternalValue(val *LbListenerV3IpGroup) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

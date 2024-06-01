@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "localEpGroup", GoGetter: "LocalEpGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "localEpGroupId", GoGetter: "LocalEpGroupId"},
 			_jsii_.MemberProperty{JsiiProperty: "localEpGroupInput", GoGetter: "LocalEpGroupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "localEpGroupIpv6Id", GoGetter: "LocalEpGroupIpv6Id"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},

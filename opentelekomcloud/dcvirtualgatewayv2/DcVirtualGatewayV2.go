@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2}.
 type DcVirtualGatewayV2 interface {
 	cdktf.TerraformResource
 	Asn() *float64
@@ -58,6 +58,7 @@ type DcVirtualGatewayV2 interface {
 	LocalEpGroup() DcVirtualGatewayV2LocalEpGroupOutputReference
 	LocalEpGroupId() *string
 	LocalEpGroupInput() *DcVirtualGatewayV2LocalEpGroup
+	LocalEpGroupIpv6Id() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -360,6 +361,16 @@ func (j *jsiiProxy_DcVirtualGatewayV2) LocalEpGroupInput() *DcVirtualGatewayV2Lo
 	return returns
 }
 
+func (j *jsiiProxy_DcVirtualGatewayV2) LocalEpGroupIpv6Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localEpGroupIpv6Id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DcVirtualGatewayV2) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -521,7 +532,7 @@ func (j *jsiiProxy_DcVirtualGatewayV2) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource.
 func NewDcVirtualGatewayV2(scope constructs.Construct, id *string, config *DcVirtualGatewayV2Config) DcVirtualGatewayV2 {
 	_init_.Initialize()
 
@@ -539,7 +550,7 @@ func NewDcVirtualGatewayV2(scope constructs.Construct, id *string, config *DcVir
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource.
 func NewDcVirtualGatewayV2_Override(d DcVirtualGatewayV2, scope constructs.Construct, id *string, config *DcVirtualGatewayV2Config) {
 	_init_.Initialize()
 

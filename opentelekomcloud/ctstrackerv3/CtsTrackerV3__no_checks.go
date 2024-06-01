@@ -99,6 +99,10 @@ func (j *jsiiProxy_CtsTrackerV3) validateSetBucketNameParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_CtsTrackerV3) validateSetCompressTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CtsTrackerV3) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_CtsTrackerV3) validateSetIsLtsEnabledParameters(val interface
 }
 
 func (j *jsiiProxy_CtsTrackerV3) validateSetIsObsCreatedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CtsTrackerV3) validateSetIsSortByServiceParameters(val interface{}) error {
 	return nil
 }
 

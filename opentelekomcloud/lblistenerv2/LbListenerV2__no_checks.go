@@ -75,7 +75,7 @@ func (l *jsiiProxy_LbListenerV2) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerV2) validatePutIpGroupParameters(value interface{}) error {
+func (l *jsiiProxy_LbListenerV2) validatePutIpGroupParameters(value *LbListenerV2IpGroup) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2}.
 type NetworkingFloatingipV2 interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -489,7 +489,7 @@ func (j *jsiiProxy_NetworkingFloatingipV2) ValueSpecsInput() *map[string]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource.
 func NewNetworkingFloatingipV2(scope constructs.Construct, id *string, config *NetworkingFloatingipV2Config) NetworkingFloatingipV2 {
 	_init_.Initialize()
 
@@ -507,7 +507,7 @@ func NewNetworkingFloatingipV2(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource.
 func NewNetworkingFloatingipV2_Override(n NetworkingFloatingipV2, scope constructs.Construct, id *string, config *NetworkingFloatingipV2Config) {
 	_init_.Initialize()
 
