@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_loadbalancer_v2 opentelekomcloud_lb_loadbalancer_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/lb_loadbalancer_v2 opentelekomcloud_lb_loadbalancer_v2}.
 type LbLoadbalancerV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -560,7 +560,7 @@ func (j *jsiiProxy_LbLoadbalancerV2) VipSubnetIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_loadbalancer_v2 opentelekomcloud_lb_loadbalancer_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/lb_loadbalancer_v2 opentelekomcloud_lb_loadbalancer_v2} Resource.
 func NewLbLoadbalancerV2(scope constructs.Construct, id *string, config *LbLoadbalancerV2Config) LbLoadbalancerV2 {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewLbLoadbalancerV2(scope constructs.Construct, id *string, config *LbLoadb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_loadbalancer_v2 opentelekomcloud_lb_loadbalancer_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/lb_loadbalancer_v2 opentelekomcloud_lb_loadbalancer_v2} Resource.
 func NewLbLoadbalancerV2_Override(l LbLoadbalancerV2, scope constructs.Construct, id *string, config *LbLoadbalancerV2Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3}.
 type IdentityProtectionPolicyV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -334,7 +334,7 @@ func (j *jsiiProxy_IdentityProtectionPolicyV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3} Resource.
 func NewIdentityProtectionPolicyV3(scope constructs.Construct, id *string, config *IdentityProtectionPolicyV3Config) IdentityProtectionPolicyV3 {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewIdentityProtectionPolicyV3(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3} Resource.
 func NewIdentityProtectionPolicyV3_Override(i IdentityProtectionPolicyV3, scope constructs.Construct, id *string, config *IdentityProtectionPolicyV3Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1}.
 type VpcFlowLogV1 interface {
 	cdktf.TerraformResource
 	AdminState() interface{}
@@ -545,7 +545,7 @@ func (j *jsiiProxy_VpcFlowLogV1) TrafficTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1} Resource.
 func NewVpcFlowLogV1(scope constructs.Construct, id *string, config *VpcFlowLogV1Config) VpcFlowLogV1 {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewVpcFlowLogV1(scope constructs.Construct, id *string, config *VpcFlowLogV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1} Resource.
 func NewVpcFlowLogV1_Override(v VpcFlowLogV1, scope constructs.Construct, id *string, config *VpcFlowLogV1Config) {
 	_init_.Initialize()
 

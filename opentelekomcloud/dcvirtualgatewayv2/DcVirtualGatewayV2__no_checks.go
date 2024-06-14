@@ -79,6 +79,10 @@ func (d *jsiiProxy_DcVirtualGatewayV2) validatePutLocalEpGroupParameters(value *
 	return nil
 }
 
+func (d *jsiiProxy_DcVirtualGatewayV2) validatePutLocalEpGroupV6Parameters(value *DcVirtualGatewayV2LocalEpGroupV6) error {
+	return nil
+}
+
 func validateDcVirtualGatewayV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

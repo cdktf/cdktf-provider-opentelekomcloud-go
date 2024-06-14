@@ -218,6 +218,17 @@ func (d *jsiiProxy_DcVirtualGatewayV2) validatePutLocalEpGroupParameters(value *
 	return nil
 }
 
+func (d *jsiiProxy_DcVirtualGatewayV2) validatePutLocalEpGroupV6Parameters(value *DcVirtualGatewayV2LocalEpGroupV6) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateDcVirtualGatewayV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

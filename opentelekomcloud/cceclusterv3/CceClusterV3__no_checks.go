@@ -179,6 +179,10 @@ func (j *jsiiProxy_CceClusterV3) validateSetEipParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_CceClusterV3) validateSetEnableVolumeEncryptionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceClusterV3) validateSetEniSubnetCidrParameters(val *string) error {
 	return nil
 }

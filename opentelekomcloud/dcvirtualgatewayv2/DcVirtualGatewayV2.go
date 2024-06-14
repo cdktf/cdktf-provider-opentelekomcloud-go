@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2}.
 type DcVirtualGatewayV2 interface {
 	cdktf.TerraformResource
 	Asn() *float64
@@ -59,6 +59,8 @@ type DcVirtualGatewayV2 interface {
 	LocalEpGroupId() *string
 	LocalEpGroupInput() *DcVirtualGatewayV2LocalEpGroup
 	LocalEpGroupIpv6Id() *string
+	LocalEpGroupV6() DcVirtualGatewayV2LocalEpGroupV6OutputReference
+	LocalEpGroupV6Input() *DcVirtualGatewayV2LocalEpGroupV6
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -134,10 +136,13 @@ type DcVirtualGatewayV2 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLocalEpGroup(value *DcVirtualGatewayV2LocalEpGroup)
+	PutLocalEpGroupV6(value *DcVirtualGatewayV2LocalEpGroupV6)
 	ResetAsn()
 	ResetDescription()
 	ResetDeviceId()
 	ResetId()
+	ResetLocalEpGroup()
+	ResetLocalEpGroupV6()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -371,6 +376,26 @@ func (j *jsiiProxy_DcVirtualGatewayV2) LocalEpGroupIpv6Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DcVirtualGatewayV2) LocalEpGroupV6() DcVirtualGatewayV2LocalEpGroupV6OutputReference {
+	var returns DcVirtualGatewayV2LocalEpGroupV6OutputReference
+	_jsii_.Get(
+		j,
+		"localEpGroupV6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DcVirtualGatewayV2) LocalEpGroupV6Input() *DcVirtualGatewayV2LocalEpGroupV6 {
+	var returns *DcVirtualGatewayV2LocalEpGroupV6
+	_jsii_.Get(
+		j,
+		"localEpGroupV6Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DcVirtualGatewayV2) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -532,7 +557,7 @@ func (j *jsiiProxy_DcVirtualGatewayV2) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource.
 func NewDcVirtualGatewayV2(scope constructs.Construct, id *string, config *DcVirtualGatewayV2Config) DcVirtualGatewayV2 {
 	_init_.Initialize()
 
@@ -550,7 +575,7 @@ func NewDcVirtualGatewayV2(scope constructs.Construct, id *string, config *DcVir
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource.
 func NewDcVirtualGatewayV2_Override(d DcVirtualGatewayV2, scope constructs.Construct, id *string, config *DcVirtualGatewayV2Config) {
 	_init_.Initialize()
 
@@ -1081,6 +1106,17 @@ func (d *jsiiProxy_DcVirtualGatewayV2) PutLocalEpGroup(value *DcVirtualGatewayV2
 	)
 }
 
+func (d *jsiiProxy_DcVirtualGatewayV2) PutLocalEpGroupV6(value *DcVirtualGatewayV2LocalEpGroupV6) {
+	if err := d.validatePutLocalEpGroupV6Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLocalEpGroupV6",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DcVirtualGatewayV2) ResetAsn() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1109,6 +1145,22 @@ func (d *jsiiProxy_DcVirtualGatewayV2) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DcVirtualGatewayV2) ResetLocalEpGroup() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocalEpGroup",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DcVirtualGatewayV2) ResetLocalEpGroupV6() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocalEpGroupV6",
 		nil, // no parameters
 	)
 }
