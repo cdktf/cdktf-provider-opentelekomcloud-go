@@ -215,6 +215,10 @@ func (j *jsiiProxy_CceNodePoolV3) validateSetServerGroupReferenceParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CceNodePoolV3) validateSetStorageParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceNodePoolV3) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }

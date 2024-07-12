@@ -95,6 +95,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "xuserId", GoGetter: "XuserId"},
+			_jsii_.MemberProperty{JsiiProperty: "xuserType", GoGetter: "XuserType"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentityUserV3{}

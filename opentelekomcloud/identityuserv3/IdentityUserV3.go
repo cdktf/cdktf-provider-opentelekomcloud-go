@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3}.
 type IdentityUserV3 interface {
 	cdktf.TerraformResource
 	AccessType() *string
@@ -100,6 +100,8 @@ type IdentityUserV3 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	XuserId() *string
+	XuserType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -616,8 +618,28 @@ func (j *jsiiProxy_IdentityUserV3) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IdentityUserV3) XuserId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xuserId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
+func (j *jsiiProxy_IdentityUserV3) XuserType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xuserType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
 func NewIdentityUserV3(scope constructs.Construct, id *string, config *IdentityUserV3Config) IdentityUserV3 {
 	_init_.Initialize()
 
@@ -635,7 +657,7 @@ func NewIdentityUserV3(scope constructs.Construct, id *string, config *IdentityU
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/identity_user_v3 opentelekomcloud_identity_user_v3} Resource.
 func NewIdentityUserV3_Override(i IdentityUserV3, scope constructs.Construct, id *string, config *IdentityUserV3Config) {
 	_init_.Initialize()
 

@@ -36,8 +36,8 @@ type WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference interface {
 	Index() *string
 	SetIndex(val *string)
 	IndexInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *WafDedicatedAlarmMaskingRuleV1AdvancedSettings
+	SetInternalValue(val *WafDedicatedAlarmMaskingRuleV1AdvancedSettings)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference) InternalValue() *WafDedicatedAlarmMaskingRuleV1AdvancedSettings {
+	var returns *WafDedicatedAlarmMaskingRuleV1AdvancedSettings
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -198,29 +198,29 @@ func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
 }
 
 
-func NewWafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference {
+func NewWafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewWafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewWafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewWafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference_Override(w WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewWafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference_Override(w WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
 }
@@ -269,7 +269,7 @@ func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
 	)
 }
 
-func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference)SetInternalValue(val *WafDedicatedAlarmMaskingRuleV1AdvancedSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

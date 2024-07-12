@@ -1,3 +1,3 @@
 # `opentelekomcloud_apigw_api_v2`
 
-Refer to the Terraform Registry for docs: [`opentelekomcloud_apigw_api_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/apigw_api_v2).
+Refer to the Terraform Registry for docs: [`opentelekomcloud_apigw_api_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/apigw_api_v2).

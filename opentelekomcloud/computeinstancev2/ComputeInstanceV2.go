@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/compute_instance_v2 opentelekomcloud_compute_instance_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/compute_instance_v2 opentelekomcloud_compute_instance_v2}.
 type ComputeInstanceV2 interface {
 	cdktf.TerraformResource
 	AccessIpV4() *string
@@ -52,6 +52,9 @@ type ComputeInstanceV2 interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	EncryptedPassword() *string
 	FlavorId() *string
 	SetFlavorId(val *string)
@@ -190,6 +193,7 @@ type ComputeInstanceV2 interface {
 	ResetAvailabilityZone()
 	ResetBlockDevice()
 	ResetConfigDrive()
+	ResetDescription()
 	ResetFlavorId()
 	ResetFlavorName()
 	ResetId()
@@ -423,6 +427,26 @@ func (j *jsiiProxy_ComputeInstanceV2) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceV2) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceV2) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -929,7 +953,7 @@ func (j *jsiiProxy_ComputeInstanceV2) VolumeAttached() ComputeInstanceV2VolumeAt
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/compute_instance_v2 opentelekomcloud_compute_instance_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/compute_instance_v2 opentelekomcloud_compute_instance_v2} Resource.
 func NewComputeInstanceV2(scope constructs.Construct, id *string, config *ComputeInstanceV2Config) ComputeInstanceV2 {
 	_init_.Initialize()
 
@@ -947,7 +971,7 @@ func NewComputeInstanceV2(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/compute_instance_v2 opentelekomcloud_compute_instance_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/compute_instance_v2 opentelekomcloud_compute_instance_v2} Resource.
 func NewComputeInstanceV2_Override(c ComputeInstanceV2, scope constructs.Construct, id *string, config *ComputeInstanceV2Config) {
 	_init_.Initialize()
 
@@ -1050,6 +1074,17 @@ func (j *jsiiProxy_ComputeInstanceV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceV2)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -1706,6 +1741,14 @@ func (c *jsiiProxy_ComputeInstanceV2) ResetConfigDrive() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetConfigDrive",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceV2) ResetDescription() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

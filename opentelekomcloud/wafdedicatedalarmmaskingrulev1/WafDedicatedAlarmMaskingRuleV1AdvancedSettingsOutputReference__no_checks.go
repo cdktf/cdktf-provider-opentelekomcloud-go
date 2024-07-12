@@ -67,7 +67,7 @@ func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference) validateSetInternalValueParameters(val *WafDedicatedAlarmMaskingRuleV1AdvancedSettings) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
 	return nil
 }
 
-func validateNewWafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

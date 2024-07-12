@@ -12,11 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1}.
 type WafDedicatedAlarmMaskingRuleV1 interface {
 	cdktf.TerraformResource
-	AdvancedSettings() WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList
-	AdvancedSettingsInput() interface{}
+	AdvancedSettings() WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
+	AdvancedSettingsInput() *WafDedicatedAlarmMaskingRuleV1AdvancedSettings
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Conditions() WafDedicatedAlarmMaskingRuleV1ConditionsList
@@ -127,7 +127,7 @@ type WafDedicatedAlarmMaskingRuleV1 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAdvancedSettings(value interface{})
+	PutAdvancedSettings(value *WafDedicatedAlarmMaskingRuleV1AdvancedSettings)
 	PutConditions(value interface{})
 	PutTimeouts(value *WafDedicatedAlarmMaskingRuleV1Timeouts)
 	ResetAdvancedSettings()
@@ -155,8 +155,8 @@ type jsiiProxy_WafDedicatedAlarmMaskingRuleV1 struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) AdvancedSettings() WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList {
-	var returns WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) AdvancedSettings() WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference {
+	var returns WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
 	_jsii_.Get(
 		j,
 		"advancedSettings",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) AdvancedSettings() WafDedicat
 	return returns
 }
 
-func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) AdvancedSettingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) AdvancedSettingsInput() *WafDedicatedAlarmMaskingRuleV1AdvancedSettings {
+	var returns *WafDedicatedAlarmMaskingRuleV1AdvancedSettings
 	_jsii_.Get(
 		j,
 		"advancedSettingsInput",
@@ -496,7 +496,7 @@ func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource.
 func NewWafDedicatedAlarmMaskingRuleV1(scope constructs.Construct, id *string, config *WafDedicatedAlarmMaskingRuleV1Config) WafDedicatedAlarmMaskingRuleV1 {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewWafDedicatedAlarmMaskingRuleV1(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource.
 func NewWafDedicatedAlarmMaskingRuleV1_Override(w WafDedicatedAlarmMaskingRuleV1, scope constructs.Construct, id *string, config *WafDedicatedAlarmMaskingRuleV1Config) {
 	_init_.Initialize()
 
@@ -1001,7 +1001,7 @@ func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) OverrideLogicalId(newLogicalI
 	)
 }
 
-func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) PutAdvancedSettings(value interface{}) {
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) PutAdvancedSettings(value *WafDedicatedAlarmMaskingRuleV1AdvancedSettings) {
 	if err := w.validatePutAdvancedSettingsParameters(value); err != nil {
 		panic(err)
 	}

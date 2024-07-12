@@ -139,6 +139,10 @@ func (j *jsiiProxy_ComputeInstanceV2) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceV2) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceV2) validateSetFlavorIdParameters(val *string) error {
 	return nil
 }

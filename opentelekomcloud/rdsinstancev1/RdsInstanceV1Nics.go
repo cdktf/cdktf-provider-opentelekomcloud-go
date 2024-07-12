@@ -5,7 +5,7 @@ package rdsinstancev1
 
 
 type RdsInstanceV1Nics struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/rds_instance_v1#subnetid RdsInstanceV1#subnetid}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/rds_instance_v1#subnetid RdsInstanceV1#subnetid}.
 	Subnetid *string `field:"required" json:"subnetid" yaml:"subnetid"`
 }
 

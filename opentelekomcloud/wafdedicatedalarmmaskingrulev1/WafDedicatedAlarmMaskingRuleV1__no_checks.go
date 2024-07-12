@@ -75,7 +75,7 @@ func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) validateOverrideLogicalIdPara
 	return nil
 }
 
-func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) validatePutAdvancedSettingsParameters(value interface{}) error {
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) validatePutAdvancedSettingsParameters(value *WafDedicatedAlarmMaskingRuleV1AdvancedSettings) error {
 	return nil
 }
 

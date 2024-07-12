@@ -671,6 +671,14 @@ func (j *jsiiProxy_CceNodePoolV3) validateSetServerGroupReferenceParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CceNodePoolV3) validateSetStorageParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CceNodePoolV3) validateSetSubnetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

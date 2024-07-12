@@ -1,3 +1,3 @@
 # `opentelekomcloud_lb_policy_v3`
 
-Refer to the Terraform Registry for docs: [`opentelekomcloud_lb_policy_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/lb_policy_v3).
+Refer to the Terraform Registry for docs: [`opentelekomcloud_lb_policy_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/lb_policy_v3).
