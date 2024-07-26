@@ -1,3 +1,3 @@
 # `data_opentelekomcloud_css_flavor_v1`
 
-Refer to the Terraform Registry for docs: [`data_opentelekomcloud_css_flavor_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/css_flavor_v1).
+Refer to the Terraform Registry for docs: [`data_opentelekomcloud_css_flavor_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/css_flavor_v1).

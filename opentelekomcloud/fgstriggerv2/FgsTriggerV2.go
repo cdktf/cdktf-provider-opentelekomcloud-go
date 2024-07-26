@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/fgs_trigger_v2 opentelekomcloud_fgs_trigger_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/fgs_trigger_v2 opentelekomcloud_fgs_trigger_v2}.
 type FgsTriggerV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -460,7 +460,7 @@ func (j *jsiiProxy_FgsTriggerV2) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/fgs_trigger_v2 opentelekomcloud_fgs_trigger_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/fgs_trigger_v2 opentelekomcloud_fgs_trigger_v2} Resource.
 func NewFgsTriggerV2(scope constructs.Construct, id *string, config *FgsTriggerV2Config) FgsTriggerV2 {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewFgsTriggerV2(scope constructs.Construct, id *string, config *FgsTriggerV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/fgs_trigger_v2 opentelekomcloud_fgs_trigger_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/fgs_trigger_v2 opentelekomcloud_fgs_trigger_v2} Resource.
 func NewFgsTriggerV2_Override(f FgsTriggerV2, scope constructs.Construct, id *string, config *FgsTriggerV2Config) {
 	_init_.Initialize()
 

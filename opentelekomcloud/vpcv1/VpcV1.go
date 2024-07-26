@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/vpc_v1 opentelekomcloud_vpc_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/vpc_v1 opentelekomcloud_vpc_v1}.
 type VpcV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -511,7 +511,7 @@ func (j *jsiiProxy_VpcV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/vpc_v1 opentelekomcloud_vpc_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/vpc_v1 opentelekomcloud_vpc_v1} Resource.
 func NewVpcV1(scope constructs.Construct, id *string, config *VpcV1Config) VpcV1 {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewVpcV1(scope constructs.Construct, id *string, config *VpcV1Config) VpcV1
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/vpc_v1 opentelekomcloud_vpc_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/vpc_v1 opentelekomcloud_vpc_v1} Resource.
 func NewVpcV1_Override(v VpcV1, scope constructs.Construct, id *string, config *VpcV1Config) {
 	_init_.Initialize()
 
