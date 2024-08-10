@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/sfs_file_system_v2 opentelekomcloud_sfs_file_system_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2 opentelekomcloud_sfs_file_system_v2}.
 type SfsFileSystemV2 interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -698,7 +698,7 @@ func (j *jsiiProxy_SfsFileSystemV2) VolumeType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/sfs_file_system_v2 opentelekomcloud_sfs_file_system_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2 opentelekomcloud_sfs_file_system_v2} Resource.
 func NewSfsFileSystemV2(scope constructs.Construct, id *string, config *SfsFileSystemV2Config) SfsFileSystemV2 {
 	_init_.Initialize()
 
@@ -716,7 +716,7 @@ func NewSfsFileSystemV2(scope constructs.Construct, id *string, config *SfsFileS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/sfs_file_system_v2 opentelekomcloud_sfs_file_system_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2 opentelekomcloud_sfs_file_system_v2} Resource.
 func NewSfsFileSystemV2_Override(s SfsFileSystemV2, scope constructs.Construct, id *string, config *SfsFileSystemV2Config) {
 	_init_.Initialize()
 

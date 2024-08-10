@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_policy_v1 opentelekomcloud_waf_dedicated_policy_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/waf_dedicated_policy_v1 opentelekomcloud_waf_dedicated_policy_v1}.
 type WafDedicatedPolicyV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,9 @@ type WafDedicatedPolicyV1 interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *float64
+	DeepInspection() interface{}
+	SetDeepInspection(val interface{})
+	DeepInspectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -44,6 +47,9 @@ type WafDedicatedPolicyV1 interface {
 	FullDetection() interface{}
 	SetFullDetection(val interface{})
 	FullDetectionInput() interface{}
+	HeaderInspection() interface{}
+	SetHeaderInspection(val interface{})
+	HeaderInspectionInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -77,6 +83,9 @@ type WafDedicatedPolicyV1 interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ShiroDecryptionCheck() interface{}
+	SetShiroDecryptionCheck(val interface{})
+	ShiroDecryptionCheckInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,7 +139,9 @@ type WafDedicatedPolicyV1 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutOptions(value interface{})
 	PutTimeouts(value *WafDedicatedPolicyV1Timeouts)
+	ResetDeepInspection()
 	ResetFullDetection()
+	ResetHeaderInspection()
 	ResetId()
 	ResetLevel()
 	ResetOptions()
@@ -139,6 +150,7 @@ type WafDedicatedPolicyV1 interface {
 	ResetOverrideLogicalId()
 	ResetProtectionMode()
 	ResetRegion()
+	ResetShiroDecryptionCheck()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -203,6 +215,26 @@ func (j *jsiiProxy_WafDedicatedPolicyV1) CreatedAt() *float64 {
 	_jsii_.Get(
 		j,
 		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafDedicatedPolicyV1) DeepInspection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deepInspection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafDedicatedPolicyV1) DeepInspectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deepInspectionInput",
 		&returns,
 	)
 	return returns
@@ -273,6 +305,26 @@ func (j *jsiiProxy_WafDedicatedPolicyV1) FullDetectionInput() interface{} {
 	_jsii_.Get(
 		j,
 		"fullDetectionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafDedicatedPolicyV1) HeaderInspection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headerInspection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafDedicatedPolicyV1) HeaderInspectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headerInspectionInput",
 		&returns,
 	)
 	return returns
@@ -448,6 +500,26 @@ func (j *jsiiProxy_WafDedicatedPolicyV1) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WafDedicatedPolicyV1) ShiroDecryptionCheck() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shiroDecryptionCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafDedicatedPolicyV1) ShiroDecryptionCheckInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shiroDecryptionCheckInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WafDedicatedPolicyV1) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -499,7 +571,7 @@ func (j *jsiiProxy_WafDedicatedPolicyV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_policy_v1 opentelekomcloud_waf_dedicated_policy_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/waf_dedicated_policy_v1 opentelekomcloud_waf_dedicated_policy_v1} Resource.
 func NewWafDedicatedPolicyV1(scope constructs.Construct, id *string, config *WafDedicatedPolicyV1Config) WafDedicatedPolicyV1 {
 	_init_.Initialize()
 
@@ -517,7 +589,7 @@ func NewWafDedicatedPolicyV1(scope constructs.Construct, id *string, config *Waf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_policy_v1 opentelekomcloud_waf_dedicated_policy_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/waf_dedicated_policy_v1 opentelekomcloud_waf_dedicated_policy_v1} Resource.
 func NewWafDedicatedPolicyV1_Override(w WafDedicatedPolicyV1, scope constructs.Construct, id *string, config *WafDedicatedPolicyV1Config) {
 	_init_.Initialize()
 
@@ -550,6 +622,17 @@ func (j *jsiiProxy_WafDedicatedPolicyV1)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_WafDedicatedPolicyV1)SetDeepInspection(val interface{}) {
+	if err := j.validateSetDeepInspectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deepInspection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WafDedicatedPolicyV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -573,6 +656,17 @@ func (j *jsiiProxy_WafDedicatedPolicyV1)SetFullDetection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"fullDetection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WafDedicatedPolicyV1)SetHeaderInspection(val interface{}) {
+	if err := j.validateSetHeaderInspectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"headerInspection",
 		val,
 	)
 }
@@ -658,6 +752,17 @@ func (j *jsiiProxy_WafDedicatedPolicyV1)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WafDedicatedPolicyV1)SetShiroDecryptionCheck(val interface{}) {
+	if err := j.validateSetShiroDecryptionCheckParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shiroDecryptionCheck",
 		val,
 	)
 }
@@ -1037,10 +1142,26 @@ func (w *jsiiProxy_WafDedicatedPolicyV1) PutTimeouts(value *WafDedicatedPolicyV1
 	)
 }
 
+func (w *jsiiProxy_WafDedicatedPolicyV1) ResetDeepInspection() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDeepInspection",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WafDedicatedPolicyV1) ResetFullDetection() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetFullDetection",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WafDedicatedPolicyV1) ResetHeaderInspection() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetHeaderInspection",
 		nil, // no parameters
 	)
 }
@@ -1089,6 +1210,14 @@ func (w *jsiiProxy_WafDedicatedPolicyV1) ResetRegion() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WafDedicatedPolicyV1) ResetShiroDecryptionCheck() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetShiroDecryptionCheck",
 		nil, // no parameters
 	)
 }

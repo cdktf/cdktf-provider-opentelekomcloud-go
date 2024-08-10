@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_known_attack_source_rule_v1 opentelekomcloud_waf_dedicated_known_attack_source_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/waf_dedicated_known_attack_source_rule_v1 opentelekomcloud_waf_dedicated_known_attack_source_rule_v1}.
 type WafDedicatedKnownAttackSourceRuleV1 interface {
 	cdktf.TerraformResource
 	BlockTime() *float64
@@ -438,7 +438,7 @@ func (j *jsiiProxy_WafDedicatedKnownAttackSourceRuleV1) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_known_attack_source_rule_v1 opentelekomcloud_waf_dedicated_known_attack_source_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/waf_dedicated_known_attack_source_rule_v1 opentelekomcloud_waf_dedicated_known_attack_source_rule_v1} Resource.
 func NewWafDedicatedKnownAttackSourceRuleV1(scope constructs.Construct, id *string, config *WafDedicatedKnownAttackSourceRuleV1Config) WafDedicatedKnownAttackSourceRuleV1 {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewWafDedicatedKnownAttackSourceRuleV1(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_known_attack_source_rule_v1 opentelekomcloud_waf_dedicated_known_attack_source_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/waf_dedicated_known_attack_source_rule_v1 opentelekomcloud_waf_dedicated_known_attack_source_rule_v1} Resource.
 func NewWafDedicatedKnownAttackSourceRuleV1_Override(w WafDedicatedKnownAttackSourceRuleV1, scope constructs.Construct, id *string, config *WafDedicatedKnownAttackSourceRuleV1Config) {
 	_init_.Initialize()
 

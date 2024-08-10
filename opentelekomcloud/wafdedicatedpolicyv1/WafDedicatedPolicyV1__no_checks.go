@@ -107,7 +107,15 @@ func (j *jsiiProxy_WafDedicatedPolicyV1) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_WafDedicatedPolicyV1) validateSetDeepInspectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafDedicatedPolicyV1) validateSetFullDetectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WafDedicatedPolicyV1) validateSetHeaderInspectionParameters(val interface{}) error {
 	return nil
 }
 
@@ -136,6 +144,10 @@ func (j *jsiiProxy_WafDedicatedPolicyV1) validateSetProvisionersParameters(val *
 }
 
 func (j *jsiiProxy_WafDedicatedPolicyV1) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WafDedicatedPolicyV1) validateSetShiroDecryptionCheckParameters(val interface{}) error {
 	return nil
 }
 

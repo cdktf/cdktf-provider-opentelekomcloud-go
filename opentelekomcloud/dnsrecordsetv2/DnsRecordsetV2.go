@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/dns_recordset_v2 opentelekomcloud_dns_recordset_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dns_recordset_v2 opentelekomcloud_dns_recordset_v2}.
 type DnsRecordsetV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -557,7 +557,7 @@ func (j *jsiiProxy_DnsRecordsetV2) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/dns_recordset_v2 opentelekomcloud_dns_recordset_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dns_recordset_v2 opentelekomcloud_dns_recordset_v2} Resource.
 func NewDnsRecordsetV2(scope constructs.Construct, id *string, config *DnsRecordsetV2Config) DnsRecordsetV2 {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewDnsRecordsetV2(scope constructs.Construct, id *string, config *DnsRecord
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/dns_recordset_v2 opentelekomcloud_dns_recordset_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dns_recordset_v2 opentelekomcloud_dns_recordset_v2} Resource.
 func NewDnsRecordsetV2_Override(d DnsRecordsetV2, scope constructs.Construct, id *string, config *DnsRecordsetV2Config) {
 	_init_.Initialize()
 

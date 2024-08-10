@@ -1,3 +1,3 @@
 # `opentelekomcloud_identity_provider`
 
-Refer to the Terraform Registry for docs: [`opentelekomcloud_identity_provider`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/identity_provider).
+Refer to the Terraform Registry for docs: [`opentelekomcloud_identity_provider`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/identity_provider).
