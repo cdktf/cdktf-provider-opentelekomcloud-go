@@ -22,16 +22,16 @@ type DataOpentelekomcloudIdentityUserV3Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/data-sources/identity_user_v3#domain_id DataOpentelekomcloudIdentityUserV3#domain_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/data-sources/identity_user_v3#domain_id DataOpentelekomcloudIdentityUserV3#domain_id}.
 	DomainId *string `field:"optional" json:"domainId" yaml:"domainId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/data-sources/identity_user_v3#enabled DataOpentelekomcloudIdentityUserV3#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/data-sources/identity_user_v3#enabled DataOpentelekomcloudIdentityUserV3#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/data-sources/identity_user_v3#id DataOpentelekomcloudIdentityUserV3#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/data-sources/identity_user_v3#id DataOpentelekomcloudIdentityUserV3#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/data-sources/identity_user_v3#name DataOpentelekomcloudIdentityUserV3#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/data-sources/identity_user_v3#name DataOpentelekomcloudIdentityUserV3#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

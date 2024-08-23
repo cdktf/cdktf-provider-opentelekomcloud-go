@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3}.
 type DdsInstanceV3 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -32,6 +32,7 @@ type DdsInstanceV3 interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	Datastore() DdsInstanceV3DatastoreOutputReference
 	DatastoreInput() *DdsInstanceV3Datastore
 	DbUsername() *string
@@ -73,6 +74,8 @@ type DdsInstanceV3 interface {
 	PasswordInput() *string
 	PayMode() *string
 	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -107,6 +110,8 @@ type DdsInstanceV3 interface {
 	TerraformResourceType() *string
 	Timeouts() DdsInstanceV3TimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TimeZone() *string
+	UpdatedAt() *string
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
@@ -163,6 +168,7 @@ type DdsInstanceV3 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPort()
 	ResetRegion()
 	ResetSsl()
 	ResetTags()
@@ -260,6 +266,16 @@ func (j *jsiiProxy_DdsInstanceV3) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DdsInstanceV3) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
 		&returns,
 	)
 	return returns
@@ -505,6 +521,16 @@ func (j *jsiiProxy_DdsInstanceV3) Port() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DdsInstanceV3) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DdsInstanceV3) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -695,6 +721,26 @@ func (j *jsiiProxy_DdsInstanceV3) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DdsInstanceV3) TimeZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DdsInstanceV3) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DdsInstanceV3) VpcId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -716,7 +762,7 @@ func (j *jsiiProxy_DdsInstanceV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource.
 func NewDdsInstanceV3(scope constructs.Construct, id *string, config *DdsInstanceV3Config) DdsInstanceV3 {
 	_init_.Initialize()
 
@@ -734,7 +780,7 @@ func NewDdsInstanceV3(scope constructs.Construct, id *string, config *DdsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource.
 func NewDdsInstanceV3_Override(d DdsInstanceV3, scope constructs.Construct, id *string, config *DdsInstanceV3Config) {
 	_init_.Initialize()
 
@@ -856,6 +902,17 @@ func (j *jsiiProxy_DdsInstanceV3)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DdsInstanceV3)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -1370,6 +1427,14 @@ func (d *jsiiProxy_DdsInstanceV3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DdsInstanceV3) ResetPort() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPort",
 		nil, // no parameters
 	)
 }

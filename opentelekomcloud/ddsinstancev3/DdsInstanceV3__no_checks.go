@@ -143,6 +143,10 @@ func (j *jsiiProxy_DdsInstanceV3) validateSetPasswordParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_DdsInstanceV3) validateSetPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DdsInstanceV3) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

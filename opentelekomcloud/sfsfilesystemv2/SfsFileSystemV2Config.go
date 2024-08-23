@@ -22,38 +22,38 @@ type SfsFileSystemV2Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#size SfsFileSystemV2#size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#size SfsFileSystemV2#size}.
 	Size *float64 `field:"required" json:"size" yaml:"size"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#access_level SfsFileSystemV2#access_level}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#access_level SfsFileSystemV2#access_level}.
 	AccessLevel *string `field:"optional" json:"accessLevel" yaml:"accessLevel"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#access_to SfsFileSystemV2#access_to}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#access_to SfsFileSystemV2#access_to}.
 	AccessTo *string `field:"optional" json:"accessTo" yaml:"accessTo"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#access_type SfsFileSystemV2#access_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#access_type SfsFileSystemV2#access_type}.
 	AccessType *string `field:"optional" json:"accessType" yaml:"accessType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#availability_zone SfsFileSystemV2#availability_zone}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#availability_zone SfsFileSystemV2#availability_zone}.
 	AvailabilityZone *string `field:"optional" json:"availabilityZone" yaml:"availabilityZone"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#description SfsFileSystemV2#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#description SfsFileSystemV2#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#id SfsFileSystemV2#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#id SfsFileSystemV2#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#is_public SfsFileSystemV2#is_public}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#is_public SfsFileSystemV2#is_public}.
 	IsPublic interface{} `field:"optional" json:"isPublic" yaml:"isPublic"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#metadata SfsFileSystemV2#metadata}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#metadata SfsFileSystemV2#metadata}.
 	Metadata *map[string]*string `field:"optional" json:"metadata" yaml:"metadata"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#name SfsFileSystemV2#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#name SfsFileSystemV2#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#region SfsFileSystemV2#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#region SfsFileSystemV2#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#share_proto SfsFileSystemV2#share_proto}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#share_proto SfsFileSystemV2#share_proto}.
 	ShareProto *string `field:"optional" json:"shareProto" yaml:"shareProto"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#tags SfsFileSystemV2#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#tags SfsFileSystemV2#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/sfs_file_system_v2#timeouts SfsFileSystemV2#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_file_system_v2#timeouts SfsFileSystemV2#timeouts}
 	Timeouts *SfsFileSystemV2Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

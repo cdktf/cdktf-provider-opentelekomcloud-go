@@ -67,6 +67,10 @@ func (j *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) validateSetKeepDa
 	return nil
 }
 
+func (j *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) validateSetPeriodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) validateSetStartTimeParameters(val *string) error {
 	return nil
 }

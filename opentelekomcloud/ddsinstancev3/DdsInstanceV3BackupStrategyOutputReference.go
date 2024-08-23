@@ -35,6 +35,9 @@ type DdsInstanceV3BackupStrategyOutputReference interface {
 	KeepDays() *float64
 	SetKeepDays(val *float64)
 	KeepDaysInput() *float64
+	Period() *string
+	SetPeriod(val *string)
+	PeriodInput() *string
 	StartTime() *string
 	SetStartTime(val *string)
 	StartTimeInput() *string
@@ -70,6 +73,7 @@ type DdsInstanceV3BackupStrategyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPeriod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,6 +154,26 @@ func (j *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) KeepDaysInput() *
 	_jsii_.Get(
 		j,
 		"keepDaysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) Period() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"period",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) PeriodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"periodInput",
 		&returns,
 	)
 	return returns
@@ -263,6 +287,17 @@ func (j *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference)SetKeepDays(val *f
 	_jsii_.Set(
 		j,
 		"keepDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference)SetPeriod(val *string) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"period",
 		val,
 	)
 }
@@ -484,6 +519,14 @@ func (d *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) ResetPeriod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPeriod",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

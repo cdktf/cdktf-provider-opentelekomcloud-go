@@ -143,6 +143,10 @@ func (j *jsiiProxy_CceNodeV3) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_CceNodeV3) validateSetDedicatedHostIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceNodeV3) validateSetDockerBaseSizeParameters(val *float64) error {
 	return nil
 }

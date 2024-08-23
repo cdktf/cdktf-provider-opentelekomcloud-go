@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3}.
 type CceNodeV3 interface {
 	cdktf.TerraformResource
 	AgencyName() *string
@@ -50,6 +50,9 @@ type CceNodeV3 interface {
 	SetCount(val interface{})
 	DataVolumes() CceNodeV3DataVolumesList
 	DataVolumesInput() interface{}
+	DedicatedHostId() *string
+	SetDedicatedHostId(val *string)
+	DedicatedHostIdInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -223,6 +226,7 @@ type CceNodeV3 interface {
 	ResetBandwidthChargeMode()
 	ResetBandwidthSize()
 	ResetBillingMode()
+	ResetDedicatedHostId()
 	ResetDockerBaseSize()
 	ResetDockerLvmConfigOverride()
 	ResetEcsPerformanceType()
@@ -465,6 +469,26 @@ func (j *jsiiProxy_CceNodeV3) DataVolumesInput() interface{} {
 	_jsii_.Get(
 		j,
 		"dataVolumesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceNodeV3) DedicatedHostId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dedicatedHostId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceNodeV3) DedicatedHostIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dedicatedHostIdInput",
 		&returns,
 	)
 	return returns
@@ -1201,7 +1225,7 @@ func (j *jsiiProxy_CceNodeV3) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
 func NewCceNodeV3(scope constructs.Construct, id *string, config *CceNodeV3Config) CceNodeV3 {
 	_init_.Initialize()
 
@@ -1219,7 +1243,7 @@ func NewCceNodeV3(scope constructs.Construct, id *string, config *CceNodeV3Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/cce_node_v3 opentelekomcloud_cce_node_v3} Resource.
 func NewCceNodeV3_Override(c CceNodeV3, scope constructs.Construct, id *string, config *CceNodeV3Config) {
 	_init_.Initialize()
 
@@ -1325,6 +1349,17 @@ func (j *jsiiProxy_CceNodeV3)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceNodeV3)SetDedicatedHostId(val *string) {
+	if err := j.validateSetDedicatedHostIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dedicatedHostId",
 		val,
 	)
 }
@@ -2094,6 +2129,14 @@ func (c *jsiiProxy_CceNodeV3) ResetBillingMode() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBillingMode",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceNodeV3) ResetDedicatedHostId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDedicatedHostId",
 		nil, // no parameters
 	)
 }
