@@ -553,6 +553,14 @@ func (j *jsiiProxy_DehHostV1) validateSetStatusParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DehHostV1) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DehHostV1) validateSetVcpusParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

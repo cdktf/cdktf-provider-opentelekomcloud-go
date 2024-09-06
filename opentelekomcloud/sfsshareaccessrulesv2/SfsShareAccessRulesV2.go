@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_share_access_rules_v2 opentelekomcloud_sfs_share_access_rules_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/sfs_share_access_rules_v2 opentelekomcloud_sfs_share_access_rules_v2}.
 type SfsShareAccessRulesV2 interface {
 	cdktf.TerraformResource
 	AccessRule() SfsShareAccessRulesV2AccessRuleList
@@ -356,7 +356,7 @@ func (j *jsiiProxy_SfsShareAccessRulesV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_share_access_rules_v2 opentelekomcloud_sfs_share_access_rules_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/sfs_share_access_rules_v2 opentelekomcloud_sfs_share_access_rules_v2} Resource.
 func NewSfsShareAccessRulesV2(scope constructs.Construct, id *string, config *SfsShareAccessRulesV2Config) SfsShareAccessRulesV2 {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewSfsShareAccessRulesV2(scope constructs.Construct, id *string, config *Sf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/sfs_share_access_rules_v2 opentelekomcloud_sfs_share_access_rules_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/sfs_share_access_rules_v2 opentelekomcloud_sfs_share_access_rules_v2} Resource.
 func NewSfsShareAccessRulesV2_Override(s SfsShareAccessRulesV2, scope constructs.Construct, id *string, config *SfsShareAccessRulesV2Config) {
 	_init_.Initialize()
 

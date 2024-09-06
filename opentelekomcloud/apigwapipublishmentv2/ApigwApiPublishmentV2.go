@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_api_publishment_v2 opentelekomcloud_apigw_api_publishment_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_api_publishment_v2 opentelekomcloud_apigw_api_publishment_v2}.
 type ApigwApiPublishmentV2 interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -493,7 +493,7 @@ func (j *jsiiProxy_ApigwApiPublishmentV2) VersionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_api_publishment_v2 opentelekomcloud_apigw_api_publishment_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_api_publishment_v2 opentelekomcloud_apigw_api_publishment_v2} Resource.
 func NewApigwApiPublishmentV2(scope constructs.Construct, id *string, config *ApigwApiPublishmentV2Config) ApigwApiPublishmentV2 {
 	_init_.Initialize()
 
@@ -511,7 +511,7 @@ func NewApigwApiPublishmentV2(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_api_publishment_v2 opentelekomcloud_apigw_api_publishment_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_api_publishment_v2 opentelekomcloud_apigw_api_publishment_v2} Resource.
 func NewApigwApiPublishmentV2_Override(a ApigwApiPublishmentV2, scope constructs.Construct, id *string, config *ApigwApiPublishmentV2Config) {
 	_init_.Initialize()
 

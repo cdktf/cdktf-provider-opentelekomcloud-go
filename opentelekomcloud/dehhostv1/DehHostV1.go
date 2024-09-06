@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/deh_host_v1 opentelekomcloud_deh_host_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/deh_host_v1 opentelekomcloud_deh_host_v1}.
 type DehHostV1 interface {
 	cdktf.TerraformResource
 	AutoPlacement() *string
@@ -102,6 +102,9 @@ type DehHostV1 interface {
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -174,6 +177,7 @@ type DehHostV1 interface {
 	ResetRegion()
 	ResetSockets()
 	ResetStatus()
+	ResetTags()
 	ResetTimeouts()
 	ResetVcpus()
 	SynthesizeAttributes() *map[string]interface{}
@@ -644,6 +648,26 @@ func (j *jsiiProxy_DehHostV1) StatusInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DehHostV1) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DehHostV1) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DehHostV1) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -715,7 +739,7 @@ func (j *jsiiProxy_DehHostV1) VcpusInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/deh_host_v1 opentelekomcloud_deh_host_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/deh_host_v1 opentelekomcloud_deh_host_v1} Resource.
 func NewDehHostV1(scope constructs.Construct, id *string, config *DehHostV1Config) DehHostV1 {
 	_init_.Initialize()
 
@@ -733,7 +757,7 @@ func NewDehHostV1(scope constructs.Construct, id *string, config *DehHostV1Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/deh_host_v1 opentelekomcloud_deh_host_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/deh_host_v1 opentelekomcloud_deh_host_v1} Resource.
 func NewDehHostV1_Override(d DehHostV1, scope constructs.Construct, id *string, config *DehHostV1Config) {
 	_init_.Initialize()
 
@@ -973,6 +997,17 @@ func (j *jsiiProxy_DehHostV1)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DehHostV1)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1471,6 +1506,14 @@ func (d *jsiiProxy_DehHostV1) ResetStatus() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DehHostV1) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

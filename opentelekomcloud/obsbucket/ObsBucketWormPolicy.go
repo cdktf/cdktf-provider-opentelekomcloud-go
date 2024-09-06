@@ -5,9 +5,9 @@ package obsbucket
 
 
 type ObsBucketWormPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/obs_bucket#days ObsBucket#days}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/obs_bucket#days ObsBucket#days}.
 	Days *float64 `field:"optional" json:"days" yaml:"days"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/obs_bucket#years ObsBucket#years}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/obs_bucket#years ObsBucket#years}.
 	Years *float64 `field:"optional" json:"years" yaml:"years"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/rds_read_replica_v3 opentelekomcloud_rds_read_replica_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/rds_read_replica_v3 opentelekomcloud_rds_read_replica_v3}.
 type RdsReadReplicaV3 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -79,6 +79,9 @@ type RdsReadReplicaV3 interface {
 	SetReplicaOfId(val *string)
 	ReplicaOfIdInput() *string
 	SecurityGroupId() *string
+	SslEnable() interface{}
+	SetSslEnable(val interface{})
+	SslEnableInput() interface{}
 	SubnetId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -143,6 +146,7 @@ type RdsReadReplicaV3 interface {
 	ResetOverrideLogicalId()
 	ResetPublicIps()
 	ResetRegion()
+	ResetSslEnable()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -462,6 +466,26 @@ func (j *jsiiProxy_RdsReadReplicaV3) SecurityGroupId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RdsReadReplicaV3) SslEnable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sslEnable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsReadReplicaV3) SslEnableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sslEnableInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsReadReplicaV3) SubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -553,7 +577,7 @@ func (j *jsiiProxy_RdsReadReplicaV3) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/rds_read_replica_v3 opentelekomcloud_rds_read_replica_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/rds_read_replica_v3 opentelekomcloud_rds_read_replica_v3} Resource.
 func NewRdsReadReplicaV3(scope constructs.Construct, id *string, config *RdsReadReplicaV3Config) RdsReadReplicaV3 {
 	_init_.Initialize()
 
@@ -571,7 +595,7 @@ func NewRdsReadReplicaV3(scope constructs.Construct, id *string, config *RdsRead
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/rds_read_replica_v3 opentelekomcloud_rds_read_replica_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/rds_read_replica_v3 opentelekomcloud_rds_read_replica_v3} Resource.
 func NewRdsReadReplicaV3_Override(r RdsReadReplicaV3, scope constructs.Construct, id *string, config *RdsReadReplicaV3Config) {
 	_init_.Initialize()
 
@@ -723,6 +747,17 @@ func (j *jsiiProxy_RdsReadReplicaV3)SetReplicaOfId(val *string) {
 	_jsii_.Set(
 		j,
 		"replicaOfId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsReadReplicaV3)SetSslEnable(val interface{}) {
+	if err := j.validateSetSslEnableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sslEnable",
 		val,
 	)
 }
@@ -1138,6 +1173,14 @@ func (r *jsiiProxy_RdsReadReplicaV3) ResetRegion() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsReadReplicaV3) ResetSslEnable() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSslEnable",
 		nil, // no parameters
 	)
 }

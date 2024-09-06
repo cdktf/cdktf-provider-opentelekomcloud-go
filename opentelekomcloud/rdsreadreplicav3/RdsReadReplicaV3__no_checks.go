@@ -143,6 +143,10 @@ func (j *jsiiProxy_RdsReadReplicaV3) validateSetReplicaOfIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_RdsReadReplicaV3) validateSetSslEnableParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewRdsReadReplicaV3Parameters(scope constructs.Construct, id *string, config *RdsReadReplicaV3Config) error {
 	return nil
 }
