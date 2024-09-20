@@ -348,6 +348,22 @@ func (j *jsiiProxy_CbrPolicyV3) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_CbrPolicyV3) validateSetDestinationProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CbrPolicyV3) validateSetDestinationRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CbrPolicyV3) validateSetEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

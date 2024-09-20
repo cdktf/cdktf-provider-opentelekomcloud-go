@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/data-sources/cce_node_v3 opentelekomcloud_cce_node_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/cce_node_v3 opentelekomcloud_cce_node_v3}.
 type DataOpentelekomcloudCceNodeV3 interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -571,7 +571,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCceNodeV3) VolumeType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/data-sources/cce_node_v3 opentelekomcloud_cce_node_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/cce_node_v3 opentelekomcloud_cce_node_v3} Data Source.
 func NewDataOpentelekomcloudCceNodeV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudCceNodeV3Config) DataOpentelekomcloudCceNodeV3 {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewDataOpentelekomcloudCceNodeV3(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/data-sources/cce_node_v3 opentelekomcloud_cce_node_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/cce_node_v3 opentelekomcloud_cce_node_v3} Data Source.
 func NewDataOpentelekomcloudCceNodeV3_Override(d DataOpentelekomcloudCceNodeV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudCceNodeV3Config) {
 	_init_.Initialize()
 

@@ -103,6 +103,14 @@ func (j *jsiiProxy_CbrPolicyV3) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_CbrPolicyV3) validateSetDestinationProjectIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CbrPolicyV3) validateSetDestinationRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CbrPolicyV3) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

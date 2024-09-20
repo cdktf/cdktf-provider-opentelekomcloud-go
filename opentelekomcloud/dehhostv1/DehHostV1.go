@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/deh_host_v1 opentelekomcloud_deh_host_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/deh_host_v1 opentelekomcloud_deh_host_v1}.
 type DehHostV1 interface {
 	cdktf.TerraformResource
 	AutoPlacement() *string
@@ -739,7 +739,7 @@ func (j *jsiiProxy_DehHostV1) VcpusInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/deh_host_v1 opentelekomcloud_deh_host_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/deh_host_v1 opentelekomcloud_deh_host_v1} Resource.
 func NewDehHostV1(scope constructs.Construct, id *string, config *DehHostV1Config) DehHostV1 {
 	_init_.Initialize()
 
@@ -757,7 +757,7 @@ func NewDehHostV1(scope constructs.Construct, id *string, config *DehHostV1Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/deh_host_v1 opentelekomcloud_deh_host_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/deh_host_v1 opentelekomcloud_deh_host_v1} Resource.
 func NewDehHostV1_Override(d DehHostV1, scope constructs.Construct, id *string, config *DehHostV1Config) {
 	_init_.Initialize()
 

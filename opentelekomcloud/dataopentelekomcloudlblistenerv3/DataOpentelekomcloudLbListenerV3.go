@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/data-sources/lb_listener_v3 opentelekomcloud_lb_listener_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/lb_listener_v3 opentelekomcloud_lb_listener_v3}.
 type DataOpentelekomcloudLbListenerV3 interface {
 	cdktf.TerraformDataSource
 	AdminStateUp() cdktf.IResolvable
@@ -755,7 +755,7 @@ func (j *jsiiProxy_DataOpentelekomcloudLbListenerV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/data-sources/lb_listener_v3 opentelekomcloud_lb_listener_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/lb_listener_v3 opentelekomcloud_lb_listener_v3} Data Source.
 func NewDataOpentelekomcloudLbListenerV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudLbListenerV3Config) DataOpentelekomcloudLbListenerV3 {
 	_init_.Initialize()
 
@@ -773,7 +773,7 @@ func NewDataOpentelekomcloudLbListenerV3(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/data-sources/lb_listener_v3 opentelekomcloud_lb_listener_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/lb_listener_v3 opentelekomcloud_lb_listener_v3} Data Source.
 func NewDataOpentelekomcloudLbListenerV3_Override(d DataOpentelekomcloudLbListenerV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudLbListenerV3Config) {
 	_init_.Initialize()
 

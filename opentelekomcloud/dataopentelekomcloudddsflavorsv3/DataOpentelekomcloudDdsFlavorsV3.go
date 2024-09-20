@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/data-sources/dds_flavors_v3 opentelekomcloud_dds_flavors_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/dds_flavors_v3 opentelekomcloud_dds_flavors_v3}.
 type DataOpentelekomcloudDdsFlavorsV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDdsFlavorsV3) VcpusInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/data-sources/dds_flavors_v3 opentelekomcloud_dds_flavors_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/dds_flavors_v3 opentelekomcloud_dds_flavors_v3} Data Source.
 func NewDataOpentelekomcloudDdsFlavorsV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudDdsFlavorsV3Config) DataOpentelekomcloudDdsFlavorsV3 {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewDataOpentelekomcloudDdsFlavorsV3(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/data-sources/dds_flavors_v3 opentelekomcloud_dds_flavors_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/dds_flavors_v3 opentelekomcloud_dds_flavors_v3} Data Source.
 func NewDataOpentelekomcloudDdsFlavorsV3_Override(d DataOpentelekomcloudDdsFlavorsV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudDdsFlavorsV3Config) {
 	_init_.Initialize()
 

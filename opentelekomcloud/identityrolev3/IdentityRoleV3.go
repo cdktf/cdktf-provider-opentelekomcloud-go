@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3 opentelekomcloud_identity_role_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_role_v3 opentelekomcloud_identity_role_v3}.
 type IdentityRoleV3 interface {
 	cdktf.TerraformResource
 	Catalog() *string
@@ -435,7 +435,7 @@ func (j *jsiiProxy_IdentityRoleV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3 opentelekomcloud_identity_role_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_role_v3 opentelekomcloud_identity_role_v3} Resource.
 func NewIdentityRoleV3(scope constructs.Construct, id *string, config *IdentityRoleV3Config) IdentityRoleV3 {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewIdentityRoleV3(scope constructs.Construct, id *string, config *IdentityR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3 opentelekomcloud_identity_role_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_role_v3 opentelekomcloud_identity_role_v3} Resource.
 func NewIdentityRoleV3_Override(i IdentityRoleV3, scope constructs.Construct, id *string, config *IdentityRoleV3Config) {
 	_init_.Initialize()
 

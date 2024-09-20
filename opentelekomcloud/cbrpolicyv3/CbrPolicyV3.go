@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3}.
 type CbrPolicyV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,12 @@ type CbrPolicyV3 interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DestinationProjectId() *string
+	SetDestinationProjectId(val *string)
+	DestinationProjectIdInput() *string
+	DestinationRegion() *string
+	SetDestinationRegion(val *string)
+	DestinationRegionInput() *string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -123,6 +129,8 @@ type CbrPolicyV3 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutOperationDefinition(value *CbrPolicyV3OperationDefinition)
+	ResetDestinationProjectId()
+	ResetDestinationRegion()
 	ResetEnabled()
 	ResetId()
 	ResetOperationDefinition()
@@ -192,6 +200,46 @@ func (j *jsiiProxy_CbrPolicyV3) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CbrPolicyV3) DestinationProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationProjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CbrPolicyV3) DestinationProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationProjectIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CbrPolicyV3) DestinationRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CbrPolicyV3) DestinationRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationRegionInput",
 		&returns,
 	)
 	return returns
@@ -438,7 +486,7 @@ func (j *jsiiProxy_CbrPolicyV3) TriggerPatternInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource.
 func NewCbrPolicyV3(scope constructs.Construct, id *string, config *CbrPolicyV3Config) CbrPolicyV3 {
 	_init_.Initialize()
 
@@ -456,7 +504,7 @@ func NewCbrPolicyV3(scope constructs.Construct, id *string, config *CbrPolicyV3C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource.
 func NewCbrPolicyV3_Override(c CbrPolicyV3, scope constructs.Construct, id *string, config *CbrPolicyV3Config) {
 	_init_.Initialize()
 
@@ -493,6 +541,28 @@ func (j *jsiiProxy_CbrPolicyV3)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CbrPolicyV3)SetDestinationProjectId(val *string) {
+	if err := j.validateSetDestinationProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destinationProjectId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CbrPolicyV3)SetDestinationRegion(val *string) {
+	if err := j.validateSetDestinationRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destinationRegion",
 		val,
 	)
 }
@@ -951,6 +1021,22 @@ func (c *jsiiProxy_CbrPolicyV3) PutOperationDefinition(value *CbrPolicyV3Operati
 		c,
 		"putOperationDefinition",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CbrPolicyV3) ResetDestinationProjectId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDestinationProjectId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CbrPolicyV3) ResetDestinationRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDestinationRegion",
+		nil, // no parameters
 	)
 }
 
