@@ -115,6 +115,10 @@ func (j *jsiiProxy_SdrsProtectiongroupV1) validateSetDrTypeParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_SdrsProtectiongroupV1) validateSetEnableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SdrsProtectiongroupV1) validateSetIdParameters(val *string) error {
 	return nil
 }

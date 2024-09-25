@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vpc_route_table_v1 opentelekomcloud_vpc_route_table_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vpc_route_table_v1 opentelekomcloud_vpc_route_table_v1}.
 type VpcRouteTableV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -498,7 +498,7 @@ func (j *jsiiProxy_VpcRouteTableV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vpc_route_table_v1 opentelekomcloud_vpc_route_table_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vpc_route_table_v1 opentelekomcloud_vpc_route_table_v1} Resource.
 func NewVpcRouteTableV1(scope constructs.Construct, id *string, config *VpcRouteTableV1Config) VpcRouteTableV1 {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewVpcRouteTableV1(scope constructs.Construct, id *string, config *VpcRoute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vpc_route_table_v1 opentelekomcloud_vpc_route_table_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vpc_route_table_v1 opentelekomcloud_vpc_route_table_v1} Resource.
 func NewVpcRouteTableV1_Override(v VpcRouteTableV1, scope constructs.Construct, id *string, config *VpcRouteTableV1Config) {
 	_init_.Initialize()
 

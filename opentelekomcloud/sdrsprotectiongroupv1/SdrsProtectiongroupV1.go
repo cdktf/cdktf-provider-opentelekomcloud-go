@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/sdrs_protectiongroup_v1 opentelekomcloud_sdrs_protectiongroup_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/sdrs_protectiongroup_v1 opentelekomcloud_sdrs_protectiongroup_v1}.
 type SdrsProtectiongroupV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,7 @@ type SdrsProtectiongroupV1 interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -40,6 +41,9 @@ type SdrsProtectiongroupV1 interface {
 	DrType() *string
 	SetDrType(val *string)
 	DrTypeInput() *string
+	Enable() interface{}
+	SetEnable(val interface{})
+	EnableInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -87,6 +91,7 @@ type SdrsProtectiongroupV1 interface {
 	TerraformResourceType() *string
 	Timeouts() SdrsProtectiongroupV1TimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -133,6 +138,7 @@ type SdrsProtectiongroupV1 interface {
 	PutTimeouts(value *SdrsProtectiongroupV1Timeouts)
 	ResetDescription()
 	ResetDrType()
+	ResetEnable()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -191,6 +197,16 @@ func (j *jsiiProxy_SdrsProtectiongroupV1) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SdrsProtectiongroupV1) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
 		&returns,
 	)
 	return returns
@@ -261,6 +277,26 @@ func (j *jsiiProxy_SdrsProtectiongroupV1) DrTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"drTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SdrsProtectiongroupV1) Enable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SdrsProtectiongroupV1) EnableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableInput",
 		&returns,
 	)
 	return returns
@@ -496,8 +532,18 @@ func (j *jsiiProxy_SdrsProtectiongroupV1) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SdrsProtectiongroupV1) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/sdrs_protectiongroup_v1 opentelekomcloud_sdrs_protectiongroup_v1} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/sdrs_protectiongroup_v1 opentelekomcloud_sdrs_protectiongroup_v1} Resource.
 func NewSdrsProtectiongroupV1(scope constructs.Construct, id *string, config *SdrsProtectiongroupV1Config) SdrsProtectiongroupV1 {
 	_init_.Initialize()
 
@@ -515,7 +561,7 @@ func NewSdrsProtectiongroupV1(scope constructs.Construct, id *string, config *Sd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/sdrs_protectiongroup_v1 opentelekomcloud_sdrs_protectiongroup_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/sdrs_protectiongroup_v1 opentelekomcloud_sdrs_protectiongroup_v1} Resource.
 func NewSdrsProtectiongroupV1_Override(s SdrsProtectiongroupV1, scope constructs.Construct, id *string, config *SdrsProtectiongroupV1Config) {
 	_init_.Initialize()
 
@@ -585,6 +631,17 @@ func (j *jsiiProxy_SdrsProtectiongroupV1)SetDrType(val *string) {
 	_jsii_.Set(
 		j,
 		"drType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SdrsProtectiongroupV1)SetEnable(val interface{}) {
+	if err := j.validateSetEnableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enable",
 		val,
 	)
 }
@@ -1058,6 +1115,14 @@ func (s *jsiiProxy_SdrsProtectiongroupV1) ResetDrType() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDrType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SdrsProtectiongroupV1) ResetEnable() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnable",
 		nil, // no parameters
 	)
 }

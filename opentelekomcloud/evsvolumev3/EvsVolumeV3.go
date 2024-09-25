@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/evs_volume_v3 opentelekomcloud_evs_volume_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/evs_volume_v3 opentelekomcloud_evs_volume_v3}.
 type EvsVolumeV3 interface {
 	cdktf.TerraformResource
 	Attachment() EvsVolumeV3AttachmentList
@@ -666,7 +666,7 @@ func (j *jsiiProxy_EvsVolumeV3) Wwn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/evs_volume_v3 opentelekomcloud_evs_volume_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/evs_volume_v3 opentelekomcloud_evs_volume_v3} Resource.
 func NewEvsVolumeV3(scope constructs.Construct, id *string, config *EvsVolumeV3Config) EvsVolumeV3 {
 	_init_.Initialize()
 
@@ -684,7 +684,7 @@ func NewEvsVolumeV3(scope constructs.Construct, id *string, config *EvsVolumeV3C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/evs_volume_v3 opentelekomcloud_evs_volume_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/evs_volume_v3 opentelekomcloud_evs_volume_v3} Resource.
 func NewEvsVolumeV3_Override(e EvsVolumeV3, scope constructs.Construct, id *string, config *EvsVolumeV3Config) {
 	_init_.Initialize()
 

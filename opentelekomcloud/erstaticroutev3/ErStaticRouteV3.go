@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/er_static_route_v3 opentelekomcloud_er_static_route_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/er_static_route_v3 opentelekomcloud_er_static_route_v3}.
 type ErStaticRouteV3 interface {
 	cdktf.TerraformResource
 	AttachmentId() *string
@@ -483,7 +483,7 @@ func (j *jsiiProxy_ErStaticRouteV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/er_static_route_v3 opentelekomcloud_er_static_route_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/er_static_route_v3 opentelekomcloud_er_static_route_v3} Resource.
 func NewErStaticRouteV3(scope constructs.Construct, id *string, config *ErStaticRouteV3Config) ErStaticRouteV3 {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewErStaticRouteV3(scope constructs.Construct, id *string, config *ErStatic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/er_static_route_v3 opentelekomcloud_er_static_route_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/er_static_route_v3 opentelekomcloud_er_static_route_v3} Resource.
 func NewErStaticRouteV3_Override(e ErStaticRouteV3, scope constructs.Construct, id *string, config *ErStaticRouteV3Config) {
 	_init_.Initialize()
 
