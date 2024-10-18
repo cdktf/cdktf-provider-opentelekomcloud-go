@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3}.
 type CceNodePoolV3 interface {
 	cdktf.TerraformResource
 	AgencyName() *string
@@ -125,6 +125,9 @@ type CceNodePoolV3 interface {
 	ScaleEnable() interface{}
 	SetScaleEnable(val interface{})
 	ScaleEnableInput() interface{}
+	SecurityGroupIds() *[]*string
+	SetSecurityGroupIds(val *[]*string)
+	SecurityGroupIdsInput() *[]*string
 	ServerGroupReference() *string
 	SetServerGroupReference(val *string)
 	ServerGroupReferenceInput() *string
@@ -216,6 +219,7 @@ type CceNodePoolV3 interface {
 	ResetRuntime()
 	ResetScaleDownCooldownTime()
 	ResetScaleEnable()
+	ResetSecurityGroupIds()
 	ResetServerGroupReference()
 	ResetStorage()
 	ResetSubnetId()
@@ -850,6 +854,26 @@ func (j *jsiiProxy_CceNodePoolV3) ScaleEnableInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CceNodePoolV3) SecurityGroupIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceNodePoolV3) SecurityGroupIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CceNodePoolV3) ServerGroupReference() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1011,7 +1035,7 @@ func (j *jsiiProxy_CceNodePoolV3) UserTagsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3} Resource.
 func NewCceNodePoolV3(scope constructs.Construct, id *string, config *CceNodePoolV3Config) CceNodePoolV3 {
 	_init_.Initialize()
 
@@ -1029,7 +1053,7 @@ func NewCceNodePoolV3(scope constructs.Construct, id *string, config *CceNodePoo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3} Resource.
 func NewCceNodePoolV3_Override(c CceNodePoolV3, scope constructs.Construct, id *string, config *CceNodePoolV3Config) {
 	_init_.Initialize()
 
@@ -1346,6 +1370,17 @@ func (j *jsiiProxy_CceNodePoolV3)SetScaleEnable(val interface{}) {
 	_jsii_.Set(
 		j,
 		"scaleEnable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceNodePoolV3)SetSecurityGroupIds(val *[]*string) {
+	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityGroupIds",
 		val,
 	)
 }
@@ -1939,6 +1974,14 @@ func (c *jsiiProxy_CceNodePoolV3) ResetScaleEnable() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetScaleEnable",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceNodePoolV3) ResetSecurityGroupIds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecurityGroupIds",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1}.
 type EcsInstanceV1 interface {
 	cdktf.TerraformResource
 	AutoRecovery() interface{}
@@ -73,6 +73,8 @@ type EcsInstanceV1 interface {
 	NicsInput() interface{}
 	// The tree node.
 	Node() constructs.Node
+	OsSchedulerHints() EcsInstanceV1OsSchedulerHintsList
+	OsSchedulerHintsInput() interface{}
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
@@ -162,12 +164,14 @@ type EcsInstanceV1 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDataDisks(value interface{})
 	PutNics(value interface{})
+	PutOsSchedulerHints(value interface{})
 	PutTimeouts(value *EcsInstanceV1Timeouts)
 	ResetAutoRecovery()
 	ResetDataDisks()
 	ResetDeleteDisksOnTermination()
 	ResetId()
 	ResetKeyName()
+	ResetOsSchedulerHints()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -497,6 +501,26 @@ func (j *jsiiProxy_EcsInstanceV1) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_EcsInstanceV1) OsSchedulerHints() EcsInstanceV1OsSchedulerHintsList {
+	var returns EcsInstanceV1OsSchedulerHintsList
+	_jsii_.Get(
+		j,
+		"osSchedulerHints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsInstanceV1) OsSchedulerHintsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"osSchedulerHintsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EcsInstanceV1) Password() *string {
 	var returns *string
 	_jsii_.Get(
@@ -758,7 +782,7 @@ func (j *jsiiProxy_EcsInstanceV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource.
 func NewEcsInstanceV1(scope constructs.Construct, id *string, config *EcsInstanceV1Config) EcsInstanceV1 {
 	_init_.Initialize()
 
@@ -776,7 +800,7 @@ func NewEcsInstanceV1(scope constructs.Construct, id *string, config *EcsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource.
 func NewEcsInstanceV1_Override(e EcsInstanceV1, scope constructs.Construct, id *string, config *EcsInstanceV1Config) {
 	_init_.Initialize()
 
@@ -1406,6 +1430,17 @@ func (e *jsiiProxy_EcsInstanceV1) PutNics(value interface{}) {
 	)
 }
 
+func (e *jsiiProxy_EcsInstanceV1) PutOsSchedulerHints(value interface{}) {
+	if err := e.validatePutOsSchedulerHintsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putOsSchedulerHints",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsInstanceV1) PutTimeouts(value *EcsInstanceV1Timeouts) {
 	if err := e.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1453,6 +1488,14 @@ func (e *jsiiProxy_EcsInstanceV1) ResetKeyName() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetKeyName",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsInstanceV1) ResetOsSchedulerHints() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOsSchedulerHints",
 		nil, // no parameters
 	)
 }

@@ -211,6 +211,10 @@ func (j *jsiiProxy_CceNodePoolV3) validateSetScaleEnableParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_CceNodePoolV3) validateSetSecurityGroupIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceNodePoolV3) validateSetServerGroupReferenceParameters(val *string) error {
 	return nil
 }

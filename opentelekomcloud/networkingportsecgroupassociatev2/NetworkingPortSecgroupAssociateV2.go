@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/networking_port_secgroup_associate_v2 opentelekomcloud_networking_port_secgroup_associate_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/networking_port_secgroup_associate_v2 opentelekomcloud_networking_port_secgroup_associate_v2}.
 type NetworkingPortSecgroupAssociateV2 interface {
 	cdktf.TerraformResource
 	AllSecurityGroupIds() *[]*string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_NetworkingPortSecgroupAssociateV2) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/networking_port_secgroup_associate_v2 opentelekomcloud_networking_port_secgroup_associate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/networking_port_secgroup_associate_v2 opentelekomcloud_networking_port_secgroup_associate_v2} Resource.
 func NewNetworkingPortSecgroupAssociateV2(scope constructs.Construct, id *string, config *NetworkingPortSecgroupAssociateV2Config) NetworkingPortSecgroupAssociateV2 {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewNetworkingPortSecgroupAssociateV2(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/networking_port_secgroup_associate_v2 opentelekomcloud_networking_port_secgroup_associate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/networking_port_secgroup_associate_v2 opentelekomcloud_networking_port_secgroup_associate_v2} Resource.
 func NewNetworkingPortSecgroupAssociateV2_Override(n NetworkingPortSecgroupAssociateV2, scope constructs.Construct, id *string, config *NetworkingPortSecgroupAssociateV2Config) {
 	_init_.Initialize()
 

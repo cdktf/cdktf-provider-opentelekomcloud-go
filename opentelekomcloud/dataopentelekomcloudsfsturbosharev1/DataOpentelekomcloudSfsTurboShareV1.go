@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
 type DataOpentelekomcloudSfsTurboShareV1 interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -420,7 +420,7 @@ func (j *jsiiProxy_DataOpentelekomcloudSfsTurboShareV1) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1} Data Source.
 func NewDataOpentelekomcloudSfsTurboShareV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudSfsTurboShareV1Config) DataOpentelekomcloudSfsTurboShareV1 {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewDataOpentelekomcloudSfsTurboShareV1(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1} Data Source.
 func NewDataOpentelekomcloudSfsTurboShareV1_Override(d DataOpentelekomcloudSfsTurboShareV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudSfsTurboShareV1Config) {
 	_init_.Initialize()
 

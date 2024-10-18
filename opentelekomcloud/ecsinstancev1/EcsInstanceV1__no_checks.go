@@ -83,6 +83,10 @@ func (e *jsiiProxy_EcsInstanceV1) validatePutNicsParameters(value interface{}) e
 	return nil
 }
 
+func (e *jsiiProxy_EcsInstanceV1) validatePutOsSchedulerHintsParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsInstanceV1) validatePutTimeoutsParameters(value *EcsInstanceV1Timeouts) error {
 	return nil
 }

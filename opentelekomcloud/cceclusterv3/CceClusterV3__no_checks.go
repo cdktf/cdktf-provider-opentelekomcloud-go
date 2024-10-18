@@ -255,6 +255,10 @@ func (j *jsiiProxy_CceClusterV3) validateSetRegionParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_CceClusterV3) validateSetSecurityGroupIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceClusterV3) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }

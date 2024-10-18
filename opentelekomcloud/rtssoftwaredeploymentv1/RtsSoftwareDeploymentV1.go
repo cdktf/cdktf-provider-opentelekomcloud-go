@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1}.
 type RtsSoftwareDeploymentV1 interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -548,7 +548,7 @@ func (j *jsiiProxy_RtsSoftwareDeploymentV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Resource.
 func NewRtsSoftwareDeploymentV1(scope constructs.Construct, id *string, config *RtsSoftwareDeploymentV1Config) RtsSoftwareDeploymentV1 {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewRtsSoftwareDeploymentV1(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Resource.
 func NewRtsSoftwareDeploymentV1_Override(r RtsSoftwareDeploymentV1, scope constructs.Construct, id *string, config *RtsSoftwareDeploymentV1Config) {
 	_init_.Initialize()
 

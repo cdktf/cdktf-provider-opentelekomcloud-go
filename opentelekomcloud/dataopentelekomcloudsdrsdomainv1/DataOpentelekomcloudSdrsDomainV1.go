@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/sdrs_domain_v1 opentelekomcloud_sdrs_domain_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/sdrs_domain_v1 opentelekomcloud_sdrs_domain_v1}.
 type DataOpentelekomcloudSdrsDomainV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataOpentelekomcloudSdrsDomainV1) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/sdrs_domain_v1 opentelekomcloud_sdrs_domain_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/sdrs_domain_v1 opentelekomcloud_sdrs_domain_v1} Data Source.
 func NewDataOpentelekomcloudSdrsDomainV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudSdrsDomainV1Config) DataOpentelekomcloudSdrsDomainV1 {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataOpentelekomcloudSdrsDomainV1(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/sdrs_domain_v1 opentelekomcloud_sdrs_domain_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/sdrs_domain_v1 opentelekomcloud_sdrs_domain_v1} Data Source.
 func NewDataOpentelekomcloudSdrsDomainV1_Override(d DataOpentelekomcloudSdrsDomainV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudSdrsDomainV1Config) {
 	_init_.Initialize()
 
