@@ -415,14 +415,6 @@ func (j *jsiiProxy_ImagesImageAccessV2) validateSetProvisionersParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_ImagesImageAccessV2) validateSetStatusParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewImagesImageAccessV2Parameters(scope constructs.Construct, id *string, config *ImagesImageAccessV2Config) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

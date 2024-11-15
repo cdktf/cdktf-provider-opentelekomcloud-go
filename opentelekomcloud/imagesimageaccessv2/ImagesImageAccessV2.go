@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/images_image_access_v2 opentelekomcloud_images_image_access_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/images_image_access_v2 opentelekomcloud_images_image_access_v2}.
 type ImagesImageAccessV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,8 +67,6 @@ type ImagesImageAccessV2 interface {
 	RawOverrides() interface{}
 	Schema() *string
 	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -123,7 +121,6 @@ type ImagesImageAccessV2 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -362,16 +359,6 @@ func (j *jsiiProxy_ImagesImageAccessV2) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ImagesImageAccessV2) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ImagesImageAccessV2) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -413,7 +400,7 @@ func (j *jsiiProxy_ImagesImageAccessV2) UpdateAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/images_image_access_v2 opentelekomcloud_images_image_access_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/images_image_access_v2 opentelekomcloud_images_image_access_v2} Resource.
 func NewImagesImageAccessV2(scope constructs.Construct, id *string, config *ImagesImageAccessV2Config) ImagesImageAccessV2 {
 	_init_.Initialize()
 
@@ -431,7 +418,7 @@ func NewImagesImageAccessV2(scope constructs.Construct, id *string, config *Imag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/images_image_access_v2 opentelekomcloud_images_image_access_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/images_image_access_v2 opentelekomcloud_images_image_access_v2} Resource.
 func NewImagesImageAccessV2_Override(i ImagesImageAccessV2, scope constructs.Construct, id *string, config *ImagesImageAccessV2Config) {
 	_init_.Initialize()
 
@@ -539,17 +526,6 @@ func (j *jsiiProxy_ImagesImageAccessV2)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ImagesImageAccessV2)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
 		val,
 	)
 }
@@ -919,14 +895,6 @@ func (i *jsiiProxy_ImagesImageAccessV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (i *jsiiProxy_ImagesImageAccessV2) ResetStatus() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetStatus",
 		nil, // no parameters
 	)
 }

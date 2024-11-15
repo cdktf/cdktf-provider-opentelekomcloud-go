@@ -119,10 +119,6 @@ func (j *jsiiProxy_ImagesImageAccessV2) validateSetProvisionersParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_ImagesImageAccessV2) validateSetStatusParameters(val *string) error {
-	return nil
-}
-
 func validateNewImagesImageAccessV2Parameters(scope constructs.Construct, id *string, config *ImagesImageAccessV2Config) error {
 	return nil
 }

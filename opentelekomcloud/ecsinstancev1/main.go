@@ -74,6 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoRecovery", GoMethod: "ResetAutoRecovery"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityZone", GoMethod: "ResetAvailabilityZone"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataDisks", GoMethod: "ResetDataDisks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteDisksOnTermination", GoMethod: "ResetDeleteDisksOnTermination"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

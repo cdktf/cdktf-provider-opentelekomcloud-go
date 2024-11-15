@@ -13,6 +13,9 @@ import (
 
 type IdentityAgencyV3ProjectRoleOutputReference interface {
 	cdktf.ComplexObject
+	AllProjects() interface{}
+	SetAllProjects(val interface{})
+	AllProjectsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,8 @@ type IdentityAgencyV3ProjectRoleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAllProjects()
+	ResetProject()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -83,6 +88,26 @@ type IdentityAgencyV3ProjectRoleOutputReference interface {
 // The jsii proxy struct for IdentityAgencyV3ProjectRoleOutputReference
 type jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) AllProjects() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allProjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) AllProjectsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allProjectsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) ComplexObjectIndex() interface{} {
@@ -220,6 +245,17 @@ func NewIdentityAgencyV3ProjectRoleOutputReference_Override(i IdentityAgencyV3Pr
 		"@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3ProjectRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
+	)
+}
+
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference)SetAllProjects(val interface{}) {
+	if err := j.validateSetAllProjectsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allProjects",
+		val,
 	)
 }
 
@@ -484,6 +520,22 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) ResetAllProjects() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetAllProjects",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) ResetProject() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetProject",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

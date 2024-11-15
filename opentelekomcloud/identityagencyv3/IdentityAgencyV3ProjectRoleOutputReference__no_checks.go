@@ -51,6 +51,10 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) validateResolvePa
 	return nil
 }
 
+func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) validateSetAllProjectsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

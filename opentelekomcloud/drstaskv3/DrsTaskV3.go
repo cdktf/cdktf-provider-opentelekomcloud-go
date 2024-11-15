@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3}.
 type DrsTaskV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -815,7 +815,7 @@ func (j *jsiiProxy_DrsTaskV3) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3} Resource.
 func NewDrsTaskV3(scope constructs.Construct, id *string, config *DrsTaskV3Config) DrsTaskV3 {
 	_init_.Initialize()
 
@@ -833,7 +833,7 @@ func NewDrsTaskV3(scope constructs.Construct, id *string, config *DrsTaskV3Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3} Resource.
 func NewDrsTaskV3_Override(d DrsTaskV3, scope constructs.Construct, id *string, config *DrsTaskV3Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/compute_instance_v2 opentelekomcloud_compute_instance_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/data-sources/compute_instance_v2 opentelekomcloud_compute_instance_v2}.
 type DataOpentelekomcloudComputeInstanceV2 interface {
 	cdktf.TerraformDataSource
 	AccessIpV4() *string
@@ -574,7 +574,7 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeInstanceV2) UserDataInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/compute_instance_v2 opentelekomcloud_compute_instance_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/data-sources/compute_instance_v2 opentelekomcloud_compute_instance_v2} Data Source.
 func NewDataOpentelekomcloudComputeInstanceV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudComputeInstanceV2Config) DataOpentelekomcloudComputeInstanceV2 {
 	_init_.Initialize()
 
@@ -592,7 +592,7 @@ func NewDataOpentelekomcloudComputeInstanceV2(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/compute_instance_v2 opentelekomcloud_compute_instance_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/data-sources/compute_instance_v2 opentelekomcloud_compute_instance_v2} Data Source.
 func NewDataOpentelekomcloudComputeInstanceV2_Override(d DataOpentelekomcloudComputeInstanceV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudComputeInstanceV2Config) {
 	_init_.Initialize()
 
