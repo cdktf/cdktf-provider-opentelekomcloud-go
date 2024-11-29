@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/kms_key_v1 opentelekomcloud_kms_key_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/kms_key_v1 opentelekomcloud_kms_key_v1}.
 type KmsKeyV1 interface {
 	cdktf.TerraformResource
 	AllowCancelDeletion() interface{}
@@ -58,6 +58,7 @@ type KmsKeyV1 interface {
 	KeyDescription() *string
 	SetKeyDescription(val *string)
 	KeyDescriptionInput() *string
+	KeyState() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -65,6 +66,8 @@ type KmsKeyV1 interface {
 	// The tree node.
 	Node() constructs.Node
 	Origin() *string
+	SetOrigin(val *string)
+	OriginInput() *string
 	PendingDays() *string
 	SetPendingDays(val *string)
 	PendingDaysInput() *string
@@ -145,6 +148,7 @@ type KmsKeyV1 interface {
 	ResetId()
 	ResetIsEnabled()
 	ResetKeyDescription()
+	ResetOrigin()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -391,6 +395,16 @@ func (j *jsiiProxy_KmsKeyV1) KeyDescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KmsKeyV1) KeyState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyState",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmsKeyV1) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -416,6 +430,16 @@ func (j *jsiiProxy_KmsKeyV1) Origin() *string {
 	_jsii_.Get(
 		j,
 		"origin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsKeyV1) OriginInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originInput",
 		&returns,
 	)
 	return returns
@@ -602,7 +626,7 @@ func (j *jsiiProxy_KmsKeyV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/kms_key_v1 opentelekomcloud_kms_key_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/kms_key_v1 opentelekomcloud_kms_key_v1} Resource.
 func NewKmsKeyV1(scope constructs.Construct, id *string, config *KmsKeyV1Config) KmsKeyV1 {
 	_init_.Initialize()
 
@@ -620,7 +644,7 @@ func NewKmsKeyV1(scope constructs.Construct, id *string, config *KmsKeyV1Config)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/kms_key_v1 opentelekomcloud_kms_key_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/kms_key_v1 opentelekomcloud_kms_key_v1} Resource.
 func NewKmsKeyV1_Override(k KmsKeyV1, scope constructs.Construct, id *string, config *KmsKeyV1Config) {
 	_init_.Initialize()
 
@@ -731,6 +755,17 @@ func (j *jsiiProxy_KmsKeyV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsKeyV1)SetOrigin(val *string) {
+	if err := j.validateSetOriginParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"origin",
 		val,
 	)
 }
@@ -1190,6 +1225,14 @@ func (k *jsiiProxy_KmsKeyV1) ResetKeyDescription() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetKeyDescription",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsKeyV1) ResetOrigin() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOrigin",
 		nil, // no parameters
 	)
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_KmsKeyV1) validateSetLifecycleParameters(val *cdktf.Terraform
 	return nil
 }
 
+func (j *jsiiProxy_KmsKeyV1) validateSetOriginParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsKeyV1) validateSetPendingDaysParameters(val *string) error {
 	return nil
 }

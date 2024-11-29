@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3}.
 type ErVpcAttachmentV3 interface {
 	cdktf.TerraformResource
 	AutoCreateVpcRoutes() interface{}
@@ -518,7 +518,7 @@ func (j *jsiiProxy_ErVpcAttachmentV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3} Resource.
 func NewErVpcAttachmentV3(scope constructs.Construct, id *string, config *ErVpcAttachmentV3Config) ErVpcAttachmentV3 {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewErVpcAttachmentV3(scope constructs.Construct, id *string, config *ErVpcA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3} Resource.
 func NewErVpcAttachmentV3_Override(e ErVpcAttachmentV3, scope constructs.Construct, id *string, config *ErVpcAttachmentV3Config) {
 	_init_.Initialize()
 

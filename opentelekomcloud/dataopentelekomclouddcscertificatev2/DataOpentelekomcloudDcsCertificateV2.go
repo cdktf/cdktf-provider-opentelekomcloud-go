@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/data-sources/dcs_certificate_v2 opentelekomcloud_dcs_certificate_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/dcs_certificate_v2 opentelekomcloud_dcs_certificate_v2}.
 type DataOpentelekomcloudDcsCertificateV2 interface {
 	cdktf.TerraformDataSource
 	BucketName() *string
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDcsCertificateV2) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/data-sources/dcs_certificate_v2 opentelekomcloud_dcs_certificate_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/dcs_certificate_v2 opentelekomcloud_dcs_certificate_v2} Data Source.
 func NewDataOpentelekomcloudDcsCertificateV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudDcsCertificateV2Config) DataOpentelekomcloudDcsCertificateV2 {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewDataOpentelekomcloudDcsCertificateV2(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/data-sources/dcs_certificate_v2 opentelekomcloud_dcs_certificate_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/dcs_certificate_v2 opentelekomcloud_dcs_certificate_v2} Data Source.
 func NewDataOpentelekomcloudDcsCertificateV2_Override(d DataOpentelekomcloudDcsCertificateV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudDcsCertificateV2Config) {
 	_init_.Initialize()
 

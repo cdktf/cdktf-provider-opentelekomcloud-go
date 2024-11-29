@@ -123,6 +123,10 @@ func (j *jsiiProxy_IdentityPasswordPolicyV3) validateSetNumberOfRecentPasswordsD
 	return nil
 }
 
+func (j *jsiiProxy_IdentityPasswordPolicyV3) validateSetPasswordCharCombinationParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityPasswordPolicyV3) validateSetPasswordNotUsernameOrInvertParameters(val interface{}) error {
 	return nil
 }

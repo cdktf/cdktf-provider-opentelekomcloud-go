@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/vbs_backup_policy_v2 opentelekomcloud_vbs_backup_policy_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vbs_backup_policy_v2 opentelekomcloud_vbs_backup_policy_v2}.
 type VbsBackupPolicyV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -606,7 +606,7 @@ func (j *jsiiProxy_VbsBackupPolicyV2) WeekFrequencyInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/vbs_backup_policy_v2 opentelekomcloud_vbs_backup_policy_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vbs_backup_policy_v2 opentelekomcloud_vbs_backup_policy_v2} Resource.
 func NewVbsBackupPolicyV2(scope constructs.Construct, id *string, config *VbsBackupPolicyV2Config) VbsBackupPolicyV2 {
 	_init_.Initialize()
 
@@ -624,7 +624,7 @@ func NewVbsBackupPolicyV2(scope constructs.Construct, id *string, config *VbsBac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/vbs_backup_policy_v2 opentelekomcloud_vbs_backup_policy_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vbs_backup_policy_v2 opentelekomcloud_vbs_backup_policy_v2} Resource.
 func NewVbsBackupPolicyV2_Override(v VbsBackupPolicyV2, scope constructs.Construct, id *string, config *VbsBackupPolicyV2Config) {
 	_init_.Initialize()
 

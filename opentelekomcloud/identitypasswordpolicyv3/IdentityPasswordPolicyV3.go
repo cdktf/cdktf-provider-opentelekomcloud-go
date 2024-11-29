@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3}.
 type IdentityPasswordPolicyV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type IdentityPasswordPolicyV3 interface {
 	NumberOfRecentPasswordsDisallowed() *float64
 	SetNumberOfRecentPasswordsDisallowed(val *float64)
 	NumberOfRecentPasswordsDisallowedInput() *float64
+	PasswordCharCombination() *float64
+	SetPasswordCharCombination(val *float64)
+	PasswordCharCombinationInput() *float64
 	PasswordNotUsernameOrInvert() interface{}
 	SetPasswordNotUsernameOrInvert(val interface{})
 	PasswordNotUsernameOrInvertInput() interface{}
@@ -135,6 +138,7 @@ type IdentityPasswordPolicyV3 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPasswordCharCombination()
 	ResetPasswordNotUsernameOrInvert()
 	ResetPasswordValidityPeriod()
 	SynthesizeAttributes() *map[string]interface{}
@@ -365,6 +369,26 @@ func (j *jsiiProxy_IdentityPasswordPolicyV3) NumberOfRecentPasswordsDisallowedIn
 	return returns
 }
 
+func (j *jsiiProxy_IdentityPasswordPolicyV3) PasswordCharCombination() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordCharCombination",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPasswordPolicyV3) PasswordCharCombinationInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordCharCombinationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityPasswordPolicyV3) PasswordNotUsernameOrInvert() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -476,7 +500,7 @@ func (j *jsiiProxy_IdentityPasswordPolicyV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3} Resource.
 func NewIdentityPasswordPolicyV3(scope constructs.Construct, id *string, config *IdentityPasswordPolicyV3Config) IdentityPasswordPolicyV3 {
 	_init_.Initialize()
 
@@ -494,7 +518,7 @@ func NewIdentityPasswordPolicyV3(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3} Resource.
 func NewIdentityPasswordPolicyV3_Override(i IdentityPasswordPolicyV3, scope constructs.Construct, id *string, config *IdentityPasswordPolicyV3Config) {
 	_init_.Initialize()
 
@@ -605,6 +629,17 @@ func (j *jsiiProxy_IdentityPasswordPolicyV3)SetNumberOfRecentPasswordsDisallowed
 	_jsii_.Set(
 		j,
 		"numberOfRecentPasswordsDisallowed",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityPasswordPolicyV3)SetPasswordCharCombination(val *float64) {
+	if err := j.validateSetPasswordCharCombinationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordCharCombination",
 		val,
 	)
 }
@@ -1047,6 +1082,14 @@ func (i *jsiiProxy_IdentityPasswordPolicyV3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityPasswordPolicyV3) ResetPasswordCharCombination() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetPasswordCharCombination",
 		nil, // no parameters
 	)
 }

@@ -22,23 +22,23 @@ type ObsBucketInventoryConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/obs_bucket_inventory#bucket ObsBucketInventory#bucket}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/obs_bucket_inventory#bucket ObsBucketInventory#bucket}.
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/obs_bucket_inventory#configuration_id ObsBucketInventory#configuration_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/obs_bucket_inventory#configuration_id ObsBucketInventory#configuration_id}.
 	ConfigurationId *string `field:"required" json:"configurationId" yaml:"configurationId"`
 	// destination block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/obs_bucket_inventory#destination ObsBucketInventory#destination}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/obs_bucket_inventory#destination ObsBucketInventory#destination}
 	Destination *ObsBucketInventoryDestination `field:"required" json:"destination" yaml:"destination"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/obs_bucket_inventory#frequency ObsBucketInventory#frequency}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/obs_bucket_inventory#frequency ObsBucketInventory#frequency}.
 	Frequency *string `field:"required" json:"frequency" yaml:"frequency"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/obs_bucket_inventory#included_object_versions ObsBucketInventory#included_object_versions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/obs_bucket_inventory#included_object_versions ObsBucketInventory#included_object_versions}.
 	IncludedObjectVersions *string `field:"required" json:"includedObjectVersions" yaml:"includedObjectVersions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/obs_bucket_inventory#is_enabled ObsBucketInventory#is_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/obs_bucket_inventory#is_enabled ObsBucketInventory#is_enabled}.
 	IsEnabled interface{} `field:"required" json:"isEnabled" yaml:"isEnabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/obs_bucket_inventory#filter_prefix ObsBucketInventory#filter_prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/obs_bucket_inventory#filter_prefix ObsBucketInventory#filter_prefix}.
 	FilterPrefix *string `field:"optional" json:"filterPrefix" yaml:"filterPrefix"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/obs_bucket_inventory#id ObsBucketInventory#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/obs_bucket_inventory#id ObsBucketInventory#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
