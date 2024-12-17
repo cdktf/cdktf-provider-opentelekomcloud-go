@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1}.
 type VpcepServiceV1 interface {
 	cdktf.TerraformResource
 	ApprovalEnabled() interface{}
@@ -24,6 +24,7 @@ type VpcepServiceV1 interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	Connections() VpcepServiceV1ConnectionsList
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -34,6 +35,9 @@ type VpcepServiceV1 interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -78,6 +82,7 @@ type VpcepServiceV1 interface {
 	ServiceType() *string
 	SetServiceType(val *string)
 	ServiceTypeInput() *string
+	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -147,6 +152,7 @@ type VpcepServiceV1 interface {
 	PutPort(value interface{})
 	PutTimeouts(value *VpcepServiceV1Timeouts)
 	ResetApprovalEnabled()
+	ResetDescription()
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -217,6 +223,16 @@ func (j *jsiiProxy_VpcepServiceV1) Connection() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcepServiceV1) Connections() VpcepServiceV1ConnectionsList {
+	var returns VpcepServiceV1ConnectionsList
+	_jsii_.Get(
+		j,
+		"connections",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcepServiceV1) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -242,6 +258,26 @@ func (j *jsiiProxy_VpcepServiceV1) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcepServiceV1) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcepServiceV1) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -467,6 +503,16 @@ func (j *jsiiProxy_VpcepServiceV1) ServiceTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpcepServiceV1) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcepServiceV1) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -618,7 +664,7 @@ func (j *jsiiProxy_VpcepServiceV1) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Resource.
 func NewVpcepServiceV1(scope constructs.Construct, id *string, config *VpcepServiceV1Config) VpcepServiceV1 {
 	_init_.Initialize()
 
@@ -636,7 +682,7 @@ func NewVpcepServiceV1(scope constructs.Construct, id *string, config *VpcepServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Resource.
 func NewVpcepServiceV1_Override(v VpcepServiceV1, scope constructs.Construct, id *string, config *VpcepServiceV1Config) {
 	_init_.Initialize()
 
@@ -684,6 +730,17 @@ func (j *jsiiProxy_VpcepServiceV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcepServiceV1)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -1226,6 +1283,14 @@ func (v *jsiiProxy_VpcepServiceV1) ResetApprovalEnabled() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetApprovalEnabled",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcepServiceV1) ResetDescription() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

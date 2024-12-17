@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/as_group_v1 opentelekomcloud_as_group_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/as_group_v1 opentelekomcloud_as_group_v1}.
 type AsGroupV1 interface {
 	cdktf.TerraformResource
 	AvailableZones() *[]*string
@@ -866,7 +866,7 @@ func (j *jsiiProxy_AsGroupV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/as_group_v1 opentelekomcloud_as_group_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/as_group_v1 opentelekomcloud_as_group_v1} Resource.
 func NewAsGroupV1(scope constructs.Construct, id *string, config *AsGroupV1Config) AsGroupV1 {
 	_init_.Initialize()
 
@@ -884,7 +884,7 @@ func NewAsGroupV1(scope constructs.Construct, id *string, config *AsGroupV1Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/as_group_v1 opentelekomcloud_as_group_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/as_group_v1 opentelekomcloud_as_group_v1} Resource.
 func NewAsGroupV1_Override(a AsGroupV1, scope constructs.Construct, id *string, config *AsGroupV1Config) {
 	_init_.Initialize()
 

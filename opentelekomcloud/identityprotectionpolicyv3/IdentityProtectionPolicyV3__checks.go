@@ -207,6 +207,17 @@ func (i *jsiiProxy_IdentityProtectionPolicyV3) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (i *jsiiProxy_IdentityProtectionPolicyV3) validatePutSelfManagementParameters(value *IdentityProtectionPolicyV3SelfManagement) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateIdentityProtectionPolicyV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -414,6 +425,22 @@ func (j *jsiiProxy_IdentityProtectionPolicyV3) validateSetProvisionersParameters
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IdentityProtectionPolicyV3) validateSetVerificationEmailParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IdentityProtectionPolicyV3) validateSetVerificationMobileParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

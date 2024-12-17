@@ -75,6 +75,10 @@ func (i *jsiiProxy_IdentityProtectionPolicyV3) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (i *jsiiProxy_IdentityProtectionPolicyV3) validatePutSelfManagementParameters(value *IdentityProtectionPolicyV3SelfManagement) error {
+	return nil
+}
+
 func validateIdentityProtectionPolicyV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -112,6 +116,14 @@ func (j *jsiiProxy_IdentityProtectionPolicyV3) validateSetLifecycleParameters(va
 }
 
 func (j *jsiiProxy_IdentityProtectionPolicyV3) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityProtectionPolicyV3) validateSetVerificationEmailParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityProtectionPolicyV3) validateSetVerificationMobileParameters(val *string) error {
 	return nil
 }
 

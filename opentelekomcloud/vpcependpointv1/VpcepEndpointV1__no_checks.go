@@ -103,6 +103,10 @@ func (j *jsiiProxy_VpcepEndpointV1) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_VpcepEndpointV1) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcepEndpointV1) validateSetEnableDnsParameters(val interface{}) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_VpcepEndpointV1) validateSetIdParameters(val *string) error {
 }
 
 func (j *jsiiProxy_VpcepEndpointV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_VpcepEndpointV1) validateSetPolicyStatementParameters(val *string) error {
 	return nil
 }
 

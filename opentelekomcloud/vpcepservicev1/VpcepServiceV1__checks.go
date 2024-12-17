@@ -399,6 +399,14 @@ func (j *jsiiProxy_VpcepServiceV1) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_VpcepServiceV1) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpcepServiceV1) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

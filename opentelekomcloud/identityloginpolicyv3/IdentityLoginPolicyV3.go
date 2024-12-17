@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_login_policy_v3 opentelekomcloud_identity_login_policy_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_login_policy_v3 opentelekomcloud_identity_login_policy_v3}.
 type IdentityLoginPolicyV3 interface {
 	cdktf.TerraformResource
 	AccountValidityPeriod() *float64
@@ -478,7 +478,7 @@ func (j *jsiiProxy_IdentityLoginPolicyV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_login_policy_v3 opentelekomcloud_identity_login_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_login_policy_v3 opentelekomcloud_identity_login_policy_v3} Resource.
 func NewIdentityLoginPolicyV3(scope constructs.Construct, id *string, config *IdentityLoginPolicyV3Config) IdentityLoginPolicyV3 {
 	_init_.Initialize()
 
@@ -496,7 +496,7 @@ func NewIdentityLoginPolicyV3(scope constructs.Construct, id *string, config *Id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_login_policy_v3 opentelekomcloud_identity_login_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_login_policy_v3 opentelekomcloud_identity_login_policy_v3} Resource.
 func NewIdentityLoginPolicyV3_Override(i IdentityLoginPolicyV3, scope constructs.Construct, id *string, config *IdentityLoginPolicyV3Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3}.
 type IdentityProtectionPolicyV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,12 +61,21 @@ type IdentityProtectionPolicyV3 interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SelfManagement() IdentityProtectionPolicyV3SelfManagementOutputReference
+	SelfManagementInput() *IdentityProtectionPolicyV3SelfManagement
+	SelfVerification() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VerificationEmail() *string
+	SetVerificationEmail(val *string)
+	VerificationEmailInput() *string
+	VerificationMobile() *string
+	SetVerificationMobile(val *string)
+	VerificationMobileInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -110,11 +119,15 @@ type IdentityProtectionPolicyV3 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSelfManagement(value *IdentityProtectionPolicyV3SelfManagement)
 	ResetEnableOperationProtectionPolicy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSelfManagement()
+	ResetVerificationEmail()
+	ResetVerificationMobile()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -303,6 +316,36 @@ func (j *jsiiProxy_IdentityProtectionPolicyV3) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IdentityProtectionPolicyV3) SelfManagement() IdentityProtectionPolicyV3SelfManagementOutputReference {
+	var returns IdentityProtectionPolicyV3SelfManagementOutputReference
+	_jsii_.Get(
+		j,
+		"selfManagement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityProtectionPolicyV3) SelfManagementInput() *IdentityProtectionPolicyV3SelfManagement {
+	var returns *IdentityProtectionPolicyV3SelfManagement
+	_jsii_.Get(
+		j,
+		"selfManagementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityProtectionPolicyV3) SelfVerification() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"selfVerification",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityProtectionPolicyV3) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -333,8 +376,48 @@ func (j *jsiiProxy_IdentityProtectionPolicyV3) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IdentityProtectionPolicyV3) VerificationEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"verificationEmail",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3} Resource.
+func (j *jsiiProxy_IdentityProtectionPolicyV3) VerificationEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"verificationEmailInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityProtectionPolicyV3) VerificationMobile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"verificationMobile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityProtectionPolicyV3) VerificationMobileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"verificationMobileInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3} Resource.
 func NewIdentityProtectionPolicyV3(scope constructs.Construct, id *string, config *IdentityProtectionPolicyV3Config) IdentityProtectionPolicyV3 {
 	_init_.Initialize()
 
@@ -352,7 +435,7 @@ func NewIdentityProtectionPolicyV3(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3} Resource.
 func NewIdentityProtectionPolicyV3_Override(i IdentityProtectionPolicyV3, scope constructs.Construct, id *string, config *IdentityProtectionPolicyV3Config) {
 	_init_.Initialize()
 
@@ -449,6 +532,28 @@ func (j *jsiiProxy_IdentityProtectionPolicyV3)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityProtectionPolicyV3)SetVerificationEmail(val *string) {
+	if err := j.validateSetVerificationEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"verificationEmail",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityProtectionPolicyV3)SetVerificationMobile(val *string) {
+	if err := j.validateSetVerificationMobileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"verificationMobile",
 		val,
 	)
 }
@@ -806,6 +911,17 @@ func (i *jsiiProxy_IdentityProtectionPolicyV3) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (i *jsiiProxy_IdentityProtectionPolicyV3) PutSelfManagement(value *IdentityProtectionPolicyV3SelfManagement) {
+	if err := i.validatePutSelfManagementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putSelfManagement",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IdentityProtectionPolicyV3) ResetEnableOperationProtectionPolicy() {
 	_jsii_.InvokeVoid(
 		i,
@@ -826,6 +942,30 @@ func (i *jsiiProxy_IdentityProtectionPolicyV3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityProtectionPolicyV3) ResetSelfManagement() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSelfManagement",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityProtectionPolicyV3) ResetVerificationEmail() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetVerificationEmail",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityProtectionPolicyV3) ResetVerificationMobile() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetVerificationMobile",
 		nil, // no parameters
 	)
 }

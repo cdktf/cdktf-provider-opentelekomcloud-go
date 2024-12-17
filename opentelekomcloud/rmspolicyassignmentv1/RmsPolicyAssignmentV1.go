@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/rms_policy_assignment_v1 opentelekomcloud_rms_policy_assignment_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rms_policy_assignment_v1 opentelekomcloud_rms_policy_assignment_v1}.
 type RmsPolicyAssignmentV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -558,7 +558,7 @@ func (j *jsiiProxy_RmsPolicyAssignmentV1) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/rms_policy_assignment_v1 opentelekomcloud_rms_policy_assignment_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rms_policy_assignment_v1 opentelekomcloud_rms_policy_assignment_v1} Resource.
 func NewRmsPolicyAssignmentV1(scope constructs.Construct, id *string, config *RmsPolicyAssignmentV1Config) RmsPolicyAssignmentV1 {
 	_init_.Initialize()
 
@@ -576,7 +576,7 @@ func NewRmsPolicyAssignmentV1(scope constructs.Construct, id *string, config *Rm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/rms_policy_assignment_v1 opentelekomcloud_rms_policy_assignment_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rms_policy_assignment_v1 opentelekomcloud_rms_policy_assignment_v1} Resource.
 func NewRmsPolicyAssignmentV1_Override(r RmsPolicyAssignmentV1, scope constructs.Construct, id *string, config *RmsPolicyAssignmentV1Config) {
 	_init_.Initialize()
 

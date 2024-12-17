@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1}.
 type VpcepEndpointV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type VpcepEndpointV1 interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	DnsNames() *[]*string
 	EnableDns() interface{}
 	SetEnableDns(val interface{})
@@ -56,6 +59,9 @@ type VpcepEndpointV1 interface {
 	MarkerId() *float64
 	// The tree node.
 	Node() constructs.Node
+	PolicyStatement() *string
+	SetPolicyStatement(val *string)
+	PolicyStatementInput() *string
 	PortIp() *string
 	SetPortIp(val *string)
 	PortIpInput() *string
@@ -78,6 +84,7 @@ type VpcepEndpointV1 interface {
 	ServiceIdInput() *string
 	ServiceName() *string
 	ServiceType() *string
+	Status() *string
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
@@ -142,12 +149,14 @@ type VpcepEndpointV1 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *VpcepEndpointV1Timeouts)
+	ResetDescription()
 	ResetEnableDns()
 	ResetEnableWhitelist()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyStatement()
 	ResetPortIp()
 	ResetRouteTables()
 	ResetSubnetId()
@@ -217,6 +226,26 @@ func (j *jsiiProxy_VpcepEndpointV1) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcepEndpointV1) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcepEndpointV1) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -352,6 +381,26 @@ func (j *jsiiProxy_VpcepEndpointV1) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_VpcepEndpointV1) PolicyStatement() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyStatement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcepEndpointV1) PolicyStatementInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyStatementInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcepEndpointV1) PortIp() *string {
 	var returns *string
 	_jsii_.Get(
@@ -467,6 +516,16 @@ func (j *jsiiProxy_VpcepEndpointV1) ServiceType() *string {
 	_jsii_.Get(
 		j,
 		"serviceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcepEndpointV1) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns
@@ -603,7 +662,7 @@ func (j *jsiiProxy_VpcepEndpointV1) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource.
 func NewVpcepEndpointV1(scope constructs.Construct, id *string, config *VpcepEndpointV1Config) VpcepEndpointV1 {
 	_init_.Initialize()
 
@@ -621,7 +680,7 @@ func NewVpcepEndpointV1(scope constructs.Construct, id *string, config *VpcepEnd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource.
 func NewVpcepEndpointV1_Override(v VpcepEndpointV1, scope constructs.Construct, id *string, config *VpcepEndpointV1Config) {
 	_init_.Initialize()
 
@@ -658,6 +717,17 @@ func (j *jsiiProxy_VpcepEndpointV1)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcepEndpointV1)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -710,6 +780,17 @@ func (j *jsiiProxy_VpcepEndpointV1)SetLifecycle(val *cdktf.TerraformResourceLife
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcepEndpointV1)SetPolicyStatement(val *string) {
+	if err := j.validateSetPolicyStatementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyStatement",
 		val,
 	)
 }
@@ -1174,6 +1255,14 @@ func (v *jsiiProxy_VpcepEndpointV1) PutTimeouts(value *VpcepEndpointV1Timeouts) 
 	)
 }
 
+func (v *jsiiProxy_VpcepEndpointV1) ResetDescription() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VpcepEndpointV1) ResetEnableDns() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1202,6 +1291,14 @@ func (v *jsiiProxy_VpcepEndpointV1) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcepEndpointV1) ResetPolicyStatement() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPolicyStatement",
 		nil, // no parameters
 	)
 }

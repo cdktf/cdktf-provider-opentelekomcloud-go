@@ -1,3 +1,3 @@
 # `opentelekomcloud_vbs_backup_policy_v2`
 
-Refer to the Terraform Registry for docs: [`opentelekomcloud_vbs_backup_policy_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vbs_backup_policy_v2).
+Refer to the Terraform Registry for docs: [`opentelekomcloud_vbs_backup_policy_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vbs_backup_policy_v2).

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/apigw_throttling_policy_associate_v2 opentelekomcloud_apigw_throttling_policy_associate_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/apigw_throttling_policy_associate_v2 opentelekomcloud_apigw_throttling_policy_associate_v2}.
 type ApigwThrottlingPolicyAssociateV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_ApigwThrottlingPolicyAssociateV2) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/apigw_throttling_policy_associate_v2 opentelekomcloud_apigw_throttling_policy_associate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/apigw_throttling_policy_associate_v2 opentelekomcloud_apigw_throttling_policy_associate_v2} Resource.
 func NewApigwThrottlingPolicyAssociateV2(scope constructs.Construct, id *string, config *ApigwThrottlingPolicyAssociateV2Config) ApigwThrottlingPolicyAssociateV2 {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewApigwThrottlingPolicyAssociateV2(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/apigw_throttling_policy_associate_v2 opentelekomcloud_apigw_throttling_policy_associate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/apigw_throttling_policy_associate_v2 opentelekomcloud_apigw_throttling_policy_associate_v2} Resource.
 func NewApigwThrottlingPolicyAssociateV2_Override(a ApigwThrottlingPolicyAssociateV2, scope constructs.Construct, id *string, config *ApigwThrottlingPolicyAssociateV2Config) {
 	_init_.Initialize()
 
