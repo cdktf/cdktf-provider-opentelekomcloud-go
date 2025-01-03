@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/dms_az_v1 opentelekomcloud_dms_az_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/data-sources/dms_az_v1 opentelekomcloud_dms_az_v1}.
 type DataOpentelekomcloudDmsAzV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -337,7 +337,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDmsAzV1) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/dms_az_v1 opentelekomcloud_dms_az_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/data-sources/dms_az_v1 opentelekomcloud_dms_az_v1} Data Source.
 func NewDataOpentelekomcloudDmsAzV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudDmsAzV1Config) DataOpentelekomcloudDmsAzV1 {
 	_init_.Initialize()
 
@@ -355,7 +355,7 @@ func NewDataOpentelekomcloudDmsAzV1(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/dms_az_v1 opentelekomcloud_dms_az_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/data-sources/dms_az_v1 opentelekomcloud_dms_az_v1} Data Source.
 func NewDataOpentelekomcloudDmsAzV1_Override(d DataOpentelekomcloudDmsAzV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudDmsAzV1Config) {
 	_init_.Initialize()
 

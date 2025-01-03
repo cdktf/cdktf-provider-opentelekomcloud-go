@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_pair_v1 opentelekomcloud_sdrs_replication_pair_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/sdrs_replication_pair_v1 opentelekomcloud_sdrs_replication_pair_v1}.
 type SdrsReplicationPairV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -506,7 +506,7 @@ func (j *jsiiProxy_SdrsReplicationPairV1) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_pair_v1 opentelekomcloud_sdrs_replication_pair_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/sdrs_replication_pair_v1 opentelekomcloud_sdrs_replication_pair_v1} Resource.
 func NewSdrsReplicationPairV1(scope constructs.Construct, id *string, config *SdrsReplicationPairV1Config) SdrsReplicationPairV1 {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewSdrsReplicationPairV1(scope constructs.Construct, id *string, config *Sd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_pair_v1 opentelekomcloud_sdrs_replication_pair_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/sdrs_replication_pair_v1 opentelekomcloud_sdrs_replication_pair_v1} Resource.
 func NewSdrsReplicationPairV1_Override(s SdrsReplicationPairV1, scope constructs.Construct, id *string, config *SdrsReplicationPairV1Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1 opentelekomcloud_ims_image_share_accept_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/ims_image_share_accept_v1 opentelekomcloud_ims_image_share_accept_v1}.
 type ImsImageShareAcceptV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_ImsImageShareAcceptV1) VaultIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1 opentelekomcloud_ims_image_share_accept_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/ims_image_share_accept_v1 opentelekomcloud_ims_image_share_accept_v1} Resource.
 func NewImsImageShareAcceptV1(scope constructs.Construct, id *string, config *ImsImageShareAcceptV1Config) ImsImageShareAcceptV1 {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewImsImageShareAcceptV1(scope constructs.Construct, id *string, config *Im
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1 opentelekomcloud_ims_image_share_accept_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/ims_image_share_accept_v1 opentelekomcloud_ims_image_share_accept_v1} Resource.
 func NewImsImageShareAcceptV1_Override(i ImsImageShareAcceptV1, scope constructs.Construct, id *string, config *ImsImageShareAcceptV1Config) {
 	_init_.Initialize()
 

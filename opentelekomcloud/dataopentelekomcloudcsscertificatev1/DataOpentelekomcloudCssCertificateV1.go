@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/css_certificate_v1 opentelekomcloud_css_certificate_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/data-sources/css_certificate_v1 opentelekomcloud_css_certificate_v1}.
 type DataOpentelekomcloudCssCertificateV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCssCertificateV1) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/css_certificate_v1 opentelekomcloud_css_certificate_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/data-sources/css_certificate_v1 opentelekomcloud_css_certificate_v1} Data Source.
 func NewDataOpentelekomcloudCssCertificateV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudCssCertificateV1Config) DataOpentelekomcloudCssCertificateV1 {
 	_init_.Initialize()
 
@@ -316,7 +316,7 @@ func NewDataOpentelekomcloudCssCertificateV1(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/css_certificate_v1 opentelekomcloud_css_certificate_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/data-sources/css_certificate_v1 opentelekomcloud_css_certificate_v1} Data Source.
 func NewDataOpentelekomcloudCssCertificateV1_Override(d DataOpentelekomcloudCssCertificateV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudCssCertificateV1Config) {
 	_init_.Initialize()
 

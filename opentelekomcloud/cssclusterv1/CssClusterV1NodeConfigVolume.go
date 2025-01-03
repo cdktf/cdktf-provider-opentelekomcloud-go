@@ -5,11 +5,11 @@ package cssclusterv1
 
 
 type CssClusterV1NodeConfigVolume struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/css_cluster_v1#size CssClusterV1#size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/css_cluster_v1#size CssClusterV1#size}.
 	Size *float64 `field:"required" json:"size" yaml:"size"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/css_cluster_v1#volume_type CssClusterV1#volume_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/css_cluster_v1#volume_type CssClusterV1#volume_type}.
 	VolumeType *string `field:"required" json:"volumeType" yaml:"volumeType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/css_cluster_v1#encryption_key CssClusterV1#encryption_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/css_cluster_v1#encryption_key CssClusterV1#encryption_key}.
 	EncryptionKey *string `field:"optional" json:"encryptionKey" yaml:"encryptionKey"`
 }
 

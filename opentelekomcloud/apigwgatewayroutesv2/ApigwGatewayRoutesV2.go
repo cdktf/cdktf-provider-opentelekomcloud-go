@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/apigw_gateway_routes_v2 opentelekomcloud_apigw_gateway_routes_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_gateway_routes_v2 opentelekomcloud_apigw_gateway_routes_v2}.
 type ApigwGatewayRoutesV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_ApigwGatewayRoutesV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/apigw_gateway_routes_v2 opentelekomcloud_apigw_gateway_routes_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_gateway_routes_v2 opentelekomcloud_apigw_gateway_routes_v2} Resource.
 func NewApigwGatewayRoutesV2(scope constructs.Construct, id *string, config *ApigwGatewayRoutesV2Config) ApigwGatewayRoutesV2 {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewApigwGatewayRoutesV2(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/apigw_gateway_routes_v2 opentelekomcloud_apigw_gateway_routes_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_gateway_routes_v2 opentelekomcloud_apigw_gateway_routes_v2} Resource.
 func NewApigwGatewayRoutesV2_Override(a ApigwGatewayRoutesV2, scope constructs.Construct, id *string, config *ApigwGatewayRoutesV2Config) {
 	_init_.Initialize()
 

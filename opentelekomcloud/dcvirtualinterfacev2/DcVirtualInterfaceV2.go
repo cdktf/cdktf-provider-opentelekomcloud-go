@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2}.
 type DcVirtualInterfaceV2 interface {
 	cdktf.TerraformResource
 	Asn() *float64
@@ -766,7 +766,7 @@ func (j *jsiiProxy_DcVirtualInterfaceV2) VlanInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2} Resource.
 func NewDcVirtualInterfaceV2(scope constructs.Construct, id *string, config *DcVirtualInterfaceV2Config) DcVirtualInterfaceV2 {
 	_init_.Initialize()
 
@@ -784,7 +784,7 @@ func NewDcVirtualInterfaceV2(scope constructs.Construct, id *string, config *DcV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2} Resource.
 func NewDcVirtualInterfaceV2_Override(d DcVirtualInterfaceV2, scope constructs.Construct, id *string, config *DcVirtualInterfaceV2Config) {
 	_init_.Initialize()
 

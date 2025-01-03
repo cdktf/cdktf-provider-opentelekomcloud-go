@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpc_peering_connection_accepter_v2 opentelekomcloud_vpc_peering_connection_accepter_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/vpc_peering_connection_accepter_v2 opentelekomcloud_vpc_peering_connection_accepter_v2}.
 type VpcPeeringConnectionAccepterV2 interface {
 	cdktf.TerraformResource
 	Accept() interface{}
@@ -460,7 +460,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterV2) VpcPeeringConnectionIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpc_peering_connection_accepter_v2 opentelekomcloud_vpc_peering_connection_accepter_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/vpc_peering_connection_accepter_v2 opentelekomcloud_vpc_peering_connection_accepter_v2} Resource.
 func NewVpcPeeringConnectionAccepterV2(scope constructs.Construct, id *string, config *VpcPeeringConnectionAccepterV2Config) VpcPeeringConnectionAccepterV2 {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewVpcPeeringConnectionAccepterV2(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpc_peering_connection_accepter_v2 opentelekomcloud_vpc_peering_connection_accepter_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/vpc_peering_connection_accepter_v2 opentelekomcloud_vpc_peering_connection_accepter_v2} Resource.
 func NewVpcPeeringConnectionAccepterV2_Override(v VpcPeeringConnectionAccepterV2, scope constructs.Construct, id *string, config *VpcPeeringConnectionAccepterV2Config) {
 	_init_.Initialize()
 

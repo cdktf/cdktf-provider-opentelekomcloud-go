@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ddm_schema_v1 opentelekomcloud_ddm_schema_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/ddm_schema_v1 opentelekomcloud_ddm_schema_v1}.
 type DdmSchemaV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -574,7 +574,7 @@ func (j *jsiiProxy_DdmSchemaV1) UsedRds() DdmSchemaV1UsedRdsList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ddm_schema_v1 opentelekomcloud_ddm_schema_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/ddm_schema_v1 opentelekomcloud_ddm_schema_v1} Resource.
 func NewDdmSchemaV1(scope constructs.Construct, id *string, config *DdmSchemaV1Config) DdmSchemaV1 {
 	_init_.Initialize()
 
@@ -592,7 +592,7 @@ func NewDdmSchemaV1(scope constructs.Construct, id *string, config *DdmSchemaV1C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ddm_schema_v1 opentelekomcloud_ddm_schema_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/ddm_schema_v1 opentelekomcloud_ddm_schema_v1} Resource.
 func NewDdmSchemaV1_Override(d DdmSchemaV1, scope constructs.Construct, id *string, config *DdmSchemaV1Config) {
 	_init_.Initialize()
 
