@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rms_resource_recorder_v1 opentelekomcloud_rms_resource_recorder_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rms_resource_recorder_v1 opentelekomcloud_rms_resource_recorder_v1}.
 type RmsResourceRecorderV1 interface {
 	cdktf.TerraformResource
 	AgencyName() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_RmsResourceRecorderV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rms_resource_recorder_v1 opentelekomcloud_rms_resource_recorder_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rms_resource_recorder_v1 opentelekomcloud_rms_resource_recorder_v1} Resource.
 func NewRmsResourceRecorderV1(scope constructs.Construct, id *string, config *RmsResourceRecorderV1Config) RmsResourceRecorderV1 {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewRmsResourceRecorderV1(scope constructs.Construct, id *string, config *Rm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rms_resource_recorder_v1 opentelekomcloud_rms_resource_recorder_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rms_resource_recorder_v1 opentelekomcloud_rms_resource_recorder_v1} Resource.
 func NewRmsResourceRecorderV1_Override(r RmsResourceRecorderV1, scope constructs.Construct, id *string, config *RmsResourceRecorderV1Config) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package disdumptaskv2
 
 
 type DisDumpTaskV2Timeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/dis_dump_task_v2#update DisDumpTaskV2#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/dis_dump_task_v2#update DisDumpTaskV2#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

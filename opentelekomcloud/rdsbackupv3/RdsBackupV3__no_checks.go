@@ -75,10 +75,6 @@ func (r *jsiiProxy_RdsBackupV3) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
-func (r *jsiiProxy_RdsBackupV3) validatePutDatabasesParameters(value interface{}) error {
-	return nil
-}
-
 func (r *jsiiProxy_RdsBackupV3) validatePutTimeoutsParameters(value *RdsBackupV3Timeouts) error {
 	return nil
 }
@@ -107,7 +103,7 @@ func (j *jsiiProxy_RdsBackupV3) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_RdsBackupV3) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_RdsBackupV3) validateSetDatabasesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -128,10 +124,6 @@ func (j *jsiiProxy_RdsBackupV3) validateSetNameParameters(val *string) error {
 }
 
 func (j *jsiiProxy_RdsBackupV3) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_RdsBackupV3) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

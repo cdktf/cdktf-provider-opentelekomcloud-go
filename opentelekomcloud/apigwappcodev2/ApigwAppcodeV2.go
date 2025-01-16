@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_appcode_v2 opentelekomcloud_apigw_appcode_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_appcode_v2 opentelekomcloud_apigw_appcode_v2}.
 type ApigwAppcodeV2 interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_ApigwAppcodeV2) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_appcode_v2 opentelekomcloud_apigw_appcode_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_appcode_v2 opentelekomcloud_apigw_appcode_v2} Resource.
 func NewApigwAppcodeV2(scope constructs.Construct, id *string, config *ApigwAppcodeV2Config) ApigwAppcodeV2 {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewApigwAppcodeV2(scope constructs.Construct, id *string, config *ApigwAppc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_appcode_v2 opentelekomcloud_apigw_appcode_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_appcode_v2 opentelekomcloud_apigw_appcode_v2} Resource.
 func NewApigwAppcodeV2_Override(a ApigwAppcodeV2, scope constructs.Construct, id *string, config *ApigwAppcodeV2Config) {
 	_init_.Initialize()
 

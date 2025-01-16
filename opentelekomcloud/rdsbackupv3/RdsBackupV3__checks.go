@@ -207,37 +207,6 @@ func (r *jsiiProxy_RdsBackupV3) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
-func (r *jsiiProxy_RdsBackupV3) validatePutDatabasesParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*RdsBackupV3Databases:
-		value := value.(*[]*RdsBackupV3Databases)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*RdsBackupV3Databases:
-		value_ := value.([]*RdsBackupV3Databases)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RdsBackupV3Databases; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (r *jsiiProxy_RdsBackupV3) validatePutTimeoutsParameters(value *RdsBackupV3Timeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -379,7 +348,7 @@ func (j *jsiiProxy_RdsBackupV3) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_RdsBackupV3) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_RdsBackupV3) validateSetDatabasesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -460,14 +429,6 @@ func (j *jsiiProxy_RdsBackupV3) validateSetProvisionersParameters(val *[]interfa
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_RdsBackupV3) validateSetTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

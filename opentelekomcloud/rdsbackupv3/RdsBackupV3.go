@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3 opentelekomcloud_rds_backup_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3 opentelekomcloud_rds_backup_v3}.
 type RdsBackupV3 interface {
 	cdktf.TerraformResource
 	BackupId() *string
@@ -29,15 +29,13 @@ type RdsBackupV3 interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	Databases() RdsBackupV3DatabasesList
-	DatabasesInput() interface{}
+	Databases() *[]*string
+	SetDatabases(val *[]*string)
+	DatabasesInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -82,8 +80,6 @@ type RdsBackupV3 interface {
 	Timeouts() RdsBackupV3TimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -127,16 +123,13 @@ type RdsBackupV3 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDatabases(value interface{})
 	PutTimeouts(value *RdsBackupV3Timeouts)
 	ResetDatabases()
-	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -215,8 +208,8 @@ func (j *jsiiProxy_RdsBackupV3) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsBackupV3) Databases() RdsBackupV3DatabasesList {
-	var returns RdsBackupV3DatabasesList
+func (j *jsiiProxy_RdsBackupV3) Databases() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"databases",
@@ -225,8 +218,8 @@ func (j *jsiiProxy_RdsBackupV3) Databases() RdsBackupV3DatabasesList {
 	return returns
 }
 
-func (j *jsiiProxy_RdsBackupV3) DatabasesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsBackupV3) DatabasesInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"databasesInput",
@@ -240,26 +233,6 @@ func (j *jsiiProxy_RdsBackupV3) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RdsBackupV3) Description() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RdsBackupV3) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -485,18 +458,8 @@ func (j *jsiiProxy_RdsBackupV3) Type() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RdsBackupV3) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3 opentelekomcloud_rds_backup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3 opentelekomcloud_rds_backup_v3} Resource.
 func NewRdsBackupV3(scope constructs.Construct, id *string, config *RdsBackupV3Config) RdsBackupV3 {
 	_init_.Initialize()
 
@@ -514,7 +477,7 @@ func NewRdsBackupV3(scope constructs.Construct, id *string, config *RdsBackupV3C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3 opentelekomcloud_rds_backup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3 opentelekomcloud_rds_backup_v3} Resource.
 func NewRdsBackupV3_Override(r RdsBackupV3, scope constructs.Construct, id *string, config *RdsBackupV3Config) {
 	_init_.Initialize()
 
@@ -547,21 +510,21 @@ func (j *jsiiProxy_RdsBackupV3)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsBackupV3)SetDependsOn(val *[]*string) {
-	_jsii_.Set(
-		j,
-		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RdsBackupV3)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
+func (j *jsiiProxy_RdsBackupV3)SetDatabases(val *[]*string) {
+	if err := j.validateSetDatabasesParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"description",
+		"databases",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsBackupV3)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
 		val,
 	)
 }
@@ -633,17 +596,6 @@ func (j *jsiiProxy_RdsBackupV3)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RdsBackupV3)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
 		val,
 	)
 }
@@ -1001,17 +953,6 @@ func (r *jsiiProxy_RdsBackupV3) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (r *jsiiProxy_RdsBackupV3) PutDatabases(value interface{}) {
-	if err := r.validatePutDatabasesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		r,
-		"putDatabases",
-		[]interface{}{value},
-	)
-}
-
 func (r *jsiiProxy_RdsBackupV3) PutTimeouts(value *RdsBackupV3Timeouts) {
 	if err := r.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1027,14 +968,6 @@ func (r *jsiiProxy_RdsBackupV3) ResetDatabases() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDatabases",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RdsBackupV3) ResetDescription() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetDescription",
 		nil, // no parameters
 	)
 }
@@ -1059,14 +992,6 @@ func (r *jsiiProxy_RdsBackupV3) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RdsBackupV3) ResetType() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetType",
 		nil, // no parameters
 	)
 }

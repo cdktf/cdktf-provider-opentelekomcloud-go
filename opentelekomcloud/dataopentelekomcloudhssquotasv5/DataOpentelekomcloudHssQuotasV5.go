@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/data-sources/hss_quotas_v5 opentelekomcloud_hss_quotas_v5}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/data-sources/hss_quotas_v5 opentelekomcloud_hss_quotas_v5}.
 type DataOpentelekomcloudHssQuotasV5 interface {
 	cdktf.TerraformDataSource
 	Category() *string
@@ -455,7 +455,7 @@ func (j *jsiiProxy_DataOpentelekomcloudHssQuotasV5) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/data-sources/hss_quotas_v5 opentelekomcloud_hss_quotas_v5} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/data-sources/hss_quotas_v5 opentelekomcloud_hss_quotas_v5} Data Source.
 func NewDataOpentelekomcloudHssQuotasV5(scope constructs.Construct, id *string, config *DataOpentelekomcloudHssQuotasV5Config) DataOpentelekomcloudHssQuotasV5 {
 	_init_.Initialize()
 
@@ -473,7 +473,7 @@ func NewDataOpentelekomcloudHssQuotasV5(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/data-sources/hss_quotas_v5 opentelekomcloud_hss_quotas_v5} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/data-sources/hss_quotas_v5 opentelekomcloud_hss_quotas_v5} Data Source.
 func NewDataOpentelekomcloudHssQuotasV5_Override(d DataOpentelekomcloudHssQuotasV5, scope constructs.Construct, id *string, config *DataOpentelekomcloudHssQuotasV5Config) {
 	_init_.Initialize()
 
