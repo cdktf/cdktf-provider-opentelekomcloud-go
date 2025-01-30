@@ -79,6 +79,10 @@ func (c *jsiiProxy_CceClusterV3) validatePutAuthenticatingProxyParameters(value 
 	return nil
 }
 
+func (c *jsiiProxy_CceClusterV3) validatePutMastersParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CceClusterV3) validatePutTimeoutsParameters(value *CceClusterV3Timeouts) error {
 	return nil
 }

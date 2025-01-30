@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2}.
 type VpnaasServiceV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -558,7 +558,7 @@ func (j *jsiiProxy_VpnaasServiceV2) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2} Resource.
 func NewVpnaasServiceV2(scope constructs.Construct, id *string, config *VpnaasServiceV2Config) VpnaasServiceV2 {
 	_init_.Initialize()
 
@@ -576,7 +576,7 @@ func NewVpnaasServiceV2(scope constructs.Construct, id *string, config *VpnaasSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2} Resource.
 func NewVpnaasServiceV2_Override(v VpnaasServiceV2, scope constructs.Construct, id *string, config *VpnaasServiceV2Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/lb_security_policy_v3 opentelekomcloud_lb_security_policy_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/lb_security_policy_v3 opentelekomcloud_lb_security_policy_v3}.
 type LbSecurityPolicyV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_LbSecurityPolicyV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/lb_security_policy_v3 opentelekomcloud_lb_security_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/lb_security_policy_v3 opentelekomcloud_lb_security_policy_v3} Resource.
 func NewLbSecurityPolicyV3(scope constructs.Construct, id *string, config *LbSecurityPolicyV3Config) LbSecurityPolicyV3 {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewLbSecurityPolicyV3(scope constructs.Construct, id *string, config *LbSec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/lb_security_policy_v3 opentelekomcloud_lb_security_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/lb_security_policy_v3 opentelekomcloud_lb_security_policy_v3} Resource.
 func NewLbSecurityPolicyV3_Override(l LbSecurityPolicyV3, scope constructs.Construct, id *string, config *LbSecurityPolicyV3Config) {
 	_init_.Initialize()
 

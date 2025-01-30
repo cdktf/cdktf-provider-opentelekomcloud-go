@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_acl_policy_v2 opentelekomcloud_apigw_acl_policy_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_acl_policy_v2 opentelekomcloud_apigw_acl_policy_v2}.
 type ApigwAclPolicyV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_ApigwAclPolicyV2) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_acl_policy_v2 opentelekomcloud_apigw_acl_policy_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_acl_policy_v2 opentelekomcloud_apigw_acl_policy_v2} Resource.
 func NewApigwAclPolicyV2(scope constructs.Construct, id *string, config *ApigwAclPolicyV2Config) ApigwAclPolicyV2 {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewApigwAclPolicyV2(scope constructs.Construct, id *string, config *ApigwAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_acl_policy_v2 opentelekomcloud_apigw_acl_policy_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_acl_policy_v2 opentelekomcloud_apigw_acl_policy_v2} Resource.
 func NewApigwAclPolicyV2_Override(a ApigwAclPolicyV2, scope constructs.Construct, id *string, config *ApigwAclPolicyV2Config) {
 	_init_.Initialize()
 

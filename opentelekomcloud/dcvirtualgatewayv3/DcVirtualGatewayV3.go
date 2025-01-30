@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/dc_virtual_gateway_v3 opentelekomcloud_dc_virtual_gateway_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dc_virtual_gateway_v3 opentelekomcloud_dc_virtual_gateway_v3}.
 type DcVirtualGatewayV3 interface {
 	cdktf.TerraformResource
 	Asn() *float64
@@ -473,7 +473,7 @@ func (j *jsiiProxy_DcVirtualGatewayV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/dc_virtual_gateway_v3 opentelekomcloud_dc_virtual_gateway_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dc_virtual_gateway_v3 opentelekomcloud_dc_virtual_gateway_v3} Resource.
 func NewDcVirtualGatewayV3(scope constructs.Construct, id *string, config *DcVirtualGatewayV3Config) DcVirtualGatewayV3 {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewDcVirtualGatewayV3(scope constructs.Construct, id *string, config *DcVir
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/dc_virtual_gateway_v3 opentelekomcloud_dc_virtual_gateway_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dc_virtual_gateway_v3 opentelekomcloud_dc_virtual_gateway_v3} Resource.
 func NewDcVirtualGatewayV3_Override(d DcVirtualGatewayV3, scope constructs.Construct, id *string, config *DcVirtualGatewayV3Config) {
 	_init_.Initialize()
 

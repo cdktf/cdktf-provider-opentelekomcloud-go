@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
 type CceClusterV3 interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -144,6 +144,8 @@ type CceClusterV3 interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Masters() CceClusterV3MastersList
+	MastersInput() interface{}
 	MultiAz() interface{}
 	SetMultiAz(val interface{})
 	MultiAzInput() interface{}
@@ -232,6 +234,7 @@ type CceClusterV3 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthenticatingProxy(value *CceClusterV3AuthenticatingProxy)
+	PutMasters(value interface{})
 	PutTimeouts(value *CceClusterV3Timeouts)
 	ResetAnnotations()
 	ResetAuthenticatingProxy()
@@ -262,6 +265,7 @@ type CceClusterV3 interface {
 	ResetKubeProxyMode()
 	ResetKubernetesSvcIpRange()
 	ResetLabels()
+	ResetMasters()
 	ResetMultiAz()
 	ResetNoAddons()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -1078,6 +1082,26 @@ func (j *jsiiProxy_CceClusterV3) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_CceClusterV3) Masters() CceClusterV3MastersList {
+	var returns CceClusterV3MastersList
+	_jsii_.Get(
+		j,
+		"masters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) MastersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mastersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CceClusterV3) MultiAz() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1339,7 +1363,7 @@ func (j *jsiiProxy_CceClusterV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV3Config) CceClusterV3 {
 	_init_.Initialize()
 
@@ -1357,7 +1381,7 @@ func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3_Override(c CceClusterV3, scope constructs.Construct, id *string, config *CceClusterV3Config) {
 	_init_.Initialize()
 
@@ -2218,6 +2242,17 @@ func (c *jsiiProxy_CceClusterV3) PutAuthenticatingProxy(value *CceClusterV3Authe
 	)
 }
 
+func (c *jsiiProxy_CceClusterV3) PutMasters(value interface{}) {
+	if err := c.validatePutMastersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMasters",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CceClusterV3) PutTimeouts(value *CceClusterV3Timeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2457,6 +2492,14 @@ func (c *jsiiProxy_CceClusterV3) ResetLabels() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetMasters() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMasters",
 		nil, // no parameters
 	)
 }
