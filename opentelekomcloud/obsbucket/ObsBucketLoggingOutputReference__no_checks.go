@@ -51,6 +51,10 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) validateResolveParameters(_c
 	return nil
 }
 
+func (j *jsiiProxy_ObsBucketLoggingOutputReference) validateSetAgencyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObsBucketLoggingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

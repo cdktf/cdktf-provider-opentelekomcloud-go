@@ -75,11 +75,19 @@ func (c *jsiiProxy_CssClusterV1) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (c *jsiiProxy_CssClusterV1) validatePutBackupStrategyParameters(value *CssClusterV1BackupStrategy) error {
+	return nil
+}
+
 func (c *jsiiProxy_CssClusterV1) validatePutDatastoreParameters(value *CssClusterV1Datastore) error {
 	return nil
 }
 
 func (c *jsiiProxy_CssClusterV1) validatePutNodeConfigParameters(value *CssClusterV1NodeConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_CssClusterV1) validatePutPublicAccessParameters(value *CssClusterV1PublicAccess) error {
 	return nil
 }
 

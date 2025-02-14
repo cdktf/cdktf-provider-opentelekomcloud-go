@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2}.
 type DataOpentelekomcloudComputeKeypairV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataOpentelekomcloudComputeKeypairV2) UserId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2} Data Source.
 func NewDataOpentelekomcloudComputeKeypairV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudComputeKeypairV2Config) DataOpentelekomcloudComputeKeypairV2 {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataOpentelekomcloudComputeKeypairV2(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2} Data Source.
 func NewDataOpentelekomcloudComputeKeypairV2_Override(d DataOpentelekomcloudComputeKeypairV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudComputeKeypairV2Config) {
 	_init_.Initialize()
 

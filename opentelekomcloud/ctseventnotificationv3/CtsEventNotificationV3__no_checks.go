@@ -75,6 +75,10 @@ func (c *jsiiProxy_CtsEventNotificationV3) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (c *jsiiProxy_CtsEventNotificationV3) validatePutFilterParameters(value *CtsEventNotificationV3Filter) error {
+	return nil
+}
+
 func (c *jsiiProxy_CtsEventNotificationV3) validatePutNotifyUserListParameters(value interface{}) error {
 	return nil
 }

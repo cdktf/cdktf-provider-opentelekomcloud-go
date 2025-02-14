@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_smart_connect_v2 opentelekomcloud_dms_smart_connect_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_smart_connect_v2 opentelekomcloud_dms_smart_connect_v2}.
 type DmsSmartConnectV2 interface {
 	cdktf.TerraformResource
 	Bandwidth() *string
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DmsSmartConnectV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_smart_connect_v2 opentelekomcloud_dms_smart_connect_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_smart_connect_v2 opentelekomcloud_dms_smart_connect_v2} Resource.
 func NewDmsSmartConnectV2(scope constructs.Construct, id *string, config *DmsSmartConnectV2Config) DmsSmartConnectV2 {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDmsSmartConnectV2(scope constructs.Construct, id *string, config *DmsSma
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_smart_connect_v2 opentelekomcloud_dms_smart_connect_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_smart_connect_v2 opentelekomcloud_dms_smart_connect_v2} Resource.
 func NewDmsSmartConnectV2_Override(d DmsSmartConnectV2, scope constructs.Construct, id *string, config *DmsSmartConnectV2Config) {
 	_init_.Initialize()
 

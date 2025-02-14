@@ -207,6 +207,17 @@ func (c *jsiiProxy_CssClusterV1) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (c *jsiiProxy_CssClusterV1) validatePutBackupStrategyParameters(value *CssClusterV1BackupStrategy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CssClusterV1) validatePutDatastoreParameters(value *CssClusterV1Datastore) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -219,6 +230,17 @@ func (c *jsiiProxy_CssClusterV1) validatePutDatastoreParameters(value *CssCluste
 }
 
 func (c *jsiiProxy_CssClusterV1) validatePutNodeConfigParameters(value *CssClusterV1NodeConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CssClusterV1) validatePutPublicAccessParameters(value *CssClusterV1PublicAccess) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

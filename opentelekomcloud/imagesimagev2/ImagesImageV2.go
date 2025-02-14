@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/images_image_v2 opentelekomcloud_images_image_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/images_image_v2 opentelekomcloud_images_image_v2}.
 type ImagesImageV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,9 @@ type ImagesImageV2 interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HwFirmwareType() *string
+	SetHwFirmwareType(val *string)
+	HwFirmwareTypeInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -154,6 +157,7 @@ type ImagesImageV2 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ImagesImageV2Timeouts)
+	ResetHwFirmwareType()
 	ResetId()
 	ResetImageCachePath()
 	ResetImageSourceUrl()
@@ -331,6 +335,26 @@ func (j *jsiiProxy_ImagesImageV2) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagesImageV2) HwFirmwareType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hwFirmwareType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagesImageV2) HwFirmwareTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hwFirmwareTypeInput",
 		&returns,
 	)
 	return returns
@@ -707,7 +731,7 @@ func (j *jsiiProxy_ImagesImageV2) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/images_image_v2 opentelekomcloud_images_image_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/images_image_v2 opentelekomcloud_images_image_v2} Resource.
 func NewImagesImageV2(scope constructs.Construct, id *string, config *ImagesImageV2Config) ImagesImageV2 {
 	_init_.Initialize()
 
@@ -725,7 +749,7 @@ func NewImagesImageV2(scope constructs.Construct, id *string, config *ImagesImag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/images_image_v2 opentelekomcloud_images_image_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/images_image_v2 opentelekomcloud_images_image_v2} Resource.
 func NewImagesImageV2_Override(i ImagesImageV2, scope constructs.Construct, id *string, config *ImagesImageV2Config) {
 	_init_.Initialize()
 
@@ -792,6 +816,17 @@ func (j *jsiiProxy_ImagesImageV2)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImagesImageV2)SetHwFirmwareType(val *string) {
+	if err := j.validateSetHwFirmwareTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hwFirmwareType",
 		val,
 	)
 }
@@ -1308,6 +1343,14 @@ func (i *jsiiProxy_ImagesImageV2) PutTimeouts(value *ImagesImageV2Timeouts) {
 		i,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_ImagesImageV2) ResetHwFirmwareType() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetHwFirmwareType",
+		nil, // no parameters
 	)
 }
 

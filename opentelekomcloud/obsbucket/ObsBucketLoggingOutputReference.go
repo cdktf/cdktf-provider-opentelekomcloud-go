@@ -13,6 +13,9 @@ import (
 
 type ObsBucketLoggingOutputReference interface {
 	cdktf.ComplexObject
+	Agency() *string
+	SetAgency(val *string)
+	AgencyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type ObsBucketLoggingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAgency()
 	ResetTargetPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -84,6 +88,26 @@ type ObsBucketLoggingOutputReference interface {
 // The jsii proxy struct for ObsBucketLoggingOutputReference
 type jsiiProxy_ObsBucketLoggingOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ObsBucketLoggingOutputReference) Agency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"agency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObsBucketLoggingOutputReference) AgencyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"agencyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObsBucketLoggingOutputReference) ComplexObjectIndex() interface{} {
@@ -221,6 +245,17 @@ func NewObsBucketLoggingOutputReference_Override(o ObsBucketLoggingOutputReferen
 		"@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
+	)
+}
+
+func (j *jsiiProxy_ObsBucketLoggingOutputReference)SetAgency(val *string) {
+	if err := j.validateSetAgencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"agency",
+		val,
 	)
 }
 
@@ -485,6 +520,14 @@ func (o *jsiiProxy_ObsBucketLoggingOutputReference) InterpolationForAttribute(pr
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObsBucketLoggingOutputReference) ResetAgency() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAgency",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObsBucketLoggingOutputReference) ResetTargetPrefix() {

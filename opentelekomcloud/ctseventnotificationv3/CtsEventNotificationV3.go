@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3}.
 type CtsEventNotificationV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,8 @@ type CtsEventNotificationV3 interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Filter() CtsEventNotificationV3FilterOutputReference
+	FilterInput() *CtsEventNotificationV3Filter
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -127,8 +129,10 @@ type CtsEventNotificationV3 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *CtsEventNotificationV3Filter)
 	PutNotifyUserList(value interface{})
 	PutOperations(value interface{})
+	ResetFilter()
 	ResetId()
 	ResetNotifyUserList()
 	ResetOperations()
@@ -210,6 +214,26 @@ func (j *jsiiProxy_CtsEventNotificationV3) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CtsEventNotificationV3) Filter() CtsEventNotificationV3FilterOutputReference {
+	var returns CtsEventNotificationV3FilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CtsEventNotificationV3) FilterInput() *CtsEventNotificationV3Filter {
+	var returns *CtsEventNotificationV3Filter
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -496,7 +520,7 @@ func (j *jsiiProxy_CtsEventNotificationV3) TopicIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3} Resource.
 func NewCtsEventNotificationV3(scope constructs.Construct, id *string, config *CtsEventNotificationV3Config) CtsEventNotificationV3 {
 	_init_.Initialize()
 
@@ -514,7 +538,7 @@ func NewCtsEventNotificationV3(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3} Resource.
 func NewCtsEventNotificationV3_Override(c CtsEventNotificationV3, scope constructs.Construct, id *string, config *CtsEventNotificationV3Config) {
 	_init_.Initialize()
 
@@ -1001,6 +1025,17 @@ func (c *jsiiProxy_CtsEventNotificationV3) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (c *jsiiProxy_CtsEventNotificationV3) PutFilter(value *CtsEventNotificationV3Filter) {
+	if err := c.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CtsEventNotificationV3) PutNotifyUserList(value interface{}) {
 	if err := c.validatePutNotifyUserListParameters(value); err != nil {
 		panic(err)
@@ -1020,6 +1055,14 @@ func (c *jsiiProxy_CtsEventNotificationV3) PutOperations(value interface{}) {
 		c,
 		"putOperations",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CtsEventNotificationV3) ResetFilter() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFilter",
+		nil, // no parameters
 	)
 }
 

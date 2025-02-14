@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1}.
 type CssClusterV1 interface {
 	cdktf.TerraformResource
 	AdminPass() *string
 	SetAdminPass(val *string)
 	AdminPassInput() *string
+	BackupAvailable() cdktf.IResolvable
+	BackupStrategy() CssClusterV1BackupStrategyOutputReference
+	BackupStrategyInput() *CssClusterV1BackupStrategy
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -78,6 +81,8 @@ type CssClusterV1 interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicAccess() CssClusterV1PublicAccessOutputReference
+	PublicAccessInput() *CssClusterV1PublicAccess
 	// Experimental.
 	RawOverrides() interface{}
 	Tags() *map[string]*string
@@ -135,10 +140,13 @@ type CssClusterV1 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBackupStrategy(value *CssClusterV1BackupStrategy)
 	PutDatastore(value *CssClusterV1Datastore)
 	PutNodeConfig(value *CssClusterV1NodeConfig)
+	PutPublicAccess(value *CssClusterV1PublicAccess)
 	PutTimeouts(value *CssClusterV1Timeouts)
 	ResetAdminPass()
+	ResetBackupStrategy()
 	ResetDatastore()
 	ResetEnableAuthority()
 	ResetEnableHttps()
@@ -147,6 +155,7 @@ type CssClusterV1 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicAccess()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -182,6 +191,36 @@ func (j *jsiiProxy_CssClusterV1) AdminPassInput() *string {
 	_jsii_.Get(
 		j,
 		"adminPassInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CssClusterV1) BackupAvailable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"backupAvailable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CssClusterV1) BackupStrategy() CssClusterV1BackupStrategyOutputReference {
+	var returns CssClusterV1BackupStrategyOutputReference
+	_jsii_.Get(
+		j,
+		"backupStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CssClusterV1) BackupStrategyInput() *CssClusterV1BackupStrategy {
+	var returns *CssClusterV1BackupStrategy
+	_jsii_.Get(
+		j,
+		"backupStrategyInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +516,26 @@ func (j *jsiiProxy_CssClusterV1) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CssClusterV1) PublicAccess() CssClusterV1PublicAccessOutputReference {
+	var returns CssClusterV1PublicAccessOutputReference
+	_jsii_.Get(
+		j,
+		"publicAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CssClusterV1) PublicAccessInput() *CssClusterV1PublicAccess {
+	var returns *CssClusterV1PublicAccess
+	_jsii_.Get(
+		j,
+		"publicAccessInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CssClusterV1) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -568,7 +627,7 @@ func (j *jsiiProxy_CssClusterV1) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1} Resource.
 func NewCssClusterV1(scope constructs.Construct, id *string, config *CssClusterV1Config) CssClusterV1 {
 	_init_.Initialize()
 
@@ -586,7 +645,7 @@ func NewCssClusterV1(scope constructs.Construct, id *string, config *CssClusterV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1} Resource.
 func NewCssClusterV1_Override(c CssClusterV1, scope constructs.Construct, id *string, config *CssClusterV1Config) {
 	_init_.Initialize()
 
@@ -1095,6 +1154,17 @@ func (c *jsiiProxy_CssClusterV1) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_CssClusterV1) PutBackupStrategy(value *CssClusterV1BackupStrategy) {
+	if err := c.validatePutBackupStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBackupStrategy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CssClusterV1) PutDatastore(value *CssClusterV1Datastore) {
 	if err := c.validatePutDatastoreParameters(value); err != nil {
 		panic(err)
@@ -1117,6 +1187,17 @@ func (c *jsiiProxy_CssClusterV1) PutNodeConfig(value *CssClusterV1NodeConfig) {
 	)
 }
 
+func (c *jsiiProxy_CssClusterV1) PutPublicAccess(value *CssClusterV1PublicAccess) {
+	if err := c.validatePutPublicAccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPublicAccess",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CssClusterV1) PutTimeouts(value *CssClusterV1Timeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1132,6 +1213,14 @@ func (c *jsiiProxy_CssClusterV1) ResetAdminPass() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAdminPass",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CssClusterV1) ResetBackupStrategy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBackupStrategy",
 		nil, // no parameters
 	)
 }
@@ -1180,6 +1269,14 @@ func (c *jsiiProxy_CssClusterV1) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CssClusterV1) ResetPublicAccess() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPublicAccess",
 		nil, // no parameters
 	)
 }

@@ -1,3 +1,3 @@
 # `data_opentelekomcloud_networking_network_v2`
 
-Refer to the Terraform Registry for docs: [`data_opentelekomcloud_networking_network_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/networking_network_v2).
+Refer to the Terraform Registry for docs: [`data_opentelekomcloud_networking_network_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/networking_network_v2).

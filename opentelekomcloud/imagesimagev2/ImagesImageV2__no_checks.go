@@ -111,6 +111,10 @@ func (j *jsiiProxy_ImagesImageV2) validateSetDiskFormatParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ImagesImageV2) validateSetHwFirmwareTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagesImageV2) validateSetIdParameters(val *string) error {
 	return nil
 }

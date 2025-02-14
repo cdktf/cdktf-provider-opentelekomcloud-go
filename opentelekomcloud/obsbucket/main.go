@@ -684,6 +684,8 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLoggingOutputReference",
 		reflect.TypeOf((*ObsBucketLoggingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "agency", GoGetter: "Agency"},
+			_jsii_.MemberProperty{JsiiProperty: "agencyInput", GoGetter: "AgencyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -701,6 +703,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAgency", GoMethod: "ResetAgency"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetPrefix", GoMethod: "ResetTargetPrefix"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "targetBucket", GoGetter: "TargetBucket"},
