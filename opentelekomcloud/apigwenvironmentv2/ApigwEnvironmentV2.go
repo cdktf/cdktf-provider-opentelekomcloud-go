@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/apigw_environment_v2 opentelekomcloud_apigw_environment_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_environment_v2 opentelekomcloud_apigw_environment_v2}.
 type ApigwEnvironmentV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_ApigwEnvironmentV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/apigw_environment_v2 opentelekomcloud_apigw_environment_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_environment_v2 opentelekomcloud_apigw_environment_v2} Resource.
 func NewApigwEnvironmentV2(scope constructs.Construct, id *string, config *ApigwEnvironmentV2Config) ApigwEnvironmentV2 {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewApigwEnvironmentV2(scope constructs.Construct, id *string, config *Apigw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/apigw_environment_v2 opentelekomcloud_apigw_environment_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_environment_v2 opentelekomcloud_apigw_environment_v2} Resource.
 func NewApigwEnvironmentV2_Override(a ApigwEnvironmentV2, scope constructs.Construct, id *string, config *ApigwEnvironmentV2Config) {
 	_init_.Initialize()
 

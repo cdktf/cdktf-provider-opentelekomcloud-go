@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_user_permission_v1 opentelekomcloud_dms_user_permission_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/dms_user_permission_v1 opentelekomcloud_dms_user_permission_v1}.
 type DmsUserPermissionV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DmsUserPermissionV1) TopicType() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_user_permission_v1 opentelekomcloud_dms_user_permission_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/dms_user_permission_v1 opentelekomcloud_dms_user_permission_v1} Resource.
 func NewDmsUserPermissionV1(scope constructs.Construct, id *string, config *DmsUserPermissionV1Config) DmsUserPermissionV1 {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDmsUserPermissionV1(scope constructs.Construct, id *string, config *DmsU
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_user_permission_v1 opentelekomcloud_dms_user_permission_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/dms_user_permission_v1 opentelekomcloud_dms_user_permission_v1} Resource.
 func NewDmsUserPermissionV1_Override(d DmsUserPermissionV1, scope constructs.Construct, id *string, config *DmsUserPermissionV1Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/rms_advanced_query_v1 opentelekomcloud_rms_advanced_query_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/rms_advanced_query_v1 opentelekomcloud_rms_advanced_query_v1}.
 type RmsAdvancedQueryV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_RmsAdvancedQueryV1) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/rms_advanced_query_v1 opentelekomcloud_rms_advanced_query_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/rms_advanced_query_v1 opentelekomcloud_rms_advanced_query_v1} Resource.
 func NewRmsAdvancedQueryV1(scope constructs.Construct, id *string, config *RmsAdvancedQueryV1Config) RmsAdvancedQueryV1 {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewRmsAdvancedQueryV1(scope constructs.Construct, id *string, config *RmsAd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/rms_advanced_query_v1 opentelekomcloud_rms_advanced_query_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/rms_advanced_query_v1 opentelekomcloud_rms_advanced_query_v1} Resource.
 func NewRmsAdvancedQueryV1_Override(r RmsAdvancedQueryV1, scope constructs.Construct, id *string, config *RmsAdvancedQueryV1Config) {
 	_init_.Initialize()
 

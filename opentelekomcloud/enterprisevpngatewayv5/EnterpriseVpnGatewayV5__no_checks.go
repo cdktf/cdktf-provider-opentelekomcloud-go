@@ -143,6 +143,10 @@ func (j *jsiiProxy_EnterpriseVpnGatewayV5) validateSetCountParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_EnterpriseVpnGatewayV5) validateSetDeleteEipParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EnterpriseVpnGatewayV5) validateSetErIdParameters(val *string) error {
 	return nil
 }

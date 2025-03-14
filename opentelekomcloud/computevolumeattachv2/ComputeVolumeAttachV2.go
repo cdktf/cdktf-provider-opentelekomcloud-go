@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2}.
 type ComputeVolumeAttachV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2} Resource.
 func NewComputeVolumeAttachV2(scope constructs.Construct, id *string, config *ComputeVolumeAttachV2Config) ComputeVolumeAttachV2 {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewComputeVolumeAttachV2(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2} Resource.
 func NewComputeVolumeAttachV2_Override(c ComputeVolumeAttachV2, scope constructs.Construct, id *string, config *ComputeVolumeAttachV2Config) {
 	_init_.Initialize()
 

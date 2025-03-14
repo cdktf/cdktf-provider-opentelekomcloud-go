@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5}.
 type EnterpriseVpnGatewayV5 interface {
 	cdktf.TerraformResource
 	AccessPrivateIp1() *string
@@ -52,6 +52,9 @@ type EnterpriseVpnGatewayV5 interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *string
+	DeleteEip() interface{}
+	SetDeleteEip(val interface{})
+	DeleteEipInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -178,6 +181,7 @@ type EnterpriseVpnGatewayV5 interface {
 	ResetAsn()
 	ResetAttachmentType()
 	ResetConnectSubnet()
+	ResetDeleteEip()
 	ResetEip1()
 	ResetEip2()
 	ResetErId()
@@ -415,6 +419,26 @@ func (j *jsiiProxy_EnterpriseVpnGatewayV5) CreatedAt() *string {
 	_jsii_.Get(
 		j,
 		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EnterpriseVpnGatewayV5) DeleteEip() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteEip",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EnterpriseVpnGatewayV5) DeleteEipInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteEipInput",
 		&returns,
 	)
 	return returns
@@ -841,7 +865,7 @@ func (j *jsiiProxy_EnterpriseVpnGatewayV5) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5} Resource.
 func NewEnterpriseVpnGatewayV5(scope constructs.Construct, id *string, config *EnterpriseVpnGatewayV5Config) EnterpriseVpnGatewayV5 {
 	_init_.Initialize()
 
@@ -859,7 +883,7 @@ func NewEnterpriseVpnGatewayV5(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5} Resource.
 func NewEnterpriseVpnGatewayV5_Override(e EnterpriseVpnGatewayV5, scope constructs.Construct, id *string, config *EnterpriseVpnGatewayV5Config) {
 	_init_.Initialize()
 
@@ -976,6 +1000,17 @@ func (j *jsiiProxy_EnterpriseVpnGatewayV5)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EnterpriseVpnGatewayV5)SetDeleteEip(val interface{}) {
+	if err := j.validateSetDeleteEipParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteEip",
 		val,
 	)
 }
@@ -1563,6 +1598,14 @@ func (e *jsiiProxy_EnterpriseVpnGatewayV5) ResetConnectSubnet() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetConnectSubnet",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EnterpriseVpnGatewayV5) ResetDeleteEip() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDeleteEip",
 		nil, // no parameters
 	)
 }

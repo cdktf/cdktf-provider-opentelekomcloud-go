@@ -5,7 +5,7 @@ package hsshostprotectionv5
 
 
 type HssHostProtectionV5Timeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/hss_host_protection_v5#create HssHostProtectionV5#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/hss_host_protection_v5#create HssHostProtectionV5#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

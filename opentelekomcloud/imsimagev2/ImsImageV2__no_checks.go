@@ -111,6 +111,10 @@ func (j *jsiiProxy_ImsImageV2) validateSetDescriptionParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_ImsImageV2) validateSetHwFirmwareTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImsImageV2) validateSetIdParameters(val *string) error {
 	return nil
 }
