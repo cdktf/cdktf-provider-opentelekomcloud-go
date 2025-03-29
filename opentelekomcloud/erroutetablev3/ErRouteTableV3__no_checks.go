@@ -127,6 +127,10 @@ func (j *jsiiProxy_ErRouteTableV3) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_ErRouteTableV3) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewErRouteTableV3Parameters(scope constructs.Construct, id *string, config *ErRouteTableV3Config) error {
 	return nil
 }

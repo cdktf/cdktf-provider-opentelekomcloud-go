@@ -135,6 +135,10 @@ func (j *jsiiProxy_ErVpcAttachmentV3) validateSetSubnetIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_ErVpcAttachmentV3) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ErVpcAttachmentV3) validateSetVpcIdParameters(val *string) error {
 	return nil
 }

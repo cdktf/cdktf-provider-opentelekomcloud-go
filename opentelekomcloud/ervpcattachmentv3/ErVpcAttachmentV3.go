@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3}.
 type ErVpcAttachmentV3 interface {
 	cdktf.TerraformResource
 	AutoCreateVpcRoutes() interface{}
@@ -76,6 +76,9 @@ type ErVpcAttachmentV3 interface {
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -138,6 +141,7 @@ type ErVpcAttachmentV3 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -437,6 +441,26 @@ func (j *jsiiProxy_ErVpcAttachmentV3) SubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ErVpcAttachmentV3) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ErVpcAttachmentV3) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ErVpcAttachmentV3) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -518,7 +542,7 @@ func (j *jsiiProxy_ErVpcAttachmentV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3} Resource.
 func NewErVpcAttachmentV3(scope constructs.Construct, id *string, config *ErVpcAttachmentV3Config) ErVpcAttachmentV3 {
 	_init_.Initialize()
 
@@ -536,7 +560,7 @@ func NewErVpcAttachmentV3(scope constructs.Construct, id *string, config *ErVpcA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3} Resource.
 func NewErVpcAttachmentV3_Override(e ErVpcAttachmentV3, scope constructs.Construct, id *string, config *ErVpcAttachmentV3Config) {
 	_init_.Initialize()
 
@@ -677,6 +701,17 @@ func (j *jsiiProxy_ErVpcAttachmentV3)SetSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"subnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ErVpcAttachmentV3)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1084,6 +1119,14 @@ func (e *jsiiProxy_ErVpcAttachmentV3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ErVpcAttachmentV3) ResetTags() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTags",
 		nil, // no parameters
 	)
 }

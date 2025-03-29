@@ -143,6 +143,10 @@ func (j *jsiiProxy_ErInstanceV3) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_ErInstanceV3) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewErInstanceV3Parameters(scope constructs.Construct, id *string, config *ErInstanceV3Config) error {
 	return nil
 }

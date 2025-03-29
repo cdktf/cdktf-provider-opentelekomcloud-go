@@ -5,11 +5,11 @@ package obsbucketobjectacl
 
 
 type ObsBucketObjectAclAccountPermission struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/obs_bucket_object_acl#account_id ObsBucketObjectAcl#account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/obs_bucket_object_acl#account_id ObsBucketObjectAcl#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/obs_bucket_object_acl#access_to_acl ObsBucketObjectAcl#access_to_acl}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/obs_bucket_object_acl#access_to_acl ObsBucketObjectAcl#access_to_acl}.
 	AccessToAcl *[]*string `field:"optional" json:"accessToAcl" yaml:"accessToAcl"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/obs_bucket_object_acl#access_to_object ObsBucketObjectAcl#access_to_object}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/obs_bucket_object_acl#access_to_object ObsBucketObjectAcl#access_to_object}.
 	AccessToObject *[]*string `field:"optional" json:"accessToObject" yaml:"accessToObject"`
 }
 

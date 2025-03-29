@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/obs_bucket_inventory opentelekomcloud_obs_bucket_inventory}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/obs_bucket_inventory opentelekomcloud_obs_bucket_inventory}.
 type ObsBucketInventory interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -68,6 +68,9 @@ type ObsBucketInventory interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	OptionalFields() *[]*string
+	SetOptionalFields(val *[]*string)
+	OptionalFieldsInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -131,6 +134,7 @@ type ObsBucketInventory interface {
 	PutDestination(value *ObsBucketInventoryDestination)
 	ResetFilterPrefix()
 	ResetId()
+	ResetOptionalFields()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -412,6 +416,26 @@ func (j *jsiiProxy_ObsBucketInventory) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ObsBucketInventory) OptionalFields() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optionalFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObsBucketInventory) OptionalFieldsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optionalFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObsBucketInventory) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -483,7 +507,7 @@ func (j *jsiiProxy_ObsBucketInventory) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/obs_bucket_inventory opentelekomcloud_obs_bucket_inventory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/obs_bucket_inventory opentelekomcloud_obs_bucket_inventory} Resource.
 func NewObsBucketInventory(scope constructs.Construct, id *string, config *ObsBucketInventoryConfig) ObsBucketInventory {
 	_init_.Initialize()
 
@@ -501,7 +525,7 @@ func NewObsBucketInventory(scope constructs.Construct, id *string, config *ObsBu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/obs_bucket_inventory opentelekomcloud_obs_bucket_inventory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/obs_bucket_inventory opentelekomcloud_obs_bucket_inventory} Resource.
 func NewObsBucketInventory_Override(o ObsBucketInventory, scope constructs.Construct, id *string, config *ObsBucketInventoryConfig) {
 	_init_.Initialize()
 
@@ -634,6 +658,17 @@ func (j *jsiiProxy_ObsBucketInventory)SetLifecycle(val *cdktf.TerraformResourceL
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObsBucketInventory)SetOptionalFields(val *[]*string) {
+	if err := j.validateSetOptionalFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionalFields",
 		val,
 	)
 }
@@ -1033,6 +1068,14 @@ func (o *jsiiProxy_ObsBucketInventory) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObsBucketInventory) ResetOptionalFields() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOptionalFields",
 		nil, // no parameters
 	)
 }

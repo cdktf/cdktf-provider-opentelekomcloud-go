@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3}.
 type ErRouteTableV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,9 @@ type ErRouteTableV3 interface {
 	RawOverrides() interface{}
 	Region() *string
 	Status() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,6 +133,7 @@ type ErRouteTableV3 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -409,6 +413,26 @@ func (j *jsiiProxy_ErRouteTableV3) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ErRouteTableV3) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ErRouteTableV3) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ErRouteTableV3) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -470,7 +494,7 @@ func (j *jsiiProxy_ErRouteTableV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3} Resource.
 func NewErRouteTableV3(scope constructs.Construct, id *string, config *ErRouteTableV3Config) ErRouteTableV3 {
 	_init_.Initialize()
 
@@ -488,7 +512,7 @@ func NewErRouteTableV3(scope constructs.Construct, id *string, config *ErRouteTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3} Resource.
 func NewErRouteTableV3_Override(e ErRouteTableV3, scope constructs.Construct, id *string, config *ErRouteTableV3Config) {
 	_init_.Initialize()
 
@@ -607,6 +631,17 @@ func (j *jsiiProxy_ErRouteTableV3)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ErRouteTableV3)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -995,6 +1030,14 @@ func (e *jsiiProxy_ErRouteTableV3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ErRouteTableV3) ResetTags() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTags",
 		nil, // no parameters
 	)
 }

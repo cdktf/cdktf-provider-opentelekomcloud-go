@@ -135,6 +135,10 @@ func (j *jsiiProxy_ObsBucketInventory) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_ObsBucketInventory) validateSetOptionalFieldsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObsBucketInventory) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
