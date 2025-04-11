@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3}.
 type IdentityUserGroupMembershipV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_IdentityUserGroupMembershipV3) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3} Resource.
 func NewIdentityUserGroupMembershipV3(scope constructs.Construct, id *string, config *IdentityUserGroupMembershipV3Config) IdentityUserGroupMembershipV3 {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewIdentityUserGroupMembershipV3(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3} Resource.
 func NewIdentityUserGroupMembershipV3_Override(i IdentityUserGroupMembershipV3, scope constructs.Construct, id *string, config *IdentityUserGroupMembershipV3Config) {
 	_init_.Initialize()
 

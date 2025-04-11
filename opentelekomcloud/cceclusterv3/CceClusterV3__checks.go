@@ -812,6 +812,14 @@ func (j *jsiiProxy_CceClusterV3) validateSetSubnetIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_CceClusterV3) validateSetTimezoneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CceClusterV3) validateSetVpcIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

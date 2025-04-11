@@ -35,6 +35,9 @@ type RdsInstanceV3BackupStrategyOutputReference interface {
 	KeepDays() *float64
 	SetKeepDays(val *float64)
 	KeepDaysInput() *float64
+	Period() *string
+	SetPeriod(val *string)
+	PeriodInput() *string
 	StartTime() *string
 	SetStartTime(val *string)
 	StartTimeInput() *string
@@ -71,6 +74,7 @@ type RdsInstanceV3BackupStrategyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetKeepDays()
+	ResetPeriod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -151,6 +155,26 @@ func (j *jsiiProxy_RdsInstanceV3BackupStrategyOutputReference) KeepDaysInput() *
 	_jsii_.Get(
 		j,
 		"keepDaysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceV3BackupStrategyOutputReference) Period() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"period",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceV3BackupStrategyOutputReference) PeriodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"periodInput",
 		&returns,
 	)
 	return returns
@@ -264,6 +288,17 @@ func (j *jsiiProxy_RdsInstanceV3BackupStrategyOutputReference)SetKeepDays(val *f
 	_jsii_.Set(
 		j,
 		"keepDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsInstanceV3BackupStrategyOutputReference)SetPeriod(val *string) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"period",
 		val,
 	)
 }
@@ -491,6 +526,14 @@ func (r *jsiiProxy_RdsInstanceV3BackupStrategyOutputReference) ResetKeepDays() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetKeepDays",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsInstanceV3BackupStrategyOutputReference) ResetPeriod() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPeriod",
 		nil, // no parameters
 	)
 }

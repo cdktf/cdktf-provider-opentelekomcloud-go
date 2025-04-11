@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
 type CceClusterV3 interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -187,6 +187,9 @@ type CceClusterV3 interface {
 	TerraformResourceType() *string
 	Timeouts() CceClusterV3TimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Timezone() *string
+	SetTimezone(val *string)
+	TimezoneInput() *string
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
@@ -274,6 +277,7 @@ type CceClusterV3 interface {
 	ResetRegion()
 	ResetSecurityGroupId()
 	ResetTimeouts()
+	ResetTimezone()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -1342,6 +1346,26 @@ func (j *jsiiProxy_CceClusterV3) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CceClusterV3) Timezone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timezone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) TimezoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timezoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CceClusterV3) VpcId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1363,7 +1387,7 @@ func (j *jsiiProxy_CceClusterV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV3Config) CceClusterV3 {
 	_init_.Initialize()
 
@@ -1381,7 +1405,7 @@ func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3_Override(c CceClusterV3, scope constructs.Construct, id *string, config *CceClusterV3Config) {
 	_init_.Initialize()
 
@@ -1863,6 +1887,17 @@ func (j *jsiiProxy_CceClusterV3)SetSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"subnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetTimezone(val *string) {
+	if err := j.validateSetTimezoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timezone",
 		val,
 	)
 }
@@ -2548,6 +2583,14 @@ func (c *jsiiProxy_CceClusterV3) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetTimezone() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTimezone",
 		nil, // no parameters
 	)
 }

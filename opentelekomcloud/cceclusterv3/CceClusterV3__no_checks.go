@@ -267,6 +267,10 @@ func (j *jsiiProxy_CceClusterV3) validateSetSubnetIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_CceClusterV3) validateSetTimezoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceClusterV3) validateSetVpcIdParameters(val *string) error {
 	return nil
 }

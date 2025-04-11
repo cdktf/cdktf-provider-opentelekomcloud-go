@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/fw_policy_v2 opentelekomcloud_fw_policy_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/fw_policy_v2 opentelekomcloud_fw_policy_v2}.
 type FwPolicyV2 interface {
 	cdktf.TerraformResource
 	Audited() interface{}
@@ -526,7 +526,7 @@ func (j *jsiiProxy_FwPolicyV2) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/fw_policy_v2 opentelekomcloud_fw_policy_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/fw_policy_v2 opentelekomcloud_fw_policy_v2} Resource.
 func NewFwPolicyV2(scope constructs.Construct, id *string, config *FwPolicyV2Config) FwPolicyV2 {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewFwPolicyV2(scope constructs.Construct, id *string, config *FwPolicyV2Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/fw_policy_v2 opentelekomcloud_fw_policy_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/fw_policy_v2 opentelekomcloud_fw_policy_v2} Resource.
 func NewFwPolicyV2_Override(f FwPolicyV2, scope constructs.Construct, id *string, config *FwPolicyV2Config) {
 	_init_.Initialize()
 
