@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/enterprise_vpn_customer_gateway_v5 opentelekomcloud_enterprise_vpn_customer_gateway_v5}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/enterprise_vpn_customer_gateway_v5 opentelekomcloud_enterprise_vpn_customer_gateway_v5}.
 type EnterpriseVpnCustomerGatewayV5 interface {
 	cdktf.TerraformResource
 	Asn() *float64
@@ -484,7 +484,7 @@ func (j *jsiiProxy_EnterpriseVpnCustomerGatewayV5) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/enterprise_vpn_customer_gateway_v5 opentelekomcloud_enterprise_vpn_customer_gateway_v5} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/enterprise_vpn_customer_gateway_v5 opentelekomcloud_enterprise_vpn_customer_gateway_v5} Resource.
 func NewEnterpriseVpnCustomerGatewayV5(scope constructs.Construct, id *string, config *EnterpriseVpnCustomerGatewayV5Config) EnterpriseVpnCustomerGatewayV5 {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewEnterpriseVpnCustomerGatewayV5(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/enterprise_vpn_customer_gateway_v5 opentelekomcloud_enterprise_vpn_customer_gateway_v5} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/enterprise_vpn_customer_gateway_v5 opentelekomcloud_enterprise_vpn_customer_gateway_v5} Resource.
 func NewEnterpriseVpnCustomerGatewayV5_Override(e EnterpriseVpnCustomerGatewayV5, scope constructs.Construct, id *string, config *EnterpriseVpnCustomerGatewayV5Config) {
 	_init_.Initialize()
 

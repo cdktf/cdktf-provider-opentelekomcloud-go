@@ -107,6 +107,10 @@ func (j *jsiiProxy_CceClusterV3) validateSetAnnotationsParameters(val *map[strin
 	return nil
 }
 
+func (j *jsiiProxy_CceClusterV3) validateSetApiAccessTrustlistParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceClusterV3) validateSetAuthenticatingProxyCaParameters(val *string) error {
 	return nil
 }

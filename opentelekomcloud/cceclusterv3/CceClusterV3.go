@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
 type CceClusterV3 interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
+	ApiAccessTrustlist() *[]*string
+	SetApiAccessTrustlist(val *[]*string)
+	ApiAccessTrustlistInput() *[]*string
 	AuthenticatingProxy() CceClusterV3AuthenticatingProxyOutputReference
 	AuthenticatingProxyCa() *string
 	SetAuthenticatingProxyCa(val *string)
@@ -240,6 +243,7 @@ type CceClusterV3 interface {
 	PutMasters(value interface{})
 	PutTimeouts(value *CceClusterV3Timeouts)
 	ResetAnnotations()
+	ResetApiAccessTrustlist()
 	ResetAuthenticatingProxy()
 	ResetAuthenticatingProxyCa()
 	ResetAuthenticationMode()
@@ -311,6 +315,26 @@ func (j *jsiiProxy_CceClusterV3) AnnotationsInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"annotationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) ApiAccessTrustlist() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"apiAccessTrustlist",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) ApiAccessTrustlistInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"apiAccessTrustlistInput",
 		&returns,
 	)
 	return returns
@@ -1387,7 +1411,7 @@ func (j *jsiiProxy_CceClusterV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV3Config) CceClusterV3 {
 	_init_.Initialize()
 
@@ -1405,7 +1429,7 @@ func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3_Override(c CceClusterV3, scope constructs.Construct, id *string, config *CceClusterV3Config) {
 	_init_.Initialize()
 
@@ -1423,6 +1447,17 @@ func (j *jsiiProxy_CceClusterV3)SetAnnotations(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"annotations",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetApiAccessTrustlist(val *[]*string) {
+	if err := j.validateSetApiAccessTrustlistParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiAccessTrustlist",
 		val,
 	)
 }
@@ -2303,6 +2338,14 @@ func (c *jsiiProxy_CceClusterV3) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetApiAccessTrustlist() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetApiAccessTrustlist",
 		nil, // no parameters
 	)
 }

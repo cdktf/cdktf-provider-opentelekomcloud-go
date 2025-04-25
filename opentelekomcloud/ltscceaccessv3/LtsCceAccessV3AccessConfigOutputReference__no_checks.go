@@ -55,10 +55,6 @@ func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) validatePutSingleL
 	return nil
 }
 
-func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) validatePutWindowsLogInfoParameters(value *LtsCceAccessV3AccessConfigWindowsLogInfo) error {
-	return nil
-}
-
 func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/rts_stack_v1 opentelekomcloud_rts_stack_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/rts_stack_v1 opentelekomcloud_rts_stack_v1}.
 type RtsStackV1 interface {
 	cdktf.TerraformResource
 	Capabilities() *[]*string
@@ -604,7 +604,7 @@ func (j *jsiiProxy_RtsStackV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/rts_stack_v1 opentelekomcloud_rts_stack_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/rts_stack_v1 opentelekomcloud_rts_stack_v1} Resource.
 func NewRtsStackV1(scope constructs.Construct, id *string, config *RtsStackV1Config) RtsStackV1 {
 	_init_.Initialize()
 
@@ -622,7 +622,7 @@ func NewRtsStackV1(scope constructs.Construct, id *string, config *RtsStackV1Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/rts_stack_v1 opentelekomcloud_rts_stack_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/rts_stack_v1 opentelekomcloud_rts_stack_v1} Resource.
 func NewRtsStackV1_Override(r RtsStackV1, scope constructs.Construct, id *string, config *RtsStackV1Config) {
 	_init_.Initialize()
 

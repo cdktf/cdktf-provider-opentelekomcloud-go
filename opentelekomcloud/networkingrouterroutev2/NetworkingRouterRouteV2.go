@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/networking_router_route_v2 opentelekomcloud_networking_router_route_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/networking_router_route_v2 opentelekomcloud_networking_router_route_v2}.
 type NetworkingRouterRouteV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_NetworkingRouterRouteV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/networking_router_route_v2 opentelekomcloud_networking_router_route_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/networking_router_route_v2 opentelekomcloud_networking_router_route_v2} Resource.
 func NewNetworkingRouterRouteV2(scope constructs.Construct, id *string, config *NetworkingRouterRouteV2Config) NetworkingRouterRouteV2 {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewNetworkingRouterRouteV2(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/networking_router_route_v2 opentelekomcloud_networking_router_route_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/networking_router_route_v2 opentelekomcloud_networking_router_route_v2} Resource.
 func NewNetworkingRouterRouteV2_Override(n NetworkingRouterRouteV2, scope constructs.Construct, id *string, config *NetworkingRouterRouteV2Config) {
 	_init_.Initialize()
 

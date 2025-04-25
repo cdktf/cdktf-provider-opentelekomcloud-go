@@ -135,10 +135,6 @@ func (j *jsiiProxy_NetworkingPortV2) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
-func (j *jsiiProxy_NetworkingPortV2) validateSetMacAddressParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_NetworkingPortV2) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -164,10 +160,6 @@ func (j *jsiiProxy_NetworkingPortV2) validateSetRegionParameters(val *string) er
 }
 
 func (j *jsiiProxy_NetworkingPortV2) validateSetSecurityGroupIdsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_NetworkingPortV2) validateSetTenantIdParameters(val *string) error {
 	return nil
 }
 

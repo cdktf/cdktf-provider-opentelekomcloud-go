@@ -95,8 +95,6 @@ type LtsCceAccessV3AccessConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	WindowsLogInfo() LtsCceAccessV3AccessConfigWindowsLogInfoOutputReference
-	WindowsLogInfoInput() *LtsCceAccessV3AccessConfigWindowsLogInfo
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -123,7 +121,6 @@ type LtsCceAccessV3AccessConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMultiLogFormat(value *LtsCceAccessV3AccessConfigMultiLogFormat)
 	PutSingleLogFormat(value *LtsCceAccessV3AccessConfigSingleLogFormat)
-	PutWindowsLogInfo(value *LtsCceAccessV3AccessConfigWindowsLogInfo)
 	ResetBlackPaths()
 	ResetContainerNameRegex()
 	ResetExcludeEnvs()
@@ -142,7 +139,6 @@ type LtsCceAccessV3AccessConfigOutputReference interface {
 	ResetSingleLogFormat()
 	ResetStderr()
 	ResetStdout()
-	ResetWindowsLogInfo()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -603,26 +599,6 @@ func (j *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) TerraformResource(
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) WindowsLogInfo() LtsCceAccessV3AccessConfigWindowsLogInfoOutputReference {
-	var returns LtsCceAccessV3AccessConfigWindowsLogInfoOutputReference
-	_jsii_.Get(
-		j,
-		"windowsLogInfo",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) WindowsLogInfoInput() *LtsCceAccessV3AccessConfigWindowsLogInfo {
-	var returns *LtsCceAccessV3AccessConfigWindowsLogInfo
-	_jsii_.Get(
-		j,
-		"windowsLogInfoInput",
 		&returns,
 	)
 	return returns
@@ -1106,17 +1082,6 @@ func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) PutSingleLogFormat
 	)
 }
 
-func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) PutWindowsLogInfo(value *LtsCceAccessV3AccessConfigWindowsLogInfo) {
-	if err := l.validatePutWindowsLogInfoParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putWindowsLogInfo",
-		[]interface{}{value},
-	)
-}
-
 func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) ResetBlackPaths() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1257,14 +1222,6 @@ func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) ResetStdout() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetStdout",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) ResetWindowsLogInfo() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetWindowsLogInfo",
 		nil, // no parameters
 	)
 }

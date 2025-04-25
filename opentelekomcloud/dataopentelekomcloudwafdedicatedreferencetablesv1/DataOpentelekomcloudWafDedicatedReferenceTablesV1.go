@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/data-sources/waf_dedicated_reference_tables_v1 opentelekomcloud_waf_dedicated_reference_tables_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/waf_dedicated_reference_tables_v1 opentelekomcloud_waf_dedicated_reference_tables_v1}.
 type DataOpentelekomcloudWafDedicatedReferenceTablesV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataOpentelekomcloudWafDedicatedReferenceTablesV1) TerraformR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/data-sources/waf_dedicated_reference_tables_v1 opentelekomcloud_waf_dedicated_reference_tables_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/waf_dedicated_reference_tables_v1 opentelekomcloud_waf_dedicated_reference_tables_v1} Data Source.
 func NewDataOpentelekomcloudWafDedicatedReferenceTablesV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudWafDedicatedReferenceTablesV1Config) DataOpentelekomcloudWafDedicatedReferenceTablesV1 {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataOpentelekomcloudWafDedicatedReferenceTablesV1(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/data-sources/waf_dedicated_reference_tables_v1 opentelekomcloud_waf_dedicated_reference_tables_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/waf_dedicated_reference_tables_v1 opentelekomcloud_waf_dedicated_reference_tables_v1} Data Source.
 func NewDataOpentelekomcloudWafDedicatedReferenceTablesV1_Override(d DataOpentelekomcloudWafDedicatedReferenceTablesV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudWafDedicatedReferenceTablesV1Config) {
 	_init_.Initialize()
 

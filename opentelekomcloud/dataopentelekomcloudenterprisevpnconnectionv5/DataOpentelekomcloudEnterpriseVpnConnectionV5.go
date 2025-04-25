@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/data-sources/enterprise_vpn_connection_v5 opentelekomcloud_enterprise_vpn_connection_v5}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/enterprise_vpn_connection_v5 opentelekomcloud_enterprise_vpn_connection_v5}.
 type DataOpentelekomcloudEnterpriseVpnConnectionV5 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_DataOpentelekomcloudEnterpriseVpnConnectionV5) VpnType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/data-sources/enterprise_vpn_connection_v5 opentelekomcloud_enterprise_vpn_connection_v5} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/enterprise_vpn_connection_v5 opentelekomcloud_enterprise_vpn_connection_v5} Data Source.
 func NewDataOpentelekomcloudEnterpriseVpnConnectionV5(scope constructs.Construct, id *string, config *DataOpentelekomcloudEnterpriseVpnConnectionV5Config) DataOpentelekomcloudEnterpriseVpnConnectionV5 {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewDataOpentelekomcloudEnterpriseVpnConnectionV5(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/data-sources/enterprise_vpn_connection_v5 opentelekomcloud_enterprise_vpn_connection_v5} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/enterprise_vpn_connection_v5 opentelekomcloud_enterprise_vpn_connection_v5} Data Source.
 func NewDataOpentelekomcloudEnterpriseVpnConnectionV5_Override(d DataOpentelekomcloudEnterpriseVpnConnectionV5, scope constructs.Construct, id *string, config *DataOpentelekomcloudEnterpriseVpnConnectionV5Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2}.
 type NetworkingPortV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -63,8 +63,6 @@ type NetworkingPortV2 interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MacAddress() *string
-	SetMacAddress(val *string)
-	MacAddressInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -95,9 +93,6 @@ type NetworkingPortV2 interface {
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
-	TenantId() *string
-	SetTenantId(val *string)
-	TenantIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -163,7 +158,6 @@ type NetworkingPortV2 interface {
 	ResetExtraDhcpOption()
 	ResetFixedIp()
 	ResetId()
-	ResetMacAddress()
 	ResetName()
 	ResetNoSecurityGroups()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -172,7 +166,6 @@ type NetworkingPortV2 interface {
 	ResetPortSecurityEnabled()
 	ResetRegion()
 	ResetSecurityGroupIds()
-	ResetTenantId()
 	ResetTimeouts()
 	ResetValueSpecs()
 	SynthesizeAttributes() *map[string]interface{}
@@ -443,16 +436,6 @@ func (j *jsiiProxy_NetworkingPortV2) MacAddress() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkingPortV2) MacAddressInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"macAddressInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_NetworkingPortV2) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -613,26 +596,6 @@ func (j *jsiiProxy_NetworkingPortV2) SecurityGroupIdsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkingPortV2) TenantId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tenantId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkingPortV2) TenantIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tenantIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_NetworkingPortV2) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -704,7 +667,7 @@ func (j *jsiiProxy_NetworkingPortV2) ValueSpecsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
 func NewNetworkingPortV2(scope constructs.Construct, id *string, config *NetworkingPortV2Config) NetworkingPortV2 {
 	_init_.Initialize()
 
@@ -722,7 +685,7 @@ func NewNetworkingPortV2(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource.
 func NewNetworkingPortV2_Override(n NetworkingPortV2, scope constructs.Construct, id *string, config *NetworkingPortV2Config) {
 	_init_.Initialize()
 
@@ -826,17 +789,6 @@ func (j *jsiiProxy_NetworkingPortV2)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_NetworkingPortV2)SetMacAddress(val *string) {
-	if err := j.validateSetMacAddressParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"macAddress",
-		val,
-	)
-}
-
 func (j *jsiiProxy_NetworkingPortV2)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -918,17 +870,6 @@ func (j *jsiiProxy_NetworkingPortV2)SetSecurityGroupIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"securityGroupIds",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NetworkingPortV2)SetTenantId(val *string) {
-	if err := j.validateSetTenantIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tenantId",
 		val,
 	)
 }
@@ -1397,14 +1338,6 @@ func (n *jsiiProxy_NetworkingPortV2) ResetId() {
 	)
 }
 
-func (n *jsiiProxy_NetworkingPortV2) ResetMacAddress() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetMacAddress",
-		nil, // no parameters
-	)
-}
-
 func (n *jsiiProxy_NetworkingPortV2) ResetName() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1449,14 +1382,6 @@ func (n *jsiiProxy_NetworkingPortV2) ResetSecurityGroupIds() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetSecurityGroupIds",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NetworkingPortV2) ResetTenantId() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetTenantId",
 		nil, // no parameters
 	)
 }
