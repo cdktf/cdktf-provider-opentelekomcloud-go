@@ -13,6 +13,12 @@ import (
 
 type FgsFunctionV2CustomImageOutputReference interface {
 	cdktf.ComplexObject
+	Args() *string
+	SetArgs(val *string)
+	ArgsInput() *string
+	Command() *string
+	SetCommand(val *string)
+	CommandInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,6 +49,9 @@ type FgsFunctionV2CustomImageOutputReference interface {
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
+	WorkingDir() *string
+	SetWorkingDir(val *string)
+	WorkingDirInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +76,9 @@ type FgsFunctionV2CustomImageOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetArgs()
+	ResetCommand()
+	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +92,46 @@ type FgsFunctionV2CustomImageOutputReference interface {
 // The jsii proxy struct for FgsFunctionV2CustomImageOutputReference
 type jsiiProxy_FgsFunctionV2CustomImageOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) Args() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"args",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) ArgsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"argsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) Command() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"command",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) CommandInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"commandInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) ComplexObjectIndex() interface{} {
@@ -172,6 +224,26 @@ func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) UrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) WorkingDir() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workingDir",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) WorkingDirInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workingDirInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewFgsFunctionV2CustomImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FgsFunctionV2CustomImageOutputReference {
 	_init_.Initialize()
@@ -197,6 +269,28 @@ func NewFgsFunctionV2CustomImageOutputReference_Override(f FgsFunctionV2CustomIm
 		"@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference)SetArgs(val *string) {
+	if err := j.validateSetArgsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"args",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference)SetCommand(val *string) {
+	if err := j.validateSetCommandParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"command",
+		val,
 	)
 }
 
@@ -262,6 +356,17 @@ func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference)SetUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"url",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference)SetWorkingDir(val *string) {
+	if err := j.validateSetWorkingDirParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workingDir",
 		val,
 	)
 }
@@ -450,6 +555,30 @@ func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) ResetArgs() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetArgs",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) ResetCommand() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetCommand",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) ResetWorkingDir() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetWorkingDir",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dcs_instance_v2 opentelekomcloud_dcs_instance_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dcs_instance_v2 opentelekomcloud_dcs_instance_v2}.
 type DcsInstanceV2 interface {
 	cdktf.TerraformResource
 	AccessUser() *string
@@ -1182,7 +1182,7 @@ func (j *jsiiProxy_DcsInstanceV2) WhitelistInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dcs_instance_v2 opentelekomcloud_dcs_instance_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dcs_instance_v2 opentelekomcloud_dcs_instance_v2} Resource.
 func NewDcsInstanceV2(scope constructs.Construct, id *string, config *DcsInstanceV2Config) DcsInstanceV2 {
 	_init_.Initialize()
 
@@ -1200,7 +1200,7 @@ func NewDcsInstanceV2(scope constructs.Construct, id *string, config *DcsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dcs_instance_v2 opentelekomcloud_dcs_instance_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dcs_instance_v2 opentelekomcloud_dcs_instance_v2} Resource.
 func NewDcsInstanceV2_Override(d DcsInstanceV2, scope constructs.Construct, id *string, config *DcsInstanceV2Config) {
 	_init_.Initialize()
 

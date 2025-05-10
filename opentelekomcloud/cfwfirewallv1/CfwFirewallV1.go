@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/cfw_firewall_v1 opentelekomcloud_cfw_firewall_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/cfw_firewall_v1 opentelekomcloud_cfw_firewall_v1}.
 type CfwFirewallV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -568,7 +568,7 @@ func (j *jsiiProxy_CfwFirewallV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/cfw_firewall_v1 opentelekomcloud_cfw_firewall_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/cfw_firewall_v1 opentelekomcloud_cfw_firewall_v1} Resource.
 func NewCfwFirewallV1(scope constructs.Construct, id *string, config *CfwFirewallV1Config) CfwFirewallV1 {
 	_init_.Initialize()
 
@@ -586,7 +586,7 @@ func NewCfwFirewallV1(scope constructs.Construct, id *string, config *CfwFirewal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/cfw_firewall_v1 opentelekomcloud_cfw_firewall_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/cfw_firewall_v1 opentelekomcloud_cfw_firewall_v1} Resource.
 func NewCfwFirewallV1_Override(c CfwFirewallV1, scope constructs.Construct, id *string, config *CfwFirewallV1Config) {
 	_init_.Initialize()
 

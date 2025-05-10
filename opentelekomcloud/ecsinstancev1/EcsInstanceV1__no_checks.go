@@ -79,6 +79,10 @@ func (e *jsiiProxy_EcsInstanceV1) validatePutDataDisksParameters(value interface
 	return nil
 }
 
+func (e *jsiiProxy_EcsInstanceV1) validatePutMetadataParameters(value *EcsInstanceV1Metadata) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsInstanceV1) validatePutNicsParameters(value interface{}) error {
 	return nil
 }

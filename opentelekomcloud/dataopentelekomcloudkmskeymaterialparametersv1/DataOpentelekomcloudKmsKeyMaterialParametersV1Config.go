@@ -22,16 +22,16 @@ type DataOpentelekomcloudKmsKeyMaterialParametersV1Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/kms_key_material_parameters_v1#key_id DataOpentelekomcloudKmsKeyMaterialParametersV1#key_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/data-sources/kms_key_material_parameters_v1#key_id DataOpentelekomcloudKmsKeyMaterialParametersV1#key_id}.
 	KeyId *string `field:"required" json:"keyId" yaml:"keyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/kms_key_material_parameters_v1#wrapping_algorithm DataOpentelekomcloudKmsKeyMaterialParametersV1#wrapping_algorithm}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/data-sources/kms_key_material_parameters_v1#wrapping_algorithm DataOpentelekomcloudKmsKeyMaterialParametersV1#wrapping_algorithm}.
 	WrappingAlgorithm *string `field:"required" json:"wrappingAlgorithm" yaml:"wrappingAlgorithm"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/kms_key_material_parameters_v1#id DataOpentelekomcloudKmsKeyMaterialParametersV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/data-sources/kms_key_material_parameters_v1#id DataOpentelekomcloudKmsKeyMaterialParametersV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/kms_key_material_parameters_v1#sequence DataOpentelekomcloudKmsKeyMaterialParametersV1#sequence}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/data-sources/kms_key_material_parameters_v1#sequence DataOpentelekomcloudKmsKeyMaterialParametersV1#sequence}.
 	Sequence *string `field:"optional" json:"sequence" yaml:"sequence"`
 }
 

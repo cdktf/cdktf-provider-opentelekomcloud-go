@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/hss_hosts_v5 opentelekomcloud_hss_hosts_v5}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/data-sources/hss_hosts_v5 opentelekomcloud_hss_hosts_v5}.
 type DataOpentelekomcloudHssHostsV5 interface {
 	cdktf.TerraformDataSource
 	AgentStatus() *string
@@ -575,7 +575,7 @@ func (j *jsiiProxy_DataOpentelekomcloudHssHostsV5) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/hss_hosts_v5 opentelekomcloud_hss_hosts_v5} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/data-sources/hss_hosts_v5 opentelekomcloud_hss_hosts_v5} Data Source.
 func NewDataOpentelekomcloudHssHostsV5(scope constructs.Construct, id *string, config *DataOpentelekomcloudHssHostsV5Config) DataOpentelekomcloudHssHostsV5 {
 	_init_.Initialize()
 
@@ -593,7 +593,7 @@ func NewDataOpentelekomcloudHssHostsV5(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/data-sources/hss_hosts_v5 opentelekomcloud_hss_hosts_v5} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/data-sources/hss_hosts_v5 opentelekomcloud_hss_hosts_v5} Data Source.
 func NewDataOpentelekomcloudHssHostsV5_Override(d DataOpentelekomcloudHssHostsV5, scope constructs.Construct, id *string, config *DataOpentelekomcloudHssHostsV5Config) {
 	_init_.Initialize()
 

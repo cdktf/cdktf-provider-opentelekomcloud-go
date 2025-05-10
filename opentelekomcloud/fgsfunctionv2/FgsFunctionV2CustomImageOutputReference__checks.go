@@ -101,6 +101,22 @@ func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateResolveParam
 	return nil
 }
 
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetArgsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetCommandParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -191,6 +207,14 @@ func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetTerraform
 }
 
 func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetWorkingDirParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

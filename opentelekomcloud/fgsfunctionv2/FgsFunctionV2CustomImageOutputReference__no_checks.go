@@ -51,6 +51,14 @@ func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateResolveParam
 	return nil
 }
 
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetArgsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetCommandParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -72,6 +80,10 @@ func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetTerraform
 }
 
 func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetWorkingDirParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1}.
 type EcsInstanceV1 interface {
 	cdktf.TerraformResource
 	AutoRecovery() interface{}
@@ -66,6 +66,8 @@ type EcsInstanceV1 interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Metadata() EcsInstanceV1MetadataOutputReference
+	MetadataInput() *EcsInstanceV1Metadata
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -163,6 +165,7 @@ type EcsInstanceV1 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDataDisks(value interface{})
+	PutMetadata(value *EcsInstanceV1Metadata)
 	PutNics(value interface{})
 	PutOsSchedulerHints(value interface{})
 	PutTimeouts(value *EcsInstanceV1Timeouts)
@@ -172,6 +175,7 @@ type EcsInstanceV1 interface {
 	ResetDeleteDisksOnTermination()
 	ResetId()
 	ResetKeyName()
+	ResetMetadata()
 	ResetOsSchedulerHints()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -447,6 +451,26 @@ func (j *jsiiProxy_EcsInstanceV1) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsInstanceV1) Metadata() EcsInstanceV1MetadataOutputReference {
+	var returns EcsInstanceV1MetadataOutputReference
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsInstanceV1) MetadataInput() *EcsInstanceV1Metadata {
+	var returns *EcsInstanceV1Metadata
+	_jsii_.Get(
+		j,
+		"metadataInput",
 		&returns,
 	)
 	return returns
@@ -783,7 +807,7 @@ func (j *jsiiProxy_EcsInstanceV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource.
 func NewEcsInstanceV1(scope constructs.Construct, id *string, config *EcsInstanceV1Config) EcsInstanceV1 {
 	_init_.Initialize()
 
@@ -801,7 +825,7 @@ func NewEcsInstanceV1(scope constructs.Construct, id *string, config *EcsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource.
 func NewEcsInstanceV1_Override(e EcsInstanceV1, scope constructs.Construct, id *string, config *EcsInstanceV1Config) {
 	_init_.Initialize()
 
@@ -1420,6 +1444,17 @@ func (e *jsiiProxy_EcsInstanceV1) PutDataDisks(value interface{}) {
 	)
 }
 
+func (e *jsiiProxy_EcsInstanceV1) PutMetadata(value *EcsInstanceV1Metadata) {
+	if err := e.validatePutMetadataParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putMetadata",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsInstanceV1) PutNics(value interface{}) {
 	if err := e.validatePutNicsParameters(value); err != nil {
 		panic(err)
@@ -1497,6 +1532,14 @@ func (e *jsiiProxy_EcsInstanceV1) ResetKeyName() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetKeyName",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsInstanceV1) ResetMetadata() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMetadata",
 		nil, // no parameters
 	)
 }
