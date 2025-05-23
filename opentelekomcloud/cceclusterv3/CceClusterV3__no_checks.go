@@ -227,6 +227,10 @@ func (j *jsiiProxy_CceClusterV3) validateSetIgnoreCertificateUsersDataParameters
 	return nil
 }
 
+func (j *jsiiProxy_CceClusterV3) validateSetIpv6EnableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceClusterV3) validateSetKubeProxyModeParameters(val *string) error {
 	return nil
 }

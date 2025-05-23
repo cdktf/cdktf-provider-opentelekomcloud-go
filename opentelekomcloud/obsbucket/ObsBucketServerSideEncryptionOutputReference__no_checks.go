@@ -71,6 +71,10 @@ func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) validateSetKmsK
 	return nil
 }
 
+func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) validateSetKmsProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

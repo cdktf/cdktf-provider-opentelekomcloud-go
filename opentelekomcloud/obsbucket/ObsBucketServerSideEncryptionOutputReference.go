@@ -38,6 +38,9 @@ type ObsBucketServerSideEncryptionOutputReference interface {
 	KmsKeyId() *string
 	SetKmsKeyId(val *string)
 	KmsKeyIdInput() *string
+	KmsProjectId() *string
+	SetKmsProjectId(val *string)
+	KmsProjectIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type ObsBucketServerSideEncryptionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetKmsProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -175,6 +179,26 @@ func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) KmsKeyIdInput()
 	return returns
 }
 
+func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) KmsProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsProjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) KmsProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsProjectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -274,6 +298,17 @@ func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference)SetKmsKeyId(val 
 	_jsii_.Set(
 		j,
 		"kmsKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObsBucketServerSideEncryptionOutputReference)SetKmsProjectId(val *string) {
+	if err := j.validateSetKmsProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsProjectId",
 		val,
 	)
 }
@@ -484,6 +519,14 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) ResetKmsProjectId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetKmsProjectId",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
 type CceClusterV3 interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -134,6 +134,9 @@ type CceClusterV3 interface {
 	IgnoreCertificateUsersDataInput() interface{}
 	InstalledAddons() *[]*string
 	Internal() *string
+	Ipv6Enable() interface{}
+	SetIpv6Enable(val interface{})
+	Ipv6EnableInput() interface{}
 	KubeProxyMode() *string
 	SetKubeProxyMode(val *string)
 	KubeProxyModeInput() *string
@@ -269,6 +272,7 @@ type CceClusterV3 interface {
 	ResetIgnoreAddons()
 	ResetIgnoreCertificateClustersData()
 	ResetIgnoreCertificateUsersData()
+	ResetIpv6Enable()
 	ResetKubeProxyMode()
 	ResetKubernetesSvcIpRange()
 	ResetLabels()
@@ -1040,6 +1044,26 @@ func (j *jsiiProxy_CceClusterV3) Internal() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CceClusterV3) Ipv6Enable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipv6Enable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) Ipv6EnableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipv6EnableInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CceClusterV3) KubeProxyMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1411,7 +1435,7 @@ func (j *jsiiProxy_CceClusterV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV3Config) CceClusterV3 {
 	_init_.Initialize()
 
@@ -1429,7 +1453,7 @@ func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3_Override(c CceClusterV3, scope constructs.Construct, id *string, config *CceClusterV3Config) {
 	_init_.Initialize()
 
@@ -1793,6 +1817,17 @@ func (j *jsiiProxy_CceClusterV3)SetIgnoreCertificateUsersData(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ignoreCertificateUsersData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetIpv6Enable(val interface{}) {
+	if err := j.validateSetIpv6EnableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Enable",
 		val,
 	)
 }
@@ -2546,6 +2581,14 @@ func (c *jsiiProxy_CceClusterV3) ResetIgnoreCertificateUsersData() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIgnoreCertificateUsersData",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetIpv6Enable() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpv6Enable",
 		nil, // no parameters
 	)
 }

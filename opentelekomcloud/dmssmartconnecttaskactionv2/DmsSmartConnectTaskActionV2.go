@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dms_smart_connect_task_action_v2 opentelekomcloud_dms_smart_connect_task_action_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/dms_smart_connect_task_action_v2 opentelekomcloud_dms_smart_connect_task_action_v2}.
 type DmsSmartConnectTaskActionV2 interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DmsSmartConnectTaskActionV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dms_smart_connect_task_action_v2 opentelekomcloud_dms_smart_connect_task_action_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/dms_smart_connect_task_action_v2 opentelekomcloud_dms_smart_connect_task_action_v2} Resource.
 func NewDmsSmartConnectTaskActionV2(scope constructs.Construct, id *string, config *DmsSmartConnectTaskActionV2Config) DmsSmartConnectTaskActionV2 {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewDmsSmartConnectTaskActionV2(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dms_smart_connect_task_action_v2 opentelekomcloud_dms_smart_connect_task_action_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/dms_smart_connect_task_action_v2 opentelekomcloud_dms_smart_connect_task_action_v2} Resource.
 func NewDmsSmartConnectTaskActionV2_Override(d DmsSmartConnectTaskActionV2, scope constructs.Construct, id *string, config *DmsSmartConnectTaskActionV2Config) {
 	_init_.Initialize()
 

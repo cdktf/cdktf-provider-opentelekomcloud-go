@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/lts_transfer_v2 opentelekomcloud_lts_transfer_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/lts_transfer_v2 opentelekomcloud_lts_transfer_v2}.
 type LtsTransferV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_LtsTransferV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/lts_transfer_v2 opentelekomcloud_lts_transfer_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/lts_transfer_v2 opentelekomcloud_lts_transfer_v2} Resource.
 func NewLtsTransferV2(scope constructs.Construct, id *string, config *LtsTransferV2Config) LtsTransferV2 {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewLtsTransferV2(scope constructs.Construct, id *string, config *LtsTransfe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/lts_transfer_v2 opentelekomcloud_lts_transfer_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/lts_transfer_v2 opentelekomcloud_lts_transfer_v2} Resource.
 func NewLtsTransferV2_Override(l LtsTransferV2, scope constructs.Construct, id *string, config *LtsTransferV2Config) {
 	_init_.Initialize()
 
