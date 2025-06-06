@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/lts_group_v2 opentelekomcloud_lts_group_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_group_v2 opentelekomcloud_lts_group_v2}.
 type LtsGroupV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_LtsGroupV2) TtlInDaysInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/lts_group_v2 opentelekomcloud_lts_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_group_v2 opentelekomcloud_lts_group_v2} Resource.
 func NewLtsGroupV2(scope constructs.Construct, id *string, config *LtsGroupV2Config) LtsGroupV2 {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewLtsGroupV2(scope constructs.Construct, id *string, config *LtsGroupV2Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/lts_group_v2 opentelekomcloud_lts_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_group_v2 opentelekomcloud_lts_group_v2} Resource.
 func NewLtsGroupV2_Override(l LtsGroupV2, scope constructs.Construct, id *string, config *LtsGroupV2Config) {
 	_init_.Initialize()
 

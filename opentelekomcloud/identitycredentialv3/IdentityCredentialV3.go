@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/identity_credential_v3 opentelekomcloud_identity_credential_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/identity_credential_v3 opentelekomcloud_identity_credential_v3}.
 type IdentityCredentialV3 interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_IdentityCredentialV3) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/identity_credential_v3 opentelekomcloud_identity_credential_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/identity_credential_v3 opentelekomcloud_identity_credential_v3} Resource.
 func NewIdentityCredentialV3(scope constructs.Construct, id *string, config *IdentityCredentialV3Config) IdentityCredentialV3 {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewIdentityCredentialV3(scope constructs.Construct, id *string, config *Ide
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/identity_credential_v3 opentelekomcloud_identity_credential_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/identity_credential_v3 opentelekomcloud_identity_credential_v3} Resource.
 func NewIdentityCredentialV3_Override(i IdentityCredentialV3, scope constructs.Construct, id *string, config *IdentityCredentialV3Config) {
 	_init_.Initialize()
 

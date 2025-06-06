@@ -5,7 +5,7 @@ package cfwfirewallv1
 
 
 type CfwFirewallV1ChargeInfo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_firewall_v1#charge_mode CfwFirewallV1#charge_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_firewall_v1#charge_mode CfwFirewallV1#charge_mode}.
 	ChargeMode *string `field:"required" json:"chargeMode" yaml:"chargeMode"`
 }
 

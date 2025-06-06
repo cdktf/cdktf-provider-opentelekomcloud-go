@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/data-sources/enterprise_vpn_customer_gateway_v5 opentelekomcloud_enterprise_vpn_customer_gateway_v5}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/data-sources/enterprise_vpn_customer_gateway_v5 opentelekomcloud_enterprise_vpn_customer_gateway_v5}.
 type DataOpentelekomcloudEnterpriseVpnCustomerGatewayV5 interface {
 	cdktf.TerraformDataSource
 	Asn() *float64
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataOpentelekomcloudEnterpriseVpnCustomerGatewayV5) UpdatedAt
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/data-sources/enterprise_vpn_customer_gateway_v5 opentelekomcloud_enterprise_vpn_customer_gateway_v5} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/data-sources/enterprise_vpn_customer_gateway_v5 opentelekomcloud_enterprise_vpn_customer_gateway_v5} Data Source.
 func NewDataOpentelekomcloudEnterpriseVpnCustomerGatewayV5(scope constructs.Construct, id *string, config *DataOpentelekomcloudEnterpriseVpnCustomerGatewayV5Config) DataOpentelekomcloudEnterpriseVpnCustomerGatewayV5 {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataOpentelekomcloudEnterpriseVpnCustomerGatewayV5(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/data-sources/enterprise_vpn_customer_gateway_v5 opentelekomcloud_enterprise_vpn_customer_gateway_v5} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/data-sources/enterprise_vpn_customer_gateway_v5 opentelekomcloud_enterprise_vpn_customer_gateway_v5} Data Source.
 func NewDataOpentelekomcloudEnterpriseVpnCustomerGatewayV5_Override(d DataOpentelekomcloudEnterpriseVpnCustomerGatewayV5, scope constructs.Construct, id *string, config *DataOpentelekomcloudEnterpriseVpnCustomerGatewayV5Config) {
 	_init_.Initialize()
 

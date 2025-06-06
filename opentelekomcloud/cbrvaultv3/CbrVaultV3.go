@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3}.
 type CbrVaultV3 interface {
 	cdktf.TerraformResource
 	AutoBind() interface{}
@@ -592,7 +592,7 @@ func (j *jsiiProxy_CbrVaultV3) UserId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource.
 func NewCbrVaultV3(scope constructs.Construct, id *string, config *CbrVaultV3Config) CbrVaultV3 {
 	_init_.Initialize()
 
@@ -610,7 +610,7 @@ func NewCbrVaultV3(scope constructs.Construct, id *string, config *CbrVaultV3Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource.
 func NewCbrVaultV3_Override(c CbrVaultV3, scope constructs.Construct, id *string, config *CbrVaultV3Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication}.
 type ObsBucketReplication interface {
 	cdktf.TerraformResource
 	Agency() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_ObsBucketReplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication} Resource.
 func NewObsBucketReplication(scope constructs.Construct, id *string, config *ObsBucketReplicationConfig) ObsBucketReplication {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewObsBucketReplication(scope constructs.Construct, id *string, config *Obs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication} Resource.
 func NewObsBucketReplication_Override(o ObsBucketReplication, scope constructs.Construct, id *string, config *ObsBucketReplicationConfig) {
 	_init_.Initialize()
 

@@ -5,11 +5,11 @@ package cfwdomainnamegroupv1
 
 
 type CfwDomainNameGroupV1Timeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#create CfwDomainNameGroupV1#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#create CfwDomainNameGroupV1#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#delete CfwDomainNameGroupV1#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#delete CfwDomainNameGroupV1#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#update CfwDomainNameGroupV1#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#update CfwDomainNameGroupV1#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

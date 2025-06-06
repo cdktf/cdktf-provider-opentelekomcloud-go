@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/apigw_application_authorization_v2 opentelekomcloud_apigw_application_authorization_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/apigw_application_authorization_v2 opentelekomcloud_apigw_application_authorization_v2}.
 type ApigwApplicationAuthorizationV2 interface {
 	cdktf.TerraformResource
 	ApiIds() *[]*string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_ApigwApplicationAuthorizationV2) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/apigw_application_authorization_v2 opentelekomcloud_apigw_application_authorization_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/apigw_application_authorization_v2 opentelekomcloud_apigw_application_authorization_v2} Resource.
 func NewApigwApplicationAuthorizationV2(scope constructs.Construct, id *string, config *ApigwApplicationAuthorizationV2Config) ApigwApplicationAuthorizationV2 {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewApigwApplicationAuthorizationV2(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/apigw_application_authorization_v2 opentelekomcloud_apigw_application_authorization_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/apigw_application_authorization_v2 opentelekomcloud_apigw_application_authorization_v2} Resource.
 func NewApigwApplicationAuthorizationV2_Override(a ApigwApplicationAuthorizationV2, scope constructs.Construct, id *string, config *ApigwApplicationAuthorizationV2Config) {
 	_init_.Initialize()
 
