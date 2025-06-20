@@ -35,6 +35,10 @@ type EcsInstanceV1NicsOutputReference interface {
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
+	Ipv6Address() *string
+	Ipv6Enable() interface{}
+	SetIpv6Enable(val interface{})
+	Ipv6EnableInput() interface{}
 	MacAddress() *string
 	NetworkId() *string
 	SetNetworkId(val *string)
@@ -74,6 +78,7 @@ type EcsInstanceV1NicsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIpAddress()
+	ResetIpv6Enable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -154,6 +159,36 @@ func (j *jsiiProxy_EcsInstanceV1NicsOutputReference) IpAddressInput() *string {
 	_jsii_.Get(
 		j,
 		"ipAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsInstanceV1NicsOutputReference) Ipv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsInstanceV1NicsOutputReference) Ipv6Enable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipv6Enable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsInstanceV1NicsOutputReference) Ipv6EnableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipv6EnableInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +332,17 @@ func (j *jsiiProxy_EcsInstanceV1NicsOutputReference)SetIpAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"ipAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsInstanceV1NicsOutputReference)SetIpv6Enable(val interface{}) {
+	if err := j.validateSetIpv6EnableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Enable",
 		val,
 	)
 }
@@ -524,6 +570,14 @@ func (e *jsiiProxy_EcsInstanceV1NicsOutputReference) ResetIpAddress() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetIpAddress",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsInstanceV1NicsOutputReference) ResetIpv6Enable() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetIpv6Enable",
 		nil, // no parameters
 	)
 }

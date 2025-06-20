@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dms_reassign_partitions_v2 opentelekomcloud_dms_reassign_partitions_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dms_reassign_partitions_v2 opentelekomcloud_dms_reassign_partitions_v2}.
 type DmsReassignPartitionsV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_DmsReassignPartitionsV2) TimeEstimateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dms_reassign_partitions_v2 opentelekomcloud_dms_reassign_partitions_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dms_reassign_partitions_v2 opentelekomcloud_dms_reassign_partitions_v2} Resource.
 func NewDmsReassignPartitionsV2(scope constructs.Construct, id *string, config *DmsReassignPartitionsV2Config) DmsReassignPartitionsV2 {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewDmsReassignPartitionsV2(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dms_reassign_partitions_v2 opentelekomcloud_dms_reassign_partitions_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dms_reassign_partitions_v2 opentelekomcloud_dms_reassign_partitions_v2} Resource.
 func NewDmsReassignPartitionsV2_Override(d DmsReassignPartitionsV2, scope constructs.Construct, id *string, config *DmsReassignPartitionsV2Config) {
 	_init_.Initialize()
 

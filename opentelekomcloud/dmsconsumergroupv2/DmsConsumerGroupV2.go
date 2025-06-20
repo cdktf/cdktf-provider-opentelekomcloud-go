@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dms_consumer_group_v2 opentelekomcloud_dms_consumer_group_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dms_consumer_group_v2 opentelekomcloud_dms_consumer_group_v2}.
 type DmsConsumerGroupV2 interface {
 	cdktf.TerraformResource
 	AssignmentStrategy() *string
@@ -446,7 +446,7 @@ func (j *jsiiProxy_DmsConsumerGroupV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dms_consumer_group_v2 opentelekomcloud_dms_consumer_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dms_consumer_group_v2 opentelekomcloud_dms_consumer_group_v2} Resource.
 func NewDmsConsumerGroupV2(scope constructs.Construct, id *string, config *DmsConsumerGroupV2Config) DmsConsumerGroupV2 {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewDmsConsumerGroupV2(scope constructs.Construct, id *string, config *DmsCo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dms_consumer_group_v2 opentelekomcloud_dms_consumer_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dms_consumer_group_v2 opentelekomcloud_dms_consumer_group_v2} Resource.
 func NewDmsConsumerGroupV2_Override(d DmsConsumerGroupV2, scope constructs.Construct, id *string, config *DmsConsumerGroupV2Config) {
 	_init_.Initialize()
 

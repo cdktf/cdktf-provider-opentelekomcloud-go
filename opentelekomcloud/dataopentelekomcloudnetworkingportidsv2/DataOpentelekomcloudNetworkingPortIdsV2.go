@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/data-sources/networking_port_ids_v2 opentelekomcloud_networking_port_ids_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/networking_port_ids_v2 opentelekomcloud_networking_port_ids_v2}.
 type DataOpentelekomcloudNetworkingPortIdsV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -588,7 +588,7 @@ func (j *jsiiProxy_DataOpentelekomcloudNetworkingPortIdsV2) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/data-sources/networking_port_ids_v2 opentelekomcloud_networking_port_ids_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/networking_port_ids_v2 opentelekomcloud_networking_port_ids_v2} Data Source.
 func NewDataOpentelekomcloudNetworkingPortIdsV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudNetworkingPortIdsV2Config) DataOpentelekomcloudNetworkingPortIdsV2 {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewDataOpentelekomcloudNetworkingPortIdsV2(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/data-sources/networking_port_ids_v2 opentelekomcloud_networking_port_ids_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/networking_port_ids_v2 opentelekomcloud_networking_port_ids_v2} Data Source.
 func NewDataOpentelekomcloudNetworkingPortIdsV2_Override(d DataOpentelekomcloudNetworkingPortIdsV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudNetworkingPortIdsV2Config) {
 	_init_.Initialize()
 

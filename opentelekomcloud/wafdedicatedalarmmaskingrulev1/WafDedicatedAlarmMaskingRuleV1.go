@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1}.
 type WafDedicatedAlarmMaskingRuleV1 interface {
 	cdktf.TerraformResource
 	AdvancedSettings() WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
@@ -496,7 +496,7 @@ func (j *jsiiProxy_WafDedicatedAlarmMaskingRuleV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource.
 func NewWafDedicatedAlarmMaskingRuleV1(scope constructs.Construct, id *string, config *WafDedicatedAlarmMaskingRuleV1Config) WafDedicatedAlarmMaskingRuleV1 {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewWafDedicatedAlarmMaskingRuleV1(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource.
 func NewWafDedicatedAlarmMaskingRuleV1_Override(w WafDedicatedAlarmMaskingRuleV1, scope constructs.Construct, id *string, config *WafDedicatedAlarmMaskingRuleV1Config) {
 	_init_.Initialize()
 

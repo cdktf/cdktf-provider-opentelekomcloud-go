@@ -67,6 +67,10 @@ func (j *jsiiProxy_EcsInstanceV1NicsOutputReference) validateSetIpAddressParamet
 	return nil
 }
 
+func (j *jsiiProxy_EcsInstanceV1NicsOutputReference) validateSetIpv6EnableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsInstanceV1NicsOutputReference) validateSetNetworkIdParameters(val *string) error {
 	return nil
 }

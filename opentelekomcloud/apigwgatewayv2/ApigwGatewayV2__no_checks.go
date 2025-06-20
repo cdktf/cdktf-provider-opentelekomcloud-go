@@ -119,6 +119,10 @@ func (j *jsiiProxy_ApigwGatewayV2) validateSetDescriptionParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_ApigwGatewayV2) validateSetEnterpriseProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigwGatewayV2) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -22,18 +22,18 @@ type NetworkingRouterRouteV2Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}.
 	DestinationCidr *string `field:"required" json:"destinationCidr" yaml:"destinationCidr"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}.
 	NextHop *string `field:"required" json:"nextHop" yaml:"nextHop"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}.
 	RouterId *string `field:"required" json:"routerId" yaml:"routerId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#id NetworkingRouterRouteV2#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#id NetworkingRouterRouteV2#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#region NetworkingRouterRouteV2#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#region NetworkingRouterRouteV2#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

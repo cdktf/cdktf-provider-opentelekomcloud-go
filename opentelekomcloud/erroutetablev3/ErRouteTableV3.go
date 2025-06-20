@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3}.
 type ErRouteTableV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -494,7 +494,7 @@ func (j *jsiiProxy_ErRouteTableV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3} Resource.
 func NewErRouteTableV3(scope constructs.Construct, id *string, config *ErRouteTableV3Config) ErRouteTableV3 {
 	_init_.Initialize()
 
@@ -512,7 +512,7 @@ func NewErRouteTableV3(scope constructs.Construct, id *string, config *ErRouteTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3} Resource.
 func NewErRouteTableV3_Override(e ErRouteTableV3, scope constructs.Construct, id *string, config *ErRouteTableV3Config) {
 	_init_.Initialize()
 

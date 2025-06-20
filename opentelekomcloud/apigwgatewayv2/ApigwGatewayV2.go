@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2}.
 type ApigwGatewayV2 interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -43,6 +43,9 @@ type ApigwGatewayV2 interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnterpriseProjectId() *string
+	SetEnterpriseProjectId(val *string)
+	EnterpriseProjectIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -161,6 +164,7 @@ type ApigwGatewayV2 interface {
 	ResetBandwidthChargingMode()
 	ResetBandwidthSize()
 	ResetDescription()
+	ResetEnterpriseProjectId()
 	ResetId()
 	ResetIngressBandwidthChargingMode()
 	ResetIngressBandwidthSize()
@@ -313,6 +317,26 @@ func (j *jsiiProxy_ApigwGatewayV2) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigwGatewayV2) EnterpriseProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enterpriseProjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigwGatewayV2) EnterpriseProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enterpriseProjectIdInput",
 		&returns,
 	)
 	return returns
@@ -739,7 +763,7 @@ func (j *jsiiProxy_ApigwGatewayV2) VpcIngressAddress() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2} Resource.
 func NewApigwGatewayV2(scope constructs.Construct, id *string, config *ApigwGatewayV2Config) ApigwGatewayV2 {
 	_init_.Initialize()
 
@@ -757,7 +781,7 @@ func NewApigwGatewayV2(scope constructs.Construct, id *string, config *ApigwGate
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2} Resource.
 func NewApigwGatewayV2_Override(a ApigwGatewayV2, scope constructs.Construct, id *string, config *ApigwGatewayV2Config) {
 	_init_.Initialize()
 
@@ -838,6 +862,17 @@ func (j *jsiiProxy_ApigwGatewayV2)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApigwGatewayV2)SetEnterpriseProjectId(val *string) {
+	if err := j.validateSetEnterpriseProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enterpriseProjectId",
 		val,
 	)
 }
@@ -1374,6 +1409,14 @@ func (a *jsiiProxy_ApigwGatewayV2) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApigwGatewayV2) ResetEnterpriseProjectId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnterpriseProjectId",
 		nil, // no parameters
 	)
 }

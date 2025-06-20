@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/data-sources/rms_advanced_query_schemas_v1 opentelekomcloud_rms_advanced_query_schemas_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/rms_advanced_query_schemas_v1 opentelekomcloud_rms_advanced_query_schemas_v1}.
 type DataOpentelekomcloudRmsAdvancedQuerySchemasV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRmsAdvancedQuerySchemasV1) TypeInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/data-sources/rms_advanced_query_schemas_v1 opentelekomcloud_rms_advanced_query_schemas_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/rms_advanced_query_schemas_v1 opentelekomcloud_rms_advanced_query_schemas_v1} Data Source.
 func NewDataOpentelekomcloudRmsAdvancedQuerySchemasV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudRmsAdvancedQuerySchemasV1Config) DataOpentelekomcloudRmsAdvancedQuerySchemasV1 {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataOpentelekomcloudRmsAdvancedQuerySchemasV1(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/data-sources/rms_advanced_query_schemas_v1 opentelekomcloud_rms_advanced_query_schemas_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/rms_advanced_query_schemas_v1 opentelekomcloud_rms_advanced_query_schemas_v1} Data Source.
 func NewDataOpentelekomcloudRmsAdvancedQuerySchemasV1_Override(d DataOpentelekomcloudRmsAdvancedQuerySchemasV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudRmsAdvancedQuerySchemasV1Config) {
 	_init_.Initialize()
 

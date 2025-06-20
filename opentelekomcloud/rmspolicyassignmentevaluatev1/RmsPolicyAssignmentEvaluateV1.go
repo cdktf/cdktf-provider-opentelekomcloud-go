@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/rms_policy_assignment_evaluate_v1 opentelekomcloud_rms_policy_assignment_evaluate_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/rms_policy_assignment_evaluate_v1 opentelekomcloud_rms_policy_assignment_evaluate_v1}.
 type RmsPolicyAssignmentEvaluateV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_RmsPolicyAssignmentEvaluateV1) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/rms_policy_assignment_evaluate_v1 opentelekomcloud_rms_policy_assignment_evaluate_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/rms_policy_assignment_evaluate_v1 opentelekomcloud_rms_policy_assignment_evaluate_v1} Resource.
 func NewRmsPolicyAssignmentEvaluateV1(scope constructs.Construct, id *string, config *RmsPolicyAssignmentEvaluateV1Config) RmsPolicyAssignmentEvaluateV1 {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewRmsPolicyAssignmentEvaluateV1(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/rms_policy_assignment_evaluate_v1 opentelekomcloud_rms_policy_assignment_evaluate_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/rms_policy_assignment_evaluate_v1 opentelekomcloud_rms_policy_assignment_evaluate_v1} Resource.
 func NewRmsPolicyAssignmentEvaluateV1_Override(r RmsPolicyAssignmentEvaluateV1, scope constructs.Construct, id *string, config *RmsPolicyAssignmentEvaluateV1Config) {
 	_init_.Initialize()
 

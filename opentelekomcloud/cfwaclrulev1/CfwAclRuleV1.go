@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_acl_rule_v1 opentelekomcloud_cfw_acl_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cfw_acl_rule_v1 opentelekomcloud_cfw_acl_rule_v1}.
 type CfwAclRuleV1 interface {
 	cdktf.TerraformResource
 	ActionType() *float64
@@ -788,7 +788,7 @@ func (j *jsiiProxy_CfwAclRuleV1) TypeInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_acl_rule_v1 opentelekomcloud_cfw_acl_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cfw_acl_rule_v1 opentelekomcloud_cfw_acl_rule_v1} Resource.
 func NewCfwAclRuleV1(scope constructs.Construct, id *string, config *CfwAclRuleV1Config) CfwAclRuleV1 {
 	_init_.Initialize()
 
@@ -806,7 +806,7 @@ func NewCfwAclRuleV1(scope constructs.Construct, id *string, config *CfwAclRuleV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_acl_rule_v1 opentelekomcloud_cfw_acl_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cfw_acl_rule_v1 opentelekomcloud_cfw_acl_rule_v1} Resource.
 func NewCfwAclRuleV1_Override(c CfwAclRuleV1, scope constructs.Construct, id *string, config *CfwAclRuleV1Config) {
 	_init_.Initialize()
 
