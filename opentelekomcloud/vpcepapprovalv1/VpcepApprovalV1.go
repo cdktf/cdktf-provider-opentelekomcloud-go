@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/vpcep_approval_v1 opentelekomcloud_vpcep_approval_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/vpcep_approval_v1 opentelekomcloud_vpcep_approval_v1}.
 type VpcepApprovalV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_VpcepApprovalV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/vpcep_approval_v1 opentelekomcloud_vpcep_approval_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/vpcep_approval_v1 opentelekomcloud_vpcep_approval_v1} Resource.
 func NewVpcepApprovalV1(scope constructs.Construct, id *string, config *VpcepApprovalV1Config) VpcepApprovalV1 {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewVpcepApprovalV1(scope constructs.Construct, id *string, config *VpcepApp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/vpcep_approval_v1 opentelekomcloud_vpcep_approval_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/vpcep_approval_v1 opentelekomcloud_vpcep_approval_v1} Resource.
 func NewVpcepApprovalV1_Override(v VpcepApprovalV1, scope constructs.Construct, id *string, config *VpcepApprovalV1Config) {
 	_init_.Initialize()
 

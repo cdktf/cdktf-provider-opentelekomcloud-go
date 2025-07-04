@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/vpc_route_tables_v1 opentelekomcloud_vpc_route_tables_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/vpc_route_tables_v1 opentelekomcloud_vpc_route_tables_v1}.
 type DataOpentelekomcloudVpcRouteTablesV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcRouteTablesV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/vpc_route_tables_v1 opentelekomcloud_vpc_route_tables_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/vpc_route_tables_v1 opentelekomcloud_vpc_route_tables_v1} Data Source.
 func NewDataOpentelekomcloudVpcRouteTablesV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcRouteTablesV1Config) DataOpentelekomcloudVpcRouteTablesV1 {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataOpentelekomcloudVpcRouteTablesV1(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/vpc_route_tables_v1 opentelekomcloud_vpc_route_tables_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/vpc_route_tables_v1 opentelekomcloud_vpc_route_tables_v1} Data Source.
 func NewDataOpentelekomcloudVpcRouteTablesV1_Override(d DataOpentelekomcloudVpcRouteTablesV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcRouteTablesV1Config) {
 	_init_.Initialize()
 

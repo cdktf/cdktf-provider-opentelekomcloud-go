@@ -22,22 +22,22 @@ type CfwIpsProtectionV1Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cfw_ips_protection_v1#feature_status CfwIpsProtectionV1#feature_status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_ips_protection_v1#feature_status CfwIpsProtectionV1#feature_status}.
 	FeatureStatus *float64 `field:"required" json:"featureStatus" yaml:"featureStatus"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cfw_ips_protection_v1#mode CfwIpsProtectionV1#mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_ips_protection_v1#mode CfwIpsProtectionV1#mode}.
 	Mode *float64 `field:"required" json:"mode" yaml:"mode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cfw_ips_protection_v1#object_id CfwIpsProtectionV1#object_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_ips_protection_v1#object_id CfwIpsProtectionV1#object_id}.
 	ObjectId *string `field:"required" json:"objectId" yaml:"objectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cfw_ips_protection_v1#id CfwIpsProtectionV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_ips_protection_v1#id CfwIpsProtectionV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cfw_ips_protection_v1#ips_type CfwIpsProtectionV1#ips_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_ips_protection_v1#ips_type CfwIpsProtectionV1#ips_type}.
 	IpsType *float64 `field:"optional" json:"ipsType" yaml:"ipsType"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cfw_ips_protection_v1#timeouts CfwIpsProtectionV1#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_ips_protection_v1#timeouts CfwIpsProtectionV1#timeouts}
 	Timeouts *CfwIpsProtectionV1Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

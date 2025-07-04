@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs opentelekomcloud}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs opentelekomcloud}.
 type OpentelekomcloudProvider interface {
 	cdktf.TerraformProvider
 	AccessKey() *string
@@ -858,7 +858,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs opentelekomcloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs opentelekomcloud} Resource.
 func NewOpentelekomcloudProvider(scope constructs.Construct, id *string, config *OpentelekomcloudProviderConfig) OpentelekomcloudProvider {
 	_init_.Initialize()
 
@@ -876,7 +876,7 @@ func NewOpentelekomcloudProvider(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs opentelekomcloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs opentelekomcloud} Resource.
 func NewOpentelekomcloudProvider_Override(o OpentelekomcloudProvider, scope constructs.Construct, id *string, config *OpentelekomcloudProviderConfig) {
 	_init_.Initialize()
 

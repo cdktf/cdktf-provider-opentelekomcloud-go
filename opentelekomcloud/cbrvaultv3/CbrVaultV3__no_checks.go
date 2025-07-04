@@ -139,6 +139,10 @@ func (j *jsiiProxy_CbrVaultV3) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
+func (j *jsiiProxy_CbrVaultV3) validateSetLockedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CbrVaultV3) validateSetNameParameters(val *string) error {
 	return nil
 }

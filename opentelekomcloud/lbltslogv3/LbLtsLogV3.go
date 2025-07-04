@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lb_lts_log_v3 opentelekomcloud_lb_lts_log_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lb_lts_log_v3 opentelekomcloud_lb_lts_log_v3}.
 type LbLtsLogV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_LbLtsLogV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lb_lts_log_v3 opentelekomcloud_lb_lts_log_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lb_lts_log_v3 opentelekomcloud_lb_lts_log_v3} Resource.
 func NewLbLtsLogV3(scope constructs.Construct, id *string, config *LbLtsLogV3Config) LbLtsLogV3 {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewLbLtsLogV3(scope constructs.Construct, id *string, config *LbLtsLogV3Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lb_lts_log_v3 opentelekomcloud_lb_lts_log_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lb_lts_log_v3 opentelekomcloud_lb_lts_log_v3} Resource.
 func NewLbLtsLogV3_Override(l LbLtsLogV3, scope constructs.Construct, id *string, config *LbLtsLogV3Config) {
 	_init_.Initialize()
 

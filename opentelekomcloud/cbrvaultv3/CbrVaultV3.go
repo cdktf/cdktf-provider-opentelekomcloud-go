@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3}.
 type CbrVaultV3 interface {
 	cdktf.TerraformResource
 	AutoBind() interface{}
@@ -66,6 +66,9 @@ type CbrVaultV3 interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Locked() interface{}
+	SetLocked(val interface{})
+	LockedInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -148,6 +151,7 @@ type CbrVaultV3 interface {
 	ResetDescription()
 	ResetEnterpriseProjectId()
 	ResetId()
+	ResetLocked()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -431,6 +435,26 @@ func (j *jsiiProxy_CbrVaultV3) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_CbrVaultV3) Locked() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"locked",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CbrVaultV3) LockedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lockedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CbrVaultV3) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -592,7 +616,7 @@ func (j *jsiiProxy_CbrVaultV3) UserId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource.
 func NewCbrVaultV3(scope constructs.Construct, id *string, config *CbrVaultV3Config) CbrVaultV3 {
 	_init_.Initialize()
 
@@ -610,7 +634,7 @@ func NewCbrVaultV3(scope constructs.Construct, id *string, config *CbrVaultV3Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource.
 func NewCbrVaultV3_Override(c CbrVaultV3, scope constructs.Construct, id *string, config *CbrVaultV3Config) {
 	_init_.Initialize()
 
@@ -732,6 +756,17 @@ func (j *jsiiProxy_CbrVaultV3)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CbrVaultV3)SetLocked(val interface{}) {
+	if err := j.validateSetLockedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"locked",
 		val,
 	)
 }
@@ -1215,6 +1250,14 @@ func (c *jsiiProxy_CbrVaultV3) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CbrVaultV3) ResetLocked() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLocked",
 		nil, // no parameters
 	)
 }

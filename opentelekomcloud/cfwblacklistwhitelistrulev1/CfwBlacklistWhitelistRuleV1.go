@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cfw_blacklist_whitelist_rule_v1 opentelekomcloud_cfw_blacklist_whitelist_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_blacklist_whitelist_rule_v1 opentelekomcloud_cfw_blacklist_whitelist_rule_v1}.
 type CfwBlacklistWhitelistRuleV1 interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -506,7 +506,7 @@ func (j *jsiiProxy_CfwBlacklistWhitelistRuleV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cfw_blacklist_whitelist_rule_v1 opentelekomcloud_cfw_blacklist_whitelist_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_blacklist_whitelist_rule_v1 opentelekomcloud_cfw_blacklist_whitelist_rule_v1} Resource.
 func NewCfwBlacklistWhitelistRuleV1(scope constructs.Construct, id *string, config *CfwBlacklistWhitelistRuleV1Config) CfwBlacklistWhitelistRuleV1 {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewCfwBlacklistWhitelistRuleV1(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cfw_blacklist_whitelist_rule_v1 opentelekomcloud_cfw_blacklist_whitelist_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_blacklist_whitelist_rule_v1 opentelekomcloud_cfw_blacklist_whitelist_rule_v1} Resource.
 func NewCfwBlacklistWhitelistRuleV1_Override(c CfwBlacklistWhitelistRuleV1, scope constructs.Construct, id *string, config *CfwBlacklistWhitelistRuleV1Config) {
 	_init_.Initialize()
 

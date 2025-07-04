@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/waf_dedicated_blacklist_rule_v1 opentelekomcloud_waf_dedicated_blacklist_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/waf_dedicated_blacklist_rule_v1 opentelekomcloud_waf_dedicated_blacklist_rule_v1}.
 type WafDedicatedBlacklistRuleV1 interface {
 	cdktf.TerraformResource
 	Action() *float64
@@ -497,7 +497,7 @@ func (j *jsiiProxy_WafDedicatedBlacklistRuleV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/waf_dedicated_blacklist_rule_v1 opentelekomcloud_waf_dedicated_blacklist_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/waf_dedicated_blacklist_rule_v1 opentelekomcloud_waf_dedicated_blacklist_rule_v1} Resource.
 func NewWafDedicatedBlacklistRuleV1(scope constructs.Construct, id *string, config *WafDedicatedBlacklistRuleV1Config) WafDedicatedBlacklistRuleV1 {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewWafDedicatedBlacklistRuleV1(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/waf_dedicated_blacklist_rule_v1 opentelekomcloud_waf_dedicated_blacklist_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/waf_dedicated_blacklist_rule_v1 opentelekomcloud_waf_dedicated_blacklist_rule_v1} Resource.
 func NewWafDedicatedBlacklistRuleV1_Override(w WafDedicatedBlacklistRuleV1, scope constructs.Construct, id *string, config *WafDedicatedBlacklistRuleV1Config) {
 	_init_.Initialize()
 

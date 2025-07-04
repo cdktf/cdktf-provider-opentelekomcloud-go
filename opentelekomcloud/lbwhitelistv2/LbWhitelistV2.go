@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lb_whitelist_v2 opentelekomcloud_lb_whitelist_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lb_whitelist_v2 opentelekomcloud_lb_whitelist_v2}.
 type LbWhitelistV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_LbWhitelistV2) WhitelistInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lb_whitelist_v2 opentelekomcloud_lb_whitelist_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lb_whitelist_v2 opentelekomcloud_lb_whitelist_v2} Resource.
 func NewLbWhitelistV2(scope constructs.Construct, id *string, config *LbWhitelistV2Config) LbWhitelistV2 {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewLbWhitelistV2(scope constructs.Construct, id *string, config *LbWhitelis
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lb_whitelist_v2 opentelekomcloud_lb_whitelist_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lb_whitelist_v2 opentelekomcloud_lb_whitelist_v2} Resource.
 func NewLbWhitelistV2_Override(l LbWhitelistV2, scope constructs.Construct, id *string, config *LbWhitelistV2Config) {
 	_init_.Initialize()
 

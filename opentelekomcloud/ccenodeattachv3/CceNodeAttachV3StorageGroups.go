@@ -5,15 +5,15 @@ package ccenodeattachv3
 
 
 type CceNodeAttachV3StorageGroups struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cce_node_attach_v3#name CceNodeAttachV3#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cce_node_attach_v3#name CceNodeAttachV3#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cce_node_attach_v3#selector_names CceNodeAttachV3#selector_names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cce_node_attach_v3#selector_names CceNodeAttachV3#selector_names}.
 	SelectorNames *[]*string `field:"required" json:"selectorNames" yaml:"selectorNames"`
 	// virtual_spaces block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cce_node_attach_v3#virtual_spaces CceNodeAttachV3#virtual_spaces}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cce_node_attach_v3#virtual_spaces CceNodeAttachV3#virtual_spaces}
 	VirtualSpaces interface{} `field:"required" json:"virtualSpaces" yaml:"virtualSpaces"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/cce_node_attach_v3#cce_managed CceNodeAttachV3#cce_managed}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cce_node_attach_v3#cce_managed CceNodeAttachV3#cce_managed}.
 	CceManaged interface{} `field:"optional" json:"cceManaged" yaml:"cceManaged"`
 }
 

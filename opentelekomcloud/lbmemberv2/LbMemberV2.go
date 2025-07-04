@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2}.
 type LbMemberV2 interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -546,7 +546,7 @@ func (j *jsiiProxy_LbMemberV2) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2} Resource.
 func NewLbMemberV2(scope constructs.Construct, id *string, config *LbMemberV2Config) LbMemberV2 {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewLbMemberV2(scope constructs.Construct, id *string, config *LbMemberV2Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2} Resource.
 func NewLbMemberV2_Override(l LbMemberV2, scope constructs.Construct, id *string, config *LbMemberV2Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/er_association_v3 opentelekomcloud_er_association_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/er_association_v3 opentelekomcloud_er_association_v3}.
 type ErAssociationV3 interface {
 	cdktf.TerraformResource
 	AttachmentId() *string
@@ -458,7 +458,7 @@ func (j *jsiiProxy_ErAssociationV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/er_association_v3 opentelekomcloud_er_association_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/er_association_v3 opentelekomcloud_er_association_v3} Resource.
 func NewErAssociationV3(scope constructs.Construct, id *string, config *ErAssociationV3Config) ErAssociationV3 {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewErAssociationV3(scope constructs.Construct, id *string, config *ErAssoci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/er_association_v3 opentelekomcloud_er_association_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/er_association_v3 opentelekomcloud_er_association_v3} Resource.
 func NewErAssociationV3_Override(e ErAssociationV3, scope constructs.Construct, id *string, config *ErAssociationV3Config) {
 	_init_.Initialize()
 
