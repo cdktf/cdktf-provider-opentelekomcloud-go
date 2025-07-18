@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/ces_event_report_v1 opentelekomcloud_ces_event_report_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/ces_event_report_v1 opentelekomcloud_ces_event_report_v1}.
 type CesEventReportV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_CesEventReportV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/ces_event_report_v1 opentelekomcloud_ces_event_report_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/ces_event_report_v1 opentelekomcloud_ces_event_report_v1} Resource.
 func NewCesEventReportV1(scope constructs.Construct, id *string, config *CesEventReportV1Config) CesEventReportV1 {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewCesEventReportV1(scope constructs.Construct, id *string, config *CesEven
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/ces_event_report_v1 opentelekomcloud_ces_event_report_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/ces_event_report_v1 opentelekomcloud_ces_event_report_v1} Resource.
 func NewCesEventReportV1_Override(c CesEventReportV1, scope constructs.Construct, id *string, config *CesEventReportV1Config) {
 	_init_.Initialize()
 

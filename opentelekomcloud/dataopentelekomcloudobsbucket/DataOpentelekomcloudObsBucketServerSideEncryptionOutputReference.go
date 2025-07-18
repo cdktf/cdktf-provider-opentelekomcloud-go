@@ -34,6 +34,7 @@ type DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference interface 
 	InternalValue() *DataOpentelekomcloudObsBucketServerSideEncryption
 	SetInternalValue(val *DataOpentelekomcloudObsBucketServerSideEncryption)
 	KmsKeyId() *string
+	KmsProjectId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,6 +147,16 @@ func (j *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionOutputRefere
 	_jsii_.Get(
 		j,
 		"kmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference) KmsProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsProjectId",
 		&returns,
 	)
 	return returns

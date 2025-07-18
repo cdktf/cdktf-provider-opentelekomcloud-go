@@ -59,6 +59,10 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) validatePutNoncurrentV
 	return nil
 }
 
+func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) validatePutTagParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) validatePutTransitionParameters(value interface{}) error {
 	return nil
 }

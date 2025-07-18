@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3}.
 type RdsInstanceV3 interface {
 	cdktf.TerraformResource
 	AutoscalingEnabled() cdktf.IResolvable
@@ -77,6 +77,9 @@ type RdsInstanceV3 interface {
 	ParamGroupId() *string
 	SetParamGroupId(val *string)
 	ParamGroupIdInput() *string
+	PrivateIp() *string
+	SetPrivateIp(val *string)
+	PrivateIpInput() *string
 	PrivateIps() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -182,6 +185,7 @@ type RdsInstanceV3 interface {
 	ResetOverrideLogicalId()
 	ResetParameters()
 	ResetParamGroupId()
+	ResetPrivateIp()
 	ResetPublicIps()
 	ResetRestoreFromBackup()
 	ResetRestorePoint()
@@ -547,6 +551,26 @@ func (j *jsiiProxy_RdsInstanceV3) ParamGroupIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RdsInstanceV3) PrivateIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceV3) PrivateIpInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsInstanceV3) PrivateIps() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -848,7 +872,7 @@ func (j *jsiiProxy_RdsInstanceV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
 func NewRdsInstanceV3(scope constructs.Construct, id *string, config *RdsInstanceV3Config) RdsInstanceV3 {
 	_init_.Initialize()
 
@@ -866,7 +890,7 @@ func NewRdsInstanceV3(scope constructs.Construct, id *string, config *RdsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
 func NewRdsInstanceV3_Override(r RdsInstanceV3, scope constructs.Construct, id *string, config *RdsInstanceV3Config) {
 	_init_.Initialize()
 
@@ -1010,6 +1034,17 @@ func (j *jsiiProxy_RdsInstanceV3)SetParamGroupId(val *string) {
 	_jsii_.Set(
 		j,
 		"paramGroupId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsInstanceV3)SetPrivateIp(val *string) {
+	if err := j.validateSetPrivateIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateIp",
 		val,
 	)
 }
@@ -1581,6 +1616,14 @@ func (r *jsiiProxy_RdsInstanceV3) ResetParamGroupId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetParamGroupId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsInstanceV3) ResetPrivateIp() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPrivateIp",
 		nil, // no parameters
 	)
 }

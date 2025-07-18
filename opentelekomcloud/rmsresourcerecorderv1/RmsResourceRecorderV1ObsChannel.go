@@ -5,11 +5,11 @@ package rmsresourcerecorderv1
 
 
 type RmsResourceRecorderV1ObsChannel struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/rms_resource_recorder_v1#bucket RmsResourceRecorderV1#bucket}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/rms_resource_recorder_v1#bucket RmsResourceRecorderV1#bucket}.
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/rms_resource_recorder_v1#region RmsResourceRecorderV1#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/rms_resource_recorder_v1#region RmsResourceRecorderV1#region}.
 	Region *string `field:"required" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/rms_resource_recorder_v1#bucket_prefix RmsResourceRecorderV1#bucket_prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/rms_resource_recorder_v1#bucket_prefix RmsResourceRecorderV1#bucket_prefix}.
 	BucketPrefix *string `field:"optional" json:"bucketPrefix" yaml:"bucketPrefix"`
 }
 

@@ -249,6 +249,17 @@ func (f *jsiiProxy_FgsFunctionV2) validatePutFuncMountsParameters(value interfac
 	return nil
 }
 
+func (f *jsiiProxy_FgsFunctionV2) validatePutNetworkControllerParameters(value *FgsFunctionV2NetworkController) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (f *jsiiProxy_FgsFunctionV2) validatePutReservedInstancesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -669,6 +680,30 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetNameParameters(val *string) error {
 }
 
 func (j *jsiiProxy_FgsFunctionV2) validateSetNetworkIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetPeeringCidrParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetPreStopHandlerParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetPreStopTimeoutParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

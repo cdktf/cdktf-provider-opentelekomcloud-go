@@ -47,6 +47,8 @@ type ObsBucketLifecycleRuleOutputReference interface {
 	Prefix() *string
 	SetPrefix(val *string)
 	PrefixInput() *string
+	Tag() ObsBucketLifecycleRuleTagList
+	TagInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -84,11 +86,13 @@ type ObsBucketLifecycleRuleOutputReference interface {
 	PutExpiration(value interface{})
 	PutNoncurrentVersionExpiration(value interface{})
 	PutNoncurrentVersionTransition(value interface{})
+	PutTag(value interface{})
 	PutTransition(value interface{})
 	ResetExpiration()
 	ResetNoncurrentVersionExpiration()
 	ResetNoncurrentVersionTransition()
 	ResetPrefix()
+	ResetTag()
 	ResetTransition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -270,6 +274,26 @@ func (j *jsiiProxy_ObsBucketLifecycleRuleOutputReference) PrefixInput() *string 
 	_jsii_.Get(
 		j,
 		"prefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObsBucketLifecycleRuleOutputReference) Tag() ObsBucketLifecycleRuleTagList {
+	var returns ObsBucketLifecycleRuleTagList
+	_jsii_.Get(
+		j,
+		"tag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObsBucketLifecycleRuleOutputReference) TagInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagInput",
 		&returns,
 	)
 	return returns
@@ -650,6 +674,17 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) PutNoncurrentVersionTr
 	)
 }
 
+func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) PutTag(value interface{}) {
+	if err := o.validatePutTagParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTag",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) PutTransition(value interface{}) {
 	if err := o.validatePutTransitionParameters(value); err != nil {
 		panic(err)
@@ -689,6 +724,14 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) ResetPrefix() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetPrefix",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) ResetTag() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTag",
 		nil, // no parameters
 	)
 }

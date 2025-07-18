@@ -159,6 +159,10 @@ func (j *jsiiProxy_RdsInstanceV3) validateSetParamGroupIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_RdsInstanceV3) validateSetPrivateIpParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsInstanceV3) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

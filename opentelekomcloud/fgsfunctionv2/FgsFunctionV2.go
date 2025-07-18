@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}.
 type FgsFunctionV2 interface {
 	cdktf.TerraformResource
 	Agency() *string
@@ -127,11 +127,22 @@ type FgsFunctionV2 interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkController() FgsFunctionV2NetworkControllerOutputReference
+	NetworkControllerInput() *FgsFunctionV2NetworkController
 	NetworkId() *string
 	SetNetworkId(val *string)
 	NetworkIdInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PeeringCidr() *string
+	SetPeeringCidr(val *string)
+	PeeringCidrInput() *string
+	PreStopHandler() *string
+	SetPreStopHandler(val *string)
+	PreStopHandlerInput() *string
+	PreStopTimeout() *float64
+	SetPreStopTimeout(val *float64)
+	PreStopTimeoutInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -217,6 +228,7 @@ type FgsFunctionV2 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomImage(value *FgsFunctionV2CustomImage)
 	PutFuncMounts(value interface{})
+	PutNetworkController(value *FgsFunctionV2NetworkController)
 	PutReservedInstances(value interface{})
 	PutTimeouts(value *FgsFunctionV2Timeouts)
 	PutVersions(value interface{})
@@ -246,10 +258,14 @@ type FgsFunctionV2 interface {
 	ResetMaxInstanceNum()
 	ResetMountUserGroupId()
 	ResetMountUserId()
+	ResetNetworkController()
 	ResetNetworkId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPeeringCidr()
+	ResetPreStopHandler()
+	ResetPreStopTimeout()
 	ResetReservedInstances()
 	ResetTags()
 	ResetTimeouts()
@@ -944,6 +960,26 @@ func (j *jsiiProxy_FgsFunctionV2) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FgsFunctionV2) NetworkController() FgsFunctionV2NetworkControllerOutputReference {
+	var returns FgsFunctionV2NetworkControllerOutputReference
+	_jsii_.Get(
+		j,
+		"networkController",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) NetworkControllerInput() *FgsFunctionV2NetworkController {
+	var returns *FgsFunctionV2NetworkController
+	_jsii_.Get(
+		j,
+		"networkControllerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FgsFunctionV2) NetworkId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -969,6 +1005,66 @@ func (j *jsiiProxy_FgsFunctionV2) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) PeeringCidr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peeringCidr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) PeeringCidrInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peeringCidrInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) PreStopHandler() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preStopHandler",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) PreStopHandlerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preStopHandlerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) PreStopTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"preStopTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) PreStopTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"preStopTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -1225,7 +1321,7 @@ func (j *jsiiProxy_FgsFunctionV2) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
 func NewFgsFunctionV2(scope constructs.Construct, id *string, config *FgsFunctionV2Config) FgsFunctionV2 {
 	_init_.Initialize()
 
@@ -1243,7 +1339,7 @@ func NewFgsFunctionV2(scope constructs.Construct, id *string, config *FgsFunctio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
 func NewFgsFunctionV2_Override(f FgsFunctionV2, scope constructs.Construct, id *string, config *FgsFunctionV2Config) {
 	_init_.Initialize()
 
@@ -1596,6 +1692,39 @@ func (j *jsiiProxy_FgsFunctionV2)SetNetworkId(val *string) {
 	_jsii_.Set(
 		j,
 		"networkId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2)SetPeeringCidr(val *string) {
+	if err := j.validateSetPeeringCidrParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"peeringCidr",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2)SetPreStopHandler(val *string) {
+	if err := j.validateSetPreStopHandlerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preStopHandler",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2)SetPreStopTimeout(val *float64) {
+	if err := j.validateSetPreStopTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preStopTimeout",
 		val,
 	)
 }
@@ -2049,6 +2178,17 @@ func (f *jsiiProxy_FgsFunctionV2) PutFuncMounts(value interface{}) {
 	)
 }
 
+func (f *jsiiProxy_FgsFunctionV2) PutNetworkController(value *FgsFunctionV2NetworkController) {
+	if err := f.validatePutNetworkControllerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putNetworkController",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FgsFunctionV2) PutReservedInstances(value interface{}) {
 	if err := f.validatePutReservedInstancesParameters(value); err != nil {
 		panic(err)
@@ -2290,6 +2430,14 @@ func (f *jsiiProxy_FgsFunctionV2) ResetMountUserId() {
 	)
 }
 
+func (f *jsiiProxy_FgsFunctionV2) ResetNetworkController() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetNetworkController",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FgsFunctionV2) ResetNetworkId() {
 	_jsii_.InvokeVoid(
 		f,
@@ -2302,6 +2450,30 @@ func (f *jsiiProxy_FgsFunctionV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2) ResetPeeringCidr() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetPeeringCidr",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2) ResetPreStopHandler() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetPreStopHandler",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2) ResetPreStopTimeout() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetPreStopTimeout",
 		nil, // no parameters
 	)
 }

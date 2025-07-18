@@ -98,14 +98,23 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "networkController", GoGetter: "NetworkController"},
+			_jsii_.MemberProperty{JsiiProperty: "networkControllerInput", GoGetter: "NetworkControllerInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networkId", GoGetter: "NetworkId"},
 			_jsii_.MemberProperty{JsiiProperty: "networkIdInput", GoGetter: "NetworkIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "peeringCidr", GoGetter: "PeeringCidr"},
+			_jsii_.MemberProperty{JsiiProperty: "peeringCidrInput", GoGetter: "PeeringCidrInput"},
+			_jsii_.MemberProperty{JsiiProperty: "preStopHandler", GoGetter: "PreStopHandler"},
+			_jsii_.MemberProperty{JsiiProperty: "preStopHandlerInput", GoGetter: "PreStopHandlerInput"},
+			_jsii_.MemberProperty{JsiiProperty: "preStopTimeout", GoGetter: "PreStopTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "preStopTimeoutInput", GoGetter: "PreStopTimeoutInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomImage", GoMethod: "PutCustomImage"},
 			_jsii_.MemberMethod{JsiiMethod: "putFuncMounts", GoMethod: "PutFuncMounts"},
+			_jsii_.MemberMethod{JsiiMethod: "putNetworkController", GoMethod: "PutNetworkController"},
 			_jsii_.MemberMethod{JsiiMethod: "putReservedInstances", GoMethod: "PutReservedInstances"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVersions", GoMethod: "PutVersions"},
@@ -139,8 +148,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxInstanceNum", GoMethod: "ResetMaxInstanceNum"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMountUserGroupId", GoMethod: "ResetMountUserGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMountUserId", GoMethod: "ResetMountUserId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNetworkController", GoMethod: "ResetNetworkController"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkId", GoMethod: "ResetNetworkId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPeeringCidr", GoMethod: "ResetPeeringCidr"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPreStopHandler", GoMethod: "ResetPreStopHandler"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPreStopTimeout", GoMethod: "ResetPreStopTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReservedInstances", GoMethod: "ResetReservedInstances"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
@@ -292,6 +305,113 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FgsFunctionV2FuncMountsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkController",
+		reflect.TypeOf((*FgsFunctionV2NetworkController)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerOutputReference",
+		reflect.TypeOf((*FgsFunctionV2NetworkControllerOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "disablePublicNetwork", GoGetter: "DisablePublicNetwork"},
+			_jsii_.MemberProperty{JsiiProperty: "disablePublicNetworkInput", GoGetter: "DisablePublicNetworkInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putTriggerAccessVpcs", GoMethod: "PutTriggerAccessVpcs"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisablePublicNetwork", GoMethod: "ResetDisablePublicNetwork"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTriggerAccessVpcs", GoMethod: "ResetTriggerAccessVpcs"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "triggerAccessVpcs", GoGetter: "TriggerAccessVpcs"},
+			_jsii_.MemberProperty{JsiiProperty: "triggerAccessVpcsInput", GoGetter: "TriggerAccessVpcsInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_FgsFunctionV2NetworkControllerOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerTriggerAccessVpcs",
+		reflect.TypeOf((*FgsFunctionV2NetworkControllerTriggerAccessVpcs)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerTriggerAccessVpcsList",
+		reflect.TypeOf((*FgsFunctionV2NetworkControllerTriggerAccessVpcsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_FgsFunctionV2NetworkControllerTriggerAccessVpcsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference",
+		reflect.TypeOf((*FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVpcId", GoMethod: "ResetVpcId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVpcName", GoMethod: "ResetVpcName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcName", GoGetter: "VpcName"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcNameInput", GoGetter: "VpcNameInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

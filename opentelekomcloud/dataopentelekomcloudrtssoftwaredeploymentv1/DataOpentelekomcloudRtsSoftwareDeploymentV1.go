@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1}.
 type DataOpentelekomcloudRtsSoftwareDeploymentV1 interface {
 	cdktf.TerraformDataSource
 	Action() *string
@@ -418,7 +418,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRtsSoftwareDeploymentV1) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source.
 func NewDataOpentelekomcloudRtsSoftwareDeploymentV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudRtsSoftwareDeploymentV1Config) DataOpentelekomcloudRtsSoftwareDeploymentV1 {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewDataOpentelekomcloudRtsSoftwareDeploymentV1(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source.
 func NewDataOpentelekomcloudRtsSoftwareDeploymentV1_Override(d DataOpentelekomcloudRtsSoftwareDeploymentV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudRtsSoftwareDeploymentV1Config) {
 	_init_.Initialize()
 

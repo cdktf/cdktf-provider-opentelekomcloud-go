@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2}.
 type DataOpentelekomcloudVpcBandwidthV2 interface {
 	cdktf.TerraformDataSource
 	BandwidthType() *string
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcBandwidthV2) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Data Source.
 func NewDataOpentelekomcloudVpcBandwidthV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcBandwidthV2Config) DataOpentelekomcloudVpcBandwidthV2 {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataOpentelekomcloudVpcBandwidthV2(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Data Source.
 func NewDataOpentelekomcloudVpcBandwidthV2_Override(d DataOpentelekomcloudVpcBandwidthV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcBandwidthV2Config) {
 	_init_.Initialize()
 

@@ -5,9 +5,9 @@ package ctseventnotificationv3
 
 
 type CtsEventNotificationV3Filter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cts_event_notification_v3#condition CtsEventNotificationV3#condition}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cts_event_notification_v3#condition CtsEventNotificationV3#condition}.
 	Condition *string `field:"required" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cts_event_notification_v3#rule CtsEventNotificationV3#rule}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cts_event_notification_v3#rule CtsEventNotificationV3#rule}.
 	Rule *[]*string `field:"required" json:"rule" yaml:"rule"`
 }
 

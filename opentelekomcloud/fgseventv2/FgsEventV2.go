@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_event_v2 opentelekomcloud_fgs_event_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_event_v2 opentelekomcloud_fgs_event_v2}.
 type FgsEventV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_FgsEventV2) UpdatedAt() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_event_v2 opentelekomcloud_fgs_event_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_event_v2 opentelekomcloud_fgs_event_v2} Resource.
 func NewFgsEventV2(scope constructs.Construct, id *string, config *FgsEventV2Config) FgsEventV2 {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewFgsEventV2(scope constructs.Construct, id *string, config *FgsEventV2Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_event_v2 opentelekomcloud_fgs_event_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_event_v2 opentelekomcloud_fgs_event_v2} Resource.
 func NewFgsEventV2_Override(f FgsEventV2, scope constructs.Construct, id *string, config *FgsEventV2Config) {
 	_init_.Initialize()
 
