@@ -5,9 +5,9 @@ package vpnaasikepolicyv2
 
 
 type VpnaasIkePolicyV2Lifetime struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/vpnaas_ike_policy_v2#units VpnaasIkePolicyV2#units}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/vpnaas_ike_policy_v2#units VpnaasIkePolicyV2#units}.
 	Units *string `field:"optional" json:"units" yaml:"units"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/vpnaas_ike_policy_v2#value VpnaasIkePolicyV2#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/vpnaas_ike_policy_v2#value VpnaasIkePolicyV2#value}.
 	Value *float64 `field:"optional" json:"value" yaml:"value"`
 }
 

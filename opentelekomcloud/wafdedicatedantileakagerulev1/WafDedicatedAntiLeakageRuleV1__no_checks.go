@@ -95,6 +95,10 @@ func validateWafDedicatedAntiLeakageRuleV1_IsTerraformResourceParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_WafDedicatedAntiLeakageRuleV1) validateSetActionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafDedicatedAntiLeakageRuleV1) validateSetCategoryParameters(val *string) error {
 	return nil
 }

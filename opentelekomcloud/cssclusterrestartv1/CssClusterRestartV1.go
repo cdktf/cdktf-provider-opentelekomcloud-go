@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/css_cluster_restart_v1 opentelekomcloud_css_cluster_restart_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/css_cluster_restart_v1 opentelekomcloud_css_cluster_restart_v1}.
 type CssClusterRestartV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_CssClusterRestartV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/css_cluster_restart_v1 opentelekomcloud_css_cluster_restart_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/css_cluster_restart_v1 opentelekomcloud_css_cluster_restart_v1} Resource.
 func NewCssClusterRestartV1(scope constructs.Construct, id *string, config *CssClusterRestartV1Config) CssClusterRestartV1 {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewCssClusterRestartV1(scope constructs.Construct, id *string, config *CssC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/css_cluster_restart_v1 opentelekomcloud_css_cluster_restart_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/css_cluster_restart_v1 opentelekomcloud_css_cluster_restart_v1} Resource.
 func NewCssClusterRestartV1_Override(c CssClusterRestartV1, scope constructs.Construct, id *string, config *CssClusterRestartV1Config) {
 	_init_.Initialize()
 

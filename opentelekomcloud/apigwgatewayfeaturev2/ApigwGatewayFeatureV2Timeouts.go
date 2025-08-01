@@ -5,7 +5,7 @@ package apigwgatewayfeaturev2
 
 
 type ApigwGatewayFeatureV2Timeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/apigw_gateway_feature_v2#create ApigwGatewayFeatureV2#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/apigw_gateway_feature_v2#create ApigwGatewayFeatureV2#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

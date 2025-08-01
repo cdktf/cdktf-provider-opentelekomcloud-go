@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1}.
 type WafDedicatedAntiLeakageRuleV1 interface {
 	cdktf.TerraformResource
+	Action() *string
+	SetAction(val *string)
+	ActionInput() *string
 	Category() *string
 	SetCategory(val *string)
 	CategoryInput() *string
@@ -149,6 +152,26 @@ type WafDedicatedAntiLeakageRuleV1 interface {
 // The jsii proxy struct for WafDedicatedAntiLeakageRuleV1
 type jsiiProxy_WafDedicatedAntiLeakageRuleV1 struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_WafDedicatedAntiLeakageRuleV1) Action() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"action",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafDedicatedAntiLeakageRuleV1) ActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WafDedicatedAntiLeakageRuleV1) Category() *string {
@@ -472,7 +495,7 @@ func (j *jsiiProxy_WafDedicatedAntiLeakageRuleV1) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1} Resource.
 func NewWafDedicatedAntiLeakageRuleV1(scope constructs.Construct, id *string, config *WafDedicatedAntiLeakageRuleV1Config) WafDedicatedAntiLeakageRuleV1 {
 	_init_.Initialize()
 
@@ -490,7 +513,7 @@ func NewWafDedicatedAntiLeakageRuleV1(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1} Resource.
 func NewWafDedicatedAntiLeakageRuleV1_Override(w WafDedicatedAntiLeakageRuleV1, scope constructs.Construct, id *string, config *WafDedicatedAntiLeakageRuleV1Config) {
 	_init_.Initialize()
 
@@ -498,6 +521,17 @@ func NewWafDedicatedAntiLeakageRuleV1_Override(w WafDedicatedAntiLeakageRuleV1, 
 		"@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1",
 		[]interface{}{scope, id, config},
 		w,
+	)
+}
+
+func (j *jsiiProxy_WafDedicatedAntiLeakageRuleV1)SetAction(val *string) {
+	if err := j.validateSetActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"action",
+		val,
 	)
 }
 

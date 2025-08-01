@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/nat_dnat_rule_v2 opentelekomcloud_nat_dnat_rule_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/nat_dnat_rule_v2 opentelekomcloud_nat_dnat_rule_v2}.
 type NatDnatRuleV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -541,7 +541,7 @@ func (j *jsiiProxy_NatDnatRuleV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/nat_dnat_rule_v2 opentelekomcloud_nat_dnat_rule_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/nat_dnat_rule_v2 opentelekomcloud_nat_dnat_rule_v2} Resource.
 func NewNatDnatRuleV2(scope constructs.Construct, id *string, config *NatDnatRuleV2Config) NatDnatRuleV2 {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewNatDnatRuleV2(scope constructs.Construct, id *string, config *NatDnatRul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/nat_dnat_rule_v2 opentelekomcloud_nat_dnat_rule_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/nat_dnat_rule_v2 opentelekomcloud_nat_dnat_rule_v2} Resource.
 func NewNatDnatRuleV2_Override(n NatDnatRuleV2, scope constructs.Construct, id *string, config *NatDnatRuleV2Config) {
 	_init_.Initialize()
 

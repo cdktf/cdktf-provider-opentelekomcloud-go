@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/obs_bucket_inventory opentelekomcloud_obs_bucket_inventory}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/obs_bucket_inventory opentelekomcloud_obs_bucket_inventory}.
 type ObsBucketInventory interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -507,7 +507,7 @@ func (j *jsiiProxy_ObsBucketInventory) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/obs_bucket_inventory opentelekomcloud_obs_bucket_inventory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/obs_bucket_inventory opentelekomcloud_obs_bucket_inventory} Resource.
 func NewObsBucketInventory(scope constructs.Construct, id *string, config *ObsBucketInventoryConfig) ObsBucketInventory {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewObsBucketInventory(scope constructs.Construct, id *string, config *ObsBu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/obs_bucket_inventory opentelekomcloud_obs_bucket_inventory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/obs_bucket_inventory opentelekomcloud_obs_bucket_inventory} Resource.
 func NewObsBucketInventory_Override(o ObsBucketInventory, scope constructs.Construct, id *string, config *ObsBucketInventoryConfig) {
 	_init_.Initialize()
 

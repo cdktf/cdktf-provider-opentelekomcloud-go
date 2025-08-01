@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2 opentelekomcloud_cci_namespace_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/cci_namespace_v2 opentelekomcloud_cci_namespace_v2}.
 type CciNamespaceV2 interface {
 	cdktf.TerraformResource
 	Annotations() cdktf.StringMap
@@ -467,7 +467,7 @@ func (j *jsiiProxy_CciNamespaceV2) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2 opentelekomcloud_cci_namespace_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/cci_namespace_v2 opentelekomcloud_cci_namespace_v2} Resource.
 func NewCciNamespaceV2(scope constructs.Construct, id *string, config *CciNamespaceV2Config) CciNamespaceV2 {
 	_init_.Initialize()
 
@@ -485,7 +485,7 @@ func NewCciNamespaceV2(scope constructs.Construct, id *string, config *CciNamesp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2 opentelekomcloud_cci_namespace_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/cci_namespace_v2 opentelekomcloud_cci_namespace_v2} Resource.
 func NewCciNamespaceV2_Override(c CciNamespaceV2, scope constructs.Construct, id *string, config *CciNamespaceV2Config) {
 	_init_.Initialize()
 

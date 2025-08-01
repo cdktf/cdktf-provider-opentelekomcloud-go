@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_notification_template_v2 opentelekomcloud_lts_notification_template_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/lts_notification_template_v2 opentelekomcloud_lts_notification_template_v2}.
 type LtsNotificationTemplateV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_LtsNotificationTemplateV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_notification_template_v2 opentelekomcloud_lts_notification_template_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/lts_notification_template_v2 opentelekomcloud_lts_notification_template_v2} Resource.
 func NewLtsNotificationTemplateV2(scope constructs.Construct, id *string, config *LtsNotificationTemplateV2Config) LtsNotificationTemplateV2 {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewLtsNotificationTemplateV2(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_notification_template_v2 opentelekomcloud_lts_notification_template_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/lts_notification_template_v2 opentelekomcloud_lts_notification_template_v2} Resource.
 func NewLtsNotificationTemplateV2_Override(l LtsNotificationTemplateV2, scope constructs.Construct, id *string, config *LtsNotificationTemplateV2Config) {
 	_init_.Initialize()
 

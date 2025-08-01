@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3}.
 type IdentityAgencyV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_IdentityAgencyV3) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3} Resource.
 func NewIdentityAgencyV3(scope constructs.Construct, id *string, config *IdentityAgencyV3Config) IdentityAgencyV3 {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewIdentityAgencyV3(scope constructs.Construct, id *string, config *Identit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3} Resource.
 func NewIdentityAgencyV3_Override(i IdentityAgencyV3, scope constructs.Construct, id *string, config *IdentityAgencyV3Config) {
 	_init_.Initialize()
 

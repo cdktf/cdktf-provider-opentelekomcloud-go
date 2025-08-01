@@ -22,22 +22,22 @@ type DataOpentelekomcloudComputeBmsFlavorsV2Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/compute_bms_flavors_v2#id DataOpentelekomcloudComputeBmsFlavorsV2#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/compute_bms_flavors_v2#id DataOpentelekomcloudComputeBmsFlavorsV2#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/compute_bms_flavors_v2#min_disk DataOpentelekomcloudComputeBmsFlavorsV2#min_disk}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/compute_bms_flavors_v2#min_disk DataOpentelekomcloudComputeBmsFlavorsV2#min_disk}.
 	MinDisk *float64 `field:"optional" json:"minDisk" yaml:"minDisk"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/compute_bms_flavors_v2#min_ram DataOpentelekomcloudComputeBmsFlavorsV2#min_ram}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/compute_bms_flavors_v2#min_ram DataOpentelekomcloudComputeBmsFlavorsV2#min_ram}.
 	MinRam *float64 `field:"optional" json:"minRam" yaml:"minRam"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/compute_bms_flavors_v2#name DataOpentelekomcloudComputeBmsFlavorsV2#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/compute_bms_flavors_v2#name DataOpentelekomcloudComputeBmsFlavorsV2#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/compute_bms_flavors_v2#region DataOpentelekomcloudComputeBmsFlavorsV2#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/compute_bms_flavors_v2#region DataOpentelekomcloudComputeBmsFlavorsV2#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/compute_bms_flavors_v2#sort_dir DataOpentelekomcloudComputeBmsFlavorsV2#sort_dir}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/compute_bms_flavors_v2#sort_dir DataOpentelekomcloudComputeBmsFlavorsV2#sort_dir}.
 	SortDir *string `field:"optional" json:"sortDir" yaml:"sortDir"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/data-sources/compute_bms_flavors_v2#sort_key DataOpentelekomcloudComputeBmsFlavorsV2#sort_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/compute_bms_flavors_v2#sort_key DataOpentelekomcloudComputeBmsFlavorsV2#sort_key}.
 	SortKey *string `field:"optional" json:"sortKey" yaml:"sortKey"`
 }
 

@@ -14,6 +14,8 @@ func init() {
 		"@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1",
 		reflect.TypeOf((*WafDedicatedAntiLeakageRuleV1)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
+			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},

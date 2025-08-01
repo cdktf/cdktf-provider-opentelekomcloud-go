@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/kms_key_material_v1 opentelekomcloud_kms_key_material_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/kms_key_material_v1 opentelekomcloud_kms_key_material_v1}.
 type KmsKeyMaterialV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_KmsKeyMaterialV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/kms_key_material_v1 opentelekomcloud_kms_key_material_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/kms_key_material_v1 opentelekomcloud_kms_key_material_v1} Resource.
 func NewKmsKeyMaterialV1(scope constructs.Construct, id *string, config *KmsKeyMaterialV1Config) KmsKeyMaterialV1 {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewKmsKeyMaterialV1(scope constructs.Construct, id *string, config *KmsKeyM
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/kms_key_material_v1 opentelekomcloud_kms_key_material_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/kms_key_material_v1 opentelekomcloud_kms_key_material_v1} Resource.
 func NewKmsKeyMaterialV1_Override(k KmsKeyMaterialV1, scope constructs.Construct, id *string, config *KmsKeyMaterialV1Config) {
 	_init_.Initialize()
 

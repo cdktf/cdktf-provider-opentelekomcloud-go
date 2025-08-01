@@ -12,12 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}.
 type FgsFunctionV2 interface {
 	cdktf.TerraformResource
 	Agency() *string
 	SetAgency(val *string)
 	AgencyInput() *string
+	AllowEphemeralStorage() cdktf.IResolvable
+	ApigRouteEnable() cdktf.IResolvable
 	App() *string
 	SetApp(val *string)
 	AppAgency() *string
@@ -61,9 +63,16 @@ type FgsFunctionV2 interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	DnsList() *string
+	EnableAuthInHeader() cdktf.IResolvable
+	EnableClassIsolation() cdktf.IResolvable
+	EnableDynamicMemory() interface{}
+	SetEnableDynamicMemory(val interface{})
+	EnableDynamicMemoryInput() interface{}
 	EncryptedUserData() *string
 	SetEncryptedUserData(val *string)
 	EncryptedUserDataInput() *string
+	EphemeralStorage() *float64
+	ExtendConfig() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -87,6 +96,7 @@ type FgsFunctionV2 interface {
 	Handler() *string
 	SetHandler(val *string)
 	HandlerInput() *string
+	HeartbeatHandler() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -96,6 +106,7 @@ type FgsFunctionV2 interface {
 	InitializerTimeout() *float64
 	SetInitializerTimeout(val *float64)
 	InitializerTimeoutInput() *float64
+	IsStatefulFunction() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -242,6 +253,7 @@ type FgsFunctionV2 interface {
 	ResetCustomImage()
 	ResetDependList()
 	ResetDescription()
+	ResetEnableDynamicMemory()
 	ResetEncryptedUserData()
 	ResetFuncCode()
 	ResetFuncMounts()
@@ -305,6 +317,26 @@ func (j *jsiiProxy_FgsFunctionV2) AgencyInput() *string {
 	_jsii_.Get(
 		j,
 		"agencyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) AllowEphemeralStorage() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowEphemeralStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) ApigRouteEnable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"apigRouteEnable",
 		&returns,
 	)
 	return returns
@@ -550,6 +582,46 @@ func (j *jsiiProxy_FgsFunctionV2) DnsList() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FgsFunctionV2) EnableAuthInHeader() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableAuthInHeader",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) EnableClassIsolation() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableClassIsolation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) EnableDynamicMemory() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDynamicMemory",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) EnableDynamicMemoryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDynamicMemoryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FgsFunctionV2) EncryptedUserData() *string {
 	var returns *string
 	_jsii_.Get(
@@ -565,6 +637,26 @@ func (j *jsiiProxy_FgsFunctionV2) EncryptedUserDataInput() *string {
 	_jsii_.Get(
 		j,
 		"encryptedUserDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) EphemeralStorage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ephemeralStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) ExtendConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"extendConfig",
 		&returns,
 	)
 	return returns
@@ -710,6 +802,16 @@ func (j *jsiiProxy_FgsFunctionV2) HandlerInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FgsFunctionV2) HeartbeatHandler() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"heartbeatHandler",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FgsFunctionV2) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -765,6 +867,16 @@ func (j *jsiiProxy_FgsFunctionV2) InitializerTimeoutInput() *float64 {
 	_jsii_.Get(
 		j,
 		"initializerTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) IsStatefulFunction() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isStatefulFunction",
 		&returns,
 	)
 	return returns
@@ -1321,7 +1433,7 @@ func (j *jsiiProxy_FgsFunctionV2) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
 func NewFgsFunctionV2(scope constructs.Construct, id *string, config *FgsFunctionV2Config) FgsFunctionV2 {
 	_init_.Initialize()
 
@@ -1339,7 +1451,7 @@ func NewFgsFunctionV2(scope constructs.Construct, id *string, config *FgsFunctio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
 func NewFgsFunctionV2_Override(f FgsFunctionV2, scope constructs.Construct, id *string, config *FgsFunctionV2Config) {
 	_init_.Initialize()
 
@@ -1475,6 +1587,17 @@ func (j *jsiiProxy_FgsFunctionV2)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2)SetEnableDynamicMemory(val interface{}) {
+	if err := j.validateSetEnableDynamicMemoryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableDynamicMemory",
 		val,
 	)
 }
@@ -2298,6 +2421,14 @@ func (f *jsiiProxy_FgsFunctionV2) ResetDescription() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2) ResetEnableDynamicMemory() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetEnableDynamicMemory",
 		nil, // no parameters
 	)
 }

@@ -258,6 +258,14 @@ func validateWafDedicatedAntiLeakageRuleV1_IsTerraformResourceParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_WafDedicatedAntiLeakageRuleV1) validateSetActionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WafDedicatedAntiLeakageRuleV1) validateSetCategoryParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

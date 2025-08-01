@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1}.
 type VpcepServiceV1 interface {
 	cdktf.TerraformResource
 	ApprovalEnabled() interface{}
@@ -664,7 +664,7 @@ func (j *jsiiProxy_VpcepServiceV1) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Resource.
 func NewVpcepServiceV1(scope constructs.Construct, id *string, config *VpcepServiceV1Config) VpcepServiceV1 {
 	_init_.Initialize()
 
@@ -682,7 +682,7 @@ func NewVpcepServiceV1(scope constructs.Construct, id *string, config *VpcepServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Resource.
 func NewVpcepServiceV1_Override(v VpcepServiceV1, scope constructs.Construct, id *string, config *VpcepServiceV1Config) {
 	_init_.Initialize()
 
