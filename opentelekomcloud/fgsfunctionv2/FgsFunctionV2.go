@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}.
 type FgsFunctionV2 interface {
 	cdktf.TerraformResource
 	Agency() *string
@@ -64,7 +64,9 @@ type FgsFunctionV2 interface {
 	DescriptionInput() *string
 	DnsList() *string
 	EnableAuthInHeader() cdktf.IResolvable
-	EnableClassIsolation() cdktf.IResolvable
+	EnableClassIsolation() interface{}
+	SetEnableClassIsolation(val interface{})
+	EnableClassIsolationInput() interface{}
 	EnableDynamicMemory() interface{}
 	SetEnableDynamicMemory(val interface{})
 	EnableDynamicMemoryInput() interface{}
@@ -253,6 +255,7 @@ type FgsFunctionV2 interface {
 	ResetCustomImage()
 	ResetDependList()
 	ResetDescription()
+	ResetEnableClassIsolation()
 	ResetEnableDynamicMemory()
 	ResetEncryptedUserData()
 	ResetFuncCode()
@@ -592,11 +595,21 @@ func (j *jsiiProxy_FgsFunctionV2) EnableAuthInHeader() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_FgsFunctionV2) EnableClassIsolation() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_FgsFunctionV2) EnableClassIsolation() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"enableClassIsolation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) EnableClassIsolationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableClassIsolationInput",
 		&returns,
 	)
 	return returns
@@ -1433,7 +1446,7 @@ func (j *jsiiProxy_FgsFunctionV2) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
 func NewFgsFunctionV2(scope constructs.Construct, id *string, config *FgsFunctionV2Config) FgsFunctionV2 {
 	_init_.Initialize()
 
@@ -1451,7 +1464,7 @@ func NewFgsFunctionV2(scope constructs.Construct, id *string, config *FgsFunctio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
 func NewFgsFunctionV2_Override(f FgsFunctionV2, scope constructs.Construct, id *string, config *FgsFunctionV2Config) {
 	_init_.Initialize()
 
@@ -1587,6 +1600,17 @@ func (j *jsiiProxy_FgsFunctionV2)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2)SetEnableClassIsolation(val interface{}) {
+	if err := j.validateSetEnableClassIsolationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableClassIsolation",
 		val,
 	)
 }
@@ -2421,6 +2445,14 @@ func (f *jsiiProxy_FgsFunctionV2) ResetDescription() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2) ResetEnableClassIsolation() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetEnableClassIsolation",
 		nil, // no parameters
 	)
 }

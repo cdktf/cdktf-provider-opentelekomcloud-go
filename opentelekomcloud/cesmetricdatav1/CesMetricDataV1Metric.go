@@ -7,11 +7,11 @@ package cesmetricdatav1
 type CesMetricDataV1Metric struct {
 	// dimensions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/ces_metric_data_v1#dimensions CesMetricDataV1#dimensions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/ces_metric_data_v1#dimensions CesMetricDataV1#dimensions}
 	Dimensions interface{} `field:"required" json:"dimensions" yaml:"dimensions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/ces_metric_data_v1#metric_name CesMetricDataV1#metric_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/ces_metric_data_v1#metric_name CesMetricDataV1#metric_name}.
 	MetricName *string `field:"required" json:"metricName" yaml:"metricName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/ces_metric_data_v1#namespace CesMetricDataV1#namespace}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/ces_metric_data_v1#namespace CesMetricDataV1#namespace}.
 	Namespace *string `field:"required" json:"namespace" yaml:"namespace"`
 }
 

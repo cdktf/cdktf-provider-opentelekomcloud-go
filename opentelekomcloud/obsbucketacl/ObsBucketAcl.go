@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/obs_bucket_acl opentelekomcloud_obs_bucket_acl}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/obs_bucket_acl opentelekomcloud_obs_bucket_acl}.
 type ObsBucketAcl interface {
 	cdktf.TerraformResource
 	AccountPermission() ObsBucketAclAccountPermissionList
@@ -440,7 +440,7 @@ func (j *jsiiProxy_ObsBucketAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/obs_bucket_acl opentelekomcloud_obs_bucket_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/obs_bucket_acl opentelekomcloud_obs_bucket_acl} Resource.
 func NewObsBucketAcl(scope constructs.Construct, id *string, config *ObsBucketAclConfig) ObsBucketAcl {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewObsBucketAcl(scope constructs.Construct, id *string, config *ObsBucketAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/obs_bucket_acl opentelekomcloud_obs_bucket_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/obs_bucket_acl opentelekomcloud_obs_bucket_acl} Resource.
 func NewObsBucketAcl_Override(o ObsBucketAcl, scope constructs.Construct, id *string, config *ObsBucketAclConfig) {
 	_init_.Initialize()
 

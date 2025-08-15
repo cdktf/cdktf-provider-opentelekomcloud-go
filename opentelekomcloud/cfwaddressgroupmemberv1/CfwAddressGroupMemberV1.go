@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/cfw_address_group_member_v1 opentelekomcloud_cfw_address_group_member_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/cfw_address_group_member_v1 opentelekomcloud_cfw_address_group_member_v1}.
 type CfwAddressGroupMemberV1 interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_CfwAddressGroupMemberV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/cfw_address_group_member_v1 opentelekomcloud_cfw_address_group_member_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/cfw_address_group_member_v1 opentelekomcloud_cfw_address_group_member_v1} Resource.
 func NewCfwAddressGroupMemberV1(scope constructs.Construct, id *string, config *CfwAddressGroupMemberV1Config) CfwAddressGroupMemberV1 {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewCfwAddressGroupMemberV1(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/cfw_address_group_member_v1 opentelekomcloud_cfw_address_group_member_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/cfw_address_group_member_v1 opentelekomcloud_cfw_address_group_member_v1} Resource.
 func NewCfwAddressGroupMemberV1_Override(c CfwAddressGroupMemberV1, scope constructs.Construct, id *string, config *CfwAddressGroupMemberV1Config) {
 	_init_.Initialize()
 

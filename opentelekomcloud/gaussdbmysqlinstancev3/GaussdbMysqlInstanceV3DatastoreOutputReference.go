@@ -70,6 +70,7 @@ type GaussdbMysqlInstanceV3DatastoreOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -484,6 +485,14 @@ func (g *jsiiProxy_GaussdbMysqlInstanceV3DatastoreOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GaussdbMysqlInstanceV3DatastoreOutputReference) ResetVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVersion",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GaussdbMysqlInstanceV3DatastoreOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

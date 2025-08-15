@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/apigw_signature_associate_v2 opentelekomcloud_apigw_signature_associate_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/apigw_signature_associate_v2 opentelekomcloud_apigw_signature_associate_v2}.
 type ApigwSignatureAssociateV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_ApigwSignatureAssociateV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/apigw_signature_associate_v2 opentelekomcloud_apigw_signature_associate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/apigw_signature_associate_v2 opentelekomcloud_apigw_signature_associate_v2} Resource.
 func NewApigwSignatureAssociateV2(scope constructs.Construct, id *string, config *ApigwSignatureAssociateV2Config) ApigwSignatureAssociateV2 {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewApigwSignatureAssociateV2(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/apigw_signature_associate_v2 opentelekomcloud_apigw_signature_associate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/apigw_signature_associate_v2 opentelekomcloud_apigw_signature_associate_v2} Resource.
 func NewApigwSignatureAssociateV2_Override(a ApigwSignatureAssociateV2, scope constructs.Construct, id *string, config *ApigwSignatureAssociateV2Config) {
 	_init_.Initialize()
 

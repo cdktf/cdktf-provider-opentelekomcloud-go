@@ -174,7 +174,7 @@ func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference) validateSetKeepDaysParameters(val *float64) error {
+func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference) validateSetKeepDaysParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

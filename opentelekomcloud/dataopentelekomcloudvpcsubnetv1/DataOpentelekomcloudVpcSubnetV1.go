@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1}.
 type DataOpentelekomcloudVpcSubnetV1 interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -558,7 +558,7 @@ func (j *jsiiProxy_DataOpentelekomcloudVpcSubnetV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Data Source.
 func NewDataOpentelekomcloudVpcSubnetV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcSubnetV1Config) DataOpentelekomcloudVpcSubnetV1 {
 	_init_.Initialize()
 
@@ -576,7 +576,7 @@ func NewDataOpentelekomcloudVpcSubnetV1(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Data Source.
 func NewDataOpentelekomcloudVpcSubnetV1_Override(d DataOpentelekomcloudVpcSubnetV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudVpcSubnetV1Config) {
 	_init_.Initialize()
 

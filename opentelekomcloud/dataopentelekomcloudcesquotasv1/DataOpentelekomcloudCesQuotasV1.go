@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/ces_quotas_v1 opentelekomcloud_ces_quotas_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/ces_quotas_v1 opentelekomcloud_ces_quotas_v1}.
 type DataOpentelekomcloudCesQuotasV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCesQuotasV1) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/ces_quotas_v1 opentelekomcloud_ces_quotas_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/ces_quotas_v1 opentelekomcloud_ces_quotas_v1} Data Source.
 func NewDataOpentelekomcloudCesQuotasV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudCesQuotasV1Config) DataOpentelekomcloudCesQuotasV1 {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataOpentelekomcloudCesQuotasV1(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/ces_quotas_v1 opentelekomcloud_ces_quotas_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/ces_quotas_v1 opentelekomcloud_ces_quotas_v1} Data Source.
 func NewDataOpentelekomcloudCesQuotasV1_Override(d DataOpentelekomcloudCesQuotasV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudCesQuotasV1Config) {
 	_init_.Initialize()
 

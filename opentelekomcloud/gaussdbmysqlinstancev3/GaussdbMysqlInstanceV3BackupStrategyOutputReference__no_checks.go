@@ -63,7 +63,7 @@ func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference) validateSetKeepDaysParameters(val *float64) error {
+func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference) validateSetKeepDaysParameters(val *string) error {
 	return nil
 }
 

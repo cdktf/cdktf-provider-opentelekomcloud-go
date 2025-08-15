@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/lts_stream_v2 opentelekomcloud_lts_stream_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_stream_v2 opentelekomcloud_lts_stream_v2}.
 type LtsStreamV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -472,7 +472,7 @@ func (j *jsiiProxy_LtsStreamV2) TtlInDaysInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/lts_stream_v2 opentelekomcloud_lts_stream_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_stream_v2 opentelekomcloud_lts_stream_v2} Resource.
 func NewLtsStreamV2(scope constructs.Construct, id *string, config *LtsStreamV2Config) LtsStreamV2 {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewLtsStreamV2(scope constructs.Construct, id *string, config *LtsStreamV2C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/lts_stream_v2 opentelekomcloud_lts_stream_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_stream_v2 opentelekomcloud_lts_stream_v2} Resource.
 func NewLtsStreamV2_Override(l LtsStreamV2, scope constructs.Construct, id *string, config *LtsStreamV2Config) {
 	_init_.Initialize()
 

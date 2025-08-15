@@ -32,9 +32,9 @@ type GaussdbMysqlInstanceV3BackupStrategyOutputReference interface {
 	Fqn() *string
 	InternalValue() *GaussdbMysqlInstanceV3BackupStrategy
 	SetInternalValue(val *GaussdbMysqlInstanceV3BackupStrategy)
-	KeepDays() *float64
-	SetKeepDays(val *float64)
-	KeepDaysInput() *float64
+	KeepDays() *string
+	SetKeepDays(val *string)
+	KeepDaysInput() *string
 	StartTime() *string
 	SetStartTime(val *string)
 	StartTimeInput() *string
@@ -136,8 +136,8 @@ func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference) Internal
 	return returns
 }
 
-func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference) KeepDays() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference) KeepDays() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"keepDays",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference) KeepDays
 	return returns
 }
 
-func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference) KeepDaysInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference) KeepDaysInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"keepDaysInput",
@@ -257,7 +257,7 @@ func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference)SetKeepDays(val *float64) {
+func (j *jsiiProxy_GaussdbMysqlInstanceV3BackupStrategyOutputReference)SetKeepDays(val *string) {
 	if err := j.validateSetKeepDaysParameters(val); err != nil {
 		panic(err)
 	}

@@ -159,6 +159,10 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetDescriptionParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_FgsFunctionV2) validateSetEnableClassIsolationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FgsFunctionV2) validateSetEnableDynamicMemoryParameters(val interface{}) error {
 	return nil
 }

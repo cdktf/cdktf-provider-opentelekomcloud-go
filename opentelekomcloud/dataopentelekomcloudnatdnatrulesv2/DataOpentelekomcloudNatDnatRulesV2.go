@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/nat_dnat_rules_v2 opentelekomcloud_nat_dnat_rules_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/nat_dnat_rules_v2 opentelekomcloud_nat_dnat_rules_v2}.
 type DataOpentelekomcloudNatDnatRulesV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -551,7 +551,7 @@ func (j *jsiiProxy_DataOpentelekomcloudNatDnatRulesV2) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/nat_dnat_rules_v2 opentelekomcloud_nat_dnat_rules_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/nat_dnat_rules_v2 opentelekomcloud_nat_dnat_rules_v2} Data Source.
 func NewDataOpentelekomcloudNatDnatRulesV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudNatDnatRulesV2Config) DataOpentelekomcloudNatDnatRulesV2 {
 	_init_.Initialize()
 
@@ -569,7 +569,7 @@ func NewDataOpentelekomcloudNatDnatRulesV2(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/data-sources/nat_dnat_rules_v2 opentelekomcloud_nat_dnat_rules_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/nat_dnat_rules_v2 opentelekomcloud_nat_dnat_rules_v2} Data Source.
 func NewDataOpentelekomcloudNatDnatRulesV2_Override(d DataOpentelekomcloudNatDnatRulesV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudNatDnatRulesV2Config) {
 	_init_.Initialize()
 
