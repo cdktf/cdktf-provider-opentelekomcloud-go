@@ -139,10 +139,6 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetCodeUrlParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_FgsFunctionV2) validateSetConcurrencyNumParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_FgsFunctionV2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

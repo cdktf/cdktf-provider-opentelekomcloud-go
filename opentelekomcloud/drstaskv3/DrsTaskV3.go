@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3}.
 type DrsTaskV3 interface {
 	cdktf.TerraformResource
+	Action() *string
+	SetAction(val *string)
+	ActionInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -102,12 +105,14 @@ type DrsTaskV3 interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
+	SecurityGroupId() *string
 	SourceDb() DrsTaskV3SourceDbOutputReference
 	SourceDbInput() *DrsTaskV3SourceDb
 	StartTime() *string
 	SetStartTime(val *string)
 	StartTimeInput() *string
 	Status() *string
+	SubnetId() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -122,6 +127,7 @@ type DrsTaskV3 interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	VpcId() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -169,6 +175,7 @@ type DrsTaskV3 interface {
 	PutLimitSpeed(value interface{})
 	PutSourceDb(value *DrsTaskV3SourceDb)
 	PutTimeouts(value *DrsTaskV3Timeouts)
+	ResetAction()
 	ResetDescription()
 	ResetDestinationDbReadonly()
 	ResetExpiredDays()
@@ -202,6 +209,26 @@ type DrsTaskV3 interface {
 // The jsii proxy struct for DrsTaskV3
 type jsiiProxy_DrsTaskV3 struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DrsTaskV3) Action() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"action",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DrsTaskV3) ActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DrsTaskV3) CdktfStack() cdktf.TerraformStack {
@@ -674,6 +701,16 @@ func (j *jsiiProxy_DrsTaskV3) Region() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DrsTaskV3) SecurityGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityGroupId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DrsTaskV3) SourceDb() DrsTaskV3SourceDbOutputReference {
 	var returns DrsTaskV3SourceDbOutputReference
 	_jsii_.Get(
@@ -719,6 +756,16 @@ func (j *jsiiProxy_DrsTaskV3) Status() *string {
 	_jsii_.Get(
 		j,
 		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DrsTaskV3) SubnetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetId",
 		&returns,
 	)
 	return returns
@@ -814,8 +861,18 @@ func (j *jsiiProxy_DrsTaskV3) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DrsTaskV3) VpcId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3} Resource.
 func NewDrsTaskV3(scope constructs.Construct, id *string, config *DrsTaskV3Config) DrsTaskV3 {
 	_init_.Initialize()
 
@@ -833,7 +890,7 @@ func NewDrsTaskV3(scope constructs.Construct, id *string, config *DrsTaskV3Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3} Resource.
 func NewDrsTaskV3_Override(d DrsTaskV3, scope constructs.Construct, id *string, config *DrsTaskV3Config) {
 	_init_.Initialize()
 
@@ -841,6 +898,17 @@ func NewDrsTaskV3_Override(d DrsTaskV3, scope constructs.Construct, id *string, 
 		"@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DrsTaskV3)SetAction(val *string) {
+	if err := j.validateSetActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"action",
+		val,
 	)
 }
 
@@ -1482,6 +1550,14 @@ func (d *jsiiProxy_DrsTaskV3) PutTimeouts(value *DrsTaskV3Timeouts) {
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DrsTaskV3) ResetAction() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAction",
+		nil, // no parameters
 	)
 }
 

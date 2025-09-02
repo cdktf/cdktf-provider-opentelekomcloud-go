@@ -46,6 +46,9 @@ type DrsTaskV3TimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type DrsTaskV3TimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_DrsTaskV3TimeoutsOutputReference) TerraformResource() cdktf.I
 	return returns
 }
 
+func (j *jsiiProxy_DrsTaskV3TimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DrsTaskV3TimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDrsTaskV3TimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DrsTaskV3TimeoutsOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_DrsTaskV3TimeoutsOutputReference)SetTerraformResource(val cdk
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DrsTaskV3TimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (d *jsiiProxy_DrsTaskV3TimeoutsOutputReference) ResetDelete() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DrsTaskV3TimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_DrsTaskV3SourceDbOutputReference) validateSetUserParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DrsTaskV3SourceDbOutputReference) validateSetVpcIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDrsTaskV3SourceDbOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

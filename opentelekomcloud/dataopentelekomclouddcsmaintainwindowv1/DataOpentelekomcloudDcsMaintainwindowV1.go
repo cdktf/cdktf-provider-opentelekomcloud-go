@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/dcs_maintainwindow_v1 opentelekomcloud_dcs_maintainwindow_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/dcs_maintainwindow_v1 opentelekomcloud_dcs_maintainwindow_v1}.
 type DataOpentelekomcloudDcsMaintainwindowV1 interface {
 	cdktf.TerraformDataSource
 	Begin() *string
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataOpentelekomcloudDcsMaintainwindowV1) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/dcs_maintainwindow_v1 opentelekomcloud_dcs_maintainwindow_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/dcs_maintainwindow_v1 opentelekomcloud_dcs_maintainwindow_v1} Data Source.
 func NewDataOpentelekomcloudDcsMaintainwindowV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudDcsMaintainwindowV1Config) DataOpentelekomcloudDcsMaintainwindowV1 {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewDataOpentelekomcloudDcsMaintainwindowV1(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/dcs_maintainwindow_v1 opentelekomcloud_dcs_maintainwindow_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/dcs_maintainwindow_v1 opentelekomcloud_dcs_maintainwindow_v1} Data Source.
 func NewDataOpentelekomcloudDcsMaintainwindowV1_Override(d DataOpentelekomcloudDcsMaintainwindowV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudDcsMaintainwindowV1Config) {
 	_init_.Initialize()
 

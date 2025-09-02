@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/gaussdb_mysql_instance_v3 opentelekomcloud_gaussdb_mysql_instance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/gaussdb_mysql_instance_v3 opentelekomcloud_gaussdb_mysql_instance_v3}.
 type GaussdbMysqlInstanceV3 interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -880,7 +880,7 @@ func (j *jsiiProxy_GaussdbMysqlInstanceV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/gaussdb_mysql_instance_v3 opentelekomcloud_gaussdb_mysql_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/gaussdb_mysql_instance_v3 opentelekomcloud_gaussdb_mysql_instance_v3} Resource.
 func NewGaussdbMysqlInstanceV3(scope constructs.Construct, id *string, config *GaussdbMysqlInstanceV3Config) GaussdbMysqlInstanceV3 {
 	_init_.Initialize()
 
@@ -898,7 +898,7 @@ func NewGaussdbMysqlInstanceV3(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/gaussdb_mysql_instance_v3 opentelekomcloud_gaussdb_mysql_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/gaussdb_mysql_instance_v3 opentelekomcloud_gaussdb_mysql_instance_v3} Resource.
 func NewGaussdbMysqlInstanceV3_Override(g GaussdbMysqlInstanceV3, scope constructs.Construct, id *string, config *GaussdbMysqlInstanceV3Config) {
 	_init_.Initialize()
 

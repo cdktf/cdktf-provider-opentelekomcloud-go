@@ -24,28 +24,28 @@ type LtsCceAccessV3Config struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// access_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_cce_access_v3#access_config LtsCceAccessV3#access_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_cce_access_v3#access_config LtsCceAccessV3#access_config}
 	AccessConfig *LtsCceAccessV3AccessConfig `field:"required" json:"accessConfig" yaml:"accessConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_cce_access_v3#cluster_id LtsCceAccessV3#cluster_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_cce_access_v3#cluster_id LtsCceAccessV3#cluster_id}.
 	ClusterId *string `field:"required" json:"clusterId" yaml:"clusterId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_cce_access_v3#log_group_id LtsCceAccessV3#log_group_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_cce_access_v3#log_group_id LtsCceAccessV3#log_group_id}.
 	LogGroupId *string `field:"required" json:"logGroupId" yaml:"logGroupId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_cce_access_v3#log_stream_id LtsCceAccessV3#log_stream_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_cce_access_v3#log_stream_id LtsCceAccessV3#log_stream_id}.
 	LogStreamId *string `field:"required" json:"logStreamId" yaml:"logStreamId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_cce_access_v3#name LtsCceAccessV3#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_cce_access_v3#name LtsCceAccessV3#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_cce_access_v3#binary_collect LtsCceAccessV3#binary_collect}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_cce_access_v3#binary_collect LtsCceAccessV3#binary_collect}.
 	BinaryCollect interface{} `field:"optional" json:"binaryCollect" yaml:"binaryCollect"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_cce_access_v3#host_group_ids LtsCceAccessV3#host_group_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_cce_access_v3#host_group_ids LtsCceAccessV3#host_group_ids}.
 	HostGroupIds *[]*string `field:"optional" json:"hostGroupIds" yaml:"hostGroupIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_cce_access_v3#id LtsCceAccessV3#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_cce_access_v3#id LtsCceAccessV3#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_cce_access_v3#log_split LtsCceAccessV3#log_split}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_cce_access_v3#log_split LtsCceAccessV3#log_split}.
 	LogSplit interface{} `field:"optional" json:"logSplit" yaml:"logSplit"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_cce_access_v3#tags LtsCceAccessV3#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_cce_access_v3#tags LtsCceAccessV3#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

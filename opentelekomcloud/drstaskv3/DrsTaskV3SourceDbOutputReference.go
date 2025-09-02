@@ -83,6 +83,9 @@ type DrsTaskV3SourceDbOutputReference interface {
 	User() *string
 	SetUser(val *string)
 	UserInput() *string
+	VpcId() *string
+	SetVpcId(val *string)
+	VpcIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -116,6 +119,7 @@ type DrsTaskV3SourceDbOutputReference interface {
 	ResetSslCertPassword()
 	ResetSslEnabled()
 	ResetSubnetId()
+	ResetVpcId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -491,6 +495,26 @@ func (j *jsiiProxy_DrsTaskV3SourceDbOutputReference) UserInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DrsTaskV3SourceDbOutputReference) VpcId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DrsTaskV3SourceDbOutputReference) VpcIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDrsTaskV3SourceDbOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DrsTaskV3SourceDbOutputReference {
 	_init_.Initialize()
@@ -724,6 +748,17 @@ func (j *jsiiProxy_DrsTaskV3SourceDbOutputReference)SetUser(val *string) {
 	_jsii_.Set(
 		j,
 		"user",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DrsTaskV3SourceDbOutputReference)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vpcId",
 		val,
 	)
 }
@@ -982,6 +1017,14 @@ func (d *jsiiProxy_DrsTaskV3SourceDbOutputReference) ResetSubnetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DrsTaskV3SourceDbOutputReference) ResetVpcId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetVpcId",
 		nil, // no parameters
 	)
 }

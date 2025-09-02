@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}.
 type FgsFunctionV2 interface {
 	cdktf.TerraformResource
 	Agency() *string
@@ -37,9 +37,6 @@ type FgsFunctionV2 interface {
 	CodeUrl() *string
 	SetCodeUrl(val *string)
 	CodeUrlInput() *string
-	ConcurrencyNum() *float64
-	SetConcurrencyNum(val *float64)
-	ConcurrencyNumInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -251,7 +248,6 @@ type FgsFunctionV2 interface {
 	ResetCodeFilename()
 	ResetCodeType()
 	ResetCodeUrl()
-	ResetConcurrencyNum()
 	ResetCustomImage()
 	ResetDependList()
 	ResetDescription()
@@ -450,26 +446,6 @@ func (j *jsiiProxy_FgsFunctionV2) CodeUrlInput() *string {
 	_jsii_.Get(
 		j,
 		"codeUrlInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FgsFunctionV2) ConcurrencyNum() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"concurrencyNum",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FgsFunctionV2) ConcurrencyNumInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"concurrencyNumInput",
 		&returns,
 	)
 	return returns
@@ -1446,7 +1422,7 @@ func (j *jsiiProxy_FgsFunctionV2) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
 func NewFgsFunctionV2(scope constructs.Construct, id *string, config *FgsFunctionV2Config) FgsFunctionV2 {
 	_init_.Initialize()
 
@@ -1464,7 +1440,7 @@ func NewFgsFunctionV2(scope constructs.Construct, id *string, config *FgsFunctio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
 func NewFgsFunctionV2_Override(f FgsFunctionV2, scope constructs.Construct, id *string, config *FgsFunctionV2Config) {
 	_init_.Initialize()
 
@@ -1537,17 +1513,6 @@ func (j *jsiiProxy_FgsFunctionV2)SetCodeUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"codeUrl",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FgsFunctionV2)SetConcurrencyNum(val *float64) {
-	if err := j.validateSetConcurrencyNumParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"concurrencyNum",
 		val,
 	)
 }
@@ -2413,14 +2378,6 @@ func (f *jsiiProxy_FgsFunctionV2) ResetCodeUrl() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetCodeUrl",
-		nil, // no parameters
-	)
-}
-
-func (f *jsiiProxy_FgsFunctionV2) ResetConcurrencyNum() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetConcurrencyNum",
 		nil, // no parameters
 	)
 }

@@ -107,6 +107,10 @@ func validateDrsTaskV3_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DrsTaskV3) validateSetActionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DrsTaskV3) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

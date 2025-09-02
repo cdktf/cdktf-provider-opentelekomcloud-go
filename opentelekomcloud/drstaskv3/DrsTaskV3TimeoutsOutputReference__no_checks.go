@@ -79,6 +79,10 @@ func (j *jsiiProxy_DrsTaskV3TimeoutsOutputReference) validateSetTerraformResourc
 	return nil
 }
 
+func (j *jsiiProxy_DrsTaskV3TimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewDrsTaskV3TimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

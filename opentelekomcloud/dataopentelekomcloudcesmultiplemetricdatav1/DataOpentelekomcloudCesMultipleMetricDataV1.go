@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/ces_multiple_metric_data_v1 opentelekomcloud_ces_multiple_metric_data_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/ces_multiple_metric_data_v1 opentelekomcloud_ces_multiple_metric_data_v1}.
 type DataOpentelekomcloudCesMultipleMetricDataV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCesMultipleMetricDataV1) ToInput() *float
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/ces_multiple_metric_data_v1 opentelekomcloud_ces_multiple_metric_data_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/ces_multiple_metric_data_v1 opentelekomcloud_ces_multiple_metric_data_v1} Data Source.
 func NewDataOpentelekomcloudCesMultipleMetricDataV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudCesMultipleMetricDataV1Config) DataOpentelekomcloudCesMultipleMetricDataV1 {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewDataOpentelekomcloudCesMultipleMetricDataV1(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/data-sources/ces_multiple_metric_data_v1 opentelekomcloud_ces_multiple_metric_data_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/ces_multiple_metric_data_v1 opentelekomcloud_ces_multiple_metric_data_v1} Data Source.
 func NewDataOpentelekomcloudCesMultipleMetricDataV1_Override(d DataOpentelekomcloudCesMultipleMetricDataV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudCesMultipleMetricDataV1Config) {
 	_init_.Initialize()
 

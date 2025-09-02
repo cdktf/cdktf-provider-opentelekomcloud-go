@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2}.
 type NetworkingSecgroupRuleV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -595,7 +595,7 @@ func (j *jsiiProxy_NetworkingSecgroupRuleV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2} Resource.
 func NewNetworkingSecgroupRuleV2(scope constructs.Construct, id *string, config *NetworkingSecgroupRuleV2Config) NetworkingSecgroupRuleV2 {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewNetworkingSecgroupRuleV2(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2} Resource.
 func NewNetworkingSecgroupRuleV2_Override(n NetworkingSecgroupRuleV2, scope constructs.Construct, id *string, config *NetworkingSecgroupRuleV2Config) {
 	_init_.Initialize()
 

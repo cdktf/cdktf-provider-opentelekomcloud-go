@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/dms_dedicated_instance_v2 opentelekomcloud_dms_dedicated_instance_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/dms_dedicated_instance_v2 opentelekomcloud_dms_dedicated_instance_v2}.
 type DmsDedicatedInstanceV2 interface {
 	cdktf.TerraformResource
 	AccessUser() *string
@@ -1250,7 +1250,7 @@ func (j *jsiiProxy_DmsDedicatedInstanceV2) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/dms_dedicated_instance_v2 opentelekomcloud_dms_dedicated_instance_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/dms_dedicated_instance_v2 opentelekomcloud_dms_dedicated_instance_v2} Resource.
 func NewDmsDedicatedInstanceV2(scope constructs.Construct, id *string, config *DmsDedicatedInstanceV2Config) DmsDedicatedInstanceV2 {
 	_init_.Initialize()
 
@@ -1268,7 +1268,7 @@ func NewDmsDedicatedInstanceV2(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/dms_dedicated_instance_v2 opentelekomcloud_dms_dedicated_instance_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/dms_dedicated_instance_v2 opentelekomcloud_dms_dedicated_instance_v2} Resource.
 func NewDmsDedicatedInstanceV2_Override(d DmsDedicatedInstanceV2, scope constructs.Construct, id *string, config *DmsDedicatedInstanceV2Config) {
 	_init_.Initialize()
 
