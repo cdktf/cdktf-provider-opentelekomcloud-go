@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_maintenance_v3 opentelekomcloud_rds_maintenance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_maintenance_v3 opentelekomcloud_rds_maintenance_v3}.
 type RdsMaintenanceV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_RdsMaintenanceV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_maintenance_v3 opentelekomcloud_rds_maintenance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_maintenance_v3 opentelekomcloud_rds_maintenance_v3} Resource.
 func NewRdsMaintenanceV3(scope constructs.Construct, id *string, config *RdsMaintenanceV3Config) RdsMaintenanceV3 {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewRdsMaintenanceV3(scope constructs.Construct, id *string, config *RdsMain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_maintenance_v3 opentelekomcloud_rds_maintenance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_maintenance_v3 opentelekomcloud_rds_maintenance_v3} Resource.
 func NewRdsMaintenanceV3_Override(r RdsMaintenanceV3, scope constructs.Construct, id *string, config *RdsMaintenanceV3Config) {
 	_init_.Initialize()
 

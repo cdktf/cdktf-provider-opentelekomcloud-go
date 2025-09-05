@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/css_configuration_v1 opentelekomcloud_css_configuration_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/css_configuration_v1 opentelekomcloud_css_configuration_v1}.
 type CssConfigurationV1 interface {
 	cdktf.TerraformResource
 	AutoCreateIndex() *string
@@ -608,7 +608,7 @@ func (j *jsiiProxy_CssConfigurationV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/css_configuration_v1 opentelekomcloud_css_configuration_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/css_configuration_v1 opentelekomcloud_css_configuration_v1} Resource.
 func NewCssConfigurationV1(scope constructs.Construct, id *string, config *CssConfigurationV1Config) CssConfigurationV1 {
 	_init_.Initialize()
 
@@ -626,7 +626,7 @@ func NewCssConfigurationV1(scope constructs.Construct, id *string, config *CssCo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/css_configuration_v1 opentelekomcloud_css_configuration_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/css_configuration_v1 opentelekomcloud_css_configuration_v1} Resource.
 func NewCssConfigurationV1_Override(c CssConfigurationV1, scope constructs.Construct, id *string, config *CssConfigurationV1Config) {
 	_init_.Initialize()
 

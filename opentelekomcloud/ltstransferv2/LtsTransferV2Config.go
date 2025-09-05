@@ -22,17 +22,17 @@ type LtsTransferV2Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_transfer_v2#log_group_id LtsTransferV2#log_group_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_transfer_v2#log_group_id LtsTransferV2#log_group_id}.
 	LogGroupId *string `field:"required" json:"logGroupId" yaml:"logGroupId"`
 	// log_streams block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_transfer_v2#log_streams LtsTransferV2#log_streams}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_transfer_v2#log_streams LtsTransferV2#log_streams}
 	LogStreams interface{} `field:"required" json:"logStreams" yaml:"logStreams"`
 	// log_transfer_info block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_transfer_v2#log_transfer_info LtsTransferV2#log_transfer_info}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_transfer_v2#log_transfer_info LtsTransferV2#log_transfer_info}
 	LogTransferInfo *LtsTransferV2LogTransferInfo `field:"required" json:"logTransferInfo" yaml:"logTransferInfo"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_transfer_v2#id LtsTransferV2#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_transfer_v2#id LtsTransferV2#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

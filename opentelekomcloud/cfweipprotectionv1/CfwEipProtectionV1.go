@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/cfw_eip_protection_v1 opentelekomcloud_cfw_eip_protection_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/cfw_eip_protection_v1 opentelekomcloud_cfw_eip_protection_v1}.
 type CfwEipProtectionV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_CfwEipProtectionV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/cfw_eip_protection_v1 opentelekomcloud_cfw_eip_protection_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/cfw_eip_protection_v1 opentelekomcloud_cfw_eip_protection_v1} Resource.
 func NewCfwEipProtectionV1(scope constructs.Construct, id *string, config *CfwEipProtectionV1Config) CfwEipProtectionV1 {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewCfwEipProtectionV1(scope constructs.Construct, id *string, config *CfwEi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/cfw_eip_protection_v1 opentelekomcloud_cfw_eip_protection_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/cfw_eip_protection_v1 opentelekomcloud_cfw_eip_protection_v1} Resource.
 func NewCfwEipProtectionV1_Override(c CfwEipProtectionV1, scope constructs.Construct, id *string, config *CfwEipProtectionV1Config) {
 	_init_.Initialize()
 

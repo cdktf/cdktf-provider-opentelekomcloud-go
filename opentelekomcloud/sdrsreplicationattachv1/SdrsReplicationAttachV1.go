@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/sdrs_replication_attach_v1 opentelekomcloud_sdrs_replication_attach_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sdrs_replication_attach_v1 opentelekomcloud_sdrs_replication_attach_v1}.
 type SdrsReplicationAttachV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_SdrsReplicationAttachV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/sdrs_replication_attach_v1 opentelekomcloud_sdrs_replication_attach_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sdrs_replication_attach_v1 opentelekomcloud_sdrs_replication_attach_v1} Resource.
 func NewSdrsReplicationAttachV1(scope constructs.Construct, id *string, config *SdrsReplicationAttachV1Config) SdrsReplicationAttachV1 {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewSdrsReplicationAttachV1(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/sdrs_replication_attach_v1 opentelekomcloud_sdrs_replication_attach_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sdrs_replication_attach_v1 opentelekomcloud_sdrs_replication_attach_v1} Resource.
 func NewSdrsReplicationAttachV1_Override(s SdrsReplicationAttachV1, scope constructs.Construct, id *string, config *SdrsReplicationAttachV1Config) {
 	_init_.Initialize()
 

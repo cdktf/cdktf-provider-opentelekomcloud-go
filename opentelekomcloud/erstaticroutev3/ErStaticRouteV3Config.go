@@ -22,22 +22,22 @@ type ErStaticRouteV3Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/er_static_route_v3#destination ErStaticRouteV3#destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_static_route_v3#destination ErStaticRouteV3#destination}.
 	Destination *string `field:"required" json:"destination" yaml:"destination"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/er_static_route_v3#route_table_id ErStaticRouteV3#route_table_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_static_route_v3#route_table_id ErStaticRouteV3#route_table_id}.
 	RouteTableId *string `field:"required" json:"routeTableId" yaml:"routeTableId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/er_static_route_v3#attachment_id ErStaticRouteV3#attachment_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_static_route_v3#attachment_id ErStaticRouteV3#attachment_id}.
 	AttachmentId *string `field:"optional" json:"attachmentId" yaml:"attachmentId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/er_static_route_v3#id ErStaticRouteV3#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_static_route_v3#id ErStaticRouteV3#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/er_static_route_v3#is_blackhole ErStaticRouteV3#is_blackhole}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_static_route_v3#is_blackhole ErStaticRouteV3#is_blackhole}.
 	IsBlackhole interface{} `field:"optional" json:"isBlackhole" yaml:"isBlackhole"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/er_static_route_v3#timeouts ErStaticRouteV3#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_static_route_v3#timeouts ErStaticRouteV3#timeouts}
 	Timeouts *ErStaticRouteV3Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
