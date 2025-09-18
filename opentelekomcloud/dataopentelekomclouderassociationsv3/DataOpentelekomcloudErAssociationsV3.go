@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/er_associations_v3 opentelekomcloud_er_associations_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/er_associations_v3 opentelekomcloud_er_associations_v3}.
 type DataOpentelekomcloudErAssociationsV3 interface {
 	cdktf.TerraformDataSource
 	Associations() DataOpentelekomcloudErAssociationsV3AssociationsList
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataOpentelekomcloudErAssociationsV3) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/er_associations_v3 opentelekomcloud_er_associations_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/er_associations_v3 opentelekomcloud_er_associations_v3} Data Source.
 func NewDataOpentelekomcloudErAssociationsV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudErAssociationsV3Config) DataOpentelekomcloudErAssociationsV3 {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataOpentelekomcloudErAssociationsV3(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/er_associations_v3 opentelekomcloud_er_associations_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/er_associations_v3 opentelekomcloud_er_associations_v3} Data Source.
 func NewDataOpentelekomcloudErAssociationsV3_Override(d DataOpentelekomcloudErAssociationsV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudErAssociationsV3Config) {
 	_init_.Initialize()
 

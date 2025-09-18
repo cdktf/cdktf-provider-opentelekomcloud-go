@@ -67,10 +67,6 @@ func (j *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference) validateSetRuleIndexParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference) validateSetSourceParameters(val *string) error {
 	return nil
 }

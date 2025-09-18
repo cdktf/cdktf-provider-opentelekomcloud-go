@@ -5,7 +5,7 @@ package cfweipprotectionv1
 
 
 type CfwEipProtectionV1Timeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/cfw_eip_protection_v1#create CfwEipProtectionV1#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_eip_protection_v1#create CfwEipProtectionV1#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

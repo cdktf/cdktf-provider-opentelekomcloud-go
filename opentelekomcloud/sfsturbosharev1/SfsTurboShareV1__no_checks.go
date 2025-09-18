@@ -115,6 +115,14 @@ func (j *jsiiProxy_SfsTurboShareV1) validateSetEnhancedParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_SfsTurboShareV1) validateSetExpandTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SfsTurboShareV1) validateSetHpcBwParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfsTurboShareV1) validateSetIdParameters(val *string) error {
 	return nil
 }

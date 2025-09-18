@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3}.
 type IdentityPasswordPolicyV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -500,7 +500,7 @@ func (j *jsiiProxy_IdentityPasswordPolicyV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3} Resource.
 func NewIdentityPasswordPolicyV3(scope constructs.Construct, id *string, config *IdentityPasswordPolicyV3Config) IdentityPasswordPolicyV3 {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewIdentityPasswordPolicyV3(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3} Resource.
 func NewIdentityPasswordPolicyV3_Override(i IdentityPasswordPolicyV3, scope constructs.Construct, id *string, config *IdentityPasswordPolicyV3Config) {
 	_init_.Initialize()
 

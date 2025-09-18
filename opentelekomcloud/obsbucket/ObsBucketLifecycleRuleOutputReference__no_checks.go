@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) validateInterpolationF
 	return nil
 }
 
+func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) validatePutAbortIncompleteMultipartUploadParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) validatePutExpirationParameters(value interface{}) error {
 	return nil
 }

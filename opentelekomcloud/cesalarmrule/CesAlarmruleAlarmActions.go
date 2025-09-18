@@ -5,9 +5,9 @@ package cesalarmrule
 
 
 type CesAlarmruleAlarmActions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_alarmrule#notification_list CesAlarmrule#notification_list}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_alarmrule#notification_list CesAlarmrule#notification_list}.
 	NotificationList *[]*string `field:"required" json:"notificationList" yaml:"notificationList"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_alarmrule#type CesAlarmrule#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_alarmrule#type CesAlarmrule#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

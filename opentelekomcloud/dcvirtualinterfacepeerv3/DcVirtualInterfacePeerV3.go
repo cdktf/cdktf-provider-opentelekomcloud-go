@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/dc_virtual_interface_peer_v3 opentelekomcloud_dc_virtual_interface_peer_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/dc_virtual_interface_peer_v3 opentelekomcloud_dc_virtual_interface_peer_v3}.
 type DcVirtualInterfacePeerV3 interface {
 	cdktf.TerraformResource
 	AddressFamily() *string
@@ -654,7 +654,7 @@ func (j *jsiiProxy_DcVirtualInterfacePeerV3) VifIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/dc_virtual_interface_peer_v3 opentelekomcloud_dc_virtual_interface_peer_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/dc_virtual_interface_peer_v3 opentelekomcloud_dc_virtual_interface_peer_v3} Resource.
 func NewDcVirtualInterfacePeerV3(scope constructs.Construct, id *string, config *DcVirtualInterfacePeerV3Config) DcVirtualInterfacePeerV3 {
 	_init_.Initialize()
 
@@ -672,7 +672,7 @@ func NewDcVirtualInterfacePeerV3(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/dc_virtual_interface_peer_v3 opentelekomcloud_dc_virtual_interface_peer_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/dc_virtual_interface_peer_v3 opentelekomcloud_dc_virtual_interface_peer_v3} Resource.
 func NewDcVirtualInterfacePeerV3_Override(d DcVirtualInterfacePeerV3, scope constructs.Construct, id *string, config *DcVirtualInterfacePeerV3Config) {
 	_init_.Initialize()
 

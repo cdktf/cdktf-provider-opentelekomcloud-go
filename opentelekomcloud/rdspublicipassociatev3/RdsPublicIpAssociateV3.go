@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3 opentelekomcloud_rds_public_ip_associate_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/rds_public_ip_associate_v3 opentelekomcloud_rds_public_ip_associate_v3}.
 type RdsPublicIpAssociateV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_RdsPublicIpAssociateV3) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3 opentelekomcloud_rds_public_ip_associate_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/rds_public_ip_associate_v3 opentelekomcloud_rds_public_ip_associate_v3} Resource.
 func NewRdsPublicIpAssociateV3(scope constructs.Construct, id *string, config *RdsPublicIpAssociateV3Config) RdsPublicIpAssociateV3 {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewRdsPublicIpAssociateV3(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3 opentelekomcloud_rds_public_ip_associate_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/rds_public_ip_associate_v3 opentelekomcloud_rds_public_ip_associate_v3} Resource.
 func NewRdsPublicIpAssociateV3_Override(r RdsPublicIpAssociateV3, scope constructs.Construct, id *string, config *RdsPublicIpAssociateV3Config) {
 	_init_.Initialize()
 

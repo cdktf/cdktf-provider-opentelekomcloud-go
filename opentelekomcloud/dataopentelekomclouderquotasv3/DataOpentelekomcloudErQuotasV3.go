@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/er_quotas_v3 opentelekomcloud_er_quotas_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/er_quotas_v3 opentelekomcloud_er_quotas_v3}.
 type DataOpentelekomcloudErQuotasV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DataOpentelekomcloudErQuotasV3) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/er_quotas_v3 opentelekomcloud_er_quotas_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/er_quotas_v3 opentelekomcloud_er_quotas_v3} Data Source.
 func NewDataOpentelekomcloudErQuotasV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudErQuotasV3Config) DataOpentelekomcloudErQuotasV3 {
 	_init_.Initialize()
 
@@ -377,7 +377,7 @@ func NewDataOpentelekomcloudErQuotasV3(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/er_quotas_v3 opentelekomcloud_er_quotas_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/er_quotas_v3 opentelekomcloud_er_quotas_v3} Data Source.
 func NewDataOpentelekomcloudErQuotasV3_Override(d DataOpentelekomcloudErQuotasV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudErQuotasV3Config) {
 	_init_.Initialize()
 

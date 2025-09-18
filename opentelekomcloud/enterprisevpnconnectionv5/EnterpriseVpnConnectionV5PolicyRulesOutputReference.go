@@ -35,9 +35,6 @@ type EnterpriseVpnConnectionV5PolicyRulesOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	RuleIndex() *float64
-	SetRuleIndex(val *float64)
-	RuleIndexInput() *float64
 	Source() *string
 	SetSource(val *string)
 	SourceInput() *string
@@ -74,7 +71,6 @@ type EnterpriseVpnConnectionV5PolicyRulesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDestination()
-	ResetRuleIndex()
 	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -156,26 +152,6 @@ func (j *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference) RuleIndex() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"ruleIndex",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference) RuleIndexInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"ruleIndexInput",
 		&returns,
 	)
 	return returns
@@ -289,17 +265,6 @@ func (j *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference)SetRuleIndex(val *float64) {
-	if err := j.validateSetRuleIndexParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ruleIndex",
 		val,
 	)
 }
@@ -527,14 +492,6 @@ func (e *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference) ResetDes
 	_jsii_.InvokeVoid(
 		e,
 		"resetDestination",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference) ResetRuleIndex() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetRuleIndex",
 		nil, // no parameters
 	)
 }

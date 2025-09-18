@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/rms_policy_definitions_v1 opentelekomcloud_rms_policy_definitions_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_policy_definitions_v1 opentelekomcloud_rms_policy_definitions_v1}.
 type DataOpentelekomcloudRmsPolicyDefinitionsV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRmsPolicyDefinitionsV1) TriggerTypeInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/rms_policy_definitions_v1 opentelekomcloud_rms_policy_definitions_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_policy_definitions_v1 opentelekomcloud_rms_policy_definitions_v1} Data Source.
 func NewDataOpentelekomcloudRmsPolicyDefinitionsV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudRmsPolicyDefinitionsV1Config) DataOpentelekomcloudRmsPolicyDefinitionsV1 {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataOpentelekomcloudRmsPolicyDefinitionsV1(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/rms_policy_definitions_v1 opentelekomcloud_rms_policy_definitions_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_policy_definitions_v1 opentelekomcloud_rms_policy_definitions_v1} Data Source.
 func NewDataOpentelekomcloudRmsPolicyDefinitionsV1_Override(d DataOpentelekomcloudRmsPolicyDefinitionsV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudRmsPolicyDefinitionsV1Config) {
 	_init_.Initialize()
 

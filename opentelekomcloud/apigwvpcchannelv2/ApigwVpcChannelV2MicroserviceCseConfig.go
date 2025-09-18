@@ -5,9 +5,9 @@ package apigwvpcchannelv2
 
 
 type ApigwVpcChannelV2MicroserviceCseConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/apigw_vpc_channel_v2#engine_id ApigwVpcChannelV2#engine_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/apigw_vpc_channel_v2#engine_id ApigwVpcChannelV2#engine_id}.
 	EngineId *string `field:"required" json:"engineId" yaml:"engineId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/apigw_vpc_channel_v2#service_id ApigwVpcChannelV2#service_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/apigw_vpc_channel_v2#service_id ApigwVpcChannelV2#service_id}.
 	ServiceId *string `field:"required" json:"serviceId" yaml:"serviceId"`
 }
 

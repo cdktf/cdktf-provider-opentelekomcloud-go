@@ -198,14 +198,6 @@ func (j *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference) validateSetRuleIndexParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesOutputReference) validateSetSourceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

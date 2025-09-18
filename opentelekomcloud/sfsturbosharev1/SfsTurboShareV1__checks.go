@@ -384,6 +384,22 @@ func (j *jsiiProxy_SfsTurboShareV1) validateSetEnhancedParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_SfsTurboShareV1) validateSetExpandTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SfsTurboShareV1) validateSetHpcBwParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SfsTurboShareV1) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -13,6 +13,8 @@ import (
 
 type ObsBucketLifecycleRuleOutputReference interface {
 	cdktf.ComplexObject
+	AbortIncompleteMultipartUpload() ObsBucketLifecycleRuleAbortIncompleteMultipartUploadList
+	AbortIncompleteMultipartUploadInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -83,11 +85,13 @@ type ObsBucketLifecycleRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAbortIncompleteMultipartUpload(value interface{})
 	PutExpiration(value interface{})
 	PutNoncurrentVersionExpiration(value interface{})
 	PutNoncurrentVersionTransition(value interface{})
 	PutTag(value interface{})
 	PutTransition(value interface{})
+	ResetAbortIncompleteMultipartUpload()
 	ResetExpiration()
 	ResetNoncurrentVersionExpiration()
 	ResetNoncurrentVersionTransition()
@@ -107,6 +111,26 @@ type ObsBucketLifecycleRuleOutputReference interface {
 // The jsii proxy struct for ObsBucketLifecycleRuleOutputReference
 type jsiiProxy_ObsBucketLifecycleRuleOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ObsBucketLifecycleRuleOutputReference) AbortIncompleteMultipartUpload() ObsBucketLifecycleRuleAbortIncompleteMultipartUploadList {
+	var returns ObsBucketLifecycleRuleAbortIncompleteMultipartUploadList
+	_jsii_.Get(
+		j,
+		"abortIncompleteMultipartUpload",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObsBucketLifecycleRuleOutputReference) AbortIncompleteMultipartUploadInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"abortIncompleteMultipartUploadInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObsBucketLifecycleRuleOutputReference) ComplexObjectIndex() interface{} {
@@ -641,6 +665,17 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) InterpolationForAttrib
 	return returns
 }
 
+func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) PutAbortIncompleteMultipartUpload(value interface{}) {
+	if err := o.validatePutAbortIncompleteMultipartUploadParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAbortIncompleteMultipartUpload",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) PutExpiration(value interface{}) {
 	if err := o.validatePutExpirationParameters(value); err != nil {
 		panic(err)
@@ -693,6 +728,14 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) PutTransition(value in
 		o,
 		"putTransition",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) ResetAbortIncompleteMultipartUpload() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAbortIncompleteMultipartUpload",
+		nil, // no parameters
 	)
 }
 

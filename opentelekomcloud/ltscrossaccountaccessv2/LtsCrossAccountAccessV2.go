@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_cross_account_access_v2 opentelekomcloud_lts_cross_account_access_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lts_cross_account_access_v2 opentelekomcloud_lts_cross_account_access_v2}.
 type LtsCrossAccountAccessV2 interface {
 	cdktf.TerraformResource
 	AccessConfigType() *string
@@ -643,7 +643,7 @@ func (j *jsiiProxy_LtsCrossAccountAccessV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_cross_account_access_v2 opentelekomcloud_lts_cross_account_access_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lts_cross_account_access_v2 opentelekomcloud_lts_cross_account_access_v2} Resource.
 func NewLtsCrossAccountAccessV2(scope constructs.Construct, id *string, config *LtsCrossAccountAccessV2Config) LtsCrossAccountAccessV2 {
 	_init_.Initialize()
 
@@ -661,7 +661,7 @@ func NewLtsCrossAccountAccessV2(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_cross_account_access_v2 opentelekomcloud_lts_cross_account_access_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lts_cross_account_access_v2 opentelekomcloud_lts_cross_account_access_v2} Resource.
 func NewLtsCrossAccountAccessV2_Override(l LtsCrossAccountAccessV2, scope constructs.Construct, id *string, config *LtsCrossAccountAccessV2Config) {
 	_init_.Initialize()
 

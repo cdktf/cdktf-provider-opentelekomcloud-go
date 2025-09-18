@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/private_nat_transit_ip_v3 opentelekomcloud_private_nat_transit_ip_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_transit_ip_v3 opentelekomcloud_private_nat_transit_ip_v3}.
 type PrivateNatTransitIpV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -482,7 +482,7 @@ func (j *jsiiProxy_PrivateNatTransitIpV3) VirsubnetIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/private_nat_transit_ip_v3 opentelekomcloud_private_nat_transit_ip_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_transit_ip_v3 opentelekomcloud_private_nat_transit_ip_v3} Resource.
 func NewPrivateNatTransitIpV3(scope constructs.Construct, id *string, config *PrivateNatTransitIpV3Config) PrivateNatTransitIpV3 {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewPrivateNatTransitIpV3(scope constructs.Construct, id *string, config *Pr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/private_nat_transit_ip_v3 opentelekomcloud_private_nat_transit_ip_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_transit_ip_v3 opentelekomcloud_private_nat_transit_ip_v3} Resource.
 func NewPrivateNatTransitIpV3_Override(p PrivateNatTransitIpV3, scope constructs.Construct, id *string, config *PrivateNatTransitIpV3Config) {
 	_init_.Initialize()
 

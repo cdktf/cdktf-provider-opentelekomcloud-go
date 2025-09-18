@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/dc_hosted_connect_v3 opentelekomcloud_dc_hosted_connect_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/dc_hosted_connect_v3 opentelekomcloud_dc_hosted_connect_v3}.
 type DcHostedConnectV3 interface {
 	cdktf.TerraformResource
 	Bandwidth() *float64
@@ -520,7 +520,7 @@ func (j *jsiiProxy_DcHostedConnectV3) VlanInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/dc_hosted_connect_v3 opentelekomcloud_dc_hosted_connect_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/dc_hosted_connect_v3 opentelekomcloud_dc_hosted_connect_v3} Resource.
 func NewDcHostedConnectV3(scope constructs.Construct, id *string, config *DcHostedConnectV3Config) DcHostedConnectV3 {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewDcHostedConnectV3(scope constructs.Construct, id *string, config *DcHost
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/dc_hosted_connect_v3 opentelekomcloud_dc_hosted_connect_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/dc_hosted_connect_v3 opentelekomcloud_dc_hosted_connect_v3} Resource.
 func NewDcHostedConnectV3_Override(d DcHostedConnectV3, scope constructs.Construct, id *string, config *DcHostedConnectV3Config) {
 	_init_.Initialize()
 

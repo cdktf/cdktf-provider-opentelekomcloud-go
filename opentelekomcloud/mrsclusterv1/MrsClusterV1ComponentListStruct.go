@@ -5,7 +5,7 @@ package mrsclusterv1
 
 
 type MrsClusterV1ComponentListStruct struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/mrs_cluster_v1#component_name MrsClusterV1#component_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/mrs_cluster_v1#component_name MrsClusterV1#component_name}.
 	ComponentName *string `field:"required" json:"componentName" yaml:"componentName"`
 }
 

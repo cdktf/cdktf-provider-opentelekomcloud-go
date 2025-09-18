@@ -1,3 +1,3 @@
 # `data_opentelekomcloud_compute_bms_nic_v2`
 
-Refer to the Terraform Registry for docs: [`data_opentelekomcloud_compute_bms_nic_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/compute_bms_nic_v2).
+Refer to the Terraform Registry for docs: [`data_opentelekomcloud_compute_bms_nic_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/compute_bms_nic_v2).

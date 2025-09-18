@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/ces_event_details_v1 opentelekomcloud_ces_event_details_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/ces_event_details_v1 opentelekomcloud_ces_event_details_v1}.
 type DataOpentelekomcloudCesEventDetailsV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -523,7 +523,7 @@ func (j *jsiiProxy_DataOpentelekomcloudCesEventDetailsV1) ToInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/ces_event_details_v1 opentelekomcloud_ces_event_details_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/ces_event_details_v1 opentelekomcloud_ces_event_details_v1} Data Source.
 func NewDataOpentelekomcloudCesEventDetailsV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudCesEventDetailsV1Config) DataOpentelekomcloudCesEventDetailsV1 {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewDataOpentelekomcloudCesEventDetailsV1(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/ces_event_details_v1 opentelekomcloud_ces_event_details_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/ces_event_details_v1 opentelekomcloud_ces_event_details_v1} Data Source.
 func NewDataOpentelekomcloudCesEventDetailsV1_Override(d DataOpentelekomcloudCesEventDetailsV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudCesEventDetailsV1Config) {
 	_init_.Initialize()
 
