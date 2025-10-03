@@ -433,6 +433,22 @@ func (j *jsiiProxy_DdsInstanceV3) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
+func (j *jsiiProxy_DdsInstanceV3) validateSetMaintainBeginParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DdsInstanceV3) validateSetMaintainEndParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DdsInstanceV3) validateSetModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

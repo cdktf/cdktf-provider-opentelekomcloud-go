@@ -22,16 +22,16 @@ type DataOpentelekomcloudSmnTopicSubscriptionV2Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/smn_topic_subscription_v2#topic_urn DataOpentelekomcloudSmnTopicSubscriptionV2#topic_urn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_topic_subscription_v2#topic_urn DataOpentelekomcloudSmnTopicSubscriptionV2#topic_urn}.
 	TopicUrn *string `field:"required" json:"topicUrn" yaml:"topicUrn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/smn_topic_subscription_v2#endpoint DataOpentelekomcloudSmnTopicSubscriptionV2#endpoint}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_topic_subscription_v2#endpoint DataOpentelekomcloudSmnTopicSubscriptionV2#endpoint}.
 	Endpoint *string `field:"optional" json:"endpoint" yaml:"endpoint"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/smn_topic_subscription_v2#id DataOpentelekomcloudSmnTopicSubscriptionV2#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_topic_subscription_v2#id DataOpentelekomcloudSmnTopicSubscriptionV2#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/smn_topic_subscription_v2#protocol DataOpentelekomcloudSmnTopicSubscriptionV2#protocol}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_topic_subscription_v2#protocol DataOpentelekomcloudSmnTopicSubscriptionV2#protocol}.
 	Protocol *string `field:"optional" json:"protocol" yaml:"protocol"`
 }
 

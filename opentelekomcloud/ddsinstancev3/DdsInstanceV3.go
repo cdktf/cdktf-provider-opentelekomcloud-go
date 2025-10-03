@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3}.
 type DdsInstanceV3 interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -60,6 +60,12 @@ type DdsInstanceV3 interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaintainBegin() *string
+	SetMaintainBegin(val *string)
+	MaintainBeginInput() *string
+	MaintainEnd() *string
+	SetMaintainEnd(val *string)
+	MaintainEndInput() *string
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -165,6 +171,8 @@ type DdsInstanceV3 interface {
 	ResetBackupStrategy()
 	ResetDiskEncryptionId()
 	ResetId()
+	ResetMaintainBegin()
+	ResetMaintainEnd()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -416,6 +424,46 @@ func (j *jsiiProxy_DdsInstanceV3) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DdsInstanceV3) MaintainBegin() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintainBegin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DdsInstanceV3) MaintainBeginInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintainBeginInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DdsInstanceV3) MaintainEnd() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintainEnd",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DdsInstanceV3) MaintainEndInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintainEndInput",
 		&returns,
 	)
 	return returns
@@ -762,7 +810,7 @@ func (j *jsiiProxy_DdsInstanceV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource.
 func NewDdsInstanceV3(scope constructs.Construct, id *string, config *DdsInstanceV3Config) DdsInstanceV3 {
 	_init_.Initialize()
 
@@ -780,7 +828,7 @@ func NewDdsInstanceV3(scope constructs.Construct, id *string, config *DdsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource.
 func NewDdsInstanceV3_Override(d DdsInstanceV3, scope constructs.Construct, id *string, config *DdsInstanceV3Config) {
 	_init_.Initialize()
 
@@ -869,6 +917,28 @@ func (j *jsiiProxy_DdsInstanceV3)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DdsInstanceV3)SetMaintainBegin(val *string) {
+	if err := j.validateSetMaintainBeginParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintainBegin",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DdsInstanceV3)SetMaintainEnd(val *string) {
+	if err := j.validateSetMaintainEndParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintainEnd",
 		val,
 	)
 }
@@ -1419,6 +1489,22 @@ func (d *jsiiProxy_DdsInstanceV3) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DdsInstanceV3) ResetMaintainBegin() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaintainBegin",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DdsInstanceV3) ResetMaintainEnd() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaintainEnd",
 		nil, // no parameters
 	)
 }

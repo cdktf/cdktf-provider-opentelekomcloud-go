@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/identity_credential_v3 opentelekomcloud_identity_credential_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/identity_credential_v3 opentelekomcloud_identity_credential_v3}.
 type DataOpentelekomcloudIdentityCredentialV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3) UserIdInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/identity_credential_v3 opentelekomcloud_identity_credential_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/identity_credential_v3 opentelekomcloud_identity_credential_v3} Data Source.
 func NewDataOpentelekomcloudIdentityCredentialV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudIdentityCredentialV3Config) DataOpentelekomcloudIdentityCredentialV3 {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataOpentelekomcloudIdentityCredentialV3(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/identity_credential_v3 opentelekomcloud_identity_credential_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/identity_credential_v3 opentelekomcloud_identity_credential_v3} Data Source.
 func NewDataOpentelekomcloudIdentityCredentialV3_Override(d DataOpentelekomcloudIdentityCredentialV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudIdentityCredentialV3Config) {
 	_init_.Initialize()
 

@@ -1,3 +1,3 @@
 # `opentelekomcloud_cfw_service_group_v1`
 
-Refer to the Terraform Registry for docs: [`opentelekomcloud_cfw_service_group_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_service_group_v1).
+Refer to the Terraform Registry for docs: [`opentelekomcloud_cfw_service_group_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_service_group_v1).

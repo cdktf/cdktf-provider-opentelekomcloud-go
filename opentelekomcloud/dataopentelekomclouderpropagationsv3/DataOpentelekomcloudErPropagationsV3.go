@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/er_propagations_v3 opentelekomcloud_er_propagations_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/er_propagations_v3 opentelekomcloud_er_propagations_v3}.
 type DataOpentelekomcloudErPropagationsV3 interface {
 	cdktf.TerraformDataSource
 	AttachmentId() *string
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataOpentelekomcloudErPropagationsV3) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/er_propagations_v3 opentelekomcloud_er_propagations_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/er_propagations_v3 opentelekomcloud_er_propagations_v3} Data Source.
 func NewDataOpentelekomcloudErPropagationsV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudErPropagationsV3Config) DataOpentelekomcloudErPropagationsV3 {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataOpentelekomcloudErPropagationsV3(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/er_propagations_v3 opentelekomcloud_er_propagations_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/er_propagations_v3 opentelekomcloud_er_propagations_v3} Data Source.
 func NewDataOpentelekomcloudErPropagationsV3_Override(d DataOpentelekomcloudErPropagationsV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudErPropagationsV3Config) {
 	_init_.Initialize()
 

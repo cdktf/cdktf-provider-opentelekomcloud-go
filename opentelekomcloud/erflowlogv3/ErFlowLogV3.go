@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3 opentelekomcloud_er_flow_log_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/er_flow_log_v3 opentelekomcloud_er_flow_log_v3}.
 type ErFlowLogV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -587,7 +587,7 @@ func (j *jsiiProxy_ErFlowLogV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3 opentelekomcloud_er_flow_log_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/er_flow_log_v3 opentelekomcloud_er_flow_log_v3} Resource.
 func NewErFlowLogV3(scope constructs.Construct, id *string, config *ErFlowLogV3Config) ErFlowLogV3 {
 	_init_.Initialize()
 
@@ -605,7 +605,7 @@ func NewErFlowLogV3(scope constructs.Construct, id *string, config *ErFlowLogV3C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3 opentelekomcloud_er_flow_log_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/er_flow_log_v3 opentelekomcloud_er_flow_log_v3} Resource.
 func NewErFlowLogV3_Override(e ErFlowLogV3, scope constructs.Construct, id *string, config *ErFlowLogV3Config) {
 	_init_.Initialize()
 

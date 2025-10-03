@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_resource_relationships_v1 opentelekomcloud_rms_resource_relationships_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/rms_resource_relationships_v1 opentelekomcloud_rms_resource_relationships_v1}.
 type DataOpentelekomcloudRmsResourceRelationshipsV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRmsResourceRelationshipsV1) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_resource_relationships_v1 opentelekomcloud_rms_resource_relationships_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/rms_resource_relationships_v1 opentelekomcloud_rms_resource_relationships_v1} Data Source.
 func NewDataOpentelekomcloudRmsResourceRelationshipsV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudRmsResourceRelationshipsV1Config) DataOpentelekomcloudRmsResourceRelationshipsV1 {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataOpentelekomcloudRmsResourceRelationshipsV1(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_resource_relationships_v1 opentelekomcloud_rms_resource_relationships_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/rms_resource_relationships_v1 opentelekomcloud_rms_resource_relationships_v1} Data Source.
 func NewDataOpentelekomcloudRmsResourceRelationshipsV1_Override(d DataOpentelekomcloudRmsResourceRelationshipsV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudRmsResourceRelationshipsV1Config) {
 	_init_.Initialize()
 

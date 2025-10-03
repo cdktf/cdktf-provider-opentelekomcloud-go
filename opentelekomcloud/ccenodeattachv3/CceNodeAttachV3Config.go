@@ -22,54 +22,54 @@ type CceNodeAttachV3Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#cluster_id CceNodeAttachV3#cluster_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#cluster_id CceNodeAttachV3#cluster_id}.
 	ClusterId *string `field:"required" json:"clusterId" yaml:"clusterId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#os CceNodeAttachV3#os}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#os CceNodeAttachV3#os}.
 	Os *string `field:"required" json:"os" yaml:"os"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#server_id CceNodeAttachV3#server_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#server_id CceNodeAttachV3#server_id}.
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#docker_base_size CceNodeAttachV3#docker_base_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#docker_base_size CceNodeAttachV3#docker_base_size}.
 	DockerBaseSize *float64 `field:"optional" json:"dockerBaseSize" yaml:"dockerBaseSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#id CceNodeAttachV3#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#id CceNodeAttachV3#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#k8s_tags CceNodeAttachV3#k8s_tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#k8s_tags CceNodeAttachV3#k8s_tags}.
 	K8STags *map[string]*string `field:"optional" json:"k8STags" yaml:"k8STags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#key_pair CceNodeAttachV3#key_pair}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#key_pair CceNodeAttachV3#key_pair}.
 	KeyPair *string `field:"optional" json:"keyPair" yaml:"keyPair"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#lvm_config CceNodeAttachV3#lvm_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#lvm_config CceNodeAttachV3#lvm_config}.
 	LvmConfig *string `field:"optional" json:"lvmConfig" yaml:"lvmConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#max_pods CceNodeAttachV3#max_pods}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#max_pods CceNodeAttachV3#max_pods}.
 	MaxPods *float64 `field:"optional" json:"maxPods" yaml:"maxPods"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#name CceNodeAttachV3#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#name CceNodeAttachV3#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#password CceNodeAttachV3#password}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#password CceNodeAttachV3#password}.
 	Password *string `field:"optional" json:"password" yaml:"password"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#postinstall CceNodeAttachV3#postinstall}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#postinstall CceNodeAttachV3#postinstall}.
 	Postinstall *string `field:"optional" json:"postinstall" yaml:"postinstall"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#preinstall CceNodeAttachV3#preinstall}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#preinstall CceNodeAttachV3#preinstall}.
 	Preinstall *string `field:"optional" json:"preinstall" yaml:"preinstall"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#private_key CceNodeAttachV3#private_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#private_key CceNodeAttachV3#private_key}.
 	PrivateKey *string `field:"optional" json:"privateKey" yaml:"privateKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#runtime CceNodeAttachV3#runtime}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#runtime CceNodeAttachV3#runtime}.
 	Runtime *string `field:"optional" json:"runtime" yaml:"runtime"`
 	// storage block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#storage CceNodeAttachV3#storage}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#storage CceNodeAttachV3#storage}
 	Storage *CceNodeAttachV3Storage `field:"optional" json:"storage" yaml:"storage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#system_disk_kms_key_id CceNodeAttachV3#system_disk_kms_key_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#system_disk_kms_key_id CceNodeAttachV3#system_disk_kms_key_id}.
 	SystemDiskKmsKeyId *string `field:"optional" json:"systemDiskKmsKeyId" yaml:"systemDiskKmsKeyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#tags CceNodeAttachV3#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#tags CceNodeAttachV3#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// taints block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#taints CceNodeAttachV3#taints}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#taints CceNodeAttachV3#taints}
 	Taints interface{} `field:"optional" json:"taints" yaml:"taints"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cce_node_attach_v3#timeouts CceNodeAttachV3#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3#timeouts CceNodeAttachV3#timeouts}
 	Timeouts *CceNodeAttachV3Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

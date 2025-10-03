@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_policy_states_v1 opentelekomcloud_rms_policy_states_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/rms_policy_states_v1 opentelekomcloud_rms_policy_states_v1}.
 type DataOpentelekomcloudRmsPolicyStatesV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRmsPolicyStatesV1) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_policy_states_v1 opentelekomcloud_rms_policy_states_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/rms_policy_states_v1 opentelekomcloud_rms_policy_states_v1} Data Source.
 func NewDataOpentelekomcloudRmsPolicyStatesV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudRmsPolicyStatesV1Config) DataOpentelekomcloudRmsPolicyStatesV1 {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataOpentelekomcloudRmsPolicyStatesV1(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_policy_states_v1 opentelekomcloud_rms_policy_states_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/rms_policy_states_v1 opentelekomcloud_rms_policy_states_v1} Data Source.
 func NewDataOpentelekomcloudRmsPolicyStatesV1_Override(d DataOpentelekomcloudRmsPolicyStatesV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudRmsPolicyStatesV1Config) {
 	_init_.Initialize()
 

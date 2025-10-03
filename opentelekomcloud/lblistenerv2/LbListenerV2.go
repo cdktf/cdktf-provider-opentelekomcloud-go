@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2}.
 type LbListenerV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -739,7 +739,7 @@ func (j *jsiiProxy_LbListenerV2) TransparentClientIpEnableInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2} Resource.
 func NewLbListenerV2(scope constructs.Construct, id *string, config *LbListenerV2Config) LbListenerV2 {
 	_init_.Initialize()
 
@@ -757,7 +757,7 @@ func NewLbListenerV2(scope constructs.Construct, id *string, config *LbListenerV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_listener_v2 opentelekomcloud_lb_listener_v2} Resource.
 func NewLbListenerV2_Override(l LbListenerV2, scope constructs.Construct, id *string, config *LbListenerV2Config) {
 	_init_.Initialize()
 

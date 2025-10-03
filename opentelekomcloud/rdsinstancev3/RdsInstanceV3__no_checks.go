@@ -191,6 +191,10 @@ func (j *jsiiProxy_RdsInstanceV3) validateSetTagsParameters(val *map[string]*str
 	return nil
 }
 
+func (j *jsiiProxy_RdsInstanceV3) validateSetTimeZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsInstanceV3) validateSetVpcIdParameters(val *string) error {
 	return nil
 }

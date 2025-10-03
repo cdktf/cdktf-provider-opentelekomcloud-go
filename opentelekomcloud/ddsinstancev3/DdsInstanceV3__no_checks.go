@@ -131,6 +131,14 @@ func (j *jsiiProxy_DdsInstanceV3) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
+func (j *jsiiProxy_DdsInstanceV3) validateSetMaintainBeginParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DdsInstanceV3) validateSetMaintainEndParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DdsInstanceV3) validateSetModeParameters(val *string) error {
 	return nil
 }

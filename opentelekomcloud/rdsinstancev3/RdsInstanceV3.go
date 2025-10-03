@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3}.
 type RdsInstanceV3 interface {
 	cdktf.TerraformResource
 	AutoscalingEnabled() cdktf.IResolvable
@@ -122,6 +122,9 @@ type RdsInstanceV3 interface {
 	TerraformResourceType() *string
 	Timeouts() RdsInstanceV3TimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TimeZone() *string
+	SetTimeZone(val *string)
+	TimeZoneInput() *string
 	Volume() RdsInstanceV3VolumeOutputReference
 	VolumeInput() *RdsInstanceV3Volume
 	VpcId() *string
@@ -193,6 +196,7 @@ type RdsInstanceV3 interface {
 	ResetTag()
 	ResetTags()
 	ResetTimeouts()
+	ResetTimeZone()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -831,6 +835,26 @@ func (j *jsiiProxy_RdsInstanceV3) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RdsInstanceV3) TimeZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceV3) TimeZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsInstanceV3) Volume() RdsInstanceV3VolumeOutputReference {
 	var returns RdsInstanceV3VolumeOutputReference
 	_jsii_.Get(
@@ -872,7 +896,7 @@ func (j *jsiiProxy_RdsInstanceV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
 func NewRdsInstanceV3(scope constructs.Construct, id *string, config *RdsInstanceV3Config) RdsInstanceV3 {
 	_init_.Initialize()
 
@@ -890,7 +914,7 @@ func NewRdsInstanceV3(scope constructs.Construct, id *string, config *RdsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/rds_instance_v3 opentelekomcloud_rds_instance_v3} Resource.
 func NewRdsInstanceV3_Override(r RdsInstanceV3, scope constructs.Construct, id *string, config *RdsInstanceV3Config) {
 	_init_.Initialize()
 
@@ -1130,6 +1154,17 @@ func (j *jsiiProxy_RdsInstanceV3)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsInstanceV3)SetTimeZone(val *string) {
+	if err := j.validateSetTimeZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeZone",
 		val,
 	)
 }
@@ -1680,6 +1715,14 @@ func (r *jsiiProxy_RdsInstanceV3) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsInstanceV3) ResetTimeZone() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTimeZone",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/tms_quotas_v1 opentelekomcloud_tms_quotas_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/tms_quotas_v1 opentelekomcloud_tms_quotas_v1}.
 type DataOpentelekomcloudTmsQuotasV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataOpentelekomcloudTmsQuotasV1) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/tms_quotas_v1 opentelekomcloud_tms_quotas_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/tms_quotas_v1 opentelekomcloud_tms_quotas_v1} Data Source.
 func NewDataOpentelekomcloudTmsQuotasV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudTmsQuotasV1Config) DataOpentelekomcloudTmsQuotasV1 {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataOpentelekomcloudTmsQuotasV1(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/tms_quotas_v1 opentelekomcloud_tms_quotas_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/tms_quotas_v1 opentelekomcloud_tms_quotas_v1} Data Source.
 func NewDataOpentelekomcloudTmsQuotasV1_Override(d DataOpentelekomcloudTmsQuotasV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudTmsQuotasV1Config) {
 	_init_.Initialize()
 
