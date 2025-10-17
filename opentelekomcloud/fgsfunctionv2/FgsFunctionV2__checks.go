@@ -421,6 +421,14 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetCodeUrlParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_FgsFunctionV2) validateSetConcurrencyNumParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FgsFunctionV2) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -527,6 +535,34 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetDescriptionParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_FgsFunctionV2) validateSetDnsListParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetEnableAuthInHeaderParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FgsFunctionV2) validateSetEnableClassIsolationParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -567,7 +603,43 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetEnableDynamicMemoryParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_FgsFunctionV2) validateSetEnableLtsLogParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FgsFunctionV2) validateSetEncryptedUserDataParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetEnterpriseProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetEphemeralStorageParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -600,6 +672,14 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetGpuMemoryParameters(val *float64) e
 }
 
 func (j *jsiiProxy_FgsFunctionV2) validateSetHandlerParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetHeartbeatHandlerParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -664,6 +744,14 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetLogTopicIdParameters(val *string) e
 }
 
 func (j *jsiiProxy_FgsFunctionV2) validateSetLogTopicNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetLtsCustomTagParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -784,6 +872,22 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetProvisionersParameters(val *[]inter
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetRestoreHookHandlerParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetRestoreHookTimeoutParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

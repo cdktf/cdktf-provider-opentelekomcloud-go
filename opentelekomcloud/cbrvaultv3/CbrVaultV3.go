@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3}.
 type CbrVaultV3 interface {
 	cdktf.TerraformResource
 	AutoBind() interface{}
@@ -74,6 +74,8 @@ type CbrVaultV3 interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Policy() CbrVaultV3PolicyList
+	PolicyInput() interface{}
 	ProjectId() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -86,6 +88,7 @@ type CbrVaultV3 interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
 	Resource() CbrVaultV3ResourceList
 	ResourceInput() interface{}
 	Tags() *map[string]*string
@@ -143,6 +146,7 @@ type CbrVaultV3 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBilling(value *CbrVaultV3Billing)
 	PutBindRules(value interface{})
+	PutPolicy(value interface{})
 	PutResource(value interface{})
 	ResetAutoBind()
 	ResetAutoExpand()
@@ -155,6 +159,7 @@ type CbrVaultV3 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicy()
 	ResetResource()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -485,6 +490,26 @@ func (j *jsiiProxy_CbrVaultV3) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_CbrVaultV3) Policy() CbrVaultV3PolicyList {
+	var returns CbrVaultV3PolicyList
+	_jsii_.Get(
+		j,
+		"policy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CbrVaultV3) PolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"policyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CbrVaultV3) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -530,6 +555,16 @@ func (j *jsiiProxy_CbrVaultV3) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CbrVaultV3) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
 		&returns,
 	)
 	return returns
@@ -616,7 +651,7 @@ func (j *jsiiProxy_CbrVaultV3) UserId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource.
 func NewCbrVaultV3(scope constructs.Construct, id *string, config *CbrVaultV3Config) CbrVaultV3 {
 	_init_.Initialize()
 
@@ -634,7 +669,7 @@ func NewCbrVaultV3(scope constructs.Construct, id *string, config *CbrVaultV3Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource.
 func NewCbrVaultV3_Override(c CbrVaultV3, scope constructs.Construct, id *string, config *CbrVaultV3Config) {
 	_init_.Initialize()
 
@@ -1187,6 +1222,17 @@ func (c *jsiiProxy_CbrVaultV3) PutBindRules(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_CbrVaultV3) PutPolicy(value interface{}) {
+	if err := c.validatePutPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CbrVaultV3) PutResource(value interface{}) {
 	if err := c.validatePutResourceParameters(value); err != nil {
 		panic(err)
@@ -1266,6 +1312,14 @@ func (c *jsiiProxy_CbrVaultV3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CbrVaultV3) ResetPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPolicy",
 		nil, // no parameters
 	)
 }

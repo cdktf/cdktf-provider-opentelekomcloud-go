@@ -139,6 +139,10 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetCodeUrlParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_FgsFunctionV2) validateSetConcurrencyNumParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_FgsFunctionV2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -155,6 +159,14 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetDescriptionParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_FgsFunctionV2) validateSetDnsListParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetEnableAuthInHeaderParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FgsFunctionV2) validateSetEnableClassIsolationParameters(val interface{}) error {
 	return nil
 }
@@ -163,7 +175,19 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetEnableDynamicMemoryParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_FgsFunctionV2) validateSetEnableLtsLogParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FgsFunctionV2) validateSetEncryptedUserDataParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetEnterpriseProjectIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetEphemeralStorageParameters(val *float64) error {
 	return nil
 }
 
@@ -180,6 +204,10 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetGpuMemoryParameters(val *float64) e
 }
 
 func (j *jsiiProxy_FgsFunctionV2) validateSetHandlerParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetHeartbeatHandlerParameters(val *string) error {
 	return nil
 }
 
@@ -212,6 +240,10 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetLogTopicIdParameters(val *string) e
 }
 
 func (j *jsiiProxy_FgsFunctionV2) validateSetLogTopicNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetLtsCustomTagParameters(val *map[string]*string) error {
 	return nil
 }
 
@@ -252,6 +284,14 @@ func (j *jsiiProxy_FgsFunctionV2) validateSetPreStopTimeoutParameters(val *float
 }
 
 func (j *jsiiProxy_FgsFunctionV2) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetRestoreHookHandlerParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2) validateSetRestoreHookTimeoutParameters(val *float64) error {
 	return nil
 }
 

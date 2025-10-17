@@ -63,6 +63,10 @@ func (j *jsiiProxy_FgsFunctionV2VersionsOutputReference) validateSetComplexObjec
 	return nil
 }
 
+func (j *jsiiProxy_FgsFunctionV2VersionsOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FgsFunctionV2VersionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

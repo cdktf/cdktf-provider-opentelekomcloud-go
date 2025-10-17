@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}.
 type FgsFunctionV2 interface {
 	cdktf.TerraformResource
 	Agency() *string
@@ -37,6 +37,9 @@ type FgsFunctionV2 interface {
 	CodeUrl() *string
 	SetCodeUrl(val *string)
 	CodeUrlInput() *string
+	ConcurrencyNum() *float64
+	SetConcurrencyNum(val *float64)
+	ConcurrencyNumInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -60,17 +63,29 @@ type FgsFunctionV2 interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	DnsList() *string
-	EnableAuthInHeader() cdktf.IResolvable
+	SetDnsList(val *string)
+	DnsListInput() *string
+	EnableAuthInHeader() interface{}
+	SetEnableAuthInHeader(val interface{})
+	EnableAuthInHeaderInput() interface{}
 	EnableClassIsolation() interface{}
 	SetEnableClassIsolation(val interface{})
 	EnableClassIsolationInput() interface{}
 	EnableDynamicMemory() interface{}
 	SetEnableDynamicMemory(val interface{})
 	EnableDynamicMemoryInput() interface{}
+	EnableLtsLog() interface{}
+	SetEnableLtsLog(val interface{})
+	EnableLtsLogInput() interface{}
 	EncryptedUserData() *string
 	SetEncryptedUserData(val *string)
 	EncryptedUserDataInput() *string
+	EnterpriseProjectId() *string
+	SetEnterpriseProjectId(val *string)
+	EnterpriseProjectIdInput() *string
 	EphemeralStorage() *float64
+	SetEphemeralStorage(val *float64)
+	EphemeralStorageInput() *float64
 	ExtendConfig() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -96,6 +111,8 @@ type FgsFunctionV2 interface {
 	SetHandler(val *string)
 	HandlerInput() *string
 	HeartbeatHandler() *string
+	SetHeartbeatHandler(val *string)
+	HeartbeatHandlerInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -122,6 +139,9 @@ type FgsFunctionV2 interface {
 	LogTopicName() *string
 	SetLogTopicName(val *string)
 	LogTopicNameInput() *string
+	LtsCustomTag() *map[string]*string
+	SetLtsCustomTag(val *map[string]*string)
+	LtsCustomTagInput() *map[string]*string
 	MaxInstanceNum() *string
 	SetMaxInstanceNum(val *string)
 	MaxInstanceNumInput() *string
@@ -166,6 +186,12 @@ type FgsFunctionV2 interface {
 	Region() *string
 	ReservedInstances() FgsFunctionV2ReservedInstancesList
 	ReservedInstancesInput() interface{}
+	RestoreHookHandler() *string
+	SetRestoreHookHandler(val *string)
+	RestoreHookHandlerInput() *string
+	RestoreHookTimeout() *float64
+	SetRestoreHookTimeout(val *float64)
+	RestoreHookTimeoutInput() *float64
 	Runtime() *string
 	SetRuntime(val *string)
 	RuntimeInput() *string
@@ -248,17 +274,24 @@ type FgsFunctionV2 interface {
 	ResetCodeFilename()
 	ResetCodeType()
 	ResetCodeUrl()
+	ResetConcurrencyNum()
 	ResetCustomImage()
 	ResetDependList()
 	ResetDescription()
+	ResetDnsList()
+	ResetEnableAuthInHeader()
 	ResetEnableClassIsolation()
 	ResetEnableDynamicMemory()
+	ResetEnableLtsLog()
 	ResetEncryptedUserData()
+	ResetEnterpriseProjectId()
+	ResetEphemeralStorage()
 	ResetFuncCode()
 	ResetFuncMounts()
 	ResetFunctiongraphVersion()
 	ResetGpuMemory()
 	ResetHandler()
+	ResetHeartbeatHandler()
 	ResetId()
 	ResetInitializerHandler()
 	ResetInitializerTimeout()
@@ -266,6 +299,7 @@ type FgsFunctionV2 interface {
 	ResetLogGroupName()
 	ResetLogTopicId()
 	ResetLogTopicName()
+	ResetLtsCustomTag()
 	ResetMaxInstanceNum()
 	ResetMountUserGroupId()
 	ResetMountUserId()
@@ -278,6 +312,8 @@ type FgsFunctionV2 interface {
 	ResetPreStopHandler()
 	ResetPreStopTimeout()
 	ResetReservedInstances()
+	ResetRestoreHookHandler()
+	ResetRestoreHookTimeout()
 	ResetTags()
 	ResetTimeouts()
 	ResetUserData()
@@ -451,6 +487,26 @@ func (j *jsiiProxy_FgsFunctionV2) CodeUrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FgsFunctionV2) ConcurrencyNum() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"concurrencyNum",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) ConcurrencyNumInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"concurrencyNumInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FgsFunctionV2) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -561,11 +617,31 @@ func (j *jsiiProxy_FgsFunctionV2) DnsList() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FgsFunctionV2) EnableAuthInHeader() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_FgsFunctionV2) DnsListInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsListInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) EnableAuthInHeader() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"enableAuthInHeader",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) EnableAuthInHeaderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAuthInHeaderInput",
 		&returns,
 	)
 	return returns
@@ -611,6 +687,26 @@ func (j *jsiiProxy_FgsFunctionV2) EnableDynamicMemoryInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FgsFunctionV2) EnableLtsLog() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableLtsLog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) EnableLtsLogInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableLtsLogInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FgsFunctionV2) EncryptedUserData() *string {
 	var returns *string
 	_jsii_.Get(
@@ -631,11 +727,41 @@ func (j *jsiiProxy_FgsFunctionV2) EncryptedUserDataInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FgsFunctionV2) EnterpriseProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enterpriseProjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) EnterpriseProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enterpriseProjectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FgsFunctionV2) EphemeralStorage() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"ephemeralStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) EphemeralStorageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ephemeralStorageInput",
 		&returns,
 	)
 	return returns
@@ -801,6 +927,16 @@ func (j *jsiiProxy_FgsFunctionV2) HeartbeatHandler() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FgsFunctionV2) HeartbeatHandlerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"heartbeatHandlerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FgsFunctionV2) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -956,6 +1092,26 @@ func (j *jsiiProxy_FgsFunctionV2) LogTopicNameInput() *string {
 	_jsii_.Get(
 		j,
 		"logTopicNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) LtsCustomTag() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"ltsCustomTag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) LtsCustomTagInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"ltsCustomTagInput",
 		&returns,
 	)
 	return returns
@@ -1231,6 +1387,46 @@ func (j *jsiiProxy_FgsFunctionV2) ReservedInstancesInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FgsFunctionV2) RestoreHookHandler() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restoreHookHandler",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) RestoreHookHandlerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restoreHookHandlerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) RestoreHookTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"restoreHookTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2) RestoreHookTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"restoreHookTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FgsFunctionV2) Runtime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1422,7 +1618,7 @@ func (j *jsiiProxy_FgsFunctionV2) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
 func NewFgsFunctionV2(scope constructs.Construct, id *string, config *FgsFunctionV2Config) FgsFunctionV2 {
 	_init_.Initialize()
 
@@ -1440,7 +1636,7 @@ func NewFgsFunctionV2(scope constructs.Construct, id *string, config *FgsFunctio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource.
 func NewFgsFunctionV2_Override(f FgsFunctionV2, scope constructs.Construct, id *string, config *FgsFunctionV2Config) {
 	_init_.Initialize()
 
@@ -1517,6 +1713,17 @@ func (j *jsiiProxy_FgsFunctionV2)SetCodeUrl(val *string) {
 	)
 }
 
+func (j *jsiiProxy_FgsFunctionV2)SetConcurrencyNum(val *float64) {
+	if err := j.validateSetConcurrencyNumParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"concurrencyNum",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FgsFunctionV2)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -1569,6 +1776,28 @@ func (j *jsiiProxy_FgsFunctionV2)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_FgsFunctionV2)SetDnsList(val *string) {
+	if err := j.validateSetDnsListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsList",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2)SetEnableAuthInHeader(val interface{}) {
+	if err := j.validateSetEnableAuthInHeaderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAuthInHeader",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FgsFunctionV2)SetEnableClassIsolation(val interface{}) {
 	if err := j.validateSetEnableClassIsolationParameters(val); err != nil {
 		panic(err)
@@ -1591,6 +1820,17 @@ func (j *jsiiProxy_FgsFunctionV2)SetEnableDynamicMemory(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_FgsFunctionV2)SetEnableLtsLog(val interface{}) {
+	if err := j.validateSetEnableLtsLogParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableLtsLog",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FgsFunctionV2)SetEncryptedUserData(val *string) {
 	if err := j.validateSetEncryptedUserDataParameters(val); err != nil {
 		panic(err)
@@ -1598,6 +1838,28 @@ func (j *jsiiProxy_FgsFunctionV2)SetEncryptedUserData(val *string) {
 	_jsii_.Set(
 		j,
 		"encryptedUserData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2)SetEnterpriseProjectId(val *string) {
+	if err := j.validateSetEnterpriseProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enterpriseProjectId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2)SetEphemeralStorage(val *float64) {
+	if err := j.validateSetEphemeralStorageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ephemeralStorage",
 		val,
 	)
 }
@@ -1650,6 +1912,17 @@ func (j *jsiiProxy_FgsFunctionV2)SetHandler(val *string) {
 	_jsii_.Set(
 		j,
 		"handler",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2)SetHeartbeatHandler(val *string) {
+	if err := j.validateSetHeartbeatHandlerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"heartbeatHandler",
 		val,
 	)
 }
@@ -1738,6 +2011,17 @@ func (j *jsiiProxy_FgsFunctionV2)SetLogTopicName(val *string) {
 	_jsii_.Set(
 		j,
 		"logTopicName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2)SetLtsCustomTag(val *map[string]*string) {
+	if err := j.validateSetLtsCustomTagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ltsCustomTag",
 		val,
 	)
 }
@@ -1856,6 +2140,28 @@ func (j *jsiiProxy_FgsFunctionV2)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2)SetRestoreHookHandler(val *string) {
+	if err := j.validateSetRestoreHookHandlerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restoreHookHandler",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2)SetRestoreHookTimeout(val *float64) {
+	if err := j.validateSetRestoreHookTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restoreHookTimeout",
 		val,
 	)
 }
@@ -2382,6 +2688,14 @@ func (f *jsiiProxy_FgsFunctionV2) ResetCodeUrl() {
 	)
 }
 
+func (f *jsiiProxy_FgsFunctionV2) ResetConcurrencyNum() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetConcurrencyNum",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FgsFunctionV2) ResetCustomImage() {
 	_jsii_.InvokeVoid(
 		f,
@@ -2406,6 +2720,22 @@ func (f *jsiiProxy_FgsFunctionV2) ResetDescription() {
 	)
 }
 
+func (f *jsiiProxy_FgsFunctionV2) ResetDnsList() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDnsList",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2) ResetEnableAuthInHeader() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetEnableAuthInHeader",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FgsFunctionV2) ResetEnableClassIsolation() {
 	_jsii_.InvokeVoid(
 		f,
@@ -2422,10 +2752,34 @@ func (f *jsiiProxy_FgsFunctionV2) ResetEnableDynamicMemory() {
 	)
 }
 
+func (f *jsiiProxy_FgsFunctionV2) ResetEnableLtsLog() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetEnableLtsLog",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FgsFunctionV2) ResetEncryptedUserData() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetEncryptedUserData",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2) ResetEnterpriseProjectId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetEnterpriseProjectId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2) ResetEphemeralStorage() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetEphemeralStorage",
 		nil, // no parameters
 	)
 }
@@ -2466,6 +2820,14 @@ func (f *jsiiProxy_FgsFunctionV2) ResetHandler() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetHandler",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2) ResetHeartbeatHandler() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetHeartbeatHandler",
 		nil, // no parameters
 	)
 }
@@ -2522,6 +2884,14 @@ func (f *jsiiProxy_FgsFunctionV2) ResetLogTopicName() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetLogTopicName",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2) ResetLtsCustomTag() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetLtsCustomTag",
 		nil, // no parameters
 	)
 }
@@ -2602,6 +2972,22 @@ func (f *jsiiProxy_FgsFunctionV2) ResetReservedInstances() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetReservedInstances",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2) ResetRestoreHookHandler() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRestoreHookHandler",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2) ResetRestoreHookTimeout() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRestoreHookTimeout",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/lts_streams_v2 opentelekomcloud_lts_streams_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/lts_streams_v2 opentelekomcloud_lts_streams_v2}.
 type DataOpentelekomcloudLtsStreamsV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataOpentelekomcloudLtsStreamsV2) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/lts_streams_v2 opentelekomcloud_lts_streams_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/lts_streams_v2 opentelekomcloud_lts_streams_v2} Data Source.
 func NewDataOpentelekomcloudLtsStreamsV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudLtsStreamsV2Config) DataOpentelekomcloudLtsStreamsV2 {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataOpentelekomcloudLtsStreamsV2(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/lts_streams_v2 opentelekomcloud_lts_streams_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/lts_streams_v2 opentelekomcloud_lts_streams_v2} Data Source.
 func NewDataOpentelekomcloudLtsStreamsV2_Override(d DataOpentelekomcloudLtsStreamsV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudLtsStreamsV2Config) {
 	_init_.Initialize()
 

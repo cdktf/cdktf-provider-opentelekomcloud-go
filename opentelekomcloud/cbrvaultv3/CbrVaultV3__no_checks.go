@@ -83,6 +83,10 @@ func (c *jsiiProxy_CbrVaultV3) validatePutBindRulesParameters(value interface{})
 	return nil
 }
 
+func (c *jsiiProxy_CbrVaultV3) validatePutPolicyParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CbrVaultV3) validatePutResourceParameters(value interface{}) error {
 	return nil
 }

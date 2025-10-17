@@ -22,18 +22,18 @@ type ImsImageShareAcceptV1Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/ims_image_share_accept_v1#image_id ImsImageShareAcceptV1#image_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/ims_image_share_accept_v1#image_id ImsImageShareAcceptV1#image_id}.
 	ImageId *string `field:"required" json:"imageId" yaml:"imageId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/ims_image_share_accept_v1#id ImsImageShareAcceptV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/ims_image_share_accept_v1#id ImsImageShareAcceptV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/ims_image_share_accept_v1#timeouts ImsImageShareAcceptV1#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/ims_image_share_accept_v1#timeouts ImsImageShareAcceptV1#timeouts}
 	Timeouts *ImsImageShareAcceptV1Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/ims_image_share_accept_v1#vault_id ImsImageShareAcceptV1#vault_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/ims_image_share_accept_v1#vault_id ImsImageShareAcceptV1#vault_id}.
 	VaultId *string `field:"optional" json:"vaultId" yaml:"vaultId"`
 }
 

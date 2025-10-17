@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3 opentelekomcloud_vpc_secgroup_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3 opentelekomcloud_vpc_secgroup_v3}.
 type VpcSecgroupV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_VpcSecgroupV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3 opentelekomcloud_vpc_secgroup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3 opentelekomcloud_vpc_secgroup_v3} Resource.
 func NewVpcSecgroupV3(scope constructs.Construct, id *string, config *VpcSecgroupV3Config) VpcSecgroupV3 {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewVpcSecgroupV3(scope constructs.Construct, id *string, config *VpcSecgrou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3 opentelekomcloud_vpc_secgroup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3 opentelekomcloud_vpc_secgroup_v3} Resource.
 func NewVpcSecgroupV3_Override(v VpcSecgroupV3, scope constructs.Construct, id *string, config *VpcSecgroupV3Config) {
 	_init_.Initialize()
 

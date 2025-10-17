@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs opentelekomcloud}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs opentelekomcloud}.
 type OpentelekomcloudProvider interface {
 	cdktf.TerraformProvider
 	AccessKey() *string
@@ -61,6 +61,9 @@ type OpentelekomcloudProvider interface {
 	EndpointType() *string
 	SetEndpointType(val *string)
 	EndpointTypeInput() *string
+	EnterpriseProjectId() *string
+	SetEnterpriseProjectId(val *string)
+	EnterpriseProjectIdInput() *string
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -141,6 +144,7 @@ type OpentelekomcloudProvider interface {
 	ResetDomainId()
 	ResetDomainName()
 	ResetEndpointType()
+	ResetEnterpriseProjectId()
 	ResetInsecure()
 	ResetKey()
 	ResetMaxBackoffRetries()
@@ -472,6 +476,26 @@ func (j *jsiiProxy_OpentelekomcloudProvider) EndpointTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"endpointTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpentelekomcloudProvider) EnterpriseProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enterpriseProjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpentelekomcloudProvider) EnterpriseProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enterpriseProjectIdInput",
 		&returns,
 	)
 	return returns
@@ -858,7 +882,7 @@ func (j *jsiiProxy_OpentelekomcloudProvider) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs opentelekomcloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs opentelekomcloud} Resource.
 func NewOpentelekomcloudProvider(scope constructs.Construct, id *string, config *OpentelekomcloudProviderConfig) OpentelekomcloudProvider {
 	_init_.Initialize()
 
@@ -876,7 +900,7 @@ func NewOpentelekomcloudProvider(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs opentelekomcloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs opentelekomcloud} Resource.
 func NewOpentelekomcloudProvider_Override(o OpentelekomcloudProvider, scope constructs.Construct, id *string, config *OpentelekomcloudProviderConfig) {
 	_init_.Initialize()
 
@@ -998,6 +1022,14 @@ func (j *jsiiProxy_OpentelekomcloudProvider)SetEndpointType(val *string) {
 	_jsii_.Set(
 		j,
 		"endpointType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpentelekomcloudProvider)SetEnterpriseProjectId(val *string) {
+	_jsii_.Set(
+		j,
+		"enterpriseProjectId",
 		val,
 	)
 }
@@ -1361,6 +1393,14 @@ func (o *jsiiProxy_OpentelekomcloudProvider) ResetEndpointType() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetEndpointType",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpentelekomcloudProvider) ResetEnterpriseProjectId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEnterpriseProjectId",
 		nil, // no parameters
 	)
 }

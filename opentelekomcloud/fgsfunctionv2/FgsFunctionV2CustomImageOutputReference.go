@@ -49,6 +49,12 @@ type FgsFunctionV2CustomImageOutputReference interface {
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
+	UserGroupId() *string
+	SetUserGroupId(val *string)
+	UserGroupIdInput() *string
+	UserId() *string
+	SetUserId(val *string)
+	UserIdInput() *string
 	WorkingDir() *string
 	SetWorkingDir(val *string)
 	WorkingDirInput() *string
@@ -78,6 +84,8 @@ type FgsFunctionV2CustomImageOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetArgs()
 	ResetCommand()
+	ResetUserGroupId()
+	ResetUserId()
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -224,6 +232,46 @@ func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) UrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) UserGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userGroupId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) UserGroupIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userGroupIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) UserId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) UserIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) WorkingDir() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,6 +404,28 @@ func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference)SetUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"url",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference)SetUserGroupId(val *string) {
+	if err := j.validateSetUserGroupIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userGroupId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference)SetUserId(val *string) {
+	if err := j.validateSetUserIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userId",
 		val,
 	)
 }
@@ -569,6 +639,22 @@ func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) ResetCommand() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetCommand",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) ResetUserGroupId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetUserGroupId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) ResetUserId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetUserId",
 		nil, // no parameters
 	)
 }

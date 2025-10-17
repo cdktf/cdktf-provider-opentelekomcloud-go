@@ -83,6 +83,14 @@ func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetUrlParame
 	return nil
 }
 
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetUserGroupIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetUserIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetWorkingDirParameters(val *string) error {
 	return nil
 }

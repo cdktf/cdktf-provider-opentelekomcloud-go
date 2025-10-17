@@ -1,3 +1,3 @@
 # `opentelekomcloud_cce_node_attach_v3`
 
-Refer to the Terraform Registry for docs: [`opentelekomcloud_cce_node_attach_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cce_node_attach_v3).
+Refer to the Terraform Registry for docs: [`opentelekomcloud_cce_node_attach_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cce_node_attach_v3).

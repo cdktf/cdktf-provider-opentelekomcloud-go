@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lts_host_access_v3 opentelekomcloud_lts_host_access_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/lts_host_access_v3 opentelekomcloud_lts_host_access_v3}.
 type LtsHostAccessV3 interface {
 	cdktf.TerraformResource
 	AccessConfig() LtsHostAccessV3AccessConfigOutputReference
@@ -553,7 +553,7 @@ func (j *jsiiProxy_LtsHostAccessV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lts_host_access_v3 opentelekomcloud_lts_host_access_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/lts_host_access_v3 opentelekomcloud_lts_host_access_v3} Resource.
 func NewLtsHostAccessV3(scope constructs.Construct, id *string, config *LtsHostAccessV3Config) LtsHostAccessV3 {
 	_init_.Initialize()
 
@@ -571,7 +571,7 @@ func NewLtsHostAccessV3(scope constructs.Construct, id *string, config *LtsHostA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lts_host_access_v3 opentelekomcloud_lts_host_access_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/lts_host_access_v3 opentelekomcloud_lts_host_access_v3} Resource.
 func NewLtsHostAccessV3_Override(l LtsHostAccessV3, scope constructs.Construct, id *string, config *LtsHostAccessV3Config) {
 	_init_.Initialize()
 

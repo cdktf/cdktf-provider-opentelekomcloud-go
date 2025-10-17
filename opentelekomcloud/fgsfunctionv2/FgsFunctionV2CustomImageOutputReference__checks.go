@@ -214,6 +214,22 @@ func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetUrlParame
 	return nil
 }
 
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetUserGroupIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetUserIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateSetWorkingDirParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/tms_tags_v1 opentelekomcloud_tms_tags_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_tags_v1 opentelekomcloud_tms_tags_v1}.
 type DataOpentelekomcloudTmsTagsV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataOpentelekomcloudTmsTagsV1) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/tms_tags_v1 opentelekomcloud_tms_tags_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_tags_v1 opentelekomcloud_tms_tags_v1} Data Source.
 func NewDataOpentelekomcloudTmsTagsV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudTmsTagsV1Config) DataOpentelekomcloudTmsTagsV1 {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataOpentelekomcloudTmsTagsV1(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/tms_tags_v1 opentelekomcloud_tms_tags_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_tags_v1 opentelekomcloud_tms_tags_v1} Data Source.
 func NewDataOpentelekomcloudTmsTagsV1_Override(d DataOpentelekomcloudTmsTagsV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudTmsTagsV1Config) {
 	_init_.Initialize()
 
