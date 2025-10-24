@@ -22,20 +22,20 @@ type DataOpentelekomcloudErAssociationsV3Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/er_associations_v3#instance_id DataOpentelekomcloudErAssociationsV3#instance_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/er_associations_v3#instance_id DataOpentelekomcloudErAssociationsV3#instance_id}.
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/er_associations_v3#route_table_id DataOpentelekomcloudErAssociationsV3#route_table_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/er_associations_v3#route_table_id DataOpentelekomcloudErAssociationsV3#route_table_id}.
 	RouteTableId *string `field:"required" json:"routeTableId" yaml:"routeTableId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/er_associations_v3#attachment_id DataOpentelekomcloudErAssociationsV3#attachment_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/er_associations_v3#attachment_id DataOpentelekomcloudErAssociationsV3#attachment_id}.
 	AttachmentId *string `field:"optional" json:"attachmentId" yaml:"attachmentId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/er_associations_v3#attachment_type DataOpentelekomcloudErAssociationsV3#attachment_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/er_associations_v3#attachment_type DataOpentelekomcloudErAssociationsV3#attachment_type}.
 	AttachmentType *string `field:"optional" json:"attachmentType" yaml:"attachmentType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/er_associations_v3#id DataOpentelekomcloudErAssociationsV3#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/er_associations_v3#id DataOpentelekomcloudErAssociationsV3#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/er_associations_v3#status DataOpentelekomcloudErAssociationsV3#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/er_associations_v3#status DataOpentelekomcloudErAssociationsV3#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

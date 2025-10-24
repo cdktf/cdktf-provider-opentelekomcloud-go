@@ -5,9 +5,9 @@ package obsbucket
 
 
 type ObsBucketLifecycleRuleTag struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/obs_bucket#key ObsBucket#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/obs_bucket#key ObsBucket#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/obs_bucket#value ObsBucket#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/obs_bucket#value ObsBucket#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

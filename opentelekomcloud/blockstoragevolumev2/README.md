@@ -1,3 +1,3 @@
 # `opentelekomcloud_blockstorage_volume_v2`
 
-Refer to the Terraform Registry for docs: [`opentelekomcloud_blockstorage_volume_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/blockstorage_volume_v2).
+Refer to the Terraform Registry for docs: [`opentelekomcloud_blockstorage_volume_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/blockstorage_volume_v2).

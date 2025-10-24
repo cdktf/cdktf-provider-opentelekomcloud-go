@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/private_nat_snat_rule_v3 opentelekomcloud_private_nat_snat_rule_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/private_nat_snat_rule_v3 opentelekomcloud_private_nat_snat_rule_v3}.
 type DataOpentelekomcloudPrivateNatSnatRuleV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataOpentelekomcloudPrivateNatSnatRuleV3) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/private_nat_snat_rule_v3 opentelekomcloud_private_nat_snat_rule_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/private_nat_snat_rule_v3 opentelekomcloud_private_nat_snat_rule_v3} Data Source.
 func NewDataOpentelekomcloudPrivateNatSnatRuleV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudPrivateNatSnatRuleV3Config) DataOpentelekomcloudPrivateNatSnatRuleV3 {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataOpentelekomcloudPrivateNatSnatRuleV3(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/private_nat_snat_rule_v3 opentelekomcloud_private_nat_snat_rule_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/private_nat_snat_rule_v3 opentelekomcloud_private_nat_snat_rule_v3} Data Source.
 func NewDataOpentelekomcloudPrivateNatSnatRuleV3_Override(d DataOpentelekomcloudPrivateNatSnatRuleV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudPrivateNatSnatRuleV3Config) {
 	_init_.Initialize()
 

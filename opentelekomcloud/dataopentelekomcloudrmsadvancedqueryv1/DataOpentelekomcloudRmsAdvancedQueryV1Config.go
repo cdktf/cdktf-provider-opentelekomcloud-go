@@ -22,9 +22,9 @@ type DataOpentelekomcloudRmsAdvancedQueryV1Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}.
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

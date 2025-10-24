@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/waf_dedicated_certificate_v1 opentelekomcloud_waf_dedicated_certificate_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/waf_dedicated_certificate_v1 opentelekomcloud_waf_dedicated_certificate_v1}.
 type WafDedicatedCertificateV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_WafDedicatedCertificateV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/waf_dedicated_certificate_v1 opentelekomcloud_waf_dedicated_certificate_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/waf_dedicated_certificate_v1 opentelekomcloud_waf_dedicated_certificate_v1} Resource.
 func NewWafDedicatedCertificateV1(scope constructs.Construct, id *string, config *WafDedicatedCertificateV1Config) WafDedicatedCertificateV1 {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewWafDedicatedCertificateV1(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/waf_dedicated_certificate_v1 opentelekomcloud_waf_dedicated_certificate_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/waf_dedicated_certificate_v1 opentelekomcloud_waf_dedicated_certificate_v1} Resource.
 func NewWafDedicatedCertificateV1_Override(w WafDedicatedCertificateV1, scope constructs.Construct, id *string, config *WafDedicatedCertificateV1Config) {
 	_init_.Initialize()
 

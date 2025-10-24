@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2}.
 type SmnTopicV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_SmnTopicV2) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2} Resource.
 func NewSmnTopicV2(scope constructs.Construct, id *string, config *SmnTopicV2Config) SmnTopicV2 {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewSmnTopicV2(scope constructs.Construct, id *string, config *SmnTopicV2Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2} Resource.
 func NewSmnTopicV2_Override(s SmnTopicV2, scope constructs.Construct, id *string, config *SmnTopicV2Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/hss_intrusion_events_v5 opentelekomcloud_hss_intrusion_events_v5}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/hss_intrusion_events_v5 opentelekomcloud_hss_intrusion_events_v5}.
 type DataOpentelekomcloudHssIntrusionEventsV5 interface {
 	cdktf.TerraformDataSource
 	BeginTime() *string
@@ -574,7 +574,7 @@ func (j *jsiiProxy_DataOpentelekomcloudHssIntrusionEventsV5) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/hss_intrusion_events_v5 opentelekomcloud_hss_intrusion_events_v5} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/hss_intrusion_events_v5 opentelekomcloud_hss_intrusion_events_v5} Data Source.
 func NewDataOpentelekomcloudHssIntrusionEventsV5(scope constructs.Construct, id *string, config *DataOpentelekomcloudHssIntrusionEventsV5Config) DataOpentelekomcloudHssIntrusionEventsV5 {
 	_init_.Initialize()
 
@@ -592,7 +592,7 @@ func NewDataOpentelekomcloudHssIntrusionEventsV5(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/hss_intrusion_events_v5 opentelekomcloud_hss_intrusion_events_v5} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/hss_intrusion_events_v5 opentelekomcloud_hss_intrusion_events_v5} Data Source.
 func NewDataOpentelekomcloudHssIntrusionEventsV5_Override(d DataOpentelekomcloudHssIntrusionEventsV5, scope constructs.Construct, id *string, config *DataOpentelekomcloudHssIntrusionEventsV5Config) {
 	_init_.Initialize()
 

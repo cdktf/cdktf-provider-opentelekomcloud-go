@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/dds_lts_log_v3 opentelekomcloud_dds_lts_log_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dds_lts_log_v3 opentelekomcloud_dds_lts_log_v3}.
 type DdsLtsLogV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_DdsLtsLogV3) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/dds_lts_log_v3 opentelekomcloud_dds_lts_log_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dds_lts_log_v3 opentelekomcloud_dds_lts_log_v3} Resource.
 func NewDdsLtsLogV3(scope constructs.Construct, id *string, config *DdsLtsLogV3Config) DdsLtsLogV3 {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewDdsLtsLogV3(scope constructs.Construct, id *string, config *DdsLtsLogV3C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/dds_lts_log_v3 opentelekomcloud_dds_lts_log_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dds_lts_log_v3 opentelekomcloud_dds_lts_log_v3} Resource.
 func NewDdsLtsLogV3_Override(d DdsLtsLogV3, scope constructs.Construct, id *string, config *DdsLtsLogV3Config) {
 	_init_.Initialize()
 

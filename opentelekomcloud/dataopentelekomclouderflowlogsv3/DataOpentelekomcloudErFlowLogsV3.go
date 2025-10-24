@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/er_flow_logs_v3 opentelekomcloud_er_flow_logs_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/er_flow_logs_v3 opentelekomcloud_er_flow_logs_v3}.
 type DataOpentelekomcloudErFlowLogsV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -502,7 +502,7 @@ func (j *jsiiProxy_DataOpentelekomcloudErFlowLogsV3) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/er_flow_logs_v3 opentelekomcloud_er_flow_logs_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/er_flow_logs_v3 opentelekomcloud_er_flow_logs_v3} Data Source.
 func NewDataOpentelekomcloudErFlowLogsV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudErFlowLogsV3Config) DataOpentelekomcloudErFlowLogsV3 {
 	_init_.Initialize()
 
@@ -520,7 +520,7 @@ func NewDataOpentelekomcloudErFlowLogsV3(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/er_flow_logs_v3 opentelekomcloud_er_flow_logs_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/er_flow_logs_v3 opentelekomcloud_er_flow_logs_v3} Data Source.
 func NewDataOpentelekomcloudErFlowLogsV3_Override(d DataOpentelekomcloudErFlowLogsV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudErFlowLogsV3Config) {
 	_init_.Initialize()
 

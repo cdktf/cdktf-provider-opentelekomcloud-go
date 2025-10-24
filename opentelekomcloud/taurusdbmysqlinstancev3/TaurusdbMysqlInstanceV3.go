@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/taurusdb_mysql_instance_v3 opentelekomcloud_taurusdb_mysql_instance_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_instance_v3 opentelekomcloud_taurusdb_mysql_instance_v3}.
 type TaurusdbMysqlInstanceV3 interface {
 	cdktf.TerraformResource
 	AvailabilityZoneMode() *string
@@ -908,7 +908,7 @@ func (j *jsiiProxy_TaurusdbMysqlInstanceV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/taurusdb_mysql_instance_v3 opentelekomcloud_taurusdb_mysql_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_instance_v3 opentelekomcloud_taurusdb_mysql_instance_v3} Resource.
 func NewTaurusdbMysqlInstanceV3(scope constructs.Construct, id *string, config *TaurusdbMysqlInstanceV3Config) TaurusdbMysqlInstanceV3 {
 	_init_.Initialize()
 
@@ -926,7 +926,7 @@ func NewTaurusdbMysqlInstanceV3(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/taurusdb_mysql_instance_v3 opentelekomcloud_taurusdb_mysql_instance_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_instance_v3 opentelekomcloud_taurusdb_mysql_instance_v3} Resource.
 func NewTaurusdbMysqlInstanceV3_Override(t TaurusdbMysqlInstanceV3, scope constructs.Construct, id *string, config *TaurusdbMysqlInstanceV3Config) {
 	_init_.Initialize()
 

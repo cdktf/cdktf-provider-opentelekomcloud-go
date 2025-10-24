@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_resource_types_v1 opentelekomcloud_tms_resource_types_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/tms_resource_types_v1 opentelekomcloud_tms_resource_types_v1}.
 type DataOpentelekomcloudTmsResourceTypesV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataOpentelekomcloudTmsResourceTypesV1) Types() DataOpentelek
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_resource_types_v1 opentelekomcloud_tms_resource_types_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/tms_resource_types_v1 opentelekomcloud_tms_resource_types_v1} Data Source.
 func NewDataOpentelekomcloudTmsResourceTypesV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudTmsResourceTypesV1Config) DataOpentelekomcloudTmsResourceTypesV1 {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataOpentelekomcloudTmsResourceTypesV1(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_resource_types_v1 opentelekomcloud_tms_resource_types_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/tms_resource_types_v1 opentelekomcloud_tms_resource_types_v1} Data Source.
 func NewDataOpentelekomcloudTmsResourceTypesV1_Override(d DataOpentelekomcloudTmsResourceTypesV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudTmsResourceTypesV1Config) {
 	_init_.Initialize()
 

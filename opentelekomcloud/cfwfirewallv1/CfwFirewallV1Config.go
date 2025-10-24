@@ -24,19 +24,19 @@ type CfwFirewallV1Config struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// charge_info block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cfw_firewall_v1#charge_info CfwFirewallV1#charge_info}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/cfw_firewall_v1#charge_info CfwFirewallV1#charge_info}
 	ChargeInfo *CfwFirewallV1ChargeInfo `field:"required" json:"chargeInfo" yaml:"chargeInfo"`
 	// flavor block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cfw_firewall_v1#flavor CfwFirewallV1#flavor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/cfw_firewall_v1#flavor CfwFirewallV1#flavor}
 	Flavor *CfwFirewallV1Flavor `field:"required" json:"flavor" yaml:"flavor"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cfw_firewall_v1#name CfwFirewallV1#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/cfw_firewall_v1#name CfwFirewallV1#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cfw_firewall_v1#service_type CfwFirewallV1#service_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/cfw_firewall_v1#service_type CfwFirewallV1#service_type}.
 	ServiceType *string `field:"optional" json:"serviceType" yaml:"serviceType"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cfw_firewall_v1#timeouts CfwFirewallV1#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/cfw_firewall_v1#timeouts CfwFirewallV1#timeouts}
 	Timeouts *CfwFirewallV1Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

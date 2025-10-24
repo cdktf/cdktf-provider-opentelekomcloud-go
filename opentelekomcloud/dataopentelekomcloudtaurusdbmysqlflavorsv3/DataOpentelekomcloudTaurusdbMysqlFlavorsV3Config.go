@@ -22,16 +22,16 @@ type DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_flavors_v3#availability_zone_mode DataOpentelekomcloudTaurusdbMysqlFlavorsV3#availability_zone_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_flavors_v3#availability_zone_mode DataOpentelekomcloudTaurusdbMysqlFlavorsV3#availability_zone_mode}.
 	AvailabilityZoneMode *string `field:"optional" json:"availabilityZoneMode" yaml:"availabilityZoneMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_flavors_v3#engine DataOpentelekomcloudTaurusdbMysqlFlavorsV3#engine}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_flavors_v3#engine DataOpentelekomcloudTaurusdbMysqlFlavorsV3#engine}.
 	Engine *string `field:"optional" json:"engine" yaml:"engine"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_flavors_v3#id DataOpentelekomcloudTaurusdbMysqlFlavorsV3#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_flavors_v3#id DataOpentelekomcloudTaurusdbMysqlFlavorsV3#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_flavors_v3#version DataOpentelekomcloudTaurusdbMysqlFlavorsV3#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_flavors_v3#version DataOpentelekomcloudTaurusdbMysqlFlavorsV3#version}.
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

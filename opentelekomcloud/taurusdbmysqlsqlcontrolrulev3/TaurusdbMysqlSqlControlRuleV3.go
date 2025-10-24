@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/taurusdb_mysql_sql_control_rule_v3 opentelekomcloud_taurusdb_mysql_sql_control_rule_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3 opentelekomcloud_taurusdb_mysql_sql_control_rule_v3}.
 type TaurusdbMysqlSqlControlRuleV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -460,7 +460,7 @@ func (j *jsiiProxy_TaurusdbMysqlSqlControlRuleV3) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/taurusdb_mysql_sql_control_rule_v3 opentelekomcloud_taurusdb_mysql_sql_control_rule_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3 opentelekomcloud_taurusdb_mysql_sql_control_rule_v3} Resource.
 func NewTaurusdbMysqlSqlControlRuleV3(scope constructs.Construct, id *string, config *TaurusdbMysqlSqlControlRuleV3Config) TaurusdbMysqlSqlControlRuleV3 {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewTaurusdbMysqlSqlControlRuleV3(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/taurusdb_mysql_sql_control_rule_v3 opentelekomcloud_taurusdb_mysql_sql_control_rule_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3 opentelekomcloud_taurusdb_mysql_sql_control_rule_v3} Resource.
 func NewTaurusdbMysqlSqlControlRuleV3_Override(t TaurusdbMysqlSqlControlRuleV3, scope constructs.Construct, id *string, config *TaurusdbMysqlSqlControlRuleV3Config) {
 	_init_.Initialize()
 

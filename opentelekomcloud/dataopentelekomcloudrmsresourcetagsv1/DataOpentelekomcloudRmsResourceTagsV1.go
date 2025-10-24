@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/rms_resource_tags_v1 opentelekomcloud_rms_resource_tags_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rms_resource_tags_v1 opentelekomcloud_rms_resource_tags_v1}.
 type DataOpentelekomcloudRmsResourceTagsV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRmsResourceTagsV1) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/rms_resource_tags_v1 opentelekomcloud_rms_resource_tags_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rms_resource_tags_v1 opentelekomcloud_rms_resource_tags_v1} Data Source.
 func NewDataOpentelekomcloudRmsResourceTagsV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudRmsResourceTagsV1Config) DataOpentelekomcloudRmsResourceTagsV1 {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataOpentelekomcloudRmsResourceTagsV1(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/rms_resource_tags_v1 opentelekomcloud_rms_resource_tags_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rms_resource_tags_v1 opentelekomcloud_rms_resource_tags_v1} Data Source.
 func NewDataOpentelekomcloudRmsResourceTagsV1_Override(d DataOpentelekomcloudRmsResourceTagsV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudRmsResourceTagsV1Config) {
 	_init_.Initialize()
 

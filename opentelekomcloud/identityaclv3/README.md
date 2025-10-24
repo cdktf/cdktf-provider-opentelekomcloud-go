@@ -1,3 +1,3 @@
 # `opentelekomcloud_identity_acl_v3`
 
-Refer to the Terraform Registry for docs: [`opentelekomcloud_identity_acl_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/identity_acl_v3).
+Refer to the Terraform Registry for docs: [`opentelekomcloud_identity_acl_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/identity_acl_v3).

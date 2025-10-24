@@ -22,14 +22,14 @@ type DataOpentelekomcloudPrivateNatTransitIpV3Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/private_nat_transit_ip_v3#id DataOpentelekomcloudPrivateNatTransitIpV3#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/private_nat_transit_ip_v3#id DataOpentelekomcloudPrivateNatTransitIpV3#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/private_nat_transit_ip_v3#ip_address DataOpentelekomcloudPrivateNatTransitIpV3#ip_address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/private_nat_transit_ip_v3#ip_address DataOpentelekomcloudPrivateNatTransitIpV3#ip_address}.
 	IpAddress *string `field:"optional" json:"ipAddress" yaml:"ipAddress"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/private_nat_transit_ip_v3#virsubnet_id DataOpentelekomcloudPrivateNatTransitIpV3#virsubnet_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/private_nat_transit_ip_v3#virsubnet_id DataOpentelekomcloudPrivateNatTransitIpV3#virsubnet_id}.
 	VirsubnetId *string `field:"optional" json:"virsubnetId" yaml:"virsubnetId"`
 }
 

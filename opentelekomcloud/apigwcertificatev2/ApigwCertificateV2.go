@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/apigw_certificate_v2 opentelekomcloud_apigw_certificate_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/apigw_certificate_v2 opentelekomcloud_apigw_certificate_v2}.
 type ApigwCertificateV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -506,7 +506,7 @@ func (j *jsiiProxy_ApigwCertificateV2) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/apigw_certificate_v2 opentelekomcloud_apigw_certificate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/apigw_certificate_v2 opentelekomcloud_apigw_certificate_v2} Resource.
 func NewApigwCertificateV2(scope constructs.Construct, id *string, config *ApigwCertificateV2Config) ApigwCertificateV2 {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewApigwCertificateV2(scope constructs.Construct, id *string, config *Apigw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/apigw_certificate_v2 opentelekomcloud_apigw_certificate_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/apigw_certificate_v2 opentelekomcloud_apigw_certificate_v2} Resource.
 func NewApigwCertificateV2_Override(a ApigwCertificateV2, scope constructs.Construct, id *string, config *ApigwCertificateV2Config) {
 	_init_.Initialize()
 

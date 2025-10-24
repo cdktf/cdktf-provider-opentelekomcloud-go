@@ -24,16 +24,16 @@ type TmsResourceTagsV1Config struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// resources block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/tms_resource_tags_v1#resources TmsResourceTagsV1#resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/tms_resource_tags_v1#resources TmsResourceTagsV1#resources}
 	Resources interface{} `field:"required" json:"resources" yaml:"resources"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/tms_resource_tags_v1#tags TmsResourceTagsV1#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/tms_resource_tags_v1#tags TmsResourceTagsV1#tags}.
 	Tags *map[string]*string `field:"required" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/tms_resource_tags_v1#id TmsResourceTagsV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/tms_resource_tags_v1#id TmsResourceTagsV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/tms_resource_tags_v1#project_id TmsResourceTagsV1#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/tms_resource_tags_v1#project_id TmsResourceTagsV1#project_id}.
 	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
 }
 

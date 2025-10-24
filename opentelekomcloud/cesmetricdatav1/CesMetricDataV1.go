@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/ces_metric_data_v1 opentelekomcloud_ces_metric_data_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/ces_metric_data_v1 opentelekomcloud_ces_metric_data_v1}.
 type CesMetricDataV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_CesMetricDataV1) ValueInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/ces_metric_data_v1 opentelekomcloud_ces_metric_data_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/ces_metric_data_v1 opentelekomcloud_ces_metric_data_v1} Resource.
 func NewCesMetricDataV1(scope constructs.Construct, id *string, config *CesMetricDataV1Config) CesMetricDataV1 {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewCesMetricDataV1(scope constructs.Construct, id *string, config *CesMetri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/ces_metric_data_v1 opentelekomcloud_ces_metric_data_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/ces_metric_data_v1 opentelekomcloud_ces_metric_data_v1} Resource.
 func NewCesMetricDataV1_Override(c CesMetricDataV1, scope constructs.Construct, id *string, config *CesMetricDataV1Config) {
 	_init_.Initialize()
 

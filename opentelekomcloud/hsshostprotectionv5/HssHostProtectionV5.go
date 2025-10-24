@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/hss_host_protection_v5 opentelekomcloud_hss_host_protection_v5}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/hss_host_protection_v5 opentelekomcloud_hss_host_protection_v5}.
 type HssHostProtectionV5 interface {
 	cdktf.TerraformResource
 	AgentId() *string
@@ -561,7 +561,7 @@ func (j *jsiiProxy_HssHostProtectionV5) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/hss_host_protection_v5 opentelekomcloud_hss_host_protection_v5} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/hss_host_protection_v5 opentelekomcloud_hss_host_protection_v5} Resource.
 func NewHssHostProtectionV5(scope constructs.Construct, id *string, config *HssHostProtectionV5Config) HssHostProtectionV5 {
 	_init_.Initialize()
 
@@ -579,7 +579,7 @@ func NewHssHostProtectionV5(scope constructs.Construct, id *string, config *HssH
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/hss_host_protection_v5 opentelekomcloud_hss_host_protection_v5} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/hss_host_protection_v5 opentelekomcloud_hss_host_protection_v5} Resource.
 func NewHssHostProtectionV5_Override(h HssHostProtectionV5, scope constructs.Construct, id *string, config *HssHostProtectionV5Config) {
 	_init_.Initialize()
 
