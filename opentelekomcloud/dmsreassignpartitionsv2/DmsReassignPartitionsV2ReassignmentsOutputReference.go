@@ -74,14 +74,14 @@ type DmsReassignPartitionsV2ReassignmentsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAssignments(value interface{})
 	ResetAssignments()
 	ResetBrokers()
 	ResetReplicationFactor()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -530,8 +530,8 @@ func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -539,7 +539,7 @@ func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) Interpol
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -581,8 +581,8 @@ func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) ResetRep
 	)
 }
 
-func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -590,7 +590,7 @@ func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) Resolve(
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

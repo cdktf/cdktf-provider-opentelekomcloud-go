@@ -43,11 +43,11 @@ func (i *jsiiProxy_IdentityProtectionPolicyV3SelfManagementOutputReference) vali
 	return nil
 }
 
-func (i *jsiiProxy_IdentityProtectionPolicyV3SelfManagementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityProtectionPolicyV3SelfManagementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityProtectionPolicyV3SelfManagementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityProtectionPolicyV3SelfManagementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

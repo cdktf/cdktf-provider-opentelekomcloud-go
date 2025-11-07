@@ -90,7 +90,7 @@ type ComputeBmsServerV2BlockDeviceOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetBootIndex()
 	ResetDeleteOnTermination()
 	ResetDestinationType()
@@ -101,7 +101,7 @@ type ComputeBmsServerV2BlockDeviceOutputReference interface {
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -716,8 +716,8 @@ func (c *jsiiProxy_ComputeBmsServerV2BlockDeviceOutputReference) InterpolationAs
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBmsServerV2BlockDeviceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeBmsServerV2BlockDeviceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -725,7 +725,7 @@ func (c *jsiiProxy_ComputeBmsServerV2BlockDeviceOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -796,8 +796,8 @@ func (c *jsiiProxy_ComputeBmsServerV2BlockDeviceOutputReference) ResetVolumeType
 	)
 }
 
-func (c *jsiiProxy_ComputeBmsServerV2BlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeBmsServerV2BlockDeviceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -805,7 +805,7 @@ func (c *jsiiProxy_ComputeBmsServerV2BlockDeviceOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

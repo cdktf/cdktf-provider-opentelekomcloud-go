@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/apigw_vpc_channel_v2 opentelekomcloud_apigw_vpc_channel_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_vpc_channel_v2 opentelekomcloud_apigw_vpc_channel_v2}.
 type ApigwVpcChannelV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -579,7 +579,7 @@ func (j *jsiiProxy_ApigwVpcChannelV2) TypeInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/apigw_vpc_channel_v2 opentelekomcloud_apigw_vpc_channel_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_vpc_channel_v2 opentelekomcloud_apigw_vpc_channel_v2} Resource.
 func NewApigwVpcChannelV2(scope constructs.Construct, id *string, config *ApigwVpcChannelV2Config) ApigwVpcChannelV2 {
 	_init_.Initialize()
 
@@ -597,7 +597,7 @@ func NewApigwVpcChannelV2(scope constructs.Construct, id *string, config *ApigwV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/apigw_vpc_channel_v2 opentelekomcloud_apigw_vpc_channel_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_vpc_channel_v2 opentelekomcloud_apigw_vpc_channel_v2} Resource.
 func NewApigwVpcChannelV2_Override(a ApigwVpcChannelV2, scope constructs.Construct, id *string, config *ApigwVpcChannelV2Config) {
 	_init_.Initialize()
 

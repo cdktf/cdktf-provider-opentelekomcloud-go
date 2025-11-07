@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbListenerV3InsertHeadersOutputReference) validateGetStringMa
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerV3InsertHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbListenerV3InsertHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerV3InsertHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbListenerV3InsertHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

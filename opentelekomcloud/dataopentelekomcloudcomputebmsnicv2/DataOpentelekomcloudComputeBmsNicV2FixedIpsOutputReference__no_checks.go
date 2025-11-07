@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

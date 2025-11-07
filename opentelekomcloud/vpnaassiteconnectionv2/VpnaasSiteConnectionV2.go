@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/vpnaas_site_connection_v2 opentelekomcloud_vpnaas_site_connection_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/vpnaas_site_connection_v2 opentelekomcloud_vpnaas_site_connection_v2}.
 type VpnaasSiteConnectionV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -808,7 +808,7 @@ func (j *jsiiProxy_VpnaasSiteConnectionV2) VpnserviceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/vpnaas_site_connection_v2 opentelekomcloud_vpnaas_site_connection_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/vpnaas_site_connection_v2 opentelekomcloud_vpnaas_site_connection_v2} Resource.
 func NewVpnaasSiteConnectionV2(scope constructs.Construct, id *string, config *VpnaasSiteConnectionV2Config) VpnaasSiteConnectionV2 {
 	_init_.Initialize()
 
@@ -826,7 +826,7 @@ func NewVpnaasSiteConnectionV2(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/vpnaas_site_connection_v2 opentelekomcloud_vpnaas_site_connection_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/vpnaas_site_connection_v2 opentelekomcloud_vpnaas_site_connection_v2} Resource.
 func NewVpnaasSiteConnectionV2_Override(v VpnaasSiteConnectionV2, scope constructs.Construct, id *string, config *VpnaasSiteConnectionV2Config) {
 	_init_.Initialize()
 

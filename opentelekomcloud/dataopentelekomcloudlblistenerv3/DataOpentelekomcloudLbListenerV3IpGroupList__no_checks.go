@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudLbListenerV3IpGroupList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudLbListenerV3IpGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudLbListenerV3IpGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1}.
 type WafDedicatedAntiLeakageRuleV1 interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -495,7 +495,7 @@ func (j *jsiiProxy_WafDedicatedAntiLeakageRuleV1) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1} Resource.
 func NewWafDedicatedAntiLeakageRuleV1(scope constructs.Construct, id *string, config *WafDedicatedAntiLeakageRuleV1Config) WafDedicatedAntiLeakageRuleV1 {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewWafDedicatedAntiLeakageRuleV1(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1} Resource.
 func NewWafDedicatedAntiLeakageRuleV1_Override(w WafDedicatedAntiLeakageRuleV1, scope constructs.Construct, id *string, config *WafDedicatedAntiLeakageRuleV1Config) {
 	_init_.Initialize()
 

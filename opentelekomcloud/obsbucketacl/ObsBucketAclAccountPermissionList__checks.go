@@ -29,9 +29,9 @@ func (o *jsiiProxy_ObsBucketAclAccountPermissionList) validateGetParameters(inde
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketAclAccountPermissionList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_ObsBucketAclAccountPermissionList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

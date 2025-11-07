@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}.
 type CceClusterV3 interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -42,6 +42,8 @@ type CceClusterV3 interface {
 	ClusterVersion() *string
 	SetClusterVersion(val *string)
 	ClusterVersionInput() *string
+	ComponentConfigurations() CceClusterV3ComponentConfigurationsList
+	ComponentConfigurationsInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -58,6 +60,9 @@ type CceClusterV3 interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomSan() *[]*string
+	SetCustomSan(val *[]*string)
+	CustomSanInput() *[]*string
 	DeleteAllNetwork() *string
 	SetDeleteAllNetwork(val *string)
 	DeleteAllNetworkInput() *string
@@ -185,6 +190,9 @@ type CceClusterV3 interface {
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
+	SupportIstio() interface{}
+	SetSupportIstio(val interface{})
+	SupportIstioInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -243,6 +251,7 @@ type CceClusterV3 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthenticatingProxy(value *CceClusterV3AuthenticatingProxy)
+	PutComponentConfigurations(value interface{})
 	PutMasters(value interface{})
 	PutTimeouts(value *CceClusterV3Timeouts)
 	ResetAnnotations()
@@ -252,7 +261,9 @@ type CceClusterV3 interface {
 	ResetAuthenticationMode()
 	ResetBillingMode()
 	ResetClusterVersion()
+	ResetComponentConfigurations()
 	ResetContainerNetworkCidr()
+	ResetCustomSan()
 	ResetDeleteAllNetwork()
 	ResetDeleteAllStorage()
 	ResetDeleteEfs()
@@ -284,6 +295,7 @@ type CceClusterV3 interface {
 	ResetOverrideLogicalId()
 	ResetRegion()
 	ResetSecurityGroupId()
+	ResetSupportIstio()
 	ResetTimeouts()
 	ResetTimezone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -494,6 +506,26 @@ func (j *jsiiProxy_CceClusterV3) ClusterVersionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CceClusterV3) ComponentConfigurations() CceClusterV3ComponentConfigurationsList {
+	var returns CceClusterV3ComponentConfigurationsList
+	_jsii_.Get(
+		j,
+		"componentConfigurations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) ComponentConfigurationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"componentConfigurationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CceClusterV3) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -559,6 +591,26 @@ func (j *jsiiProxy_CceClusterV3) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) CustomSan() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customSan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) CustomSanInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customSanInput",
 		&returns,
 	)
 	return returns
@@ -1344,6 +1396,26 @@ func (j *jsiiProxy_CceClusterV3) SubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CceClusterV3) SupportIstio() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"supportIstio",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceClusterV3) SupportIstioInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"supportIstioInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CceClusterV3) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -1435,7 +1507,7 @@ func (j *jsiiProxy_CceClusterV3) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV3Config) CceClusterV3 {
 	_init_.Initialize()
 
@@ -1453,7 +1525,7 @@ func NewCceClusterV3(scope constructs.Construct, id *string, config *CceClusterV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource.
 func NewCceClusterV3_Override(c CceClusterV3, scope constructs.Construct, id *string, config *CceClusterV3Config) {
 	_init_.Initialize()
 
@@ -1581,6 +1653,17 @@ func (j *jsiiProxy_CceClusterV3)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetCustomSan(val *[]*string) {
+	if err := j.validateSetCustomSanParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customSan",
 		val,
 	)
 }
@@ -1957,6 +2040,17 @@ func (j *jsiiProxy_CceClusterV3)SetSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"subnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceClusterV3)SetSupportIstio(val interface{}) {
+	if err := j.validateSetSupportIstioParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"supportIstio",
 		val,
 	)
 }
@@ -2347,6 +2441,17 @@ func (c *jsiiProxy_CceClusterV3) PutAuthenticatingProxy(value *CceClusterV3Authe
 	)
 }
 
+func (c *jsiiProxy_CceClusterV3) PutComponentConfigurations(value interface{}) {
+	if err := c.validatePutComponentConfigurationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putComponentConfigurations",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CceClusterV3) PutMasters(value interface{}) {
 	if err := c.validatePutMastersParameters(value); err != nil {
 		panic(err)
@@ -2425,10 +2530,26 @@ func (c *jsiiProxy_CceClusterV3) ResetClusterVersion() {
 	)
 }
 
+func (c *jsiiProxy_CceClusterV3) ResetComponentConfigurations() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetComponentConfigurations",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CceClusterV3) ResetContainerNetworkCidr() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetContainerNetworkCidr",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetCustomSan() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomSan",
 		nil, // no parameters
 	)
 }
@@ -2661,6 +2782,14 @@ func (c *jsiiProxy_CceClusterV3) ResetSecurityGroupId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSecurityGroupId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceClusterV3) ResetSupportIstio() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSupportIstio",
 		nil, // no parameters
 	)
 }

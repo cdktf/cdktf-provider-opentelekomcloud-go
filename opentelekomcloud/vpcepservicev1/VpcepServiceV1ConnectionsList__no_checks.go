@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpcepServiceV1ConnectionsList) validateGetParameters(index *f
 	return nil
 }
 
-func (v *jsiiProxy_VpcepServiceV1ConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcepServiceV1ConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

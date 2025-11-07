@@ -43,11 +43,11 @@ func (w *jsiiProxy_WafDedicatedDomainV1ServerOutputReference) validateGetStringM
 	return nil
 }
 
-func (w *jsiiProxy_WafDedicatedDomainV1ServerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafDedicatedDomainV1ServerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WafDedicatedDomainV1ServerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafDedicatedDomainV1ServerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

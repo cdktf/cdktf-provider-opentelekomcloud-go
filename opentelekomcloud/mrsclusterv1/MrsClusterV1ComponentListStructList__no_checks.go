@@ -15,7 +15,7 @@ func (m *jsiiProxy_MrsClusterV1ComponentListStructList) validateGetParameters(in
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

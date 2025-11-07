@@ -15,7 +15,7 @@ func (c *jsiiProxy_CceNodeV3DataVolumesList) validateGetParameters(index *float6
 	return nil
 }
 
-func (c *jsiiProxy_CceNodeV3DataVolumesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CceNodeV3DataVolumesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

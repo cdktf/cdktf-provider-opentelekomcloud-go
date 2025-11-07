@@ -43,11 +43,11 @@ func (i *jsiiProxy_IdentityProviderConversionRulesRemoteOutputReference) validat
 	return nil
 }
 
-func (i *jsiiProxy_IdentityProviderConversionRulesRemoteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityProviderConversionRulesRemoteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityProviderConversionRulesRemoteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityProviderConversionRulesRemoteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

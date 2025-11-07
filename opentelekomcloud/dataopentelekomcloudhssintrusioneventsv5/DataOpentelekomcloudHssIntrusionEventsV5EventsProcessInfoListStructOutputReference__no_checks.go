@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoList
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoListStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

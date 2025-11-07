@@ -15,7 +15,7 @@ func (d *jsiiProxy_DisDumpTaskV2PartitionsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DisDumpTaskV2PartitionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DisDumpTaskV2PartitionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

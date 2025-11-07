@@ -43,11 +43,11 @@ func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrsClusterV1ComponentListStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

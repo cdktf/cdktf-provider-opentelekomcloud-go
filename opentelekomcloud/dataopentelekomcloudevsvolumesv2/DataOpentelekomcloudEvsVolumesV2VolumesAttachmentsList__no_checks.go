@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudEvsVolumesV2VolumesAttachmentsList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudEvsVolumesV2VolumesAttachmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudEvsVolumesV2VolumesAttachmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

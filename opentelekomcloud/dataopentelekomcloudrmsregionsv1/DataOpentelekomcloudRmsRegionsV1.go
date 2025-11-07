@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rms_regions_v1 opentelekomcloud_rms_regions_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_regions_v1 opentelekomcloud_rms_regions_v1}.
 type DataOpentelekomcloudRmsRegionsV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataOpentelekomcloudRmsRegionsV1) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rms_regions_v1 opentelekomcloud_rms_regions_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_regions_v1 opentelekomcloud_rms_regions_v1} Data Source.
 func NewDataOpentelekomcloudRmsRegionsV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudRmsRegionsV1Config) DataOpentelekomcloudRmsRegionsV1 {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataOpentelekomcloudRmsRegionsV1(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rms_regions_v1 opentelekomcloud_rms_regions_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_regions_v1 opentelekomcloud_rms_regions_v1} Data Source.
 func NewDataOpentelekomcloudRmsRegionsV1_Override(d DataOpentelekomcloudRmsRegionsV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudRmsRegionsV1Config) {
 	_init_.Initialize()
 

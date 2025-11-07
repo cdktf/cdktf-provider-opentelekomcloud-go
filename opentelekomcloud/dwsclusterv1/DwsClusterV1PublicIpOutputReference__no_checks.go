@@ -43,11 +43,11 @@ func (d *jsiiProxy_DwsClusterV1PublicIpOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DwsClusterV1PublicIpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DwsClusterV1PublicIpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DwsClusterV1PublicIpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DwsClusterV1PublicIpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

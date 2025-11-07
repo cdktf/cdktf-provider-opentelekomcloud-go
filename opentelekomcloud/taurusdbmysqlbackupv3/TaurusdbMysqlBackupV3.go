@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_backup_v3 opentelekomcloud_taurusdb_mysql_backup_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_backup_v3 opentelekomcloud_taurusdb_mysql_backup_v3}.
 type TaurusdbMysqlBackupV3 interface {
 	cdktf.TerraformResource
 	BeginTime() *string
@@ -470,7 +470,7 @@ func (j *jsiiProxy_TaurusdbMysqlBackupV3) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_backup_v3 opentelekomcloud_taurusdb_mysql_backup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_backup_v3 opentelekomcloud_taurusdb_mysql_backup_v3} Resource.
 func NewTaurusdbMysqlBackupV3(scope constructs.Construct, id *string, config *TaurusdbMysqlBackupV3Config) TaurusdbMysqlBackupV3 {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewTaurusdbMysqlBackupV3(scope constructs.Construct, id *string, config *Ta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_backup_v3 opentelekomcloud_taurusdb_mysql_backup_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_backup_v3 opentelekomcloud_taurusdb_mysql_backup_v3} Resource.
 func NewTaurusdbMysqlBackupV3_Override(t TaurusdbMysqlBackupV3, scope constructs.Construct, id *string, config *TaurusdbMysqlBackupV3Config) {
 	_init_.Initialize()
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

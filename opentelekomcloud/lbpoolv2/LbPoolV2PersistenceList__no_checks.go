@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbPoolV2PersistenceList) validateGetParameters(index *float64
 	return nil
 }
 
-func (l *jsiiProxy_LbPoolV2PersistenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbPoolV2PersistenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AsmServiceMeshV1TelemetryConfigTracingExtensionProvidersList)
 	return nil
 }
 
-func (a *jsiiProxy_AsmServiceMeshV1TelemetryConfigTracingExtensionProvidersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsmServiceMeshV1TelemetryConfigTracingExtensionProvidersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

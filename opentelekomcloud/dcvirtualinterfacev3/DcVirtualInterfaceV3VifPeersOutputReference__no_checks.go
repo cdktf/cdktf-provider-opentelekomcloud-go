@@ -43,11 +43,11 @@ func (d *jsiiProxy_DcVirtualInterfaceV3VifPeersOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DcVirtualInterfaceV3VifPeersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DcVirtualInterfaceV3VifPeersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DcVirtualInterfaceV3VifPeersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DcVirtualInterfaceV3VifPeersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

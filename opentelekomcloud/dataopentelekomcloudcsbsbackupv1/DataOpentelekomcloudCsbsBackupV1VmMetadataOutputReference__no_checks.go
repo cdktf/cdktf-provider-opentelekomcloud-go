@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3NodesList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3NodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudDdsInstanceV3NodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

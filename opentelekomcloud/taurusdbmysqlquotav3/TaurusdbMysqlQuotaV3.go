@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_quota_v3 opentelekomcloud_taurusdb_mysql_quota_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_quota_v3 opentelekomcloud_taurusdb_mysql_quota_v3}.
 type TaurusdbMysqlQuotaV3 interface {
 	cdktf.TerraformResource
 	AvailabilityInstanceQuota() *float64
@@ -472,7 +472,7 @@ func (j *jsiiProxy_TaurusdbMysqlQuotaV3) VcpusQuotaInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_quota_v3 opentelekomcloud_taurusdb_mysql_quota_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_quota_v3 opentelekomcloud_taurusdb_mysql_quota_v3} Resource.
 func NewTaurusdbMysqlQuotaV3(scope constructs.Construct, id *string, config *TaurusdbMysqlQuotaV3Config) TaurusdbMysqlQuotaV3 {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewTaurusdbMysqlQuotaV3(scope constructs.Construct, id *string, config *Tau
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_quota_v3 opentelekomcloud_taurusdb_mysql_quota_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_quota_v3 opentelekomcloud_taurusdb_mysql_quota_v3} Resource.
 func NewTaurusdbMysqlQuotaV3_Override(t TaurusdbMysqlQuotaV3, scope constructs.Construct, id *string, config *TaurusdbMysqlQuotaV3Config) {
 	_init_.Initialize()
 

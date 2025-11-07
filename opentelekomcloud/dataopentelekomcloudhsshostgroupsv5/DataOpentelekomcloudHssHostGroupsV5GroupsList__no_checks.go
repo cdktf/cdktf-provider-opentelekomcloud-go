@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudHssHostGroupsV5GroupsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudHssHostGroupsV5GroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudHssHostGroupsV5GroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

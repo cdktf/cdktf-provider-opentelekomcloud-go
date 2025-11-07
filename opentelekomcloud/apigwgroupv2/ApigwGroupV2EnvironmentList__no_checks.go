@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigwGroupV2EnvironmentList) validateGetParameters(index *flo
 	return nil
 }
 
-func (a *jsiiProxy_ApigwGroupV2EnvironmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwGroupV2EnvironmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

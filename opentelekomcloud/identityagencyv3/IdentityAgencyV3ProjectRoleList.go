@@ -41,7 +41,7 @@ type IdentityAgencyV3ProjectRoleList interface {
 	Get(index *float64) IdentityAgencyV3ProjectRoleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleList) Get(index *float64) Identity
 	return returns
 }
 
-func (i *jsiiProxy_IdentityAgencyV3ProjectRoleList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IdentityAgencyV3ProjectRoleList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleList) Resolve(_context cdktf.IReso
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

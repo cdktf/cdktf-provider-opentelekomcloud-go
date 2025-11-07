@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkingPortV2FixedIpOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingPortV2FixedIpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkingPortV2FixedIpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingPortV2FixedIpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkingPortV2FixedIpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

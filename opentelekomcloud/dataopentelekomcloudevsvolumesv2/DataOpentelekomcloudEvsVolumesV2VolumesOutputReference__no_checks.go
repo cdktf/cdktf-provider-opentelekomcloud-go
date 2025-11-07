@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudEvsVolumesV2VolumesOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudEvsVolumesV2VolumesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudEvsVolumesV2VolumesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudEvsVolumesV2VolumesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudEvsVolumesV2VolumesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

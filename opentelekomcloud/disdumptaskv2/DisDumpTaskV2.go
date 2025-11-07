@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dis_dump_task_v2 opentelekomcloud_dis_dump_task_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dis_dump_task_v2 opentelekomcloud_dis_dump_task_v2}.
 type DisDumpTaskV2 interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_DisDumpTaskV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dis_dump_task_v2 opentelekomcloud_dis_dump_task_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dis_dump_task_v2 opentelekomcloud_dis_dump_task_v2} Resource.
 func NewDisDumpTaskV2(scope constructs.Construct, id *string, config *DisDumpTaskV2Config) DisDumpTaskV2 {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewDisDumpTaskV2(scope constructs.Construct, id *string, config *DisDumpTas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dis_dump_task_v2 opentelekomcloud_dis_dump_task_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dis_dump_task_v2 opentelekomcloud_dis_dump_task_v2} Resource.
 func NewDisDumpTaskV2_Override(d DisDumpTaskV2, scope constructs.Construct, id *string, config *DisDumpTaskV2Config) {
 	_init_.Initialize()
 

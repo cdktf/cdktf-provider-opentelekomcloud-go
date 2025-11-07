@@ -15,7 +15,7 @@ func (r *jsiiProxy_RdsInstanceV3NodesList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (r *jsiiProxy_RdsInstanceV3NodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsInstanceV3NodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

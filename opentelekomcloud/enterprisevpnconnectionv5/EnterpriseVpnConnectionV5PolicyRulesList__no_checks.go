@@ -15,7 +15,7 @@ func (e *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesList) validateGetParamete
 	return nil
 }
 
-func (e *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EnterpriseVpnConnectionV5PolicyRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

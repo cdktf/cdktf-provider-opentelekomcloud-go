@@ -39,7 +39,7 @@ type DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresList interface {
 	Get(index *float64) DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresLi
 	return returns
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresLi
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

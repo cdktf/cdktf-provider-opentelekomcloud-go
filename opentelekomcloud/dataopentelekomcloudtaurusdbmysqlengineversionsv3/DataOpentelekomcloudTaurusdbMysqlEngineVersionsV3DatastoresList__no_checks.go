@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresLi
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

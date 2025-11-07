@@ -43,11 +43,11 @@ func (l *jsiiProxy_LtsKeywordsAlarmRuleV2KeywordsRequestsOutputReference) valida
 	return nil
 }
 
-func (l *jsiiProxy_LtsKeywordsAlarmRuleV2KeywordsRequestsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LtsKeywordsAlarmRuleV2KeywordsRequestsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LtsKeywordsAlarmRuleV2KeywordsRequestsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LtsKeywordsAlarmRuleV2KeywordsRequestsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

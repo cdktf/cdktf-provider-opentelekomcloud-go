@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudErFlowLogsV3FlowLogsOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudErFlowLogsV3FlowLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudErFlowLogsV3FlowLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudErFlowLogsV3FlowLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudErFlowLogsV3FlowLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

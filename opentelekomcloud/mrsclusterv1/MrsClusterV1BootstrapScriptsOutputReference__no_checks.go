@@ -43,11 +43,11 @@ func (m *jsiiProxy_MrsClusterV1BootstrapScriptsOutputReference) validateGetStrin
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1BootstrapScriptsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MrsClusterV1BootstrapScriptsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1BootstrapScriptsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrsClusterV1BootstrapScriptsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

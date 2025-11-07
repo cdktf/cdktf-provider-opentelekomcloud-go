@@ -43,11 +43,11 @@ func (c *jsiiProxy_CsbsBackupV1VmMetadataOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (c *jsiiProxy_CsbsBackupV1VmMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CsbsBackupV1VmMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CsbsBackupV1VmMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsbsBackupV1VmMetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

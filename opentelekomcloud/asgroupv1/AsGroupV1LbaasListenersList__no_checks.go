@@ -15,7 +15,7 @@ func (a *jsiiProxy_AsGroupV1LbaasListenersList) validateGetParameters(index *flo
 	return nil
 }
 
-func (a *jsiiProxy_AsGroupV1LbaasListenersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsGroupV1LbaasListenersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

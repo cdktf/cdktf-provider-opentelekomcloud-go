@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlBackupsV3BackupsOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlBackupsV3BackupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlBackupsV3BackupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlBackupsV3BackupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlBackupsV3BackupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

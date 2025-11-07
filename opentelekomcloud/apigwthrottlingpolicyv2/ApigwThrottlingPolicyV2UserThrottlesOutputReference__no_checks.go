@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigwThrottlingPolicyV2UserThrottlesOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_ApigwThrottlingPolicyV2UserThrottlesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigwThrottlingPolicyV2UserThrottlesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigwThrottlingPolicyV2UserThrottlesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwThrottlingPolicyV2UserThrottlesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

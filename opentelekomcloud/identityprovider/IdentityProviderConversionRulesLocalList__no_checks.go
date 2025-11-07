@@ -15,7 +15,7 @@ func (i *jsiiProxy_IdentityProviderConversionRulesLocalList) validateGetParamete
 	return nil
 }
 
-func (i *jsiiProxy_IdentityProviderConversionRulesLocalList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityProviderConversionRulesLocalList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

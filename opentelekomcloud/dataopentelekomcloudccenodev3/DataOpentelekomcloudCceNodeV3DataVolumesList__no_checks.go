@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCceNodeV3DataVolumesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

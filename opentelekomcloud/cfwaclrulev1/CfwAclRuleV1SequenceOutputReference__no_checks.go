@@ -43,11 +43,11 @@ func (c *jsiiProxy_CfwAclRuleV1SequenceOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (c *jsiiProxy_CfwAclRuleV1SequenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CfwAclRuleV1SequenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CfwAclRuleV1SequenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CfwAclRuleV1SequenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

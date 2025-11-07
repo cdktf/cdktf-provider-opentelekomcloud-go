@@ -15,7 +15,7 @@ func (l *jsiiProxy_LtsKeywordsAlarmRuleV2NotificationRuleTopicsList) validateGet
 	return nil
 }
 
-func (l *jsiiProxy_LtsKeywordsAlarmRuleV2NotificationRuleTopicsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LtsKeywordsAlarmRuleV2NotificationRuleTopicsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

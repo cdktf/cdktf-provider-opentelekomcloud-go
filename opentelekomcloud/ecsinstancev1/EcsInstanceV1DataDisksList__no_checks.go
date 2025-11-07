@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsInstanceV1DataDisksList) validateGetParameters(index *floa
 	return nil
 }
 
-func (e *jsiiProxy_EcsInstanceV1DataDisksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsInstanceV1DataDisksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

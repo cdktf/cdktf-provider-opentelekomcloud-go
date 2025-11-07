@@ -43,7 +43,7 @@ func (e *jsiiProxy_EnterpriseVpnConnectionV5IkepolicyOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_EnterpriseVpnConnectionV5IkepolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EnterpriseVpnConnectionV5IkepolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EnterpriseVpnConnectionV5IkepolicyOutputReference) validatePu
 	return nil
 }
 
-func (e *jsiiProxy_EnterpriseVpnConnectionV5IkepolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EnterpriseVpnConnectionV5IkepolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

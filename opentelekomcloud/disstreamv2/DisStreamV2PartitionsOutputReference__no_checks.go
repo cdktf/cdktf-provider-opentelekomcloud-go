@@ -43,11 +43,11 @@ func (d *jsiiProxy_DisStreamV2PartitionsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (d *jsiiProxy_DisStreamV2PartitionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DisStreamV2PartitionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DisStreamV2PartitionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DisStreamV2PartitionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

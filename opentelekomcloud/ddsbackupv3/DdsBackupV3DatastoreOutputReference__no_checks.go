@@ -43,11 +43,11 @@ func (d *jsiiProxy_DdsBackupV3DatastoreOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DdsBackupV3DatastoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DdsBackupV3DatastoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DdsBackupV3DatastoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DdsBackupV3DatastoreOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

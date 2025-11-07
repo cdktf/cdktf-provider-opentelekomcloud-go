@@ -15,7 +15,7 @@ func (d *jsiiProxy_DwsClusterV1PublicEndpointsList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DwsClusterV1PublicEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DwsClusterV1PublicEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

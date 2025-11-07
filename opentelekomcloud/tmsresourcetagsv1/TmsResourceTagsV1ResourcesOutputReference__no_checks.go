@@ -43,11 +43,11 @@ func (t *jsiiProxy_TmsResourceTagsV1ResourcesOutputReference) validateGetStringM
 	return nil
 }
 
-func (t *jsiiProxy_TmsResourceTagsV1ResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TmsResourceTagsV1ResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TmsResourceTagsV1ResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TmsResourceTagsV1ResourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) validateGetParameter
 	return nil
 }
 
-func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsConfigurationV1InstanceConfigDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

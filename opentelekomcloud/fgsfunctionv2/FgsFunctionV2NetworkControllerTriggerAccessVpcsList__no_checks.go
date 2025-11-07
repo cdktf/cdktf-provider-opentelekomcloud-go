@@ -15,7 +15,7 @@ func (f *jsiiProxy_FgsFunctionV2NetworkControllerTriggerAccessVpcsList) validate
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2NetworkControllerTriggerAccessVpcsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FgsFunctionV2NetworkControllerTriggerAccessVpcsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

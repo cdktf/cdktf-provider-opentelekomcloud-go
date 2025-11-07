@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivateNatGatewayV3DownlinkVpcsList) validateGetParameters(in
 	return nil
 }
 
-func (p *jsiiProxy_PrivateNatGatewayV3DownlinkVpcsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateNatGatewayV3DownlinkVpcsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) validatePutAliasesParam
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

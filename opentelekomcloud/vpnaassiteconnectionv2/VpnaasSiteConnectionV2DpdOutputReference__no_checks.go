@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) validateGetStringMa
 	return nil
 }
 
-func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnaasSiteConnectionV2DpdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

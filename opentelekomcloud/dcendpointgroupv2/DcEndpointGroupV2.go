@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dc_endpoint_group_v2 opentelekomcloud_dc_endpoint_group_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dc_endpoint_group_v2 opentelekomcloud_dc_endpoint_group_v2}.
 type DcEndpointGroupV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DcEndpointGroupV2) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dc_endpoint_group_v2 opentelekomcloud_dc_endpoint_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dc_endpoint_group_v2 opentelekomcloud_dc_endpoint_group_v2} Resource.
 func NewDcEndpointGroupV2(scope constructs.Construct, id *string, config *DcEndpointGroupV2Config) DcEndpointGroupV2 {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDcEndpointGroupV2(scope constructs.Construct, id *string, config *DcEndp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dc_endpoint_group_v2 opentelekomcloud_dc_endpoint_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dc_endpoint_group_v2 opentelekomcloud_dc_endpoint_group_v2} Resource.
 func NewDcEndpointGroupV2_Override(d DcEndpointGroupV2, scope constructs.Construct, id *string, config *DcEndpointGroupV2Config) {
 	_init_.Initialize()
 

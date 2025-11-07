@@ -15,7 +15,7 @@ func (t *jsiiProxy_TaurusdbMysqlProxyV3ReadonlyNodesWeightList) validateGetParam
 	return nil
 }
 
-func (t *jsiiProxy_TaurusdbMysqlProxyV3ReadonlyNodesWeightList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TaurusdbMysqlProxyV3ReadonlyNodesWeightList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

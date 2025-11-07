@@ -43,11 +43,11 @@ func (d *jsiiProxy_DwsClusterV1EndpointsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (d *jsiiProxy_DwsClusterV1EndpointsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DwsClusterV1EndpointsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DwsClusterV1EndpointsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DwsClusterV1EndpointsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

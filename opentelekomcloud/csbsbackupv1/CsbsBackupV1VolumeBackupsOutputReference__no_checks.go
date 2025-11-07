@@ -43,11 +43,11 @@ func (c *jsiiProxy_CsbsBackupV1VolumeBackupsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_CsbsBackupV1VolumeBackupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CsbsBackupV1VolumeBackupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CsbsBackupV1VolumeBackupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsbsBackupV1VolumeBackupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

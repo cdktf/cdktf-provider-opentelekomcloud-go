@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/lb_pool_v2 opentelekomcloud_lb_pool_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/lb_pool_v2 opentelekomcloud_lb_pool_v2}.
 type LbPoolV2 interface {
 	cdktf.TerraformResource
 	AdminStateUp() interface{}
@@ -572,7 +572,7 @@ func (j *jsiiProxy_LbPoolV2) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/lb_pool_v2 opentelekomcloud_lb_pool_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/lb_pool_v2 opentelekomcloud_lb_pool_v2} Resource.
 func NewLbPoolV2(scope constructs.Construct, id *string, config *LbPoolV2Config) LbPoolV2 {
 	_init_.Initialize()
 
@@ -590,7 +590,7 @@ func NewLbPoolV2(scope constructs.Construct, id *string, config *LbPoolV2Config)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/lb_pool_v2 opentelekomcloud_lb_pool_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/lb_pool_v2 opentelekomcloud_lb_pool_v2} Resource.
 func NewLbPoolV2_Override(l LbPoolV2, scope constructs.Construct, id *string, config *LbPoolV2Config) {
 	_init_.Initialize()
 

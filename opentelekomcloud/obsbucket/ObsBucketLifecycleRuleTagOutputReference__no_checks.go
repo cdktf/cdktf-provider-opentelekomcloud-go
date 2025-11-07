@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleTagOutputReference) validateGetStringMa
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketLifecycleRuleTagOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObsBucketLifecycleRuleTagOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketLifecycleRuleTagOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObsBucketLifecycleRuleTagOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

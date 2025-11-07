@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObsBucketInventoryDestinationOutputReference) validateGetStri
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketInventoryDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObsBucketInventoryDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketInventoryDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObsBucketInventoryDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (l *jsiiProxy_LtsTransferV2LogTransferInfoOutputReference) validateGetStrin
 	return nil
 }
 
-func (l *jsiiProxy_LtsTransferV2LogTransferInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LtsTransferV2LogTransferInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_LtsTransferV2LogTransferInfoOutputReference) validatePutLogTr
 	return nil
 }
 
-func (l *jsiiProxy_LtsTransferV2LogTransferInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LtsTransferV2LogTransferInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DisDumpTaskV2ObsDestinationDescriptorOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DisDumpTaskV2ObsDestinationDescriptorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DisDumpTaskV2ObsDestinationDescriptorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DisDumpTaskV2ObsDestinationDescriptorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DisDumpTaskV2ObsDestinationDescriptorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

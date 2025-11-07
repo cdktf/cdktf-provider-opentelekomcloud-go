@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudCfwFirewallV1ProtectObjectsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCfwFirewallV1ProtectObjectsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudCfwFirewallV1ProtectObjectsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCfwFirewallV1ProtectObjectsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCfwFirewallV1ProtectObjectsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

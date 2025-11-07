@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApigwApiV2MockPolicyOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (a *jsiiProxy_ApigwApiV2MockPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigwApiV2MockPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_ApigwApiV2MockPolicyOutputReference) validatePutConditionsPar
 	return nil
 }
 
-func (a *jsiiProxy_ApigwApiV2MockPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwApiV2MockPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigwCustomAuthorizerV2IdentityOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_ApigwCustomAuthorizerV2IdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigwCustomAuthorizerV2IdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigwCustomAuthorizerV2IdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwCustomAuthorizerV2IdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

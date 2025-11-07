@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApigwVpcChannelV2MicroserviceOutputReference) validateGetStri
 	return nil
 }
 
-func (a *jsiiProxy_ApigwVpcChannelV2MicroserviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigwVpcChannelV2MicroserviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_ApigwVpcChannelV2MicroserviceOutputReference) validatePutCseC
 	return nil
 }
 
-func (a *jsiiProxy_ApigwVpcChannelV2MicroserviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwVpcChannelV2MicroserviceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

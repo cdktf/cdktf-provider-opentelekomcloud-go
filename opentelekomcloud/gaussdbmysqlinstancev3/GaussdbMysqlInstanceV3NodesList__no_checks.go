@@ -15,7 +15,7 @@ func (g *jsiiProxy_GaussdbMysqlInstanceV3NodesList) validateGetParameters(index 
 	return nil
 }
 
-func (g *jsiiProxy_GaussdbMysqlInstanceV3NodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GaussdbMysqlInstanceV3NodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

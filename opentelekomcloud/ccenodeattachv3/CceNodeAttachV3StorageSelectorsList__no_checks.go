@@ -15,7 +15,7 @@ func (c *jsiiProxy_CceNodeAttachV3StorageSelectorsList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_CceNodeAttachV3StorageSelectorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CceNodeAttachV3StorageSelectorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

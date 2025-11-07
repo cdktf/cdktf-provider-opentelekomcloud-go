@@ -43,11 +43,11 @@ func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CssClusterV1NodeConfigVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

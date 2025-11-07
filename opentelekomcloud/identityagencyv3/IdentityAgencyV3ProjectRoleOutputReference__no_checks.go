@@ -43,11 +43,11 @@ func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) validateGetString
 	return nil
 }
 
-func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityAgencyV3ProjectRoleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

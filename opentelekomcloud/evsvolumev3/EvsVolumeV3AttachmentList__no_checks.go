@@ -15,7 +15,7 @@ func (e *jsiiProxy_EvsVolumeV3AttachmentList) validateGetParameters(index *float
 	return nil
 }
 
-func (e *jsiiProxy_EvsVolumeV3AttachmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvsVolumeV3AttachmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

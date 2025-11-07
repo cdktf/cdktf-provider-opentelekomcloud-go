@@ -43,7 +43,7 @@ func (f *jsiiProxy_FgsFunctionV2NetworkControllerOutputReference) validateGetStr
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2NetworkControllerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FgsFunctionV2NetworkControllerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FgsFunctionV2NetworkControllerOutputReference) validatePutTri
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2NetworkControllerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FgsFunctionV2NetworkControllerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

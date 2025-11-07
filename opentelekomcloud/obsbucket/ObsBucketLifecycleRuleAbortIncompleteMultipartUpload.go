@@ -5,7 +5,7 @@ package obsbucket
 
 
 type ObsBucketLifecycleRuleAbortIncompleteMultipartUpload struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/obs_bucket#days ObsBucket#days}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/obs_bucket#days ObsBucket#days}.
 	Days *float64 `field:"required" json:"days" yaml:"days"`
 }
 

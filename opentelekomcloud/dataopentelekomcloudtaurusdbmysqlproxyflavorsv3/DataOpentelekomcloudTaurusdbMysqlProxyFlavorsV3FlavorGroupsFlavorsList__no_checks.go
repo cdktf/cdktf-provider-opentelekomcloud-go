@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlProxyFlavorsV3FlavorGroupsFl
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlProxyFlavorsV3FlavorGroupsFlavorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlProxyFlavorsV3FlavorGroupsFlavorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

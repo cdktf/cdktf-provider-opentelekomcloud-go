@@ -15,7 +15,7 @@ func (a *jsiiProxy_AsmServiceMeshV1ClustersList) validateGetParameters(index *fl
 	return nil
 }
 
-func (a *jsiiProxy_AsmServiceMeshV1ClustersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsmServiceMeshV1ClustersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

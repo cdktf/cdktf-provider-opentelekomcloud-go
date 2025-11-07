@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpnaasIpsecPolicyV2LifetimeList) validateGetParameters(index 
 	return nil
 }
 
-func (v *jsiiProxy_VpnaasIpsecPolicyV2LifetimeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnaasIpsecPolicyV2LifetimeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

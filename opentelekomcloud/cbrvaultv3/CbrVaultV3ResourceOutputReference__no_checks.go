@@ -43,11 +43,11 @@ func (c *jsiiProxy_CbrVaultV3ResourceOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (c *jsiiProxy_CbrVaultV3ResourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CbrVaultV3ResourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CbrVaultV3ResourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CbrVaultV3ResourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

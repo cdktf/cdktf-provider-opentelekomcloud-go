@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresOu
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlEngineVersionsV3DatastoresOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) validateGetStri
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObsBucketServerSideEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

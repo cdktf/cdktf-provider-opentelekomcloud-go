@@ -15,7 +15,7 @@ func (r *jsiiProxy_RdsReadReplicaV3DbList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (r *jsiiProxy_RdsReadReplicaV3DbList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsReadReplicaV3DbList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudComputeInstancesV2InstancesList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudComputeInstancesV2InstancesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudComputeInstancesV2InstancesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

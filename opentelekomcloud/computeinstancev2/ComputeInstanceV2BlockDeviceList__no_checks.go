@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceV2BlockDeviceList) validateGetParameters(index
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceV2BlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceV2BlockDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

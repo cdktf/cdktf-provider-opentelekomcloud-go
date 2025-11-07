@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

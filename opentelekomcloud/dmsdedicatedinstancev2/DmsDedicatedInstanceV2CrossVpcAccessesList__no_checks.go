@@ -15,7 +15,7 @@ func (d *jsiiProxy_DmsDedicatedInstanceV2CrossVpcAccessesList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DmsDedicatedInstanceV2CrossVpcAccessesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsDedicatedInstanceV2CrossVpcAccessesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

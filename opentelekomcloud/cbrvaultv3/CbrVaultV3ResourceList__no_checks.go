@@ -15,7 +15,7 @@ func (c *jsiiProxy_CbrVaultV3ResourceList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (c *jsiiProxy_CbrVaultV3ResourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CbrVaultV3ResourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

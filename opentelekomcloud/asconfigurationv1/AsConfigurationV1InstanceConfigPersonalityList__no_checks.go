@@ -15,7 +15,7 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) validateGetPa
 	return nil
 }
 
-func (a *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

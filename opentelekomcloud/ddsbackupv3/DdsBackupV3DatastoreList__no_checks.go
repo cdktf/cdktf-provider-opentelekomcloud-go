@@ -15,7 +15,7 @@ func (d *jsiiProxy_DdsBackupV3DatastoreList) validateGetParameters(index *float6
 	return nil
 }
 
-func (d *jsiiProxy_DdsBackupV3DatastoreList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DdsBackupV3DatastoreList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

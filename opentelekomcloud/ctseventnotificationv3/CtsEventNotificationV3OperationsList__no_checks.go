@@ -15,7 +15,7 @@ func (c *jsiiProxy_CtsEventNotificationV3OperationsList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3OperationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CtsEventNotificationV3OperationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

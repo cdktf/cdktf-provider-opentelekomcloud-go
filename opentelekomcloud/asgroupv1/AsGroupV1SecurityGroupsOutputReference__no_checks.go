@@ -43,11 +43,11 @@ func (a *jsiiProxy_AsGroupV1SecurityGroupsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (a *jsiiProxy_AsGroupV1SecurityGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AsGroupV1SecurityGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AsGroupV1SecurityGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsGroupV1SecurityGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

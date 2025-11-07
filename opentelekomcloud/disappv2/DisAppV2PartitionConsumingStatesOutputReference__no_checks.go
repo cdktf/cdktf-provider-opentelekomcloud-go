@@ -43,11 +43,11 @@ func (d *jsiiProxy_DisAppV2PartitionConsumingStatesOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DisAppV2PartitionConsumingStatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DisAppV2PartitionConsumingStatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DisAppV2PartitionConsumingStatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DisAppV2PartitionConsumingStatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

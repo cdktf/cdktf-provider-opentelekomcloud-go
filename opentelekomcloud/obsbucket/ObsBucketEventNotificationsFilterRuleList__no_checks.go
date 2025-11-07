@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleList) validateGetParamet
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

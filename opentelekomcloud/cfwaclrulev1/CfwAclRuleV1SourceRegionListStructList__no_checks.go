@@ -15,7 +15,7 @@ func (c *jsiiProxy_CfwAclRuleV1SourceRegionListStructList) validateGetParameters
 	return nil
 }
 
-func (c *jsiiProxy_CfwAclRuleV1SourceRegionListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CfwAclRuleV1SourceRegionListStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

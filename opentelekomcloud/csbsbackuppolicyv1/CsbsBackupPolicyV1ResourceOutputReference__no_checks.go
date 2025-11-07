@@ -43,11 +43,11 @@ func (c *jsiiProxy_CsbsBackupPolicyV1ResourceOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_CsbsBackupPolicyV1ResourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CsbsBackupPolicyV1ResourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CsbsBackupPolicyV1ResourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsbsBackupPolicyV1ResourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

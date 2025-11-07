@@ -43,11 +43,11 @@ func (c *jsiiProxy_CesAlarmruleTimeoutsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (c *jsiiProxy_CesAlarmruleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAlarmruleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAlarmruleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAlarmruleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

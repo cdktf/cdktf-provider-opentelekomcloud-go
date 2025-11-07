@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudPrivateNatTransitIpV3TransitIpsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudPrivateNatTransitIpV3TransitIpsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudPrivateNatTransitIpV3TransitIpsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CceClusterV3CertificateUsersList) validateGetParameters(index
 	return nil
 }
 
-func (c *jsiiProxy_CceClusterV3CertificateUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CceClusterV3CertificateUsersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

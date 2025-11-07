@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudVpcV1RoutesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

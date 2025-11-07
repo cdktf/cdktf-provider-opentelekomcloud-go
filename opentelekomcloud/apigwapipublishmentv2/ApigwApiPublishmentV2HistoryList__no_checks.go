@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigwApiPublishmentV2HistoryList) validateGetParameters(index
 	return nil
 }
 
-func (a *jsiiProxy_ApigwApiPublishmentV2HistoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwApiPublishmentV2HistoryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

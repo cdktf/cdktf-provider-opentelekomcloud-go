@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudApigwGroupsV2GroupsEnvironmentOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudApigwGroupsV2GroupsEnvironmentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudApigwGroupsV2GroupsEnvironmentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudApigwGroupsV2GroupsEnvironmentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudApigwGroupsV2GroupsEnvironmentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

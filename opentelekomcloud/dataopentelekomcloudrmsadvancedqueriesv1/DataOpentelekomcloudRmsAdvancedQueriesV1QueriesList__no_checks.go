@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudRmsAdvancedQueriesV1QueriesList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudRmsAdvancedQueriesV1QueriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudRmsAdvancedQueriesV1QueriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

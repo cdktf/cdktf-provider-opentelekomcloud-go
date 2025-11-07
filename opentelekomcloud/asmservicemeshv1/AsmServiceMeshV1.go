@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/asm_service_mesh_v1 opentelekomcloud_asm_service_mesh_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/asm_service_mesh_v1 opentelekomcloud_asm_service_mesh_v1}.
 type AsmServiceMeshV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -531,7 +531,7 @@ func (j *jsiiProxy_AsmServiceMeshV1) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/asm_service_mesh_v1 opentelekomcloud_asm_service_mesh_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/asm_service_mesh_v1 opentelekomcloud_asm_service_mesh_v1} Resource.
 func NewAsmServiceMeshV1(scope constructs.Construct, id *string, config *AsmServiceMeshV1Config) AsmServiceMeshV1 {
 	_init_.Initialize()
 
@@ -549,7 +549,7 @@ func NewAsmServiceMeshV1(scope constructs.Construct, id *string, config *AsmServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/asm_service_mesh_v1 opentelekomcloud_asm_service_mesh_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/asm_service_mesh_v1 opentelekomcloud_asm_service_mesh_v1} Resource.
 func NewAsmServiceMeshV1_Override(a AsmServiceMeshV1, scope constructs.Construct, id *string, config *AsmServiceMeshV1Config) {
 	_init_.Initialize()
 

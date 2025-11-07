@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) validateGetStringMa
 	return nil
 }
 
-func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnaasIkePolicyV2LifetimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

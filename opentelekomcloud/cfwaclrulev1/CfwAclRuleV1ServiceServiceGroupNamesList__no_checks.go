@@ -15,7 +15,7 @@ func (c *jsiiProxy_CfwAclRuleV1ServiceServiceGroupNamesList) validateGetParamete
 	return nil
 }
 
-func (c *jsiiProxy_CfwAclRuleV1ServiceServiceGroupNamesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CfwAclRuleV1ServiceServiceGroupNamesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (t *jsiiProxy_TmsTagsV1TagsList) validateGetParameters(index *float64) erro
 	return nil
 }
 
-func (t *jsiiProxy_TmsTagsV1TagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TmsTagsV1TagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

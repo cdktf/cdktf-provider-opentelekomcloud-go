@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) validat
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObsBucketEventNotificationsFilterRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

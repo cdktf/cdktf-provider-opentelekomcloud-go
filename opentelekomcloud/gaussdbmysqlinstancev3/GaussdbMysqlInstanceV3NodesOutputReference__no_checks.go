@@ -43,11 +43,11 @@ func (g *jsiiProxy_GaussdbMysqlInstanceV3NodesOutputReference) validateGetString
 	return nil
 }
 
-func (g *jsiiProxy_GaussdbMysqlInstanceV3NodesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GaussdbMysqlInstanceV3NodesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GaussdbMysqlInstanceV3NodesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GaussdbMysqlInstanceV3NodesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

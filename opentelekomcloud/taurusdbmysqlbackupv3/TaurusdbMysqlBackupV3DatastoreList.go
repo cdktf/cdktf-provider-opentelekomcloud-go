@@ -39,7 +39,7 @@ type TaurusdbMysqlBackupV3DatastoreList interface {
 	Get(index *float64) TaurusdbMysqlBackupV3DatastoreOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (t *jsiiProxy_TaurusdbMysqlBackupV3DatastoreList) Get(index *float64) Tauru
 	return returns
 }
 
-func (t *jsiiProxy_TaurusdbMysqlBackupV3DatastoreList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TaurusdbMysqlBackupV3DatastoreList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (t *jsiiProxy_TaurusdbMysqlBackupV3DatastoreList) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

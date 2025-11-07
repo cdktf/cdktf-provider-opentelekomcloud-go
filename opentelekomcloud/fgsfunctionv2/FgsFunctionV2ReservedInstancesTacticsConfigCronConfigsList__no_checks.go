@@ -15,7 +15,7 @@ func (f *jsiiProxy_FgsFunctionV2ReservedInstancesTacticsConfigCronConfigsList) v
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2ReservedInstancesTacticsConfigCronConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FgsFunctionV2ReservedInstancesTacticsConfigCronConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

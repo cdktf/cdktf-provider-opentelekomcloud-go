@@ -15,7 +15,7 @@ func (v *jsiiProxy_VbsBackupPolicyV2TagsList) validateGetParameters(index *float
 	return nil
 }
 
-func (v *jsiiProxy_VbsBackupPolicyV2TagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VbsBackupPolicyV2TagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

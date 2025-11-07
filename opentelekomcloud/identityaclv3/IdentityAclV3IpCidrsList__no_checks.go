@@ -15,7 +15,7 @@ func (i *jsiiProxy_IdentityAclV3IpCidrsList) validateGetParameters(index *float6
 	return nil
 }
 
-func (i *jsiiProxy_IdentityAclV3IpCidrsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityAclV3IpCidrsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

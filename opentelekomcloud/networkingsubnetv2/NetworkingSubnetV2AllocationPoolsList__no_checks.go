@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) validateGetParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkingSubnetV2AllocationPoolsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

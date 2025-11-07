@@ -15,7 +15,7 @@ func (c *jsiiProxy_CceNodeV3TaintsList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (c *jsiiProxy_CceNodeV3TaintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CceNodeV3TaintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

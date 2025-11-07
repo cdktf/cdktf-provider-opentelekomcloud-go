@@ -15,7 +15,7 @@ func (d *jsiiProxy_DdmSchemaV1DatabasesList) validateGetParameters(index *float6
 	return nil
 }
 
-func (d *jsiiProxy_DdmSchemaV1DatabasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DdmSchemaV1DatabasesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

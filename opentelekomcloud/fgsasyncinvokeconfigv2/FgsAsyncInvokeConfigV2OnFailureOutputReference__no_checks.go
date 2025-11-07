@@ -43,11 +43,11 @@ func (f *jsiiProxy_FgsAsyncInvokeConfigV2OnFailureOutputReference) validateGetSt
 	return nil
 }
 
-func (f *jsiiProxy_FgsAsyncInvokeConfigV2OnFailureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FgsAsyncInvokeConfigV2OnFailureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FgsAsyncInvokeConfigV2OnFailureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FgsAsyncInvokeConfigV2OnFailureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

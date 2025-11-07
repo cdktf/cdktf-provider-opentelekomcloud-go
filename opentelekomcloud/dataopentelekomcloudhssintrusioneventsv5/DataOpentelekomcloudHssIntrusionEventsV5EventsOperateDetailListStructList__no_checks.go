@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudHssIntrusionEventsV5EventsOperateDetailLi
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudHssIntrusionEventsV5EventsOperateDetailListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudHssIntrusionEventsV5EventsOperateDetailListStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

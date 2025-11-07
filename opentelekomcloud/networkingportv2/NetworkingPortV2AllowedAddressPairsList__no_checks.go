@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) validateGetParameter
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

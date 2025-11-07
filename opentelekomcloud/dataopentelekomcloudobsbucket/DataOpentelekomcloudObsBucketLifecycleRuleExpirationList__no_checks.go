@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleExpirationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

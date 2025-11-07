@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListStructList) validateGetParameters(index *flo
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

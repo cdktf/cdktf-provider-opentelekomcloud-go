@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

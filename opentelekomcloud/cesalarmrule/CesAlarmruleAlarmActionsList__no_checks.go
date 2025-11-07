@@ -15,7 +15,7 @@ func (c *jsiiProxy_CesAlarmruleAlarmActionsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (c *jsiiProxy_CesAlarmruleAlarmActionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAlarmruleAlarmActionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

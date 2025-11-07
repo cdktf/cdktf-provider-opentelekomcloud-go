@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbIpgroupV3IpListStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

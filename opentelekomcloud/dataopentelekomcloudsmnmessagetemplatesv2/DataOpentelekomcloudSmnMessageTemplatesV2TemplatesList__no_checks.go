@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudSmnMessageTemplatesV2TemplatesList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudSmnMessageTemplatesV2TemplatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudSmnMessageTemplatesV2TemplatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

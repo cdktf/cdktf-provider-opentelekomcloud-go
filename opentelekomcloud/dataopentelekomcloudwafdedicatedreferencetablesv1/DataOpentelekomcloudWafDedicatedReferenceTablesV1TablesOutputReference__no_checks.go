@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudWafDedicatedReferenceTablesV1TablesOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudWafDedicatedReferenceTablesV1TablesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudWafDedicatedReferenceTablesV1TablesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudWafDedicatedReferenceTablesV1TablesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudWafDedicatedReferenceTablesV1TablesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

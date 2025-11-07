@@ -15,7 +15,7 @@ func (d *jsiiProxy_DisDumpTaskV2ObsProcessingSchemaList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DisDumpTaskV2ObsProcessingSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DisDumpTaskV2ObsProcessingSchemaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

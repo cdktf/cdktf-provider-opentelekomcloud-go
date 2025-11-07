@@ -43,11 +43,11 @@ func (h *jsiiProxy_HssHostProtectionV5TimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (h *jsiiProxy_HssHostProtectionV5TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HssHostProtectionV5TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HssHostProtectionV5TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HssHostProtectionV5TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

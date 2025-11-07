@@ -43,11 +43,11 @@ func (c *jsiiProxy_CceNodeAttachV3RootVolumeOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_CceNodeAttachV3RootVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CceNodeAttachV3RootVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CceNodeAttachV3RootVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CceNodeAttachV3RootVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

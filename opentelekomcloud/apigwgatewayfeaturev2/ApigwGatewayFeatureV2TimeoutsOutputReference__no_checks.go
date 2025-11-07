@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigwGatewayFeatureV2TimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (a *jsiiProxy_ApigwGatewayFeatureV2TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigwGatewayFeatureV2TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigwGatewayFeatureV2TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwGatewayFeatureV2TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

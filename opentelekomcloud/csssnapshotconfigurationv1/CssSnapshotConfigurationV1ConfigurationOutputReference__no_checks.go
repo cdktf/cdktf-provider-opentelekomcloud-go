@@ -43,11 +43,11 @@ func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CssSnapshotConfigurationV1ConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

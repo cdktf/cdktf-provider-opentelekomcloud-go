@@ -15,7 +15,7 @@ func (d *jsiiProxy_DcsInstanceV2ParametersList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV2ParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DcsInstanceV2ParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

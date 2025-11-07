@@ -43,11 +43,11 @@ func (c *jsiiProxy_CssClusterV1PublicAccessOutputReference) validateGetStringMap
 	return nil
 }
 
-func (c *jsiiProxy_CssClusterV1PublicAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CssClusterV1PublicAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CssClusterV1PublicAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CssClusterV1PublicAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

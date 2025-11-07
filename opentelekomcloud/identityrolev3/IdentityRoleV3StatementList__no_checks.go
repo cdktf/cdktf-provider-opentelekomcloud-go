@@ -15,7 +15,7 @@ func (i *jsiiProxy_IdentityRoleV3StatementList) validateGetParameters(index *flo
 	return nil
 }
 
-func (i *jsiiProxy_IdentityRoleV3StatementList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityRoleV3StatementList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -41,7 +41,7 @@ type IdentityAclV3IpRangesList interface {
 	Get(index *float64) IdentityAclV3IpRangesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (i *jsiiProxy_IdentityAclV3IpRangesList) Get(index *float64) IdentityAclV3I
 	return returns
 }
 
-func (i *jsiiProxy_IdentityAclV3IpRangesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IdentityAclV3IpRangesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (i *jsiiProxy_IdentityAclV3IpRangesList) Resolve(_context cdktf.IResolveCon
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

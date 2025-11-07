@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1ResourceList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1ResourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1ResourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudDnsNameserversV2NameserversList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

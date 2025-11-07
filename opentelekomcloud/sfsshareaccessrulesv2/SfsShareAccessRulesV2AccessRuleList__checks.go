@@ -29,9 +29,9 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/private_nat_gateway_v3 opentelekomcloud_private_nat_gateway_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/private_nat_gateway_v3 opentelekomcloud_private_nat_gateway_v3}.
 type PrivateNatGatewayV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -529,7 +529,7 @@ func (j *jsiiProxy_PrivateNatGatewayV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/private_nat_gateway_v3 opentelekomcloud_private_nat_gateway_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/private_nat_gateway_v3 opentelekomcloud_private_nat_gateway_v3} Resource.
 func NewPrivateNatGatewayV3(scope constructs.Construct, id *string, config *PrivateNatGatewayV3Config) PrivateNatGatewayV3 {
 	_init_.Initialize()
 
@@ -547,7 +547,7 @@ func NewPrivateNatGatewayV3(scope constructs.Construct, id *string, config *Priv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/private_nat_gateway_v3 opentelekomcloud_private_nat_gateway_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/private_nat_gateway_v3 opentelekomcloud_private_nat_gateway_v3} Resource.
 func NewPrivateNatGatewayV3_Override(p PrivateNatGatewayV3, scope constructs.Construct, id *string, config *PrivateNatGatewayV3Config) {
 	_init_.Initialize()
 

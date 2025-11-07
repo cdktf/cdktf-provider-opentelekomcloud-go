@@ -43,7 +43,7 @@ func (l *jsiiProxy_LtsHostAccessV3AccessConfigOutputReference) validateGetString
 	return nil
 }
 
-func (l *jsiiProxy_LtsHostAccessV3AccessConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LtsHostAccessV3AccessConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (l *jsiiProxy_LtsHostAccessV3AccessConfigOutputReference) validatePutWindow
 	return nil
 }
 
-func (l *jsiiProxy_LtsHostAccessV3AccessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LtsHostAccessV3AccessConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

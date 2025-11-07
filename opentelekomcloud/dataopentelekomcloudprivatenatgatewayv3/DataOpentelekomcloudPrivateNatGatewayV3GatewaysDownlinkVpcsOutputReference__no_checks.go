@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsOu
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

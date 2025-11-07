@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudCceClustersV3ClustersEndpointsList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCceClustersV3ClustersEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCceClustersV3ClustersEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

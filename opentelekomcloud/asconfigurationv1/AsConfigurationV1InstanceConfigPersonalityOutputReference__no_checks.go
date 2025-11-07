@@ -43,11 +43,11 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsConfigurationV1InstanceConfigPersonalityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

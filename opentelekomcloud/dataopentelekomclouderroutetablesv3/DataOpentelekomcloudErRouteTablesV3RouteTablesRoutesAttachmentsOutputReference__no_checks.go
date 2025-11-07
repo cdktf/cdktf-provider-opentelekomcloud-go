@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachmen
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachmentsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachmentsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachmentsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachmentsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

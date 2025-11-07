@@ -15,7 +15,7 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeBmsServerV2NetworkOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBmsServerV2NetworkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeBmsServerV2NetworkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBmsServerV2NetworkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBmsServerV2NetworkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

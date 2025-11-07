@@ -15,7 +15,7 @@ func (c *jsiiProxy_CfwDomainNameGroupV1RulesList) validateGetParameters(index *f
 	return nil
 }
 
-func (c *jsiiProxy_CfwDomainNameGroupV1RulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CfwDomainNameGroupV1RulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

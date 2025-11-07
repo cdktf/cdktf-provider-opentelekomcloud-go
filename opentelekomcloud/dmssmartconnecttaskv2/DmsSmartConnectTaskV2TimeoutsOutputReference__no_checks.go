@@ -43,11 +43,11 @@ func (d *jsiiProxy_DmsSmartConnectTaskV2TimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DmsSmartConnectTaskV2TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DmsSmartConnectTaskV2TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DmsSmartConnectTaskV2TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsSmartConnectTaskV2TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

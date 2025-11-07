@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafDedicatedCcRuleV1ActionList) validateGetParameters(index *
 	return nil
 }
 
-func (w *jsiiProxy_WafDedicatedCcRuleV1ActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafDedicatedCcRuleV1ActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

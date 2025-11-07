@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigwCustomAuthorizerV2IdentityList) validateGetParameters(in
 	return nil
 }
 
-func (a *jsiiProxy_ApigwCustomAuthorizerV2IdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwCustomAuthorizerV2IdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

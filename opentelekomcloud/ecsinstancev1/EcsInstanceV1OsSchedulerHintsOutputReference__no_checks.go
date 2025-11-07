@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsInstanceV1OsSchedulerHintsOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_EcsInstanceV1OsSchedulerHintsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsInstanceV1OsSchedulerHintsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsInstanceV1OsSchedulerHintsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsInstanceV1OsSchedulerHintsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

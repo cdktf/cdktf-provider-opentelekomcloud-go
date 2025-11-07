@@ -43,7 +43,7 @@ func (f *jsiiProxy_FgsFunctionV2ReservedInstancesOutputReference) validateGetStr
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2ReservedInstancesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FgsFunctionV2ReservedInstancesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FgsFunctionV2ReservedInstancesOutputReference) validatePutTac
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2ReservedInstancesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FgsFunctionV2ReservedInstancesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

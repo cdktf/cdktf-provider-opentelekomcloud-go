@@ -43,11 +43,11 @@ func (l *jsiiProxy_LtsCceAccessV3AccessConfigMultiLogFormatOutputReference) vali
 	return nil
 }
 
-func (l *jsiiProxy_LtsCceAccessV3AccessConfigMultiLogFormatOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LtsCceAccessV3AccessConfigMultiLogFormatOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LtsCceAccessV3AccessConfigMultiLogFormatOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LtsCceAccessV3AccessConfigMultiLogFormatOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

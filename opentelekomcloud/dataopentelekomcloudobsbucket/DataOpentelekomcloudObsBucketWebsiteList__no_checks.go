@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketWebsiteList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudObsBucketWebsiteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudObsBucketWebsiteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

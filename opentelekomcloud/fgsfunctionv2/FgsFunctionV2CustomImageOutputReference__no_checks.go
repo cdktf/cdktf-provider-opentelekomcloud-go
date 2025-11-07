@@ -43,11 +43,11 @@ func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateGetStringMap
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FgsFunctionV2CustomImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1ActionOutputReference) val
 	return nil
 }
 
-func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1ActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1ActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1ActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1ActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

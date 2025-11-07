@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpnaasIpsecPolicyV2TimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (v *jsiiProxy_VpnaasIpsecPolicyV2TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnaasIpsecPolicyV2TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnaasIpsecPolicyV2TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnaasIpsecPolicyV2TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

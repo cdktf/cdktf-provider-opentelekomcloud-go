@@ -15,7 +15,7 @@ func (t *jsiiProxy_TaurusdbMysqlBackupV3DatastoreList) validateGetParameters(ind
 	return nil
 }
 
-func (t *jsiiProxy_TaurusdbMysqlBackupV3DatastoreList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TaurusdbMysqlBackupV3DatastoreList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DcsInstanceV1WhitelistStructList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DcsInstanceV1WhitelistStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DcsInstanceV1WhitelistStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

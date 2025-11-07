@@ -43,7 +43,7 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) validatePutTransitionP
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObsBucketLifecycleRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

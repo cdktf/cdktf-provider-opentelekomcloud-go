@@ -15,7 +15,7 @@ func (a *jsiiProxy_AsGroupV1NetworksList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (a *jsiiProxy_AsGroupV1NetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsGroupV1NetworksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_CfwAclRuleV1DestinationOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (c *jsiiProxy_CfwAclRuleV1DestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CfwAclRuleV1DestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CfwAclRuleV1DestinationOutputReference) validatePutRegionList
 	return nil
 }
 
-func (c *jsiiProxy_CfwAclRuleV1DestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CfwAclRuleV1DestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

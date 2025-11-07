@@ -43,7 +43,7 @@ func (a *jsiiProxy_AsmServiceMeshV1TelemetryConfigTracingOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_AsmServiceMeshV1TelemetryConfigTracingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AsmServiceMeshV1TelemetryConfigTracingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AsmServiceMeshV1TelemetryConfigTracingOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_AsmServiceMeshV1TelemetryConfigTracingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsmServiceMeshV1TelemetryConfigTracingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

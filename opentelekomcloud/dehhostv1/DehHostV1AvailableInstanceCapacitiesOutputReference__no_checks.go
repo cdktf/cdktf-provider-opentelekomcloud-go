@@ -43,11 +43,11 @@ func (d *jsiiProxy_DehHostV1AvailableInstanceCapacitiesOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DehHostV1AvailableInstanceCapacitiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DehHostV1AvailableInstanceCapacitiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DehHostV1AvailableInstanceCapacitiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DehHostV1AvailableInstanceCapacitiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

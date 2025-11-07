@@ -15,7 +15,7 @@ func (c *jsiiProxy_CfwAclRuleV1ServiceCustomServiceList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_CfwAclRuleV1ServiceCustomServiceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CfwAclRuleV1ServiceCustomServiceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

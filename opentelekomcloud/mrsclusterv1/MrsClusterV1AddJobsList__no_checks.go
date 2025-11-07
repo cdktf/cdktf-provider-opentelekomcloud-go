@@ -15,7 +15,7 @@ func (m *jsiiProxy_MrsClusterV1AddJobsList) validateGetParameters(index *float64
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1AddJobsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrsClusterV1AddJobsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

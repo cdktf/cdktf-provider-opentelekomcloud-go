@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObsBucketReplicationRuleList) validateGetParameters(index *fl
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketReplicationRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObsBucketReplicationRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

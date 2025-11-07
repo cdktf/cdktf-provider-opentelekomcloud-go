@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudObsBucketCorsRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

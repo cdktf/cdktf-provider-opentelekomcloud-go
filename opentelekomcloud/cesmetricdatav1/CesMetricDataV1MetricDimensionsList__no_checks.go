@@ -15,7 +15,7 @@ func (c *jsiiProxy_CesMetricDataV1MetricDimensionsList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_CesMetricDataV1MetricDimensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesMetricDataV1MetricDimensionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

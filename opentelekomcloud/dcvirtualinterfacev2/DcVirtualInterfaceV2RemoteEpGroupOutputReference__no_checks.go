@@ -43,11 +43,11 @@ func (d *jsiiProxy_DcVirtualInterfaceV2RemoteEpGroupOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DcVirtualInterfaceV2RemoteEpGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DcVirtualInterfaceV2RemoteEpGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DcVirtualInterfaceV2RemoteEpGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DcVirtualInterfaceV2RemoteEpGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

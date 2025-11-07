@@ -15,7 +15,7 @@ func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

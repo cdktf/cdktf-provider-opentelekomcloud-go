@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudCesQuotasV1QuotasResourcesOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCesQuotasV1QuotasResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudCesQuotasV1QuotasResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCesQuotasV1QuotasResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCesQuotasV1QuotasResourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CceClusterV3CertificateClustersOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_CceClusterV3CertificateClustersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CceClusterV3CertificateClustersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CceClusterV3CertificateClustersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CceClusterV3CertificateClustersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

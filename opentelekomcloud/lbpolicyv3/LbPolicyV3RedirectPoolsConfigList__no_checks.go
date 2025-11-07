@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbPolicyV3RedirectPoolsConfigList) validateGetParameters(inde
 	return nil
 }
 
-func (l *jsiiProxy_LbPolicyV3RedirectPoolsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbPolicyV3RedirectPoolsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

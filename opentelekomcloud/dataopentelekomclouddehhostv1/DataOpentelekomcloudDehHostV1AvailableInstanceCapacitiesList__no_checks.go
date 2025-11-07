@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList)
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

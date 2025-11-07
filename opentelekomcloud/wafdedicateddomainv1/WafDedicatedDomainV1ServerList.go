@@ -41,7 +41,7 @@ type WafDedicatedDomainV1ServerList interface {
 	Get(index *float64) WafDedicatedDomainV1ServerOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (w *jsiiProxy_WafDedicatedDomainV1ServerList) Get(index *float64) WafDedica
 	return returns
 }
 
-func (w *jsiiProxy_WafDedicatedDomainV1ServerList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WafDedicatedDomainV1ServerList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (w *jsiiProxy_WafDedicatedDomainV1ServerList) Resolve(_context cdktf.IResol
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

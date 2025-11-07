@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudVbsBackupPolicyV2TagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

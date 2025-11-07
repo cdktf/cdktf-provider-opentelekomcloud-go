@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudEnterpriseVpnConnectionV5IpsecpolicyList)
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudEnterpriseVpnConnectionV5IpsecpolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudEnterpriseVpnConnectionV5IpsecpolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

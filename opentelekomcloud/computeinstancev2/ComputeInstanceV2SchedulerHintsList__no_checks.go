@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

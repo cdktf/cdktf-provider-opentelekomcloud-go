@@ -79,6 +79,10 @@ func (c *jsiiProxy_CceClusterV3) validatePutAuthenticatingProxyParameters(value 
 	return nil
 }
 
+func (c *jsiiProxy_CceClusterV3) validatePutComponentConfigurationsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CceClusterV3) validatePutMastersParameters(value interface{}) error {
 	return nil
 }
@@ -144,6 +148,10 @@ func (j *jsiiProxy_CceClusterV3) validateSetContainerNetworkTypeParameters(val *
 }
 
 func (j *jsiiProxy_CceClusterV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CceClusterV3) validateSetCustomSanParameters(val *[]*string) error {
 	return nil
 }
 
@@ -272,6 +280,10 @@ func (j *jsiiProxy_CceClusterV3) validateSetSecurityGroupIdParameters(val *strin
 }
 
 func (j *jsiiProxy_CceClusterV3) validateSetSubnetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CceClusterV3) validateSetSupportIstioParameters(val interface{}) error {
 	return nil
 }
 

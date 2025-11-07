@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

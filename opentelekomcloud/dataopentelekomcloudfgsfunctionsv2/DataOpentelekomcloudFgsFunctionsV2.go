@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/fgs_functions_v2 opentelekomcloud_fgs_functions_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/fgs_functions_v2 opentelekomcloud_fgs_functions_v2}.
 type DataOpentelekomcloudFgsFunctionsV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -407,7 +407,7 @@ func (j *jsiiProxy_DataOpentelekomcloudFgsFunctionsV2) UrnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/fgs_functions_v2 opentelekomcloud_fgs_functions_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/fgs_functions_v2 opentelekomcloud_fgs_functions_v2} Data Source.
 func NewDataOpentelekomcloudFgsFunctionsV2(scope constructs.Construct, id *string, config *DataOpentelekomcloudFgsFunctionsV2Config) DataOpentelekomcloudFgsFunctionsV2 {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewDataOpentelekomcloudFgsFunctionsV2(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/fgs_functions_v2 opentelekomcloud_fgs_functions_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/fgs_functions_v2 opentelekomcloud_fgs_functions_v2} Data Source.
 func NewDataOpentelekomcloudFgsFunctionsV2_Override(d DataOpentelekomcloudFgsFunctionsV2, scope constructs.Construct, id *string, config *DataOpentelekomcloudFgsFunctionsV2Config) {
 	_init_.Initialize()
 

@@ -41,7 +41,7 @@ type ComputeInstanceV2SchedulerHintsList interface {
 	Get(index *float64) ComputeInstanceV2SchedulerHintsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsList) Get(index *float64) Comp
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (c *jsiiProxy_ComputeInstanceV2SchedulerHintsList) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

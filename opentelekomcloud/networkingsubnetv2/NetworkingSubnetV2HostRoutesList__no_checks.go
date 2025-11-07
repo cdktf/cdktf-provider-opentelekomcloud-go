@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkingSubnetV2HostRoutesList) validateGetParameters(index
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingSubnetV2HostRoutesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkingSubnetV2HostRoutesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

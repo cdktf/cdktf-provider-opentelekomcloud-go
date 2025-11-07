@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigwThrottlingPolicyV2AppThrottlesList) validateGetParameter
 	return nil
 }
 
-func (a *jsiiProxy_ApigwThrottlingPolicyV2AppThrottlesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwThrottlingPolicyV2AppThrottlesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

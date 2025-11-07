@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkingPortV2ExtraDhcpOptionOutputReference) validateGetSt
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingPortV2ExtraDhcpOptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkingPortV2ExtraDhcpOptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingPortV2ExtraDhcpOptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkingPortV2ExtraDhcpOptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

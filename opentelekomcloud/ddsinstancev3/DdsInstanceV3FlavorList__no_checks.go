@@ -15,7 +15,7 @@ func (d *jsiiProxy_DdsInstanceV3FlavorList) validateGetParameters(index *float64
 	return nil
 }
 
-func (d *jsiiProxy_DdsInstanceV3FlavorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DdsInstanceV3FlavorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

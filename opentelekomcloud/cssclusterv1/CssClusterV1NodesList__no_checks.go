@@ -15,7 +15,7 @@ func (c *jsiiProxy_CssClusterV1NodesList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (c *jsiiProxy_CssClusterV1NodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CssClusterV1NodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

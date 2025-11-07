@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudEnterpriseVpnGatewayV5Eip2OutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudEnterpriseVpnGatewayV5Eip2OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudEnterpriseVpnGatewayV5Eip2OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudEnterpriseVpnGatewayV5Eip2OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudEnterpriseVpnGatewayV5Eip2OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudErQuotasV3QuotasList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudErQuotasV3QuotasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudErQuotasV3QuotasList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

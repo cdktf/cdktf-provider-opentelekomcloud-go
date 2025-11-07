@@ -43,7 +43,7 @@ func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) validateGetStringM
 	return nil
 }
 
-func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) validatePutSingleL
 	return nil
 }
 
-func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LtsCceAccessV3AccessConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

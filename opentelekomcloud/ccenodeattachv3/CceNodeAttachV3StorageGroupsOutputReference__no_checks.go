@@ -43,7 +43,7 @@ func (c *jsiiProxy_CceNodeAttachV3StorageGroupsOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_CceNodeAttachV3StorageGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CceNodeAttachV3StorageGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CceNodeAttachV3StorageGroupsOutputReference) validatePutVirtu
 	return nil
 }
 
-func (c *jsiiProxy_CceNodeAttachV3StorageGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CceNodeAttachV3StorageGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

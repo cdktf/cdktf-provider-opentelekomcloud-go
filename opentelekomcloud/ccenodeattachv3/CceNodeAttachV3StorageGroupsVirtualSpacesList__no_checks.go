@@ -15,7 +15,7 @@ func (c *jsiiProxy_CceNodeAttachV3StorageGroupsVirtualSpacesList) validateGetPar
 	return nil
 }
 
-func (c *jsiiProxy_CceNodeAttachV3StorageGroupsVirtualSpacesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CceNodeAttachV3StorageGroupsVirtualSpacesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

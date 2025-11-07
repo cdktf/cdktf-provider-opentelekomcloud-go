@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigwApiV2BackendParamsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (a *jsiiProxy_ApigwApiV2BackendParamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwApiV2BackendParamsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

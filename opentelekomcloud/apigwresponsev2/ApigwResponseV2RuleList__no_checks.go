@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigwResponseV2RuleList) validateGetParameters(index *float64
 	return nil
 }
 
-func (a *jsiiProxy_ApigwResponseV2RuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwResponseV2RuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

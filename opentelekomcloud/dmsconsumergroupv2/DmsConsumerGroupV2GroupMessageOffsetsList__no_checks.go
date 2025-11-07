@@ -15,7 +15,7 @@ func (d *jsiiProxy_DmsConsumerGroupV2GroupMessageOffsetsList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DmsConsumerGroupV2GroupMessageOffsetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsConsumerGroupV2GroupMessageOffsetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

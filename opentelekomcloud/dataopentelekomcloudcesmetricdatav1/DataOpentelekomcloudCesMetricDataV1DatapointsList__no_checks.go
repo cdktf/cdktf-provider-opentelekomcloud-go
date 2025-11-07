@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudCesMetricDataV1DatapointsList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCesMetricDataV1DatapointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCesMetricDataV1DatapointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

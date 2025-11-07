@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigwApiV2MockPolicyConditionsList) validateGetParameters(ind
 	return nil
 }
 
-func (a *jsiiProxy_ApigwApiV2MockPolicyConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwApiV2MockPolicyConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

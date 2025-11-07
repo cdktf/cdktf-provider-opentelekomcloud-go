@@ -15,7 +15,7 @@ func (c *jsiiProxy_CfwFirewallV1ResourcesList) validateGetParameters(index *floa
 	return nil
 }
 
-func (c *jsiiProxy_CfwFirewallV1ResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CfwFirewallV1ResourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DmsSmartConnectTaskV2DestinationTaskOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DmsSmartConnectTaskV2DestinationTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DmsSmartConnectTaskV2DestinationTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DmsSmartConnectTaskV2DestinationTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsSmartConnectTaskV2DestinationTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

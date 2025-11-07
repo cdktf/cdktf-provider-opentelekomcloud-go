@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataOpentelekomcloudCceAddonTemplatesV3AddonsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

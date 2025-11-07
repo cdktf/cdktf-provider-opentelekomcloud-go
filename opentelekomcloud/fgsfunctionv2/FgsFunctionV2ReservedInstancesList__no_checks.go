@@ -15,7 +15,7 @@ func (f *jsiiProxy_FgsFunctionV2ReservedInstancesList) validateGetParameters(ind
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2ReservedInstancesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FgsFunctionV2ReservedInstancesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigwApiV2FuncGraphPolicyList) validateGetParameters(index *f
 	return nil
 }
 
-func (a *jsiiProxy_ApigwApiV2FuncGraphPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwApiV2FuncGraphPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DmsUserPermissionV1PoliciesOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DmsUserPermissionV1PoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DmsUserPermissionV1PoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DmsUserPermissionV1PoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsUserPermissionV1PoliciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

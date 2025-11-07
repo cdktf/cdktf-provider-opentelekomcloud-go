@@ -43,7 +43,7 @@ func (l *jsiiProxy_LtsKeywordsAlarmRuleV2NotificationRuleOutputReference) valida
 	return nil
 }
 
-func (l *jsiiProxy_LtsKeywordsAlarmRuleV2NotificationRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LtsKeywordsAlarmRuleV2NotificationRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LtsKeywordsAlarmRuleV2NotificationRuleOutputReference) valida
 	return nil
 }
 
-func (l *jsiiProxy_LtsKeywordsAlarmRuleV2NotificationRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LtsKeywordsAlarmRuleV2NotificationRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

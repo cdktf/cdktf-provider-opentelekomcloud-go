@@ -43,11 +43,11 @@ func (c *jsiiProxy_CfwAddressGroupMemberV1TimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_CfwAddressGroupMemberV1TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CfwAddressGroupMemberV1TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CfwAddressGroupMemberV1TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CfwAddressGroupMemberV1TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

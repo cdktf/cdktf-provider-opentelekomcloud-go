@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivateNatSnatRuleV3TransitIpAssociationsList) validateGetPar
 	return nil
 }
 
-func (p *jsiiProxy_PrivateNatSnatRuleV3TransitIpAssociationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateNatSnatRuleV3TransitIpAssociationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

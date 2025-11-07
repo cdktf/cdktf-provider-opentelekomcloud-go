@@ -29,9 +29,9 @@ func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsAssignmentsList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsAssignmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsAssignmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -71,13 +71,13 @@ type FgsFunctionV2VersionsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAliases(value *FgsFunctionV2VersionsAliases)
 	ResetAliases()
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -495,8 +495,8 @@ func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -504,7 +504,7 @@ func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -538,8 +538,8 @@ func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) ResetDescription() {
 	)
 }
 
-func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -547,7 +547,7 @@ func (f *jsiiProxy_FgsFunctionV2VersionsOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

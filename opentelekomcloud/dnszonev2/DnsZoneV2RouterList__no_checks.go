@@ -15,7 +15,7 @@ func (d *jsiiProxy_DnsZoneV2RouterList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (d *jsiiProxy_DnsZoneV2RouterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsZoneV2RouterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

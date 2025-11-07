@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivateNatSnatRuleV3TransitIpAssociationsOutputReference) val
 	return nil
 }
 
-func (p *jsiiProxy_PrivateNatSnatRuleV3TransitIpAssociationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivateNatSnatRuleV3TransitIpAssociationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivateNatSnatRuleV3TransitIpAssociationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateNatSnatRuleV3TransitIpAssociationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

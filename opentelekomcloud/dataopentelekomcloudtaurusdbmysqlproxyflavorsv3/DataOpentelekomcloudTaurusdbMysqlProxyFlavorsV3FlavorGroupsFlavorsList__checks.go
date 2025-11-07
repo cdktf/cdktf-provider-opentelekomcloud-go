@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlProxyFlavorsV3FlavorGroupsFl
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlProxyFlavorsV3FlavorGroupsFlavorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlProxyFlavorsV3FlavorGroupsFlavorsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

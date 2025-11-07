@@ -15,7 +15,7 @@ func (c *jsiiProxy_CfwFirewallV1ProtectObjectsList) validateGetParameters(index 
 	return nil
 }
 
-func (c *jsiiProxy_CfwFirewallV1ProtectObjectsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CfwFirewallV1ProtectObjectsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

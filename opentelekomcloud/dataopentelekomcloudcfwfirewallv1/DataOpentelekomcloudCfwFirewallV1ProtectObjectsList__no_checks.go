@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudCfwFirewallV1ProtectObjectsList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCfwFirewallV1ProtectObjectsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCfwFirewallV1ProtectObjectsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

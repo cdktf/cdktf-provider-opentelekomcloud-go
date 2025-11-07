@@ -43,7 +43,7 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) validatePutPu
 	return nil
 }
 
-func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsConfigurationV1InstanceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

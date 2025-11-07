@@ -43,11 +43,11 @@ func (c *jsiiProxy_CtsTrackerV3TimeoutsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (c *jsiiProxy_CtsTrackerV3TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CtsTrackerV3TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CtsTrackerV3TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CtsTrackerV3TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpcEipV1BandwidthOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (v *jsiiProxy_VpcEipV1BandwidthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcEipV1BandwidthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcEipV1BandwidthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcEipV1BandwidthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

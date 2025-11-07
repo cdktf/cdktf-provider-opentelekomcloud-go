@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleAbortIncompleteMultipartUploadList) val
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketLifecycleRuleAbortIncompleteMultipartUploadList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObsBucketLifecycleRuleAbortIncompleteMultipartUploadList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

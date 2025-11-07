@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3StatementList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3StatementList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudIdentityRoleCustomV3StatementList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

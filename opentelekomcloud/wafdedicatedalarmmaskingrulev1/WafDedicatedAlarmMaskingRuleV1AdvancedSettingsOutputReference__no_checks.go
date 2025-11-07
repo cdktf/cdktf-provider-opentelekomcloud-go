@@ -43,11 +43,11 @@ func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
 	return nil
 }
 
-func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

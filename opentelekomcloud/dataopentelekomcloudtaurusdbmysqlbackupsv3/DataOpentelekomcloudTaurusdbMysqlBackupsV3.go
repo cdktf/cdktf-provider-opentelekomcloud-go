@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_backups_v3 opentelekomcloud_taurusdb_mysql_backups_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_backups_v3 opentelekomcloud_taurusdb_mysql_backups_v3}.
 type DataOpentelekomcloudTaurusdbMysqlBackupsV3 interface {
 	cdktf.TerraformDataSource
 	BackupId() *string
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlBackupsV3) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_backups_v3 opentelekomcloud_taurusdb_mysql_backups_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_backups_v3 opentelekomcloud_taurusdb_mysql_backups_v3} Data Source.
 func NewDataOpentelekomcloudTaurusdbMysqlBackupsV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudTaurusdbMysqlBackupsV3Config) DataOpentelekomcloudTaurusdbMysqlBackupsV3 {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataOpentelekomcloudTaurusdbMysqlBackupsV3(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_backups_v3 opentelekomcloud_taurusdb_mysql_backups_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_backups_v3 opentelekomcloud_taurusdb_mysql_backups_v3} Data Source.
 func NewDataOpentelekomcloudTaurusdbMysqlBackupsV3_Override(d DataOpentelekomcloudTaurusdbMysqlBackupsV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudTaurusdbMysqlBackupsV3Config) {
 	_init_.Initialize()
 

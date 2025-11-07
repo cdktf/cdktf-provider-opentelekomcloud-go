@@ -43,11 +43,11 @@ func (c *jsiiProxy_CfwBlacklistWhitelistRuleV1TimeoutsOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CfwBlacklistWhitelistRuleV1TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CfwBlacklistWhitelistRuleV1TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CfwBlacklistWhitelistRuleV1TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CfwBlacklistWhitelistRuleV1TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

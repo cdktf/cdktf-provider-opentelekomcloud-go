@@ -85,9 +85,9 @@ func (f *jsiiProxy_FgsFunctionV2NetworkControllerOutputReference) validateGetStr
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2NetworkControllerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (f *jsiiProxy_FgsFunctionV2NetworkControllerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (f *jsiiProxy_FgsFunctionV2NetworkControllerOutputReference) validatePutTri
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2NetworkControllerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (f *jsiiProxy_FgsFunctionV2NetworkControllerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

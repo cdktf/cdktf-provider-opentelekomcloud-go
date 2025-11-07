@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudObsBucketLifecycleRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

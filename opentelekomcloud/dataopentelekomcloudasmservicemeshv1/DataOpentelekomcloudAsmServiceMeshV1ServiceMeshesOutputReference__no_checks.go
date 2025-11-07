@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudAsmServiceMeshV1ServiceMeshesOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudAsmServiceMeshV1ServiceMeshesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudAsmServiceMeshV1ServiceMeshesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudAsmServiceMeshV1ServiceMeshesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudAsmServiceMeshV1ServiceMeshesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

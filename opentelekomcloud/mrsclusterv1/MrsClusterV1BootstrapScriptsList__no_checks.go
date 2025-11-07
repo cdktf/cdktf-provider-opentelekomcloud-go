@@ -15,7 +15,7 @@ func (m *jsiiProxy_MrsClusterV1BootstrapScriptsList) validateGetParameters(index
 	return nil
 }
 
-func (m *jsiiProxy_MrsClusterV1BootstrapScriptsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrsClusterV1BootstrapScriptsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

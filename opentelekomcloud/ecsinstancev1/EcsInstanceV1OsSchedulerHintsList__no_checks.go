@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsInstanceV1OsSchedulerHintsList) validateGetParameters(inde
 	return nil
 }
 
-func (e *jsiiProxy_EcsInstanceV1OsSchedulerHintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsInstanceV1OsSchedulerHintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

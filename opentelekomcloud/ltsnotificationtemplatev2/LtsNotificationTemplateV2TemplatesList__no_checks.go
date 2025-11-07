@@ -15,7 +15,7 @@ func (l *jsiiProxy_LtsNotificationTemplateV2TemplatesList) validateGetParameters
 	return nil
 }
 
-func (l *jsiiProxy_LtsNotificationTemplateV2TemplatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LtsNotificationTemplateV2TemplatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

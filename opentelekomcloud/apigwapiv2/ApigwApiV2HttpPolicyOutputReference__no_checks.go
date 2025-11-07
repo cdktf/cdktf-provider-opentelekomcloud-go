@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApigwApiV2HttpPolicyOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (a *jsiiProxy_ApigwApiV2HttpPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigwApiV2HttpPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_ApigwApiV2HttpPolicyOutputReference) validatePutConditionsPar
 	return nil
 }
 
-func (a *jsiiProxy_ApigwApiV2HttpPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwApiV2HttpPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

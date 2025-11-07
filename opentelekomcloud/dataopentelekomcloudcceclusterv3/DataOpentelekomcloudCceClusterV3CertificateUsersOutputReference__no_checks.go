@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

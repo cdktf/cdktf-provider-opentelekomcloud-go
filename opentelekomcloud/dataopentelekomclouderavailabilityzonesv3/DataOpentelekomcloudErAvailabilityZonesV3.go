@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/er_availability_zones_v3 opentelekomcloud_er_availability_zones_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/er_availability_zones_v3 opentelekomcloud_er_availability_zones_v3}.
 type DataOpentelekomcloudErAvailabilityZonesV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataOpentelekomcloudErAvailabilityZonesV3) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/er_availability_zones_v3 opentelekomcloud_er_availability_zones_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/er_availability_zones_v3 opentelekomcloud_er_availability_zones_v3} Data Source.
 func NewDataOpentelekomcloudErAvailabilityZonesV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudErAvailabilityZonesV3Config) DataOpentelekomcloudErAvailabilityZonesV3 {
 	_init_.Initialize()
 
@@ -305,7 +305,7 @@ func NewDataOpentelekomcloudErAvailabilityZonesV3(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/er_availability_zones_v3 opentelekomcloud_er_availability_zones_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/er_availability_zones_v3 opentelekomcloud_er_availability_zones_v3} Data Source.
 func NewDataOpentelekomcloudErAvailabilityZonesV3_Override(d DataOpentelekomcloudErAvailabilityZonesV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudErAvailabilityZonesV3Config) {
 	_init_.Initialize()
 

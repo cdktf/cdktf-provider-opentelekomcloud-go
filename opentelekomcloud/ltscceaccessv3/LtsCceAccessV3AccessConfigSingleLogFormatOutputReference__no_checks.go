@@ -43,11 +43,11 @@ func (l *jsiiProxy_LtsCceAccessV3AccessConfigSingleLogFormatOutputReference) val
 	return nil
 }
 
-func (l *jsiiProxy_LtsCceAccessV3AccessConfigSingleLogFormatOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LtsCceAccessV3AccessConfigSingleLogFormatOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LtsCceAccessV3AccessConfigSingleLogFormatOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LtsCceAccessV3AccessConfigSingleLogFormatOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

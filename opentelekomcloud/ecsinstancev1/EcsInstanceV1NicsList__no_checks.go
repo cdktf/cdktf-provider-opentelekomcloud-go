@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsInstanceV1NicsList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (e *jsiiProxy_EcsInstanceV1NicsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsInstanceV1NicsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

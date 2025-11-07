@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpcSecgroupRuleV3TimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (v *jsiiProxy_VpcSecgroupRuleV3TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcSecgroupRuleV3TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcSecgroupRuleV3TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcSecgroupRuleV3TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

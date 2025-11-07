@@ -15,7 +15,7 @@ func (l *jsiiProxy_LtsTransferV2LogStreamsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (l *jsiiProxy_LtsTransferV2LogStreamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LtsTransferV2LogStreamsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

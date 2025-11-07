@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2}.
 type ApigwGatewayV2 interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -105,6 +105,9 @@ type ApigwGatewayV2 interface {
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
 	SupportedFeatures() *[]*string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -174,6 +177,7 @@ type ApigwGatewayV2 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -683,6 +687,26 @@ func (j *jsiiProxy_ApigwGatewayV2) SupportedFeatures() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ApigwGatewayV2) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigwGatewayV2) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApigwGatewayV2) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -774,7 +798,7 @@ func (j *jsiiProxy_ApigwGatewayV2) VpcIngressAddress() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2} Resource.
 func NewApigwGatewayV2(scope constructs.Construct, id *string, config *ApigwGatewayV2Config) ApigwGatewayV2 {
 	_init_.Initialize()
 
@@ -792,7 +816,7 @@ func NewApigwGatewayV2(scope constructs.Construct, id *string, config *ApigwGate
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_gateway_v2 opentelekomcloud_apigw_gateway_v2} Resource.
 func NewApigwGatewayV2_Override(a ApigwGatewayV2, scope constructs.Construct, id *string, config *ApigwGatewayV2Config) {
 	_init_.Initialize()
 
@@ -1021,6 +1045,17 @@ func (j *jsiiProxy_ApigwGatewayV2)SetSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"subnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApigwGatewayV2)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1476,6 +1511,14 @@ func (a *jsiiProxy_ApigwGatewayV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApigwGatewayV2) ResetTags() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTags",
 		nil, // no parameters
 	)
 }

@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObsBucketObjectAclAccountPermissionOutputReference) validateG
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketObjectAclAccountPermissionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObsBucketObjectAclAccountPermissionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketObjectAclAccountPermissionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObsBucketObjectAclAccountPermissionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

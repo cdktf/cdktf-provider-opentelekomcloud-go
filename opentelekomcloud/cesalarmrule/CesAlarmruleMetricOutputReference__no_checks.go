@@ -43,7 +43,7 @@ func (c *jsiiProxy_CesAlarmruleMetricOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (c *jsiiProxy_CesAlarmruleMetricOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAlarmruleMetricOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CesAlarmruleMetricOutputReference) validatePutDimensionsParam
 	return nil
 }
 
-func (c *jsiiProxy_CesAlarmruleMetricOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAlarmruleMetricOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

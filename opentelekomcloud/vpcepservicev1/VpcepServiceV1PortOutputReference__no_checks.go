@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpcepServiceV1PortOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (v *jsiiProxy_VpcepServiceV1PortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcepServiceV1PortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcepServiceV1PortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcepServiceV1PortOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

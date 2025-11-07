@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudFgsFunctionsV2FunctionsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudFgsFunctionsV2FunctionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudFgsFunctionsV2FunctionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

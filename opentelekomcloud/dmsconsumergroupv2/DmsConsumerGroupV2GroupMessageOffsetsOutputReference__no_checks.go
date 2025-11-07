@@ -43,11 +43,11 @@ func (d *jsiiProxy_DmsConsumerGroupV2GroupMessageOffsetsOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DmsConsumerGroupV2GroupMessageOffsetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DmsConsumerGroupV2GroupMessageOffsetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DmsConsumerGroupV2GroupMessageOffsetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsConsumerGroupV2GroupMessageOffsetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

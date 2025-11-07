@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1ActionList) validateGetPar
 	return nil
 }
 
-func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1ActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafDedicatedPreciseProtectionRuleV1ActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

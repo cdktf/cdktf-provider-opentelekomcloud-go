@@ -43,11 +43,11 @@ func (w *jsiiProxy_WafWebtamperprotectionRuleV1TimeoutsOutputReference) validate
 	return nil
 }
 
-func (w *jsiiProxy_WafWebtamperprotectionRuleV1TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafWebtamperprotectionRuleV1TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WafWebtamperprotectionRuleV1TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafWebtamperprotectionRuleV1TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

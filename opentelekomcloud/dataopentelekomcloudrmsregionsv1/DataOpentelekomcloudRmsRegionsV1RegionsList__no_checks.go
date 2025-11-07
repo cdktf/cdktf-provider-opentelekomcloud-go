@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudRmsRegionsV1RegionsList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudRmsRegionsV1RegionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudRmsRegionsV1RegionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

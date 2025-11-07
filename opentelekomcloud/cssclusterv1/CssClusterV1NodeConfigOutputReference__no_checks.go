@@ -43,7 +43,7 @@ func (c *jsiiProxy_CssClusterV1NodeConfigOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (c *jsiiProxy_CssClusterV1NodeConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CssClusterV1NodeConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CssClusterV1NodeConfigOutputReference) validatePutVolumeParam
 	return nil
 }
 
-func (c *jsiiProxy_CssClusterV1NodeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CssClusterV1NodeConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

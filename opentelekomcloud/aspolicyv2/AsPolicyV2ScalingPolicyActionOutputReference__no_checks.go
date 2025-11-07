@@ -43,11 +43,11 @@ func (a *jsiiProxy_AsPolicyV2ScalingPolicyActionOutputReference) validateGetStri
 	return nil
 }
 
-func (a *jsiiProxy_AsPolicyV2ScalingPolicyActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AsPolicyV2ScalingPolicyActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AsPolicyV2ScalingPolicyActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsPolicyV2ScalingPolicyActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

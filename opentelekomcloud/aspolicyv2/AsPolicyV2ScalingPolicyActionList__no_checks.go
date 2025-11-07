@@ -15,7 +15,7 @@ func (a *jsiiProxy_AsPolicyV2ScalingPolicyActionList) validateGetParameters(inde
 	return nil
 }
 
-func (a *jsiiProxy_AsPolicyV2ScalingPolicyActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsPolicyV2ScalingPolicyActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

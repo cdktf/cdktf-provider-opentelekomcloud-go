@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceV2NetworkList) validateGetParameters(index *fl
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceV2NetworkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceV2NetworkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

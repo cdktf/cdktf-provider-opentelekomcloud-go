@@ -167,6 +167,10 @@ func (j *jsiiProxy_ApigwGatewayV2) validateSetSubnetIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_ApigwGatewayV2) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigwGatewayV2) validateSetVpcIdParameters(val *string) error {
 	return nil
 }

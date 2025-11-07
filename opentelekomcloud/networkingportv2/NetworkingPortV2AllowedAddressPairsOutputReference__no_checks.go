@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) validateG
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkingPortV2AllowedAddressPairsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

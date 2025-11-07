@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsLi
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

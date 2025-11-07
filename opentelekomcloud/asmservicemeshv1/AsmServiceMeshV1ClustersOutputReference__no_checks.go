@@ -43,11 +43,11 @@ func (a *jsiiProxy_AsmServiceMeshV1ClustersOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AsmServiceMeshV1ClustersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AsmServiceMeshV1ClustersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AsmServiceMeshV1ClustersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsmServiceMeshV1ClustersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

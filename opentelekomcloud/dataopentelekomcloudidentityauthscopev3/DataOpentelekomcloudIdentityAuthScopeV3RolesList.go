@@ -39,7 +39,7 @@ type DataOpentelekomcloudIdentityAuthScopeV3RolesList interface {
 	Get(index *float64) DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) Get(index *
 	return returns
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityAuthScopeV3RolesList) Resolve(_co
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BlockstorageVolumeV2AttachmentList) validateGetParameters(ind
 	return nil
 }
 
-func (b *jsiiProxy_BlockstorageVolumeV2AttachmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BlockstorageVolumeV2AttachmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

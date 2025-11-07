@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudApigwGroupsV2GroupsList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudApigwGroupsV2GroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudApigwGroupsV2GroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

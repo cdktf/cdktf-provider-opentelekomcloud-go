@@ -43,11 +43,11 @@ func (v *jsiiProxy_VbsBackupV2TagsOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (v *jsiiProxy_VbsBackupV2TagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VbsBackupV2TagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VbsBackupV2TagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VbsBackupV2TagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

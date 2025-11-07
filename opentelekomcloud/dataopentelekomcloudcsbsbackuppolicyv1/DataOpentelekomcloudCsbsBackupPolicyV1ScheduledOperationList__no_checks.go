@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList)
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

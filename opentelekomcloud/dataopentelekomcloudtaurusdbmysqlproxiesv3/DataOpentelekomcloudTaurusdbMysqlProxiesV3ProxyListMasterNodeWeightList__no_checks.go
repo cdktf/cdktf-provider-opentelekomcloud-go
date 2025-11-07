@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlProxiesV3ProxyListMasterNode
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlProxiesV3ProxyListMasterNodeWeightList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlProxiesV3ProxyListMasterNodeWeightList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

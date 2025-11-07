@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudAsmServiceMeshV1ServiceMeshesTelemetryCon
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudAsmServiceMeshV1ServiceMeshesTelemetryConfigTracingExtensionProvidersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudAsmServiceMeshV1ServiceMeshesTelemetryConfigTracingExtensionProvidersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

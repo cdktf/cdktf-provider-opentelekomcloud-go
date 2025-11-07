@@ -43,11 +43,11 @@ func (r *jsiiProxy_RmsResourceRecorderV1SmnChannelOutputReference) validateGetSt
 	return nil
 }
 
-func (r *jsiiProxy_RmsResourceRecorderV1SmnChannelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RmsResourceRecorderV1SmnChannelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RmsResourceRecorderV1SmnChannelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RmsResourceRecorderV1SmnChannelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

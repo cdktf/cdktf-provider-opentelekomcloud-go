@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkingNetworkV2SegmentsList) validateGetParameters(index 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingNetworkV2SegmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkingNetworkV2SegmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

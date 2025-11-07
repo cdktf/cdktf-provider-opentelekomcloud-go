@@ -43,11 +43,11 @@ func (t *jsiiProxy_TaurusdbMysqlProxyV3MasterNodeWeightOutputReference) validate
 	return nil
 }
 
-func (t *jsiiProxy_TaurusdbMysqlProxyV3MasterNodeWeightOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TaurusdbMysqlProxyV3MasterNodeWeightOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TaurusdbMysqlProxyV3MasterNodeWeightOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TaurusdbMysqlProxyV3MasterNodeWeightOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

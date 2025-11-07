@@ -43,11 +43,11 @@ func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputRefe
 	return nil
 }
 
-func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

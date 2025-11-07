@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3CredentialsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3CredentialsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudIdentityCredentialV3CredentialsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

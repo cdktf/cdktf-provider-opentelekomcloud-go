@@ -43,11 +43,11 @@ func (d *jsiiProxy_DrsTaskV3LimitSpeedOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (d *jsiiProxy_DrsTaskV3LimitSpeedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DrsTaskV3LimitSpeedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DrsTaskV3LimitSpeedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DrsTaskV3LimitSpeedOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

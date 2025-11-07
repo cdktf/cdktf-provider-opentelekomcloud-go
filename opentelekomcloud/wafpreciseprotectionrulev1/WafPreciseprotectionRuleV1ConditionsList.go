@@ -41,7 +41,7 @@ type WafPreciseprotectionRuleV1ConditionsList interface {
 	Get(index *float64) WafPreciseprotectionRuleV1ConditionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1ConditionsList) Get(index *float64)
 	return returns
 }
 
-func (w *jsiiProxy_WafPreciseprotectionRuleV1ConditionsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WafPreciseprotectionRuleV1ConditionsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (w *jsiiProxy_WafPreciseprotectionRuleV1ConditionsList) Resolve(_context cd
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

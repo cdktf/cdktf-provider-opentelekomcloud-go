@@ -15,7 +15,7 @@ func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SfsShareAccessRulesV2AccessRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

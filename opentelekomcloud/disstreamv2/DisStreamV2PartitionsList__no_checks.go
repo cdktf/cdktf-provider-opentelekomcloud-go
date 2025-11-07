@@ -15,7 +15,7 @@ func (d *jsiiProxy_DisStreamV2PartitionsList) validateGetParameters(index *float
 	return nil
 }
 
-func (d *jsiiProxy_DisStreamV2PartitionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DisStreamV2PartitionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

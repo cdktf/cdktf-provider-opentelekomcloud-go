@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObsBucketObjectAclOwnerPermissionList) validateGetParameters(
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketObjectAclOwnerPermissionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObsBucketObjectAclOwnerPermissionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

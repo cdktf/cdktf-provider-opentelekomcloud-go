@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceV2VolumeAttachedList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceV2VolumeAttachedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceV2VolumeAttachedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

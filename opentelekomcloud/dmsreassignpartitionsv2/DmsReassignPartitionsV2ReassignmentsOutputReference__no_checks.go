@@ -43,7 +43,7 @@ func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsReassignPartitionsV2ReassignmentsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigwVpcChannelV2MemberGroupList) validateGetParameters(index
 	return nil
 }
 
-func (a *jsiiProxy_ApigwVpcChannelV2MemberGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwVpcChannelV2MemberGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

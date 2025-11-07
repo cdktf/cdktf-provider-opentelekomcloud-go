@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObsBucketLoggingList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketLoggingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObsBucketLoggingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

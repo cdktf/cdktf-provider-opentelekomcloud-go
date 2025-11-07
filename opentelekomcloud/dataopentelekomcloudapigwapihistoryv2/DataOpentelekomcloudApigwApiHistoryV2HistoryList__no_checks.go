@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudApigwApiHistoryV2HistoryList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudApigwApiHistoryV2HistoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudApigwApiHistoryV2HistoryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/kms_key_material_parameters_v1 opentelekomcloud_kms_key_material_parameters_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/kms_key_material_parameters_v1 opentelekomcloud_kms_key_material_parameters_v1}.
 type DataOpentelekomcloudKmsKeyMaterialParametersV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataOpentelekomcloudKmsKeyMaterialParametersV1) WrappingAlgor
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/kms_key_material_parameters_v1 opentelekomcloud_kms_key_material_parameters_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/kms_key_material_parameters_v1 opentelekomcloud_kms_key_material_parameters_v1} Data Source.
 func NewDataOpentelekomcloudKmsKeyMaterialParametersV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudKmsKeyMaterialParametersV1Config) DataOpentelekomcloudKmsKeyMaterialParametersV1 {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataOpentelekomcloudKmsKeyMaterialParametersV1(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/kms_key_material_parameters_v1 opentelekomcloud_kms_key_material_parameters_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/kms_key_material_parameters_v1 opentelekomcloud_kms_key_material_parameters_v1} Data Source.
 func NewDataOpentelekomcloudKmsKeyMaterialParametersV1_Override(d DataOpentelekomcloudKmsKeyMaterialParametersV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudKmsKeyMaterialParametersV1Config) {
 	_init_.Initialize()
 

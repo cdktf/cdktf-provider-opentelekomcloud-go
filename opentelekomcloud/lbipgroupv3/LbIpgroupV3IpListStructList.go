@@ -41,7 +41,7 @@ type LbIpgroupV3IpListStructList interface {
 	Get(index *float64) LbIpgroupV3IpListStructOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (l *jsiiProxy_LbIpgroupV3IpListStructList) Get(index *float64) LbIpgroupV3I
 	return returns
 }
 
-func (l *jsiiProxy_LbIpgroupV3IpListStructList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LbIpgroupV3IpListStructList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (l *jsiiProxy_LbIpgroupV3IpListStructList) Resolve(_context cdktf.IResolveC
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObsBucketLifecycleRuleTransitionList) validateGetParameters(i
 	return nil
 }
 
-func (o *jsiiProxy_ObsBucketLifecycleRuleTransitionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObsBucketLifecycleRuleTransitionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

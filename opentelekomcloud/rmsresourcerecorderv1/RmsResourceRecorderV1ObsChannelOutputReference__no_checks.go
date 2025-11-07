@@ -43,11 +43,11 @@ func (r *jsiiProxy_RmsResourceRecorderV1ObsChannelOutputReference) validateGetSt
 	return nil
 }
 
-func (r *jsiiProxy_RmsResourceRecorderV1ObsChannelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RmsResourceRecorderV1ObsChannelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RmsResourceRecorderV1ObsChannelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RmsResourceRecorderV1ObsChannelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DdsInstanceV3BackupStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

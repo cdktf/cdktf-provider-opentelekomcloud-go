@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudCfwFirewallV1FlavorList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCfwFirewallV1FlavorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCfwFirewallV1FlavorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CsbsBackupV1VmMetadataList) validateGetParameters(index *floa
 	return nil
 }
 
-func (c *jsiiProxy_CsbsBackupV1VmMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsbsBackupV1VmMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

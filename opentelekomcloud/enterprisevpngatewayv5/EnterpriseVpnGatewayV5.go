@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5}.
 type EnterpriseVpnGatewayV5 interface {
 	cdktf.TerraformResource
 	AccessPrivateIp1() *string
@@ -865,7 +865,7 @@ func (j *jsiiProxy_EnterpriseVpnGatewayV5) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5} Resource.
 func NewEnterpriseVpnGatewayV5(scope constructs.Construct, id *string, config *EnterpriseVpnGatewayV5Config) EnterpriseVpnGatewayV5 {
 	_init_.Initialize()
 
@@ -883,7 +883,7 @@ func NewEnterpriseVpnGatewayV5(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5} Resource.
 func NewEnterpriseVpnGatewayV5_Override(e EnterpriseVpnGatewayV5, scope constructs.Construct, id *string, config *EnterpriseVpnGatewayV5Config) {
 	_init_.Initialize()
 

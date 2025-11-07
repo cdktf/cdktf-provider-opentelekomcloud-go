@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudLbLoadbalancerV3PublicIpList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

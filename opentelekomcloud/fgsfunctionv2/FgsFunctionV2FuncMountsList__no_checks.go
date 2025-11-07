@@ -15,7 +15,7 @@ func (f *jsiiProxy_FgsFunctionV2FuncMountsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2FuncMountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FgsFunctionV2FuncMountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

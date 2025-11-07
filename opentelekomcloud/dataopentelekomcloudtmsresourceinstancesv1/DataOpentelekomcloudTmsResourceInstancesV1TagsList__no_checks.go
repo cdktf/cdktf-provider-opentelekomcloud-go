@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudTmsResourceInstancesV1TagsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudTmsResourceInstancesV1TagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudTmsResourceInstancesV1TagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudCesEventsV1EventsList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCesEventsV1EventsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCesEventsV1EventsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

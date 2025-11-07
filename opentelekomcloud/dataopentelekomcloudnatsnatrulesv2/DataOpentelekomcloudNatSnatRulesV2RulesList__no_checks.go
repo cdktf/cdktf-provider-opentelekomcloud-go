@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudNatSnatRulesV2RulesList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudNatSnatRulesV2RulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudNatSnatRulesV2RulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

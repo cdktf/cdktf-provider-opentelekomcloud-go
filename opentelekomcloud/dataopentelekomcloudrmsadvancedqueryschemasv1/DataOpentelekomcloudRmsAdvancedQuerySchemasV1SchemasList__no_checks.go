@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudRmsAdvancedQuerySchemasV1SchemasList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudRmsAdvancedQuerySchemasV1SchemasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudRmsAdvancedQuerySchemasV1SchemasList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

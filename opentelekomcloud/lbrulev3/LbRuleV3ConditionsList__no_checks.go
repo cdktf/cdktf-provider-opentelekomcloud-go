@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbRuleV3ConditionsList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (l *jsiiProxy_LbRuleV3ConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbRuleV3ConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

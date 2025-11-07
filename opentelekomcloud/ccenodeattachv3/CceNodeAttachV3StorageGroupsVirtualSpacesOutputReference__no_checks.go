@@ -43,11 +43,11 @@ func (c *jsiiProxy_CceNodeAttachV3StorageGroupsVirtualSpacesOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CceNodeAttachV3StorageGroupsVirtualSpacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CceNodeAttachV3StorageGroupsVirtualSpacesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CceNodeAttachV3StorageGroupsVirtualSpacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CceNodeAttachV3StorageGroupsVirtualSpacesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

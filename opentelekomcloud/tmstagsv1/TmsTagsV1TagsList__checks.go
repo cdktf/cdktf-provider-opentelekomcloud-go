@@ -29,9 +29,9 @@ func (t *jsiiProxy_TmsTagsV1TagsList) validateGetParameters(index *float64) erro
 	return nil
 }
 
-func (t *jsiiProxy_TmsTagsV1TagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (t *jsiiProxy_TmsTagsV1TagsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

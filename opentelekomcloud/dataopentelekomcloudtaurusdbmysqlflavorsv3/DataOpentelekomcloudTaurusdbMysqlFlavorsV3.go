@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_flavors_v3 opentelekomcloud_taurusdb_mysql_flavors_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_flavors_v3 opentelekomcloud_taurusdb_mysql_flavors_v3}.
 type DataOpentelekomcloudTaurusdbMysqlFlavorsV3 interface {
 	cdktf.TerraformDataSource
 	AvailabilityZoneMode() *string
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlFlavorsV3) VersionInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_flavors_v3 opentelekomcloud_taurusdb_mysql_flavors_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_flavors_v3 opentelekomcloud_taurusdb_mysql_flavors_v3} Data Source.
 func NewDataOpentelekomcloudTaurusdbMysqlFlavorsV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config) DataOpentelekomcloudTaurusdbMysqlFlavorsV3 {
 	_init_.Initialize()
 
@@ -377,7 +377,7 @@ func NewDataOpentelekomcloudTaurusdbMysqlFlavorsV3(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_flavors_v3 opentelekomcloud_taurusdb_mysql_flavors_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_flavors_v3 opentelekomcloud_taurusdb_mysql_flavors_v3} Data Source.
 func NewDataOpentelekomcloudTaurusdbMysqlFlavorsV3_Override(d DataOpentelekomcloudTaurusdbMysqlFlavorsV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config) {
 	_init_.Initialize()
 

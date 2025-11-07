@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigwVpcChannelV2MicroserviceCceConfigOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_ApigwVpcChannelV2MicroserviceCceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigwVpcChannelV2MicroserviceCceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigwVpcChannelV2MicroserviceCceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwVpcChannelV2MicroserviceCceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

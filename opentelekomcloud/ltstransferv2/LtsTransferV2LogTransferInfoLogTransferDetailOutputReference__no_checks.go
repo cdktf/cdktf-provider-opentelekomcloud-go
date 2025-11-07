@@ -43,11 +43,11 @@ func (l *jsiiProxy_LtsTransferV2LogTransferInfoLogTransferDetailOutputReference)
 	return nil
 }
 
-func (l *jsiiProxy_LtsTransferV2LogTransferInfoLogTransferDetailOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LtsTransferV2LogTransferInfoLogTransferDetailOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LtsTransferV2LogTransferInfoLogTransferDetailOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LtsTransferV2LogTransferInfoLogTransferDetailOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

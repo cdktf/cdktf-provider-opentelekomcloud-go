@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbListenerV3IpGroupOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerV3IpGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbListenerV3IpGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerV3IpGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbListenerV3IpGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (t *jsiiProxy_TaurusdbMysqlProxyV3NodesList) validateGetParameters(index *f
 	return nil
 }
 
-func (t *jsiiProxy_TaurusdbMysqlProxyV3NodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TaurusdbMysqlProxyV3NodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

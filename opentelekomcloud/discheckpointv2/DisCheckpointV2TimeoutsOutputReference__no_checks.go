@@ -43,11 +43,11 @@ func (d *jsiiProxy_DisCheckpointV2TimeoutsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (d *jsiiProxy_DisCheckpointV2TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DisCheckpointV2TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DisCheckpointV2TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DisCheckpointV2TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

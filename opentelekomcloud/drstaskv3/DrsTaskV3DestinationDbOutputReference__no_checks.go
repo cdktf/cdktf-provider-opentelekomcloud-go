@@ -43,11 +43,11 @@ func (d *jsiiProxy_DrsTaskV3DestinationDbOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (d *jsiiProxy_DrsTaskV3DestinationDbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DrsTaskV3DestinationDbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DrsTaskV3DestinationDbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DrsTaskV3DestinationDbOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

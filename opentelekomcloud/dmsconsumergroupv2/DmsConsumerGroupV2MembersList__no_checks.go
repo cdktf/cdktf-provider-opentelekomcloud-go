@@ -15,7 +15,7 @@ func (d *jsiiProxy_DmsConsumerGroupV2MembersList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DmsConsumerGroupV2MembersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsConsumerGroupV2MembersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BlockstorageVolumeV2AttachmentOutputReference) validateGetStr
 	return nil
 }
 
-func (b *jsiiProxy_BlockstorageVolumeV2AttachmentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BlockstorageVolumeV2AttachmentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BlockstorageVolumeV2AttachmentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BlockstorageVolumeV2AttachmentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

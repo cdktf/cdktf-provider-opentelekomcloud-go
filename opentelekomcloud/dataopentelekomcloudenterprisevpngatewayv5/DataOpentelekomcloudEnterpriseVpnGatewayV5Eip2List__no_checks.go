@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOpentelekomcloudEnterpriseVpnGatewayV5Eip2List) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudEnterpriseVpnGatewayV5Eip2List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudEnterpriseVpnGatewayV5Eip2List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

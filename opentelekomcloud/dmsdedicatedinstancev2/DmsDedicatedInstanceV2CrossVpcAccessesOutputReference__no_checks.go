@@ -43,11 +43,11 @@ func (d *jsiiProxy_DmsDedicatedInstanceV2CrossVpcAccessesOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DmsDedicatedInstanceV2CrossVpcAccessesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DmsDedicatedInstanceV2CrossVpcAccessesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DmsDedicatedInstanceV2CrossVpcAccessesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsDedicatedInstanceV2CrossVpcAccessesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

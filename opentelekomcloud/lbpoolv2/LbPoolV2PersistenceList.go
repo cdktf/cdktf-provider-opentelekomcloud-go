@@ -41,7 +41,7 @@ type LbPoolV2PersistenceList interface {
 	Get(index *float64) LbPoolV2PersistenceOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (l *jsiiProxy_LbPoolV2PersistenceList) Get(index *float64) LbPoolV2Persiste
 	return returns
 }
 
-func (l *jsiiProxy_LbPoolV2PersistenceList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LbPoolV2PersistenceList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (l *jsiiProxy_LbPoolV2PersistenceList) Resolve(_context cdktf.IResolveConte
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

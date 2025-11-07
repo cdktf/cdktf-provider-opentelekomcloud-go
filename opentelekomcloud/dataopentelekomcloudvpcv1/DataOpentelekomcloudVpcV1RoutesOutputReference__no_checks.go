@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudVpcV1RoutesOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudVpcV1RoutesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudVpcV1RoutesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudVpcV1RoutesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudVpcV1RoutesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

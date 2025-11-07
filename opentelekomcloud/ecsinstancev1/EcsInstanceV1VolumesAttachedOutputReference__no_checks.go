@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsInstanceV1VolumesAttachedOutputReference) validateGetStrin
 	return nil
 }
 
-func (e *jsiiProxy_EcsInstanceV1VolumesAttachedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsInstanceV1VolumesAttachedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsInstanceV1VolumesAttachedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsInstanceV1VolumesAttachedOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

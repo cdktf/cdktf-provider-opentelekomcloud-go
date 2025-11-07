@@ -39,7 +39,7 @@ type DdmSchemaV1DatabasesList interface {
 	Get(index *float64) DdmSchemaV1DatabasesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DdmSchemaV1DatabasesList) Get(index *float64) DdmSchemaV1Data
 	return returns
 }
 
-func (d *jsiiProxy_DdmSchemaV1DatabasesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DdmSchemaV1DatabasesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DdmSchemaV1DatabasesList) Resolve(_context cdktf.IResolveCont
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

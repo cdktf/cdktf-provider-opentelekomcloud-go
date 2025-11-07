@@ -39,7 +39,7 @@ type TaurusdbMysqlInstanceV3NodesList interface {
 	Get(index *float64) TaurusdbMysqlInstanceV3NodesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (t *jsiiProxy_TaurusdbMysqlInstanceV3NodesList) Get(index *float64) Taurusd
 	return returns
 }
 
-func (t *jsiiProxy_TaurusdbMysqlInstanceV3NodesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TaurusdbMysqlInstanceV3NodesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (t *jsiiProxy_TaurusdbMysqlInstanceV3NodesList) Resolve(_context cdktf.IRes
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

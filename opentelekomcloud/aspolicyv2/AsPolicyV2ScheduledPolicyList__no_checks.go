@@ -15,7 +15,7 @@ func (a *jsiiProxy_AsPolicyV2ScheduledPolicyList) validateGetParameters(index *f
 	return nil
 }
 
-func (a *jsiiProxy_AsPolicyV2ScheduledPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AsPolicyV2ScheduledPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

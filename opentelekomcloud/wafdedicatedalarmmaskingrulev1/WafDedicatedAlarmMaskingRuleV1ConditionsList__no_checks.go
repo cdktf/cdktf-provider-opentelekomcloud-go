@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsList) validateGetPara
 	return nil
 }
 
-func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafDedicatedAlarmMaskingRuleV1ConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

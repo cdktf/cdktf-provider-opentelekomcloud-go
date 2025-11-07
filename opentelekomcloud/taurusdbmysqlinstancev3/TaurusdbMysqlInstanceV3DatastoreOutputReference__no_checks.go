@@ -43,11 +43,11 @@ func (t *jsiiProxy_TaurusdbMysqlInstanceV3DatastoreOutputReference) validateGetS
 	return nil
 }
 
-func (t *jsiiProxy_TaurusdbMysqlInstanceV3DatastoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TaurusdbMysqlInstanceV3DatastoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TaurusdbMysqlInstanceV3DatastoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TaurusdbMysqlInstanceV3DatastoreOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

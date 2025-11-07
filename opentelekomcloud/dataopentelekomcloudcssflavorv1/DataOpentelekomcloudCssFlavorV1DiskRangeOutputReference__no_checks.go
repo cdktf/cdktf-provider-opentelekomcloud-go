@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

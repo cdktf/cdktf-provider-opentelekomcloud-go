@@ -43,11 +43,11 @@ func (f *jsiiProxy_FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReferenc
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

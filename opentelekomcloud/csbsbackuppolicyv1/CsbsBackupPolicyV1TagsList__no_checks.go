@@ -15,7 +15,7 @@ func (c *jsiiProxy_CsbsBackupPolicyV1TagsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (c *jsiiProxy_CsbsBackupPolicyV1TagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsbsBackupPolicyV1TagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

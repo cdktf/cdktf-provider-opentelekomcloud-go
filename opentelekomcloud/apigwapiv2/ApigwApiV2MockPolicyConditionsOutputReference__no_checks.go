@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigwApiV2MockPolicyConditionsOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_ApigwApiV2MockPolicyConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigwApiV2MockPolicyConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigwApiV2MockPolicyConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwApiV2MockPolicyConditionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

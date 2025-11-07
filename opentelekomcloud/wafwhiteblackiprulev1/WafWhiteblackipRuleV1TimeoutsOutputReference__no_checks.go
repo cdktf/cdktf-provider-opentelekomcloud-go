@@ -43,11 +43,11 @@ func (w *jsiiProxy_WafWhiteblackipRuleV1TimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (w *jsiiProxy_WafWhiteblackipRuleV1TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafWhiteblackipRuleV1TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WafWhiteblackipRuleV1TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafWhiteblackipRuleV1TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

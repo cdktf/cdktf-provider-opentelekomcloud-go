@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkingPortV2ExtraDhcpOptionList) validateGetParameters(in
 	return nil
 }
 
-func (n *jsiiProxy_NetworkingPortV2ExtraDhcpOptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkingPortV2ExtraDhcpOptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

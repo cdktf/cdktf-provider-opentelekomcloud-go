@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApigwApiV2FuncGraphPolicyOutputReference) validateGetStringMa
 	return nil
 }
 
-func (a *jsiiProxy_ApigwApiV2FuncGraphPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigwApiV2FuncGraphPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_ApigwApiV2FuncGraphPolicyOutputReference) validatePutConditio
 	return nil
 }
 
-func (a *jsiiProxy_ApigwApiV2FuncGraphPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigwApiV2FuncGraphPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

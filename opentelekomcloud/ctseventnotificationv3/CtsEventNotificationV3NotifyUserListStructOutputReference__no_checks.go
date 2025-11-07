@@ -43,11 +43,11 @@ func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CtsEventNotificationV3NotifyUserListStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

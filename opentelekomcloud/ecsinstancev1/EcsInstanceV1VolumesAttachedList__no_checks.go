@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsInstanceV1VolumesAttachedList) validateGetParameters(index
 	return nil
 }
 
-func (e *jsiiProxy_EcsInstanceV1VolumesAttachedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsInstanceV1VolumesAttachedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

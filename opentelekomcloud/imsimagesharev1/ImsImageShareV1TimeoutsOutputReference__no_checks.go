@@ -43,11 +43,11 @@ func (i *jsiiProxy_ImsImageShareV1TimeoutsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (i *jsiiProxy_ImsImageShareV1TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImsImageShareV1TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_ImsImageShareV1TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImsImageShareV1TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
