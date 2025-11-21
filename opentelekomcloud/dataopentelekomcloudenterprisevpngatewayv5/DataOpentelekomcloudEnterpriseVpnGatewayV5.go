@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5}.
 type DataOpentelekomcloudEnterpriseVpnGatewayV5 interface {
 	cdktf.TerraformDataSource
 	AccessPrivateIp1() *string
@@ -517,7 +517,7 @@ func (j *jsiiProxy_DataOpentelekomcloudEnterpriseVpnGatewayV5) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5} Data Source.
 func NewDataOpentelekomcloudEnterpriseVpnGatewayV5(scope constructs.Construct, id *string, config *DataOpentelekomcloudEnterpriseVpnGatewayV5Config) DataOpentelekomcloudEnterpriseVpnGatewayV5 {
 	_init_.Initialize()
 
@@ -535,7 +535,7 @@ func NewDataOpentelekomcloudEnterpriseVpnGatewayV5(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5} Data Source.
 func NewDataOpentelekomcloudEnterpriseVpnGatewayV5_Override(d DataOpentelekomcloudEnterpriseVpnGatewayV5, scope constructs.Construct, id *string, config *DataOpentelekomcloudEnterpriseVpnGatewayV5Config) {
 	_init_.Initialize()
 

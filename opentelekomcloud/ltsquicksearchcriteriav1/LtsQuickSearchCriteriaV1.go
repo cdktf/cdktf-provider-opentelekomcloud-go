@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/lts_quick_search_criteria_v1 opentelekomcloud_lts_quick_search_criteria_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lts_quick_search_criteria_v1 opentelekomcloud_lts_quick_search_criteria_v1}.
 type LtsQuickSearchCriteriaV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_LtsQuickSearchCriteriaV1) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/lts_quick_search_criteria_v1 opentelekomcloud_lts_quick_search_criteria_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lts_quick_search_criteria_v1 opentelekomcloud_lts_quick_search_criteria_v1} Resource.
 func NewLtsQuickSearchCriteriaV1(scope constructs.Construct, id *string, config *LtsQuickSearchCriteriaV1Config) LtsQuickSearchCriteriaV1 {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewLtsQuickSearchCriteriaV1(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/lts_quick_search_criteria_v1 opentelekomcloud_lts_quick_search_criteria_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lts_quick_search_criteria_v1 opentelekomcloud_lts_quick_search_criteria_v1} Resource.
 func NewLtsQuickSearchCriteriaV1_Override(l LtsQuickSearchCriteriaV1, scope constructs.Construct, id *string, config *LtsQuickSearchCriteriaV1Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/fgs_dependency_version_v2 opentelekomcloud_fgs_dependency_version_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/fgs_dependency_version_v2 opentelekomcloud_fgs_dependency_version_v2}.
 type FgsDependencyVersionV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -505,7 +505,7 @@ func (j *jsiiProxy_FgsDependencyVersionV2) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/fgs_dependency_version_v2 opentelekomcloud_fgs_dependency_version_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/fgs_dependency_version_v2 opentelekomcloud_fgs_dependency_version_v2} Resource.
 func NewFgsDependencyVersionV2(scope constructs.Construct, id *string, config *FgsDependencyVersionV2Config) FgsDependencyVersionV2 {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewFgsDependencyVersionV2(scope constructs.Construct, id *string, config *F
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/fgs_dependency_version_v2 opentelekomcloud_fgs_dependency_version_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/fgs_dependency_version_v2 opentelekomcloud_fgs_dependency_version_v2} Resource.
 func NewFgsDependencyVersionV2_Override(f FgsDependencyVersionV2, scope constructs.Construct, id *string, config *FgsDependencyVersionV2Config) {
 	_init_.Initialize()
 

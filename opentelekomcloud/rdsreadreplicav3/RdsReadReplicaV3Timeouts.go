@@ -5,9 +5,9 @@ package rdsreadreplicav3
 
 
 type RdsReadReplicaV3Timeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/rds_read_replica_v3#create RdsReadReplicaV3#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/rds_read_replica_v3#create RdsReadReplicaV3#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/rds_read_replica_v3#update RdsReadReplicaV3#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/rds_read_replica_v3#update RdsReadReplicaV3#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

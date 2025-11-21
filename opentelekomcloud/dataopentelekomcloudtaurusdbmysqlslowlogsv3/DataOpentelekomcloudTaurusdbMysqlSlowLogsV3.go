@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_slow_logs_v3 opentelekomcloud_taurusdb_mysql_slow_logs_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_slow_logs_v3 opentelekomcloud_taurusdb_mysql_slow_logs_v3}.
 type DataOpentelekomcloudTaurusdbMysqlSlowLogsV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlSlowLogsV3) TypeInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_slow_logs_v3 opentelekomcloud_taurusdb_mysql_slow_logs_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_slow_logs_v3 opentelekomcloud_taurusdb_mysql_slow_logs_v3} Data Source.
 func NewDataOpentelekomcloudTaurusdbMysqlSlowLogsV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudTaurusdbMysqlSlowLogsV3Config) DataOpentelekomcloudTaurusdbMysqlSlowLogsV3 {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDataOpentelekomcloudTaurusdbMysqlSlowLogsV3(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_slow_logs_v3 opentelekomcloud_taurusdb_mysql_slow_logs_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_slow_logs_v3 opentelekomcloud_taurusdb_mysql_slow_logs_v3} Data Source.
 func NewDataOpentelekomcloudTaurusdbMysqlSlowLogsV3_Override(d DataOpentelekomcloudTaurusdbMysqlSlowLogsV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudTaurusdbMysqlSlowLogsV3Config) {
 	_init_.Initialize()
 

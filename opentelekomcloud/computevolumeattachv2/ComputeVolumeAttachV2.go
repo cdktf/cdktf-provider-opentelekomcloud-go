@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2}.
 type ComputeVolumeAttachV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,9 @@ type ComputeVolumeAttachV2 interface {
 	Device() *string
 	SetDevice(val *string)
 	DeviceInput() *string
+	ForceDetach() interface{}
+	SetForceDetach(val interface{})
+	ForceDetachInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -123,6 +126,7 @@ type ComputeVolumeAttachV2 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ComputeVolumeAttachV2Timeouts)
 	ResetDevice()
+	ResetForceDetach()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -212,6 +216,26 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) DeviceInput() *string {
 	_jsii_.Get(
 		j,
 		"deviceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeVolumeAttachV2) ForceDetach() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDetach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeVolumeAttachV2) ForceDetachInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDetachInput",
 		&returns,
 	)
 	return returns
@@ -428,7 +452,7 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2} Resource.
 func NewComputeVolumeAttachV2(scope constructs.Construct, id *string, config *ComputeVolumeAttachV2Config) ComputeVolumeAttachV2 {
 	_init_.Initialize()
 
@@ -446,7 +470,7 @@ func NewComputeVolumeAttachV2(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2} Resource.
 func NewComputeVolumeAttachV2_Override(c ComputeVolumeAttachV2, scope constructs.Construct, id *string, config *ComputeVolumeAttachV2Config) {
 	_init_.Initialize()
 
@@ -494,6 +518,17 @@ func (j *jsiiProxy_ComputeVolumeAttachV2)SetDevice(val *string) {
 	_jsii_.Set(
 		j,
 		"device",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeVolumeAttachV2)SetForceDetach(val interface{}) {
+	if err := j.validateSetForceDetachParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDetach",
 		val,
 	)
 }
@@ -948,6 +983,14 @@ func (c *jsiiProxy_ComputeVolumeAttachV2) ResetDevice() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDevice",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeVolumeAttachV2) ResetForceDetach() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetForceDetach",
 		nil, // no parameters
 	)
 }

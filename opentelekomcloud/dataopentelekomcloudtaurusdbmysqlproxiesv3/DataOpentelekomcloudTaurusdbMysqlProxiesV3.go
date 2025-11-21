@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_proxies_v3 opentelekomcloud_taurusdb_mysql_proxies_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_proxies_v3 opentelekomcloud_taurusdb_mysql_proxies_v3}.
 type DataOpentelekomcloudTaurusdbMysqlProxiesV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlProxiesV3) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_proxies_v3 opentelekomcloud_taurusdb_mysql_proxies_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_proxies_v3 opentelekomcloud_taurusdb_mysql_proxies_v3} Data Source.
 func NewDataOpentelekomcloudTaurusdbMysqlProxiesV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudTaurusdbMysqlProxiesV3Config) DataOpentelekomcloudTaurusdbMysqlProxiesV3 {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataOpentelekomcloudTaurusdbMysqlProxiesV3(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_proxies_v3 opentelekomcloud_taurusdb_mysql_proxies_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_proxies_v3 opentelekomcloud_taurusdb_mysql_proxies_v3} Data Source.
 func NewDataOpentelekomcloudTaurusdbMysqlProxiesV3_Override(d DataOpentelekomcloudTaurusdbMysqlProxiesV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudTaurusdbMysqlProxiesV3Config) {
 	_init_.Initialize()
 

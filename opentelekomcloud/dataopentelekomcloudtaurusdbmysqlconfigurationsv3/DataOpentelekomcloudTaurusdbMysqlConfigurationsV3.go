@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_configurations_v3 opentelekomcloud_taurusdb_mysql_configurations_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_configurations_v3 opentelekomcloud_taurusdb_mysql_configurations_v3}.
 type DataOpentelekomcloudTaurusdbMysqlConfigurationsV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataOpentelekomcloudTaurusdbMysqlConfigurationsV3) TerraformR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_configurations_v3 opentelekomcloud_taurusdb_mysql_configurations_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_configurations_v3 opentelekomcloud_taurusdb_mysql_configurations_v3} Data Source.
 func NewDataOpentelekomcloudTaurusdbMysqlConfigurationsV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudTaurusdbMysqlConfigurationsV3Config) DataOpentelekomcloudTaurusdbMysqlConfigurationsV3 {
 	_init_.Initialize()
 
@@ -305,7 +305,7 @@ func NewDataOpentelekomcloudTaurusdbMysqlConfigurationsV3(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_configurations_v3 opentelekomcloud_taurusdb_mysql_configurations_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_configurations_v3 opentelekomcloud_taurusdb_mysql_configurations_v3} Data Source.
 func NewDataOpentelekomcloudTaurusdbMysqlConfigurationsV3_Override(d DataOpentelekomcloudTaurusdbMysqlConfigurationsV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudTaurusdbMysqlConfigurationsV3Config) {
 	_init_.Initialize()
 

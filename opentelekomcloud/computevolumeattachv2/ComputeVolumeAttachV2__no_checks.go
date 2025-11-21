@@ -107,6 +107,10 @@ func (j *jsiiProxy_ComputeVolumeAttachV2) validateSetDeviceParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_ComputeVolumeAttachV2) validateSetForceDetachParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeVolumeAttachV2) validateSetIdParameters(val *string) error {
 	return nil
 }

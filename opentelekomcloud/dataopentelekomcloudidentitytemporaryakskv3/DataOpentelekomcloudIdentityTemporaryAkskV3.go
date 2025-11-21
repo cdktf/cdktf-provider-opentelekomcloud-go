@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/identity_temporary_aksk_v3 opentelekomcloud_identity_temporary_aksk_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/identity_temporary_aksk_v3 opentelekomcloud_identity_temporary_aksk_v3}.
 type DataOpentelekomcloudIdentityTemporaryAkskV3 interface {
 	cdktf.TerraformDataSource
 	Access() *string
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataOpentelekomcloudIdentityTemporaryAkskV3) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/identity_temporary_aksk_v3 opentelekomcloud_identity_temporary_aksk_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/identity_temporary_aksk_v3 opentelekomcloud_identity_temporary_aksk_v3} Data Source.
 func NewDataOpentelekomcloudIdentityTemporaryAkskV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudIdentityTemporaryAkskV3Config) DataOpentelekomcloudIdentityTemporaryAkskV3 {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataOpentelekomcloudIdentityTemporaryAkskV3(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/identity_temporary_aksk_v3 opentelekomcloud_identity_temporary_aksk_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/identity_temporary_aksk_v3 opentelekomcloud_identity_temporary_aksk_v3} Data Source.
 func NewDataOpentelekomcloudIdentityTemporaryAkskV3_Override(d DataOpentelekomcloudIdentityTemporaryAkskV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudIdentityTemporaryAkskV3Config) {
 	_init_.Initialize()
 

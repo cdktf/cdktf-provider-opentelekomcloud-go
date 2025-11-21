@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/private_nat_snat_rule_v3 opentelekomcloud_private_nat_snat_rule_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/private_nat_snat_rule_v3 opentelekomcloud_private_nat_snat_rule_v3}.
 type PrivateNatSnatRuleV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -518,7 +518,7 @@ func (j *jsiiProxy_PrivateNatSnatRuleV3) VirsubnetIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/private_nat_snat_rule_v3 opentelekomcloud_private_nat_snat_rule_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/private_nat_snat_rule_v3 opentelekomcloud_private_nat_snat_rule_v3} Resource.
 func NewPrivateNatSnatRuleV3(scope constructs.Construct, id *string, config *PrivateNatSnatRuleV3Config) PrivateNatSnatRuleV3 {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewPrivateNatSnatRuleV3(scope constructs.Construct, id *string, config *Pri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/private_nat_snat_rule_v3 opentelekomcloud_private_nat_snat_rule_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/private_nat_snat_rule_v3 opentelekomcloud_private_nat_snat_rule_v3} Resource.
 func NewPrivateNatSnatRuleV3_Override(p PrivateNatSnatRuleV3, scope constructs.Construct, id *string, config *PrivateNatSnatRuleV3Config) {
 	_init_.Initialize()
 

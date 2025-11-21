@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/tms_resource_tag_values_v1 opentelekomcloud_tms_resource_tag_values_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/tms_resource_tag_values_v1 opentelekomcloud_tms_resource_tag_values_v1}.
 type DataOpentelekomcloudTmsResourceTagValuesV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataOpentelekomcloudTmsResourceTagValuesV1) Values() *[]*stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/tms_resource_tag_values_v1 opentelekomcloud_tms_resource_tag_values_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/tms_resource_tag_values_v1 opentelekomcloud_tms_resource_tag_values_v1} Data Source.
 func NewDataOpentelekomcloudTmsResourceTagValuesV1(scope constructs.Construct, id *string, config *DataOpentelekomcloudTmsResourceTagValuesV1Config) DataOpentelekomcloudTmsResourceTagValuesV1 {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataOpentelekomcloudTmsResourceTagValuesV1(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/tms_resource_tag_values_v1 opentelekomcloud_tms_resource_tag_values_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/tms_resource_tag_values_v1 opentelekomcloud_tms_resource_tag_values_v1} Data Source.
 func NewDataOpentelekomcloudTmsResourceTagValuesV1_Override(d DataOpentelekomcloudTmsResourceTagValuesV1, scope constructs.Construct, id *string, config *DataOpentelekomcloudTmsResourceTagValuesV1Config) {
 	_init_.Initialize()
 

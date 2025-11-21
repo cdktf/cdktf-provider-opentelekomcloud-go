@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/er_route_tables_v3 opentelekomcloud_er_route_tables_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/er_route_tables_v3 opentelekomcloud_er_route_tables_v3}.
 type DataOpentelekomcloudErRouteTablesV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataOpentelekomcloudErRouteTablesV3) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/er_route_tables_v3 opentelekomcloud_er_route_tables_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/er_route_tables_v3 opentelekomcloud_er_route_tables_v3} Data Source.
 func NewDataOpentelekomcloudErRouteTablesV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudErRouteTablesV3Config) DataOpentelekomcloudErRouteTablesV3 {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewDataOpentelekomcloudErRouteTablesV3(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/er_route_tables_v3 opentelekomcloud_er_route_tables_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/er_route_tables_v3 opentelekomcloud_er_route_tables_v3} Data Source.
 func NewDataOpentelekomcloudErRouteTablesV3_Override(d DataOpentelekomcloudErRouteTablesV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudErRouteTablesV3Config) {
 	_init_.Initialize()
 

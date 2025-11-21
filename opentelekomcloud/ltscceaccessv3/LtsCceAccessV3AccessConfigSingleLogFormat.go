@@ -5,9 +5,9 @@ package ltscceaccessv3
 
 
 type LtsCceAccessV3AccessConfigSingleLogFormat struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/lts_cce_access_v3#mode LtsCceAccessV3#mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lts_cce_access_v3#mode LtsCceAccessV3#mode}.
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/lts_cce_access_v3#value LtsCceAccessV3#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lts_cce_access_v3#value LtsCceAccessV3#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 
