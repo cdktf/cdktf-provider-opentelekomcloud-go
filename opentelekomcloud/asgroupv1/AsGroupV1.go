@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/as_group_v1 opentelekomcloud_as_group_v1}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/as_group_v1 opentelekomcloud_as_group_v1}.
 type AsGroupV1 interface {
 	cdktf.TerraformResource
 	AvailableZones() *[]*string
@@ -47,6 +47,9 @@ type AsGroupV1 interface {
 	DesireInstanceNumber() *float64
 	SetDesireInstanceNumber(val *float64)
 	DesireInstanceNumberInput() *float64
+	Enable() interface{}
+	SetEnable(val interface{})
+	EnableInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -179,6 +182,7 @@ type AsGroupV1 interface {
 	ResetAvailableZones()
 	ResetCoolDownTime()
 	ResetDesireInstanceNumber()
+	ResetEnable()
 	ResetHealthPeriodicAuditGracePeriod()
 	ResetHealthPeriodicAuditMethod()
 	ResetHealthPeriodicAuditTime()
@@ -370,6 +374,26 @@ func (j *jsiiProxy_AsGroupV1) DesireInstanceNumberInput() *float64 {
 	_jsii_.Get(
 		j,
 		"desireInstanceNumberInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AsGroupV1) Enable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AsGroupV1) EnableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableInput",
 		&returns,
 	)
 	return returns
@@ -866,7 +890,7 @@ func (j *jsiiProxy_AsGroupV1) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/as_group_v1 opentelekomcloud_as_group_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/as_group_v1 opentelekomcloud_as_group_v1} Resource.
 func NewAsGroupV1(scope constructs.Construct, id *string, config *AsGroupV1Config) AsGroupV1 {
 	_init_.Initialize()
 
@@ -884,7 +908,7 @@ func NewAsGroupV1(scope constructs.Construct, id *string, config *AsGroupV1Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/as_group_v1 opentelekomcloud_as_group_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/as_group_v1 opentelekomcloud_as_group_v1} Resource.
 func NewAsGroupV1_Override(a AsGroupV1, scope constructs.Construct, id *string, config *AsGroupV1Config) {
 	_init_.Initialize()
 
@@ -976,6 +1000,17 @@ func (j *jsiiProxy_AsGroupV1)SetDesireInstanceNumber(val *float64) {
 	_jsii_.Set(
 		j,
 		"desireInstanceNumber",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AsGroupV1)SetEnable(val interface{}) {
+	if err := j.validateSetEnableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enable",
 		val,
 	)
 }
@@ -1589,6 +1624,14 @@ func (a *jsiiProxy_AsGroupV1) ResetDesireInstanceNumber() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDesireInstanceNumber",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AsGroupV1) ResetEnable() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnable",
 		nil, // no parameters
 	)
 }

@@ -16,6 +16,9 @@ type CceAddonV3ValuesOutputReference interface {
 	Basic() *map[string]*string
 	SetBasic(val *map[string]*string)
 	BasicInput() *map[string]*string
+	BasicJson() *string
+	SetBasicJson(val *string)
+	BasicJsonInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +37,15 @@ type CceAddonV3ValuesOutputReference interface {
 	Custom() *map[string]*string
 	SetCustom(val *map[string]*string)
 	CustomInput() *map[string]*string
+	CustomJson() *string
+	SetCustomJson(val *string)
+	CustomJsonInput() *string
 	Flavor() *string
 	SetFlavor(val *string)
 	FlavorInput() *string
+	FlavorJson() *string
+	SetFlavorJson(val *string)
+	FlavorJsonInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CceAddonV3Values
@@ -73,7 +82,12 @@ type CceAddonV3ValuesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	ResetBasic()
+	ResetBasicJson()
+	ResetCustom()
+	ResetCustomJson()
 	ResetFlavor()
+	ResetFlavorJson()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -104,6 +118,26 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference) BasicInput() *map[string]*st
 	_jsii_.Get(
 		j,
 		"basicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) BasicJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"basicJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) BasicJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"basicJsonInput",
 		&returns,
 	)
 	return returns
@@ -159,6 +193,26 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference) CustomInput() *map[string]*s
 	return returns
 }
 
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) CustomJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) CustomJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CceAddonV3ValuesOutputReference) Flavor() *string {
 	var returns *string
 	_jsii_.Get(
@@ -174,6 +228,26 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference) FlavorInput() *string {
 	_jsii_.Get(
 		j,
 		"flavorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) FlavorJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavorJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) FlavorJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavorJsonInput",
 		&returns,
 	)
 	return returns
@@ -258,6 +332,17 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference)SetBasic(val *map[string]*str
 	)
 }
 
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference)SetBasicJson(val *string) {
+	if err := j.validateSetBasicJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"basicJson",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CceAddonV3ValuesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -291,6 +376,17 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference)SetCustom(val *map[string]*st
 	)
 }
 
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference)SetCustomJson(val *string) {
+	if err := j.validateSetCustomJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customJson",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CceAddonV3ValuesOutputReference)SetFlavor(val *string) {
 	if err := j.validateSetFlavorParameters(val); err != nil {
 		panic(err)
@@ -298,6 +394,17 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference)SetFlavor(val *string) {
 	_jsii_.Set(
 		j,
 		"flavor",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference)SetFlavorJson(val *string) {
+	if err := j.validateSetFlavorJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flavorJson",
 		val,
 	)
 }
@@ -521,10 +628,50 @@ func (c *jsiiProxy_CceAddonV3ValuesOutputReference) InterpolationForAttribute(te
 	return returns
 }
 
+func (c *jsiiProxy_CceAddonV3ValuesOutputReference) ResetBasic() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBasic",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceAddonV3ValuesOutputReference) ResetBasicJson() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBasicJson",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceAddonV3ValuesOutputReference) ResetCustom() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustom",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceAddonV3ValuesOutputReference) ResetCustomJson() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomJson",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CceAddonV3ValuesOutputReference) ResetFlavor() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetFlavor",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CceAddonV3ValuesOutputReference) ResetFlavorJson() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFlavorJson",
 		nil, // no parameters
 	)
 }

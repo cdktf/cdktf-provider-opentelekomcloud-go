@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3 opentelekomcloud_gemini_instance_template_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3 opentelekomcloud_gemini_instance_template_v3}.
 type DataOpentelekomcloudGeminiInstanceTemplateV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataOpentelekomcloudGeminiInstanceTemplateV3) UpdatedAt() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3 opentelekomcloud_gemini_instance_template_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3 opentelekomcloud_gemini_instance_template_v3} Data Source.
 func NewDataOpentelekomcloudGeminiInstanceTemplateV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudGeminiInstanceTemplateV3Config) DataOpentelekomcloudGeminiInstanceTemplateV3 {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataOpentelekomcloudGeminiInstanceTemplateV3(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3 opentelekomcloud_gemini_instance_template_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3 opentelekomcloud_gemini_instance_template_v3} Data Source.
 func NewDataOpentelekomcloudGeminiInstanceTemplateV3_Override(d DataOpentelekomcloudGeminiInstanceTemplateV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudGeminiInstanceTemplateV3Config) {
 	_init_.Initialize()
 

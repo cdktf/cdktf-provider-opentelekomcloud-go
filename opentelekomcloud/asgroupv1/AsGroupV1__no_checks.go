@@ -135,6 +135,10 @@ func (j *jsiiProxy_AsGroupV1) validateSetDesireInstanceNumberParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_AsGroupV1) validateSetEnableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AsGroupV1) validateSetHealthPeriodicAuditGracePeriodParameters(val *float64) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/gemini_template_v3 opentelekomcloud_gemini_template_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/gemini_template_v3 opentelekomcloud_gemini_template_v3}.
 type GeminiTemplateV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GeminiTemplateV3) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/gemini_template_v3 opentelekomcloud_gemini_template_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/gemini_template_v3 opentelekomcloud_gemini_template_v3} Resource.
 func NewGeminiTemplateV3(scope constructs.Construct, id *string, config *GeminiTemplateV3Config) GeminiTemplateV3 {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGeminiTemplateV3(scope constructs.Construct, id *string, config *GeminiT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/gemini_template_v3 opentelekomcloud_gemini_template_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/gemini_template_v3 opentelekomcloud_gemini_template_v3} Resource.
 func NewGeminiTemplateV3_Override(g GeminiTemplateV3, scope constructs.Construct, id *string, config *GeminiTemplateV3Config) {
 	_init_.Initialize()
 

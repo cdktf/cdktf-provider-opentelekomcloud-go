@@ -55,6 +55,10 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetBasicParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetBasicJsonParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -67,7 +71,15 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetCustomParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetCustomJsonParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetFlavorParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetFlavorJsonParameters(val *string) error {
 	return nil
 }
 

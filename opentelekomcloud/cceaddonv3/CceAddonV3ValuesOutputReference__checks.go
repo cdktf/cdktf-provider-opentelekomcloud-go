@@ -109,6 +109,14 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetBasicParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetBasicJsonParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -182,7 +190,23 @@ func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetCustomParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetCustomJsonParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetFlavorParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CceAddonV3ValuesOutputReference) validateSetFlavorJsonParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_quotas_v3 opentelekomcloud_gemini_quotas_v3}.
+// Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_quotas_v3 opentelekomcloud_gemini_quotas_v3}.
 type DataOpentelekomcloudGeminiQuotasV3 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataOpentelekomcloudGeminiQuotasV3) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_quotas_v3 opentelekomcloud_gemini_quotas_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_quotas_v3 opentelekomcloud_gemini_quotas_v3} Data Source.
 func NewDataOpentelekomcloudGeminiQuotasV3(scope constructs.Construct, id *string, config *DataOpentelekomcloudGeminiQuotasV3Config) DataOpentelekomcloudGeminiQuotasV3 {
 	_init_.Initialize()
 
@@ -305,7 +305,7 @@ func NewDataOpentelekomcloudGeminiQuotasV3(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_quotas_v3 opentelekomcloud_gemini_quotas_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_quotas_v3 opentelekomcloud_gemini_quotas_v3} Data Source.
 func NewDataOpentelekomcloudGeminiQuotasV3_Override(d DataOpentelekomcloudGeminiQuotasV3, scope constructs.Construct, id *string, config *DataOpentelekomcloudGeminiQuotasV3Config) {
 	_init_.Initialize()
 
